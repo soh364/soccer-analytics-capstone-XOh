@@ -1,17 +1,18 @@
 """
 Ball progression metrics: Progressive Passes, Progressive Carries, and Progressive Passes Received
 
-IMPORTANT: This implementation uses a SIMPLIFIED progressive definition based on 
+NOTE: This implementation uses a SIMPLIFIED progressive definition based on 
 single-action distance gains, not the full Opta/FBref "furthest point in last 6 passes" logic.
+For Opta/FBref compatibility (with possession chain tracking), additional implementation would be required.
 
 Our Definition (Pitch coordinates: 0-120 in x, 0-80 in y):
-Progressive Pass: 
+1. Progressive Pass: 
 - Completed pass that moves ball ≥10 units forward (end_x - start_x >= 10), OR
 - Any completed pass into penalty area (end_x >= 102, 18 <= end_y <= 62)
 - Only from attacking 60% of pitch (start_x >= 48)
 - Only open play (Regular Play, From Counter)
 
-Progressive Carry:
+2. Progressive Carry:
 - Carry that moves ball ≥10 units forward when starting outside final 40% (start_x < 72), OR
 - ≥5 units forward when starting in final 40% (start_x >= 72), OR
 - Into penalty area
@@ -21,7 +22,11 @@ Progressive Carry:
 Progressive Passes Received:
 - Same criteria as progressive passes, tracked by recipient
 
-NOTE: For true Opta/FBref compatibility (with possession chain tracking), additional implementation would be required.
+Sources:
+- https://statsultra.com/progressive-passes-carries-received-explained/ 
+- https://dataglossary.wyscout.com/progressive_pass/
+- https://the-footballanalyst.com/progressive-carries-football-statistics-explained/
+- https://themastermindsite.com/2022/02/23/analyzing-europes-best-progressive-pass-receivers/
 """
 
 import pandas as pd
@@ -285,7 +290,7 @@ def calculate_progressive_carries(events, conn=None, match_id=None, player=None)
             ) as progressive_carry_directness_pct,
             -- Zone penetration
             SUM(CASE WHEN is_progressive = 1 AND into_final_third = 1 THEN 1 ELSE 0 END) as progressive_carries_into_final_third,
-            SUM(CASE WHEN is_progressive = 1 AND into_penalty_area = 1 THEN 1 ELSE 0 END) as progressive_carries_into_penalty_area,
+            SUM(CASE WHEN is_progressive = 1 AND into_penalty_area = 1 THEN 1 ELSE 0 END) as progressive_carries_into_penalty_area
         FROM progressive_calc
         GROUP BY match_id, team, player
         HAVING SUM(is_progressive) > 0

@@ -23,6 +23,13 @@ def test_imports():
         from src.metrics import (
             calculate_ppda,
             calculate_field_tilt,
+            calculate_possession_percentage, 
+            calculate_possession_by_zone, 
+            calculate_high_turnovers, 
+            calculate_possession_value, 
+            calculate_sequence_length, 
+            calculate_counter_attack_speed, 
+            calculate_defensive_actions_by_zone,
             # Updated Progression Suite
             calculate_progressive_passes,
             calculate_progressive_carries,
