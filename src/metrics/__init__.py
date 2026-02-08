@@ -1,7 +1,7 @@
 """Soccer analytics metrics calculation"""
 
 from .possession import calculate_ppda, calculate_field_tilt
-from .progression import calculate_progressive_passes, calculate_progressive_carries
+from .progression import calculate_progressive_passes, calculate_progressive_carries, calculate_progressive_passes_received, calculate_progressive_actions, analyze_progression_profile
 from .aggregations import aggregate_xg_by_team, aggregate_xg_by_player
 from .xg_chain import (
     calculate_xg_chain,
@@ -22,6 +22,9 @@ __all__ = [
     # Progression metrics
     'calculate_progressive_passes',
     'calculate_progressive_carries',
+    'calculate_progressive_passes_received',
+    'calculate_progressive_actions',
+    'analyze_progression_profile'
     
     # xG aggregations
     'aggregate_xg_by_team',
