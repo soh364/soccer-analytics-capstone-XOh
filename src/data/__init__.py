@@ -1,15 +1,5 @@
-"""
-Data processing module
-"""
-from .load import load_raw_data, load_processed_data
-from .normalize import normalize_ids
-from .split import create_splits
-from .process import run_pipeline
+"""Data loading and management utilities"""
 
-__all__ = [
-    'load_raw_data',
-    'load_processed_data',
-    'normalize_ids',
-    'create_splits',
-    'run_pipeline'
-]
+from .loader import DataLoader, load_data
+
+__all__ = ['DataLoader', 'load_data']
