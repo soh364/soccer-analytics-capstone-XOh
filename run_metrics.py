@@ -11,8 +11,9 @@ from src.metrics import (
     calculate_defensive_actions_by_zone, analyze_possession_quality,
     calculate_progressive_passes, calculate_progressive_carries,
     calculate_progressive_passes_received, calculate_progressive_actions,
-    analyze_progression_profile, calculate_xg_chain,
-    calculate_xg_buildup, compare_xg_chain_vs_buildup, calculate_packing,
+    calculate_progressive_actions_no_overlap, analyze_progression_profile, 
+    calculate_xg_chain, calculate_xg_buildup, compare_xg_chain_vs_buildup, 
+    calculate_packing,
 )
 
 def log_comp(df, name):
@@ -92,7 +93,10 @@ def main():
     
     p_act = calculate_progressive_actions(events_path, loader.conn)
     p_act.to_csv(out / "progression_actions_all.csv", index=False)
-    
+
+    p_act_no = calculate_progressive_actions_no_overlap(events_path, loader.conn)
+    p_act_no.to_csv(out / "progression_actions_no_overlap.csv", index=False)
+
     p_prof = analyze_progression_profile(events_path, loader.conn, min_minutes=30)
     p_prof.to_csv(out / "progression_player_profiles.csv", index=False)
     
