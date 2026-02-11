@@ -375,6 +375,41 @@ def calculate_xg_buildup(events, conn=None, match_id=None, min_touches=1, per_90
         
         sort_col = 'xg_buildup_per90' if per_90 else 'xg_buildup'
         return result.sort_values(sort_col, ascending=False)
+    
+def calculate_team_xg_buildup(events, conn=None, match_id=None) -> pd.DataFrame:
+    """
+    Aggregate xG buildup to TEAM level per match.
+    
+    Returns match-team level summary of build-up play quality.
+    Measures how much xG comes from patient, multi-player build-up vs individual actions.
+    """
+    
+    # Get player-level buildup data
+    player_buildup = calculate_xg_buildup(events, conn, match_id, min_touches=1, per_90=False)
+    
+    # Aggregate to team level
+    team_buildup = player_buildup.groupby(['match_id', 'team']).agg({
+        'possessions_with_buildup': 'sum',
+        'xg_buildup': 'sum',
+        'total_touches_in_buildup': 'sum'
+    }).reset_index()
+    
+    # Calculate averages
+    team_buildup['avg_xg_per_buildup_possession'] = round(
+        team_buildup['xg_buildup'] / team_buildup['possessions_with_buildup'], 3
+    )
+    
+    team_buildup['avg_touches_per_buildup_possession'] = round(
+        team_buildup['total_touches_in_buildup'] / team_buildup['possessions_with_buildup'], 2
+    )
+    
+    # Rename for clarity
+    team_buildup = team_buildup.rename(columns={
+        'possessions_with_buildup': 'buildup_possessions',
+        'xg_buildup': 'total_xg_from_buildup'
+    })
+    
+    return team_buildup
 
 
 def compare_xg_chain_vs_buildup(events, conn=None, match_id=None, is_season_data=False) -> pd.DataFrame:

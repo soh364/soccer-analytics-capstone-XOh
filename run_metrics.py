@@ -13,7 +13,8 @@ from src.metrics import (
     calculate_progressive_passes_received, calculate_progressive_actions,
     calculate_progressive_actions_no_overlap, analyze_progression_profile, 
     calculate_xg_chain, calculate_xg_buildup, compare_xg_chain_vs_buildup, 
-    calculate_packing,
+    calculate_packing, calculate_team_progression_summary, calculate_team_progression_detail,
+    calculate_team_xg_buildup, calculate_team_defensive_line_height
 )
 
 def log_comp(df, name):
@@ -61,6 +62,9 @@ def main():
     
     def_zones = calculate_defensive_actions_by_zone(events_path, loader.conn)
     def_zones.to_csv(out / "defensive_actions_by_zone.csv", index=False)
+
+    def_line_height = calculate_team_defensive_line_height(events_path, loader.conn)
+    def_line_height.to_csv(out / "defensive_line_height_team.csv", index=False)
     
     counter = calculate_counter_attack_speed(events_path, loader.conn)
     if not counter.empty and 'note' not in counter.columns:
@@ -99,6 +103,12 @@ def main():
 
     p_prof = analyze_progression_profile(events_path, loader.conn, min_minutes=30)
     p_prof.to_csv(out / "progression_player_profiles.csv", index=False)
+
+    prog_team_summary = calculate_team_progression_summary(events_path, loader.conn)
+    prog_team_summary.to_csv(out / "progression_team_summary.csv", index=False)
+
+    prog_team_detail = calculate_team_progression_detail(events_path, loader.conn)
+    prog_team_detail.to_csv(out / "progression_team_detail.csv", index=False)
     
     log_comp(p_act, "progression_group")
 
@@ -114,6 +124,10 @@ def main():
     buildup_df = calculate_xg_buildup(events_path, loader.conn, per_90=True)
     buildup_df.to_csv(out / "advanced_xg_buildup_raw.csv", index=False)
     log_comp(buildup_df, "xg_buildup_standalone")
+
+    xg_buildup_team = calculate_team_xg_buildup(events_path, loader.conn)
+    xg_buildup_team.to_csv(out / "advanced_xg_buildup_team.csv", index=False)
+    log_comp(xg_buildup_team, "xg_buildup_team")
 
     # Role Classification (The comparison of the two)
     roles_df = compare_xg_chain_vs_buildup(events_path, loader.conn, is_season_data=False)

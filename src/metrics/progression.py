@@ -873,3 +873,95 @@ def analyze_progression_profile(events, conn=None, match_id=None, min_minutes=30
     result["progression_type"] = result.apply(classify_progression_type, axis=1)
     
     return result.sort_values("total_progressive_actions_p90", ascending=False)
+
+
+def calculate_team_progression_summary(events, conn=None, match_id=None) -> pd.DataFrame:
+    """
+    Aggregate progressive actions to TEAM level per match.
+    
+    Returns match-team level summary suitable for tactical profiling.
+    """
+    
+    # Get player-level data
+    prog_actions = calculate_progressive_actions(events, conn, match_id)
+    
+    # Aggregate to team level
+    team_summary = prog_actions.groupby(['match_id', 'team']).agg({
+        'progressive_passes': 'sum',
+        'progressive_carries': 'sum',
+        'progressive_passes_received': 'sum',
+        'progressive_actions': 'sum'
+    }).reset_index()
+    
+    # Calculate ratios
+    team_summary['progressive_carry_pct'] = round(
+        team_summary['progressive_carries'] * 100.0 / 
+        team_summary['progressive_actions'], 2
+    )
+    
+    team_summary['progressive_pass_pct'] = round(
+        team_summary['progressive_passes'] * 100.0 / 
+        team_summary['progressive_actions'], 2
+    )
+    
+    return team_summary
+
+
+def calculate_team_progression_detail(events, conn=None, match_id=None) -> pd.DataFrame:
+    """
+    Detailed team-level progression metrics including carries and passes separately.
+    
+    Returns richer data for building progression method dimension.
+    """
+    
+    # Get detailed player-level data
+    prog_passes = calculate_progressive_passes(events, conn, match_id)
+    prog_carries = calculate_progressive_carries(events, conn, match_id)
+    
+    # Aggregate passes to team level
+    team_passes = prog_passes.groupby(['match_id', 'team']).agg({
+        'progressive_passes': 'sum',
+        'total_passes': 'sum',
+        'avg_progressive_distance': 'mean',
+        'avg_progressive_pass_length': 'mean'
+    }).reset_index()
+    
+    team_passes = team_passes.rename(columns={
+        'avg_progressive_distance': 'avg_progressive_pass_distance',
+    })
+    
+    # Aggregate carries to team level
+    team_carries = prog_carries.groupby(['match_id', 'team']).agg({
+        'progressive_carries': 'sum',
+        'total_carries': 'sum',
+        'avg_progressive_distance': 'mean',
+        'avg_progressive_carry_length': 'mean',
+        'progressive_carries_into_final_third': 'sum',
+        'progressive_carries_into_penalty_area': 'sum'
+    }).reset_index()
+    
+    team_carries = team_carries.rename(columns={
+        'avg_progressive_distance': 'avg_progressive_carry_distance',
+    })
+    
+    # Merge
+    team_detail = team_passes.merge(
+        team_carries,
+        on=['match_id', 'team'],
+        how='outer'
+    ).fillna(0)
+    
+    # Calculate progression method ratio
+    team_detail['progression_method_ratio'] = round(
+        team_detail['progressive_carries'] / 
+        (team_detail['progressive_carries'] + team_detail['progressive_passes']),
+        3
+    )
+    
+    # Total progressive actions
+    team_detail['total_progressive_actions'] = (
+        team_detail['progressive_carries'] + 
+        team_detail['progressive_passes']
+    )
+    
+    return team_detail

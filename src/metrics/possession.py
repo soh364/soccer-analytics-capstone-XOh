@@ -843,6 +843,83 @@ def calculate_defensive_actions_by_zone(events, conn=None, match_id=None) -> pd.
         
         return result.sort_values(['match_id', 'team', 'zone'])
     
+def calculate_team_defensive_line_height(events, conn=None, match_id=None) -> pd.DataFrame:
+    """
+    Calculate defensive line height metric from zone distribution.
+    
+    Returns match-team level with:
+    - Weighted average defensive line (1=deep, 2=mid, 3=high)
+    - Percentage of actions in each zone
+    
+    Interpretation:
+    - Height > 2.0 = High press (lots of actions in attacking third)
+    - Height 1.5-2.0 = Mid-block
+    - Height < 1.5 = Low block (deep defense)
+    """
+    
+    # Get zone-level data
+    zone_data = calculate_defensive_actions_by_zone(events, conn, match_id)
+    
+    # Pivot to wide format
+    zone_pivot = zone_data.pivot_table(
+        index=['match_id', 'team'],
+        columns='zone',
+        values='defensive_actions',
+        fill_value=0
+    ).reset_index()
+    
+    # Calculate total actions
+    zone_pivot['total_defensive_actions'] = (
+        zone_pivot['Defensive Third'] + 
+        zone_pivot['Middle Third'] + 
+        zone_pivot['Attacking Third']
+    )
+    
+    # Calculate weighted average (Defensive=1, Middle=2, Attacking=3)
+    zone_pivot['defensive_line_height'] = round(
+        (zone_pivot['Defensive Third'] * 1 + 
+         zone_pivot['Middle Third'] * 2 + 
+         zone_pivot['Attacking Third'] * 3) / 
+        zone_pivot['total_defensive_actions'],
+        3
+    )
+    
+    # Calculate percentages
+    zone_pivot['defensive_third_pct'] = round(
+        zone_pivot['Defensive Third'] * 100.0 / zone_pivot['total_defensive_actions'], 2
+    )
+    zone_pivot['middle_third_pct'] = round(
+        zone_pivot['Middle Third'] * 100.0 / zone_pivot['total_defensive_actions'], 2
+    )
+    zone_pivot['attacking_third_pct'] = round(
+        zone_pivot['Attacking Third'] * 100.0 / zone_pivot['total_defensive_actions'], 2
+    )
+    
+    # Classify defensive style
+    def classify_defensive_style(row):
+        if row['attacking_third_pct'] > 30:
+            return 'High Press'
+        elif row['middle_third_pct'] > 50:
+            return 'Mid-Block'
+        elif row['defensive_third_pct'] > 50:
+            return 'Low Block'
+        else:
+            return 'Balanced'
+    
+    zone_pivot['defensive_style'] = zone_pivot.apply(classify_defensive_style, axis=1)
+    
+    # Select final columns
+    result = zone_pivot[[
+        'match_id', 'team', 
+        'total_defensive_actions',
+        'defensive_line_height',
+        'defensive_third_pct', 'middle_third_pct', 'attacking_third_pct',
+        'defensive_style',
+        'Defensive Third', 'Middle Third', 'Attacking Third'  # Keep raw counts too
+    ]]
+    
+    return result
+    
 
 def analyze_possession_quality(events, conn=None, match_id=None) -> pd.DataFrame:
     """
