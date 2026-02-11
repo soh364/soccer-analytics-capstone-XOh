@@ -23,7 +23,7 @@ def log_comp(df, name):
 def main():
     loader = load_data(data_dir="./data/Statsbomb")
     events_path = str(loader.available_files['events'])
-    out = Path("outputs")
+    out = Path("outputs/raw_metrics")
     out.mkdir(exist_ok=True)
     
     summary = loader.get_data_summary()
