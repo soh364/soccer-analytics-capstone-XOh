@@ -5,6 +5,7 @@ from .progression import *
 from .aggregations import *
 from .packing import *
 from .xg_chain import * 
+from .defensive_intensity import *
 
 __all__ = [
     # Possession metrics
@@ -43,4 +44,6 @@ __all__ = [
     'calculate_packing',
     'calculate_packing_by_zone',
     'compare_packing_vs_progression',
+
+    'calculate_pressure_metrics'
 ]
