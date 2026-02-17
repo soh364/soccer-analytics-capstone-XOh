@@ -34,6 +34,7 @@ rosters_2026 = {
         'Joselu': 'Real Madrid',
         'Ayoze Pérez': 'Real Betis',
         'Bryan Gil': 'Sevilla',
+        'Pau Cubarsí': 'Barcelona'
     },
     
     'Argentina': {
@@ -59,6 +60,8 @@ rosters_2026 = {
         'Alejandro Garnacho': 'Manchester United',
         'Thiago Almada': 'Botafogo',
         'Valentín Carboni': 'Monza',
+        'Franco Mastantuono': 'Real Madrid', # 18yo sensation, moved from River Plate.
+        'Nico Paz': 'Como/Argentina',
     },
     
     'England': {
@@ -135,6 +138,7 @@ rosters_2026 = {
         'Chris Führich': 'VfB Stuttgart',
         'Emre Can': 'Borussia Dortmund',
         'Julian Brandt': 'Borussia Dortmund',
+        'Lennart Karl': 'Bayern Munich'
     },
     
     'Brazil': {
@@ -161,6 +165,8 @@ rosters_2026 = {
         'Pedro': 'Flamengo',
         'Endrick': 'Real Madrid',
         'Savinho': 'Manchester City',
+        'Estêvão': 'Bayern Munich',         # Moved from Chelsea/Palmeiras. 
+        'Andrey Santos': 'Chelsea'
     },
     
     'Netherlands': {
@@ -266,4 +272,75 @@ rosters_2026 = {
         'Joško Šutalo': 'Hellas Verona',
         'Kristijan Jakić': 'Augsburg',
     },
+
+    'Uruguay': {
+        
+        'Sergio Rochet': 'Internacional',
+        'Federico Valverde': 'Real Madrid', 
+        'Darwin Núñez': 'Liverpool',
+        'Ronald Araújo': 'Barcelona',
+        'Manuel Ugarte': 'Manchester United',
+        'José María Giménez': 'Atlético Madrid',
+        'Mathías Olivera': 'Napoli',
+        'Facundo Pellistri': 'Panathinaikos',
+        'Nicolás de la Cruz': 'Flamengo',
+        'Nahitan Nández': 'Al-Qadsiah',
+        'Luciano Rodríguez': 'Bahia', # UPDATED: The 2026 breakout 'Lucho'.
+    },
+
+    'Italy': {
+        
+        'Gianluigi Donnarumma': 'Paris Saint-Germain',
+        'Alessandro Bastoni': 'Inter Milan',
+        'Riccardo Calafiori': 'Arsenal',
+        'Nicolò Barella': 'Inter Milan',
+        'Sandro Tonali': 'Newcastle United',
+        'Mateo Retegui': 'Atalanta',
+        'Federico Chiesa': 'Liverpool',
+        'Daniel Maldini': 'Monza', 
+        'Destiny Udogie': 'Tottenham Hotspur',
+        'Gianluca Scamacca': 'Atalanta',
+        'Giorgio Scalvini': 'Atalanta',
+    },
+
+    'Mexico': {
+        
+        'Luis Malagón': 'Club América',
+        'Edson Álvarez': 'West Ham United',
+        'Santiago Giménez': 'AC Milan', 
+        'Hirving Lozano': 'San Diego FC', 
+        'Raúl Jiménez': 'Fulham',
+        'Gilberto Mora': 'Feyenoord', # UPDATED: Moved to Europe Jan 2026.
+        'Johan Vásquez': 'Genoa',
+        'Jorge Sánchez': 'Cruz Azul',
+        'César Montes': 'Lokomotiv Moscow',
+    },
+
+    'Belgium': {
+        
+        'Thibaut Courtois': 'Real Madrid', 
+        'Kevin De Bruyne': 'Napoli', 
+        'Jérémy Doku': 'Manchester City',
+        'Amadou Onana': 'Aston Villa',
+        'Loïs Openda': 'Juventus', 
+        'Charles De Ketelaere': 'Atalanta',
+        'Youri Tielemans': 'Aston Villa', 
+        'Arthur Theate': 'Eintracht Frankfurt',
+        'Maxim De Cuyper': 'Club Brugge',
+    },
+
+    'Japan': {
+        
+        'Zion Suzuki': 'Parma',
+        'Wataru Endo': 'Liverpool',
+        'Takefusa Kubo': 'Real Sociedad',
+        'Kaoru Mitoma': 'Brighton',
+        'Ko Itakura': 'Borussia Mönchengladbach',
+        'Hiroki Ito': 'Bayern Munich',
+        'Ritsu Doan': 'SC Freiburg',
+        'Ayase Ueda': 'Feyenoord',
+        'Takehiro Tomiyasu': 'Arsenal',
+        'Daichi Kamada': 'Crystal Palace',
+        'Keito Nakamura': 'Reims',
+    }
 }
