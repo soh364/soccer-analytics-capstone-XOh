@@ -12,6 +12,9 @@ from tournament_compression import (
     analyze_archetype_distribution_shift
 )
 
+from rosters_2026 import rosters_2026
+from tournament_progression import get_progression_df, wc_2022, euro_2024, copa_2024
+
 __version__ = "0.1.0"
 
 __all__ = [
@@ -21,4 +24,9 @@ __all__ = [
     'assign_to_archetypes',
     'calculate_cmi',
     'analyze_archetype_distribution_shift',
+    'rosters_2026',
+    'get_progression_df',
+    'wc_2022',
+    'euro_2024',
+    'copa_2024'
 ]

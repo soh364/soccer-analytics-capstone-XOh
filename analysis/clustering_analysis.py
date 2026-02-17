@@ -19,6 +19,7 @@ from sklearn.metrics import (
 from sklearn.mixture import GaussianMixture
 from scipy.cluster.hierarchy import fcluster
 from itertools import permutations
+from IPython.display import display, HTML
 
 
 class TacticalClustering:
@@ -161,6 +162,7 @@ class TacticalClustering:
         
         return validation
     
+    
     def run_pca(self, n_components=2):
         """
         Run PCA for visualization.
@@ -241,39 +243,204 @@ class TacticalClustering:
         
         return characterization
     
+    def print_k_comparison(self, k_range=range(2, 9)):
+        """Display k-selection metrics as a styled HTML table with highlighted optimal k"""
+        from IPython.display import display, HTML
+        
+        results = self.optimize_k(k_range)
+        
+        # Find optimal k for each metric
+        best_sil = results.loc[results['silhouette'].idxmax(), 'k']
+        best_ch = results.loc[results['calinski_harabasz'].idxmax(), 'k']
+        best_db = results.loc[results['davies_bouldin'].idxmin(), 'k']
+        
+        rows_html = ""
+        for _, row in results.iterrows():
+            k = int(row['k'])
+            
+            # Highlight cells that are optimal
+            def cell(val, fmt, is_best):
+                bg = "background:#e8f5e9;" if is_best else ""
+                icon = " ✓" if is_best else ""
+                return f'<td class="value" style="{bg}">{val:{fmt}}{icon}</td>'
+            
+            rows_html += f"""<tr>
+                <td class="metric">{k}</td>
+                <td class="value">{row['inertia']:.0f}</td>
+                {cell(row['silhouette'], '.3f', k == best_sil)}
+                {cell(row['calinski_harabasz'], '.2f', k == best_ch)}
+                {cell(row['davies_bouldin'], '.3f', k == best_db)}
+            </tr>"""
+        
+        html = f"""
+        <style>
+            .kt {{ border-collapse:collapse; font-family:-apple-system,sans-serif; font-size:13px; }}
+            .kt th {{ background:#1a1a2e; color:white; padding:8px 14px; text-align:left; font-weight:600; }}
+            .kt td {{ padding:7px 14px; border-bottom:1px solid #e0e0e0; }}
+            .kt tr:hover {{ background:#f5f5f5; }}
+            .kt .metric {{ font-weight:700; color:#1a1a2e; text-align:center; }}
+            .kt .value {{ font-family:'SF Mono',monospace; font-weight:600; color:#2d6a4f; }}
+            .kt .dir {{ font-size:10px; color:#999; font-weight:400; }}
+        </style>
+        <h4 style="font-family:-apple-system,sans-serif; color:#1a1a2e; margin-bottom:8px;">
+            K-Selection: Cluster Quality Across k={int(k_range[0])}–{int(k_range[-1])}
+        </h4>
+        <table class="kt">
+            <tr>
+                <th>k</th>
+                <th>Inertia <span class="dir">↓</span></th>
+                <th>Silhouette <span class="dir">↑</span></th>
+                <th>Calinski-Harabasz <span class="dir">↑</span></th>
+                <th>Davies-Bouldin <span class="dir">↓</span></th>
+            </tr>
+            {rows_html}
+        </table>
+        <p style="font-family:-apple-system,sans-serif; font-size:11px; color:#888; margin-top:6px;">
+            ✓ = optimal value for that metric. Arrows indicate preferred direction.
+        </p>
+        """
+        
+        display(HTML(html))
+        return results
+    
     def print_validation_summary(self, validation):
-        """Print formatted validation results"""
-        print("="*70)
-        print("CLUSTER VALIDATION METRICS")
-        print("="*70)
+            """Print formatted validation results as a clean table"""
+            from IPython.display import display, HTML
+            
+            # Main metrics table
+            rows = [
+                ("Silhouette Score", f"{validation['silhouette_avg']:.3f}", "-1 to +1 (higher = better)"),
+                ("Calinski-Harabasz Index", f"{validation['calinski_harabasz']:.2f}", "Higher = better-defined"),
+                ("Davies-Bouldin Index", f"{validation['davies_bouldin']:.3f}", "Lower = better (0 is perfect)"),
+                ("Variance Explained", f"{validation['variance_explained']:.1%}", "By k clusters"),
+                ("K-means vs GMM Agreement", f"{validation['kmeans_vs_gmm_ari']:.3f}", "ARI: 1.0 = perfect agreement"),
+            ]
+            
+            if validation.get('inertia'):
+                rows.insert(3, ("Inertia", f"{validation['inertia']:.2f}", "Within-cluster sum of squares"))
+            
+            if validation.get('kmeans_vs_hierarchical_ari'):
+                rows.append(("K-means vs Hierarchical", f"{validation['kmeans_vs_hierarchical_ari']:.3f}", "ARI: 1.0 = perfect agreement"))
+            
+            html = """
+            <style>
+                .val-table { border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 13px; width: 100%; }
+                .val-table th { background: #1a1a2e; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
+                .val-table td { padding: 8px 14px; border-bottom: 1px solid #e0e0e0; }
+                .val-table tr:hover { background: #f5f5f5; }
+                .val-table .metric { font-weight: 600; color: #1a1a2e; }
+                .val-table .value { font-family: 'SF Mono', monospace; font-size: 14px; font-weight: 700; color: #2d6a4f; }
+                .val-table .note { color: #666; font-size: 11px; }
+                .sil-table { border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 13px; margin-top: 12px; }
+                .sil-table th { background: #1a1a2e; color: white; padding: 8px 14px; text-align: left; }
+                .sil-table td { padding: 6px 14px; border-bottom: 1px solid #e0e0e0; font-family: 'SF Mono', monospace; }
+            </style>
+            <h4 style="font-family: -apple-system, sans-serif; color: #1a1a2e; margin-bottom: 8px;">Cluster Validation Summary</h4>
+            <table class="val-table">
+                <tr><th>Metric</th><th>Value</th><th>Interpretation</th></tr>
+            """
+            
+            for metric, value, note in rows:
+                html += f'<tr><td class="metric">{metric}</td><td class="value">{value}</td><td class="note">{note}</td></tr>'
+            
+            html += "</table>"
+            
+            # Silhouette by cluster
+            html += """
+            <h4 style="font-family: -apple-system, sans-serif; color: #1a1a2e; margin-top: 16px; margin-bottom: 8px;">Silhouette Score by Cluster</h4>
+            <table class="sil-table">
+                <tr><th>Cluster</th><th>Silhouette</th><th>Cohesion</th></tr>
+            """
+            
+            for cluster_id, sil in validation['silhouette_by_cluster'].items():
+                bar_width = int(sil * 300)
+                color = '#2d6a4f' if sil > 0.25 else '#e76f51' if sil > 0.15 else '#d62828'
+                bar = f'<div style="background:{color}; width:{bar_width}px; height:14px; border-radius:3px; display:inline-block;"></div>'
+                html += f'<tr><td style="font-weight:600;">Cluster {cluster_id}</td><td>{sil:.3f}</td><td>{bar}</td></tr>'
+            
+            html += "</table>"
+            
+            display(HTML(html))
+
         
-        print(f"\n1. Silhouette Score: {validation['silhouette_avg']:.3f}")
-        print("   Range: -1 (worst) to +1 (best)")
-        if validation['silhouette_avg'] > 0.5:
-            print("   → Reasonable structure")
-        elif validation['silhouette_avg'] > 0.25:
-            print("   → Weak but acceptable structure")
-        else:
-            print("   → No substantial structure")
-        
-        print(f"\n2. Calinski-Harabasz Index: {validation['calinski_harabasz']:.2f}")
-        print("   Higher = better-defined clusters")
-        
-        print(f"\n3. Davies-Bouldin Index: {validation['davies_bouldin']:.3f}")
-        print("   Lower = better separation (0 is perfect)")
-        
-        if validation['inertia']:
-            print(f"\n4. Inertia: {validation['inertia']:.2f}")
-        
-        print(f"\n5. Variance Explained: {validation['variance_explained']:.1%}")
-        
-        print("\n6. Silhouette by Cluster:")
-        for cluster_id, sil in validation['silhouette_by_cluster'].items():
-            print(f"   Cluster {cluster_id}: {sil:.3f}")
-        
-        print(f"\n7. K-means vs GMM Agreement (ARI): {validation['kmeans_vs_gmm_ari']:.3f}")
-        
-        if 'kmeans_vs_hierarchical_ari' in validation:
-            print(f"\n8. K-means vs Hierarchical Agreement (ARI): {validation['kmeans_vs_hierarchical_ari']:.3f}")
-            if validation['kmeans_vs_hierarchical_ari'] < 0.3:
-                print("   → Low agreement reflects continuous tactical space")
+
+    def print_archetype_summary(self, characterization, total_teams=None):
+            """Display archetype characterization as styled HTML cards"""
+            from IPython.display import display, HTML
+            
+            if total_teams is None:
+                total_teams = sum(c['size'] for c in characterization.values())
+            
+            # Archetype colors — use these consistently across all visuals
+            colors = {0: '#2d6a4f', 1: '#e76f51', 2: '#457b9d'}
+            
+            cards_html = ""
+            for cluster_id, info in characterization.items():
+                color = colors.get(cluster_id, '#666')
+                pct = info['size'] / total_teams * 100
+                
+                # Defining traits (top 3 high)
+                high_rows = ""
+                for dim, dev in info['high_characteristics']:
+                    label = dim.replace('_', ' ').title()
+                    high_rows += f'<tr><td class="arrow up">↑</td><td class="dim">{label}</td><td class="dev">{dev:+.2f} std</td></tr>'
+                
+                # Trade-offs (top 3 low)
+                low_rows = ""
+                for dim, dev in info['low_characteristics']:
+                    if dev < 0:
+                        label = dim.replace('_', ' ').title()
+                        low_rows += f'<tr><td class="arrow down">↓</td><td class="dim">{label}</td><td class="dev">{dev:+.2f} std</td></tr>'
+                
+                # Representative teams
+                teams = ", ".join(info['representative_teams'][:5])
+                
+                cards_html += f"""
+                <div class="arc-card">
+                    <div class="arc-header" style="background:{color};">
+                        <span class="arc-name">{info['name']}</span>
+                        <span class="arc-count">n={info['size']} ({pct:.1f}%)</span>
+                    </div>
+                    <div class="arc-body">
+                        <div class="arc-section">
+                            <div class="arc-label">Defining Traits</div>
+                            <table class="arc-traits">{high_rows}</table>
+                        </div>
+                        <div class="arc-section">
+                            <div class="arc-label">Trade-offs</div>
+                            <table class="arc-traits">{low_rows}</table>
+                        </div>
+                        <div class="arc-section">
+                            <div class="arc-label">Representative Teams</div>
+                            <div class="arc-teams">{teams}</div>
+                        </div>
+                    </div>
+                </div>
+                """
+            
+            html = f"""
+            <style>
+                .arc-wrap {{ display:flex; gap:16px; flex-wrap:wrap; }}
+                .arc-card {{ flex:1; min-width:220px; max-width:340px; border:1px solid #e0e0e0; border-radius:8px; overflow:hidden; font-family:-apple-system,sans-serif; }}
+                .arc-header {{ padding:10px 14px; display:flex; justify-content:space-between; align-items:center; }}
+                .arc-name {{ color:white; font-weight:700; font-size:13px; }}
+                .arc-count {{ color:rgba(255,255,255,0.8); font-size:11px; font-family:'SF Mono',monospace; }}
+                .arc-body {{ padding:12px 14px; }}
+                .arc-section {{ margin-bottom:10px; }}
+                .arc-label {{ font-size:10px; font-weight:700; color:#999; text-transform:uppercase; letter-spacing:0.5px; margin-bottom:4px; }}
+                .arc-traits {{ border-collapse:collapse; font-size:12px; }}
+                .arc-traits td {{ padding:2px 6px 2px 0; }}
+                .arc-traits .arrow {{ font-size:13px; font-weight:700; }}
+                .arc-traits .up {{ color:#2d6a4f; }}
+                .arc-traits .down {{ color:#d62828; }}
+                .arc-traits .dim {{ color:#1a1a2e; font-weight:500; }}
+                .arc-traits .dev {{ font-family:'SF Mono',monospace; font-size:11px; color:#555; }}
+                .arc-teams {{ font-size:11px; color:#555; line-height:1.5; }}
+            </style>
+            <h4 style="font-family:-apple-system,sans-serif; color:#1a1a2e; margin-bottom:12px;">Archetype Profiles</h4>
+            <div class="arc-wrap">
+                {cards_html}
+            </div>
+            """
+            
+            display(HTML(html))
