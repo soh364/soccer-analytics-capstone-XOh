@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 from sklearn.preprocessing import StandardScaler
 from scipy.spatial.distance import euclidean
+import matplotlib.pyplot as plt
 
 
 def assign_to_archetypes(tournament_profiles, baseline_centers, dimensions):
@@ -149,3 +150,144 @@ def calculate_archetype_success(tournament_profiles, progression_data, archetype
     success_stats = success_stats.reset_index()
     
     return success_stats
+
+
+def analyze_archetype_shift(baseline_df, tournament_df, archetype_names,
+                            baseline_label='Club 2015/16', 
+                            tournament_label='Tournament 2022-24'):
+    """
+    Calculate and display archetype distribution shift between club and tournament.
+    
+    Args:
+        baseline_df: Club profiles with 'cluster' or 'assigned_archetype' column
+        tournament_df: Tournament profiles with 'assigned_archetype' column
+        archetype_names: dict mapping cluster_id to name
+        baseline_label: Label for baseline data
+        tournament_label: Label for tournament data
+    
+    Returns:
+        shift_df: DataFrame with shift analysis
+    """
+    # Determine column names
+    baseline_col = 'cluster' if 'cluster' in baseline_df.columns else 'assigned_archetype'
+    tournament_col = 'assigned_archetype'
+    
+    # Calculate distributions
+    baseline_counts = baseline_df[baseline_col].value_counts().sort_index()
+    tournament_counts = tournament_df[tournament_col].value_counts().sort_index()
+    
+    baseline_pct = baseline_counts / len(baseline_df) * 100
+    tournament_pct = tournament_counts / len(tournament_df) * 100
+    
+    # Build shift dataframe
+    rows = []
+    for cid in sorted(archetype_names.keys()):
+        b_pct = baseline_pct.get(cid, 0)
+        t_pct = tournament_pct.get(cid, 0)
+        rows.append({
+            'archetype_id': cid,
+            'archetype': archetype_names[cid],
+            'baseline_pct': b_pct,
+            'tournament_pct': t_pct,
+            'shift': t_pct - b_pct
+        })
+    
+    shift_df = pd.DataFrame(rows)
+    
+    return shift_df
+
+
+def plot_archetype_shift(shift_df, baseline_label='Club 2015/16',
+                         tournament_label='Tournament 2022-24', figsize=(9, 5)):
+    """
+    Grouped bar chart of archetype distribution shift.
+    
+    Args:
+        shift_df: DataFrame from analyze_archetype_shift
+        baseline_label: Label for baseline bars
+        tournament_label: Label for tournament bars
+    
+    Returns:
+        fig, ax
+    """
+    fig, ax = plt.subplots(figsize=figsize)
+    
+    x = np.arange(len(shift_df))
+    width = 0.35
+    
+    bars1 = ax.bar(x - width/2, shift_df['baseline_pct'], width,
+                   label=baseline_label, color='#2E86AB', edgecolor='white', linewidth=0.5)
+    bars2 = ax.bar(x + width/2, shift_df['tournament_pct'], width,
+                   label=tournament_label, color='#F18F01', edgecolor='white', linewidth=0.5)
+    
+    # Value labels
+    for bar in bars1:
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
+                f'{bar.get_height():.1f}%', ha='center', va='bottom', fontsize=9, color='#333')
+    for bar in bars2:
+        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
+                f'{bar.get_height():.1f}%', ha='center', va='bottom', fontsize=9, color='#333')
+    
+    ax.set_xticks(x)
+    ax.set_xticklabels(shift_df['archetype'], fontsize=10)
+    ax.set_ylabel('Percentage of Teams (%)', fontsize=10)
+    ax.set_title('Archetype Distribution: Club vs Tournament', fontsize=13, weight='bold')
+    ax.legend(fontsize=10, framealpha=0.9, edgecolor='#ddd')
+    ax.set_ylim(0, max(shift_df[['baseline_pct', 'tournament_pct']].max()) * 1.15)
+    ax.tick_params(axis='both', labelsize=9)
+    ax.grid(axis='y', alpha=0.12)
+    ax.set_axisbelow(True)
+    
+    plt.tight_layout()
+    return fig, ax
+
+
+def print_archetype_shift_table(shift_df):
+    """
+    Display archetype shift as a styled HTML table.
+    
+    Args:
+        shift_df: DataFrame from analyze_archetype_shift
+    """
+    from IPython.display import display, HTML
+    
+    rows_html = ""
+    for _, row in shift_df.iterrows():
+        shift = row['shift']
+        if shift > 10:
+            color, arrow = '#d62828', '↑↑'
+        elif shift > 0:
+            color, arrow = '#e76f51', '↑'
+        elif shift > -10:
+            color, arrow = '#2d6a4f', '↓'
+        else:
+            color, arrow = '#1a6b3c', '↓↓'
+        
+        bar_width = min(int(abs(shift) * 4), 200)
+        bar_color = '#d62828' if shift > 0 else '#2d6a4f'
+        bar = f'<div style="background:{bar_color};width:{bar_width}px;height:14px;border-radius:3px;display:inline-block;"></div>'
+        
+        rows_html += f"""<tr>
+            <td style="font-weight:600;color:#1a1a2e;">{row['archetype']}</td>
+            <td style="font-family:'SF Mono',monospace;font-weight:600;">{row['baseline_pct']:.1f}%</td>
+            <td style="font-family:'SF Mono',monospace;font-weight:600;">{row['tournament_pct']:.1f}%</td>
+            <td style="font-family:'SF Mono',monospace;font-weight:700;color:{color};">{arrow} {shift:+.1f}pp</td>
+            <td>{bar}</td>
+        </tr>"""
+    
+    html = f"""
+    <style>
+        .shift {{ border-collapse:collapse; font-family:-apple-system,sans-serif; font-size:13px; }}
+        .shift th {{ background:#1a1a2e; color:white; padding:8px 14px; text-align:left; font-weight:600; }}
+        .shift td {{ padding:6px 14px; border-bottom:1px solid #e0e0e0; }}
+        .shift tr:hover {{ background:#f5f5f5; }}
+    </style>
+    <h4 style="font-family:-apple-system,sans-serif;color:#1a1a2e;margin-bottom:8px;">
+        Archetype Distribution Shift
+    </h4>
+    <table class="shift">
+        <tr><th>Archetype</th><th>Club</th><th>Tournament</th><th>Shift</th><th></th></tr>
+        {rows_html}
+    </table>
+    """
+    display(HTML(html))
