@@ -1,292 +1,172 @@
-"""
-Tournament compression analysis: CMI calculation and archetype success.
-"""
+# tournament_progression.py
 
 import pandas as pd
 import numpy as np
-from sklearn.preprocessing import StandardScaler
-from scipy.spatial.distance import euclidean
-import matplotlib.pyplot as plt
 
-
-def assign_to_archetypes(tournament_profiles, baseline_centers, dimensions):
+def get_tournament_results():
     """
-    Assign tournament teams to nearest baseline archetype.
+    Tournament progression data: best result per team across 2022-24 tournaments.
     
-    Args:
-        tournament_profiles: DataFrame with tournament team profiles
-        baseline_centers: DataFrame with baseline cluster centers
-        dimensions: List of dimension names
-        
+    Scoring:
+        0 = Group stage exit
+        1 = Round of 16
+        2 = Quarter-final
+        3 = Semi-final
+        4 = Final (runner-up)
+        5 = Winner
+    
     Returns:
-        tournament_profiles with 'assigned_archetype' and 'distance_to_center'
+        dict of dicts: {tournament_name: {team: score}}
     """
-    tournament_profiles = tournament_profiles.copy()
+    wc_2022 = {
+        'Argentina': 5, 'France': 4, 'Croatia': 3, 'Morocco': 3,
+        'Netherlands': 2, 'England': 2, 'Brazil': 2, 'Portugal': 2,
+        'Japan': 1, 'Australia': 1, 'South Korea': 1, 'United States': 1,
+        'Poland': 1, 'Senegal': 1, 'Switzerland': 1, 'Spain': 1,
+        'Germany': 0, 'Belgium': 0, 'Canada': 0, 'Mexico': 0,
+        'Uruguay': 0, 'Ghana': 0, 'Cameroon': 0, 'Serbia': 0,
+        'Qatar': 0, 'Ecuador': 0, 'Saudi Arabia': 0, 'Tunisia': 0,
+        'Costa Rica': 0, 'Iran': 0, 'Wales': 0, 'Denmark': 0
+    }
     
-    assignments = []
-    distances = []
+    euro_2024 = {
+        'Spain': 5, 'England': 4, 'France': 3, 'Netherlands': 3,
+        'Germany': 2, 'Portugal': 2, 'Switzerland': 2, 'Turkey': 2,
+        'Austria': 1, 'Belgium': 1, 'Denmark': 1, 'Georgia': 1,
+        'Italy': 1, 'Romania': 1, 'Slovakia': 1, 'Slovenia': 1,
+        'Albania': 0, 'Croatia': 0, 'Czech Republic': 0, 'Hungary': 0,
+        'Poland': 0, 'Scotland': 0, 'Serbia': 0, 'Ukraine': 0
+    }
     
-    for idx, team_profile in tournament_profiles.iterrows():
-        team_vector = team_profile[dimensions].values
-        
-        min_distance = float('inf')
-        assigned_cluster = None
-        
-        for cluster_id, center in baseline_centers.iterrows():
-            center_vector = center[dimensions].values
-            dist = euclidean(team_vector, center_vector)
-            
-            if dist < min_distance:
-                min_distance = dist
-                assigned_cluster = cluster_id
-        
-        assignments.append(assigned_cluster)
-        distances.append(min_distance)
+    copa_2024 = {
+        'Argentina': 5, 'Colombia': 4, 'Canada': 3, 'Uruguay': 3,
+        'Venezuela': 2, 'Ecuador': 2, 'Panama': 2, 'Brazil': 2,
+        'Mexico': 0, 'United States': 0, 'Bolivia': 0, 'Chile': 0,
+        'Costa Rica': 0, 'Jamaica': 0, 'Paraguay': 0, 'Peru': 0
+    }
     
-    tournament_profiles['assigned_archetype'] = assignments
-    tournament_profiles['distance_to_center'] = distances
-    
-    return tournament_profiles
+    return {
+        'World Cup 2022': wc_2022,
+        'Euro 2024': euro_2024,
+        'Copa América 2024': copa_2024
+    }
 
 
-def calculate_cmi(baseline_profiles, tournament_profiles, dimensions):
+def get_progression_df():
     """
-    Calculate Complexity Maintenance Index (CMI) for each dimension.
+    Build progression DataFrame with best result per team across all tournaments.
     
-    CMI = tournament_variance / baseline_variance
-    Lower CMI = more compression
-    
-    Args:
-        baseline_profiles: DataFrame with baseline team profiles
-        tournament_profiles: DataFrame with tournament team profiles
-        dimensions: List of dimension names
-        
     Returns:
-        DataFrame with CMI for each dimension
+        DataFrame with columns: team, progression_score, best_tournament
     """
-    cmi_results = []
+    tournaments = get_tournament_results()
     
-    for dim in dimensions:
-        baseline_var = baseline_profiles[dim].var()
-        baseline_std = baseline_profiles[dim].std()
-        baseline_mean = baseline_profiles[dim].mean()
-        
-        tournament_var = tournament_profiles[dim].var()
-        tournament_std = tournament_profiles[dim].std()
-        tournament_mean = tournament_profiles[dim].mean()
-        
-        cmi = tournament_std / baseline_std if baseline_std > 0 else 1.0
-        compression_pct = (1 - cmi) * 100
-        
-        cmi_results.append({
-            'dimension': dim,
-            'baseline_mean': baseline_mean,
-            'baseline_std': baseline_std,
-            'tournament_mean': tournament_mean,
-            'tournament_std': tournament_std,
-            'cmi': cmi,
-            'compression_pct': compression_pct
-        })
+    # Collect all team scores
+    team_scores = {}
+    team_best_tournament = {}
     
-    cmi_df = pd.DataFrame(cmi_results)
+    for tournament_name, results in tournaments.items():
+        for team, score in results.items():
+            if team not in team_scores or score > team_scores[team]:
+                team_scores[team] = score
+                team_best_tournament[team] = tournament_name
     
-    # Overall CMI
-    overall_cmi = cmi_df['cmi'].mean()
-    overall_compression = (1 - overall_cmi) * 100
+    df = pd.DataFrame([
+        {
+            'team': team,
+            'progression_score': score,
+            'best_tournament': team_best_tournament[team]
+        }
+        for team, score in team_scores.items()
+    ])
     
-    print(f"\nOverall CMI: {overall_cmi:.3f}")
-    print(f"Overall Compression: {overall_compression:.1f}%")
-    
-    return cmi_df
+    return df.sort_values('progression_score', ascending=False).reset_index(drop=True)
 
 
-def analyze_archetype_distribution_shift(baseline_profiles, tournament_profiles, archetype_names):
+def merge_progression(tournament_pd, archetype_names=None):
     """
-    Compare archetype distribution between baseline and tournament.
+    Merge progression scores with tournament profiles.
     
     Args:
-        baseline_profiles: With 'cluster' column
-        tournament_profiles: With 'assigned_archetype' column
-        archetype_names: Dict mapping cluster_id to name
-        
+        tournament_pd: Tournament profiles DataFrame with 'team' column
+        archetype_names: Optional dict mapping cluster_id to name
+    
     Returns:
-        DataFrame comparing distributions
+        DataFrame with progression data merged in
     """
-    baseline_dist = baseline_profiles['cluster'].value_counts(normalize=True).sort_index() * 100
-    tournament_dist = tournament_profiles['assigned_archetype'].value_counts(normalize=True).sort_index() * 100
+    progression_df = get_progression_df()
     
-    comparison = pd.DataFrame({
-        'Archetype': [archetype_names[i] for i in baseline_dist.index],
-        'Baseline_%': baseline_dist.values,
-        'Tournament_%': tournament_dist.values
-    })
+    merged = tournament_pd.merge(progression_df, on='team', how='left')
     
-    comparison['Shift'] = comparison['Tournament_%'] - comparison['Baseline_%']
+    # Fill missing with 0
+    missing = merged[merged['progression_score'].isna()]['team'].tolist()
+    if missing:
+        print(f"  {len(missing)} teams missing scores (filling with 0): {', '.join(missing)}")
+    merged['progression_score'] = merged['progression_score'].fillna(0)
     
-    return comparison
+    # Add stage labels
+    stage_map = {0: 'Group Stage', 1: 'Round of 16', 2: 'Quarter-final',
+                 3: 'Semi-final', 4: 'Final', 5: 'Winner'}
+    merged['best_stage'] = merged['progression_score'].map(stage_map)
+    
+    return merged
 
 
-def calculate_archetype_success(tournament_profiles, progression_data, archetype_col='assigned_archetype'):
+def print_progression_summary(merged_df, archetype_names):
     """
-    Calculate success metrics by archetype.
+    Display archetype success summary as styled HTML table.
     
     Args:
-        tournament_profiles: With archetype assignments
-        progression_data: DataFrame with team progression scores
-        archetype_col: Column name for archetype assignment
-        
-    Returns:
-        DataFrame with success metrics by archetype
-    """
-    # Merge profiles with progression
-    merged = tournament_profiles.merge(progression_data, on='team', how='left')
-    
-    success_stats = merged.groupby(archetype_col).agg({
-        'progression_score': ['mean', 'std', 'count'],
-        'team': 'count'
-    }).round(2)
-    
-    success_stats.columns = ['avg_progression', 'std_progression', 'count', 'n_teams']
-    success_stats = success_stats.reset_index()
-    
-    return success_stats
-
-
-def analyze_archetype_shift(baseline_df, tournament_df, archetype_names,
-                            baseline_label='Club 2015/16', 
-                            tournament_label='Tournament 2022-24'):
-    """
-    Calculate and display archetype distribution shift between club and tournament.
-    
-    Args:
-        baseline_df: Club profiles with 'cluster' or 'assigned_archetype' column
-        tournament_df: Tournament profiles with 'assigned_archetype' column
+        merged_df: DataFrame from merge_progression with 'assigned_archetype', 'progression_score'
         archetype_names: dict mapping cluster_id to name
-        baseline_label: Label for baseline data
-        tournament_label: Label for tournament data
-    
-    Returns:
-        shift_df: DataFrame with shift analysis
-    """
-    # Determine column names
-    baseline_col = 'cluster' if 'cluster' in baseline_df.columns else 'assigned_archetype'
-    tournament_col = 'assigned_archetype'
-    
-    # Calculate distributions
-    baseline_counts = baseline_df[baseline_col].value_counts().sort_index()
-    tournament_counts = tournament_df[tournament_col].value_counts().sort_index()
-    
-    baseline_pct = baseline_counts / len(baseline_df) * 100
-    tournament_pct = tournament_counts / len(tournament_df) * 100
-    
-    # Build shift dataframe
-    rows = []
-    for cid in sorted(archetype_names.keys()):
-        b_pct = baseline_pct.get(cid, 0)
-        t_pct = tournament_pct.get(cid, 0)
-        rows.append({
-            'archetype_id': cid,
-            'archetype': archetype_names[cid],
-            'baseline_pct': b_pct,
-            'tournament_pct': t_pct,
-            'shift': t_pct - b_pct
-        })
-    
-    shift_df = pd.DataFrame(rows)
-    
-    return shift_df
-
-
-def plot_archetype_shift(shift_df, baseline_label='Club 2015/16',
-                         tournament_label='Tournament 2022-24', figsize=(9, 5)):
-    """
-    Grouped bar chart of archetype distribution shift.
-    
-    Args:
-        shift_df: DataFrame from analyze_archetype_shift
-        baseline_label: Label for baseline bars
-        tournament_label: Label for tournament bars
-    
-    Returns:
-        fig, ax
-    """
-    fig, ax = plt.subplots(figsize=figsize)
-    
-    x = np.arange(len(shift_df))
-    width = 0.35
-    
-    bars1 = ax.bar(x - width/2, shift_df['baseline_pct'], width,
-                   label=baseline_label, color='#2E86AB', edgecolor='white', linewidth=0.5)
-    bars2 = ax.bar(x + width/2, shift_df['tournament_pct'], width,
-                   label=tournament_label, color='#F18F01', edgecolor='white', linewidth=0.5)
-    
-    # Value labels
-    for bar in bars1:
-        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
-                f'{bar.get_height():.1f}%', ha='center', va='bottom', fontsize=9, color='#333')
-    for bar in bars2:
-        ax.text(bar.get_x() + bar.get_width()/2, bar.get_height() + 1,
-                f'{bar.get_height():.1f}%', ha='center', va='bottom', fontsize=9, color='#333')
-    
-    ax.set_xticks(x)
-    ax.set_xticklabels(shift_df['archetype'], fontsize=10)
-    ax.set_ylabel('Percentage of Teams (%)', fontsize=10)
-    ax.set_title('Archetype Distribution: Club vs Tournament', fontsize=13, weight='bold')
-    ax.legend(fontsize=10, framealpha=0.9, edgecolor='#ddd')
-    ax.set_ylim(0, max(shift_df[['baseline_pct', 'tournament_pct']].max()) * 1.15)
-    ax.tick_params(axis='both', labelsize=9)
-    ax.grid(axis='y', alpha=0.12)
-    ax.set_axisbelow(True)
-    
-    plt.tight_layout()
-    return fig, ax
-
-
-def print_archetype_shift_table(shift_df):
-    """
-    Display archetype shift as a styled HTML table.
-    
-    Args:
-        shift_df: DataFrame from analyze_archetype_shift
     """
     from IPython.display import display, HTML
     
     rows_html = ""
-    for _, row in shift_df.iterrows():
-        shift = row['shift']
-        if shift > 10:
-            color, arrow = '#d62828', '↑↑'
-        elif shift > 0:
-            color, arrow = '#e76f51', '↑'
-        elif shift > -10:
-            color, arrow = '#2d6a4f', '↓'
-        else:
-            color, arrow = '#1a6b3c', '↓↓'
-        
-        bar_width = min(int(abs(shift) * 4), 200)
-        bar_color = '#d62828' if shift > 0 else '#2d6a4f'
-        bar = f'<div style="background:{bar_color};width:{bar_width}px;height:14px;border-radius:3px;display:inline-block;"></div>'
+    for cid in sorted(archetype_names.keys()):
+        mask = merged_df['assigned_archetype'] == cid
+        subset = merged_df[mask]
+        name = archetype_names[cid]
+        n = len(subset)
+        avg = subset['progression_score'].mean()
+        median = subset['progression_score'].median()
+        best_team = subset.loc[subset['progression_score'].idxmax()]
+        sf_plus = (subset['progression_score'] >= 3).sum()
+        sf_pct = sf_plus / n * 100 if n > 0 else 0
+        final_plus = (subset['progression_score'] >= 4).sum()
+        final_pct = final_plus / n * 100 if n > 0 else 0
         
         rows_html += f"""<tr>
-            <td style="font-weight:600;color:#1a1a2e;">{row['archetype']}</td>
-            <td style="font-family:'SF Mono',monospace;font-weight:600;">{row['baseline_pct']:.1f}%</td>
-            <td style="font-family:'SF Mono',monospace;font-weight:600;">{row['tournament_pct']:.1f}%</td>
-            <td style="font-family:'SF Mono',monospace;font-weight:700;color:{color};">{arrow} {shift:+.1f}pp</td>
-            <td>{bar}</td>
+            <td style="font-weight:600;color:#1a1a2e;">{name}</td>
+            <td style="font-family:'SF Mono',monospace;text-align:center;">{n}</td>
+            <td style="font-family:'SF Mono',monospace;font-weight:700;color:#2d6a4f;text-align:center;">{avg:.2f}</td>
+            <td style="font-family:'SF Mono',monospace;text-align:center;">{median:.1f}</td>
+            <td style="font-family:'SF Mono',monospace;text-align:center;">{sf_pct:.1f}%</td>
+            <td style="font-family:'SF Mono',monospace;text-align:center;">{final_pct:.1f}%</td>
+            <td style="font-size:12px;">{best_team['team']} ({best_team['best_stage']})</td>
         </tr>"""
     
     html = f"""
     <style>
-        .shift {{ border-collapse:collapse; font-family:-apple-system,sans-serif; font-size:13px; }}
-        .shift th {{ background:#1a1a2e; color:white; padding:8px 14px; text-align:left; font-weight:600; }}
-        .shift td {{ padding:6px 14px; border-bottom:1px solid #e0e0e0; }}
-        .shift tr:hover {{ background:#f5f5f5; }}
+        .prog {{ border-collapse:collapse; font-family:-apple-system,sans-serif; font-size:13px; }}
+        .prog th {{ background:#1a1a2e; color:white; padding:8px 14px; text-align:center; font-weight:600; }}
+        .prog th:first-child {{ text-align:left; }}
+        .prog td {{ padding:6px 14px; border-bottom:1px solid #e0e0e0; }}
+        .prog tr:hover {{ background:#f5f5f5; }}
     </style>
     <h4 style="font-family:-apple-system,sans-serif;color:#1a1a2e;margin-bottom:8px;">
-        Archetype Distribution Shift
+        Tournament Success by Archetype
     </h4>
-    <table class="shift">
-        <tr><th>Archetype</th><th>Club</th><th>Tournament</th><th>Shift</th><th></th></tr>
+    <table class="prog">
+        <tr>
+            <th style="text-align:left;">Archetype</th>
+            <th>Teams</th>
+            <th>Avg Progression</th>
+            <th>Median</th>
+            <th>Semi-final+</th>
+            <th>Final+</th>
+            <th style="text-align:left;">Best Result</th>
+        </tr>
         {rows_html}
     </table>
     """

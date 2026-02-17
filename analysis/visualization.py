@@ -513,3 +513,29 @@ def print_cmi_table(cmi_results):
     </table>
     """
     display(HTML(html))
+
+def plot_side_by_side(plot_func_left, plot_func_right, args_left, args_right,
+                      figsize=(16, 6), suptitle=None):
+    """
+    Combine any two plot functions side by side.
+    
+    Each plot function must accept an 'ax' keyword argument.
+    
+    Usage:
+        plot_side_by_side(
+            plot_success_by_archetype, plot_progression_by_round,
+            {'merged_df': df, 'archetype_names': names},
+            {'merged_df': df, 'archetype_names': names},
+            suptitle='Tournament Performance'
+        )
+    """
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
+    
+    plot_func_left(ax=ax1, **args_left)
+    plot_func_right(ax=ax2, **args_right)
+    
+    if suptitle:
+        fig.suptitle(suptitle, fontsize=14, weight='bold', y=1.02)
+    
+    plt.tight_layout()
+    return fig, (ax1, ax2)
