@@ -246,7 +246,21 @@ rosters_2026 = {
         'Johnny Cardoso': 'Real Betis',
         'Tanner Tessmann': 'Inter Milan',
     },
-    
+
+    'Uruguay': {
+        'Sergio Rochet': 'Internacional',
+        'Federico Valverde': 'Real Madrid', 
+        'Darwin Núñez': 'Liverpool',
+        'Ronald Araújo': 'Barcelona',
+        'Manuel Ugarte': 'Manchester United',
+        'José María Giménez': 'Atlético Madrid',
+        'Mathías Olivera': 'Napoli',
+        'Facundo Pellistri': 'Panathinaikos',
+        'Nicolás de la Cruz': 'Flamengo',
+        'Nahitan Nández': 'Al-Qadsiah',
+        'Luciano Rodríguez': 'Bahia', # UPDATED: The 2026 breakout 'Lucho'.
+    },
+
     'Croatia': {
         'Dominik Livaković': 'Fenerbahçe',
         'Joško Gvardiol': 'Manchester City',
@@ -272,24 +286,9 @@ rosters_2026 = {
         'Joško Šutalo': 'Hellas Verona',
         'Kristijan Jakić': 'Augsburg',
     },
-
-    'Uruguay': {
-        
-        'Sergio Rochet': 'Internacional',
-        'Federico Valverde': 'Real Madrid', 
-        'Darwin Núñez': 'Liverpool',
-        'Ronald Araújo': 'Barcelona',
-        'Manuel Ugarte': 'Manchester United',
-        'José María Giménez': 'Atlético Madrid',
-        'Mathías Olivera': 'Napoli',
-        'Facundo Pellistri': 'Panathinaikos',
-        'Nicolás de la Cruz': 'Flamengo',
-        'Nahitan Nández': 'Al-Qadsiah',
-        'Luciano Rodríguez': 'Bahia', # UPDATED: The 2026 breakout 'Lucho'.
-    },
+    
 
     'Italy': {
-        
         'Gianluigi Donnarumma': 'Paris Saint-Germain',
         'Alessandro Bastoni': 'Inter Milan',
         'Riccardo Calafiori': 'Arsenal',
@@ -304,7 +303,6 @@ rosters_2026 = {
     },
 
     'Mexico': {
-        
         'Luis Malagón': 'Club América',
         'Edson Álvarez': 'West Ham United',
         'Santiago Giménez': 'AC Milan', 
@@ -317,7 +315,6 @@ rosters_2026 = {
     },
 
     'Belgium': {
-        
         'Thibaut Courtois': 'Real Madrid', 
         'Kevin De Bruyne': 'Napoli', 
         'Jérémy Doku': 'Manchester City',
@@ -330,7 +327,6 @@ rosters_2026 = {
     },
 
     'Japan': {
-        
         'Zion Suzuki': 'Parma',
         'Wataru Endo': 'Liverpool',
         'Takefusa Kubo': 'Real Sociedad',
