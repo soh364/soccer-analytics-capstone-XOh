@@ -99,7 +99,7 @@ def print_prediction_table(predictions, archetype_names):
         
         # Mini distribution bar
         bar_parts = ""
-        arch_colors = {name_list[0]: '#2E86AB', name_list[1]: '#A23B72', name_list[2]: '#F18F01'}
+        arch_colors = {name_list[0]: '#4895C4', name_list[1]: '#A23B72', name_list[2]: '#F18F01'}  
         for name in name_list:
             pct = row[name + '_pct']
             if pct > 0:
@@ -434,3 +434,154 @@ def analyze_matchup(team_a, team_b, predictions, tri_results,
     </div>
     """
     display(HTML(html))
+
+# Add to wc_prediction.py
+
+def apply_compression(predictions, men_tournament_pd, recent_club_pd,
+                      cluster_centers, dimensions, archetype_names):
+    """
+    Adjust team predictions by applying known tournament compression rates.
+    
+    Uses dimension-level compression ratios (tournament std / club std)
+    to shift each team's predicted profile toward the tournament mean.
+    
+    Args:
+        predictions: dict from predict_team_archetypes
+        men_tournament_pd: tournament profiles (for tournament means)
+        recent_club_pd: same-era club profiles (for compression ratios)
+        cluster_centers: archetype centers
+        dimensions: list of D12 dimension names
+        archetype_names: dict of {cid: name}
+    
+    Returns:
+        DataFrame with pre and post compression archetype assignments
+    """
+    name_to_id = {v: k for k, v in archetype_names.items()}
+    
+    # Compression ratios per dimension
+    club_stds = recent_club_pd[dimensions].std()
+    tourn_stds = men_tournament_pd[dimensions].std()
+    compression_ratios = tourn_stds / club_stds  # < 1 means compression
+    
+    # Tournament means (what teams compress toward)
+    tourn_means = men_tournament_pd[dimensions].mean()
+    
+    results = []
+    
+    for team, pred in predictions.items():
+        # Build predicted club profile (weighted avg of archetype centers)
+        club_profile = np.zeros(len(dimensions))
+        for arch_name, pct in pred['archetype_distribution'].items():
+            cid = name_to_id[arch_name]
+            center = cluster_centers[cluster_centers['cluster'] == cid][dimensions].values[0]
+            club_profile += (pct / 100) * center
+        
+        # Apply compression: pull each dimension toward tournament mean
+        # compressed = tournament_mean + compression_ratio * (club_value - tournament_mean)
+        compressed_profile = np.zeros(len(dimensions))
+        for i, dim in enumerate(dimensions):
+            ratio = compression_ratios[dim]
+            compressed_profile[i] = tourn_means[dim] + ratio * (club_profile[i] - tourn_means[dim])
+        
+        # Assign compressed profile to nearest archetype
+        best_dist = np.inf
+        best_arch = None
+        for cid, name in archetype_names.items():
+            center = cluster_centers[cluster_centers['cluster'] == cid][dimensions].values[0]
+            dist = np.sqrt(((compressed_profile - center) ** 2).sum())
+            if dist < best_dist:
+                best_dist = dist
+                best_arch = name
+        
+        results.append({
+            'team': team,
+            'pre_compression': pred['predicted_archetype'],
+            'post_compression': best_arch,
+            'shifted': pred['predicted_archetype'] != best_arch,
+            'compression_distance': np.sqrt(((club_profile - compressed_profile) ** 2).sum()),
+            'confidence': pred['confidence']
+        })
+    
+    return pd.DataFrame(results)
+
+
+def print_compression_predictions(compression_df):
+    """Display pre vs post compression predictions."""
+    from IPython.display import display, HTML
+    
+    rows_html = ""
+    for _, row in compression_df.iterrows():
+        shifted = row['shifted']
+        arrow_color = '#d62828' if shifted else '#2d6a4f'
+        arrow = '→' if shifted else '='
+        shift_label = 'SHIFTED' if shifted else 'HELD'
+        
+        rows_html += f"""<tr>
+            <td style="font-weight:600;color:#1a1a2e;">{row['team']}</td>
+            <td style="font-family:'SF Mono',monospace;">{row['pre_compression']}</td>
+            <td style="text-align:center;font-weight:700;color:{arrow_color};font-size:16px;">{arrow}</td>
+            <td style="font-family:'SF Mono',monospace;">{row['post_compression']}</td>
+            <td style="font-family:'SF Mono',monospace;text-align:center;">{row['compression_distance']:.1f}</td>
+            <td style="font-weight:700;color:{arrow_color};text-align:center;font-size:11px;">{shift_label}</td>
+        </tr>"""
+    
+    html = f"""
+    <style>
+        .comp {{ border-collapse:collapse; font-family:-apple-system,sans-serif; font-size:13px; }}
+        .comp th {{ background:#1a1a2e; color:white; padding:8px 14px; text-align:left; font-weight:600; }}
+        .comp td {{ padding:6px 14px; border-bottom:1px solid #e0e0e0; }}
+        .comp tr:hover {{ background:#f5f5f5; }}
+    </style>
+    <h4 style="font-family:-apple-system,sans-serif;color:#1a1a2e;margin-bottom:4px;">
+        Compression-Adjusted Predictions: 2026 World Cup
+    </h4>
+    <p style="font-family:-apple-system,sans-serif;font-size:11px;color:#888;margin-top:0;">
+        Applying tournament compression rates to club-based predictions
+    </p>
+    <table class="comp">
+        <tr>
+            <th>Team</th>
+            <th>Club DNA</th>
+            <th></th>
+            <th>Tournament Predicted</th>
+            <th>Compression Distance</th>
+            <th>Status</th>
+        </tr>
+        {rows_html}
+    </table>
+    """
+    display(HTML(html))
+
+import random
+
+def calculate_match_probability(team_a, team_b):
+    """
+    Calculates the probability of Team A beating Team B.
+    Formula: P(A) = (TRI_A * Coherence_A) / [(TRI_A * Coherence_A) + (TRI_B * Coherence_B)]
+    """
+    # We use Coherence as a multiplier because in a 'Universal Press' 
+    # environment, stability is the primary driver of execution.
+    power_a = team_a['tri'] * (1 + team_a['coherence'])
+    power_b = team_b['tri'] * (1 + team_b['coherence'])
+    
+    prob_a = power_a / (power_a + power_b)
+    return prob_a
+
+def simulate_knockout(team_a_name, team_b_name, tri_results):
+    """
+    Simulates a single knockout match.
+    """
+    a_stats = tri_results[team_a_name]
+    b_stats = tri_results[team_b_name]
+    
+    prob_a = calculate_match_probability(a_stats, b_stats)
+    
+    # Random simulation based on the calculated probability
+    winner = team_a_name if random.random() < prob_a else team_b_name
+    
+    return {
+        "Matchup": f"{team_a_name} vs {team_b_name}",
+        f"{team_a_name}_Win_Prob": f"{round(prob_a * 100, 1)}%",
+        f"{team_b_name}_Win_Prob": f"{round((1 - prob_a) * 100, 1)}%",
+        "Predicted_Winner": winner
+    }

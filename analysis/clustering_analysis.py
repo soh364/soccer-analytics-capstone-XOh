@@ -22,6 +22,7 @@ from itertools import permutations
 from IPython.display import display, HTML
 
 
+
 class TacticalClustering:
     """Handle all clustering operations for tactical analysis"""
     
@@ -107,7 +108,7 @@ class TacticalClustering:
         
         return pd.DataFrame(results)
     
-    def validate_clusters(self, labels, linkage_matrix=None):
+    def validate_clusters(self, labels, linkage_matrix=None, random_state=42):
         """
         Calculate comprehensive validation metrics.
         
@@ -140,7 +141,7 @@ class TacticalClustering:
         validation['variance_explained'] = between_variance / total_variance
         
         # GMM comparison
-        gmm = GaussianMixture(n_components=len(np.unique(labels)), random_state=42)
+        gmm = GaussianMixture(n_components=len(np.unique(labels)), random_state=random_state)
         gmm_labels = gmm.fit_predict(self.scaled_data)
         validation['kmeans_vs_gmm_ari'] = adjusted_rand_score(labels, gmm_labels)
         
@@ -243,26 +244,49 @@ class TacticalClustering:
         
         return characterization
     
-    def print_k_comparison(self, k_range=range(2, 9)):
-        """Display k-selection metrics as a styled HTML table with highlighted optimal k"""
+    def print_k_comparison(self, k_range=range(2, 9), random_state=42):
+        """Display k-selection metrics with a dedicated GMM Agreement column"""
         from IPython.display import display, HTML
+        from sklearn.mixture import GaussianMixture
+        from sklearn.metrics import adjusted_rand_score
+        from sklearn.cluster import KMeans
+        import pandas as pd
         
+        # 1. Get the standard metrics (Inertia, Silhouette, etc.)
         results = self.optimize_k(k_range)
         
-        # Find optimal k for each metric
+        # 2. Calculate GMM ARI for each k
+        ari_scores = []
+        for k in k_range:
+            # FIX: changed n_components to n_clusters
+            km = KMeans(n_clusters=k, n_init=10, random_state=random_state)
+            km_labels = km.fit_predict(self.scaled_data)
+            
+            # GMM still uses n_components
+            gmm = GaussianMixture(n_components=k, random_state=random_state)
+            gmm_labels = gmm.fit_predict(self.scaled_data)
+            
+            # Measure agreement
+            ari = adjusted_rand_score(km_labels, gmm_labels)
+            ari_scores.append(ari)
+        
+        results['gmm_ari'] = ari_scores
+        
+        # 3. Identify optimal k for highlighting
         best_sil = results.loc[results['silhouette'].idxmax(), 'k']
         best_ch = results.loc[results['calinski_harabasz'].idxmax(), 'k']
         best_db = results.loc[results['davies_bouldin'].idxmin(), 'k']
+        best_ari = results.loc[results['gmm_ari'].idxmax(), 'k']
         
+        # 4. Generate Table Rows
         rows_html = ""
         for _, row in results.iterrows():
             k = int(row['k'])
             
-            # Highlight cells that are optimal
-            def cell(val, fmt, is_best):
+            def cell(val, fmt, is_best, color="#2d6a4f"):
                 bg = "background:#e8f5e9;" if is_best else ""
                 icon = " ✓" if is_best else ""
-                return f'<td class="value" style="{bg}">{val:{fmt}}{icon}</td>'
+                return f'<td class="value" style="{bg} color:{color};">{val:{fmt}}{icon}</td>'
             
             rows_html += f"""<tr>
                 <td class="metric">{k}</td>
@@ -270,39 +294,49 @@ class TacticalClustering:
                 {cell(row['silhouette'], '.3f', k == best_sil)}
                 {cell(row['calinski_harabasz'], '.2f', k == best_ch)}
                 {cell(row['davies_bouldin'], '.3f', k == best_db)}
+                {cell(row['gmm_ari'], '.3f', k == best_ari, color="#1a1a2e")}
             </tr>"""
         
+        # 5. Build Final HTML
         html = f"""
         <style>
-            .kt {{ border-collapse:collapse; font-family:-apple-system,sans-serif; font-size:13px; }}
-            .kt th {{ background:#1a1a2e; color:white; padding:8px 14px; text-align:left; font-weight:600; }}
-            .kt td {{ padding:7px 14px; border-bottom:1px solid #e0e0e0; }}
-            .kt tr:hover {{ background:#f5f5f5; }}
-            .kt .metric {{ font-weight:700; color:#1a1a2e; text-align:center; }}
-            .kt .value {{ font-family:'SF Mono',monospace; font-weight:600; color:#2d6a4f; }}
-            .kt .dir {{ font-size:10px; color:#999; font-weight:400; }}
+            .kt-container {{
+                max-width: 750px; /* Limits width so it doesn't stretch across the screen */
+                margin: 10px 0;   /* Aligns to the left with small vertical spacing */
+            }}
+            .kt {{ 
+                border-collapse:collapse; 
+                font-family:-apple-system,sans-serif; 
+                font-size:13px; 
+                width: 100%; /* Table fills the 750px container */
+                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            }}
+            .kt th {{ background:#1a1a2e; color:white; padding:10px 14px; text-align:left; font-weight:600; }}
+            .kt td {{ padding:8px 14px; border-bottom:1px solid #e0e0e0; }}
+            .kt .metric {{ font-weight:700; color:#1a1a2e; text-align:center; background:#f8f9fa; }}
+            .kt .value {{ font-family:'SF Mono',monospace; font-weight:600; }}
+            .kt .dir {{ font-size:10px; color:#999; font-weight:400; display:block; margin-top:2px; }}
         </style>
-        <h4 style="font-family:-apple-system,sans-serif; color:#1a1a2e; margin-bottom:8px;">
-            K-Selection: Cluster Quality Across k={int(k_range[0])}–{int(k_range[-1])}
-        </h4>
-        <table class="kt">
-            <tr>
-                <th>k</th>
-                <th>Inertia <span class="dir">↓</span></th>
-                <th>Silhouette <span class="dir">↑</span></th>
-                <th>Calinski-Harabasz <span class="dir">↑</span></th>
-                <th>Davies-Bouldin <span class="dir">↓</span></th>
-            </tr>
-            {rows_html}
-        </table>
-        <p style="font-family:-apple-system,sans-serif; font-size:11px; color:#888; margin-top:6px;">
-            ✓ = optimal value for that metric. Arrows indicate preferred direction.
-        </p>
+        <div class="kt-container">
+            <h4 style="font-family:-apple-system,sans-serif; color:#1a1a2e; margin-bottom:10px;">
+                K-Selection: Tactical Identity Convergence (k={int(k_range[0])}–{int(k_range[-1])})
+            </h4>
+            <table class="kt">
+                <tr>
+                    <th>k</th>
+                    <th>Inertia <span class="dir">↓ (Elbow)</span></th>
+                    <th>Silhouette <span class="dir">↑ (Separation)</span></th>
+                    <th>Calinski <span class="dir">↑ (Variance)</span></th>
+                    <th>DB Index <span class="dir">↓ (Similarity)</span></th>
+                    <th style="background:#2d3436;">GMM ARI <span class="dir" style="color:#dfe6e9;">↑ (Agreement)</span></th>
+                </tr>
+                {rows_html}
+            </table>
+        </div>
         """
-        
         display(HTML(html))
         return results
-    
+        
     def print_validation_summary(self, validation):
             """Print formatted validation results as a clean table"""
             from IPython.display import display, HTML
@@ -370,10 +404,9 @@ class TacticalClustering:
             
             if total_teams is None:
                 total_teams = sum(c['size'] for c in characterization.values())
-            
             # Archetype colors — use these consistently across all visuals
-            colors = {0: '#2d6a4f', 1: '#e76f51', 2: '#457b9d'}
-            
+            colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
+
             cards_html = ""
             for cluster_id, info in characterization.items():
                 color = colors.get(cluster_id, '#666')

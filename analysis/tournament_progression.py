@@ -173,13 +173,13 @@ def print_progression_summary(merged_df, archetype_names):
     """
     display(HTML(html))
 
-def plot_paradox_scatter(merged_df, archetype_names, figsize=(8, 6)):
+def plot_paradox_scatter(merged_df, archetype_names, figsize=(8, 6), ax=None):
     """
     Chart 8: The Paradox — Prevalence vs Success scatter.
     The headline visual of Phase 3.
     """
-    colors = {0: '#2d6a4f', 1: '#e76f51', 2: '#457b9d'}
-    
+    colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
+
     if ax is None:
         fig, ax = plt.subplots(figsize=figsize)
     else:
@@ -222,12 +222,12 @@ def plot_paradox_scatter(merged_df, archetype_names, figsize=(8, 6)):
     return fig, ax
 
 
-def plot_success_by_archetype(merged_df, archetype_names, figsize=(8, 5), ax=None):
+def plot_success_by_archetype(merged_df, archetype_names, figsize=(6, 3), ax=None):
     """
     Chart 9: Average progression by archetype with reference lines.
     """
-    colors = {0: '#2d6a4f', 1: '#e76f51', 2: '#457b9d'}
-    
+    colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
+
     # Calculate stats sorted by success
     stats = []
     for cid, name in archetype_names.items():
@@ -281,12 +281,12 @@ def plot_success_by_archetype(merged_df, archetype_names, figsize=(8, 5), ax=Non
     return fig, ax
 
 
-def plot_progression_by_round(merged_df, archetype_names, figsize=(8, 5), ax=None):
+def plot_progression_by_round(merged_df, archetype_names, figsize=(6, 3), ax=None):
     """
     Chart 10: Stacked archetype composition at each tournament stage.
     Shows which archetypes survive each round.
     """
-    colors = {0: '#2d6a4f', 1: '#e76f51', 2: '#457b9d'}
+    colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
     
     stages = [
         ('Group Stage', 0),
