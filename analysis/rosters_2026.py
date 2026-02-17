@@ -155,7 +155,7 @@ rosters_2026 = {
         'Bruno Guimarães': 'Newcastle United',
         'Lucas Paquetá': 'Flamengo',  # CORRECTED - moved Jan 30, 2026
         'Neymar': 'Al-Hilal',
-        'Vinícius Júnior': 'Real Madrid',
+        'Vinícius José Paixão de Oliveira Júnior': 'Real Madrid',
         'Rodrygo': 'Real Madrid',
         'Raphinha': 'Barcelona',
         'Antony': 'Manchester United',
@@ -338,5 +338,82 @@ rosters_2026 = {
         'Takehiro Tomiyasu': 'Arsenal',
         'Daichi Kamada': 'Crystal Palace',
         'Keito Nakamura': 'Reims',
+    },
+
+    'Morocco': {
+        'Yassine Bounou': 'Al-Hilal', 'Achraf Hakimi': 'Paris Saint-Germain', 'Nayef Aguerd': 'Real Sociedad', 
+        'Noussair Mazraoui': 'Manchester United', 'Brahim Abdelkader Díaz': 'Real Madrid', 'Sofyan Amrabat': 'Fenerbahçe',
+        'Azzedine Ounahi': 'Panathinaikos', 'Hakim Ziyech': 'Galatasaray', 'Youssef En-Nesyri': 'Fenerbahçe'
+    },
+    'Colombia': {
+        'Camilo Vargas': 'Atlas', 'Daniel Muñoz': 'Crystal Palace', 'Davinson Sánchez': 'Galatasaray',
+        'Jhon Lucumí': 'Bologna', 'Richard Ríos': 'Palmeiras', 'James Rodríguez': 'Rayo Vallecano',
+        'Luis Fernando Díaz Marulanda': 'Bayern München', 'Jhon Durán': 'Aston Villa', 'Luis Sinisterra': 'Bournemouth'
+    },
+    'Switzerland': {
+        'Gregor Kobel': 'Borussia Dortmund', 'Yann Sommer': 'Internazionale', 'Manuel Akanji': 'Manchester City',
+        'Granit Xhaka': 'Bayer Leverkusen', 'Denis Zakaria': 'Monaco', 'Remo Freuler': 'Bologna',
+        'Dan Ndoye': 'Bologna', 'Ruben Vargas': 'Sevilla', 'Zeki Amdouni': 'Benfica'
+    },
+    'Denmark': {
+        'Kasper Schmeichel': 'Celtic', 'Joachim Andersen': 'Fulham', 'Andreas Christensen': 'Barcelona',
+        'Patrick Dorgu': 'Manchester United', 'Morten Hjulmand': 'Sporting CP', 'Pierre-Emile Højbjerg': 'Marseille',
+        'Christian Eriksen': 'VfL Wolfsburg', 'Rasmus Højlund': 'Napoli', 'Mikkel Damsgaard': 'Brentford'
+    },
+    'South Korea': {
+        'Jo Hyeon-woo': 'Ulsan HD', 'Kim Min-jae': 'Bayern München', 'Lee Kang-in': 'Paris Saint-Germain',
+        'Hwang Hee-chan': 'Wolverhampton Wanderers', 'Heung-Min Son': 'LAFC', 'Seol Young-woo': 'Crvena Zvezda',
+        'Bae Jun-ho': 'Stoke City'
+    },
+    'Ecuador': {
+        'Hernán Galíndez': 'Huracán', 'Piero Hincapié': 'Arsenal', 'Willian Pacho': 'Paris Saint-Germain',
+        'Pervis Estupiñán': 'Brighton & Hove Albion', 'Moisés Caicedo': 'Chelsea', 'Kendry Páez': 'Chelsea',
+        'Enner Valencia': 'Pachuca', 'Gonzalo Plata': 'Flamengo', 'Jeremy Sarmiento': 'Brighton & Hove Albion'
+    },
+    'Turkey': {
+        'Altay Bayındır': 'Manchester United', 'Merih Demiral': 'Al-Ahli', 'Ferdi Kadıoğlu': 'Brighton & Hove Albion',
+        'Hakan Çalhanoğlu': 'Internazionale', 'Arda Güler': 'Real Madrid', 'Kenan Yıldız': 'Juventus',
+        'Can Uzun': 'Eintracht Frankfurt', 'Kerem Aktürkoğlu': 'Benfica', 'Barış Alper Yılmaz': 'Galatasaray'
+    },
+    'Senegal': {
+        'Édouard Mendy': 'Al-Ahli', 'Kalidou Koulibaly': 'Al-Hilal', 'Pape Matar Sarr': 'Tottenham Hotspur',
+        'Nicolas Jackson': 'Chelsea', 'Sadio Mané': 'Al-Nassr', 'Ismaïla Sarr': 'Crystal Palace',
+        'Idrissa Gana Gueye': 'Everton', 'Lamine Camara': 'Monaco'
+    },
+    'Canada': {
+        'Maxime Crépeau': 'Portland Timbers', 
+        'Alphonso Davies': 'Bayern München',  # CORRECTED: Stayed at Bayern
+        'Moïse Bombito': 'Nice',
+        'Ismaël Koné': 'Marseille', 
+        'Stephen Eustáquio': 'Los Angeles FC', # UPDATE: Joined Son at LAFC
+        'Jonathan David': 'Juventus',          # CORRECTED: Move to Juve, not Villa
+        'Jacob Shaffelburg': 'Los Angeles FC', # UPDATE: High-profile MLS move
+        'Tajon Buchanan': 'Internazionale'
+    
+    },
+    'Nigeria': {
+        'Stanley Nwabali': 'Chippa United', 'Calvin Bassey': 'Fulham', 'William Troost-Ekong': 'Al-Kholood',
+        'Wilfred Ndidi': 'Beşiktaş', 'Alex Iwobi': 'Fulham', 'Ademola Lookman': 'Atalanta',
+        'VVictor James Osimhen': 'Galatasaray', 'Victor Boniface': 'Bayer Leverkusen', 'Samuel Chukwueze': 'AC Milan'
+    },
+    'Serbia': {
+        'Vanja Milinković-Savić': 'Torino', 'Nikola Milenković': 'Nottingham Forest', 'Strahinja Pavlović': 'AC Milan',
+        'Dušan Tadić': 'Fenerbahçe', 'Lazar Samardžić': 'Atalanta', 'Aleksandar Mitrović': 'Al-Hilal',
+        'Dušan Vlahović': 'Juventus', 'Filip Kostić': 'Fenerbahçe'
+    },
+    'Austria': {
+        'Patrick Pentz': 'Brøndby', 'David Alaba': 'Real Madrid', 'Kevin Danso': 'Tottenham Hotspur',
+        'Konrad Laimer': 'Bayern München', 'Marcel Sabitzer': 'Borussia Dortmund', 'Christoph Baumgartner': 'RB Leipzig',
+        'Nicolas Seiwald': 'RB Leipzig', 'Marko Arnautović': 'Crvena Zvezda'
+    },
+    'Poland': {
+        'Marcin Bułka': 'Nice', 'Jakub Kiwior': 'FC Porto', 'Matty Cash': 'Aston Villa',
+        'Piotr Zieliński': 'Internazionale', 'Sebastian Szymański': 'Fenerbahçe', 'Nicola Zalewski': 'Roma',
+        'Robert Lewandowski': 'Barcelona', 'Karol Świderski': 'Charlotte FC'
+    },
+    'Ghana': {
+        'Lawrence Ati-Zigi': 'St. Gallen', 'Mohammed Salisu': 'Monaco', 'Tariq Lamptey': 'Brighton & Hove Albion',
+        'Thomas Partey': 'Arsenal', 'Mohammed Kudus': 'West Ham United', 'Antoine Semenyo': 'Bournemouth',
+        'Iñaki Williams': 'Athletic Club', 'Jordan Ayew': 'Leicester City'
     }
 }
