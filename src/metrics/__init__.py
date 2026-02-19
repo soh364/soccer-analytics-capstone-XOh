@@ -1,10 +1,13 @@
 """Soccer analytics metrics calculation"""
 
+from src.metrics.defensive import *
 from .possession import *
 from .progression import *
 from .aggregations import *
 from .packing import *
 from .xg_chain import * 
+from .defensive import *
+from .network import *
 
 __all__ = [
     # Possession metrics
@@ -43,4 +46,11 @@ __all__ = [
     'calculate_packing',
     'calculate_packing_by_zone',
     'compare_packing_vs_progression',
+
+    'calculate_pressure_metrics',
+
+    'calculate_defensive_actions',
+    'calculate_defensive_profile',
+    'calculate_pass_network_centrality',
+    'classify_network_role',
 ]
