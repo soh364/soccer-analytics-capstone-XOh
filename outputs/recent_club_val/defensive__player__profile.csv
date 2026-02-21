@@ -1,0 +1,416 @@
+match_id,team,player,tackles,interceptions,pressures,blocks,clearances,ball_recoveries,fouls_committed,duels_won,total_duels,defensive_third_actions,middle_third_actions,attacking_third_actions,high_turnovers,total_defensive_actions,duel_win_pct,pressure_pct,tackle_interception_pct,high_turnover_pct,attacking_third_pct,defensive_profile
+3895220,Darmstadt 98,Matthias Bader,0.0,2.0,42.0,3.0,3.0,5.0,1.0,2.0,6.0,35.0,24.0,3.0,0.0,47.0,33.33,89.36,4.26,0.0,4.84,Balanced Defender
+3895167,VfB Stuttgart,Atakan Karazor,0.0,3.0,41.0,3.0,5.0,7.0,2.0,2.0,6.0,16.0,35.0,16.0,4.0,47.0,33.33,87.23,6.38,8.51,23.88,Balanced Defender
+3895153,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,43.0,2.0,0.0,5.0,0.0,1.0,4.0,10.0,24.0,20.0,3.0,45.0,25.0,95.56,0.0,6.67,37.04,Balanced Defender
+3895333,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,41.0,2.0,1.0,2.0,0.0,0.0,0.0,11.0,20.0,15.0,0.0,43.0,0.0,95.35,0.0,0.0,32.61,Balanced Defender
+3895134,Hoffenheim,Wout Weghorst,0.0,0.0,43.0,0.0,1.0,1.0,0.0,0.0,3.0,2.0,27.0,19.0,1.0,43.0,0.0,100.0,0.0,2.33,39.58,Balanced Defender
+3895194,Augsburg,Phillip Tietz,0.0,2.0,35.0,6.0,3.0,3.0,3.0,1.0,5.0,15.0,27.0,15.0,1.0,43.0,20.0,81.4,4.65,2.33,26.32,Balanced Defender
+3895232,Bayer Leverkusen,Amine Adli,0.0,3.0,37.0,2.0,1.0,1.0,2.0,0.0,5.0,10.0,20.0,21.0,1.0,42.0,0.0,88.1,7.14,2.38,41.18,Balanced Defender
+3895232,Bayer Leverkusen,Florian Wirtz,0.0,0.0,40.0,2.0,0.0,6.0,2.0,1.0,6.0,14.0,23.0,19.0,2.0,42.0,16.67,95.24,0.0,4.76,33.93,Balanced Defender
+3895210,Borussia Mönchengladbach,Theoson Jordan Siebatcheu,0.0,0.0,40.0,2.0,0.0,1.0,3.0,0.0,2.0,18.0,26.0,4.0,0.0,42.0,0.0,95.24,0.0,0.0,8.33,Balanced Defender
+3895074,Bayern Munich,Konrad Laimer,0.0,3.0,32.0,6.0,1.0,7.0,0.0,1.0,6.0,23.0,22.0,10.0,3.0,41.0,16.67,78.05,7.32,7.32,18.18,Balanced Defender
+3895220,Darmstadt 98,Luca Pfeiffer,0.0,0.0,41.0,0.0,2.0,2.0,2.0,0.0,6.0,8.0,36.0,9.0,0.0,41.0,0.0,100.0,0.0,0.0,16.98,Balanced Defender
+3895182,Bochum,Gonçalo Mendes Paciencia,0.0,0.0,39.0,2.0,0.0,3.0,0.0,0.0,7.0,4.0,28.0,19.0,2.0,41.0,0.0,95.12,0.0,4.88,37.25,Balanced Defender
+3895210,Borussia Mönchengladbach,Julian Weigl,0.0,1.0,34.0,5.0,5.0,1.0,0.0,1.0,3.0,37.0,12.0,0.0,0.0,40.0,33.33,85.0,2.5,0.0,0.0,Balanced Defender
+3895210,Borussia Mönchengladbach,Robin Hack,0.0,0.0,37.0,3.0,1.0,4.0,0.0,0.0,1.0,14.0,22.0,10.0,1.0,40.0,0.0,92.5,0.0,2.5,21.74,Balanced Defender
+3895194,Augsburg,Kevin Mbabu,0.0,1.0,33.0,6.0,4.0,1.0,2.0,1.0,6.0,30.0,9.0,14.0,0.0,40.0,16.67,82.5,2.5,0.0,26.42,Balanced Defender
+3895086,FC Heidenheim,Nikola Dovedan,0.0,0.0,36.0,3.0,1.0,6.0,1.0,2.0,7.0,25.0,28.0,1.0,0.0,39.0,28.57,92.31,0.0,0.0,1.85,Balanced Defender
+3895258,FC Köln,Dejan Ljubicic,0.0,1.0,35.0,2.0,1.0,5.0,2.0,0.0,0.0,27.0,18.0,1.0,1.0,38.0,0.0,92.11,2.63,2.63,2.17,Balanced Defender
+3895302,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,38.0,0.0,0.0,4.0,0.0,0.0,0.0,2.0,13.0,27.0,4.0,38.0,0.0,100.0,0.0,10.53,64.29,Balanced Defender
+3895134,Bayer Leverkusen,Florian Wirtz,0.0,0.0,36.0,2.0,1.0,4.0,2.0,0.0,0.0,14.0,17.0,14.0,2.0,38.0,0.0,94.74,0.0,5.26,31.11,Balanced Defender
+3895309,Borussia Dortmund,Niclas Füllkrug,0.0,1.0,33.0,4.0,0.0,1.0,3.0,0.0,7.0,1.0,33.0,15.0,1.0,38.0,0.0,86.84,2.63,2.63,30.61,Balanced Defender
+3895060,Borussia Mönchengladbach,Julian Weigl,0.0,3.0,28.0,6.0,0.0,3.0,2.0,0.0,3.0,23.0,20.0,2.0,1.0,37.0,0.0,75.68,8.11,2.7,4.44,Balanced Defender
+3895302,Werder Bremen,Leonardo Bittencourt,0.0,1.0,35.0,1.0,0.0,6.0,1.0,0.0,3.0,13.0,26.0,8.0,4.0,37.0,0.0,94.59,2.7,10.81,17.02,Balanced Defender
+3895210,Borussia Mönchengladbach,Florian Neuhaus,0.0,2.0,34.0,1.0,1.0,7.0,0.0,1.0,5.0,32.0,16.0,2.0,1.0,37.0,20.0,91.89,5.41,2.7,4.0,Balanced Defender
+3895095,Bayer Leverkusen,Alejandro Grimaldo García,0.0,4.0,23.0,9.0,4.0,10.0,1.0,1.0,4.0,31.0,21.0,3.0,1.0,36.0,25.0,63.89,11.11,2.78,5.45,Balanced Defender
+3895139,Union Berlin,Janik Haberer,0.0,0.0,35.0,1.0,0.0,3.0,0.0,0.0,2.0,8.0,30.0,3.0,1.0,36.0,0.0,97.22,0.0,2.78,7.32,Balanced Defender
+3895139,Union Berlin,Alex Král,0.0,0.0,35.0,1.0,1.0,7.0,0.0,0.0,1.0,12.0,30.0,3.0,1.0,36.0,0.0,97.22,0.0,2.78,6.67,Balanced Defender
+3895302,Werder Bremen,Senne Lynen,0.0,2.0,31.0,3.0,3.0,4.0,1.0,1.0,3.0,30.0,11.0,6.0,2.0,36.0,33.33,86.11,5.56,5.56,12.77,Balanced Defender
+3895220,Darmstadt 98,Oscar Vilhelmsson,0.0,0.0,32.0,4.0,0.0,4.0,1.0,0.0,2.0,1.0,31.0,11.0,2.0,36.0,0.0,88.89,0.0,5.56,25.58,Balanced Defender
+3895194,Augsburg,Iago Amaral Borduchi,0.0,3.0,22.0,10.0,5.0,4.0,1.0,0.0,3.0,33.0,10.0,5.0,0.0,35.0,0.0,62.86,8.57,0.0,10.42,Protector
+3895180,Bayer Leverkusen,Florian Wirtz,0.0,2.0,30.0,3.0,0.0,10.0,0.0,0.0,2.0,10.0,16.0,21.0,9.0,35.0,0.0,85.71,5.71,25.71,44.68,Balanced Defender
+3895113,Wolfsburg,Yannick Gerhardt,0.0,1.0,33.0,1.0,0.0,2.0,3.0,0.0,0.0,11.0,24.0,5.0,1.0,35.0,0.0,94.29,2.86,2.86,12.5,Balanced Defender
+3895258,FC Köln,Max Finkgräfe,0.0,0.0,30.0,5.0,2.0,2.0,3.0,2.0,3.0,34.0,10.0,1.0,0.0,35.0,66.67,85.71,0.0,0.0,2.22,Dominant Duelist
+3895320,VfB Stuttgart,Atakan Karazor,0.0,2.0,32.0,1.0,0.0,5.0,2.0,0.0,2.0,10.0,28.0,6.0,2.0,35.0,0.0,91.43,5.71,5.71,13.64,Balanced Defender
+3895107,FC Köln,Faride Alidou,0.0,0.0,33.0,2.0,0.0,3.0,0.0,1.0,3.0,10.0,18.0,13.0,1.0,35.0,33.33,94.29,0.0,2.86,31.71,Balanced Defender
+3895210,Borussia Mönchengladbach,Franck Honorat,0.0,0.0,32.0,3.0,4.0,1.0,0.0,0.0,1.0,27.0,4.0,10.0,0.0,35.0,0.0,91.43,0.0,0.0,24.39,Balanced Defender
+3895074,Bayer Leverkusen,Florian Wirtz,0.0,0.0,32.0,2.0,0.0,11.0,0.0,0.0,3.0,12.0,23.0,13.0,3.0,34.0,0.0,94.12,0.0,8.82,27.08,Balanced Defender
+3895244,FC Heidenheim,Lennard Maloney,0.0,1.0,29.0,4.0,3.0,6.0,1.0,0.0,6.0,19.0,25.0,6.0,1.0,34.0,0.0,85.29,2.94,2.94,12.0,Balanced Defender
+3895158,Bayer Leverkusen,Florian Wirtz,0.0,2.0,27.0,5.0,0.0,11.0,1.0,1.0,2.0,4.0,21.0,23.0,9.0,34.0,50.0,79.41,5.88,26.47,47.92,Balanced Defender
+3895180,Bayer Leverkusen,Jonas Hofmann,0.0,1.0,32.0,1.0,0.0,5.0,0.0,0.0,1.0,1.0,11.0,28.0,3.0,34.0,0.0,94.12,2.94,8.82,70.0,Balanced Defender
+3895095,Bayer Leverkusen,Florian Wirtz,0.0,0.0,31.0,2.0,1.0,4.0,0.0,0.0,1.0,6.0,19.0,14.0,1.0,33.0,0.0,93.94,0.0,3.03,35.9,Balanced Defender
+3895244,Bayer Leverkusen,Amine Adli,0.0,0.0,30.0,3.0,0.0,5.0,1.0,1.0,4.0,10.0,24.0,9.0,2.0,33.0,25.0,90.91,0.0,6.06,20.93,Balanced Defender
+3895180,Eintracht Frankfurt,Eric Junior Dina Ebimbe,0.0,0.0,30.0,3.0,1.0,5.0,3.0,0.0,4.0,4.0,30.0,12.0,2.0,33.0,0.0,90.91,0.0,6.06,26.09,Balanced Defender
+3895194,Augsburg,Arne Maier,0.0,1.0,30.0,2.0,0.0,2.0,0.0,0.0,0.0,10.0,20.0,5.0,2.0,33.0,0.0,90.91,3.03,6.06,14.29,Balanced Defender
+3895067,Darmstadt 98,Marvin Mehlem,0.0,7.0,23.0,3.0,0.0,4.0,2.0,2.0,5.0,18.0,21.0,5.0,0.0,33.0,40.0,69.7,21.21,0.0,11.36,Balanced Defender
+3895180,Eintracht Frankfurt,Niels Nkounkou,0.0,3.0,20.0,10.0,2.0,4.0,1.0,1.0,3.0,19.0,22.0,2.0,2.0,33.0,33.33,60.61,9.09,6.06,4.65,Balanced Defender
+3895220,Darmstadt 98,Bartol Franjić,0.0,2.0,28.0,3.0,2.0,3.0,1.0,0.0,1.0,13.0,26.0,1.0,0.0,33.0,0.0,84.85,6.06,0.0,2.5,Balanced Defender
+3895182,Bochum,Matúš Bero,0.0,1.0,28.0,4.0,0.0,8.0,3.0,0.0,3.0,8.0,25.0,14.0,2.0,33.0,0.0,84.85,3.03,6.06,29.79,Balanced Defender
+3895107,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,31.0,1.0,0.0,2.0,0.0,0.0,0.0,3.0,15.0,16.0,1.0,32.0,0.0,96.88,0.0,3.12,47.06,Balanced Defender
+3895158,Borussia Dortmund,Marco Reus,0.0,1.0,26.0,5.0,0.0,2.0,1.0,0.0,3.0,21.0,13.0,4.0,0.0,32.0,0.0,81.25,3.12,0.0,10.53,Balanced Defender
+3895086,FC Heidenheim,Eren Sami Dinkçi,0.0,0.0,31.0,1.0,0.0,3.0,0.0,0.0,2.0,11.0,15.0,11.0,0.0,32.0,0.0,96.88,0.0,0.0,29.73,Balanced Defender
+3895250,FSV Mainz 05,Karim Onisiwo,0.0,0.0,32.0,0.0,1.0,1.0,2.0,0.0,10.0,11.0,19.0,16.0,0.0,32.0,0.0,100.0,0.0,0.0,34.78,Balanced Defender
+3895139,Union Berlin,Aïssa Bilal Laïdouni,0.0,6.0,25.0,1.0,2.0,4.0,0.0,0.0,2.0,11.0,23.0,6.0,2.0,32.0,0.0,78.12,18.75,6.25,15.0,Balanced Defender
+3895210,Borussia Mönchengladbach,Kouadio Emmanuel Koné,0.0,2.0,29.0,1.0,0.0,5.0,1.0,0.0,2.0,23.0,13.0,4.0,2.0,32.0,0.0,90.62,6.25,6.25,10.0,Balanced Defender
+3895153,Werder Bremen,Leonardo Bittencourt,0.0,2.0,29.0,1.0,1.0,4.0,1.0,0.0,1.0,11.0,22.0,6.0,2.0,32.0,0.0,90.62,6.25,6.25,15.38,Balanced Defender
+3895107,FC Köln,Dejan Ljubicic,0.0,2.0,29.0,1.0,3.0,1.0,0.0,0.0,1.0,12.0,17.0,8.0,0.0,32.0,0.0,90.62,6.25,0.0,21.62,Balanced Defender
+3895086,FC Heidenheim,Patrick Mainka,0.0,0.0,23.0,8.0,6.0,1.0,0.0,0.0,1.0,32.0,7.0,0.0,0.0,31.0,0.0,74.19,0.0,0.0,0.0,Protector
+3895286,Hoffenheim,Wout Weghorst,0.0,2.0,26.0,3.0,2.0,0.0,2.0,1.0,6.0,20.0,20.0,1.0,0.0,31.0,16.67,83.87,6.45,0.0,2.44,Balanced Defender
+3895153,Bayer Leverkusen,Florian Wirtz,0.0,0.0,30.0,1.0,0.0,3.0,1.0,1.0,2.0,3.0,14.0,20.0,0.0,31.0,50.0,96.77,0.0,0.0,54.05,Balanced Defender
+3895232,Bayer Leverkusen,Piero Martín Hincapié Reyna,0.0,5.0,26.0,0.0,5.0,3.0,0.0,1.0,5.0,24.0,19.0,1.0,0.0,31.0,20.0,83.87,16.13,0.0,2.27,Balanced Defender
+3895232,Bayer Leverkusen,Josip Stanišić,0.0,2.0,26.0,2.0,1.0,3.0,2.0,2.0,4.0,20.0,13.0,7.0,0.0,30.0,50.0,86.67,6.67,0.0,17.5,Balanced Defender
+3895292,Union Berlin,Lucas Tousart,0.0,4.0,19.0,7.0,4.0,6.0,1.0,1.0,4.0,27.0,11.0,7.0,1.0,30.0,25.0,63.33,13.33,3.33,15.56,Balanced Defender
+3895086,FC Heidenheim,Jan-Niklas Beste,0.0,0.0,28.0,2.0,0.0,2.0,1.0,1.0,4.0,11.0,19.0,7.0,0.0,30.0,25.0,93.33,0.0,0.0,18.92,Balanced Defender
+3895134,Hoffenheim,Maximilian Beier,0.0,2.0,26.0,2.0,0.0,2.0,0.0,0.0,1.0,4.0,13.0,16.0,2.0,30.0,0.0,86.67,6.67,6.67,48.48,Balanced Defender
+3895309,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,27.0,3.0,0.0,4.0,2.0,1.0,2.0,3.0,14.0,21.0,3.0,30.0,50.0,90.0,0.0,10.0,55.26,Balanced Defender
+3895210,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,28.0,2.0,0.0,5.0,1.0,1.0,1.0,3.0,6.0,28.0,5.0,30.0,100.0,93.33,0.0,16.67,75.68,Dominant Duelist
+3895158,Borussia Dortmund,Marius Wolf,0.0,1.0,23.0,6.0,1.0,3.0,0.0,2.0,4.0,21.0,17.0,0.0,0.0,30.0,50.0,76.67,3.33,0.0,0.0,Balanced Defender
+3895250,FSV Mainz 05,Leandro Barreiro Martins,0.0,3.0,18.0,9.0,3.0,3.0,1.0,0.0,5.0,14.0,20.0,8.0,2.0,30.0,0.0,60.0,10.0,6.67,19.05,Balanced Defender
+3895302,Werder Bremen,Romano Schmid,0.0,0.0,27.0,3.0,2.0,4.0,1.0,1.0,5.0,17.0,20.0,5.0,1.0,30.0,20.0,90.0,0.0,3.33,11.9,Balanced Defender
+3895182,Bochum,Cristian Gamboa Luna,0.0,6.0,21.0,3.0,1.0,6.0,1.0,0.0,4.0,16.0,20.0,6.0,3.0,30.0,0.0,70.0,20.0,10.0,14.29,Balanced Defender
+3895134,Hoffenheim,Finn Ole Becker,0.0,0.0,29.0,1.0,1.0,8.0,1.0,1.0,1.0,11.0,23.0,7.0,3.0,30.0,100.0,96.67,0.0,10.0,17.07,Dominant Duelist
+3895134,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,2.0,25.0,3.0,0.0,6.0,1.0,0.0,2.0,17.0,21.0,1.0,1.0,30.0,0.0,83.33,6.67,3.33,2.56,Balanced Defender
+3895086,FC Heidenheim,Lennard Maloney,0.0,3.0,23.0,3.0,2.0,4.0,3.0,1.0,4.0,24.0,15.0,3.0,1.0,29.0,25.0,79.31,10.34,3.45,7.14,Balanced Defender
+3895210,Bayer Leverkusen,Florian Wirtz,0.0,0.0,26.0,3.0,0.0,5.0,4.0,0.0,3.0,1.0,10.0,30.0,3.0,29.0,0.0,89.66,0.0,10.34,73.17,Balanced Defender
+3895333,Eintracht Frankfurt,Eric Junior Dina Ebimbe,0.0,0.0,28.0,1.0,2.0,1.0,1.0,1.0,4.0,10.0,10.0,17.0,0.0,29.0,25.0,96.55,0.0,0.0,45.95,Balanced Defender
+3895067,Darmstadt 98,Fabian Holland,0.0,1.0,26.0,2.0,3.0,5.0,2.0,0.0,3.0,26.0,15.0,1.0,0.0,29.0,0.0,89.66,3.45,0.0,2.38,Balanced Defender
+3895250,FSV Mainz 05,Jae-Sung Lee,0.0,2.0,20.0,7.0,1.0,6.0,1.0,0.0,3.0,10.0,11.0,19.0,5.0,29.0,0.0,68.97,6.9,17.24,47.5,Balanced Defender
+3895052,RB Leipzig,Daniel Olmo Carvajal,0.0,0.0,28.0,1.0,1.0,6.0,0.0,0.0,1.0,12.0,16.0,9.0,2.0,29.0,0.0,96.55,0.0,6.9,24.32,Balanced Defender
+3895302,Werder Bremen,Nick Woltemade,0.0,0.0,28.0,1.0,0.0,7.0,0.0,0.0,4.0,3.0,23.0,14.0,4.0,29.0,0.0,96.55,0.0,13.79,35.0,Balanced Defender
+3895202,RB Leipzig,Xaver Schlager,0.0,1.0,24.0,4.0,0.0,7.0,3.0,0.0,4.0,20.0,16.0,7.0,2.0,29.0,0.0,82.76,3.45,6.9,16.28,Balanced Defender
+3895244,FC Heidenheim,Jan Schöppner,0.0,0.0,25.0,4.0,3.0,0.0,1.0,0.0,5.0,13.0,13.0,12.0,0.0,29.0,0.0,86.21,0.0,0.0,31.58,Balanced Defender
+3895202,RB Leipzig,Benjamin Šeško,0.0,0.0,25.0,4.0,2.0,3.0,0.0,1.0,4.0,4.0,20.0,14.0,3.0,29.0,25.0,86.21,0.0,10.34,36.84,Balanced Defender
+3895107,FC Köln,Florian Kainz,0.0,0.0,27.0,2.0,2.0,1.0,1.0,0.0,2.0,12.0,18.0,5.0,1.0,29.0,0.0,93.1,0.0,3.45,14.29,Balanced Defender
+3895182,Bochum,Patrick Osterhage,0.0,3.0,24.0,2.0,1.0,6.0,0.0,1.0,1.0,7.0,25.0,5.0,1.0,29.0,100.0,82.76,10.34,3.45,13.51,Dominant Duelist
+3895250,Bayer Leverkusen,Amine Adli,0.0,0.0,27.0,1.0,0.0,3.0,1.0,0.0,3.0,5.0,15.0,15.0,0.0,28.0,0.0,96.43,0.0,0.0,42.86,Balanced Defender
+3895210,Borussia Mönchengladbach,Nico Elvedi,0.0,6.0,16.0,6.0,7.0,3.0,0.0,0.0,4.0,40.0,1.0,1.0,1.0,28.0,0.0,57.14,21.43,3.57,2.38,Protector
+3895194,Augsburg,Ermedin Demirović,0.0,1.0,27.0,0.0,1.0,5.0,1.0,0.0,3.0,7.0,17.0,14.0,3.0,28.0,0.0,96.43,3.57,10.71,36.84,Balanced Defender
+3895180,Eintracht Frankfurt,Mario Götze,0.0,1.0,26.0,1.0,1.0,4.0,2.0,0.0,3.0,6.0,22.0,10.0,1.0,28.0,0.0,92.86,3.57,3.57,26.32,Balanced Defender
+3895244,FC Heidenheim,Omar Haktab Traorè,0.0,1.0,22.0,5.0,3.0,7.0,1.0,0.0,4.0,13.0,22.0,8.0,3.0,28.0,0.0,78.57,3.57,10.71,18.6,Balanced Defender
+3895139,Union Berlin,Diogo Filipe Monteiro Pinto Leite,0.0,4.0,20.0,4.0,2.0,5.0,1.0,1.0,3.0,23.0,14.0,2.0,0.0,28.0,33.33,71.43,14.29,0.0,5.13,Balanced Defender
+3895121,Freiburg,Nicolas Höfler,0.0,1.0,25.0,2.0,1.0,6.0,1.0,0.0,5.0,31.0,10.0,0.0,0.0,28.0,0.0,89.29,3.57,0.0,0.0,Balanced Defender
+3895320,VfB Stuttgart,Chris Führich,0.0,1.0,24.0,3.0,0.0,5.0,0.0,1.0,2.0,9.0,15.0,11.0,2.0,28.0,50.0,85.71,3.57,7.14,31.43,Balanced Defender
+3895167,Bayer Leverkusen,Florian Wirtz,0.0,1.0,27.0,0.0,0.0,8.0,2.0,5.0,5.0,10.0,20.0,13.0,4.0,28.0,100.0,96.43,3.57,14.29,30.23,Dominant Duelist
+3895232,Bayern Munich,Sacha Boey,0.0,1.0,25.0,2.0,0.0,1.0,4.0,0.0,2.0,12.0,12.0,11.0,1.0,28.0,0.0,89.29,3.57,3.57,31.43,Balanced Defender
+3895113,Wolfsburg,Maximilian Arnold,0.0,6.0,21.0,1.0,1.0,7.0,3.0,0.0,2.0,11.0,26.0,4.0,3.0,28.0,0.0,75.0,21.43,10.71,9.76,Balanced Defender
+3895167,VfB Stuttgart,Angelo Stiller,0.0,2.0,24.0,2.0,2.0,6.0,1.0,0.0,3.0,13.0,21.0,6.0,1.0,28.0,0.0,85.71,7.14,3.57,15.0,Balanced Defender
+3895244,Bayer Leverkusen,Florian Wirtz,0.0,0.0,26.0,2.0,0.0,7.0,0.0,1.0,3.0,12.0,19.0,7.0,3.0,28.0,33.33,92.86,0.0,10.71,18.42,Balanced Defender
+3895153,Werder Bremen,Jens Stage,0.0,0.0,27.0,1.0,2.0,4.0,0.0,0.0,1.0,11.0,19.0,5.0,3.0,28.0,0.0,96.43,0.0,10.71,14.29,Balanced Defender
+3895202,Bayer Leverkusen,Florian Wirtz,0.0,0.0,27.0,1.0,0.0,4.0,1.0,1.0,4.0,11.0,13.0,13.0,0.0,28.0,25.0,96.43,0.0,0.0,35.14,Balanced Defender
+3895232,Bayern Munich,Jamal Musiala,0.0,0.0,27.0,1.0,0.0,2.0,0.0,0.0,2.0,6.0,8.0,18.0,1.0,28.0,0.0,96.43,0.0,3.57,56.25,Balanced Defender
+3895244,FC Heidenheim,Patrick Mainka,0.0,1.0,23.0,4.0,5.0,4.0,1.0,2.0,8.0,22.0,23.0,1.0,0.0,28.0,25.0,82.14,3.57,0.0,2.17,Balanced Defender
+3895320,VfB Stuttgart,Maximilian Mittelstädt,0.0,2.0,18.0,7.0,0.0,1.0,3.0,1.0,6.0,18.0,15.0,4.0,1.0,27.0,16.67,66.67,7.41,3.7,10.81,Balanced Defender
+3895153,Werder Bremen,Rafael Santos Borré Amaury,0.0,0.0,26.0,1.0,2.0,3.0,3.0,1.0,7.0,6.0,19.0,17.0,3.0,27.0,14.29,96.3,0.0,11.11,40.48,Balanced Defender
+3895220,Darmstadt 98,Fabian Holland,0.0,1.0,25.0,1.0,0.0,1.0,2.0,1.0,4.0,9.0,20.0,5.0,0.0,27.0,25.0,92.59,3.7,0.0,14.71,Balanced Defender
+3895194,Augsburg,Elvis Rexhbeçaj,0.0,3.0,20.0,4.0,0.0,2.0,0.0,0.0,2.0,11.0,15.0,5.0,1.0,27.0,0.0,74.07,11.11,3.7,16.13,Balanced Defender
+3895202,RB Leipzig,Nicolas Seiwald,0.0,2.0,24.0,1.0,0.0,4.0,1.0,1.0,1.0,10.0,18.0,5.0,1.0,27.0,100.0,88.89,7.41,3.7,15.15,Dominant Duelist
+3895134,Hoffenheim,Anton Stach,0.0,4.0,21.0,2.0,2.0,6.0,2.0,0.0,5.0,23.0,12.0,7.0,0.0,27.0,0.0,77.78,14.81,0.0,16.67,Balanced Defender
+3895244,FC Heidenheim,Tim Kleindienst,0.0,0.0,24.0,3.0,1.0,3.0,2.0,0.0,10.0,6.0,22.0,15.0,0.0,27.0,0.0,88.89,0.0,0.0,34.88,Balanced Defender
+3895074,Bayern Munich,Serge Gnabry,0.0,2.0,24.0,1.0,1.0,4.0,0.0,0.0,3.0,3.0,20.0,12.0,4.0,27.0,0.0,88.89,7.41,14.81,34.29,Balanced Defender
+3895060,Borussia Mönchengladbach,Nathan Ngoumou Minpole,0.0,1.0,24.0,1.0,0.0,6.0,1.0,1.0,5.0,13.0,20.0,5.0,2.0,26.0,20.0,92.31,3.85,7.69,13.16,Balanced Defender
+3895095,Bayer Leverkusen,Odilon Kossonou,0.0,1.0,21.0,4.0,2.0,4.0,2.0,0.0,3.0,16.0,18.0,3.0,0.0,26.0,0.0,80.77,3.85,0.0,8.11,Balanced Defender
+3895302,Bayer Leverkusen,Florian Wirtz,0.0,2.0,20.0,4.0,0.0,4.0,1.0,0.0,1.0,2.0,11.0,19.0,2.0,26.0,0.0,76.92,7.69,7.69,59.38,Balanced Defender
+3895052,RB Leipzig,Nicolas Seiwald,0.0,1.0,23.0,2.0,0.0,3.0,2.0,0.0,2.0,9.0,22.0,2.0,1.0,26.0,0.0,88.46,3.85,3.85,6.06,Balanced Defender
+3895107,FC Köln,Timo Hübers,0.0,5.0,17.0,4.0,5.0,2.0,2.0,0.0,4.0,33.0,5.0,1.0,0.0,26.0,0.0,65.38,19.23,0.0,2.56,Balanced Defender
+3895180,Eintracht Frankfurt,Ansgar Knauff,0.0,0.0,24.0,2.0,0.0,5.0,6.0,1.0,4.0,4.0,21.0,16.0,1.0,26.0,25.0,92.31,0.0,3.85,39.02,Balanced Defender
+3895158,Borussia Dortmund,Julian Brandt,0.0,1.0,25.0,0.0,3.0,3.0,0.0,0.0,4.0,17.0,15.0,4.0,1.0,26.0,0.0,96.15,3.85,3.85,11.11,Balanced Defender
+3895139,Union Berlin,David Datro Fofana,0.0,0.0,23.0,3.0,3.0,3.0,0.0,1.0,7.0,6.0,25.0,8.0,1.0,26.0,14.29,88.46,0.0,3.85,20.51,Balanced Defender
+3895210,Borussia Mönchengladbach,Joseph Scally,0.0,3.0,20.0,3.0,6.0,1.0,2.0,0.0,0.0,25.0,9.0,1.0,0.0,26.0,0.0,76.92,11.54,0.0,2.86,Balanced Defender
+3895232,Bayer Leverkusen,Robert Andrich,0.0,2.0,23.0,1.0,2.0,1.0,2.0,2.0,3.0,16.0,17.0,1.0,1.0,26.0,66.67,88.46,7.69,3.85,2.94,Dominant Duelist
+3895107,Bayer Leverkusen,Alejandro Grimaldo García,0.0,3.0,17.0,6.0,1.0,5.0,0.0,0.0,0.0,4.0,15.0,13.0,4.0,26.0,0.0,65.38,11.54,15.38,40.62,Balanced Defender
+3895086,FC Heidenheim,Omar Haktab Traorè,0.0,1.0,21.0,4.0,3.0,5.0,2.0,0.0,2.0,27.0,11.0,0.0,0.0,26.0,0.0,80.77,3.85,0.0,0.0,Balanced Defender
+3895275,Bayer Leverkusen,Florian Wirtz,0.0,1.0,22.0,3.0,0.0,7.0,1.0,1.0,6.0,7.0,15.0,18.0,4.0,26.0,16.67,84.62,3.85,15.38,45.0,Balanced Defender
+3895309,Bayer Leverkusen,Jonas Hofmann,0.0,1.0,24.0,1.0,0.0,2.0,4.0,0.0,2.0,3.0,14.0,17.0,2.0,26.0,0.0,92.31,3.85,7.69,50.0,Balanced Defender
+3895107,FC Köln,Denis Huseinbašić,0.0,1.0,22.0,2.0,1.0,3.0,0.0,3.0,6.0,11.0,21.0,3.0,0.0,25.0,50.0,88.0,4.0,0.0,8.57,Balanced Defender
+3895182,Bochum,Keven Schlotterbeck,0.0,2.0,19.0,4.0,2.0,4.0,3.0,0.0,4.0,15.0,16.0,7.0,1.0,25.0,0.0,76.0,8.0,4.0,18.42,Balanced Defender
+3895182,Bochum,Bernardo Fernandes da Silva Junior,0.0,1.0,18.0,6.0,2.0,4.0,1.0,0.0,6.0,17.0,16.0,5.0,0.0,25.0,0.0,72.0,4.0,0.0,13.16,Balanced Defender
+3895244,FC Heidenheim,Nikola Dovedan,0.0,0.0,23.0,2.0,1.0,6.0,0.0,0.0,0.0,8.0,17.0,7.0,2.0,25.0,0.0,92.0,0.0,8.0,21.88,Balanced Defender
+3895244,FC Heidenheim,Eren Sami Dinkçi,0.0,0.0,23.0,2.0,0.0,7.0,1.0,1.0,1.0,8.0,14.0,12.0,3.0,25.0,100.0,92.0,0.0,12.0,35.29,Dominant Duelist
+3895286,Hoffenheim,Ozan Muhammed Kabak,0.0,3.0,18.0,4.0,3.0,1.0,2.0,0.0,2.0,31.0,1.0,1.0,0.0,25.0,0.0,72.0,12.0,0.0,3.03,Balanced Defender
+3895232,Bayern Munich,Aleksandar Pavlović,0.0,2.0,22.0,1.0,0.0,4.0,0.0,1.0,1.0,6.0,17.0,7.0,3.0,25.0,100.0,88.0,8.0,12.0,23.33,Dominant Duelist
+3895107,Bayer Leverkusen,Florian Wirtz,0.0,0.0,25.0,0.0,0.0,7.0,1.0,0.0,3.0,3.0,13.0,20.0,5.0,25.0,0.0,100.0,0.0,20.0,55.56,Balanced Defender
+3895182,Bayer Leverkusen,Florian Wirtz,0.0,0.0,21.0,4.0,0.0,4.0,2.0,1.0,3.0,3.0,22.0,9.0,1.0,25.0,33.33,84.0,0.0,4.0,26.47,Balanced Defender
+3895194,Augsburg,Ruben Vargas,0.0,0.0,23.0,2.0,0.0,3.0,0.0,0.0,3.0,3.0,16.0,12.0,1.0,25.0,0.0,92.0,0.0,4.0,38.71,Balanced Defender
+3895182,Bochum,Anthony Losilla,0.0,2.0,22.0,1.0,0.0,4.0,2.0,0.0,2.0,4.0,17.0,12.0,1.0,25.0,0.0,88.0,8.0,4.0,36.36,Balanced Defender
+3895302,Bayer Leverkusen,Granit Xhaka,0.0,1.0,19.0,5.0,0.0,5.0,1.0,0.0,1.0,5.0,15.0,12.0,0.0,25.0,0.0,76.0,4.0,0.0,37.5,Balanced Defender
+3895309,Borussia Dortmund,Jamie Jermaine Bynoe-Gittens,0.0,0.0,24.0,1.0,0.0,5.0,0.0,0.0,2.0,9.0,18.0,5.0,1.0,25.0,0.0,96.0,0.0,4.0,15.62,Balanced Defender
+3895095,FSV Mainz 05,Dominik Kohr,0.0,1.0,24.0,0.0,0.0,1.0,1.0,2.0,6.0,4.0,23.0,6.0,1.0,25.0,33.33,96.0,4.0,4.0,18.18,Balanced Defender
+3895244,FC Heidenheim,Jan-Niklas Beste,0.0,0.0,21.0,3.0,0.0,3.0,1.0,2.0,7.0,8.0,19.0,8.0,0.0,24.0,28.57,87.5,0.0,0.0,22.86,Balanced Defender
+3895266,Wolfsburg,Yannick Gerhardt,0.0,1.0,21.0,2.0,1.0,2.0,1.0,0.0,2.0,22.0,8.0,0.0,0.0,24.0,0.0,87.5,4.17,0.0,0.0,Balanced Defender
+3895348,Augsburg,Ermedin Demirović,0.0,0.0,24.0,0.0,0.0,7.0,1.0,0.0,4.0,0.0,20.0,16.0,5.0,24.0,0.0,100.0,0.0,20.83,44.44,Balanced Defender
+3895052,Bayer Leverkusen,Jonas Hofmann,0.0,2.0,22.0,0.0,1.0,3.0,0.0,2.0,6.0,3.0,14.0,17.0,4.0,24.0,33.33,91.67,8.33,16.67,50.0,Balanced Defender
+3895158,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,2.0,17.0,5.0,0.0,11.0,3.0,1.0,6.0,11.0,16.0,17.0,9.0,24.0,16.67,70.83,8.33,37.5,38.64,Aggressive Presser
+3895258,FC Köln,Linton Maina,0.0,0.0,24.0,0.0,0.0,1.0,1.0,0.0,0.0,7.0,14.0,5.0,0.0,24.0,0.0,100.0,0.0,0.0,19.23,Balanced Defender
+3895153,Werder Bremen,Mitchell Weiser,0.0,1.0,22.0,1.0,0.0,2.0,1.0,0.0,2.0,7.0,13.0,9.0,1.0,24.0,0.0,91.67,4.17,4.17,31.03,Balanced Defender
+3895210,Borussia Mönchengladbach,Rocco Reitz,0.0,3.0,17.0,4.0,1.0,5.0,0.0,2.0,4.0,28.0,6.0,0.0,0.0,24.0,50.0,70.83,12.5,0.0,0.0,Balanced Defender
+3895121,Freiburg,Kiliann Sildillia,0.0,0.0,21.0,3.0,2.0,4.0,1.0,3.0,7.0,22.0,6.0,10.0,3.0,24.0,42.86,87.5,0.0,12.5,26.32,Balanced Defender
+3895202,RB Leipzig,David Raum,0.0,2.0,17.0,5.0,1.0,0.0,1.0,1.0,3.0,11.0,12.0,6.0,0.0,24.0,33.33,70.83,8.33,0.0,20.69,Balanced Defender
+3895210,Borussia Mönchengladbach,Luca Netz,0.0,1.0,20.0,2.0,5.0,4.0,1.0,2.0,3.0,29.0,2.0,5.0,1.0,23.0,66.67,86.96,4.35,4.35,13.89,Dominant Duelist
+3895258,FC Köln,Eric Martel,0.0,0.0,20.0,3.0,2.0,1.0,2.0,0.0,2.0,17.0,13.0,0.0,0.0,23.0,0.0,86.96,0.0,0.0,0.0,Balanced Defender
+3895333,Eintracht Frankfurt,Omar Marmoush,0.0,1.0,22.0,0.0,0.0,4.0,2.0,0.0,1.0,2.0,16.0,12.0,3.0,23.0,0.0,95.65,4.35,13.04,40.0,Balanced Defender
+3895302,Werder Bremen,Christian Groß,0.0,2.0,17.0,4.0,2.0,2.0,1.0,1.0,4.0,18.0,12.0,2.0,0.0,23.0,25.0,73.91,8.7,0.0,6.25,Balanced Defender
+3895139,Bayer Leverkusen,Jonas Hofmann,0.0,1.0,18.0,4.0,0.0,2.0,2.0,0.0,0.0,2.0,15.0,10.0,2.0,23.0,0.0,78.26,4.35,8.7,37.04,Balanced Defender
+3895194,Augsburg,Fredrik Jensen,0.0,2.0,19.0,2.0,2.0,8.0,1.0,1.0,4.0,16.0,17.0,5.0,3.0,23.0,25.0,82.61,8.7,13.04,13.16,Balanced Defender
+3895052,RB Leipzig,Xaver Schlager,0.0,1.0,21.0,1.0,1.0,6.0,2.0,1.0,2.0,11.0,19.0,4.0,1.0,23.0,50.0,91.3,4.35,4.35,11.76,Balanced Defender
+3895060,Borussia Mönchengladbach,Maximilian Wöber,0.0,4.0,15.0,4.0,5.0,1.0,1.0,1.0,6.0,24.0,11.0,1.0,0.0,23.0,16.67,65.22,17.39,0.0,2.78,Balanced Defender
+3895320,VfB Stuttgart,Deniz Undav,0.0,1.0,22.0,0.0,0.0,1.0,2.0,1.0,3.0,5.0,16.0,8.0,0.0,23.0,33.33,95.65,4.35,0.0,27.59,Balanced Defender
+3895220,Darmstadt 98,Tim Skarke,0.0,0.0,22.0,1.0,1.0,5.0,0.0,0.0,1.0,10.0,14.0,6.0,1.0,23.0,0.0,95.65,0.0,4.35,20.0,Balanced Defender
+3895244,Bayer Leverkusen,Alejandro Grimaldo García,0.0,2.0,16.0,5.0,1.0,5.0,1.0,0.0,4.0,20.0,5.0,9.0,4.0,23.0,0.0,69.57,8.7,17.39,26.47,Balanced Defender
+3895107,FC Köln,Rasmus Carstensen,0.0,2.0,21.0,0.0,5.0,4.0,1.0,1.0,4.0,24.0,13.0,0.0,0.0,23.0,25.0,91.3,8.7,0.0,0.0,Balanced Defender
+3895107,FC Köln,Davie Selke,0.0,0.0,22.0,1.0,1.0,0.0,2.0,0.0,1.0,1.0,14.0,12.0,0.0,23.0,0.0,95.65,0.0,0.0,44.44,Balanced Defender
+3895158,Borussia Dortmund,Emre Can,0.0,1.0,18.0,4.0,4.0,6.0,2.0,0.0,1.0,27.0,9.0,0.0,0.0,23.0,0.0,78.26,4.35,0.0,0.0,Balanced Defender
+3895074,Bayern Munich,Thomas Müller,0.0,1.0,20.0,2.0,1.0,0.0,1.0,1.0,6.0,3.0,20.0,8.0,1.0,23.0,16.67,86.96,4.35,4.35,25.81,Balanced Defender
+3895158,Borussia Dortmund,Julian Ryerson,0.0,2.0,17.0,4.0,5.0,9.0,0.0,1.0,4.0,32.0,7.0,2.0,1.0,23.0,25.0,73.91,8.7,4.35,4.88,Balanced Defender
+3895232,Bayern Munich,Noussair Mazraoui,0.0,3.0,19.0,1.0,1.0,4.0,0.0,1.0,7.0,11.0,13.0,11.0,1.0,23.0,14.29,82.61,13.04,4.35,31.43,Balanced Defender
+3895158,Borussia Dortmund,Mats Hummels,0.0,4.0,14.0,5.0,13.0,2.0,1.0,1.0,5.0,37.0,6.0,1.0,0.0,23.0,20.0,60.87,17.39,0.0,2.27,Protector
+3895286,Hoffenheim,Pavel Kadeřábek,0.0,0.0,18.0,5.0,2.0,1.0,2.0,0.0,2.0,21.0,3.0,6.0,0.0,23.0,0.0,78.26,0.0,0.0,20.0,Balanced Defender
+3895060,Borussia Mönchengladbach,Ko Itakura,0.0,2.0,17.0,4.0,1.0,0.0,2.0,0.0,2.0,12.0,16.0,0.0,0.0,23.0,0.0,73.91,8.7,0.0,0.0,Balanced Defender
+3895060,Borussia Mönchengladbach,Marvin Friedrich,0.0,2.0,15.0,6.0,5.0,4.0,0.0,0.0,2.0,20.0,11.0,3.0,0.0,23.0,0.0,65.22,8.7,0.0,8.82,Protector
+3895320,VfB Stuttgart,Enzo Millot,0.0,1.0,22.0,0.0,1.0,7.0,5.0,1.0,3.0,17.0,12.0,10.0,2.0,23.0,33.33,95.65,4.35,8.7,25.64,Balanced Defender
+3895250,FSV Mainz 05,Nadiem Amiri,0.0,1.0,20.0,2.0,0.0,10.0,2.0,0.0,0.0,12.0,18.0,5.0,0.0,23.0,0.0,86.96,4.35,0.0,14.29,Balanced Defender
+3895167,VfB Stuttgart,Deniz Undav,0.0,0.0,21.0,1.0,0.0,4.0,2.0,0.0,2.0,4.0,11.0,15.0,4.0,22.0,0.0,95.45,0.0,18.18,50.0,Balanced Defender
+3895309,Borussia Dortmund,Julian Brandt,0.0,1.0,20.0,1.0,2.0,5.0,0.0,0.0,3.0,10.0,21.0,1.0,1.0,22.0,0.0,90.91,4.55,4.55,3.12,Balanced Defender
+3895333,Eintracht Frankfurt,Fares Chaïbi,0.0,1.0,20.0,1.0,0.0,4.0,0.0,0.0,1.0,7.0,12.0,8.0,4.0,22.0,0.0,90.91,4.55,18.18,29.63,Balanced Defender
+3895095,FSV Mainz 05,Leandro Barreiro Martins,0.0,0.0,21.0,1.0,0.0,4.0,4.0,0.0,2.0,14.0,13.0,5.0,1.0,22.0,0.0,95.45,0.0,4.55,15.62,Balanced Defender
+3895348,Augsburg,Iago Amaral Borduchi,0.0,3.0,14.0,5.0,0.0,6.0,0.0,0.0,2.0,19.0,6.0,5.0,4.0,22.0,0.0,63.64,13.64,18.18,16.67,Balanced Defender
+3895095,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,0.0,19.0,3.0,0.0,7.0,1.0,1.0,2.0,17.0,11.0,4.0,2.0,22.0,50.0,86.36,0.0,9.09,12.5,Balanced Defender
+3895302,Bayer Leverkusen,Nathan Tella,0.0,1.0,20.0,1.0,0.0,4.0,0.0,1.0,1.0,3.0,13.0,11.0,3.0,22.0,100.0,90.91,4.55,13.64,40.74,Dominant Duelist
+3895153,Werder Bremen,Romano Schmid,0.0,2.0,18.0,2.0,0.0,11.0,2.0,1.0,3.0,8.0,20.0,10.0,4.0,22.0,33.33,81.82,9.09,18.18,26.32,Balanced Defender
+3895095,FSV Mainz 05,Jae-Sung Lee,0.0,2.0,17.0,3.0,0.0,5.0,1.0,0.0,3.0,3.0,25.0,3.0,2.0,22.0,0.0,77.27,9.09,9.09,9.68,Balanced Defender
+3895107,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,18.0,4.0,0.0,4.0,1.0,0.0,2.0,1.0,14.0,14.0,3.0,22.0,0.0,81.82,0.0,13.64,48.28,Balanced Defender
+3895286,Bayer Leverkusen,Florian Wirtz,0.0,0.0,18.0,4.0,0.0,8.0,0.0,1.0,2.0,2.0,8.0,22.0,8.0,22.0,50.0,81.82,0.0,36.36,68.75,Aggressive Presser
+3895180,Bayer Leverkusen,Alejandro Grimaldo García,0.0,2.0,14.0,6.0,1.0,10.0,0.0,0.0,7.0,14.0,17.0,9.0,6.0,22.0,0.0,63.64,9.09,27.27,22.5,Balanced Defender
+3895134,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,22.0,0.0,1.0,2.0,1.0,0.0,0.0,5.0,8.0,13.0,1.0,22.0,0.0,100.0,0.0,4.55,50.0,Balanced Defender
+3895074,Bayern Munich,Dayotchanculle Upamecano,0.0,2.0,17.0,3.0,2.0,9.0,0.0,1.0,2.0,21.0,13.0,1.0,0.0,22.0,50.0,77.27,9.09,0.0,2.86,Balanced Defender
+3895086,FC Heidenheim,Tim Kleindienst,0.0,1.0,21.0,0.0,1.0,2.0,2.0,0.0,3.0,6.0,13.0,11.0,0.0,22.0,0.0,95.45,4.55,0.0,36.67,Balanced Defender
+3895292,Union Berlin,Diogo Filipe Monteiro Pinto Leite,0.0,1.0,18.0,3.0,2.0,6.0,2.0,1.0,4.0,23.0,8.0,5.0,2.0,22.0,25.0,81.82,4.55,9.09,13.89,Balanced Defender
+3895320,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,1.0,21.0,0.0,0.0,9.0,1.0,3.0,4.0,16.0,15.0,5.0,2.0,22.0,75.0,95.45,4.55,9.09,13.89,Dominant Duelist
+3895095,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,20.0,2.0,0.0,3.0,0.0,0.0,0.0,5.0,12.0,8.0,1.0,22.0,0.0,90.91,0.0,4.55,32.0,Balanced Defender
+3895167,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,2.0,19.0,1.0,1.0,2.0,0.0,1.0,4.0,11.0,11.0,7.0,1.0,22.0,25.0,86.36,9.09,4.55,24.14,Balanced Defender
+3895194,Augsburg,Niklas Dorsch,0.0,1.0,18.0,3.0,4.0,7.0,2.0,0.0,3.0,25.0,12.0,1.0,2.0,22.0,0.0,81.82,4.55,9.09,2.63,Balanced Defender
+3895194,Augsburg,Jeffrey Gouweleeuw,0.0,3.0,14.0,5.0,4.0,3.0,2.0,1.0,4.0,19.0,14.0,2.0,1.0,22.0,25.0,63.64,13.64,4.55,5.71,Protector
+3895348,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,3.0,16.0,3.0,1.0,3.0,1.0,2.0,3.0,18.0,11.0,1.0,1.0,22.0,66.67,72.73,13.64,4.55,3.33,Dominant Duelist
+3895139,Bayer Leverkusen,Florian Wirtz,0.0,2.0,18.0,2.0,0.0,8.0,1.0,0.0,0.0,6.0,10.0,15.0,5.0,22.0,0.0,81.82,9.09,22.73,48.39,Balanced Defender
+3895113,Wolfsburg,Jonas Older Wind,0.0,1.0,20.0,0.0,0.0,3.0,2.0,0.0,2.0,0.0,16.0,12.0,2.0,21.0,0.0,95.24,4.76,9.52,42.86,Balanced Defender
+3895309,Borussia Dortmund,Emre Can,0.0,2.0,18.0,1.0,0.0,2.0,5.0,0.0,2.0,15.0,15.0,0.0,0.0,21.0,0.0,85.71,9.52,0.0,0.0,Balanced Defender
+3895202,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,2.0,16.0,3.0,2.0,6.0,1.0,0.0,4.0,21.0,9.0,4.0,3.0,21.0,0.0,76.19,9.52,14.29,11.76,Balanced Defender
+3895167,Bayer Leverkusen,Amine Adli,0.0,1.0,17.0,3.0,0.0,1.0,1.0,1.0,6.0,12.0,10.0,7.0,0.0,21.0,16.67,80.95,4.76,0.0,24.14,Balanced Defender
+3895074,Bayer Leverkusen,Granit Xhaka,0.0,4.0,15.0,2.0,6.0,4.0,2.0,0.0,2.0,15.0,18.0,2.0,0.0,21.0,0.0,71.43,19.05,0.0,5.71,Balanced Defender
+3895107,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,3.0,16.0,2.0,0.0,7.0,1.0,0.0,1.0,4.0,22.0,4.0,2.0,21.0,0.0,76.19,14.29,9.52,13.33,Balanced Defender
+3895074,Bayer Leverkusen,Jonas Hofmann,0.0,2.0,17.0,2.0,1.0,8.0,2.0,0.0,2.0,13.0,14.0,7.0,1.0,21.0,0.0,80.95,9.52,4.76,20.59,Balanced Defender
+3895121,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,1.0,17.0,3.0,4.0,6.0,0.0,2.0,7.0,11.0,17.0,10.0,2.0,21.0,28.57,80.95,4.76,9.52,26.32,Balanced Defender
+3895275,Freiburg,Merlin Röhl,0.0,1.0,20.0,0.0,1.0,4.0,2.0,1.0,3.0,6.0,16.0,9.0,3.0,21.0,33.33,95.24,4.76,14.29,29.03,Balanced Defender
+3895340,Bochum,Kevin Stöger,0.0,3.0,18.0,0.0,0.0,6.0,1.0,0.0,4.0,13.0,16.0,3.0,2.0,21.0,0.0,85.71,14.29,9.52,9.38,Balanced Defender
+3895275,Freiburg,Nicolas Höfler,0.0,0.0,21.0,0.0,1.0,3.0,2.0,0.0,5.0,15.0,15.0,2.0,2.0,21.0,0.0,100.0,0.0,9.52,6.25,Balanced Defender
+3895180,Bayer Leverkusen,Victor Okoh Boniface,0.0,0.0,19.0,2.0,1.0,1.0,1.0,0.0,1.0,3.0,12.0,10.0,0.0,21.0,0.0,90.48,0.0,0.0,40.0,Balanced Defender
+3895113,Bayer Leverkusen,Amine Adli,0.0,2.0,18.0,1.0,0.0,2.0,2.0,0.0,2.0,1.0,19.0,7.0,1.0,21.0,0.0,85.71,9.52,4.76,25.93,Balanced Defender
+3895153,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,17.0,4.0,1.0,3.0,0.0,0.0,1.0,2.0,9.0,15.0,3.0,21.0,0.0,80.95,0.0,14.29,57.69,Balanced Defender
+3895333,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,0.0,21.0,0.0,3.0,5.0,1.0,0.0,1.0,11.0,17.0,3.0,2.0,21.0,0.0,100.0,0.0,9.52,9.68,Balanced Defender
+3895258,Bayer Leverkusen,Florian Wirtz,0.0,1.0,19.0,1.0,0.0,2.0,0.0,2.0,4.0,3.0,11.0,13.0,2.0,21.0,50.0,90.48,4.76,9.52,48.15,Balanced Defender
+3895309,Borussia Dortmund,Nico Schlotterbeck,0.0,2.0,14.0,5.0,1.0,5.0,0.0,0.0,8.0,26.0,5.0,4.0,0.0,21.0,0.0,66.67,9.52,0.0,11.43,Balanced Defender
+3895113,Wolfsburg,Maxence Lacroix,0.0,5.0,14.0,2.0,6.0,4.0,0.0,0.0,3.0,15.0,16.0,3.0,1.0,21.0,0.0,66.67,23.81,4.76,8.82,Balanced Defender
+3895113,Wolfsburg,Joakim Mæhle,0.0,1.0,15.0,5.0,0.0,1.0,1.0,0.0,3.0,9.0,12.0,5.0,1.0,21.0,0.0,71.43,4.76,4.76,19.23,Balanced Defender
+3895139,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,18.0,3.0,1.0,3.0,1.0,1.0,1.0,6.0,10.0,11.0,0.0,21.0,100.0,85.71,0.0,0.0,40.74,Dominant Duelist
+3895348,Augsburg,Arne Maier,0.0,0.0,20.0,1.0,2.0,2.0,0.0,1.0,1.0,8.0,12.0,6.0,1.0,21.0,100.0,95.24,0.0,4.76,23.08,Dominant Duelist
+3895266,Wolfsburg,Ridle Bote Baku,0.0,4.0,14.0,3.0,2.0,0.0,2.0,0.0,3.0,23.0,4.0,1.0,0.0,21.0,0.0,66.67,19.05,0.0,3.57,Balanced Defender
+3895292,Union Berlin,Brenden Aaronson,0.0,0.0,20.0,1.0,1.0,9.0,0.0,1.0,2.0,13.0,14.0,6.0,1.0,21.0,50.0,95.24,0.0,4.76,18.18,Balanced Defender
+3895210,Bayer Leverkusen,Granit Xhaka,0.0,2.0,19.0,0.0,0.0,10.0,2.0,0.0,3.0,1.0,14.0,21.0,10.0,21.0,0.0,90.48,9.52,47.62,58.33,Aggressive Presser
+3895182,Bochum,Erhan Mašović,0.0,5.0,16.0,0.0,3.0,2.0,1.0,0.0,5.0,9.0,16.0,7.0,0.0,21.0,0.0,76.19,23.81,0.0,21.88,Balanced Defender
+3895340,Bochum,Ivan Ordets,0.0,2.0,12.0,7.0,4.0,2.0,1.0,0.0,1.0,19.0,9.0,1.0,1.0,21.0,0.0,57.14,9.52,4.76,3.45,Protector
+3895266,Bayer Leverkusen,Florian Wirtz,0.0,0.0,19.0,2.0,0.0,4.0,1.0,0.0,3.0,4.0,8.0,17.0,3.0,21.0,0.0,90.48,0.0,14.29,58.62,Balanced Defender
+3895348,Augsburg,Mert Kömür,0.0,0.0,20.0,1.0,0.0,3.0,0.0,1.0,2.0,7.0,11.0,8.0,3.0,21.0,50.0,95.24,0.0,14.29,30.77,Balanced Defender
+3895113,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,18.0,2.0,0.0,3.0,1.0,0.0,0.0,8.0,10.0,6.0,1.0,20.0,0.0,90.0,0.0,5.0,25.0,Balanced Defender
+3895052,RB Leipzig,Ikoma Loïs Openda,0.0,0.0,19.0,1.0,0.0,4.0,1.0,1.0,2.0,3.0,14.0,10.0,1.0,20.0,50.0,95.0,0.0,5.0,37.04,Balanced Defender
+3895220,Darmstadt 98,Christoph Zimmermann,0.0,2.0,14.0,4.0,4.0,3.0,1.0,0.0,3.0,19.0,10.0,2.0,0.0,20.0,0.0,70.0,10.0,0.0,6.45,Balanced Defender
+3895286,Hoffenheim,Florian Grillitsch,0.0,1.0,15.0,4.0,13.0,3.0,0.0,0.0,7.0,39.0,4.0,0.0,0.0,20.0,0.0,75.0,5.0,0.0,0.0,Protector
+3895095,FSV Mainz 05,Karim Onisiwo,0.0,0.0,19.0,1.0,0.0,2.0,1.0,0.0,4.0,3.0,10.0,14.0,1.0,20.0,0.0,95.0,0.0,5.0,51.85,Balanced Defender
+3895232,Bayern Munich,Leroy Sané,0.0,0.0,20.0,0.0,0.0,6.0,3.0,0.0,2.0,3.0,18.0,10.0,3.0,20.0,0.0,100.0,0.0,15.0,32.26,Balanced Defender
+3895134,Bayer Leverkusen,Alejandro Grimaldo García,0.0,0.0,18.0,2.0,4.0,6.0,0.0,1.0,1.0,21.0,5.0,5.0,2.0,20.0,100.0,90.0,0.0,10.0,16.13,Dominant Duelist
+3895292,Bayer Leverkusen,Amine Adli,0.0,0.0,20.0,0.0,1.0,2.0,1.0,1.0,4.0,9.0,5.0,14.0,1.0,20.0,25.0,100.0,0.0,5.0,50.0,Balanced Defender
+3895167,VfB Stuttgart,Maximilian Mittelstädt,0.0,6.0,13.0,1.0,1.0,2.0,1.0,2.0,7.0,16.0,13.0,2.0,1.0,20.0,28.57,65.0,30.0,5.0,6.45,Balanced Defender
+3895167,Bayer Leverkusen,Jeremie Frimpong,0.0,1.0,18.0,1.0,0.0,2.0,1.0,0.0,0.0,10.0,7.0,6.0,1.0,20.0,0.0,90.0,5.0,5.0,26.09,Balanced Defender
+3895286,Hoffenheim,Umut Tohumcu,0.0,1.0,18.0,1.0,0.0,1.0,0.0,1.0,4.0,11.0,11.0,3.0,0.0,20.0,25.0,90.0,5.0,0.0,12.0,Balanced Defender
+3895153,Bayer Leverkusen,Odilon Kossonou,0.0,2.0,17.0,1.0,5.0,5.0,0.0,1.0,4.0,17.0,14.0,3.0,0.0,20.0,25.0,85.0,10.0,0.0,8.82,Balanced Defender
+3895302,Werder Bremen,Marvin Ducksch,0.0,0.0,20.0,0.0,2.0,1.0,0.0,0.0,1.0,3.0,14.0,7.0,0.0,20.0,0.0,100.0,0.0,0.0,29.17,Balanced Defender
+3895258,FC Köln,Faride Alidou,0.0,2.0,17.0,1.0,2.0,3.0,0.0,1.0,4.0,13.0,12.0,4.0,0.0,20.0,25.0,85.0,10.0,0.0,13.79,Balanced Defender
+3895139,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,1.0,14.0,5.0,1.0,3.0,1.0,0.0,2.0,11.0,12.0,4.0,3.0,20.0,0.0,70.0,5.0,15.0,14.81,Balanced Defender
+3895139,Union Berlin,Paul Jaeckel,0.0,0.0,18.0,2.0,1.0,3.0,0.0,1.0,5.0,19.0,10.0,0.0,0.0,20.0,20.0,90.0,0.0,0.0,0.0,Balanced Defender
+3895095,FSV Mainz 05,Danny Vieira da Costa,0.0,0.0,16.0,4.0,0.0,4.0,0.0,0.0,2.0,4.0,12.0,10.0,2.0,20.0,0.0,80.0,0.0,10.0,38.46,Balanced Defender
+3895139,Union Berlin,Jérôme Roussillon,0.0,0.0,18.0,2.0,1.0,0.0,1.0,2.0,3.0,16.0,8.0,1.0,0.0,20.0,66.67,90.0,0.0,0.0,4.0,Dominant Duelist
+3895220,Bayer Leverkusen,Adam Hložek,0.0,0.0,18.0,2.0,1.0,6.0,2.0,1.0,2.0,1.0,15.0,15.0,3.0,20.0,50.0,90.0,0.0,15.0,48.39,Balanced Defender
+3895113,Bayer Leverkusen,Jeremie Frimpong,0.0,2.0,18.0,0.0,2.0,3.0,2.0,0.0,2.0,10.0,12.0,7.0,1.0,20.0,0.0,90.0,10.0,5.0,24.14,Balanced Defender
+3895158,Borussia Dortmund,Marcel Sabitzer,0.0,1.0,14.0,5.0,6.0,2.0,1.0,1.0,3.0,25.0,6.0,1.0,0.0,20.0,33.33,70.0,5.0,0.0,3.12,Protector
+3895309,Bayer Leverkusen,Piero Martín Hincapié Reyna,0.0,0.0,18.0,2.0,0.0,1.0,1.0,2.0,6.0,9.0,16.0,3.0,0.0,20.0,33.33,90.0,0.0,0.0,10.71,Balanced Defender
+3895220,Bayer Leverkusen,Florian Wirtz,0.0,3.0,16.0,1.0,0.0,3.0,1.0,0.0,2.0,2.0,11.0,13.0,5.0,20.0,0.0,80.0,15.0,25.0,50.0,Balanced Defender
+3895275,Freiburg,Kiliann Sildillia,0.0,1.0,17.0,2.0,4.0,7.0,3.0,0.0,8.0,23.0,14.0,5.0,1.0,20.0,0.0,85.0,5.0,5.0,11.9,Balanced Defender
+3895182,Bochum,Moritz Broschinski,0.0,2.0,18.0,0.0,0.0,0.0,0.0,0.0,4.0,4.0,13.0,7.0,0.0,20.0,0.0,90.0,10.0,0.0,29.17,Balanced Defender
+3895320,Bayer Leverkusen,Robert Andrich,0.0,2.0,17.0,1.0,0.0,6.0,1.0,1.0,2.0,9.0,12.0,8.0,3.0,20.0,50.0,85.0,10.0,15.0,27.59,Balanced Defender
+3895153,Bayer Leverkusen,Granit Xhaka,0.0,0.0,15.0,5.0,2.0,4.0,0.0,2.0,4.0,12.0,12.0,6.0,1.0,20.0,50.0,75.0,0.0,5.0,20.0,Balanced Defender
+3895292,Bayer Leverkusen,Florian Wirtz,0.0,0.0,19.0,1.0,0.0,6.0,0.0,0.0,2.0,7.0,12.0,9.0,2.0,20.0,0.0,95.0,0.0,10.0,32.14,Balanced Defender
+3895182,Bayer Leverkusen,Robert Andrich,0.0,0.0,18.0,1.0,2.0,4.0,2.0,0.0,4.0,10.0,18.0,3.0,1.0,19.0,0.0,94.74,0.0,5.26,9.68,Balanced Defender
+3895052,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,1.0,17.0,1.0,0.0,3.0,1.0,2.0,4.0,8.0,14.0,5.0,1.0,19.0,50.0,89.47,5.26,5.26,18.52,Balanced Defender
+3895074,Bayer Leverkusen,Alejandro Grimaldo García,0.0,2.0,16.0,1.0,3.0,10.0,0.0,2.0,6.0,17.0,12.0,9.0,4.0,19.0,33.33,84.21,10.53,21.05,23.68,Balanced Defender
+3895244,Bayer Leverkusen,Piero Martín Hincapié Reyna,0.0,2.0,12.0,5.0,5.0,4.0,1.0,1.0,5.0,22.0,11.0,1.0,0.0,19.0,20.0,63.16,10.53,0.0,2.94,Protector
+3895180,Eintracht Frankfurt,Hugo Larsson,0.0,1.0,14.0,4.0,2.0,4.0,1.0,0.0,2.0,7.0,17.0,4.0,1.0,19.0,0.0,73.68,5.26,5.26,14.29,Balanced Defender
+3895107,FC Köln,Eric Martel,0.0,0.0,17.0,2.0,0.0,3.0,2.0,0.0,2.0,14.0,11.0,1.0,1.0,19.0,0.0,89.47,0.0,5.26,3.85,Balanced Defender
+3895158,Borussia Dortmund,Jamie Jermaine Bynoe-Gittens,0.0,0.0,15.0,4.0,0.0,4.0,1.0,0.0,2.0,17.0,7.0,2.0,1.0,19.0,0.0,78.95,0.0,5.26,7.69,Balanced Defender
+3895121,Freiburg,Maximilian Eggestein,0.0,1.0,17.0,1.0,0.0,4.0,1.0,0.0,2.0,15.0,11.0,0.0,1.0,19.0,0.0,89.47,5.26,5.26,0.0,Balanced Defender
+3895286,Hoffenheim,Tim Drexler,0.0,1.0,14.0,4.0,5.0,1.0,1.0,0.0,2.0,22.0,6.0,0.0,0.0,19.0,0.0,73.68,5.26,0.0,0.0,Protector
+3895333,Eintracht Frankfurt,Niels Nkounkou,0.0,3.0,14.0,2.0,2.0,1.0,3.0,2.0,7.0,17.0,9.0,6.0,0.0,19.0,28.57,73.68,15.79,0.0,18.75,Balanced Defender
+3895074,Bayer Leverkusen,Odilon Kossonou,0.0,2.0,14.0,3.0,4.0,5.0,0.0,1.0,3.0,15.0,14.0,2.0,2.0,19.0,33.33,73.68,10.53,10.53,6.45,Balanced Defender
+3895182,Bayer Leverkusen,Josip Stanišić,0.0,2.0,14.0,3.0,2.0,4.0,0.0,0.0,2.0,16.0,9.0,2.0,2.0,19.0,0.0,73.68,10.53,10.53,7.41,Balanced Defender
+3895244,FC Heidenheim,Adrian Beck,0.0,0.0,17.0,2.0,1.0,3.0,1.0,0.0,2.0,4.0,18.0,4.0,1.0,19.0,0.0,89.47,0.0,5.26,15.38,Balanced Defender
+3895095,FSV Mainz 05,Brajan Gruda,0.0,1.0,18.0,0.0,0.0,5.0,1.0,0.0,1.0,5.0,12.0,9.0,3.0,19.0,0.0,94.74,5.26,15.79,34.62,Balanced Defender
+3895220,Darmstadt 98,Fabio Torsiello,0.0,0.0,19.0,0.0,1.0,2.0,1.0,1.0,2.0,6.0,17.0,2.0,0.0,19.0,50.0,100.0,0.0,0.0,8.0,Balanced Defender
+3895086,Bayer Leverkusen,Florian Wirtz,0.0,0.0,17.0,2.0,0.0,7.0,0.0,1.0,3.0,0.0,10.0,19.0,7.0,19.0,33.33,89.47,0.0,36.84,65.52,Aggressive Presser
+3895302,Bayer Leverkusen,Piero Martín Hincapié Reyna,0.0,0.0,17.0,2.0,1.0,0.0,0.0,0.0,3.0,11.0,10.0,2.0,0.0,19.0,0.0,89.47,0.0,0.0,8.7,Balanced Defender
+3895134,Hoffenheim,Kevin Akpoguma,0.0,1.0,15.0,3.0,0.0,2.0,0.0,1.0,2.0,11.0,8.0,4.0,0.0,19.0,50.0,78.95,5.26,0.0,17.39,Balanced Defender
+3895095,FSV Mainz 05,Anthony Caci,0.0,3.0,13.0,3.0,1.0,2.0,2.0,0.0,0.0,7.0,16.0,1.0,1.0,19.0,0.0,68.42,15.79,5.26,4.17,Balanced Defender
+3895348,Augsburg,Mads Pedersen,0.0,3.0,16.0,0.0,2.0,2.0,3.0,1.0,7.0,19.0,8.0,6.0,2.0,19.0,14.29,84.21,15.79,10.53,18.18,Balanced Defender
+3895202,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,15.0,4.0,0.0,4.0,0.0,0.0,0.0,9.0,7.0,7.0,2.0,19.0,0.0,78.95,0.0,10.53,30.43,Balanced Defender
+3895220,Bayer Leverkusen,Nathan Tella,0.0,1.0,15.0,3.0,4.0,6.0,2.0,0.0,3.0,13.0,9.0,12.0,5.0,19.0,0.0,78.95,5.26,26.32,35.29,Balanced Defender
+3895210,Bayer Leverkusen,Piero Martín Hincapié Reyna,0.0,2.0,13.0,4.0,1.0,3.0,4.0,0.0,2.0,11.0,11.0,7.0,2.0,19.0,0.0,68.42,10.53,10.53,24.14,Balanced Defender
+3895067,Darmstadt 98,Luca Pfeiffer,0.0,0.0,18.0,0.0,0.0,4.0,3.0,0.0,4.0,7.0,17.0,5.0,2.0,18.0,0.0,100.0,0.0,11.11,17.24,Balanced Defender
+3895250,FSV Mainz 05,Philipp Mwene,0.0,4.0,14.0,0.0,1.0,2.0,3.0,0.0,3.0,14.0,11.0,2.0,0.0,18.0,0.0,77.78,22.22,0.0,7.41,Balanced Defender
+3895348,Augsburg,Felix Uduokhai,0.0,2.0,8.0,8.0,5.0,2.0,1.0,0.0,3.0,24.0,5.0,0.0,0.0,18.0,0.0,44.44,11.11,0.0,0.0,Protector
+3895113,Wolfsburg,Tiago Barreiros de Melo Tomás,0.0,0.0,17.0,1.0,0.0,2.0,0.0,0.0,1.0,3.0,8.0,10.0,2.0,18.0,0.0,94.44,0.0,11.11,47.62,Balanced Defender
+3895153,Werder Bremen,Marco Friedl,0.0,1.0,11.0,6.0,3.0,9.0,2.0,0.0,2.0,21.0,13.0,0.0,1.0,18.0,0.0,61.11,5.56,5.56,0.0,Protector
+3895113,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,0.0,17.0,1.0,0.0,6.0,0.0,0.0,1.0,7.0,13.0,5.0,2.0,18.0,0.0,94.44,0.0,11.11,20.0,Balanced Defender
+3895194,Bayer Leverkusen,Patrik Schick,0.0,0.0,16.0,2.0,0.0,3.0,0.0,0.0,6.0,0.0,14.0,13.0,1.0,18.0,0.0,88.89,0.0,5.56,48.15,Balanced Defender
+3895232,Bayer Leverkusen,Nathan Tella,0.0,0.0,16.0,2.0,1.0,1.0,1.0,0.0,1.0,4.0,11.0,7.0,0.0,18.0,0.0,88.89,0.0,0.0,31.82,Balanced Defender
+3895121,Freiburg,Lucas Höler,0.0,1.0,14.0,3.0,2.0,4.0,4.0,0.0,9.0,11.0,13.0,13.0,3.0,18.0,0.0,77.78,5.56,16.67,35.14,Balanced Defender
+3895250,FSV Mainz 05,Anthony Caci,0.0,0.0,17.0,1.0,1.0,8.0,2.0,1.0,4.0,12.0,20.0,1.0,2.0,18.0,25.0,94.44,0.0,11.11,3.03,Balanced Defender
+3895286,Bayer Leverkusen,Edmond Fayçal Tapsoba,0.0,3.0,12.0,3.0,2.0,4.0,1.0,0.0,1.0,8.0,13.0,5.0,1.0,18.0,0.0,66.67,16.67,5.56,19.23,Balanced Defender
+3895194,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,16.0,2.0,0.0,5.0,1.0,0.0,0.0,0.0,8.0,16.0,4.0,18.0,0.0,88.89,0.0,22.22,66.67,Balanced Defender
+3895320,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,14.0,4.0,1.0,1.0,0.0,1.0,2.0,2.0,11.0,9.0,1.0,18.0,50.0,77.78,0.0,5.56,40.91,Balanced Defender
+3895333,Eintracht Frankfurt,Ellyes Joris Skhiri,0.0,1.0,16.0,1.0,0.0,4.0,1.0,1.0,2.0,9.0,13.0,3.0,2.0,18.0,50.0,88.89,5.56,11.11,12.0,Balanced Defender
+3895244,Bayer Leverkusen,Robert Andrich,0.0,0.0,18.0,0.0,3.0,7.0,0.0,0.0,6.0,15.0,18.0,1.0,1.0,18.0,0.0,100.0,0.0,5.56,2.94,Balanced Defender
+3895348,Augsburg,Tim Breithaupt,0.0,1.0,11.0,6.0,0.0,2.0,2.0,0.0,0.0,17.0,3.0,2.0,0.0,18.0,0.0,61.11,5.56,0.0,9.09,Balanced Defender
+3895348,Bayer Leverkusen,Amine Adli,0.0,0.0,16.0,2.0,2.0,3.0,0.0,0.0,2.0,6.0,4.0,15.0,2.0,18.0,0.0,88.89,0.0,11.11,60.0,Balanced Defender
+3895052,Bayer Leverkusen,Odilon Kossonou,0.0,0.0,14.0,4.0,1.0,8.0,1.0,1.0,4.0,11.0,15.0,6.0,3.0,18.0,25.0,77.78,0.0,16.67,18.75,Balanced Defender
+3895302,Bayer Leverkusen,Victor Okoh Boniface,0.0,0.0,18.0,0.0,0.0,2.0,0.0,0.0,0.0,3.0,5.0,12.0,1.0,18.0,0.0,100.0,0.0,5.56,60.0,Balanced Defender
+3895320,Bayer Leverkusen,Amine Adli,0.0,0.0,17.0,1.0,0.0,4.0,0.0,0.0,1.0,4.0,11.0,8.0,0.0,18.0,0.0,94.44,0.0,0.0,34.78,Balanced Defender
+3895266,Bayer Leverkusen,Patrik Schick,0.0,1.0,16.0,1.0,1.0,1.0,0.0,0.0,0.0,2.0,6.0,12.0,1.0,18.0,0.0,88.89,5.56,5.56,60.0,Balanced Defender
+3895113,Bayer Leverkusen,Josip Stanišić,0.0,0.0,15.0,3.0,4.0,8.0,1.0,0.0,2.0,18.0,12.0,3.0,1.0,18.0,0.0,83.33,0.0,5.56,9.09,Balanced Defender
+3895309,Bayer Leverkusen,Robert Andrich,0.0,0.0,16.0,2.0,0.0,3.0,2.0,0.0,0.0,3.0,12.0,8.0,3.0,18.0,0.0,88.89,0.0,16.67,34.78,Balanced Defender
+3895086,FC Heidenheim,Tim Siersleben,0.0,1.0,14.0,3.0,5.0,2.0,1.0,0.0,0.0,19.0,7.0,0.0,0.0,18.0,0.0,77.78,5.56,0.0,0.0,Protector
+3895292,Bayer Leverkusen,Robert Andrich,0.0,2.0,13.0,3.0,2.0,7.0,4.0,1.0,3.0,13.0,15.0,6.0,1.0,18.0,33.33,72.22,11.11,5.56,17.65,Balanced Defender
+3895286,Hoffenheim,David Jurásek,0.0,3.0,11.0,4.0,4.0,9.0,0.0,1.0,3.0,30.0,0.0,4.0,2.0,18.0,33.33,61.11,16.67,11.11,11.76,Protector
+3895167,VfB Stuttgart,Josha Mamadou Karaboue Vagnoman,0.0,1.0,12.0,5.0,0.0,4.0,1.0,2.0,5.0,12.0,11.0,5.0,1.0,18.0,40.0,66.67,5.56,5.56,17.86,Balanced Defender
+3895340,Bochum,Maximilian Wittek,0.0,1.0,14.0,3.0,1.0,4.0,1.0,0.0,8.0,12.0,9.0,11.0,1.0,18.0,0.0,77.78,5.56,5.56,34.38,Balanced Defender
+3895113,Wolfsburg,Moritz Jenz,0.0,2.0,11.0,5.0,2.0,2.0,1.0,0.0,3.0,12.0,14.0,0.0,0.0,18.0,0.0,61.11,11.11,0.0,0.0,Balanced Defender
+3895182,Bochum,Takuma Asano,0.0,0.0,18.0,0.0,0.0,0.0,1.0,0.0,2.0,5.0,6.0,10.0,0.0,18.0,0.0,100.0,0.0,0.0,47.62,Balanced Defender
+3895121,Freiburg,Lukas Kübler,0.0,4.0,9.0,5.0,3.0,4.0,2.0,0.0,0.0,19.0,6.0,2.0,1.0,18.0,0.0,50.0,22.22,5.56,7.41,Protector
+3895060,Borussia Mönchengladbach,Tomáš Čvančara,0.0,0.0,18.0,0.0,1.0,2.0,0.0,0.0,3.0,1.0,12.0,11.0,2.0,18.0,0.0,100.0,0.0,11.11,45.83,Balanced Defender
+3895333,Eintracht Frankfurt,Mario Götze,0.0,3.0,15.0,0.0,0.0,4.0,1.0,0.0,3.0,3.0,13.0,10.0,4.0,18.0,0.0,83.33,16.67,22.22,38.46,Balanced Defender
+3895320,Bayer Leverkusen,Edmond Fayçal Tapsoba,0.0,1.0,14.0,3.0,1.0,10.0,3.0,0.0,5.0,20.0,14.0,3.0,2.0,18.0,0.0,77.78,5.56,11.11,8.11,Balanced Defender
+3895286,Bayer Leverkusen,Alejandro Grimaldo García,0.0,3.0,10.0,4.0,1.0,6.0,0.0,0.0,2.0,8.0,12.0,6.0,4.0,17.0,0.0,58.82,17.65,23.53,23.08,Balanced Defender
+3895121,Freiburg,Ritsu Doan,0.0,1.0,13.0,3.0,2.0,2.0,1.0,1.0,5.0,12.0,6.0,9.0,2.0,17.0,20.0,76.47,5.88,11.76,33.33,Balanced Defender
+3895134,Hoffenheim,Ozan Muhammed Kabak,0.0,3.0,11.0,3.0,3.0,2.0,1.0,0.0,3.0,13.0,8.0,5.0,3.0,17.0,0.0,64.71,17.65,17.65,19.23,Balanced Defender
+3895202,RB Leipzig,Daniel Olmo Carvajal,0.0,2.0,15.0,0.0,0.0,4.0,1.0,1.0,5.0,5.0,12.0,10.0,2.0,17.0,20.0,88.24,11.76,11.76,37.04,Balanced Defender
+3895180,Eintracht Frankfurt,Fares Chaïbi,0.0,0.0,16.0,1.0,0.0,3.0,0.0,0.0,7.0,0.0,12.0,15.0,3.0,17.0,0.0,94.12,0.0,17.65,55.56,Balanced Defender
+3895220,Darmstadt 98,Matej Maglica,0.0,1.0,13.0,3.0,4.0,2.0,2.0,2.0,4.0,19.0,10.0,0.0,0.0,17.0,50.0,76.47,5.88,0.0,0.0,Protector
+3895134,Hoffenheim,Marius Bülter,0.0,1.0,16.0,0.0,1.0,3.0,3.0,0.0,1.0,10.0,11.0,4.0,2.0,17.0,0.0,94.12,5.88,11.76,16.0,Balanced Defender
+3895113,Wolfsburg,Ridle Bote Baku,0.0,3.0,14.0,0.0,4.0,2.0,2.0,1.0,3.0,11.0,9.0,8.0,3.0,17.0,33.33,82.35,17.65,17.65,28.57,Balanced Defender
+3895202,Bayer Leverkusen,Josip Stanišić,0.0,0.0,16.0,1.0,2.0,4.0,2.0,1.0,4.0,9.0,18.0,2.0,0.0,17.0,25.0,94.12,0.0,0.0,6.9,Balanced Defender
+3895266,Wolfsburg,Maximilian Arnold,0.0,1.0,14.0,2.0,2.0,9.0,0.0,0.0,1.0,18.0,10.0,1.0,1.0,17.0,0.0,82.35,5.88,5.88,3.45,Balanced Defender
+3895286,Hoffenheim,Anton Stach,0.0,5.0,10.0,2.0,8.0,2.0,0.0,0.0,0.0,23.0,4.0,0.0,0.0,17.0,0.0,58.82,29.41,0.0,0.0,Protector
+3895121,Freiburg,Merlin Röhl,0.0,0.0,16.0,1.0,0.0,3.0,1.0,0.0,5.0,9.0,14.0,3.0,0.0,17.0,0.0,94.12,0.0,0.0,11.54,Balanced Defender
+3895275,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,2.0,13.0,2.0,1.0,7.0,1.0,2.0,3.0,12.0,10.0,7.0,4.0,17.0,66.67,76.47,11.76,23.53,24.14,Dominant Duelist
+3895309,Borussia Dortmund,Mats Hummels,0.0,1.0,15.0,1.0,7.0,4.0,0.0,0.0,8.0,27.0,6.0,3.0,1.0,17.0,0.0,88.24,5.88,5.88,8.33,Protector
+3895086,Bayer Leverkusen,Jonas Hofmann,0.0,0.0,16.0,1.0,0.0,2.0,0.0,0.0,1.0,1.0,2.0,17.0,2.0,17.0,0.0,94.12,0.0,11.76,85.0,Balanced Defender
+3895250,Bayer Leverkusen,Jonathan Tah,0.0,1.0,12.0,4.0,0.0,4.0,4.0,0.0,1.0,15.0,11.0,0.0,0.0,17.0,0.0,70.59,5.88,0.0,0.0,Balanced Defender
+3895258,FC Köln,Sargis Adamyan,0.0,2.0,15.0,0.0,0.0,5.0,1.0,0.0,2.0,6.0,17.0,2.0,1.0,17.0,0.0,88.24,11.76,5.88,8.0,Balanced Defender
+3895202,Bayer Leverkusen,Nathan Tella,0.0,0.0,14.0,3.0,1.0,1.0,2.0,2.0,5.0,10.0,7.0,9.0,0.0,17.0,40.0,82.35,0.0,0.0,34.62,Balanced Defender
+3895182,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,13.0,4.0,0.0,3.0,0.0,0.0,3.0,6.0,9.0,8.0,1.0,17.0,0.0,76.47,0.0,5.88,34.78,Balanced Defender
+3895067,Darmstadt 98,Matthias Bader,0.0,0.0,16.0,1.0,1.0,7.0,0.0,2.0,7.0,22.0,10.0,0.0,0.0,17.0,28.57,94.12,0.0,0.0,0.0,Balanced Defender
+3895052,Bayer Leverkusen,Jeremie Frimpong,0.0,3.0,10.0,4.0,0.0,1.0,1.0,1.0,2.0,6.0,5.0,10.0,2.0,17.0,50.0,58.82,17.65,11.76,47.62,Balanced Defender
+3895348,Bayer Leverkusen,Edmond Fayçal Tapsoba,0.0,1.0,13.0,3.0,4.0,5.0,1.0,0.0,4.0,21.0,7.0,3.0,1.0,17.0,0.0,76.47,5.88,5.88,9.68,Protector
+3895067,Darmstadt 98,Christoph Klarer,0.0,0.0,15.0,2.0,3.0,3.0,3.0,2.0,6.0,26.0,5.0,1.0,0.0,17.0,33.33,88.24,0.0,0.0,3.12,Balanced Defender
+3895244,Bayer Leverkusen,Josip Stanišić,0.0,0.0,12.0,5.0,0.0,7.0,0.0,1.0,3.0,17.0,8.0,2.0,2.0,17.0,33.33,70.59,0.0,11.76,7.41,Balanced Defender
+3895139,Union Berlin,Brenden Aaronson,0.0,0.0,16.0,1.0,0.0,0.0,0.0,0.0,0.0,4.0,9.0,4.0,0.0,17.0,0.0,94.12,0.0,0.0,23.53,Balanced Defender
+3895086,FC Heidenheim,Jonas Föhrenbach,0.0,1.0,14.0,2.0,1.0,3.0,2.0,0.0,1.0,16.0,6.0,2.0,0.0,17.0,0.0,82.35,5.88,0.0,8.33,Balanced Defender
+3895167,Bayer Leverkusen,Granit Xhaka,0.0,1.0,12.0,4.0,2.0,7.0,1.0,0.0,4.0,11.0,10.0,10.0,5.0,17.0,0.0,70.59,5.88,29.41,32.26,Balanced Defender
+3895153,Bayer Leverkusen,Alejandro Grimaldo García,0.0,0.0,17.0,0.0,1.0,1.0,1.0,1.0,2.0,10.0,6.0,6.0,1.0,17.0,50.0,100.0,0.0,5.88,27.27,Balanced Defender
+3895244,FC Heidenheim,Benedikt Gimber,0.0,1.0,15.0,1.0,4.0,0.0,2.0,1.0,1.0,12.0,12.0,0.0,0.0,17.0,100.0,88.24,5.88,0.0,0.0,Dominant Duelist
+3895258,FC Köln,Rasmus Carstensen,0.0,1.0,13.0,3.0,3.0,4.0,0.0,0.0,2.0,18.0,7.0,1.0,0.0,17.0,0.0,76.47,5.88,0.0,3.85,Balanced Defender
+3895266,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,1.0,14.0,2.0,0.0,9.0,0.0,2.0,2.0,6.0,11.0,11.0,6.0,17.0,100.0,82.35,5.88,35.29,39.29,Aggressive Presser
+3895158,Bayer Leverkusen,Victor Okoh Boniface,0.0,0.0,16.0,1.0,0.0,3.0,1.0,0.0,4.0,0.0,8.0,17.0,3.0,17.0,0.0,94.12,0.0,17.65,68.0,Balanced Defender
+3895220,Darmstadt 98,Emir Karic,0.0,0.0,11.0,6.0,3.0,9.0,0.0,1.0,2.0,19.0,9.0,3.0,2.0,17.0,50.0,64.71,0.0,11.76,9.68,Protector
+3895232,Bayern Munich,Min Jae Kim,0.0,4.0,12.0,1.0,0.0,3.0,0.0,0.0,4.0,12.0,11.0,1.0,2.0,17.0,0.0,70.59,23.53,11.76,4.17,Balanced Defender
+3895113,Bayer Leverkusen,Alejandro Grimaldo García,0.0,3.0,10.0,3.0,2.0,4.0,3.0,1.0,2.0,15.0,7.0,5.0,1.0,16.0,50.0,62.5,18.75,6.25,18.52,Balanced Defender
+3895202,RB Leipzig,Lukas Klostermann,0.0,4.0,7.0,5.0,4.0,3.0,0.0,0.0,5.0,19.0,8.0,1.0,0.0,16.0,0.0,43.75,25.0,0.0,3.57,Protector
+3895121,Bayer Leverkusen,Florian Wirtz,0.0,1.0,13.0,2.0,0.0,6.0,0.0,0.0,1.0,3.0,7.0,13.0,3.0,16.0,0.0,81.25,6.25,18.75,56.52,Balanced Defender
+3895320,VfB Stuttgart,Serhou Guirassy,0.0,0.0,15.0,1.0,2.0,2.0,0.0,0.0,0.0,3.0,6.0,11.0,2.0,16.0,0.0,93.75,0.0,12.5,55.0,Balanced Defender
+3895232,Bayern Munich,Leon Goretzka,0.0,0.0,14.0,2.0,0.0,1.0,2.0,0.0,1.0,5.0,11.0,4.0,1.0,16.0,0.0,87.5,0.0,6.25,20.0,Balanced Defender
+3895067,Darmstadt 98,Emir Karic,0.0,0.0,12.0,4.0,3.0,3.0,0.0,0.0,3.0,10.0,9.0,6.0,1.0,16.0,0.0,75.0,0.0,6.25,24.0,Protector
+3895309,Borussia Dortmund,Julian Ryerson,0.0,2.0,12.0,2.0,1.0,6.0,1.0,2.0,5.0,15.0,7.0,7.0,3.0,16.0,40.0,75.0,12.5,18.75,24.14,Balanced Defender
+3895060,Borussia Mönchengladbach,Joseph Scally,0.0,0.0,13.0,3.0,5.0,4.0,1.0,0.0,3.0,18.0,8.0,3.0,1.0,16.0,0.0,81.25,0.0,6.25,10.34,Protector
+3895182,Bayer Leverkusen,Jonas Hofmann,0.0,1.0,14.0,1.0,0.0,0.0,0.0,0.0,2.0,2.0,8.0,8.0,1.0,16.0,0.0,87.5,6.25,6.25,44.44,Balanced Defender
+3895210,Borussia Mönchengladbach,Marvin Friedrich,0.0,0.0,12.0,4.0,16.0,1.0,0.0,0.0,1.0,33.0,1.0,0.0,0.0,16.0,0.0,75.0,0.0,0.0,0.0,Protector
+3895220,Darmstadt 98,Gerrit Holtmann,0.0,0.0,16.0,0.0,0.0,8.0,3.0,0.0,2.0,7.0,15.0,7.0,2.0,16.0,0.0,100.0,0.0,12.5,24.14,Balanced Defender
+3895153,Werder Bremen,Anthony Jung,0.0,3.0,12.0,1.0,2.0,3.0,1.0,0.0,3.0,14.0,9.0,2.0,0.0,16.0,0.0,75.0,18.75,0.0,8.0,Balanced Defender
+3895250,Bayer Leverkusen,Robert Andrich,0.0,0.0,15.0,1.0,1.0,3.0,2.0,0.0,5.0,4.0,17.0,6.0,0.0,16.0,0.0,93.75,0.0,0.0,22.22,Balanced Defender
+3895113,Wolfsburg,Sebastiaan Bornauw,0.0,0.0,14.0,2.0,1.0,3.0,4.0,0.0,3.0,11.0,16.0,0.0,1.0,16.0,0.0,87.5,0.0,6.25,0.0,Balanced Defender
+3895153,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,1.0,14.0,1.0,2.0,10.0,0.0,1.0,4.0,16.0,13.0,3.0,3.0,16.0,25.0,87.5,6.25,18.75,9.38,Balanced Defender
+3895060,Borussia Mönchengladbach,Rocco Reitz,0.0,0.0,16.0,0.0,0.0,5.0,0.0,0.0,1.0,8.0,10.0,4.0,2.0,16.0,0.0,100.0,0.0,12.5,18.18,Balanced Defender
+3895309,Borussia Dortmund,Marcel Sabitzer,0.0,1.0,15.0,0.0,0.0,5.0,0.0,0.0,3.0,6.0,10.0,8.0,4.0,16.0,0.0,93.75,6.25,25.0,33.33,Balanced Defender
+3895139,Union Berlin,Christopher Trimmel,0.0,1.0,14.0,1.0,2.0,0.0,0.0,0.0,1.0,10.0,6.0,3.0,0.0,16.0,0.0,87.5,6.25,0.0,15.79,Balanced Defender
+3895250,Bayer Leverkusen,Florian Wirtz,0.0,1.0,13.0,2.0,0.0,5.0,0.0,1.0,3.0,2.0,10.0,12.0,4.0,16.0,33.33,81.25,6.25,25.0,50.0,Balanced Defender
+3895180,Bayer Leverkusen,Granit Xhaka,0.0,0.0,13.0,3.0,1.0,9.0,0.0,0.0,1.0,11.0,12.0,4.0,2.0,16.0,0.0,81.25,0.0,12.5,14.81,Balanced Defender
+3895266,Wolfsburg,Lovro Majer,0.0,2.0,13.0,1.0,0.0,0.0,0.0,0.0,3.0,10.0,4.0,5.0,0.0,16.0,0.0,81.25,12.5,0.0,26.32,Balanced Defender
+3895210,Bayer Leverkusen,Patrik Schick,0.0,1.0,15.0,0.0,0.0,1.0,2.0,0.0,1.0,1.0,5.0,14.0,1.0,16.0,0.0,93.75,6.25,6.25,70.0,Balanced Defender
+3895202,RB Leipzig,Mohamed Simakan,0.0,2.0,12.0,2.0,0.0,3.0,1.0,0.0,2.0,12.0,6.0,4.0,1.0,16.0,0.0,75.0,12.5,6.25,18.18,Balanced Defender
+3895292,Union Berlin,Danilho Doekhi,0.0,1.0,9.0,6.0,2.0,0.0,0.0,0.0,1.0,13.0,6.0,0.0,0.0,16.0,0.0,56.25,6.25,0.0,0.0,Protector
+3895309,Bayer Leverkusen,Edmond Fayçal Tapsoba,0.0,1.0,14.0,1.0,1.0,7.0,0.0,2.0,5.0,16.0,12.0,1.0,1.0,16.0,40.0,87.5,6.25,6.25,3.45,Balanced Defender
+3895153,Werder Bremen,Milos Veljkovic,0.0,1.0,13.0,2.0,3.0,2.0,0.0,0.0,4.0,8.0,11.0,6.0,0.0,16.0,0.0,81.25,6.25,0.0,24.0,Balanced Defender
+3895074,Bayern Munich,Alphonso Davies,0.0,4.0,10.0,2.0,2.0,2.0,2.0,1.0,3.0,16.0,9.0,0.0,0.0,16.0,33.33,62.5,25.0,0.0,0.0,Balanced Defender
+3895348,Bayer Leverkusen,Robert Andrich,0.0,0.0,14.0,2.0,1.0,6.0,1.0,1.0,3.0,9.0,11.0,7.0,4.0,16.0,33.33,87.5,0.0,25.0,25.93,Balanced Defender
+3895210,Bayer Leverkusen,Alejandro Grimaldo García,0.0,0.0,15.0,1.0,0.0,7.0,0.0,1.0,2.0,2.0,7.0,16.0,6.0,16.0,50.0,93.75,0.0,37.5,64.0,Aggressive Presser
+3895194,Bayer Leverkusen,Josip Stanišić,0.0,0.0,14.0,2.0,3.0,6.0,0.0,0.0,4.0,12.0,16.0,1.0,1.0,16.0,0.0,87.5,0.0,6.25,3.45,Balanced Defender
+3895202,RB Leipzig,Xavi Simons,0.0,1.0,13.0,2.0,0.0,4.0,3.0,1.0,3.0,7.0,15.0,4.0,2.0,16.0,33.33,81.25,6.25,12.5,15.38,Balanced Defender
+3895095,FSV Mainz 05,Edimilson Fernandes,0.0,3.0,11.0,2.0,1.0,7.0,1.0,0.0,3.0,16.0,12.0,0.0,2.0,16.0,0.0,68.75,18.75,12.5,0.0,Balanced Defender
+3895302,Bayer Leverkusen,Robert Andrich,0.0,0.0,16.0,0.0,1.0,8.0,1.0,0.0,0.0,11.0,11.0,4.0,3.0,16.0,0.0,100.0,0.0,18.75,15.38,Balanced Defender
+3895258,FC Köln,Julian Chabot,0.0,2.0,6.0,8.0,6.0,2.0,0.0,1.0,1.0,24.0,0.0,1.0,0.0,16.0,100.0,37.5,12.5,0.0,4.0,Protector
+3895292,Bayer Leverkusen,Odilon Kossonou,0.0,2.0,11.0,3.0,7.0,5.0,1.0,0.0,0.0,18.0,6.0,5.0,1.0,16.0,0.0,68.75,12.5,6.25,17.24,Protector
+3895286,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,16.0,0.0,1.0,10.0,1.0,0.0,0.0,4.0,2.0,22.0,10.0,16.0,0.0,100.0,0.0,62.5,78.57,Aggressive Presser
+3895302,Bayer Leverkusen,Edmond Fayçal Tapsoba,0.0,1.0,15.0,0.0,2.0,6.0,4.0,0.0,3.0,7.0,20.0,4.0,0.0,16.0,0.0,93.75,6.25,0.0,12.9,Balanced Defender
+3895333,Bayer Leverkusen,Adam Hložek,0.0,0.0,13.0,3.0,1.0,2.0,1.0,0.0,2.0,7.0,8.0,7.0,2.0,16.0,0.0,81.25,0.0,12.5,31.82,Balanced Defender
+3895309,Borussia Dortmund,Marco Reus,0.0,0.0,14.0,1.0,1.0,1.0,2.0,1.0,1.0,8.0,8.0,4.0,1.0,15.0,100.0,93.33,0.0,6.67,20.0,Dominant Duelist
+3895320,VfB Stuttgart,Jamie Leweling,0.0,1.0,11.0,3.0,0.0,2.0,5.0,0.0,0.0,7.0,10.0,5.0,0.0,15.0,0.0,73.33,6.67,0.0,22.73,Balanced Defender
+3895220,Bayer Leverkusen,Josip Stanišić,0.0,0.0,11.0,4.0,4.0,7.0,1.0,2.0,5.0,22.0,8.0,2.0,3.0,15.0,40.0,73.33,0.0,20.0,6.25,Protector
+3895258,Bayer Leverkusen,Patrik Schick,0.0,1.0,13.0,1.0,0.0,1.0,0.0,0.0,2.0,1.0,6.0,11.0,1.0,15.0,0.0,86.67,6.67,6.67,61.11,Balanced Defender
+3895134,Bayer Leverkusen,Edmond Fayçal Tapsoba,0.0,1.0,13.0,1.0,5.0,4.0,1.0,1.0,2.0,17.0,8.0,2.0,0.0,15.0,50.0,86.67,6.67,0.0,7.41,Balanced Defender
+3895153,Bayer Leverkusen,Victor Okoh Boniface,0.0,0.0,14.0,1.0,1.0,2.0,0.0,0.0,0.0,2.0,5.0,11.0,2.0,15.0,0.0,93.33,0.0,13.33,61.11,Balanced Defender
+3895180,Eintracht Frankfurt,Lucas Silva Melo,0.0,1.0,14.0,0.0,1.0,6.0,0.0,1.0,4.0,10.0,11.0,5.0,2.0,15.0,25.0,93.33,6.67,13.33,19.23,Balanced Defender
+3895275,Bayer Leverkusen,Josip Stanišić,0.0,1.0,8.0,6.0,1.0,2.0,0.0,1.0,2.0,14.0,4.0,2.0,0.0,15.0,50.0,53.33,6.67,0.0,10.0,Protector
+3895250,Bayer Leverkusen,Alejandro Grimaldo García,0.0,0.0,15.0,0.0,2.0,5.0,1.0,0.0,0.0,5.0,8.0,10.0,3.0,15.0,0.0,100.0,0.0,20.0,43.48,Balanced Defender
+3895067,Darmstadt 98,Bartol Franjić,0.0,6.0,8.0,1.0,7.0,2.0,0.0,0.0,2.0,21.0,5.0,0.0,0.0,15.0,0.0,53.33,40.0,0.0,0.0,Protector
+3895052,RB Leipzig,Xavi Simons,0.0,1.0,14.0,0.0,1.0,4.0,0.0,0.0,0.0,9.0,10.0,1.0,0.0,15.0,0.0,93.33,6.67,0.0,5.0,Balanced Defender
+3895134,Bayer Leverkusen,Jeremie Frimpong,0.0,0.0,15.0,0.0,0.0,4.0,1.0,0.0,1.0,4.0,8.0,9.0,2.0,15.0,0.0,100.0,0.0,13.33,42.86,Balanced Defender
+3895153,Bayer Leverkusen,Piero Martín Hincapié Reyna,0.0,3.0,12.0,0.0,3.0,3.0,0.0,1.0,3.0,16.0,7.0,1.0,0.0,15.0,33.33,80.0,20.0,0.0,4.17,Balanced Defender
+3895244,Bayer Leverkusen,Patrik Schick,0.0,0.0,15.0,0.0,2.0,4.0,0.0,0.0,4.0,4.0,14.0,7.0,1.0,15.0,0.0,100.0,0.0,6.67,28.0,Balanced Defender
+3895333,Eintracht Frankfurt,Hugo Ekitike,0.0,0.0,14.0,1.0,0.0,6.0,0.0,0.0,2.0,0.0,11.0,12.0,4.0,15.0,0.0,93.33,0.0,26.67,52.17,Balanced Defender
+3895286,Bayer Leverkusen,Patrik Schick,0.0,0.0,14.0,1.0,1.0,0.0,1.0,0.0,1.0,1.0,3.0,14.0,0.0,15.0,0.0,93.33,0.0,0.0,77.78,Balanced Defender
+3895194,Bayer Leverkusen,Jeremie Frimpong,0.0,1.0,13.0,1.0,2.0,6.0,1.0,1.0,2.0,3.0,12.0,11.0,5.0,15.0,50.0,86.67,6.67,33.33,42.31,Aggressive Presser
+3895052,RB Leipzig,Mohamed Simakan,0.0,2.0,12.0,1.0,2.0,1.0,1.0,0.0,6.0,13.0,11.0,1.0,0.0,15.0,0.0,80.0,13.33,0.0,4.0,Balanced Defender
+3895232,Bayer Leverkusen,Granit Xhaka,0.0,2.0,13.0,0.0,1.0,6.0,3.0,0.0,1.0,9.0,9.0,8.0,2.0,15.0,0.0,86.67,13.33,13.33,30.77,Balanced Defender
+3895220,Bayer Leverkusen,Robert Andrich,0.0,1.0,11.0,3.0,0.0,3.0,1.0,0.0,1.0,8.0,10.0,2.0,0.0,15.0,0.0,73.33,6.67,0.0,10.0,Balanced Defender
+3895052,RB Leipzig,Benjamin Henrichs,0.0,2.0,12.0,1.0,0.0,4.0,0.0,0.0,2.0,8.0,8.0,5.0,3.0,15.0,0.0,80.0,13.33,20.0,23.81,Balanced Defender
+3895202,Bayer Leverkusen,Patrik Schick,0.0,0.0,14.0,1.0,0.0,2.0,3.0,0.0,0.0,2.0,10.0,8.0,1.0,15.0,0.0,93.33,0.0,6.67,40.0,Balanced Defender
+3895074,Bayern Munich,Leon Goretzka,0.0,1.0,13.0,1.0,0.0,4.0,0.0,0.0,0.0,5.0,10.0,4.0,0.0,15.0,0.0,86.67,6.67,0.0,21.05,Balanced Defender
+3895302,Werder Bremen,Julián Malatini,0.0,2.0,11.0,2.0,1.0,7.0,2.0,1.0,4.0,17.0,5.0,7.0,2.0,15.0,25.0,73.33,13.33,13.33,24.14,Balanced Defender
+3895180,Eintracht Frankfurt,Willian Joel Pacho Tenorio,0.0,2.0,10.0,3.0,5.0,6.0,0.0,1.0,3.0,19.0,9.0,1.0,1.0,15.0,33.33,66.67,13.33,6.67,3.45,Protector
+3895292,Union Berlin,András Schäfer,0.0,1.0,13.0,1.0,2.0,5.0,0.0,0.0,8.0,7.0,13.0,10.0,5.0,15.0,0.0,86.67,6.67,33.33,33.33,Aggressive Presser
+3895180,Eintracht Frankfurt,Aurélio Gabriel Ulineia Buta,0.0,0.0,14.0,1.0,1.0,8.0,3.0,1.0,2.0,11.0,13.0,5.0,2.0,15.0,50.0,93.33,0.0,13.33,17.24,Balanced Defender
+3895060,Borussia Mönchengladbach,Franck Honorat,0.0,0.0,15.0,0.0,0.0,1.0,0.0,0.0,0.0,3.0,10.0,3.0,1.0,15.0,0.0,100.0,0.0,6.67,18.75,Balanced Defender
+3895244,FC Heidenheim,Jonas Föhrenbach,0.0,3.0,7.0,5.0,4.0,2.0,4.0,0.0,2.0,12.0,8.0,7.0,2.0,15.0,0.0,46.67,20.0,13.33,25.93,Protector
+3895275,Bayer Leverkusen,Granit Xhaka,0.0,1.0,10.0,4.0,0.0,4.0,0.0,0.0,2.0,6.0,13.0,2.0,1.0,15.0,0.0,66.67,6.67,6.67,9.52,Balanced Defender
+3895302,Werder Bremen,Felix Agu,0.0,1.0,11.0,3.0,1.0,0.0,0.0,1.0,5.0,12.0,9.0,0.0,0.0,15.0,20.0,73.33,6.67,0.0,0.0,Balanced Defender
+3895292,Union Berlin,Mikkel Kaufmann,0.0,0.0,13.0,2.0,0.0,1.0,1.0,0.0,7.0,6.0,13.0,5.0,0.0,15.0,0.0,86.67,0.0,0.0,20.83,Balanced Defender
+3895232,Bayer Leverkusen,Alejandro Grimaldo García,0.0,1.0,10.0,4.0,1.0,2.0,0.0,0.0,0.0,10.0,7.0,1.0,0.0,15.0,0.0,66.67,6.67,0.0,5.56,Balanced Defender
+3895320,VfB Stuttgart,Waldemar Anton,0.0,1.0,13.0,1.0,4.0,2.0,0.0,0.0,2.0,12.0,11.0,0.0,0.0,15.0,0.0,86.67,6.67,0.0,0.0,Balanced Defender
+3895107,Bayer Leverkusen,Granit Xhaka,0.0,1.0,11.0,3.0,0.0,6.0,1.0,0.0,3.0,4.0,6.0,15.0,4.0,15.0,0.0,73.33,6.67,26.67,60.0,Balanced Defender
+3895302,Bayer Leverkusen,Amine Adli,0.0,0.0,15.0,0.0,0.0,1.0,2.0,0.0,1.0,3.0,8.0,8.0,0.0,15.0,0.0,100.0,0.0,0.0,42.11,Balanced Defender
+3895095,FSV Mainz 05,Sepp van den Berg,0.0,2.0,7.0,6.0,1.0,2.0,0.0,0.0,4.0,12.0,8.0,2.0,1.0,15.0,0.0,46.67,13.33,6.67,9.09,Protector
+3895067,Bayer Leverkusen,Exequiel Alejandro Palacios,0.0,2.0,11.0,2.0,1.0,3.0,1.0,0.0,2.0,7.0,10.0,5.0,2.0,15.0,0.0,73.33,13.33,13.33,22.73,Balanced Defender

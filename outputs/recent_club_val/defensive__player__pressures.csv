@@ -1,0 +1,956 @@
+match_id,team,player,total_pressures,counterpresses,pressure_regains,high_pressures,pressure_success_pct,minutes_played,pressures_per_90
+3895134,Hoffenheim,Wout Weghorst,43,11.0,7.0,18,16.28,95,40.74
+3895153,Bayer Leverkusen,Jonas Hofmann,43,14.0,8.0,16,18.6,88,43.98
+3895220,Darmstadt 98,Matthias Bader,42,5.0,8.0,2,19.05,93,40.65
+3895167,VfB Stuttgart,Atakan Karazor,41,10.0,7.0,11,17.07,91,40.55
+3895333,Bayer Leverkusen,Jonas Hofmann,41,7.0,5.0,14,12.2,92,40.11
+3895220,Darmstadt 98,Luca Pfeiffer,41,4.0,4.0,8,9.76,92,40.11
+3895210,Borussia Mönchengladbach,Theoson Jordan Siebatcheu,40,5.0,4.0,4,10.0,75,48.0
+3895232,Bayer Leverkusen,Florian Wirtz,40,6.0,8.0,15,20.0,89,40.45
+3895182,Bochum,Gonçalo Mendes Paciencia,39,5.0,5.0,17,12.82,62,56.61
+3895302,Bayer Leverkusen,Jonas Hofmann,38,4.0,6.0,23,15.79,88,38.86
+3895210,Borussia Mönchengladbach,Robin Hack,37,6.0,2.0,9,5.41,61,54.59
+3895232,Bayer Leverkusen,Amine Adli,37,8.0,4.0,18,10.81,82,40.61
+3895134,Bayer Leverkusen,Florian Wirtz,36,7.0,7.0,10,19.44,90,36.0
+3895086,FC Heidenheim,Nikola Dovedan,36,5.0,5.0,1,13.89,63,51.43
+3895139,Union Berlin,Alex Král,35,3.0,3.0,2,8.57,91,34.62
+3895139,Union Berlin,Janik Haberer,35,1.0,3.0,1,8.57,91,34.62
+3895258,FC Köln,Dejan Ljubicic,35,1.0,1.0,0,2.86,91,34.62
+3895194,Augsburg,Phillip Tietz,35,7.0,7.0,10,20.0,78,40.38
+3895302,Werder Bremen,Leonardo Bittencourt,35,6.0,4.0,4,11.43,76,41.45
+3895210,Borussia Mönchengladbach,Julian Weigl,34,4.0,5.0,0,14.71,92,33.26
+3895210,Borussia Mönchengladbach,Florian Neuhaus,34,4.0,6.0,0,17.65,77,39.74
+3895107,FC Köln,Faride Alidou,33,5.0,3.0,11,9.09,61,48.69
+3895309,Borussia Dortmund,Niclas Füllkrug,33,6.0,2.0,12,6.06,97,30.62
+3895194,Augsburg,Kevin Mbabu,33,2.0,6.0,13,18.18,92,32.28
+3895113,Wolfsburg,Yannick Gerhardt,33,2.0,1.0,4,3.03,77,38.57
+3895320,VfB Stuttgart,Atakan Karazor,32,8.0,5.0,4,15.63,93,30.97
+3895220,Darmstadt 98,Oscar Vilhelmsson,32,3.0,6.0,8,18.75,66,43.64
+3895074,Bayer Leverkusen,Florian Wirtz,32,8.0,5.0,11,15.63,94,30.64
+3895180,Bayer Leverkusen,Jonas Hofmann,32,7.0,4.0,24,12.5,82,35.12
+3895250,FSV Mainz 05,Karim Onisiwo,32,5.0,5.0,10,15.63,82,35.12
+3895210,Borussia Mönchengladbach,Franck Honorat,32,3.0,2.0,7,6.25,68,42.35
+3895074,Bayern Munich,Konrad Laimer,32,7.0,7.0,6,21.88,83,34.7
+3895095,Bayer Leverkusen,Florian Wirtz,31,12.0,2.0,12,6.45,60,46.5
+3895086,FC Heidenheim,Eren Sami Dinkçi,31,4.0,3.0,11,9.68,77,36.23
+3895302,Werder Bremen,Senne Lynen,31,3.0,5.0,4,16.13,85,32.82
+3895107,Bayer Leverkusen,Jonas Hofmann,31,4.0,2.0,14,6.45,87,32.07
+3895180,Eintracht Frankfurt,Eric Junior Dina Ebimbe,30,2.0,4.0,8,13.33,71,38.03
+3895244,Bayer Leverkusen,Amine Adli,30,8.0,9.0,7,30.0,87,31.03
+3895194,Augsburg,Arne Maier,30,2.0,2.0,4,6.67,34,79.41
+3895258,FC Köln,Max Finkgräfe,30,1.0,4.0,1,13.33,90,30.0
+3895180,Bayer Leverkusen,Florian Wirtz,30,7.0,3.0,14,10.0,84,32.14
+3895153,Bayer Leverkusen,Florian Wirtz,30,5.0,4.0,17,13.33,80,33.75
+3895244,FC Heidenheim,Lennard Maloney,29,6.0,6.0,3,20.69,92,28.37
+3895210,Borussia Mönchengladbach,Kouadio Emmanuel Koné,29,4.0,3.0,1,10.34,78,33.46
+3895134,Hoffenheim,Finn Ole Becker,29,3.0,4.0,4,13.79,77,33.9
+3895107,FC Köln,Dejan Ljubicic,29,1.0,2.0,8,6.9,88,29.66
+3895153,Werder Bremen,Leonardo Bittencourt,29,6.0,4.0,5,13.79,71,36.76
+3895060,Borussia Mönchengladbach,Julian Weigl,28,7.0,6.0,1,21.43,91,27.69
+3895302,Werder Bremen,Nick Woltemade,28,4.0,1.0,11,3.57,68,37.06
+3895333,Eintracht Frankfurt,Eric Junior Dina Ebimbe,28,7.0,11.0,13,39.29,79,31.9
+3895210,Bayer Leverkusen,Jonas Hofmann,28,7.0,6.0,21,21.43,83,30.36
+3895182,Bochum,Matúš Bero,28,5.0,2.0,9,7.14,86,29.3
+3895220,Darmstadt 98,Bartol Franjić,28,4.0,0.0,1,0.0,80,31.5
+3895052,RB Leipzig,Daniel Olmo Carvajal,28,3.0,4.0,6,14.29,93,27.1
+3895086,FC Heidenheim,Jan-Niklas Beste,28,1.0,3.0,5,10.71,81,31.11
+3895202,Bayer Leverkusen,Florian Wirtz,27,7.0,6.0,12,22.22,90,27.0
+3895302,Werder Bremen,Romano Schmid,27,3.0,7.0,2,25.93,89,27.3
+3895167,Bayer Leverkusen,Florian Wirtz,27,8.0,7.0,11,25.93,94,25.85
+3895232,Bayern Munich,Jamal Musiala,27,6.0,4.0,16,14.81,80,30.38
+3895309,Bayer Leverkusen,Jeremie Frimpong,27,3.0,5.0,15,18.52,94,25.85
+3895158,Bayer Leverkusen,Florian Wirtz,27,8.0,5.0,12,18.52,93,26.13
+3895153,Werder Bremen,Jens Stage,27,1.0,2.0,4,7.41,91,26.7
+3895250,Bayer Leverkusen,Amine Adli,27,9.0,5.0,14,18.52,78,31.15
+3895194,Augsburg,Ermedin Demirović,27,5.0,0.0,10,0.0,78,31.15
+3895107,FC Köln,Florian Kainz,27,3.0,5.0,4,18.52,91,26.7
+3895210,Bayer Leverkusen,Florian Wirtz,26,7.0,5.0,19,19.23,92,25.43
+3895232,Bayer Leverkusen,Piero Martín Hincapié Reyna,26,4.0,9.0,0,34.62,93,25.16
+3895158,Borussia Dortmund,Marco Reus,26,3.0,3.0,2,11.54,83,28.19
+3895134,Hoffenheim,Maximilian Beier,26,5.0,3.0,12,11.54,87,26.9
+3895232,Bayer Leverkusen,Josip Stanišić,26,2.0,5.0,6,19.23,94,24.89
+3895067,Darmstadt 98,Fabian Holland,26,1.0,6.0,0,23.08,92,25.43
+3895180,Eintracht Frankfurt,Mario Götze,26,6.0,4.0,6,15.38,63,37.14
+3895286,Hoffenheim,Wout Weghorst,26,6.0,5.0,1,19.23,77,30.39
+3895153,Werder Bremen,Rafael Santos Borré Amaury,26,0.0,2.0,10,7.69,71,32.96
+3895244,Bayer Leverkusen,Florian Wirtz,26,8.0,7.0,7,26.92,87,26.9
+3895121,Freiburg,Nicolas Höfler,25,2.0,7.0,0,28.0,94,23.94
+3895232,Bayern Munich,Sacha Boey,25,5.0,1.0,9,4.0,79,28.48
+3895139,Union Berlin,Aïssa Bilal Laïdouni,25,4.0,2.0,4,8.0,87,25.86
+3895158,Borussia Dortmund,Julian Brandt,25,6.0,2.0,3,8.0,92,24.46
+3895107,Bayer Leverkusen,Florian Wirtz,25,8.0,4.0,13,16.0,70,32.14
+3895244,FC Heidenheim,Jan Schöppner,25,5.0,8.0,8,32.0,61,36.89
+3895220,Darmstadt 98,Fabian Holland,25,5.0,3.0,4,12.0,66,34.09
+3895134,Bayer Leverkusen,Exequiel Alejandro Palacios,25,3.0,6.0,1,24.0,93,24.19
+3895202,RB Leipzig,Benjamin Šeško,25,7.0,6.0,8,24.0,73,30.82
+3895167,VfB Stuttgart,Angelo Stiller,24,5.0,6.0,5,25.0,90,24.0
+3895095,FSV Mainz 05,Dominik Kohr,24,4.0,6.0,5,25.0,69,31.3
+3895258,FC Köln,Linton Maina,24,3.0,1.0,5,4.17,80,27.0
+3895244,FC Heidenheim,Tim Kleindienst,24,7.0,1.0,11,4.17,94,22.98
+3895202,RB Leipzig,Nicolas Seiwald,24,4.0,4.0,4,16.67,74,29.19
+3895320,VfB Stuttgart,Chris Führich,24,5.0,4.0,9,16.67,79,27.34
+3895202,RB Leipzig,Xaver Schlager,24,3.0,5.0,3,20.83,91,23.74
+3895074,Bayern Munich,Serge Gnabry,24,1.0,5.0,7,20.83,69,31.3
+3895060,Borussia Mönchengladbach,Nathan Ngoumou Minpole,24,3.0,4.0,2,16.67,66,32.73
+3895309,Bayer Leverkusen,Jonas Hofmann,24,4.0,2.0,13,8.33,83,26.02
+3895348,Augsburg,Ermedin Demirović,24,2.0,0.0,8,0.0,90,24.0
+3895309,Borussia Dortmund,Jamie Jermaine Bynoe-Gittens,24,4.0,5.0,4,20.83,82,26.34
+3895180,Eintracht Frankfurt,Ansgar Knauff,24,4.0,5.0,8,20.83,92,23.48
+3895182,Bochum,Patrick Osterhage,24,2.0,1.0,3,4.17,94,22.98
+3895194,Augsburg,Ruben Vargas,23,3.0,1.0,8,4.35,61,33.93
+3895232,Bayer Leverkusen,Robert Andrich,23,5.0,7.0,1,30.43,92,22.5
+3895095,Bayer Leverkusen,Alejandro Grimaldo García,23,2.0,8.0,1,34.78,93,22.26
+3895052,RB Leipzig,Nicolas Seiwald,23,8.0,5.0,2,21.74,60,34.5
+3895067,Darmstadt 98,Marvin Mehlem,23,3.0,5.0,3,21.74,68,30.44
+3895086,FC Heidenheim,Patrick Mainka,23,2.0,2.0,0,8.7,92,22.5
+3895244,FC Heidenheim,Nikola Dovedan,23,5.0,3.0,4,13.04,44,47.05
+3895086,FC Heidenheim,Lennard Maloney,23,2.0,5.0,2,21.74,95,21.79
+3895158,Borussia Dortmund,Marius Wolf,23,0.0,4.0,0,17.39,94,22.02
+3895139,Union Berlin,David Datro Fofana,23,0.0,2.0,3,8.7,77,26.88
+3895244,FC Heidenheim,Patrick Mainka,23,0.0,6.0,0,26.09,94,22.02
+3895244,FC Heidenheim,Eren Sami Dinkçi,23,3.0,7.0,6,30.43,75,27.6
+3895333,Eintracht Frankfurt,Omar Marmoush,22,1.0,3.0,8,13.64,94,21.06
+3895275,Bayer Leverkusen,Florian Wirtz,22,6.0,4.0,13,18.18,94,21.06
+3895232,Bayern Munich,Aleksandar Pavlović,22,3.0,2.0,5,9.09,59,33.56
+3895107,FC Köln,Davie Selke,22,1.0,0.0,10,0.0,90,22.0
+3895153,Werder Bremen,Mitchell Weiser,22,4.0,6.0,8,27.27,92,21.52
+3895052,Bayer Leverkusen,Jonas Hofmann,22,11.0,7.0,11,31.82,87,22.76
+3895244,FC Heidenheim,Omar Haktab Traorè,22,5.0,6.0,4,27.27,91,21.76
+3895182,Bochum,Anthony Losilla,22,4.0,5.0,9,22.73,86,23.02
+3895194,Augsburg,Iago Amaral Borduchi,22,2.0,5.0,5,22.73,88,22.5
+3895107,FC Köln,Denis Huseinbašić,22,4.0,6.0,2,27.27,72,27.5
+3895320,VfB Stuttgart,Enzo Millot,22,3.0,4.0,6,18.18,73,27.12
+3895134,Bayer Leverkusen,Jonas Hofmann,22,2.0,1.0,12,4.55,79,25.06
+3895320,VfB Stuttgart,Deniz Undav,22,5.0,1.0,7,4.55,72,27.5
+3895220,Darmstadt 98,Tim Skarke,22,0.0,1.0,6,4.55,93,21.29
+3895134,Hoffenheim,Anton Stach,21,6.0,5.0,4,23.81,93,20.32
+3895086,FC Heidenheim,Tim Kleindienst,21,5.0,3.0,7,14.29,79,23.92
+3895086,FC Heidenheim,Omar Haktab Traorè,21,1.0,2.0,0,9.52,93,20.32
+3895113,Wolfsburg,Maximilian Arnold,21,1.0,2.0,2,9.52,93,20.32
+3895095,Bayer Leverkusen,Odilon Kossonou,21,6.0,4.0,2,19.05,91,20.77
+3895320,Bayer Leverkusen,Exequiel Alejandro Palacios,21,2.0,4.0,5,19.05,93,20.32
+3895052,RB Leipzig,Xaver Schlager,21,3.0,6.0,2,28.57,82,23.05
+3895107,FC Köln,Rasmus Carstensen,21,3.0,6.0,0,28.57,90,21.0
+3895095,FSV Mainz 05,Leandro Barreiro Martins,21,7.0,4.0,4,19.05,93,20.32
+3895121,Freiburg,Kiliann Sildillia,21,0.0,9.0,3,42.86,92,20.54
+3895266,Wolfsburg,Yannick Gerhardt,21,1.0,2.0,0,9.52,84,22.5
+3895182,Bayer Leverkusen,Florian Wirtz,21,8.0,5.0,6,23.81,86,21.98
+3895275,Freiburg,Nicolas Höfler,21,0.0,4.0,0,19.05,93,20.32
+3895333,Bayer Leverkusen,Exequiel Alejandro Palacios,21,4.0,3.0,1,14.29,94,20.11
+3895167,VfB Stuttgart,Deniz Undav,21,0.0,2.0,11,9.52,84,22.5
+3895244,FC Heidenheim,Jan-Niklas Beste,21,4.0,7.0,5,33.33,74,25.54
+3895182,Bochum,Cristian Gamboa Luna,21,2.0,6.0,4,28.57,90,21.0
+3895258,FC Köln,Eric Martel,20,2.0,5.0,0,25.0,82,21.95
+3895348,Augsburg,Arne Maier,20,1.0,2.0,5,10.0,89,20.22
+3895302,Bayer Leverkusen,Nathan Tella,20,5.0,2.0,9,10.0,61,29.51
+3895275,Freiburg,Merlin Röhl,20,5.0,6.0,6,30.0,71,25.35
+3895232,Bayern Munich,Leroy Sané,20,6.0,3.0,6,15.0,93,19.35
+3895292,Union Berlin,Brenden Aaronson,20,0.0,4.0,5,20.0,77,23.38
+3895250,FSV Mainz 05,Jae-Sung Lee,20,3.0,5.0,11,25.0,94,19.15
+3895180,Eintracht Frankfurt,Niels Nkounkou,20,1.0,6.0,1,30.0,93,19.35
+3895302,Bayer Leverkusen,Florian Wirtz,20,9.0,5.0,14,25.0,44,40.91
+3895333,Eintracht Frankfurt,Fares Chaïbi,20,3.0,2.0,4,10.0,77,23.38
+3895292,Bayer Leverkusen,Amine Adli,20,5.0,5.0,11,25.0,62,29.03
+3895250,FSV Mainz 05,Nadiem Amiri,20,4.0,5.0,4,25.0,93,19.35
+3895113,Wolfsburg,Jonas Older Wind,20,4.0,2.0,8,10.0,93,19.35
+3895348,Augsburg,Mert Kömür,20,2.0,4.0,6,20.0,73,24.66
+3895210,Borussia Mönchengladbach,Luca Netz,20,2.0,2.0,3,10.0,92,19.57
+3895302,Werder Bremen,Marvin Ducksch,20,6.0,2.0,7,10.0,89,20.22
+3895194,Augsburg,Elvis Rexhbeçaj,20,4.0,2.0,4,10.0,87,20.69
+3895309,Borussia Dortmund,Julian Brandt,20,2.0,2.0,1,10.0,82,21.95
+3895095,Bayer Leverkusen,Jonas Hofmann,20,4.0,3.0,6,15.0,85,21.18
+3895139,Union Berlin,Diogo Filipe Monteiro Pinto Leite,20,4.0,3.0,2,15.0,90,20.0
+3895210,Borussia Mönchengladbach,Joseph Scally,20,3.0,1.0,0,5.0,92,19.57
+3895074,Bayern Munich,Thomas Müller,20,3.0,5.0,4,25.0,60,30.0
+3895302,Bayer Leverkusen,Granit Xhaka,19,4.0,1.0,8,5.26,76,22.5
+3895292,Union Berlin,Lucas Tousart,19,7.0,2.0,4,10.53,89,19.21
+3895095,FSV Mainz 05,Karim Onisiwo,19,3.0,3.0,9,15.79,81,21.11
+3895292,Bayer Leverkusen,Florian Wirtz,19,8.0,6.0,8,31.58,95,18.0
+3895258,Bayer Leverkusen,Florian Wirtz,19,4.0,5.0,11,26.32,91,18.79
+3895095,Bayer Leverkusen,Exequiel Alejandro Palacios,19,3.0,3.0,2,15.79,92,18.59
+3895182,Bochum,Keven Schlotterbeck,19,1.0,5.0,4,26.32,93,18.39
+3895180,Bayer Leverkusen,Victor Okoh Boniface,19,8.0,2.0,8,10.53,70,24.43
+3895220,Darmstadt 98,Fabio Torsiello,19,1.0,2.0,2,10.53,25,68.4
+3895266,Bayer Leverkusen,Florian Wirtz,19,4.0,4.0,11,21.05,89,19.21
+3895052,RB Leipzig,Ikoma Loïs Openda,19,2.0,3.0,6,15.79,74,23.11
+3895232,Bayern Munich,Noussair Mazraoui,19,4.0,5.0,6,26.32,86,19.88
+3895210,Bayer Leverkusen,Granit Xhaka,19,4.0,5.0,8,26.32,94,18.19
+3895194,Augsburg,Fredrik Jensen,19,4.0,5.0,3,26.32,78,21.92
+3895167,Bayer Leverkusen,Exequiel Alejandro Palacios,19,4.0,4.0,5,21.05,81,21.11
+3895095,FSV Mainz 05,Brajan Gruda,18,0.0,2.0,6,11.11,72,22.5
+3895244,Bayer Leverkusen,Robert Andrich,18,3.0,5.0,1,27.78,93,17.42
+3895302,Bayer Leverkusen,Victor Okoh Boniface,18,0.0,3.0,11,16.67,61,26.56
+3895060,Borussia Mönchengladbach,Tomáš Čvančara,18,3.0,2.0,8,11.11,78,20.77
+3895167,Bayer Leverkusen,Jeremie Frimpong,18,5.0,2.0,4,11.11,88,18.41
+3895139,Bayer Leverkusen,Florian Wirtz,18,3.0,1.0,10,5.56,85,19.06
+3895250,FSV Mainz 05,Leandro Barreiro Martins,18,3.0,5.0,3,27.78,93,17.42
+3895292,Union Berlin,Diogo Filipe Monteiro Pinto Leite,18,1.0,3.0,1,16.67,94,17.23
+3895182,Bochum,Takuma Asano,18,3.0,0.0,9,0.0,42,38.57
+3895320,VfB Stuttgart,Maximilian Mittelstädt,18,5.0,5.0,2,27.78,97,16.7
+3895286,Hoffenheim,Umut Tohumcu,18,1.0,1.0,2,5.56,71,22.82
+3895107,Bayer Leverkusen,Jeremie Frimpong,18,1.0,5.0,9,27.78,79,20.51
+3895194,Augsburg,Niklas Dorsch,18,0.0,5.0,1,27.78,90,18.0
+3895286,Bayer Leverkusen,Florian Wirtz,18,4.0,5.0,10,27.78,92,17.61
+3895340,Bochum,Kevin Stöger,18,4.0,3.0,1,16.67,93,17.42
+3895113,Bayer Leverkusen,Amine Adli,18,7.0,3.0,4,16.67,59,27.46
+3895134,Bayer Leverkusen,Alejandro Grimaldo García,18,2.0,2.0,3,11.11,95,17.05
+3895139,Union Berlin,Jérôme Roussillon,18,2.0,8.0,1,44.44,74,21.89
+3895286,Hoffenheim,Pavel Kadeřábek,18,1.0,0.0,3,0.0,94,17.23
+3895158,Borussia Dortmund,Emre Can,18,2.0,6.0,0,33.33,89,18.2
+3895139,Bayer Leverkusen,Jeremie Frimpong,18,8.0,2.0,9,11.11,79,20.51
+3895139,Union Berlin,Paul Jaeckel,18,3.0,8.0,0,44.44,91,17.8
+3895139,Bayer Leverkusen,Jonas Hofmann,18,3.0,8.0,6,44.44,79,20.51
+3895113,Bayer Leverkusen,Jonas Hofmann,18,1.0,2.0,5,11.11,86,18.84
+3895309,Bayer Leverkusen,Piero Martín Hincapié Reyna,18,1.0,5.0,1,27.78,82,19.76
+3895220,Bayer Leverkusen,Adam Hložek,18,6.0,2.0,9,11.11,90,18.0
+3895182,Bayer Leverkusen,Robert Andrich,18,11.0,7.0,2,38.89,88,18.41
+3895182,Bochum,Moritz Broschinski,18,3.0,1.0,4,5.56,29,55.86
+3895309,Borussia Dortmund,Emre Can,18,3.0,4.0,0,22.22,67,24.18
+3895067,Darmstadt 98,Luca Pfeiffer,18,2.0,2.0,4,11.11,92,17.61
+3895113,Bayer Leverkusen,Jeremie Frimpong,18,4.0,5.0,7,27.78,86,18.84
+3895153,Werder Bremen,Romano Schmid,18,1.0,3.0,6,16.67,82,19.76
+3895182,Bochum,Bernardo Fernandes da Silva Junior,18,2.0,8.0,2,44.44,90,18.0
+3895286,Hoffenheim,Ozan Muhammed Kabak,18,1.0,3.0,1,16.67,95,17.05
+3895153,Bayer Leverkusen,Jeremie Frimpong,17,4.0,3.0,9,17.65,80,19.13
+3895153,Bayer Leverkusen,Odilon Kossonou,17,3.0,6.0,2,35.29,91,16.81
+3895107,FC Köln,Timo Hübers,17,2.0,8.0,0,47.06,90,17.0
+3895158,Borussia Dortmund,Julian Ryerson,17,4.0,8.0,1,47.06,93,16.45
+3895244,FC Heidenheim,Adrian Beck,17,4.0,1.0,3,5.88,44,34.77
+3895153,Bayer Leverkusen,Alejandro Grimaldo García,17,1.0,5.0,5,29.41,91,16.81
+3895107,Bayer Leverkusen,Alejandro Grimaldo García,17,8.0,3.0,5,17.65,92,16.63
+3895095,FSV Mainz 05,Jae-Sung Lee,17,2.0,2.0,2,11.76,68,22.5
+3895202,RB Leipzig,David Raum,17,3.0,6.0,5,35.29,94,16.28
+3895074,Bayer Leverkusen,Jonas Hofmann,17,8.0,7.0,6,41.18,91,16.81
+3895052,Bayer Leverkusen,Exequiel Alejandro Palacios,17,4.0,4.0,3,23.53,94,16.28
+3895060,Borussia Mönchengladbach,Ko Itakura,17,3.0,2.0,0,11.76,87,17.59
+3895320,Bayer Leverkusen,Amine Adli,17,4.0,2.0,8,11.76,93,16.45
+3895302,Werder Bremen,Christian Groß,17,2.0,7.0,1,41.18,86,17.79
+3895320,Bayer Leverkusen,Robert Andrich,17,8.0,5.0,4,29.41,95,16.11
+3895086,Bayer Leverkusen,Florian Wirtz,17,6.0,3.0,11,17.65,70,21.86
+3895074,Bayern Munich,Dayotchanculle Upamecano,17,3.0,3.0,1,17.65,97,15.77
+3895113,Bayer Leverkusen,Exequiel Alejandro Palacios,17,0.0,4.0,3,23.53,93,16.45
+3895158,Bayer Leverkusen,Exequiel Alejandro Palacios,17,2.0,6.0,4,35.29,78,19.62
+3895121,Freiburg,Maximilian Eggestein,17,1.0,3.0,0,17.65,64,23.91
+3895107,FC Köln,Eric Martel,17,5.0,4.0,0,23.53,74,20.68
+3895210,Borussia Mönchengladbach,Rocco Reitz,17,0.0,7.0,0,41.18,29,52.76
+3895167,Bayer Leverkusen,Amine Adli,17,5.0,6.0,5,35.29,62,24.68
+3895275,Freiburg,Kiliann Sildillia,17,2.0,6.0,2,35.29,94,16.28
+3895258,FC Köln,Faride Alidou,17,3.0,3.0,3,17.65,81,18.89
+3895250,FSV Mainz 05,Anthony Caci,17,2.0,6.0,0,35.29,92,16.63
+3895302,Bayer Leverkusen,Piero Martín Hincapié Reyna,17,3.0,5.0,2,29.41,74,20.68
+3895113,Wolfsburg,Tiago Barreiros de Melo Tomás,17,0.0,0.0,8,0.0,45,34.0
+3895121,Bayer Leverkusen,Exequiel Alejandro Palacios,17,3.0,4.0,4,23.53,94,16.28
+3895266,Bayer Leverkusen,Patrik Schick,16,3.0,2.0,10,12.5,75,19.2
+3895309,Bayer Leverkusen,Robert Andrich,16,3.0,3.0,8,18.75,92,15.65
+3895348,Bayer Leverkusen,Amine Adli,16,8.0,3.0,11,18.75,62,23.23
+3895060,Borussia Mönchengladbach,Rocco Reitz,16,2.0,4.0,2,25.0,24,60.0
+3895348,Augsburg,Mads Pedersen,16,2.0,5.0,2,31.25,89,16.18
+3895180,Eintracht Frankfurt,Fares Chaïbi,16,6.0,2.0,8,12.5,82,17.56
+3895095,FSV Mainz 05,Danny Vieira da Costa,16,4.0,1.0,7,6.25,63,22.86
+3895220,Bayer Leverkusen,Florian Wirtz,16,2.0,4.0,8,25.0,75,19.2
+3895232,Bayer Leverkusen,Nathan Tella,16,0.0,1.0,7,6.25,64,22.5
+3895210,Borussia Mönchengladbach,Nico Elvedi,16,1.0,3.0,1,18.75,91,15.82
+3895067,Darmstadt 98,Matthias Bader,16,1.0,8.0,0,50.0,92,15.65
+3895194,Bayer Leverkusen,Patrik Schick,16,4.0,1.0,6,6.25,91,15.82
+3895121,Freiburg,Merlin Röhl,16,5.0,5.0,1,31.25,78,18.46
+3895158,Bayer Leverkusen,Victor Okoh Boniface,16,1.0,2.0,9,12.5,93,15.48
+3895333,Eintracht Frankfurt,Ellyes Joris Skhiri,16,4.0,7.0,2,43.75,69,20.87
+3895220,Darmstadt 98,Gerrit Holtmann,16,3.0,1.0,4,6.25,64,22.5
+3895086,Bayer Leverkusen,Jonas Hofmann,16,4.0,3.0,14,18.75,95,15.16
+3895202,Bayer Leverkusen,Exequiel Alejandro Palacios,16,3.0,5.0,1,31.25,87,16.55
+3895182,Bochum,Erhan Mašović,16,0.0,5.0,5,31.25,61,23.61
+3895074,Bayer Leverkusen,Alejandro Grimaldo García,16,1.0,3.0,3,18.75,94,15.32
+3895202,Bayer Leverkusen,Josip Stanišić,16,0.0,3.0,1,18.75,91,15.82
+3895134,Hoffenheim,Marius Bülter,16,1.0,1.0,1,6.25,93,15.48
+3895302,Bayer Leverkusen,Robert Andrich,16,1.0,1.0,1,6.25,88,16.36
+3895107,Bayer Leverkusen,Exequiel Alejandro Palacios,16,5.0,5.0,3,31.25,92,15.65
+3895139,Union Berlin,Brenden Aaronson,16,4.0,1.0,4,6.25,26,55.38
+3895244,Bayer Leverkusen,Alejandro Grimaldo García,16,4.0,8.0,4,50.0,94,15.32
+3895194,Bayer Leverkusen,Jonas Hofmann,16,4.0,2.0,10,12.5,93,15.48
+3895286,Bayer Leverkusen,Jeremie Frimpong,16,4.0,3.0,12,18.75,84,17.14
+3895348,Bayer Leverkusen,Exequiel Alejandro Palacios,16,2.0,4.0,1,25.0,68,21.18
+3895250,Bayer Leverkusen,Robert Andrich,15,8.0,6.0,4,40.0,92,14.67
+3895210,Bayer Leverkusen,Alejandro Grimaldo García,15,5.0,4.0,9,26.67,93,14.52
+3895309,Borussia Dortmund,Marcel Sabitzer,15,4.0,2.0,4,13.33,91,14.84
+3895320,VfB Stuttgart,Serhou Guirassy,15,5.0,0.0,9,0.0,97,13.92
+3895244,FC Heidenheim,Benedikt Gimber,15,2.0,4.0,0,26.67,79,17.09
+3895202,RB Leipzig,Daniel Olmo Carvajal,15,5.0,5.0,5,33.33,74,18.24
+3895220,Bayer Leverkusen,Nathan Tella,15,1.0,3.0,4,20.0,93,14.52
+3895153,Bayer Leverkusen,Granit Xhaka,15,3.0,3.0,3,20.0,88,15.34
+3895113,Bayer Leverkusen,Josip Stanišić,15,5.0,1.0,0,6.67,87,15.52
+3895309,Borussia Dortmund,Mats Hummels,15,1.0,9.0,3,60.0,98,13.78
+3895244,Bayer Leverkusen,Patrik Schick,15,6.0,3.0,5,20.0,72,18.75
+3895302,Bayer Leverkusen,Edmond Fayçal Tapsoba,15,2.0,3.0,2,20.0,87,15.52
+3895302,Bayer Leverkusen,Amine Adli,15,1.0,3.0,7,20.0,48,28.13
+3895250,Bayer Leverkusen,Alejandro Grimaldo García,15,8.0,4.0,7,26.67,94,14.36
+3895158,Borussia Dortmund,Jamie Jermaine Bynoe-Gittens,15,0.0,6.0,0,40.0,63,21.43
+3895286,Hoffenheim,Florian Grillitsch,15,1.0,5.0,0,33.33,95,14.21
+3895060,Borussia Mönchengladbach,Franck Honorat,15,2.0,2.0,2,13.33,75,18.0
+3895210,Bayer Leverkusen,Patrik Schick,15,1.0,2.0,10,13.33,91,14.84
+3895113,Wolfsburg,Joakim Mæhle,15,3.0,4.0,5,26.67,90,15.0
+3895134,Hoffenheim,Kevin Akpoguma,15,5.0,6.0,3,40.0,87,15.52
+3895074,Bayer Leverkusen,Granit Xhaka,15,5.0,3.0,2,20.0,97,13.92
+3895202,Bayer Leverkusen,Jonas Hofmann,15,3.0,6.0,6,40.0,92,14.67
+3895060,Borussia Mönchengladbach,Maximilian Wöber,15,1.0,9.0,0,60.0,91,14.84
+3895060,Borussia Mönchengladbach,Marvin Friedrich,15,4.0,3.0,1,20.0,91,14.84
+3895258,FC Köln,Sargis Adamyan,15,1.0,0.0,1,0.0,63,21.43
+3895134,Bayer Leverkusen,Jeremie Frimpong,15,4.0,2.0,6,13.33,94,14.36
+3895067,Darmstadt 98,Christoph Klarer,15,2.0,5.0,0,33.33,92,14.67
+3895333,Eintracht Frankfurt,Mario Götze,15,3.0,4.0,6,26.67,94,14.36
+3895320,Bayer Leverkusen,Edmond Fayçal Tapsoba,14,2.0,6.0,0,42.86,93,13.55
+3895086,FC Heidenheim,Tim Siersleben,14,2.0,1.0,0,7.14,95,13.26
+3895286,Hoffenheim,Tim Drexler,14,1.0,1.0,0,7.14,95,13.26
+3895340,Bochum,Maximilian Wittek,14,2.0,4.0,4,28.57,93,13.55
+3895286,Bayer Leverkusen,Patrik Schick,14,4.0,2.0,11,14.29,93,13.55
+3895202,Bayer Leverkusen,Patrik Schick,14,0.0,3.0,5,21.43,91,13.85
+3895182,Bayer Leverkusen,Josip Stanišić,14,3.0,2.0,0,14.29,93,13.55
+3895052,Bayer Leverkusen,Odilon Kossonou,14,5.0,5.0,4,35.71,93,13.55
+3895158,Borussia Dortmund,Mats Hummels,14,4.0,5.0,0,35.71,90,14.0
+3895180,Eintracht Frankfurt,Hugo Larsson,14,1.0,3.0,2,21.43,72,17.5
+3895158,Borussia Dortmund,Marcel Sabitzer,14,3.0,4.0,1,28.57,86,14.65
+3895153,Bayer Leverkusen,Exequiel Alejandro Palacios,14,2.0,5.0,1,35.71,91,13.85
+3895153,Bayer Leverkusen,Victor Okoh Boniface,14,2.0,0.0,9,0.0,70,18.0
+3895266,Bayer Leverkusen,Exequiel Alejandro Palacios,14,2.0,3.0,5,21.43,89,14.16
+3895121,Bayer Leverkusen,Jonas Hofmann,14,5.0,7.0,7,50.0,84,15.0
+3895220,Darmstadt 98,Christoph Zimmermann,14,1.0,5.0,1,35.71,92,13.7
+3895348,Augsburg,Iago Amaral Borduchi,14,1.0,5.0,0,35.71,92,13.7
+3895086,FC Heidenheim,Jonas Föhrenbach,14,3.0,3.0,2,21.43,95,13.26
+3895320,Bayer Leverkusen,Patrik Schick,14,0.0,2.0,9,14.29,72,17.5
+3895113,Wolfsburg,Maxence Lacroix,14,1.0,2.0,2,14.29,93,13.55
+3895309,Bayer Leverkusen,Edmond Fayçal Tapsoba,14,0.0,6.0,1,42.86,94,13.4
+3895074,Bayer Leverkusen,Odilon Kossonou,14,5.0,5.0,0,35.71,95,13.26
+3895194,Bayer Leverkusen,Josip Stanišić,14,2.0,4.0,0,28.57,93,13.55
+3895139,Bayer Leverkusen,Exequiel Alejandro Palacios,14,3.0,4.0,1,28.57,85,14.82
+3895139,Bayer Leverkusen,Granit Xhaka,14,5.0,4.0,3,28.57,90,14.0
+3895139,Union Berlin,Christopher Trimmel,14,1.0,2.0,1,14.29,44,28.64
+3895113,Wolfsburg,Sebastiaan Bornauw,14,2.0,2.0,0,14.29,76,16.58
+3895266,Wolfsburg,Ridle Bote Baku,14,2.0,2.0,1,14.29,88,14.32
+3895266,Wolfsburg,Maximilian Arnold,14,1.0,2.0,0,14.29,88,14.32
+3895180,Eintracht Frankfurt,Lucas Silva Melo,14,1.0,3.0,1,21.43,94,13.4
+3895180,Eintracht Frankfurt,Aurélio Gabriel Ulineia Buta,14,1.0,2.0,2,14.29,95,13.26
+3895309,Borussia Dortmund,Nico Schlotterbeck,14,3.0,7.0,3,50.0,98,12.86
+3895052,RB Leipzig,Xavi Simons,14,4.0,1.0,1,7.14,61,20.66
+3895333,Eintracht Frankfurt,Hugo Ekitike,14,1.0,0.0,6,0.0,79,15.95
+3895182,Bayer Leverkusen,Jonas Hofmann,14,4.0,3.0,7,21.43,67,18.81
+3895202,Bayer Leverkusen,Nathan Tella,14,3.0,5.0,5,35.71,62,20.32
+3895180,Bayer Leverkusen,Alejandro Grimaldo García,14,2.0,5.0,3,35.71,95,13.26
+3895309,Borussia Dortmund,Marco Reus,14,4.0,2.0,4,14.29,27,46.67
+3895348,Bayer Leverkusen,Robert Andrich,14,5.0,6.0,1,42.86,89,14.16
+3895194,Augsburg,Jeffrey Gouweleeuw,14,2.0,5.0,0,35.71,92,13.7
+3895250,FSV Mainz 05,Philipp Mwene,14,2.0,2.0,1,14.29,94,13.4
+3895333,Eintracht Frankfurt,Niels Nkounkou,14,4.0,6.0,2,42.86,67,18.81
+3895320,Bayer Leverkusen,Jeremie Frimpong,14,6.0,2.0,6,14.29,88,14.32
+3895121,Freiburg,Lucas Höler,14,5.0,1.0,3,7.14,93,13.55
+3895113,Wolfsburg,Ridle Bote Baku,14,2.0,3.0,2,21.43,94,13.4
+3895158,Bayer Leverkusen,Jonas Hofmann,14,1.0,0.0,14,0.0,63,20.0
+3895232,Bayern Munich,Leon Goretzka,14,3.0,3.0,1,21.43,66,19.09
+3895266,Bayer Leverkusen,Josip Stanišić,13,1.0,2.0,3,15.38,88,13.3
+3895074,Bayern Munich,Leon Goretzka,13,2.0,2.0,3,15.38,96,12.19
+3895095,Bayer Leverkusen,Granit Xhaka,13,1.0,4.0,1,30.77,77,15.19
+3895302,Werder Bremen,Mitchell Weiser,13,3.0,1.0,6,7.69,89,13.15
+3895134,Bayer Leverkusen,Edmond Fayçal Tapsoba,13,3.0,1.0,1,7.69,92,12.72
+3895266,Wolfsburg,Lovro Majer,13,5.0,2.0,3,15.38,62,18.87
+3895121,Bayer Leverkusen,Florian Wirtz,13,4.0,2.0,10,15.38,89,13.15
+3895258,Bayer Leverkusen,Patrik Schick,13,4.0,3.0,8,23.08,63,18.57
+3895202,RB Leipzig,Xavi Simons,13,5.0,3.0,2,23.08,83,14.1
+3895286,Bayer Leverkusen,Jonas Hofmann,13,5.0,2.0,7,15.38,54,21.67
+3895060,Borussia Mönchengladbach,Joseph Scally,13,1.0,6.0,2,46.15,90,13.0
+3895153,Werder Bremen,Milos Veljkovic,13,3.0,3.0,2,23.08,92,12.72
+3895292,Union Berlin,András Schäfer,13,4.0,6.0,4,46.15,62,18.87
+3895113,Bayer Leverkusen,Florian Wirtz,13,2.0,2.0,5,15.38,34,34.41
+3895348,Bayer Leverkusen,Jonas Hofmann,13,4.0,5.0,12,38.46,93,12.58
+3895220,Darmstadt 98,Matej Maglica,13,2.0,5.0,0,38.46,78,15.0
+3895275,Bayer Leverkusen,Exequiel Alejandro Palacios,13,1.0,5.0,2,38.46,88,13.3
+3895121,Freiburg,Ritsu Doan,13,4.0,4.0,4,30.77,86,13.6
+3895074,Bayern Munich,Harry Kane,13,2.0,2.0,7,15.38,84,13.93
+3895210,Bayer Leverkusen,Piero Martín Hincapié Reyna,13,1.0,3.0,4,23.08,94,12.45
+3895292,Bayer Leverkusen,Robert Andrich,13,4.0,3.0,3,23.08,94,12.45
+3895060,Borussia Mönchengladbach,Alassane Pléa,13,2.0,2.0,6,15.38,93,12.58
+3895250,Bayer Leverkusen,Florian Wirtz,13,4.0,1.0,5,7.69,88,13.3
+3895348,Bayer Leverkusen,Edmond Fayçal Tapsoba,13,0.0,5.0,0,38.46,92,12.72
+3895309,Bayer Leverkusen,Nathan Tella,13,4.0,3.0,11,23.08,68,17.21
+3895292,Union Berlin,Mikkel Kaufmann,13,3.0,0.0,2,0.0,49,23.88
+3895086,FC Heidenheim,Adrian Beck,13,6.0,4.0,4,30.77,32,36.56
+3895194,Bayer Leverkusen,Jeremie Frimpong,13,3.0,2.0,5,15.38,93,12.58
+3895320,VfB Stuttgart,Waldemar Anton,13,0.0,3.0,0,23.08,96,12.19
+3895095,Bayer Leverkusen,Victor Okoh Boniface,13,0.0,2.0,6,15.38,77,15.19
+3895052,Bayer Leverkusen,Florian Wirtz,13,2.0,1.0,5,7.69,73,16.03
+3895167,VfB Stuttgart,Maximilian Mittelstädt,13,3.0,4.0,0,30.77,75,15.6
+3895275,Bayer Leverkusen,Amine Adli,13,2.0,5.0,9,38.46,18,65.0
+3895167,VfB Stuttgart,Enzo Millot,13,2.0,8.0,5,61.54,65,18.0
+3895113,Wolfsburg,Mattias Svanberg,13,1.0,0.0,4,0.0,69,16.96
+3895182,Bochum,Philipp Förster,13,3.0,1.0,4,7.69,29,40.34
+3895258,FC Köln,Rasmus Carstensen,13,2.0,4.0,1,30.77,89,13.15
+3895067,Darmstadt 98,Oscar Vilhelmsson,13,0.0,1.0,0,7.69,58,20.17
+3895333,Bayer Leverkusen,Adam Hložek,13,0.0,1.0,4,7.69,90,13.0
+3895182,Bayer Leverkusen,Jeremie Frimpong,13,8.0,2.0,6,15.38,93,12.58
+3895095,FSV Mainz 05,Anthony Caci,13,1.0,3.0,1,23.08,91,12.86
+3895232,Bayer Leverkusen,Granit Xhaka,13,1.0,2.0,3,15.38,85,13.76
+3895180,Bayer Leverkusen,Granit Xhaka,13,2.0,4.0,3,30.77,91,12.86
+3895286,Bayer Leverkusen,Robert Andrich,12,4.0,7.0,4,58.33,92,11.74
+3895167,VfB Stuttgart,Josha Mamadou Karaboue Vagnoman,12,1.0,1.0,3,8.33,81,13.33
+3895060,Borussia Mönchengladbach,Robin Hack,12,2.0,4.0,5,33.33,23,46.96
+3895113,Wolfsburg,Lovro Majer,12,3.0,4.0,0,33.33,24,45.0
+3895202,RB Leipzig,Mohamed Simakan,12,1.0,2.0,2,16.67,74,14.59
+3895286,Hoffenheim,Maximilian Beier,12,2.0,4.0,4,33.33,70,15.43
+3895232,Bayern Munich,Harry Kane,12,2.0,2.0,8,16.67,92,11.74
+3895220,Bayer Leverkusen,Piero Martín Hincapié Reyna,12,2.0,7.0,3,58.33,94,11.49
+3895309,Borussia Dortmund,Marius Wolf,12,2.0,1.0,2,8.33,53,20.38
+3895095,Bayer Leverkusen,Amine Adli,12,2.0,0.0,3,0.0,30,36.0
+3895194,Bayer Leverkusen,Piero Martín Hincapié Reyna,12,2.0,4.0,2,33.33,93,11.61
+3895210,Borussia Mönchengladbach,Marvin Friedrich,12,0.0,4.0,0,33.33,92,11.74
+3895134,Bayer Leverkusen,Granit Xhaka,12,1.0,3.0,1,25.0,93,11.61
+3895266,Bayer Leverkusen,Nathan Tella,12,4.0,4.0,6,33.33,75,14.4
+3895139,Bayer Leverkusen,Victor Okoh Boniface,12,5.0,2.0,6,16.67,83,13.01
+3895250,Bayer Leverkusen,Jeremie Frimpong,12,0.0,2.0,6,16.67,82,13.17
+3895153,Werder Bremen,Anthony Jung,12,1.0,2.0,1,16.67,82,13.17
+3895182,Bochum,Christopher Antwi-Adjej,12,1.0,3.0,5,25.0,62,17.42
+3895139,Union Berlin,Kevin Behrens,12,0.0,0.0,0,0.0,13,83.08
+3895060,Bayer Leverkusen,Florian Wirtz,12,4.0,3.0,3,25.0,92,11.74
+3895052,RB Leipzig,Timo Werner,12,3.0,1.0,5,8.33,61,17.7
+3895340,Bochum,Ivan Ordets,12,1.0,4.0,0,33.33,90,12.0
+3895067,Bayer Leverkusen,Granit Xhaka,12,2.0,3.0,4,25.0,79,13.67
+3895074,Bayern Munich,Leroy Sané,12,2.0,2.0,3,16.67,96,11.25
+3895286,Bayer Leverkusen,Edmond Fayçal Tapsoba,12,2.0,2.0,3,16.67,84,12.86
+3895067,Bayer Leverkusen,Jonas Hofmann,12,2.0,3.0,7,25.0,93,11.61
+3895333,Bayer Leverkusen,Nathan Tella,12,5.0,3.0,7,25.0,71,15.21
+3895309,Borussia Dortmund,Julian Ryerson,12,1.0,4.0,1,33.33,91,11.87
+3895052,RB Leipzig,Mohamed Simakan,12,1.0,6.0,0,50.0,95,11.37
+3895309,Borussia Dortmund,Jadon Sancho,12,3.0,4.0,3,33.33,67,16.12
+3895074,Bayer Leverkusen,Jeremie Frimpong,12,4.0,1.0,7,8.33,81,13.33
+3895244,Bayer Leverkusen,Piero Martín Hincapié Reyna,12,0.0,3.0,1,25.0,92,11.74
+3895153,Bayer Leverkusen,Piero Martín Hincapié Reyna,12,3.0,3.0,1,25.0,91,11.87
+3895244,Bayer Leverkusen,Josip Stanišić,12,1.0,7.0,1,58.33,93,11.61
+3895258,Bayer Leverkusen,Jonas Hofmann,12,4.0,3.0,7,25.0,63,17.14
+3895232,Bayern Munich,Min Jae Kim,12,2.0,5.0,0,41.67,90,12.0
+3895258,Bayer Leverkusen,Josip Stanišić,12,2.0,4.0,1,33.33,91,11.87
+3895167,Bayer Leverkusen,Granit Xhaka,12,3.0,3.0,4,25.0,92,11.74
+3895052,RB Leipzig,Benjamin Henrichs,12,6.0,4.0,2,33.33,95,11.37
+3895309,Bayer Leverkusen,Josip Stanišić,12,3.0,4.0,4,33.33,95,11.37
+3895067,Darmstadt 98,Emir Karic,12,4.0,6.0,3,50.0,67,16.12
+3895250,Bayer Leverkusen,Jonathan Tah,12,4.0,3.0,0,25.0,94,11.49
+3895182,Bayer Leverkusen,Granit Xhaka,11,4.0,4.0,3,36.36,93,10.65
+3895134,Hoffenheim,Ozan Muhammed Kabak,11,3.0,0.0,0,0.0,93,10.65
+3895340,Bochum,Philipp Hofmann,11,1.0,2.0,4,18.18,59,16.78
+3895153,Werder Bremen,Marco Friedl,11,0.0,4.0,0,36.36,91,10.88
+3895139,Bayer Leverkusen,Odilon Kossonou,11,0.0,3.0,2,27.27,91,10.88
+3895113,Wolfsburg,Moritz Jenz,11,1.0,2.0,0,18.18,93,10.65
+3895095,FSV Mainz 05,Edimilson Fernandes,11,1.0,5.0,0,45.45,91,10.88
+3895074,Bayer Leverkusen,Victor Okoh Boniface,11,2.0,1.0,7,9.09,95,10.42
+3895210,Bayer Leverkusen,Jeremie Frimpong,11,2.0,3.0,6,27.27,91,10.88
+3895302,Bayer Leverkusen,Odilon Kossonou,11,5.0,4.0,4,36.36,89,11.12
+3895107,Bayer Leverkusen,Granit Xhaka,11,1.0,2.0,6,18.18,92,10.76
+3895180,Bayer Leverkusen,Exequiel Alejandro Palacios,11,2.0,3.0,0,27.27,82,12.07
+3895220,Bayer Leverkusen,Josip Stanišić,11,3.0,5.0,1,45.45,93,10.65
+3895180,Bayer Leverkusen,Edmond Fayçal Tapsoba,11,1.0,2.0,2,18.18,91,10.88
+3895286,Hoffenheim,David Jurásek,11,0.0,4.0,1,36.36,95,10.42
+3895220,Darmstadt 98,Emir Karic,11,2.0,3.0,1,27.27,90,11.0
+3895320,VfB Stuttgart,Jamie Leweling,11,6.0,1.0,2,9.09,90,11.0
+3895302,Werder Bremen,Julián Malatini,11,1.0,4.0,4,36.36,87,11.38
+3895292,Bayer Leverkusen,Alejandro Grimaldo García,11,3.0,2.0,1,18.18,96,10.31
+3895258,Bayer Leverkusen,Alejandro Grimaldo García,11,4.0,1.0,3,9.09,92,10.76
+3895348,Augsburg,Tim Breithaupt,11,1.0,2.0,1,18.18,40,24.75
+3895167,Bayer Leverkusen,Alejandro Grimaldo García,11,2.0,4.0,1,36.36,91,10.88
+3895134,Hoffenheim,Grischa Prömel,11,3.0,4.0,4,36.36,93,10.65
+3895067,Bayer Leverkusen,Florian Wirtz,11,6.0,5.0,9,45.45,79,12.53
+3895167,Bayer Leverkusen,Jonathan Tah,11,2.0,5.0,0,45.45,90,11.0
+3895158,Bayer Leverkusen,Odilon Kossonou,11,3.0,4.0,2,36.36,93,10.65
+3895220,Bayer Leverkusen,Robert Andrich,11,1.0,2.0,1,18.18,93,10.65
+3895194,Augsburg,Felix Uduokhai,11,1.0,4.0,1,36.36,92,10.76
+3895153,Werder Bremen,Olivier Deman,11,1.0,2.0,2,18.18,55,18.0
+3895275,Bayer Leverkusen,Adam Hložek,11,2.0,4.0,7,36.36,81,12.22
+3895067,Bayer Leverkusen,Exequiel Alejandro Palacios,11,4.0,2.0,3,18.18,65,15.23
+3895266,Wolfsburg,Tiago Barreiros de Melo Tomás,11,1.0,1.0,2,9.09,58,17.07
+3895292,Union Berlin,Aïssa Bilal Laïdouni,11,1.0,3.0,2,27.27,33,30.0
+3895139,Union Berlin,Sheraldo Becker,11,1.0,1.0,1,9.09,63,15.71
+3895180,Eintracht Frankfurt,Elias Niklas Baum,11,1.0,1.0,1,9.09,23,43.04
+3895302,Werder Bremen,Felix Agu,11,1.0,8.0,0,72.73,68,14.56
+3895348,Augsburg,Niklas Dorsch,11,0.0,3.0,0,27.27,90,11.0
+3895292,Bayer Leverkusen,Odilon Kossonou,11,1.0,4.0,3,36.36,95,10.42
+3895340,Bochum,Keven Schlotterbeck,11,1.0,4.0,1,36.36,88,11.25
+3895220,Bayer Leverkusen,Borja Iglesias Quintas,11,3.0,2.0,5,18.18,93,10.65
+3895153,Bayer Leverkusen,Amine Adli,11,1.0,1.0,5,9.09,21,47.14
+3895244,FC Heidenheim,Kevin Sessa,11,1.0,1.0,2,9.09,31,31.94
+3895180,Eintracht Frankfurt,Willian Joel Pacho Tenorio,10,2.0,3.0,0,30.0,92,9.78
+3895232,Bayern Munich,Joshua Kimmich,10,3.0,3.0,0,30.0,35,25.71
+3895292,Bayer Leverkusen,Jonathan Tah,10,0.0,4.0,2,40.0,95,9.47
+3895302,Bayer Leverkusen,Jonathan Tah,10,3.0,3.0,0,30.0,88,10.23
+3895182,Bayer Leverkusen,Adam Hložek,10,5.0,0.0,5,0.0,20,45.0
+3895275,Bayer Leverkusen,Piero Martín Hincapié Reyna,10,2.0,4.0,3,40.0,89,10.11
+3895107,Bayer Leverkusen,Amine Adli,10,1.0,1.0,8,10.0,21,42.86
+3895266,Wolfsburg,Amin Sarr,10,1.0,1.0,2,10.0,25,36.0
+3895275,Bayer Leverkusen,Granit Xhaka,10,3.0,3.0,1,30.0,91,9.89
+3895286,Bayer Leverkusen,Alejandro Grimaldo García,10,4.0,3.0,3,30.0,94,9.57
+3895113,Bayer Leverkusen,Alejandro Grimaldo García,10,2.0,2.0,3,20.0,91,9.89
+3895320,VfB Stuttgart,Woo-Yeong Jeong,10,0.0,1.0,6,10.0,19,47.37
+3895194,Bayer Leverkusen,Robert Andrich,10,5.0,2.0,0,20.0,94,9.57
+3895180,Bayer Leverkusen,Jeremie Frimpong,10,5.0,3.0,5,30.0,82,10.98
+3895153,Werder Bremen,Marvin Ducksch,10,5.0,2.0,4,20.0,92,9.78
+3895210,Borussia Mönchengladbach,Shio Fukuda,10,0.0,1.0,0,10.0,15,60.0
+3895194,Bayer Leverkusen,Exequiel Alejandro Palacios,10,2.0,6.0,1,60.0,93,9.68
+3895134,Bayer Leverkusen,Victor Okoh Boniface,10,1.0,1.0,7,10.0,87,10.34
+3895052,Bayer Leverkusen,Alejandro Grimaldo García,10,2.0,1.0,2,10.0,92,9.78
+3895052,Bayer Leverkusen,Jeremie Frimpong,10,1.0,3.0,5,30.0,77,11.69
+3895074,Bayern Munich,Joshua Kimmich,10,0.0,6.0,1,60.0,59,15.25
+3895074,Bayer Leverkusen,Edmond Fayçal Tapsoba,10,4.0,3.0,2,30.0,89,10.11
+3895286,Hoffenheim,Anton Stach,10,1.0,2.0,0,20.0,93,9.68
+3895320,Bayer Leverkusen,Jonas Hofmann,10,1.0,2.0,8,20.0,71,12.68
+3895320,VfB Stuttgart,Mahmoud Dahoud,10,2.0,3.0,1,30.0,19,47.37
+3895220,Darmstadt 98,Marvin Mehlem,10,0.0,2.0,0,20.0,26,34.62
+3895134,Bayer Leverkusen,Jonathan Tah,10,2.0,2.0,2,20.0,95,9.47
+3895202,Bayer Leverkusen,Piero Martín Hincapié Reyna,10,1.0,5.0,2,50.0,87,10.34
+3895167,VfB Stuttgart,Chris Führich,10,4.0,1.0,2,10.0,76,11.84
+3895074,Bayern Munich,Alphonso Davies,10,1.0,3.0,0,30.0,95,9.47
+3895086,Bayer Leverkusen,Exequiel Alejandro Palacios,10,7.0,4.0,4,40.0,69,13.04
+3895095,Bayer Leverkusen,Jeremie Frimpong,10,3.0,3.0,4,30.0,85,10.59
+3895232,Bayer Leverkusen,Alejandro Grimaldo García,10,2.0,2.0,1,20.0,89,10.11
+3895333,Eintracht Frankfurt,Lucas Silva Melo,10,1.0,6.0,1,60.0,94,9.57
+3895333,Bayer Leverkusen,Granit Xhaka,10,2.0,1.0,0,10.0,68,13.24
+3895167,Bayer Leverkusen,Edmond Fayçal Tapsoba,10,3.0,2.0,0,20.0,92,9.78
+3895333,Bayer Leverkusen,Piero Martín Hincapié Reyna,10,1.0,4.0,2,40.0,34,26.47
+3895167,VfB Stuttgart,Serhou Guirassy,10,2.0,3.0,7,30.0,94,9.57
+3895258,Bayer Leverkusen,Borja Iglesias Quintas,10,1.0,1.0,9,10.0,27,33.33
+3895121,Bayer Leverkusen,Victor Okoh Boniface,10,3.0,3.0,6,30.0,90,10.0
+3895258,FC Köln,Jan Thielmann,10,2.0,0.0,2,0.0,11,81.82
+3895210,Bayer Leverkusen,Nadiem Amiri,9,1.0,3.0,3,33.33,66,12.27
+3895052,RB Leipzig,Willi Orban,9,4.0,3.0,2,33.33,94,8.62
+3895202,Bayer Leverkusen,Jeremie Frimpong,9,1.0,3.0,2,33.33,30,27.0
+3895202,Bayer Leverkusen,Alejandro Grimaldo García,9,4.0,3.0,4,33.33,93,8.71
+3895121,Freiburg,Lukas Kübler,9,1.0,3.0,1,33.33,95,8.53
+3895302,Bayer Leverkusen,Patrik Schick,9,0.0,1.0,6,11.11,19,42.63
+3895052,Bayer Leverkusen,Granit Xhaka,9,2.0,2.0,1,22.22,89,9.1
+3895086,Bayer Leverkusen,Alejandro Grimaldo García,9,4.0,5.0,7,55.56,83,9.76
+3895340,Bayer Leverkusen,Victor Okoh Boniface,9,5.0,2.0,6,22.22,65,12.46
+3895333,Bayer Leverkusen,Patrik Schick,9,0.0,3.0,6,33.33,60,13.5
+3895086,Bayer Leverkusen,Jeremie Frimpong,9,0.0,2.0,5,22.22,78,10.38
+3895210,Bayer Leverkusen,Robert Andrich,9,3.0,3.0,0,33.33,94,8.62
+3895158,Borussia Dortmund,Nico Schlotterbeck,9,0.0,1.0,0,11.11,63,12.86
+3895139,Bayer Leverkusen,Jonathan Tah,9,3.0,4.0,1,44.44,91,8.9
+3895074,Bayern Munich,Jamal Musiala,9,1.0,2.0,1,22.22,37,21.89
+3895167,Bayer Leverkusen,Odilon Kossonou,9,0.0,4.0,0,44.44,93,8.71
+3895275,Bayer Leverkusen,Alejandro Grimaldo García,9,1.0,6.0,3,66.67,93,8.71
+3895113,Wolfsburg,Amin Sarr,9,0.0,0.0,2,0.0,49,16.53
+3895275,Bayer Leverkusen,Jonathan Tah,9,2.0,0.0,0,0.0,91,8.9
+3895121,Freiburg,Matthias Ginter,9,1.0,3.0,0,33.33,93,8.71
+3895309,Bayer Leverkusen,Granit Xhaka,9,1.0,4.0,2,44.44,98,8.27
+3895244,Bayer Leverkusen,Jeremie Frimpong,9,2.0,3.0,3,33.33,88,9.2
+3895158,Borussia Dortmund,Antonios Papadopoulos,9,1.0,3.0,0,33.33,29,27.93
+3895348,Bayer Leverkusen,Florian Wirtz,9,0.0,2.0,2,22.22,31,26.13
+3895220,Darmstadt 98,Sebastian Polter,9,0.0,2.0,5,22.22,27,30.0
+3895250,FSV Mainz 05,Dominik Kohr,9,1.0,2.0,0,22.22,92,8.8
+3895340,Bayer Leverkusen,Nathan Tella,9,4.0,3.0,7,33.33,78,10.38
+3895158,Bayer Leverkusen,Jeremie Frimpong,9,3.0,4.0,4,44.44,92,8.8
+3895275,Freiburg,Christian Günter,9,1.0,1.0,1,11.11,93,8.71
+3895258,FC Köln,Timo Hübers,9,0.0,5.0,0,55.56,92,8.8
+3895121,Bayer Leverkusen,Granit Xhaka,9,4.0,2.0,4,22.22,83,9.76
+3895292,Union Berlin,Rani Khedira,9,3.0,3.0,0,33.33,61,13.28
+3895292,Bayer Leverkusen,Victor Okoh Boniface,9,1.0,0.0,6,0.0,29,27.93
+3895086,Bayer Leverkusen,Jonathan Tah,9,0.0,4.0,0,44.44,94,8.62
+3895275,Bayer Leverkusen,Patrik Schick,9,2.0,0.0,4,0.0,75,10.8
+3895210,Borussia Mönchengladbach,Christoph Kramer,9,1.0,1.0,0,11.11,14,57.86
+3895250,FSV Mainz 05,Silvan Widmer,9,2.0,2.0,0,22.22,58,13.97
+3895292,Union Berlin,Danilho Doekhi,9,2.0,4.0,0,44.44,94,8.62
+3895202,Bayer Leverkusen,Jonathan Tah,9,0.0,2.0,0,22.22,93,8.71
+3895167,VfB Stuttgart,Dan-Axel Zagadou,9,3.0,1.0,0,11.11,94,8.62
+3895060,Borussia Mönchengladbach,Grant-Leon Ranos,9,1.0,2.0,4,22.22,9,90.0
+3895060,Bayer Leverkusen,Jonas Hofmann,9,3.0,3.0,1,33.33,79,10.25
+3895275,Freiburg,Lucas Höler,9,0.0,2.0,0,22.22,75,10.8
+3895139,Union Berlin,Josip Juranović,9,0.0,1.0,1,11.11,46,17.61
+3895333,Bayer Leverkusen,Odilon Kossonou,9,1.0,3.0,0,33.33,89,9.1
+3895258,Bayer Leverkusen,Nathan Tella,9,3.0,2.0,5,22.22,45,18.0
+3895107,Bayer Leverkusen,Odilon Kossonou,9,1.0,2.0,1,22.22,92,8.8
+3895348,Augsburg,Phillip Tietz,9,1.0,1.0,2,11.11,73,11.1
+3895095,Bayer Leverkusen,Jonathan Tah,9,2.0,2.0,0,22.22,88,9.2
+3895340,Bochum,Tim Oermann,9,1.0,4.0,1,44.44,65,12.46
+3895060,Bayer Leverkusen,Jonathan Tah,9,2.0,1.0,0,11.11,93,8.71
+3895153,Bayer Leverkusen,Robert Andrich,9,1.0,1.0,0,11.11,92,8.8
+3895060,Bayer Leverkusen,Jeremie Frimpong,8,0.0,1.0,2,12.5,66,10.91
+3895107,Bayer Leverkusen,Victor Okoh Boniface,8,2.0,2.0,5,25.0,76,9.47
+3895086,Bayer Leverkusen,Odilon Kossonou,8,2.0,2.0,2,25.0,95,7.58
+3895095,Bayer Leverkusen,Edmond Fayçal Tapsoba,8,1.0,1.0,0,12.5,88,8.18
+3895060,Bayer Leverkusen,Odilon Kossonou,8,3.0,2.0,1,25.0,79,9.11
+3895153,Werder Bremen,Nick Woltemade,8,2.0,0.0,4,0.0,21,34.29
+3895060,Bayer Leverkusen,Edmond Fayçal Tapsoba,8,1.0,2.0,0,25.0,90,8.0
+3895182,Bayer Leverkusen,Victor Okoh Boniface,8,3.0,1.0,6,12.5,25,28.8
+3895348,Bayer Leverkusen,Jonathan Tah,8,1.0,2.0,1,25.0,86,8.37
+3895232,Bayer Leverkusen,Jeremie Frimpong,8,0.0,1.0,1,12.5,26,27.69
+3895074,Bayer Leverkusen,Jonathan Tah,8,0.0,3.0,0,37.5,97,7.42
+3895232,Bayern Munich,Dayotchanculle Upamecano,8,2.0,2.0,1,25.0,59,12.2
+3895074,Bayer Leverkusen,Exequiel Alejandro Palacios,8,3.0,3.0,2,37.5,51,14.12
+3895286,Bayer Leverkusen,Jonathan Tah,8,0.0,4.0,1,50.0,91,7.91
+3895180,Eintracht Frankfurt,Ellyes Joris Skhiri,8,2.0,3.0,1,37.5,30,24.0
+3895153,Werder Bremen,Justin Gideon Njinmah,8,4.0,0.0,5,0.0,19,37.89
+3895180,Bayer Leverkusen,Patrik Schick,8,0.0,0.0,6,0.0,18,40.0
+3895275,Bayer Leverkusen,Josip Stanišić,8,1.0,1.0,1,12.5,92,7.83
+3895258,Bayer Leverkusen,Robert Andrich,8,3.0,1.0,2,12.5,91,7.91
+3895320,Bayer Leverkusen,Florian Wirtz,8,2.0,1.0,5,12.5,23,31.3
+3895210,Bayer Leverkusen,Josip Stanišić,8,2.0,2.0,2,25.0,94,7.66
+3895286,Bayer Leverkusen,Granit Xhaka,8,5.0,0.0,5,0.0,94,7.66
+3895202,RB Leipzig,Ikoma Loïs Openda,8,1.0,4.0,2,50.0,91,7.91
+3895086,FC Heidenheim,Norman Theuerkauf,8,1.0,3.0,1,37.5,69,10.43
+3895067,Darmstadt 98,Bartol Franjić,8,0.0,2.0,0,25.0,92,7.83
+3895220,Bayer Leverkusen,Jonathan Tah,8,3.0,1.0,0,12.5,90,8.0
+3895333,Bayer Leverkusen,Robert Andrich,8,0.0,5.0,0,62.5,82,8.78
+3895275,Bayer Leverkusen,Jeremie Frimpong,8,1.0,1.0,3,12.5,82,8.78
+3895060,Borussia Mönchengladbach,Florian Neuhaus,8,0.0,2.0,0,25.0,66,10.91
+3895134,Hoffenheim,Kevin Vogt,8,0.0,1.0,0,12.5,94,7.66
+3895275,Freiburg,Manuel Gulde,8,0.0,5.0,0,62.5,93,7.74
+3895320,Bayer Leverkusen,Odilon Kossonou,8,3.0,4.0,4,50.0,93,7.74
+3895266,Wolfsburg,Kevin Paredes,8,0.0,6.0,0,75.0,87,8.28
+3895292,Bayer Leverkusen,Piero Martín Hincapié Reyna,8,3.0,5.0,2,62.5,95,7.58
+3895113,Bayer Leverkusen,Granit Xhaka,8,2.0,3.0,0,37.5,94,7.66
+3895232,Bayern Munich,Eric Dier,8,1.0,2.0,0,25.0,92,7.83
+3895220,Darmstadt 98,Andreas Müller,8,2.0,1.0,1,12.5,12,60.0
+3895220,Bayer Leverkusen,Granit Xhaka,8,3.0,3.0,2,37.5,88,8.18
+3895275,Freiburg,Ritsu Doan,8,4.0,2.0,1,25.0,88,8.18
+3895182,Bayer Leverkusen,Piero Martín Hincapié Reyna,8,2.0,5.0,0,62.5,72,10.0
+3895180,Bayer Leverkusen,Odilon Kossonou,8,2.0,4.0,1,50.0,93,7.74
+3895292,Union Berlin,Yorbe Vertessen,8,1.0,0.0,5,0.0,47,15.32
+3895158,Borussia Dortmund,Karim-David Adeyemi,8,1.0,1.0,1,12.5,29,24.83
+3895182,Bayer Leverkusen,Patrik Schick,8,2.0,2.0,5,25.0,63,11.43
+3895134,Hoffenheim,Robert Skov,8,0.0,1.0,1,12.5,75,9.6
+3895210,Borussia Mönchengladbach,Stefan Lainer,8,1.0,4.0,2,50.0,20,36.0
+3895113,Bayer Leverkusen,Jonathan Tah,8,3.0,3.0,0,37.5,90,8.0
+3895348,Augsburg,Arne Engels,8,3.0,1.0,0,12.5,50,14.4
+3895348,Augsburg,Jeffrey Gouweleeuw,8,0.0,3.0,1,37.5,93,7.74
+3895086,Bayer Leverkusen,Edmond Fayçal Tapsoba,8,3.0,3.0,1,37.5,95,7.58
+3895348,Augsburg,Felix Uduokhai,8,0.0,1.0,0,12.5,92,7.83
+3895309,Borussia Dortmund,Felix Kalu Nmecha,7,1.0,4.0,3,57.14,29,21.72
+3895158,Bayer Leverkusen,Granit Xhaka,7,1.0,1.0,1,14.29,94,6.7
+3895266,Bayer Leverkusen,Granit Xhaka,7,0.0,3.0,1,42.86,88,7.16
+3895121,Bayer Leverkusen,Alejandro Grimaldo García,7,1.0,3.0,1,42.86,90,7.0
+3895286,Bayer Leverkusen,Borja Iglesias Quintas,7,2.0,4.0,6,57.14,22,28.64
+3895086,Bayer Leverkusen,Granit Xhaka,7,2.0,0.0,4,0.0,94,6.7
+3895202,RB Leipzig,Lukas Klostermann,7,3.0,2.0,1,28.57,94,6.7
+3895194,Bayer Leverkusen,Florian Wirtz,7,4.0,2.0,4,28.57,31,20.32
+3895095,FSV Mainz 05,Aymen Barkok,7,0.0,1.0,4,14.29,20,31.5
+3895180,Eintracht Frankfurt,Jessic Ngankam,7,0.0,1.0,4,14.29,10,63.0
+3895194,Bayer Leverkusen,Adam Hložek,7,3.0,3.0,3,42.86,59,10.68
+3895250,FSV Mainz 05,Sepp van den Berg,7,1.0,2.0,0,28.57,89,7.08
+3895250,Bayer Leverkusen,Granit Xhaka,7,3.0,0.0,0,0.0,94,6.7
+3895158,Bayer Leverkusen,Edmond Fayçal Tapsoba,7,1.0,1.0,2,14.29,94,6.7
+3895348,Bayer Leverkusen,Odilon Kossonou,7,3.0,3.0,2,42.86,91,6.92
+3895180,Eintracht Frankfurt,Jens Petter Hauge,7,0.0,0.0,2,0.0,20,31.5
+3895320,Bayer Leverkusen,Piero Martín Hincapié Reyna,7,0.0,4.0,1,57.14,49,12.86
+3895266,Wolfsburg,Sebastiaan Bornauw,7,0.0,3.0,0,42.86,55,11.45
+3895244,FC Heidenheim,Jonas Föhrenbach,7,2.0,2.0,3,28.57,94,6.7
+3895292,Bayer Leverkusen,Nathan Tella,7,3.0,3.0,2,42.86,78,8.08
+3895067,Darmstadt 98,Matej Maglica,7,0.0,1.0,0,14.29,25,25.2
+3895194,Bayer Leverkusen,Alejandro Grimaldo García,7,2.0,2.0,2,28.57,93,6.77
+3895340,Bochum,Lukas Daschner,7,4.0,2.0,4,28.57,32,19.69
+3895232,Bayer Leverkusen,Edmond Fayçal Tapsoba,7,1.0,1.0,0,14.29,94,6.7
+3895067,Bayer Leverkusen,Victor Okoh Boniface,7,1.0,0.0,5,0.0,91,6.92
+3895107,FC Köln,Max Finkgräfe,7,2.0,1.0,3,14.29,29,21.72
+3895202,RB Leipzig,Christoph Baumgartner,7,1.0,2.0,0,28.57,18,35.0
+3895340,Bayer Leverkusen,Patrik Schick,7,2.0,0.0,1,0.0,68,9.26
+3895121,Freiburg,Vincenzo Grifo,7,1.0,3.0,2,42.86,80,7.88
+3895121,Bayer Leverkusen,Jeremie Frimpong,7,2.0,3.0,2,42.86,84,7.5
+3895286,Hoffenheim,Dennis Geiger,7,2.0,1.0,1,14.29,17,37.06
+3895292,Union Berlin,Alex Král,7,1.0,3.0,1,42.86,32,19.69
+3895292,Union Berlin,Benedict Hollerbach,7,0.0,2.0,3,28.57,17,37.06
+3895250,Bayer Leverkusen,Patrik Schick,7,3.0,1.0,2,14.29,37,17.03
+3895266,Wolfsburg,Maxence Lacroix,7,2.0,1.0,0,14.29,88,7.16
+3895275,Freiburg,Roland Sallai,7,3.0,0.0,4,0.0,60,10.5
+3895309,Borussia Dortmund,Ian Maatsen,7,2.0,0.0,0,0.0,45,14.0
+3895348,Bayer Leverkusen,Victor Okoh Boniface,7,3.0,3.0,4,42.86,62,10.16
+3895158,Borussia Dortmund,Niclas Füllkrug,7,2.0,0.0,2,0.0,92,6.85
+3895139,Bayer Leverkusen,Piero Martín Hincapié Reyna,7,2.0,1.0,1,14.29,91,6.92
+3895348,Augsburg,Pep Biel Mas Jaume,7,0.0,1.0,1,14.29,19,33.16
+3895074,Bayern Munich,Min Jae Kim,7,1.0,3.0,2,42.86,93,6.77
+3895182,Bayer Leverkusen,Jonathan Tah,7,2.0,2.0,0,28.57,62,10.16
+3895292,Bayer Leverkusen,Borja Iglesias Quintas,7,3.0,1.0,7,14.29,66,9.55
+3895333,Bayer Leverkusen,Victor Okoh Boniface,7,0.0,0.0,1,0.0,34,18.53
+3895167,VfB Stuttgart,Jamie Leweling,7,0.0,1.0,0,14.29,12,52.5
+3895250,FSV Mainz 05,Brajan Gruda,7,1.0,2.0,3,28.57,62,10.16
+3895095,FSV Mainz 05,Sepp van den Berg,7,1.0,2.0,1,28.57,86,7.33
+3895340,Bayer Leverkusen,Josip Stanišić,7,2.0,5.0,1,71.43,92,6.85
+3895340,Bochum,Anthony Losilla,7,4.0,3.0,1,42.86,59,10.68
+3895210,Borussia Mönchengladbach,Nathan Ngoumou Minpole,7,2.0,0.0,1,0.0,14,45.0
+3895134,Bayer Leverkusen,Josip Stanišić,7,0.0,1.0,0,14.29,48,13.13
+3895202,Bayer Leverkusen,Granit Xhaka,7,2.0,3.0,1,42.86,91,6.92
+3895292,Union Berlin,Christopher Trimmel,7,1.0,4.0,0,57.14,62,10.16
+3895067,Bayer Leverkusen,Alejandro Grimaldo García,7,5.0,2.0,5,28.57,93,6.77
+3895302,Werder Bremen,Dawid Kownacki,7,1.0,2.0,3,28.57,20,31.5
+3895258,FC Köln,Denis Huseinbašić,6,0.0,0.0,0,0.0,10,54.0
+3895107,FC Köln,Julian Chabot,6,0.0,3.0,0,50.0,92,5.87
+3895060,Bayer Leverkusen,Exequiel Alejandro Palacios,6,1.0,3.0,0,50.0,69,7.83
+3895232,Bayer Leverkusen,Jonas Hofmann,6,1.0,0.0,1,0.0,11,49.09
+3895052,Bayer Leverkusen,Jonathan Tah,6,1.0,4.0,0,66.67,88,6.14
+3895348,Bayer Leverkusen,Jeremie Frimpong,6,1.0,2.0,2,33.33,81,6.67
+3895244,Bayer Leverkusen,Jonas Hofmann,6,2.0,1.0,2,16.67,6,90.0
+3895309,Bayer Leverkusen,Jonathan Tah,6,2.0,2.0,0,33.33,93,5.81
+3895266,Wolfsburg,Cédric Zesiger,6,1.0,1.0,1,16.67,85,6.35
+3895153,Werder Bremen,Felix Agu,6,3.0,1.0,2,16.67,36,15.0
+3895158,Bayer Leverkusen,Jonathan Tah,6,3.0,1.0,0,16.67,90,6.0
+3895139,Bayer Leverkusen,Alejandro Grimaldo García,6,3.0,0.0,2,0.0,89,6.07
+3895113,Wolfsburg,Kevin Paredes,6,0.0,1.0,1,16.67,17,31.76
+3895340,Bayer Leverkusen,Amine Adli,6,0.0,5.0,1,83.33,24,22.5
+3895302,Bayer Leverkusen,Exequiel Alejandro Palacios,6,1.0,1.0,1,16.67,12,45.0
+3895074,Bayern Munich,Noussair Mazraoui,6,3.0,2.0,2,33.33,31,17.42
+3895139,Union Berlin,Robin Knoche,6,0.0,1.0,0,16.67,67,8.06
+3895340,Bayer Leverkusen,Edmond Fayçal Tapsoba,6,2.0,2.0,1,33.33,91,5.93
+3895348,Augsburg,Sven Michel,6,1.0,3.0,2,50.0,19,28.42
+3895340,Bayer Leverkusen,Arthur Augusto de Matos Soares,6,1.0,2.0,1,33.33,90,6.0
+3895266,Bayer Leverkusen,Edmond Fayçal Tapsoba,6,1.0,3.0,0,50.0,88,6.14
+3895320,Bayer Leverkusen,Victor Okoh Boniface,6,1.0,1.0,5,16.67,21,25.71
+3895250,Bayer Leverkusen,Jonas Hofmann,6,4.0,1.0,3,16.67,55,9.82
+3895348,Bayer Leverkusen,Alejandro Grimaldo García,6,2.0,2.0,1,33.33,69,7.83
+3895067,Darmstadt 98,Tobias Kempe,6,1.0,1.0,0,16.67,25,21.6
+3895266,Bayer Leverkusen,Piero Martín Hincapié Reyna,6,1.0,2.0,3,33.33,58,9.31
+3895180,Eintracht Frankfurt,Robin Koch,6,1.0,2.0,0,33.33,62,8.71
+3895067,Bayer Leverkusen,Edmond Fayçal Tapsoba,6,1.0,1.0,2,16.67,92,5.87
+3895095,FSV Mainz 05,Stefan Bell,6,1.0,0.0,0,0.0,90,6.0
+3895258,Bayer Leverkusen,Jeremie Frimpong,6,2.0,3.0,4,50.0,47,11.49
+3895107,Bayer Leverkusen,Edmond Fayçal Tapsoba,6,2.0,2.0,0,33.33,70,7.71
+3895107,FC Köln,Leart Paqarada,6,0.0,2.0,0,33.33,90,6.0
+3895086,FC Heidenheim,Marvin Pieringer,6,2.0,0.0,2,0.0,12,45.0
+3895309,Bayer Leverkusen,Florian Wirtz,6,1.0,2.0,1,33.33,25,21.6
+3895320,VfB Stuttgart,Hiroki Ito,6,2.0,1.0,0,16.67,97,5.57
+3895258,Bayer Leverkusen,Jonathan Tah,6,2.0,1.0,1,16.67,92,5.87
+3895107,Bayer Leverkusen,Jonathan Tah,6,3.0,3.0,1,50.0,92,5.87
+3895244,Bayer Leverkusen,Borja Iglesias Quintas,6,3.0,1.0,3,16.67,21,25.71
+3895275,Freiburg,Philipp Lienhart,6,0.0,1.0,0,16.67,31,17.42
+3895250,FSV Mainz 05,Tom Krauß,6,3.0,1.0,1,16.67,11,49.09
+3895060,Bayer Leverkusen,Granit Xhaka,6,2.0,1.0,0,16.67,90,6.0
+3895052,Bayer Leverkusen,Robert Andrich,6,0.0,1.0,0,16.67,12,45.0
+3895167,VfB Stuttgart,Waldemar Anton,6,0.0,1.0,1,16.67,91,5.93
+3895258,FC Köln,Julian Chabot,6,3.0,1.0,1,16.67,92,5.87
+3895309,Bayer Leverkusen,Alejandro Grimaldo García,6,2.0,3.0,1,50.0,96,5.63
+3895220,Darmstadt 98,Christoph Klarer,6,1.0,0.0,2,0.0,12,45.0
+3895074,Bayern Munich,Mathys Tel,6,2.0,2.0,3,33.33,27,20.0
+3895286,Bayer Leverkusen,Piero Martín Hincapié Reyna,6,1.0,1.0,5,16.67,72,7.5
+3895153,Werder Bremen,Niklas Stark,6,0.0,1.0,2,16.67,8,67.5
+3895250,FSV Mainz 05,Jessic Ngankam,6,2.0,1.0,2,16.67,13,41.54
+3895060,Bayer Leverkusen,Robert Andrich,6,2.0,1.0,0,16.67,22,24.55
+3895182,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,6,2.0,3.0,1,50.0,18,30.0
+3895167,VfB Stuttgart,Leonidas Stergiou,5,1.0,2.0,0,40.0,16,28.13
+3895167,VfB Stuttgart,Silas Katompa Mvumpa,5,0.0,0.0,3,0.0,29,15.52
+3895067,Bayer Leverkusen,Odilon Kossonou,5,1.0,2.0,1,40.0,93,4.84
+3895052,RB Leipzig,Kevin Kampl,5,1.0,3.0,0,60.0,31,14.52
+3895275,Freiburg,Matthias Ginter,5,0.0,1.0,0,20.0,58,7.76
+3895258,Bayer Leverkusen,Amine Adli,5,0.0,0.0,2,0.0,27,16.67
+3895266,Bayer Leverkusen,Alejandro Grimaldo García,5,2.0,1.0,3,20.0,88,5.11
+3895292,Union Berlin,Robin Gosens,5,1.0,0.0,0,0.0,47,9.57
+3895220,Bayer Leverkusen,Jonas Hofmann,5,1.0,2.0,1,40.0,16,28.13
+3895320,Bayer Leverkusen,Alejandro Grimaldo García,5,1.0,0.0,3,0.0,88,5.11
+3895113,Bayer Leverkusen,Edmond Fayçal Tapsoba,5,0.0,1.0,0,20.0,93,4.84
+3895340,Bayer Leverkusen,Jonas Hofmann,5,0.0,1.0,0,20.0,30,15.0
+3895067,Darmstadt 98,Fabian Nürnberger,5,1.0,2.0,0,40.0,24,18.75
+3895232,Bayer Leverkusen,Jonathan Tah,5,2.0,1.0,0,20.0,94,4.79
+3895202,RB Leipzig,Junior Castello Lukeba,5,0.0,1.0,0,20.0,94,4.79
+3895052,Bayer Leverkusen,Victor Okoh Boniface,5,2.0,1.0,4,20.0,86,5.23
+3895121,Bayer Leverkusen,Jonathan Tah,5,0.0,3.0,0,60.0,90,5.0
+3895067,Darmstadt 98,Thomas Poppler Isherwood,5,0.0,1.0,0,20.0,53,8.49
+3895052,Bayer Leverkusen,Edmond Fayçal Tapsoba,5,0.0,1.0,0,20.0,95,4.74
+3895266,Bayer Leverkusen,Amine Adli,5,2.0,1.0,4,20.0,27,16.67
+3895194,Augsburg,Sven Michel,5,1.0,0.0,2,0.0,15,30.0
+3895275,Freiburg,Florent Muslija,5,1.0,2.0,2,40.0,31,14.52
+3895250,Bayer Leverkusen,Edmond Fayçal Tapsoba,5,1.0,1.0,1,20.0,92,4.89
+3895134,Bayer Leverkusen,Odilon Kossonou,5,0.0,0.0,0,0.0,44,10.23
+3895286,Hoffenheim,Grischa Prömel,5,0.0,0.0,0,0.0,37,12.16
+3895340,Bochum,Bernardo Fernandes da Silva Junior,5,1.0,2.0,0,40.0,42,10.71
+3895333,Eintracht Frankfurt,Willian Joel Pacho Tenorio,5,0.0,0.0,0,0.0,94,4.79
+3895182,Bochum,Danilo Teodoro Soares,5,0.0,1.0,1,20.0,45,10.0
+3895340,Bochum,Patrick Osterhage,5,1.0,1.0,1,20.0,85,5.29
+3895340,Bayer Leverkusen,Robert Andrich,5,2.0,0.0,0,0.0,90,5.0
+3895320,Bayer Leverkusen,Jonathan Tah,5,1.0,2.0,0,40.0,45,10.0
+3895182,Bayer Leverkusen,Alejandro Grimaldo García,5,1.0,1.0,4,20.0,88,5.11
+3895333,Bayer Leverkusen,Jeremie Frimpong,5,1.0,1.0,0,20.0,18,25.0
+3895052,RB Leipzig,David Raum,5,1.0,3.0,0,60.0,94,4.79
+3895333,Eintracht Frankfurt,Hugo Larsson,5,0.0,1.0,3,20.0,25,18.0
+3895180,Bayer Leverkusen,Jonathan Tah,5,1.0,2.0,0,40.0,93,4.84
+3895052,RB Leipzig,Yussuf Yurary Poulsen,5,1.0,1.0,2,20.0,33,13.64
+3895060,Bayer Leverkusen,Alejandro Grimaldo García,5,2.0,1.0,2,20.0,92,4.89
+3895052,RB Leipzig,Junior Castello Lukeba,5,2.0,1.0,0,20.0,32,14.06
+3895194,Bayer Leverkusen,Granit Xhaka,5,3.0,1.0,2,20.0,93,4.84
+3895275,Freiburg,Vincenzo Grifo,4,0.0,0.0,0,0.0,60,6.0
+3895067,Darmstadt 98,Tim Skarke,4,0.0,0.0,1,0.0,35,10.29
+3895202,RB Leipzig,Yussuf Yurary Poulsen,4,0.0,1.0,1,25.0,20,18.0
+3895333,Bayer Leverkusen,Arthur Augusto de Matos Soares,4,1.0,1.0,1,25.0,59,6.1
+3895340,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,4,2.0,0.0,1,0.0,14,25.71
+3895302,Bayer Leverkusen,Jeremie Frimpong,4,3.0,1.0,4,25.0,23,15.65
+3895340,Bochum,Matúš Bero,4,0.0,0.0,1,0.0,30,12.0
+3895167,Bayer Leverkusen,Victor Okoh Boniface,4,1.0,2.0,2,50.0,70,5.14
+3895194,Augsburg,Arne Engels,4,0.0,1.0,1,25.0,13,27.69
+3895333,Eintracht Frankfurt,Robin Koch,4,0.0,0.0,0,0.0,94,3.83
+3895333,Bayer Leverkusen,Edmond Fayçal Tapsoba,4,1.0,2.0,0,50.0,93,3.87
+3895121,Bayer Leverkusen,Odilon Kossonou,4,1.0,1.0,1,25.0,94,3.83
+3895180,Eintracht Frankfurt,Hrvoje Smolčić,4,1.0,1.0,1,25.0,30,12.0
+3895067,Bayer Leverkusen,Noah Mbamba,4,2.0,2.0,2,50.0,14,25.71
+3895292,Union Berlin,Josip Juranović,4,2.0,1.0,0,25.0,34,10.59
+3895113,Bayer Leverkusen,Victor Okoh Boniface,4,2.0,0.0,2,0.0,93,3.87
+3895220,Bayer Leverkusen,Alejandro Grimaldo García,4,0.0,0.0,1,0.0,92,3.91
+3895302,Werder Bremen,Olivier Deman,4,1.0,0.0,0,0.0,20,18.0
+3895292,Union Berlin,Kevin Vogt,4,0.0,1.0,0,25.0,91,3.96
+3895286,Hoffenheim,Ihlas Bebou,4,1.0,0.0,3,0.0,22,16.36
+3895286,Hoffenheim,Andrej Kramarić,4,1.0,1.0,0,25.0,54,6.67
+3895086,Bayer Leverkusen,Robert Andrich,4,1.0,0.0,0,0.0,18,20.0
+3895302,Werder Bremen,Isak Hansen-Aarøen,4,0.0,1.0,1,25.0,11,32.73
+3895244,Bayer Leverkusen,Nathan Tella,4,1.0,1.0,2,25.0,5,72.0
+3895320,VfB Stuttgart,Anthony Rouault,4,0.0,1.0,0,25.0,14,25.71
+3895275,Freiburg,Michael Gregoritsch,4,0.0,1.0,0,25.0,31,11.61
+3895258,FC Köln,Benno Schmitz,4,0.0,2.0,0,50.0,8,45.0
+3895302,Werder Bremen,Milos Veljkovic,4,1.0,3.0,0,75.0,86,4.19
+3895340,Bayer Leverkusen,Borja Iglesias Quintas,4,2.0,2.0,3,50.0,20,18.0
+3895244,Bayer Leverkusen,Granit Xhaka,4,1.0,1.0,2,25.0,94,3.83
+3895340,Bochum,Felix Passlack,4,2.0,1.0,0,25.0,14,25.71
+3895121,Bayer Leverkusen,Edmond Fayçal Tapsoba,4,1.0,2.0,1,50.0,89,4.04
+3895210,Bayer Leverkusen,Adam Hložek,4,2.0,1.0,0,25.0,11,32.73
+3895309,Borussia Dortmund,Julien Duranville,4,2.0,0.0,3,0.0,13,27.69
+3895107,Bayer Leverkusen,Adam Hložek,4,1.0,0.0,3,0.0,8,45.0
+3895074,Bayern Munich,Jean-Eric Maxim Choupo-Moting,4,1.0,0.0,0,0.0,11,32.73
+3895060,Bayer Leverkusen,Adam Hložek,4,1.0,0.0,1,0.0,11,32.73
+3895244,FC Heidenheim,Marnon Busch,4,0.0,1.0,0,25.0,17,21.18
+3895067,Bayer Leverkusen,Jeremie Frimpong,4,1.0,1.0,1,25.0,69,5.22
+3895244,Bayer Leverkusen,Jonathan Tah,4,1.0,2.0,1,50.0,94,3.83
+3895250,Bayer Leverkusen,Nathan Tella,4,1.0,0.0,0,0.0,7,51.43
+3895258,Bayer Leverkusen,Exequiel Alejandro Palacios,4,0.0,1.0,0,25.0,10,36.0
+3895095,FSV Mainz 05,Anwar El Ghazi,4,3.0,0.0,2,0.0,21,17.14
+3895121,Freiburg,Michael Gregoritsch,4,0.0,0.0,2,0.0,28,12.86
+3895113,Bayer Leverkusen,Nadiem Amiri,4,1.0,1.0,1,25.0,6,60.0
+3895275,Bayer Leverkusen,Nathan Tella,4,1.0,1.0,1,25.0,8,45.0
+3895107,FC Köln,Steffen Tigges,3,0.0,0.0,0,0.0,16,16.88
+3895067,Bayer Leverkusen,Jonathan Tah,3,0.0,0.0,0,0.0,71,3.8
+3895086,Bayer Leverkusen,Nathan Tella,3,1.0,1.0,2,33.33,15,18.0
+3895167,Bayer Leverkusen,Jonas Hofmann,3,0.0,0.0,0,0.0,22,12.27
+3895060,Borussia Mönchengladbach,Yvandro Borges Sanches,3,1.0,1.0,1,33.33,12,22.5
+3895292,Bayer Leverkusen,Jeremie Frimpong,3,2.0,0.0,1,0.0,14,19.29
+3895250,FSV Mainz 05,Josuha Guilavogui,3,0.0,1.0,0,33.33,31,8.71
+3895258,Bayer Leverkusen,Piero Martín Hincapié Reyna,3,2.0,2.0,0,66.67,78,3.46
+3895134,Bayer Leverkusen,Amine Adli,3,1.0,0.0,2,0.0,7,38.57
+3895250,Bayer Leverkusen,Piero Martín Hincapié Reyna,3,1.0,1.0,1,33.33,10,27.0
+3895292,Bayer Leverkusen,Granit Xhaka,3,1.0,0.0,1,0.0,95,2.84
+3895158,Bayer Leverkusen,Alejandro Grimaldo García,3,1.0,1.0,3,33.33,94,2.87
+3895266,Bayer Leverkusen,Jonathan Tah,3,0.0,1.0,0,33.33,89,3.03
+3895320,VfB Stuttgart,Leonidas Stergiou,3,2.0,1.0,1,33.33,76,3.55
+3895250,Bayer Leverkusen,Odilon Kossonou,3,1.0,0.0,0,0.0,93,2.9
+3895095,Bayer Leverkusen,Adam Hložek,3,0.0,0.0,2,0.0,13,20.77
+3895258,FC Köln,Steffen Tigges,3,0.0,0.0,0,0.0,8,33.75
+3895074,Bayer Leverkusen,Robert Andrich,3,1.0,0.0,1,0.0,46,5.87
+3895113,Wolfsburg,Jakub Kamiński,3,2.0,1.0,0,33.33,14,19.29
+3895153,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,3,1.0,3.0,1,100.0,2,135.0
+3895052,Bayer Leverkusen,Adam Hložek,3,0.0,1.0,1,33.33,5,54.0
+3895086,Bayer Leverkusen,Victor Okoh Boniface,3,0.0,1.0,2,33.33,84,3.21
+3895074,Bayer Leverkusen,Adam Hložek,3,0.0,0.0,2,0.0,1,270.0
+3895182,Bayer Leverkusen,Edmond Fayçal Tapsoba,3,1.0,0.0,0,0.0,26,10.38
+3895266,Bayer Leverkusen,Borja Iglesias Quintas,3,1.0,0.0,2,0.0,11,24.55
+3895139,Union Berlin,Leonardo Bonucci,3,1.0,1.0,0,33.33,23,11.74
+3895153,Werder Bremen,Senne Lynen,3,1.0,0.0,2,0.0,9,30.0
+3895052,RB Leipzig,Emil Peter Forsberg,3,0.0,1.0,2,33.33,16,16.88
+3895134,Bayer Leverkusen,Adam Hložek,3,1.0,1.0,1,33.33,4,67.5
+3895095,Bayer Leverkusen,Robert Andrich,3,2.0,0.0,0,0.0,13,20.77
+3895060,Bayer Leverkusen,Victor Okoh Boniface,3,1.0,0.0,2,0.0,88,3.07
+3895194,Augsburg,Dion Drena Beljo,3,0.0,0.0,2,0.0,13,20.77
+3895086,FC Heidenheim,Kevin Sessa,3,0.0,0.0,1,0.0,10,27.0
+3895275,Bayer Leverkusen,Robert Andrich,3,0.0,2.0,0,66.67,10,27.0
+3895258,Bayer Leverkusen,Granit Xhaka,3,2.0,0.0,1,0.0,80,3.38
+3895340,Bochum,Takuma Asano,3,2.0,1.0,2,33.33,19,14.21
+3895180,Bayer Leverkusen,Adam Hložek,3,0.0,1.0,2,33.33,5,54.0
+3895292,Bayer Leverkusen,Adam Hložek,3,1.0,1.0,2,33.33,31,8.71
+3895244,FC Heidenheim,Florian Pick,3,1.0,0.0,3,0.0,18,15.0
+3895340,Bochum,Erhan Mašović,3,0.0,2.0,0,66.67,40,6.75
+3895320,VfB Stuttgart,Silas Katompa Mvumpa,3,0.0,1.0,0,33.33,12,22.5
+3895232,Bayern Munich,Thomas Müller,3,0.0,2.0,0,66.67,30,9.0
+3895067,Darmstadt 98,Filip Stojilković,3,1.0,0.0,2,0.0,34,7.94
+3895333,Eintracht Frankfurt,Ignacio Ferri Julià,3,1.0,0.0,1,0.0,15,18.0
+3895333,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,3,0.0,0.0,0,0.0,12,22.5
+3895210,Bayer Leverkusen,Nathan Tella,3,0.0,2.0,0,66.67,27,10.0
+3895286,Bayer Leverkusen,Amine Adli,3,2.0,1.0,3,33.33,36,7.5
+3895348,Bayer Leverkusen,Piero Martín Hincapié Reyna,3,0.0,1.0,2,33.33,21,12.86
+3895266,Wolfsburg,Aster Vranckx,3,0.0,0.0,0,0.0,24,11.25
+3895074,Bayer Leverkusen,Nadiem Amiri,2,0.0,2.0,0,100.0,0,
+3895067,Bayer Leverkusen,Nathan Tella,2,0.0,2.0,2,100.0,21,8.57
+3895333,Eintracht Frankfurt,Jean-Mattéo Bahoya Négoce,2,1.0,1.0,2,50.0,13,13.85
+3895107,Bayer Leverkusen,Nathan Tella,2,0.0,0.0,1,0.0,11,16.36
+3895086,FC Heidenheim,Florian Pick,2,1.0,0.0,1,0.0,26,6.92
+3895086,Bayer Leverkusen,Amine Adli,2,0.0,0.0,1,0.0,23,7.83
+3895340,Bayer Leverkusen,Alejandro Grimaldo García,2,2.0,0.0,0,0.0,12,15.0
+3895139,Bayer Leverkusen,Noah Mbamba,2,1.0,0.0,2,0.0,5,36.0
+3895095,Bayer Leverkusen,Josip Stanišić,2,1.0,1.0,0,50.0,3,60.0
+3895121,Freiburg,Junior Chukwubuike Adamu,2,2.0,0.0,2,0.0,11,16.36
+3895320,VfB Stuttgart,Pascal Stenzel,2,0.0,0.0,0,0.0,2,90.0
+3895250,Bayer Leverkusen,Adam Hložek,2,1.0,0.0,1,0.0,4,45.0
+3895167,VfB Stuttgart,Woo-Yeong Jeong,2,1.0,0.0,1,0.0,7,25.71
+3895194,Augsburg,Robert Gumny,2,0.0,0.0,0,0.0,4,45.0
+3895060,Bayer Leverkusen,Arthur Augusto de Matos Soares,2,0.0,1.0,0,50.0,22,8.18
+3895095,FSV Mainz 05,Tom Krauß,2,1.0,0.0,1,0.0,23,7.83
+3895153,Bayer Leverkusen,Nathan Tella,2,0.0,0.0,0,0.0,11,16.36
+3895067,Darmstadt 98,Christoph Zimmermann,2,0.0,0.0,0,0.0,68,2.65
+3895060,Bayer Leverkusen,Josip Stanišić,2,0.0,1.0,0,50.0,10,18.0
+3895202,Bayer Leverkusen,Robert Andrich,2,1.0,0.0,0,0.0,4,45.0
+3895286,Hoffenheim,Marius Bülter,2,1.0,0.0,0,0.0,16,11.25
+3895158,Borussia Dortmund,Thomas Meunier,2,1.0,0.0,0,0.0,8,22.5
+3895095,FSV Mainz 05,Marco Richter,2,0.0,1.0,2,50.0,9,20.0
+3895139,Bayer Leverkusen,Adam Hložek,2,1.0,1.0,1,50.0,2,90.0
+3895180,Bayer Leverkusen,Piero Martín Hincapié Reyna,2,0.0,1.0,0,50.0,12,15.0
+3895167,Bayer Leverkusen,Piero Martín Hincapié Reyna,2,0.0,1.0,0,50.0,7,25.71
+3895182,Bochum,Tim Oermann,2,0.0,2.0,1,100.0,2,90.0
+3895095,Bayer Leverkusen,Nadiem Amiri,2,0.0,0.0,1,0.0,6,30.0
+3895086,Bayer Leverkusen,Adam Hložek,2,1.0,1.0,1,50.0,10,18.0
+3895086,FC Heidenheim,Denis Thomalla,2,0.0,0.0,0,0.0,10,18.0
+3895134,Bayer Leverkusen,Robert Andrich,2,0.0,1.0,0,50.0,12,15.0
+3895333,Eintracht Frankfurt,Ansgar Knauff,2,0.0,0.0,1,0.0,23,7.83
+3895244,FC Heidenheim,Kevin Müller,2,0.0,1.0,0,50.0,91,1.98
+3895348,Bayer Leverkusen,Granit Xhaka,2,0.0,1.0,0,50.0,19,9.47
+3895302,Bayer Leverkusen,Alejandro Grimaldo García,2,0.0,2.0,0,100.0,12,15.0
+3895095,FSV Mainz 05,Ludovic Ajorque,2,0.0,0.0,2,0.0,17,10.59
+3895348,Bayer Leverkusen,Patrik Schick,2,0.0,0.0,2,0.0,29,6.21
+3895086,Bayer Leverkusen,Piero Martín Hincapié Reyna,2,1.0,0.0,1,0.0,10,18.0
+3895139,Bayer Leverkusen,Amine Adli,2,0.0,0.0,0,0.0,9,20.0
+3895052,Bayer Leverkusen,Nadiem Amiri,2,0.0,0.0,1,0.0,4,45.0
+3895060,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,2,1.0,0.0,0,0.0,3,60.0
+3895052,RB Leipzig,Fabio Carvalho,2,0.0,1.0,0,50.0,12,15.0
+3895107,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,2,0.0,0.0,1,0.0,4,45.0
+3895202,RB Leipzig,Benjamin Henrichs,2,0.0,0.0,1,0.0,19,9.47
+3895182,Bochum,Manuel Riemann,2,0.0,0.0,0,0.0,93,1.94
+3895333,Eintracht Frankfurt,Aurélio Gabriel Ulineia Buta,2,1.0,0.0,2,0.0,14,12.86
+3895153,Bayer Leverkusen,Nadiem Amiri,2,0.0,0.0,0,0.0,2,90.0
+3895139,Union Berlin,Robin Gosens,1,1.0,1.0,0,100.0,13,6.92
+3895167,Bayer Leverkusen,Patrik Schick,1,0.0,0.0,0,0.0,21,4.29
+3895250,FSV Mainz 05,Robin Zentner,1,1.0,0.0,0,0.0,87,1.03
+3895134,Hoffenheim,Andrej Kramarić,1,0.0,0.0,0,0.0,12,7.5
+3895275,Freiburg,Yannik Keitel,1,1.0,0.0,0,0.0,16,5.63
+3895202,RB Leipzig,Kevin Kampl,1,0.0,0.0,0,0.0,17,5.29
+3895121,Bayer Leverkusen,Nathan Tella,1,0.0,1.0,0,100.0,7,12.86
+3895134,Hoffenheim,Ihlas Bebou,1,1.0,0.0,1,0.0,16,5.63
+3895333,Bayer Leverkusen,Jonathan Tah,1,0.0,1.0,0,100.0,22,4.09
+3895232,Bayern Munich,Raphaël Adelino José Guerreiro,1,0.0,0.0,0,0.0,12,7.5
+3895121,Freiburg,Philipp Lienhart,1,1.0,0.0,0,0.0,62,1.45
+3895194,Bayer Leverkusen,Lukáš Hrádecký,1,0.0,0.0,0,0.0,95,0.95
+3895067,Bayer Leverkusen,Robert Andrich,1,0.0,0.0,0,0.0,27,3.33
+3895182,Bochum,Noah Loosli,1,0.0,1.0,0,100.0,19,4.74
+3895340,Bayer Leverkusen,Jonathan Tah,1,0.0,1.0,0,100.0,93,0.97
+3895158,Bayer Leverkusen,Patrik Schick,1,0.0,0.0,1,0.0,11,8.18
+3895232,Bayer Leverkusen,Adam Hložek,1,0.0,0.0,0,0.0,3,30.0
+3895244,FC Heidenheim,Marvin Pieringer,1,0.0,1.0,0,100.0,12,7.5
+3895340,Bayer Leverkusen,Granit Xhaka,1,0.0,0.0,0,0.0,78,1.15
+3895074,Bayern Munich,Matthijs de Ligt,1,0.0,0.0,0,0.0,11,8.18
+3895134,Hoffenheim,Bambasé Conté,1,1.0,0.0,1,0.0,6,15.0
+3895180,Bayer Leverkusen,Nadiem Amiri,1,1.0,0.0,0,0.0,3,30.0
+3895348,Augsburg,Dion Drena Beljo,1,1.0,0.0,1,0.0,2,45.0
+3895266,Bayer Leverkusen,Jonas Hofmann,1,0.0,0.0,1,0.0,11,8.18
+3895309,Borussia Dortmund,Salih Özcan,1,0.0,0.0,0,0.0,15,6.0
+3895180,Bayer Leverkusen,Nathan Tella,1,0.0,0.0,0,0.0,13,6.92
+3895202,Bayer Leverkusen,Adam Hložek,1,0.0,1.0,0,100.0,1,90.0
+3895060,Borussia Mönchengladbach,Lukas Ullrich,1,0.0,0.0,0,0.0,4,22.5
+3895182,Bayer Leverkusen,Nadiem Amiri,1,0.0,0.0,1,0.0,7,12.86
+3895113,Bayer Leverkusen,Nathan Tella,1,0.0,0.0,0,0.0,6,15.0
+3895121,Bayer Leverkusen,Amine Adli,1,0.0,0.0,0,0.0,9,10.0
+3895121,Freiburg,Manuel Gulde,1,0.0,1.0,0,100.0,26,3.46
+3895232,Bayer Leverkusen,Gustavo Adolfo Puerta Molano,1,1.0,0.0,0,0.0,3,30.0
+3895258,Bayer Leverkusen,Edmond Fayçal Tapsoba,1,0.0,1.0,0,100.0,12,7.5
+3895134,Hoffenheim,Mërgim Berisha,1,0.0,1.0,1,100.0,6,15.0
+3895121,Bayer Leverkusen,Patrik Schick,1,0.0,0.0,1,0.0,4,22.5
+3895107,FC Köln,Luca Jannis Kilian,1,0.0,0.0,0,0.0,2,45.0
+3895320,Bayer Leverkusen,Nathan Tella,1,1.0,0.0,1,0.0,5,18.0
+3895107,Bayer Leverkusen,Piero Martín Hincapié Reyna,1,0.0,0.0,1,0.0,20,4.5
+3895139,Union Berlin,Frederik Rønnow,1,1.0,0.0,0,0.0,86,1.05
+3895113,Bayer Leverkusen,Odilon Kossonou,1,0.0,0.0,0,0.0,0,
+3895067,Bayer Leverkusen,Adam Hložek,1,0.0,0.0,0,0.0,13,6.92
+3895340,Bayer Leverkusen,Odilon Kossonou,1,0.0,0.0,0,0.0,63,1.43
+3895158,Bayer Leverkusen,Amine Adli,1,0.0,0.0,1,0.0,30,3.0
+3895320,Bayer Leverkusen,Josip Stanišić,1,0.0,1.0,0,100.0,5,18.0
+3895266,Wolfsburg,Moritz Jenz,1,0.0,0.0,0,0.0,24,3.75
+3895139,Bayer Leverkusen,Nathan Tella,1,0.0,1.0,0,100.0,9,10.0
+3895121,Freiburg,Noah Weißhaupt,1,0.0,0.0,1,0.0,14,6.43
+3895107,FC Köln,Mathias Flaga Olesen,1,0.0,0.0,0,0.0,13,6.92

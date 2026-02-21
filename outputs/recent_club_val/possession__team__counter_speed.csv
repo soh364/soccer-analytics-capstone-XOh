@@ -1,0 +1,69 @@
+match_id,team,counter_attacks,avg_distance_gained,avg_time_elapsed,avg_speed_units_per_sec
+3895052,RB Leipzig,27,16.77,5.03,3.63
+3895052,Bayer Leverkusen,26,14.27,4.58,2.92
+3895060,Bayer Leverkusen,28,19.03,4.73,4.03
+3895060,Borussia Mönchengladbach,28,18.67,5.42,3.53
+3895067,Darmstadt 98,27,14.7,4.2,3.68
+3895067,Bayer Leverkusen,44,16.82,5.32,3.32
+3895074,Bayern Munich,34,13.18,4.74,3.99
+3895074,Bayer Leverkusen,32,14.79,4.63,3.11
+3895086,Bayer Leverkusen,29,13.17,4.41,3.4
+3895086,FC Heidenheim,18,19.64,5.38,3.35
+3895095,Bayer Leverkusen,25,14.11,4.68,3.77
+3895095,FSV Mainz 05,32,11.64,4.15,2.77
+3895107,FC Köln,21,12.21,4.55,3.2
+3895107,Bayer Leverkusen,31,11.49,4.5,2.86
+3895113,Wolfsburg,30,14.87,4.72,3.37
+3895113,Bayer Leverkusen,36,13.63,4.95,2.96
+3895121,Bayer Leverkusen,31,12.57,4.14,3.23
+3895121,Freiburg,19,11.08,4.82,2.92
+3895134,Hoffenheim,28,18.21,4.81,4.17
+3895134,Bayer Leverkusen,29,16.83,5.14,3.6
+3895139,Bayer Leverkusen,28,16.59,5.36,3.06
+3895139,Union Berlin,24,11.23,4.43,2.65
+3895153,Werder Bremen,33,13.78,4.77,3.13
+3895153,Bayer Leverkusen,26,14.74,4.82,3.03
+3895158,Borussia Dortmund,24,15.17,4.09,4.0
+3895158,Bayer Leverkusen,43,14.47,4.87,3.15
+3895167,Bayer Leverkusen,31,18.4,5.09,3.6
+3895167,VfB Stuttgart,31,12.91,4.72,3.11
+3895180,Bayer Leverkusen,40,14.67,4.62,3.16
+3895180,Eintracht Frankfurt,27,13.43,5.1,2.83
+3895182,Bochum,26,11.21,3.32,3.72
+3895182,Bayer Leverkusen,26,16.54,4.99,3.35
+3895194,Augsburg,28,15.77,4.0,3.74
+3895194,Bayer Leverkusen,32,12.9,4.37,3.23
+3895202,RB Leipzig,27,16.35,4.45,3.45
+3895202,Bayer Leverkusen,27,10.77,5.02,2.45
+3895210,Borussia Mönchengladbach,21,15.1,4.2,3.68
+3895210,Bayer Leverkusen,35,12.53,4.94,2.77
+3895220,Darmstadt 98,31,17.99,4.43,3.81
+3895220,Bayer Leverkusen,26,13.16,4.52,2.75
+3895232,Bayer Leverkusen,25,17.34,4.77,4.0
+3895232,Bayern Munich,29,15.78,5.45,3.0
+3895244,Bayer Leverkusen,33,13.72,5.18,2.76
+3895244,FC Heidenheim,28,10.61,4.06,2.71
+3895250,FSV Mainz 05,34,12.13,4.05,3.34
+3895250,Bayer Leverkusen,23,10.49,4.73,2.5
+3895258,FC Köln,24,23.33,5.01,4.32
+3895258,Bayer Leverkusen,25,16.24,5.71,2.96
+3895266,Wolfsburg,17,9.49,3.47,3.38
+3895266,Bayer Leverkusen,28,13.92,4.94,3.09
+3895275,Freiburg,31,14.32,4.64,4.11
+3895275,Bayer Leverkusen,24,12.55,4.99,2.92
+3895286,Hoffenheim,19,20.99,4.7,4.11
+3895286,Bayer Leverkusen,32,14.94,5.27,3.13
+3895292,Union Berlin,26,14.71,4.57,3.1
+3895292,Bayer Leverkusen,29,13.26,4.56,3.05
+3895302,Werder Bremen,22,15.2,4.46,3.35
+3895302,Bayer Leverkusen,34,17.03,5.07,3.29
+3895309,Bayer Leverkusen,29,19.19,4.89,4.0
+3895309,Borussia Dortmund,32,13.34,5.15,2.61
+3895320,Bayer Leverkusen,26,18.61,4.95,4.08
+3895320,VfB Stuttgart,23,13.93,4.73,3.12
+3895333,Eintracht Frankfurt,31,15.17,4.43,3.49
+3895333,Bayer Leverkusen,17,12.52,4.37,3.23
+3895340,Bayer Leverkusen,33,14.07,4.95,2.89
+3895340,Bochum,17,11.98,4.26,2.89
+3895348,Augsburg,20,17.59,4.73,3.6
+3895348,Bayer Leverkusen,30,13.64,4.92,2.84

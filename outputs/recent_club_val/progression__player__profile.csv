@@ -1,0 +1,303 @@
+team,player,total_mins,progressive_passes,progressive_carries,progressive_passes_received,progressive_passes_p90,progressive_carries_p90,progressive_passes_received_p90,total_progressive_actions_p90,progression_type
+Bayern Munich,Serge Gnabry,69.0,5.0,5.0,9.0,6.52,6.52,11.74,24.78,Complete Progressor
+Bayern Munich,Thomas Müller,90.0,7.0,5.0,11.0,7.0,5.0,11.0,23.0,Complete Progressor
+Bayer Leverkusen,Florian Wirtz,2409.0,118.0,208.0,271.0,4.41,7.77,10.12,22.299999999999997,Complete Progressor
+Bayern Munich,Leroy Sané,189.0,13.0,10.0,21.0,6.19,4.76,10.0,20.95,Complete Progressor
+Bayer Leverkusen,Nadiem Amiri,94.0,6.0,10.0,5.0,5.74,9.57,4.79,20.1,Complete Progressor
+Bayern Munich,Mathys Tel,50.0,2.0,3.0,6.0,3.6,5.4,10.8,19.8,Complete Progressor
+Bayer Leverkusen,Amine Adli,926.0,36.0,67.0,98.0,3.5,6.51,9.52,19.53,Complete Progressor
+Bayer Leverkusen,Jeremie Frimpong,2254.0,50.0,191.0,245.0,2.0,7.63,9.78,19.409999999999997,Ball Carrier
+Borussia Mönchengladbach,Nathan Ngoumou Minpole,80.0,3.0,8.0,6.0,3.38,9.0,6.75,19.13,Complete Progressor
+Bayer Leverkusen,Arthur Augusto de Matos Soares,185.0,7.0,11.0,19.0,3.41,5.35,9.24,18.0,Complete Progressor
+Bayer Leverkusen,Nathan Tella,849.0,24.0,50.0,94.0,2.54,5.3,9.96,17.8,Ball Carrier
+VfB Stuttgart,Silas Katompa Mvumpa,41.0,0.0,4.0,4.0,0.0,8.78,8.78,17.56,Ball Carrier
+Freiburg,Florent Muslija,31.0,2.0,3.0,1.0,5.81,8.71,2.9,17.419999999999998,Complete Progressor
+Borussia Dortmund,Jadon Sancho,67.0,2.0,6.0,4.0,2.69,8.06,5.37,16.12,Ball Carrier
+Bayer Leverkusen,Victor Okoh Boniface,1564.0,40.0,107.0,131.0,2.3,6.16,7.54,16.0,Ball Carrier
+Eintracht Frankfurt,Omar Marmoush,94.0,6.0,6.0,4.0,5.74,5.74,3.83,15.31,Complete Progressor
+Bayern Munich,Konrad Laimer,83.0,5.0,6.0,3.0,5.42,6.51,3.25,15.18,Complete Progressor
+Bayern Munich,Alphonso Davies,95.0,4.0,4.0,8.0,3.79,3.79,7.58,15.16,Complete Progressor
+Eintracht Frankfurt,Hugo Ekitike,79.0,1.0,4.0,8.0,1.14,4.56,9.11,14.809999999999999,Ball Carrier
+RB Leipzig,Timo Werner,61.0,0.0,5.0,5.0,0.0,7.38,7.38,14.76,Ball Carrier
+Bayern Munich,Eric Dier,92.0,13.0,1.0,1.0,12.72,0.98,0.98,14.680000000000001,Progressive Passer
+Bayer Leverkusen,Gustavo Adolfo Puerta Molano,56.0,6.0,2.0,1.0,9.64,3.21,1.61,14.46,Complete Progressor
+VfB Stuttgart,Josha Mamadou Karaboue Vagnoman,81.0,2.0,4.0,7.0,2.22,4.44,7.78,14.440000000000001,Ball Carrier
+Bayern Munich,Joshua Kimmich,94.0,7.0,4.0,4.0,6.7,3.83,3.83,14.360000000000001,Complete Progressor
+FC Heidenheim,Florian Pick,44.0,1.0,4.0,2.0,2.05,8.18,4.09,14.32,Ball Carrier
+Bayer Leverkusen,Jonas Hofmann,2208.0,82.0,84.0,184.0,3.34,3.42,7.5,14.26,Complete Progressor
+Darmstadt 98,Gerrit Holtmann,64.0,2.0,4.0,4.0,2.81,5.62,5.62,14.05,Ball Carrier
+VfB Stuttgart,Angelo Stiller,90.0,6.0,5.0,3.0,6.0,5.0,3.0,14.0,Complete Progressor
+Bayer Leverkusen,Alejandro Grimaldo García,2851.0,112.0,110.0,208.0,3.54,3.47,6.57,13.58,Complete Progressor
+Bochum,Takuma Asano,61.0,0.0,3.0,6.0,0.0,4.43,8.85,13.28,Ball Carrier
+Augsburg,Sven Michel,34.0,1.0,3.0,1.0,2.65,7.94,2.65,13.24,Ball Carrier
+Eintracht Frankfurt,Aurélio Gabriel Ulineia Buta,109.0,2.0,5.0,9.0,1.65,4.13,7.43,13.209999999999999,Ball Carrier
+FC Heidenheim,Kevin Sessa,41.0,2.0,2.0,2.0,4.39,4.39,4.39,13.169999999999998,Complete Progressor
+Bayer Leverkusen,Granit Xhaka,2862.0,284.0,77.0,50.0,8.93,2.42,1.57,12.92,Progressive Passer
+VfB Stuttgart,Deniz Undav,156.0,5.0,8.0,9.0,2.88,4.62,5.19,12.690000000000001,Ball Carrier
+Borussia Mönchengladbach,Alassane Pléa,93.0,3.0,3.0,7.0,2.9,2.9,6.77,12.57,Ball Carrier
+Augsburg,Arne Maier,123.0,7.0,4.0,6.0,5.12,2.93,4.39,12.440000000000001,Complete Progressor
+Bayern Munich,Noussair Mazraoui,117.0,5.0,5.0,6.0,3.85,3.85,4.62,12.32,Complete Progressor
+Bayer Leverkusen,Borja Iglesias Quintas,260.0,6.0,10.0,19.0,2.08,3.46,6.58,12.120000000000001,Ball Carrier
+Freiburg,Roland Sallai,60.0,0.0,3.0,5.0,0.0,4.5,7.5,12.0,Ball Carrier
+Bayer Leverkusen,Josip Stanišić,1303.0,69.0,45.0,59.0,4.77,3.11,4.08,11.959999999999999,Complete Progressor
+Hoffenheim,Ihlas Bebou,38.0,1.0,2.0,2.0,2.37,4.74,4.74,11.850000000000001,Ball Carrier
+Bayer Leverkusen,Patrik Schick,1064.0,21.0,34.0,84.0,1.78,2.88,7.11,11.77,Ball Carrier
+VfB Stuttgart,Chris Führich,155.0,4.0,9.0,7.0,2.32,5.23,4.06,11.61,Ball Carrier
+Werder Bremen,Mitchell Weiser,181.0,11.0,5.0,7.0,5.47,2.49,3.48,11.44,Progressive Passer
+Bayern Munich,Sacha Boey,79.0,1.0,5.0,4.0,1.14,5.7,4.56,11.399999999999999,Ball Carrier
+RB Leipzig,Kevin Kampl,48.0,2.0,3.0,1.0,3.75,5.62,1.88,11.25,Complete Progressor
+Bochum,Lukas Daschner,32.0,1.0,2.0,1.0,2.81,5.62,2.81,11.24,Ball Carrier
+Bayer Leverkusen,Edmond Fayçal Tapsoba,2124.0,190.0,63.0,10.0,8.05,2.67,0.42,11.14,Progressive Passer
+Eintracht Frankfurt,Mario Götze,157.0,9.0,4.0,6.0,5.16,2.29,3.44,10.89,Progressive Passer
+Hoffenheim,Marius Bülter,109.0,2.0,5.0,6.0,1.65,4.13,4.95,10.73,Ball Carrier
+Borussia Mönchengladbach,Franck Honorat,143.0,5.0,7.0,5.0,3.15,4.41,3.15,10.71,Complete Progressor
+Bochum,Kevin Stöger,93.0,5.0,3.0,3.0,4.84,2.9,2.9,10.64,Complete Progressor
+FSV Mainz 05,Tom Krauß,34.0,2.0,0.0,2.0,5.29,0.0,5.29,10.58,Progressive Passer
+Borussia Mönchengladbach,Tomáš Čvančara,78.0,1.0,3.0,5.0,1.15,3.46,5.77,10.379999999999999,Ball Carrier
+Bayer Leverkusen,Odilon Kossonou,1850.0,125.0,55.0,32.0,6.08,2.68,1.56,10.32,Progressive Passer
+Eintracht Frankfurt,Ansgar Knauff,115.0,2.0,3.0,8.0,1.57,2.35,6.26,10.18,Progression Outlet
+Werder Bremen,Rafael Santos Borré Amaury,71.0,0.0,3.0,5.0,0.0,3.8,6.34,10.14,Ball Carrier
+Bayern Munich,Jamal Musiala,117.0,4.0,4.0,5.0,3.08,3.08,3.85,10.01,Complete Progressor
+Union Berlin,Sheraldo Becker,63.0,1.0,2.0,4.0,1.43,2.86,5.71,10.0,Progression Outlet
+Bayer Leverkusen,Piero Martín Hincapié Reyna,1520.0,88.0,34.0,46.0,5.21,2.01,2.72,9.94,Progressive Passer
+FC Heidenheim,Adrian Beck,76.0,3.0,1.0,4.0,3.55,1.18,4.74,9.469999999999999,Progressive Passer
+Bayer Leverkusen,Exequiel Alejandro Palacios,1863.0,119.0,26.0,44.0,5.75,1.26,2.13,9.14,Progressive Passer
+Wolfsburg,Mattias Svanberg,69.0,1.0,1.0,5.0,1.3,1.3,6.52,9.12,Progression Outlet
+Werder Bremen,Nick Woltemade,89.0,1.0,3.0,5.0,1.01,3.03,5.06,9.1,Ball Carrier
+FC Köln,Max Finkgräfe,119.0,4.0,3.0,5.0,3.03,2.27,3.78,9.08,Progressive Passer
+Werder Bremen,Romano Schmid,171.0,5.0,4.0,8.0,2.63,2.11,4.21,8.95,Progression Outlet
+Borussia Mönchengladbach,Maximilian Wöber,91.0,7.0,1.0,1.0,6.92,0.99,0.99,8.9,Progressive Passer
+VfB Stuttgart,Maximilian Mittelstädt,172.0,6.0,9.0,2.0,3.14,4.71,1.05,8.9,Complete Progressor
+Hoffenheim,Umut Tohumcu,71.0,3.0,3.0,1.0,3.8,3.8,1.27,8.87,Complete Progressor
+Freiburg,Christian Günter,93.0,4.0,0.0,5.0,3.87,0.0,4.84,8.71,Progressive Passer
+Union Berlin,András Schäfer,62.0,0.0,2.0,4.0,0.0,2.9,5.81,8.709999999999999,Ball Carrier
+RB Leipzig,Daniel Olmo Carvajal,167.0,4.0,6.0,6.0,2.16,3.23,3.23,8.620000000000001,Ball Carrier
+Darmstadt 98,Emir Karic,157.0,4.0,5.0,6.0,2.29,2.87,3.44,8.6,Progression Outlet
+Augsburg,Ermedin Demirović,168.0,2.0,7.0,7.0,1.07,3.75,3.75,8.57,Ball Carrier
+Werder Bremen,Leonardo Bittencourt,147.0,5.0,3.0,6.0,3.06,1.84,3.67,8.57,Progressive Passer
+Bayer Leverkusen,Adam Hložek,479.0,7.0,11.0,27.0,1.32,2.07,5.07,8.46,Progression Outlet
+Werder Bremen,Marvin Ducksch,181.0,2.0,7.0,8.0,0.99,3.48,3.98,8.45,Ball Carrier
+Darmstadt 98,Tim Skarke,128.0,3.0,2.0,7.0,2.11,1.41,4.92,8.44,Progression Outlet
+Eintracht Frankfurt,Eric Junior Dina Ebimbe,150.0,1.0,6.0,7.0,0.6,3.6,4.2,8.4,Ball Carrier
+Wolfsburg,Lovro Majer,86.0,1.0,4.0,3.0,1.05,4.19,3.14,8.38,Ball Carrier
+Freiburg,Ritsu Doan,174.0,2.0,8.0,6.0,1.03,4.14,3.1,8.27,Ball Carrier
+Freiburg,Kiliann Sildillia,186.0,2.0,7.0,8.0,0.97,3.39,3.87,8.23,Ball Carrier
+Hoffenheim,Andrej Kramarić,66.0,1.0,3.0,2.0,1.36,4.09,2.73,8.18,Ball Carrier
+FC Heidenheim,Jan-Niklas Beste,155.0,4.0,5.0,5.0,2.32,2.9,2.9,8.12,Ball Carrier
+Wolfsburg,Jonas Older Wind,123.0,2.0,4.0,5.0,1.46,2.93,3.66,8.05,Ball Carrier
+Hoffenheim,Maximilian Beier,157.0,0.0,9.0,5.0,0.0,5.16,2.87,8.030000000000001,Ball Carrier
+Bochum,Danilo Teodoro Soares,45.0,1.0,2.0,1.0,2.0,4.0,2.0,8.0,Ball Carrier
+Bayern Munich,Min Jae Kim,183.0,12.0,4.0,0.0,5.9,1.97,0.0,7.87,Progressive Passer
+Union Berlin,Josip Juranović,80.0,5.0,1.0,1.0,5.62,1.12,1.12,7.86,Progressive Passer
+Eintracht Frankfurt,Lucas Silva Melo,188.0,11.0,1.0,4.0,5.27,0.48,1.91,7.66,Progressive Passer
+Werder Bremen,Senne Lynen,94.0,4.0,2.0,2.0,3.83,1.91,1.91,7.65,Progressive Passer
+Hoffenheim,Grischa Prömel,130.0,6.0,3.0,2.0,4.15,2.08,1.38,7.61,Progressive Passer
+Borussia Dortmund,Jamie Jermaine Bynoe-Gittens,145.0,1.0,6.0,5.0,0.62,3.72,3.1,7.4399999999999995,Ball Carrier
+Augsburg,Ruben Vargas,61.0,2.0,1.0,2.0,2.95,1.48,2.95,7.38,Supporting Progressor
+Union Berlin,Mikkel Kaufmann,49.0,1.0,1.0,2.0,1.84,1.84,3.67,7.35,Progression Outlet
+Eintracht Frankfurt,Ellyes Joris Skhiri,99.0,6.0,1.0,1.0,5.45,0.91,0.91,7.2700000000000005,Progressive Passer
+Wolfsburg,Yannick Gerhardt,161.0,2.0,5.0,6.0,1.12,2.8,3.35,7.27,Progression Outlet
+Bochum,Christopher Antwi-Adjej,62.0,0.0,2.0,3.0,0.0,2.9,4.35,7.25,Ball Carrier
+Hoffenheim,Robert Skov,75.0,2.0,2.0,2.0,2.4,2.4,2.4,7.199999999999999,Supporting Progressor
+FSV Mainz 05,Danny Vieira da Costa,63.0,2.0,2.0,1.0,2.86,2.86,1.43,7.1499999999999995,Supporting Progressor
+Augsburg,Mads Pedersen,89.0,3.0,3.0,1.0,3.03,3.03,1.01,7.069999999999999,Complete Progressor
+Freiburg,Vincenzo Grifo,140.0,4.0,4.0,3.0,2.57,2.57,1.93,7.069999999999999,Supporting Progressor
+VfB Stuttgart,Jamie Leweling,102.0,1.0,5.0,2.0,0.88,4.41,1.76,7.05,Ball Carrier
+Hoffenheim,Finn Ole Becker,77.0,2.0,2.0,2.0,2.34,2.34,2.34,7.02,Supporting Progressor
+Bayer Leverkusen,Robert Andrich,1720.0,86.0,32.0,16.0,4.5,1.67,0.84,7.01,Progressive Passer
+Freiburg,Lucas Höler,168.0,5.0,3.0,5.0,2.68,1.61,2.68,6.970000000000001,Supporting Progressor
+Werder Bremen,Jens Stage,91.0,4.0,2.0,1.0,3.96,1.98,0.99,6.93,Progressive Passer
+Bayern Munich,Dayotchanculle Upamecano,156.0,7.0,4.0,1.0,4.04,2.31,0.58,6.93,Progressive Passer
+VfB Stuttgart,Leonidas Stergiou,92.0,3.0,1.0,3.0,2.93,0.98,2.93,6.84,Supporting Progressor
+Bayer Leverkusen,Jonathan Tah,2674.0,168.0,32.0,1.0,5.65,1.08,0.03,6.760000000000001,Progressive Passer
+Borussia Dortmund,Marius Wolf,147.0,3.0,4.0,4.0,1.84,2.45,2.45,6.74,Supporting Progressor
+FSV Mainz 05,Brajan Gruda,134.0,1.0,5.0,4.0,0.67,3.36,2.69,6.720000000000001,Ball Carrier
+FC Köln,Leart Paqarada,108.0,2.0,3.0,3.0,1.67,2.5,2.5,6.67,Supporting Progressor
+FSV Mainz 05,Jae-Sung Lee,162.0,3.0,3.0,6.0,1.67,1.67,3.33,6.67,Progression Outlet
+Werder Bremen,Anthony Jung,82.0,6.0,0.0,0.0,6.59,0.0,0.0,6.59,Progressive Passer
+Augsburg,Phillip Tietz,151.0,3.0,4.0,4.0,1.79,2.38,2.38,6.55,Supporting Progressor
+FC Köln,Faride Alidou,142.0,2.0,3.0,5.0,1.27,1.9,3.17,6.34,Supporting Progressor
+Eintracht Frankfurt,Fares Chaïbi,159.0,2.0,5.0,4.0,1.13,2.83,2.26,6.22,Supporting Progressor
+VfB Stuttgart,Serhou Guirassy,191.0,2.0,4.0,7.0,0.94,1.88,3.3,6.119999999999999,Progression Outlet
+Wolfsburg,Kevin Paredes,104.0,2.0,2.0,3.0,1.73,1.73,2.6,6.0600000000000005,Supporting Progressor
+Union Berlin,Janik Haberer,91.0,2.0,0.0,4.0,1.98,0.0,3.96,5.9399999999999995,Progression Outlet
+FC Heidenheim,Eren Sami Dinkçi,152.0,1.0,4.0,5.0,0.59,2.37,2.96,5.92,Supporting Progressor
+Union Berlin,David Datro Fofana,77.0,0.0,1.0,4.0,0.0,1.17,4.68,5.85,Progression Outlet
+Augsburg,Jeffrey Gouweleeuw,185.0,4.0,6.0,2.0,1.95,2.92,0.97,5.84,Ball Carrier
+FSV Mainz 05,Josuha Guilavogui,31.0,2.0,0.0,0.0,5.81,0.0,0.0,5.81,Progressive Passer
+FSV Mainz 05,Nadiem Amiri,93.0,3.0,3.0,0.0,2.9,2.9,0.0,5.8,Ball Carrier
+Hoffenheim,Wout Weghorst,172.0,3.0,3.0,5.0,1.57,1.57,2.62,5.76,Supporting Progressor
+Darmstadt 98,Marvin Mehlem,94.0,1.0,2.0,3.0,0.96,1.91,2.87,5.74,Supporting Progressor
+Bayern Munich,Harry Kane,176.0,1.0,3.0,7.0,0.51,1.53,3.58,5.62,Progression Outlet
+RB Leipzig,Ikoma Loïs Openda,165.0,2.0,4.0,4.0,1.09,2.18,2.18,5.450000000000001,Supporting Progressor
+Borussia Mönchengladbach,Robin Hack,84.0,2.0,0.0,3.0,2.14,0.0,3.21,5.35,Supporting Progressor
+Darmstadt 98,Filip Stojilković,34.0,0.0,2.0,0.0,0.0,5.29,0.0,5.29,Ball Carrier
+Union Berlin,Brenden Aaronson,103.0,2.0,2.0,2.0,1.75,1.75,1.75,5.25,Supporting Progressor
+Wolfsburg,Tiago Barreiros de Melo Tomás,103.0,3.0,0.0,3.0,2.62,0.0,2.62,5.24,Supporting Progressor
+Werder Bremen,Christian Groß,86.0,3.0,2.0,0.0,3.14,2.09,0.0,5.23,Progressive Passer
+VfB Stuttgart,Enzo Millot,138.0,2.0,1.0,5.0,1.3,0.65,3.26,5.21,Progression Outlet
+Borussia Mönchengladbach,Rocco Reitz,53.0,2.0,1.0,0.0,3.4,1.7,0.0,5.1,Progressive Passer
+FC Köln,Rasmus Carstensen,179.0,2.0,3.0,5.0,1.01,1.51,2.51,5.029999999999999,Supporting Progressor
+Wolfsburg,Maxence Lacroix,181.0,9.0,0.0,1.0,4.48,0.0,0.5,4.98,Progressive Passer
+FSV Mainz 05,Karim Onisiwo,163.0,1.0,3.0,5.0,0.55,1.66,2.76,4.97,Supporting Progressor
+Werder Bremen,Marco Friedl,91.0,3.0,2.0,0.0,2.97,1.98,0.0,4.95,Progressive Passer
+Wolfsburg,Ridle Bote Baku,182.0,2.0,4.0,4.0,0.99,1.98,1.98,4.949999999999999,Supporting Progressor
+Freiburg,Philipp Lienhart,93.0,4.0,1.0,0.0,3.87,0.97,0.0,4.84,Progressive Passer
+RB Leipzig,Mohamed Simakan,169.0,4.0,3.0,2.0,2.13,1.6,1.07,4.8,Supporting Progressor
+Freiburg,Matthias Ginter,151.0,6.0,2.0,0.0,3.58,1.19,0.0,4.77,Progressive Passer
+FC Heidenheim,Jonas Föhrenbach,189.0,2.0,2.0,6.0,0.95,0.95,2.86,4.76,Limited Progression
+Hoffenheim,David Jurásek,95.0,0.0,1.0,4.0,0.0,0.95,3.79,4.74,Progression Outlet
+RB Leipzig,Benjamin Henrichs,114.0,0.0,2.0,4.0,0.0,1.58,3.16,4.74,Supporting Progressor
+FC Heidenheim,Tim Kleindienst,173.0,1.0,2.0,6.0,0.52,1.04,3.12,4.68,Limited Progression
+Borussia Dortmund,Julian Brandt,174.0,3.0,3.0,3.0,1.55,1.55,1.55,4.65,Supporting Progressor
+Eintracht Frankfurt,Hugo Larsson,97.0,3.0,1.0,1.0,2.78,0.93,0.93,4.64,Supporting Progressor
+Freiburg,Michael Gregoritsch,59.0,0.0,1.0,2.0,0.0,1.53,3.05,4.58,Supporting Progressor
+Werder Bremen,Milos Veljkovic,178.0,6.0,1.0,2.0,3.03,0.51,1.01,4.55,Progressive Passer
+Freiburg,Manuel Gulde,119.0,5.0,1.0,0.0,3.78,0.76,0.0,4.54,Progressive Passer
+FC Köln,Dejan Ljubicic,179.0,6.0,2.0,1.0,3.02,1.01,0.5,4.53,Progressive Passer
+Union Berlin,Robin Gosens,60.0,1.0,1.0,1.0,1.5,1.5,1.5,4.5,Supporting Progressor
+Borussia Dortmund,Nico Schlotterbeck,161.0,8.0,0.0,0.0,4.47,0.0,0.0,4.47,Progressive Passer
+Borussia Mönchengladbach,Joseph Scally,182.0,2.0,1.0,6.0,0.99,0.49,2.97,4.45,Limited Progression
+Union Berlin,Rani Khedira,61.0,3.0,0.0,0.0,4.43,0.0,0.0,4.43,Progressive Passer
+Borussia Dortmund,Julian Ryerson,184.0,4.0,0.0,5.0,1.96,0.0,2.45,4.41,Supporting Progressor
+FC Köln,Denis Huseinbašić,82.0,2.0,1.0,1.0,2.2,1.1,1.1,4.4,Supporting Progressor
+Union Berlin,Alex Král,123.0,2.0,1.0,3.0,1.46,0.73,2.2,4.390000000000001,Limited Progression
+Darmstadt 98,Matthias Bader,185.0,5.0,2.0,2.0,2.43,0.97,0.97,4.37,Supporting Progressor
+RB Leipzig,Xavi Simons,144.0,5.0,1.0,1.0,3.12,0.62,0.62,4.36,Progressive Passer
+Hoffenheim,Anton Stach,186.0,3.0,4.0,2.0,1.45,1.94,0.97,4.359999999999999,Supporting Progressor
+Eintracht Frankfurt,Willian Joel Pacho Tenorio,186.0,8.0,1.0,0.0,3.87,0.48,0.0,4.35,Progressive Passer
+Bochum,Gonçalo Mendes Paciencia,62.0,1.0,1.0,1.0,1.45,1.45,1.45,4.35,Supporting Progressor
+RB Leipzig,David Raum,188.0,4.0,2.0,3.0,1.91,0.96,1.44,4.3100000000000005,Supporting Progressor
+Freiburg,Merlin Röhl,149.0,1.0,3.0,3.0,0.6,1.81,1.81,4.220000000000001,Supporting Progressor
+FSV Mainz 05,Sepp van den Berg,175.0,6.0,1.0,1.0,3.09,0.51,0.51,4.109999999999999,Progressive Passer
+Bochum,Bernardo Fernandes da Silva Junior,132.0,4.0,1.0,1.0,2.73,0.68,0.68,4.09,Supporting Progressor
+Borussia Dortmund,Marcel Sabitzer,177.0,3.0,4.0,1.0,1.53,2.03,0.51,4.069999999999999,Supporting Progressor
+Union Berlin,Lucas Tousart,89.0,1.0,2.0,1.0,1.01,2.02,1.01,4.04,Supporting Progressor
+Wolfsburg,Joakim Mæhle,90.0,0.0,1.0,3.0,0.0,1.0,3.0,4.0,Limited Progression
+Wolfsburg,Maximilian Arnold,181.0,7.0,1.0,0.0,3.48,0.5,0.0,3.98,Progressive Passer
+Borussia Mönchengladbach,Nico Elvedi,91.0,1.0,2.0,1.0,0.99,1.98,0.99,3.96,Supporting Progressor
+Union Berlin,Paul Jaeckel,91.0,4.0,0.0,0.0,3.96,0.0,0.0,3.96,Progressive Passer
+Eintracht Frankfurt,Niels Nkounkou,160.0,3.0,3.0,1.0,1.69,1.69,0.56,3.94,Supporting Progressor
+Borussia Mönchengladbach,Marvin Friedrich,183.0,2.0,3.0,3.0,0.98,1.48,1.48,3.94,Supporting Progressor
+FSV Mainz 05,Anthony Caci,183.0,3.0,3.0,2.0,1.48,1.48,0.98,3.94,Supporting Progressor
+Augsburg,Kevin Mbabu,92.0,0.0,2.0,2.0,0.0,1.96,1.96,3.92,Supporting Progressor
+Bayern Munich,Leon Goretzka,162.0,5.0,0.0,2.0,2.78,0.0,1.11,3.8899999999999997,Supporting Progressor
+Bochum,Maximilian Wittek,93.0,1.0,2.0,1.0,0.97,1.94,0.97,3.88,Supporting Progressor
+FC Heidenheim,Lennard Maloney,187.0,6.0,0.0,2.0,2.89,0.0,0.96,3.85,Supporting Progressor
+VfB Stuttgart,Waldemar Anton,187.0,6.0,2.0,0.0,2.89,0.96,0.0,3.85,Supporting Progressor
+Union Berlin,Yorbe Vertessen,47.0,0.0,0.0,2.0,0.0,0.0,3.83,3.83,Progression Outlet
+VfB Stuttgart,Dan-Axel Zagadou,94.0,4.0,0.0,0.0,3.83,0.0,0.0,3.83,Progressive Passer
+Hoffenheim,Ozan Muhammed Kabak,188.0,4.0,3.0,1.0,1.91,1.44,0.48,3.8299999999999996,Supporting Progressor
+FC Heidenheim,Tim Siersleben,95.0,4.0,0.0,0.0,3.79,0.0,0.0,3.79,Progressive Passer
+Freiburg,Lukas Kübler,95.0,3.0,0.0,1.0,2.84,0.0,0.95,3.79,Supporting Progressor
+Augsburg,Mert Kömür,73.0,1.0,2.0,0.0,1.23,2.47,0.0,3.7,Supporting Progressor
+Union Berlin,Jérôme Roussillon,74.0,0.0,1.0,2.0,0.0,1.22,2.43,3.6500000000000004,Supporting Progressor
+Darmstadt 98,Oscar Vilhelmsson,124.0,1.0,3.0,1.0,0.73,2.18,0.73,3.64,Supporting Progressor
+Werder Bremen,Olivier Deman,75.0,0.0,1.0,2.0,0.0,1.2,2.4,3.5999999999999996,Supporting Progressor
+RB Leipzig,Junior Castello Lukeba,126.0,3.0,1.0,1.0,2.14,0.71,0.71,3.56,Supporting Progressor
+Darmstadt 98,Matej Maglica,103.0,4.0,0.0,0.0,3.5,0.0,0.0,3.5,Progressive Passer
+Werder Bremen,Felix Agu,104.0,0.0,1.0,3.0,0.0,0.87,2.6,3.47,Limited Progression
+Borussia Dortmund,Emre Can,156.0,2.0,2.0,2.0,1.15,1.15,1.15,3.4499999999999997,Limited Progression
+Darmstadt 98,Luca Pfeiffer,184.0,0.0,4.0,3.0,0.0,1.96,1.47,3.4299999999999997,Supporting Progressor
+FC Heidenheim,Benedikt Gimber,79.0,3.0,0.0,0.0,3.42,0.0,0.0,3.42,Progressive Passer
+Darmstadt 98,Fabian Holland,158.0,5.0,0.0,1.0,2.85,0.0,0.57,3.42,Supporting Progressor
+RB Leipzig,Yussuf Yurary Poulsen,53.0,0.0,0.0,2.0,0.0,0.0,3.4,3.4,Progression Outlet
+FC Köln,Linton Maina,80.0,1.0,1.0,1.0,1.12,1.12,1.12,3.3600000000000003,Limited Progression
+Borussia Dortmund,Niclas Füllkrug,189.0,1.0,3.0,3.0,0.48,1.43,1.43,3.34,Supporting Progressor
+Borussia Mönchengladbach,Florian Neuhaus,143.0,3.0,1.0,1.0,1.89,0.63,0.63,3.15,Supporting Progressor
+Hoffenheim,Kevin Akpoguma,87.0,3.0,0.0,0.0,3.1,0.0,0.0,3.1,Progressive Passer
+Augsburg,Elvis Rexhbeçaj,87.0,0.0,0.0,3.0,0.0,0.0,3.1,3.1,Limited Progression
+Werder Bremen,Julián Malatini,87.0,2.0,1.0,0.0,2.07,1.03,0.0,3.0999999999999996,Supporting Progressor
+Bayern Munich,Aleksandar Pavlović,59.0,1.0,0.0,1.0,1.53,0.0,1.53,3.06,Limited Progression
+Bochum,Cristian Gamboa Luna,90.0,1.0,1.0,1.0,1.0,1.0,1.0,3.0,Limited Progression
+Union Berlin,Aïssa Bilal Laïdouni,120.0,2.0,1.0,1.0,1.5,0.75,0.75,3.0,Limited Progression
+Eintracht Frankfurt,Hrvoje Smolčić,30.0,0.0,1.0,0.0,0.0,3.0,0.0,3.0,Ball Carrier
+Augsburg,Niklas Dorsch,180.0,4.0,1.0,1.0,2.0,0.5,0.5,3.0,Supporting Progressor
+FC Köln,Florian Kainz,91.0,1.0,0.0,2.0,0.99,0.0,1.98,2.9699999999999998,Limited Progression
+Borussia Mönchengladbach,Julian Weigl,183.0,5.0,1.0,0.0,2.46,0.49,0.0,2.95,Supporting Progressor
+VfB Stuttgart,Atakan Karazor,184.0,5.0,1.0,0.0,2.45,0.49,0.0,2.9400000000000004,Supporting Progressor
+Borussia Mönchengladbach,Luca Netz,92.0,1.0,1.0,1.0,0.98,0.98,0.98,2.94,Limited Progression
+Union Berlin,Diogo Filipe Monteiro Pinto Leite,184.0,6.0,0.0,0.0,2.93,0.0,0.0,2.93,Supporting Progressor
+RB Leipzig,Willi Orban,94.0,2.0,1.0,0.0,1.91,0.96,0.0,2.87,Supporting Progressor
+FSV Mainz 05,Philipp Mwene,94.0,0.0,1.0,2.0,0.0,0.96,1.91,2.87,Limited Progression
+FC Köln,Sargis Adamyan,63.0,0.0,0.0,2.0,0.0,0.0,2.86,2.86,Limited Progression
+Hoffenheim,Florian Grillitsch,95.0,2.0,0.0,1.0,1.89,0.0,0.95,2.84,Supporting Progressor
+Bochum,Tim Oermann,67.0,1.0,0.0,1.0,1.34,0.0,1.34,2.68,Limited Progression
+Union Berlin,Christopher Trimmel,106.0,2.0,0.0,1.0,1.7,0.0,0.85,2.55,Supporting Progressor
+Bochum,Keven Schlotterbeck,181.0,5.0,0.0,0.0,2.49,0.0,0.0,2.49,Supporting Progressor
+RB Leipzig,Benjamin Šeško,73.0,0.0,0.0,2.0,0.0,0.0,2.47,2.47,Limited Progression
+Wolfsburg,Amin Sarr,74.0,0.0,1.0,1.0,0.0,1.22,1.22,2.44,Supporting Progressor
+FSV Mainz 05,Leandro Barreiro Martins,186.0,2.0,1.0,2.0,0.97,0.48,0.97,2.42,Limited Progression
+FC Heidenheim,Patrick Mainka,186.0,5.0,0.0,0.0,2.42,0.0,0.0,2.42,Supporting Progressor
+Wolfsburg,Moritz Jenz,117.0,3.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
+Eintracht Frankfurt,Robin Koch,156.0,3.0,1.0,0.0,1.73,0.58,0.0,2.31,Supporting Progressor
+Augsburg,Fredrik Jensen,78.0,2.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
+FC Köln,Eric Martel,156.0,2.0,0.0,2.0,1.15,0.0,1.15,2.3,Limited Progression
+Borussia Mönchengladbach,Kouadio Emmanuel Koné,78.0,1.0,1.0,0.0,1.15,1.15,0.0,2.3,Limited Progression
+Darmstadt 98,Christoph Zimmermann,160.0,3.0,1.0,0.0,1.69,0.56,0.0,2.25,Supporting Progressor
+FSV Mainz 05,Dominik Kohr,161.0,3.0,0.0,1.0,1.68,0.0,0.56,2.24,Supporting Progressor
+RB Leipzig,Xaver Schlager,173.0,2.0,2.0,0.0,1.04,1.04,0.0,2.08,Limited Progression
+Borussia Mönchengladbach,Ko Itakura,87.0,2.0,0.0,0.0,2.07,0.0,0.0,2.07,Supporting Progressor
+Bochum,Patrick Osterhage,179.0,1.0,1.0,2.0,0.5,0.5,1.01,2.01,Limited Progression
+RB Leipzig,Nicolas Seiwald,134.0,3.0,0.0,0.0,2.01,0.0,0.0,2.01,Supporting Progressor
+Augsburg,Iago Amaral Borduchi,180.0,1.0,2.0,1.0,0.5,1.0,0.5,2.0,Limited Progression
+FC Köln,Davie Selke,90.0,0.0,0.0,2.0,0.0,0.0,2.0,2.0,Limited Progression
+FC Köln,Timo Hübers,182.0,4.0,0.0,0.0,1.98,0.0,0.0,1.98,Supporting Progressor
+FSV Mainz 05,Edimilson Fernandes,91.0,2.0,0.0,0.0,1.98,0.0,0.0,1.98,Supporting Progressor
+FC Heidenheim,Omar Haktab Traorè,184.0,1.0,1.0,2.0,0.49,0.49,0.98,1.96,Limited Progression
+Freiburg,Nicolas Höfler,187.0,2.0,1.0,1.0,0.96,0.48,0.48,1.92,Limited Progression
+VfB Stuttgart,Hiroki Ito,97.0,2.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
+Bochum,Anthony Losilla,145.0,3.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
+Darmstadt 98,Christoph Klarer,104.0,1.0,0.0,1.0,0.87,0.0,0.87,1.74,Limited Progression
+FC Heidenheim,Nikola Dovedan,107.0,1.0,1.0,0.0,0.84,0.84,0.0,1.68,Limited Progression
+Bochum,Matúš Bero,116.0,1.0,0.0,1.0,0.78,0.0,0.78,1.56,Limited Progression
+FSV Mainz 05,Silvan Widmer,58.0,0.0,0.0,1.0,0.0,0.0,1.55,1.55,Limited Progression
+Bochum,Philipp Hofmann,59.0,0.0,0.0,1.0,0.0,0.0,1.53,1.53,Limited Progression
+Freiburg,Maximilian Eggestein,64.0,1.0,0.0,0.0,1.41,0.0,0.0,1.41,Limited Progression
+Wolfsburg,Sebastiaan Bornauw,131.0,2.0,0.0,0.0,1.37,0.0,0.0,1.37,Limited Progression
+Union Berlin,Robin Knoche,67.0,1.0,0.0,0.0,1.34,0.0,0.0,1.34,Limited Progression
+Wolfsburg,Cédric Zesiger,85.0,1.0,0.0,0.0,1.06,0.0,0.0,1.06,Limited Progression
+FSV Mainz 05,Stefan Bell,90.0,1.0,0.0,0.0,1.0,0.0,0.0,1.0,Limited Progression
+Union Berlin,Danilho Doekhi,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
+Borussia Dortmund,Mats Hummels,188.0,1.0,1.0,0.0,0.48,0.48,0.0,0.96,Limited Progression
+Hoffenheim,Kevin Vogt,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
+Hoffenheim,Tim Drexler,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
+Borussia Dortmund,Marco Reus,110.0,0.0,0.0,1.0,0.0,0.0,0.82,0.82,Limited Progression
+FC Köln,Julian Chabot,184.0,1.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
+Augsburg,Felix Uduokhai,184.0,1.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
+Bochum,Erhan Mašović,101.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Borussia Mönchengladbach,Moritz Nicolas,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Hoffenheim,Oliver Baumann,190.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Borussia Dortmund,Gregor Kobel,190.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Augsburg,Arne Engels,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Union Berlin,Kevin Vogt,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Augsburg,Tomáš Koubek,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wolfsburg,Pavao Pervan,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+FC Köln,Marvin Schwäbe,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Union Berlin,Frederik Rønnow,181.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bayern Munich,Manuel Neuer,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+FC Heidenheim,Norman Theuerkauf,69.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wolfsburg,Koen Casteels,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+FC Heidenheim,Kevin Müller,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Borussia Dortmund,Ian Maatsen,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+FSV Mainz 05,Robin Zentner,175.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+RB Leipzig,Janis Blaswich,188.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Borussia Mönchengladbach,Jonas Omlin,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Augsburg,Tim Breithaupt,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Darmstadt 98,Thomas Poppler Isherwood,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Werder Bremen,Michael Zetterer,180.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+VfB Stuttgart,Alexander Nübel,189.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bayern Munich,Sven Ulreich,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+FC Heidenheim,Jan Schöppner,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Augsburg,Finn Dahmen,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Borussia Mönchengladbach,Theoson Jordan Siebatcheu,75.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bochum,Manuel Riemann,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Darmstadt 98,Marcel Schuhen,184.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+RB Leipzig,Lukas Klostermann,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bayer Leverkusen,Lukáš Hrádecký,2966.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Darmstadt 98,Bartol Franjić,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Eintracht Frankfurt,Kevin Trapp,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bayer Leverkusen,Matěj Kovář,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Freiburg,Noah Atubolu,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Hoffenheim,Pavel Kadeřábek,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bochum,Ivan Ordets,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression

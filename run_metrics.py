@@ -67,65 +67,84 @@ from src.metrics import (
 )
 
 SCOPES = {
-    'men_club_2015': {
-        'season_name': ['2015/2016'],
-        'competition': ['Serie A', 'Premier League', 'La Liga', 'Ligue 1', '1. Bundesliga'],
-        'output_suffix': 'men_club_2015',
-    },
+    # Baseline archetypes from TOURNAMENTS 
     'men_tournaments_2022_24': {
         'season_name': ['2022', '2024'],
-        'competition': ['FIFA World Cup', 'UEFA Euro', 'Copa America'],
+        'competition': ['FIFA World Cup', 'UEFA Euro', 'Copa America', 'African Cup of Nations'],
         'output_suffix': 'men_tourn_2022_24',
+        # Purpose: Build archetypes + define required trait profiles
     },
+    
+    # Player performance data (for quality scores)
+    'recent_club_players': {
+        'season_name': ['2021/2022', '2022/2023', '2023/2024', '2024/2025'],  # Recent form
+        'competition': None,
+        'output_suffix': 'recent_club_players',
+        # Purpose: Calculate player quality scores with time decay
+    },
+    
+    # Same-era CMI baseline (for compression analysis)
     'recent_club_validation': {
-        'season_name': ['2023/2024', '2022/2023'],
+        'season_name': ['2023/2024'],
         'competition': ['1. Bundesliga', 'Ligue 1'],
         'output_suffix': 'recent_club_val',
     },
-    'women_club_2018_21': {
-        'season_name': ['2018/2019', '2019/2020', '2020/2021'],
-        'competition': ['FA Women\'s Super League'],
-        'output_suffix': 'women_club_2018_21',
-    },
-    'women_tournaments_2022_25': {
-        'season_name': ['2022', '2023', '2025'],
-        'competition': ['UEFA Women\'s Euro', 'Women\'s World Cup'],
-        'output_suffix': 'women_tourn_2022_25',
-    },
-    'all': {
-        'season_name': None,
-        'competition': None,
-        'output_suffix': 'all',
-    }
 }
 
-
 def filter_events_by_scope(events_path: str, conn, scope: dict, loader) -> str:
-    """Create filtered view of events based on scope."""
+    """
+    Create a filtered view of events based on scope.
+    Returns path to filtered parquet file.
+    """
+    import duckdb
+    from pathlib import Path
     
-    if scope['season_name'] is None:
+    # If both filters are None, no filtering needed
+    if scope['season_name'] is None and scope['competition'] is None:
         return events_path
     
+    # Get matches path
     matches_path = str(loader.available_files['matches'])
+    
+    # Create outputs directory if needed
+    Path("outputs").mkdir(exist_ok=True)
+    
+    # Create filtered output path
     filtered_path = f"outputs/temp_filtered_{scope['output_suffix']}.parquet"
     
-    season_placeholders = ', '.join(['?' for _ in scope['season_name']])
-    comp_placeholders = ', '.join(['?' for _ in scope['competition']])
+    # Build WHERE conditions dynamically
+    conditions = []
+    params = []
+    
+    # Add season filter if specified
+    if scope['season_name'] is not None:
+        season_placeholders = ', '.join(['?' for _ in scope['season_name']])
+        conditions.append(f"m.season_name IN ({season_placeholders})")
+        params.extend(scope['season_name'])
+    
+    # Add competition filter if specified
+    if scope['competition'] is not None:
+        comp_placeholders = ', '.join(['?' for _ in scope['competition']])
+        conditions.append(f"m.competition IN ({comp_placeholders})")
+        params.extend(scope['competition'])
+    
+    # Combine conditions
+    where_clause = " AND ".join(conditions) if conditions else "1=1"
     
     query = f"""
     COPY (
         SELECT e.*
         FROM '{events_path}' e
-        INNER JOIN '{matches_path}' m ON e.match_id = m.match_id
-        WHERE m.season_name IN ({season_placeholders})
-          AND m.competition IN ({comp_placeholders})
+        INNER JOIN '{matches_path}' m
+            ON e.match_id = m.match_id
+        WHERE {where_clause}
     ) TO '{filtered_path}' (FORMAT PARQUET)
     """
     
-    params = scope['season_name'] + scope['competition']
     conn.execute(query, params)
     
-    print(f"Filtered events to: {scope['output_suffix']}")
+    print(f"  ✓ Filtered events to: {scope['output_suffix']}")
+    
     return filtered_path
 
 
