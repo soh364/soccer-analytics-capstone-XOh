@@ -90,37 +90,48 @@ def prepare_compression_plot(baseline_df, recent_club_df, tournament_df,
     
     return baseline_df, recent_club_df, tournament_df
 
-def plot_clustering_validation_compact(optimization_results, figsize=(12, 5)):
+def plot_clustering_validation_compact(optimization_results, figsize=(8, 3.5)):
     """
-    Create compact validation figure with elbow + silhouette side-by-side.
-    
-    Args:
-        optimization_results: DataFrame from optimize_k()
-        
-    Returns:
-        fig, axes
+    Standardized compact validation figure using the project's visual identity.
     """
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
+    import matplotlib.pyplot as plt
     
-    # Elbow plot
+    # Project Palette
+    navy = '#1a1a2e'
+    teal = '#2d6a4f'
+    grey = '#999999'
+    orange = '#e76f51'
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize, dpi=100)
+    
+    # --- 1. Elbow Plot (Inertia) ---
     ax1.plot(optimization_results['k'], optimization_results['inertia'], 
-             'bo-', linewidth=2, markersize=8)
-    ax1.set_xlabel('Number of Clusters (k)', fontsize=11)
-    ax1.set_ylabel('Inertia', fontsize=11)
-    ax1.set_title('Elbow Method', fontsize=12, weight='bold')
-    ax1.grid(True, alpha=0.3)
-    ax1.set_xticks(optimization_results['k'])
+             color=navy, marker='o', linewidth=2, markersize=6, markerfacecolor='white', markeredgewidth=2)
     
-    # Silhouette plot
+    ax1.set_xlabel('Number of Clusters (k)', fontsize=10, color=navy)
+    ax1.set_ylabel('Inertia', fontsize=9, color=grey)
+    ax1.set_title('Elbow Curve', fontsize=11, weight='bold', color=navy, pad=12)
+    
+    # --- 2. Silhouette Plot ---
     ax2.plot(optimization_results['k'], optimization_results['silhouette'], 
-             'ro-', linewidth=2, markersize=8)
-    ax2.set_xlabel('Number of Clusters (k)', fontsize=11)
-    ax2.set_ylabel('Silhouette Score', fontsize=11)
-    ax2.set_title('Silhouette Analysis', fontsize=12, weight='bold')
-    ax2.grid(True, alpha=0.3)
-    ax2.set_xticks(optimization_results['k'])
-    ax2.axhline(y=0.25, color='orange', linestyle='--', alpha=0.5, label='Acceptable threshold')
-    ax2.legend()
+             color=teal, marker='o', linewidth=2, markersize=6, markerfacecolor='white', markeredgewidth=2)
+    
+    ax2.set_xlabel('Number of Clusters (k)', fontsize=10, color=navy)
+    ax2.set_ylabel('Silhouette Score', fontsize=9, color=grey)
+    ax2.set_title('Silhouette Analysis', fontsize=11, weight='bold', color=navy, pad=12)
+
+    # --- Global Formatting ---
+    for ax in [ax1, ax2]:
+        ax.grid(True, linestyle='--', alpha=0.2, color=navy)
+        ax.set_xticks(optimization_results['k'])
+        ax.tick_params(axis='both', which='major', labelsize=9, colors=navy)
+        # Despine for a modern look
+        for spine in ['top', 'right']:
+            ax.spines[spine].set_visible(False)
+        for spine in ['left', 'bottom']:
+            ax.spines[spine].set_color('#e0e0e0')
+
+    ax2.legend(fontsize=8, frameon=False, loc='upper right')
     
     plt.tight_layout()
     return fig, (ax1, ax2)
@@ -131,9 +142,10 @@ def save_figure(fig, filename, dpi=300):
     print(f"Saved: outputs/figures/{filename}")
 
 def plot_tactical_pca(profiles_df, dimensions, labels, archetype_names,
-                      highlight_teams=None, figsize=(6, 6)):
+                      highlight_teams=None, figsize=(8, 6)):
     """
     PCA tactical map — the anchor visual. Separate from radars.
+    Now supports 4 clusters with better labeling.
     
     Args:
         highlight_teams: Optional list of team names to annotate on the plot
@@ -141,7 +153,7 @@ def plot_tactical_pca(profiles_df, dimensions, labels, archetype_names,
     from sklearn.preprocessing import StandardScaler
     from sklearn.decomposition import PCA
     
-    colors = ['#4895C4', '#A23B72', '#F18F01']
+    colors = ['#4895C4', '#A23B72', '#F18F01', '#06A77D']  # 4 colors
     
     # PCA
     scaler = StandardScaler()
@@ -155,13 +167,20 @@ def plot_tactical_pca(profiles_df, dimensions, labels, archetype_names,
     for cluster_id in range(len(archetype_names)):
         mask = labels == cluster_id
         ax.scatter(coords[mask, 0], coords[mask, 1],
-                   c=colors[cluster_id], alpha=0.5, s=60, edgecolors='white',
-                   linewidth=0.5, label=archetype_names[cluster_id], zorder=2)
+                   c=colors[cluster_id], alpha=0.6, s=100, edgecolors='white',
+                   linewidth=1, label=archetype_names[cluster_id], zorder=2)
         
-        # Centroid
+        # Centroid (larger, more visible)
         cx, cy = coords[mask, 0].mean(), coords[mask, 1].mean()
-        ax.scatter(cx, cy, c=colors[cluster_id], s=150, edgecolors='black',
-                   linewidth=1, marker='D', zorder=3)
+        ax.scatter(cx, cy, c=colors[cluster_id], s=200, edgecolors='black',
+                   linewidth=1, marker='D', zorder=2, alpha=0.9)
+        
+        # Add archetype label near centroid
+        ax.text(cx, cy + 0.6, archetype_names[cluster_id], 
+                fontsize=8, weight='bold', ha='center',
+                color=colors[cluster_id], zorder=4,
+                bbox=dict(boxstyle='round,pad=0.3', facecolor='white', 
+                         edgecolor=colors[cluster_id], alpha=0.8))
     
     # Annotate specific teams
     if highlight_teams and 'team' in profiles_df.columns:
@@ -170,37 +189,66 @@ def plot_tactical_pca(profiles_df, dimensions, labels, archetype_names,
             if len(idx) > 0:
                 i = idx[0]
                 x, y = coords[i, 0], coords[i, 1]
-                ax.annotate(team, (x, y), fontsize=8, 
-                            xytext=(6, 6), textcoords='offset points',
-                            arrowprops=dict(arrowstyle='-', color='#999', lw=0.8),
-                            color='#1a1a2e', zorder=7)
+                ax.annotate(team, (x, y), fontsize=8, weight='bold',
+                            xytext=(8, 8), textcoords='offset points',
+                            arrowprops=dict(arrowstyle='->', color='#333', lw=1),
+                            color='#1a1a2e', zorder=7,
+                            bbox=dict(boxstyle='round,pad=0.3', 
+                                     facecolor='yellow', alpha=0.7))
     
-    # Axis labels with variance explained
-    ax.set_title("PCA: Tactical Space", fontsize=12, weight='bold')
-    ax.legend(fontsize=8, loc='upper right', framealpha=0.9)
-    ax.grid(True, alpha=0.15)
-    ax.set_axisbelow(True)
-
+    # Axis labels with variance explained and top loadings
     loadings = pca.components_
-    top_pc1 = [dimensions[i].replace('_', ' ').title() for i in np.argsort(np.abs(loadings[0]))[-2:]]
-    top_pc2 = [dimensions[i].replace('_', ' ').title() for i in np.argsort(np.abs(loadings[1]))[-2:]]
     
-    ax.set_xlabel(f"PC1 ({pca.explained_variance_ratio_[0]:.1%}) — {', '.join(top_pc1)}", fontsize=9)
-    ax.set_ylabel(f"PC2 ({pca.explained_variance_ratio_[1]:.1%}) — {', '.join(top_pc2)}", fontsize=9)
+    # Get top 2 dimensions for each PC (by absolute loading)
+    top_pc1_idx = np.argsort(np.abs(loadings[0]))[-2:]
+    top_pc2_idx = np.argsort(np.abs(loadings[1]))[-2:]
+    
+    top_pc1 = [dimensions[i].replace('_', ' ').title() for i in top_pc1_idx]
+    top_pc2 = [dimensions[i].replace('_', ' ').title() for i in top_pc2_idx]
+    
+    ax.set_xlabel(f"PC1 ({pca.explained_variance_ratio_[0]:.1%})\n"
+                  f"Driven by: {', '.join(top_pc1)}", 
+                  fontsize=9, weight='bold')
+    ax.set_ylabel(f"PC2 ({pca.explained_variance_ratio_[1]:.1%})\n"
+                  f"Driven by: {', '.join(top_pc2)}", 
+                  fontsize=9, weight='bold')
+    
+    ax.set_title("Tournament Tactical Space (2022-24)", 
+                 fontsize=13, weight='bold', pad=15)
+    
+    # Legend with team counts
+    legend_labels = [f"{name} (n={sum(labels == i)})" 
+                     for i, name in archetype_names.items()]
+    handles = [plt.Line2D([0], [0], marker='o', color='w', 
+                         markerfacecolor=colors[i], markersize=10, alpha=0.6)
+              for i in range(len(archetype_names))]
+    ax.legend(handles, legend_labels, fontsize=9, loc='best', 
+             framealpha=0.95, edgecolor='gray')
+    
+    ax.grid(True, alpha=0.2, linestyle='--')
+    ax.set_axisbelow(True)
+    
+    # Add explained variance text
+    total_var = pca.explained_variance_ratio_[:2].sum()
+    ax.text(0.02, 0.98, f"Total Variance Explained: {total_var:.1%}",
+            transform=ax.transAxes, fontsize=9, verticalalignment='top',
+            bbox=dict(boxstyle='round', facecolor='white', alpha=0.8))
     
     plt.tight_layout()
     return fig, pca
 
 def plot_archetype_radars(cluster_centers, dimensions, archetype_names, 
-                          profiles_df=None, figsize=(15, 4)):
+                          profiles_df=None, figsize=(16, 4)):
     """
     Clean radar charts only — one per archetype, side by side.
+    Now supports 4 clusters.
     """
     k = len(archetype_names)
-    colors = ['#4895C4', '#A23B72', '#F18F01'] 
+    colors = ['#4895C4', '#A23B72', '#F18F01', '#06A77D']  # Added 4th color (teal/green)
 
     fig, axes = plt.subplots(1, k, figsize=figsize, subplot_kw=dict(projection='polar'))
-    fig.subplots_adjust(wspace=-0.75)
+    fig.subplots_adjust(wspace=0.3)  # Adjusted spacing for 4 charts
+    
     if k == 1:
         axes = [axes]
     
@@ -212,7 +260,9 @@ def plot_archetype_radars(cluster_centers, dimensions, archetype_names,
         values = []
         for dim in dimensions:
             if profiles_df is not None:
-                val = (center[dim] - profiles_df[dim].min()) / (profiles_df[dim].max() - profiles_df[dim].min())
+                min_val = profiles_df[dim].min()
+                max_val = profiles_df[dim].max()
+                val = (center[dim] - min_val) / (max_val - min_val)
             else:
                 val = center[dim]
             values.append(val)
@@ -224,29 +274,26 @@ def plot_archetype_radars(cluster_centers, dimensions, archetype_names,
         
         # Plot
         ax.plot(angles, values, 'o-', linewidth=2, color=colors[cluster_id], markersize=4)
-        ax.fill(angles, values, alpha=0.2, color=colors[cluster_id])
+        ax.fill(angles, values, alpha=0.25, color=colors[cluster_id])
         
-        # Labels
+        # Labels (shortened for readability with 8 dimensions)
         labels_clean = [d.replace('_', '\n').title() for d in dimensions]
         ax.set_xticks(angles[:-1])
         ax.set_xticklabels(labels_clean, fontsize=7)
         ax.set_ylim(0, 1)
         ax.set_yticks([0.25, 0.5, 0.75])
-        ax.set_yticklabels(['0.25', '0.5', '0.75'], fontsize=8, color='#999')
+        ax.set_yticklabels(['0.25', '0.5', '0.75'], fontsize=5, color='#999')
+        ax.grid(True, alpha=0.3)
         
-        # Count teams in this archetype
+        # Title with archetype name and team count
         name = archetype_names[cluster_id]
         size = int(center.get('size', 0)) if 'size' in center.index else ''
         title = f"{name}\n(n={size})" if size else name
-        ax.set_title(title, fontsize=11, weight='bold', pad=20, color=colors[cluster_id])
+        ax.set_title(title, fontsize=10, weight='bold', pad=15, color=colors[cluster_id])
     
     plt.tight_layout()
     return fig
 
-
-    Python
-import matplotlib.pyplot as plt
-import pandas as pd
 
 def run_tournament_analysis(tri_data):
     """

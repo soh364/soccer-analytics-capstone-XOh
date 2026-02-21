@@ -1,0 +1,1434 @@
+team,player,total_mins,progressive_passes,progressive_carries,progressive_passes_received,progressive_passes_p90,progressive_carries_p90,progressive_passes_received_p90,total_progressive_actions_p90,progression_type
+Saint-Étienne,Romain Hamouma,35.0,3.0,4.0,5.0,7.71,10.29,12.86,30.86,Complete Progressor
+Denmark Women's,Sara Gedsted Thrige Andersen,54.0,3.0,6.0,9.0,5.0,10.0,15.0,30.0,Complete Progressor
+Marseille,Dimitri Payet,189.0,19.0,22.0,17.0,9.05,10.48,8.1,27.630000000000003,Complete Progressor
+Sweden Women's,Johanna Rytting-Kaneryd,222.0,10.0,26.0,29.0,4.05,10.54,11.76,26.35,Complete Progressor
+Germany,Jamal Musiala,269.0,16.0,33.0,27.0,5.35,11.04,9.03,25.42,Complete Progressor
+ATK Mohun Bagan,Michael Soosairaj,36.0,2.0,3.0,5.0,5.0,7.5,12.5,25.0,Complete Progressor
+Spain Women's,Sheila García Gómez,189.0,8.0,13.0,29.0,3.81,6.19,13.81,23.810000000000002,Complete Progressor
+United States,Giovanni Reyna,58.0,1.0,6.0,8.0,1.55,9.31,12.41,23.270000000000003,Ball Carrier
+Hyderabad,Abdul Rabeeh,62.0,1.0,7.0,8.0,1.45,10.16,11.61,23.22,Ball Carrier
+Germany,Leroy Sané,117.0,9.0,8.0,13.0,6.92,6.15,10.0,23.07,Complete Progressor
+Stade de Reims,Azor Matusiwa,43.0,11.0,0.0,0.0,23.02,0.0,0.0,23.02,Progressive Passer
+Germany,Niclas Füllkrug,79.0,2.0,4.0,14.0,2.28,4.56,15.95,22.79,Ball Carrier
+Italy Women's,Agnese Bonfantini,52.0,2.0,4.0,7.0,3.46,6.92,12.12,22.5,Complete Progressor
+Argentina,Ángel Fabián Di María Hernández,296.0,10.0,22.0,41.0,3.04,6.69,12.47,22.200000000000003,Complete Progressor
+Spain Women's,María Francesca Caldentey Oliver,363.0,26.0,23.0,40.0,6.45,5.7,9.92,22.07,Complete Progressor
+Paris Saint-Germain,Kylian Mbappé Lottin,2014.0,56.0,196.0,240.0,2.5,8.76,10.72,21.98,Ball Carrier
+Stade de Reims,Ilan Kebbal,74.0,5.0,9.0,4.0,6.08,10.95,4.86,21.89,Complete Progressor
+OGC Nice,Amine Gouiri,107.0,4.0,9.0,13.0,3.36,7.57,10.93,21.86,Complete Progressor
+France Women's,Delphine Cascarino,387.0,20.0,33.0,40.0,4.65,7.67,9.3,21.62,Complete Progressor
+France Women's,Ouleymata Sarr,137.0,2.0,10.0,20.0,1.31,6.57,13.14,21.020000000000003,Ball Carrier
+Nantes,Osman Bukari,99.0,3.0,12.0,8.0,2.73,10.91,7.27,20.91,Ball Carrier
+Brazil,Antony Matheus dos Santos,182.0,7.0,16.0,19.0,3.46,7.91,9.4,20.770000000000003,Complete Progressor
+Sweden Women's,Olivia Alma Charlotta Schough,35.0,3.0,3.0,2.0,7.71,7.71,5.14,20.56,Complete Progressor
+Lyon,Karl Brillant Toko Ekambi,62.0,3.0,6.0,5.0,4.35,8.71,7.26,20.32,Complete Progressor
+Spain,Carlos Soler Barragán,98.0,9.0,4.0,9.0,8.27,3.67,8.27,20.21,Complete Progressor
+Japan,Hiroki Ito,49.0,2.0,2.0,7.0,3.67,3.67,12.86,20.2,Complete Progressor
+Goa,Jorge Ortiz Mendoza,1179.0,54.0,104.0,106.0,4.12,7.94,8.09,20.15,Complete Progressor
+Strasbourg,Jean-Ricner Bellegarde,94.0,9.0,9.0,3.0,8.62,8.62,2.87,20.11,Complete Progressor
+Paris Saint-Germain,Ángel Fabián Di María Hernández,1384.0,72.0,96.0,141.0,4.68,6.24,9.17,20.09,Complete Progressor
+Paris Saint-Germain,Neymar da Silva Santos Junior,1518.0,81.0,110.0,144.0,4.8,6.52,8.54,19.86,Complete Progressor
+Brazil,Neymar da Silva Santos Junior,280.0,16.0,22.0,23.0,5.14,7.07,7.39,19.6,Complete Progressor
+Austria Women's,Lisa Makas,37.0,1.0,2.0,5.0,2.43,4.86,12.16,19.450000000000003,Ball Carrier
+Paris Saint-Germain,Lionel Andrés Messi Cuccittini,2199.0,194.0,149.0,132.0,7.94,6.1,5.4,19.439999999999998,Complete Progressor
+Germany,Mario Götze,51.0,2.0,4.0,5.0,3.53,7.06,8.82,19.41,Complete Progressor
+Denmark,Alexander Hartmann Bah,51.0,1.0,5.0,5.0,1.76,8.82,8.82,19.4,Ball Carrier
+Spain Women's,Leila Ouahabi El Ouahabi,195.0,11.0,8.0,23.0,5.08,3.69,10.62,19.39,Complete Progressor
+Denmark,Andreas Skov Olsen,131.0,4.0,9.0,15.0,2.75,6.18,10.31,19.240000000000002,Ball Carrier
+Netherlands Women's,Esmee Brugts,80.0,5.0,6.0,6.0,5.62,6.75,6.75,19.12,Complete Progressor
+Germany Women's,Klara Bühl,292.0,10.0,23.0,29.0,3.08,7.09,8.94,19.11,Complete Progressor
+England Women's,Ella Toone,241.0,16.0,10.0,25.0,5.98,3.73,9.34,19.05,Complete Progressor
+Kerala Blasters,Seityasen Singh,52.0,2.0,6.0,3.0,3.46,10.38,5.19,19.03,Complete Progressor
+Serbia,Dušan Tadić,261.0,15.0,18.0,22.0,5.17,6.21,7.59,18.97,Complete Progressor
+France Women's,Sandy Baltimore,101.0,7.0,8.0,6.0,6.24,7.13,5.35,18.72,Complete Progressor
+South Korea,Chang-Hoon Kwon,53.0,3.0,3.0,5.0,5.09,5.09,8.49,18.67,Complete Progressor
+Portugal,Rafael Alexandre Conceição Leão,116.0,2.0,13.0,9.0,1.55,10.09,6.98,18.62,Ball Carrier
+Brazil,Vinícius José Paixão de Oliveira Júnior,300.0,6.0,28.0,28.0,1.8,8.4,8.4,18.6,Ball Carrier
+Norway Women's,Caroline Graham Hansen,260.0,13.0,21.0,19.0,4.5,7.27,6.58,18.35,Complete Progressor
+Rennes,Kamaldeen Sulemana,108.0,5.0,11.0,6.0,4.17,9.17,5.0,18.34,Complete Progressor
+Portugal,André Miguel Valente Silva,30.0,1.0,3.0,2.0,3.0,9.0,6.0,18.0,Ball Carrier
+Uruguay,Diego Nicolás De La Cruz Arcosa,45.0,3.0,2.0,4.0,6.0,4.0,8.0,18.0,Complete Progressor
+OGC Nice,Khéphren Thuram-Ulien,95.0,7.0,9.0,3.0,6.63,8.53,2.84,18.0,Complete Progressor
+France Women's,Clara Mateo,226.0,16.0,17.0,12.0,6.37,6.77,4.78,17.92,Complete Progressor
+France,Kylian Mbappé Lottin,621.0,18.0,51.0,54.0,2.61,7.39,7.83,17.83,Ball Carrier
+France Women's,Kadidiatou Diani,384.0,13.0,24.0,39.0,3.05,5.62,9.14,17.810000000000002,Complete Progressor
+Serbia,Filip Kostić,187.0,6.0,15.0,16.0,2.89,7.22,7.7,17.81,Ball Carrier
+Ghana,Daniel-Kofi Kyereh,51.0,4.0,5.0,1.0,7.06,8.82,1.76,17.64,Complete Progressor
+England Women's,Chloe Kelly,200.0,6.0,15.0,18.0,2.7,6.75,8.1,17.549999999999997,Ball Carrier
+Jamshedpur,Sandip Mandi,67.0,3.0,3.0,7.0,4.03,4.03,9.4,17.46,Complete Progressor
+Sweden Women's,Amanda Nildén,93.0,6.0,6.0,6.0,5.81,5.81,5.81,17.43,Complete Progressor
+Brazil,Bruno Guimarães Rodriguez Moura,78.0,5.0,5.0,5.0,5.77,5.77,5.77,17.31,Complete Progressor
+Austria Women's,Katharina Naschenweng,94.0,7.0,5.0,6.0,6.7,4.79,5.74,17.23,Complete Progressor
+OGC Nice,Justin Kluivert,157.0,7.0,13.0,10.0,4.01,7.45,5.73,17.19,Complete Progressor
+England Women's,Bethany Mead,436.0,12.0,22.0,49.0,2.48,4.54,10.11,17.13,Ball Carrier
+Germany Women's,Svenja Huth,542.0,24.0,38.0,41.0,3.99,6.31,6.81,17.11,Complete Progressor
+Sweden Women's,Kosovare Asllani,463.0,16.0,36.0,35.0,3.11,7.0,6.8,16.91,Complete Progressor
+Italy Women's,Barbara Bonansea,213.0,7.0,16.0,17.0,2.96,6.76,7.18,16.9,Ball Carrier
+OGC Nice,Calvin Stengs,32.0,3.0,3.0,0.0,8.44,8.44,0.0,16.88,Complete Progressor
+Bordeaux,Yacine Adli,80.0,5.0,6.0,4.0,5.62,6.75,4.5,16.87,Complete Progressor
+Austria Women's,Marie Therese Höbinger,59.0,7.0,2.0,2.0,10.68,3.05,3.05,16.78,Complete Progressor
+Saudi Arabia,Abdulrahman Al-Obood,43.0,1.0,2.0,5.0,2.09,4.19,10.47,16.75,Ball Carrier
+Denmark Women's,Nadia Nadim,108.0,2.0,8.0,10.0,1.67,6.67,8.33,16.67,Ball Carrier
+Iran,Saman Ghoddos,49.0,3.0,0.0,6.0,5.51,0.0,11.02,16.53,Progressive Passer
+Hyderabad,Seityasen Singh,60.0,2.0,5.0,4.0,3.0,7.5,6.0,16.5,Ball Carrier
+ATK Mohun Bagan,Hugo Adnan Boumous,1269.0,80.0,89.0,63.0,5.67,6.31,4.47,16.45,Complete Progressor
+United States,Christian Pulisic,330.0,11.0,21.0,28.0,3.0,5.73,7.64,16.37,Ball Carrier
+AS Monaco,Caio Henrique Oliveira Silva,44.0,3.0,4.0,1.0,6.14,8.18,2.05,16.37,Complete Progressor
+Goa,Redeem Tlang,44.0,2.0,2.0,4.0,4.09,4.09,8.18,16.36,Complete Progressor
+Brazil,Gabriel Teodoro Martinelli Silva,127.0,2.0,12.0,9.0,1.42,8.5,6.38,16.3,Ball Carrier
+France,Ousmane Dembélé,444.0,18.0,29.0,33.0,3.65,5.88,6.69,16.22,Complete Progressor
+Spain,Ferrán Torres García,223.0,3.0,10.0,27.0,1.21,4.04,10.9,16.15,Ball Carrier
+Serbia,Luka Jović,45.0,1.0,1.0,6.0,2.0,2.0,12.0,16.0,Progression Outlet
+Spain,Nicholas Williams Arthuer,147.0,3.0,7.0,16.0,1.84,4.29,9.8,15.93,Ball Carrier
+Germany,David Raum,243.0,9.0,10.0,24.0,3.33,3.7,8.89,15.920000000000002,Complete Progressor
+Sweden Women's,Fridolina Rolfö,436.0,26.0,30.0,21.0,5.37,6.19,4.33,15.89,Complete Progressor
+Stade de Reims,Hugo Ekitike,102.0,1.0,6.0,11.0,0.88,5.29,9.71,15.88,Ball Carrier
+Germany,İlkay Gündoğan,187.0,18.0,7.0,8.0,8.66,3.37,3.85,15.88,Complete Progressor
+Spain Women's,Claudia Pina Medina,34.0,0.0,2.0,4.0,0.0,5.29,10.59,15.879999999999999,Ball Carrier
+Germany,Serge Gnabry,267.0,10.0,15.0,22.0,3.37,5.06,7.42,15.85,Complete Progressor
+Spain Women's,Aitana Bonmati Conca,381.0,29.0,14.0,24.0,6.85,3.31,5.67,15.83,Complete Progressor
+Marseille,Gerson Santos da Silva,109.0,2.0,9.0,8.0,1.65,7.43,6.61,15.690000000000001,Ball Carrier
+Lorient,Armand Lauriente,92.0,4.0,7.0,5.0,3.91,6.85,4.89,15.649999999999999,Complete Progressor
+Denmark,Mikkel Damsgaard,156.0,11.0,5.0,11.0,6.35,2.88,6.35,15.58,Complete Progressor
+AS Monaco,Gelson Dany Batalha Martins,81.0,1.0,3.0,10.0,1.11,3.33,11.11,15.55,Ball Carrier
+Norway Women's,Anja Sønstevold,64.0,2.0,6.0,3.0,2.81,8.44,4.22,15.469999999999999,Ball Carrier
+Germany Women's,Linda Dallmann,198.0,11.0,13.0,10.0,5.0,5.91,4.55,15.46,Complete Progressor
+Argentina,Lionel Andrés Messi Cuccittini,716.0,33.0,56.0,33.0,4.15,7.04,4.15,15.340000000000002,Complete Progressor
+Strasbourg,Kevin Gameiro,94.0,2.0,7.0,7.0,1.91,6.7,6.7,15.309999999999999,Ball Carrier
+Serbia,Nemanja Radonjić,77.0,2.0,5.0,6.0,2.34,5.84,7.01,15.19,Ball Carrier
+ATK Mohun Bagan,Liston Colaco,1729.0,37.0,124.0,130.0,1.93,6.45,6.77,15.15,Ball Carrier
+Spain,Jordi Alba Ramos,269.0,15.0,6.0,24.0,5.02,2.01,8.03,15.059999999999999,Progressive Passer
+Serbia,Andrija Živković,210.0,9.0,10.0,16.0,3.86,4.29,6.86,15.010000000000002,Complete Progressor
+Stade de Reims,Maxime Busi,90.0,3.0,5.0,7.0,3.0,5.0,7.0,15.0,Ball Carrier
+Nantes,Moses Daddy-Ajala Simon,90.0,2.0,9.0,4.0,2.0,9.0,4.0,15.0,Ball Carrier
+Germany Women's,Sophia Kleinherne,121.0,5.0,7.0,8.0,3.72,5.21,5.95,14.879999999999999,Complete Progressor
+France Women's,Melvine Malard,212.0,6.0,11.0,18.0,2.55,4.67,7.64,14.86,Ball Carrier
+France Women's,Onema Grace Geyoro,364.0,16.0,20.0,24.0,3.96,4.95,5.93,14.84,Complete Progressor
+Montpellier,Mihailo Ristić,91.0,3.0,7.0,5.0,2.97,6.92,4.95,14.84,Ball Carrier
+England Women's,Alex Greenwood,146.0,16.0,4.0,4.0,9.86,2.47,2.47,14.8,Progressive Passer
+England Women's,Lauren Hemp,543.0,12.0,28.0,49.0,1.99,4.64,8.12,14.75,Ball Carrier
+Norway Women's,Guro Reiten,270.0,9.0,14.0,21.0,3.0,4.67,7.0,14.67,Ball Carrier
+United States,Brenden Aaronson,129.0,7.0,8.0,6.0,4.88,5.58,4.19,14.650000000000002,Complete Progressor
+Lille,Burak Yılmaz,74.0,2.0,4.0,6.0,2.43,4.86,7.3,14.59,Ball Carrier
+Qatar,Mohammed Waed Abdulwahhab Al Bayati,31.0,1.0,2.0,2.0,2.9,5.81,5.81,14.52,Ball Carrier
+Mexico,Hirving Rodrigo Lozano Bahena,262.0,5.0,18.0,19.0,1.72,6.18,6.53,14.43,Ball Carrier
+Goa,Brandon Fernandes,493.0,24.0,19.0,36.0,4.38,3.47,6.57,14.42,Complete Progressor
+Marseille,Pape Gueye,100.0,6.0,3.0,7.0,5.4,2.7,6.3,14.400000000000002,Progressive Passer
+England,Raheem Sterling,144.0,6.0,6.0,11.0,3.75,3.75,6.88,14.379999999999999,Complete Progressor
+Spain Women's,Marta Cardona De Miguel,126.0,0.0,6.0,14.0,0.0,4.29,10.0,14.29,Ball Carrier
+Brazil,Raphael Dias Belloli,315.0,10.0,14.0,26.0,2.86,4.0,7.43,14.29,Ball Carrier
+Mumbai City,Lallianzuala Chhangte,540.0,10.0,37.0,38.0,1.67,6.17,6.33,14.17,Ball Carrier
+Hyderabad,Soraisam Pritam Kumar Singh,32.0,3.0,0.0,2.0,8.44,0.0,5.62,14.059999999999999,Progressive Passer
+France Women's,Marion Torrent,109.0,7.0,6.0,4.0,5.78,4.95,3.3,14.030000000000001,Complete Progressor
+Japan,Ayase Ueda,45.0,1.0,2.0,4.0,2.0,4.0,8.0,14.0,Ball Carrier
+Spain Women's,Athenea del Castillo Belvide,187.0,3.0,14.0,12.0,1.44,6.74,5.78,13.96,Ball Carrier
+Spain Women's,Olga  Carmona García,168.0,4.0,9.0,13.0,2.14,4.82,6.96,13.920000000000002,Ball Carrier
+England Women's,Lucy Bronze,582.0,36.0,24.0,30.0,5.57,3.71,4.64,13.920000000000002,Complete Progressor
+Paris Saint-Germain,Julian Draxler,181.0,6.0,9.0,13.0,2.98,4.48,6.46,13.920000000000002,Ball Carrier
+Croatia,Mislav Oršić,175.0,6.0,10.0,11.0,3.09,5.14,5.66,13.89,Complete Progressor
+United States,Yunus Dimoara Musah,351.0,18.0,18.0,18.0,4.62,4.62,4.62,13.86,Complete Progressor
+Denmark,Christian Dannemann Eriksen,287.0,19.0,11.0,14.0,5.96,3.45,4.39,13.8,Complete Progressor
+Germany,Kai Havertz,111.0,6.0,5.0,6.0,4.86,4.05,4.86,13.77,Complete Progressor
+Spain Women's,Esther Gonzalez Rodríguez,197.0,6.0,8.0,16.0,2.74,3.65,7.31,13.7,Ball Carrier
+Netherlands,Memphis Depay,309.0,6.0,15.0,26.0,1.75,4.37,7.57,13.690000000000001,Ball Carrier
+England,Luke Shaw,436.0,22.0,14.0,30.0,4.54,2.89,6.19,13.620000000000001,Complete Progressor
+Mumbai City,Cássio Gabriel Vilela Ferreira,1645.0,78.0,81.0,90.0,4.27,4.43,4.92,13.62,Complete Progressor
+Argentina,Alejandro Darío Gómez,106.0,5.0,4.0,7.0,4.25,3.4,5.94,13.59,Complete Progressor
+Spain,Daniel Olmo Carvajal,378.0,5.0,20.0,32.0,1.19,4.76,7.62,13.57,Ball Carrier
+Spain,Pedro González López,366.0,37.0,8.0,10.0,9.1,1.97,2.46,13.530000000000001,Progressive Passer
+Brazil,Rodrygo Silva de Goes,193.0,7.0,13.0,9.0,3.26,6.06,4.2,13.52,Complete Progressor
+ATK Mohun Bagan,Kiyan Nassiri Giri,300.0,10.0,9.0,26.0,3.0,2.7,7.8,13.5,Progression Outlet
+Portugal Women's,Jéssica da Silva,267.0,5.0,15.0,20.0,1.69,5.06,6.74,13.49,Ball Carrier
+Jamshedpur,Greg Stewart,1798.0,72.0,94.0,103.0,3.6,4.71,5.16,13.47,Complete Progressor
+Tunisia,Wahbi Khazri,87.0,1.0,5.0,7.0,1.03,5.17,7.24,13.440000000000001,Ball Carrier
+Spain Women's,Ona Batlle Pascual,397.0,24.0,17.0,18.0,5.44,3.85,4.08,13.370000000000001,Complete Progressor
+Stade de Reims,Thomas Foket,136.0,2.0,8.0,10.0,1.32,5.29,6.62,13.23,Ball Carrier
+Germany,Joshua Kimmich,289.0,22.0,8.0,12.0,6.85,2.49,3.74,13.08,Progressive Passer
+Iceland Women's,Sveindís Jane Jónsdóttir,241.0,2.0,21.0,12.0,0.75,7.84,4.48,13.07,Ball Carrier
+Bengaluru,Udanta Kumam Singh,1145.0,27.0,60.0,79.0,2.12,4.72,6.21,13.05,Ball Carrier
+Japan,Takumi Minamino,69.0,0.0,3.0,7.0,0.0,3.91,9.13,13.040000000000001,Ball Carrier
+France Women's,Sakina Karchaoui,428.0,29.0,21.0,12.0,6.1,4.42,2.52,13.04,Complete Progressor
+Lorient,Dango Aboubacar Faissal Ouattara,166.0,2.0,11.0,11.0,1.08,5.96,5.96,13.0,Ball Carrier
+Goa,Alberto Noguera Ripoll,1723.0,100.0,77.0,72.0,5.22,4.02,3.76,12.999999999999998,Complete Progressor
+Belgium,Thorgan Hazard,104.0,4.0,3.0,8.0,3.46,2.6,6.92,12.98,Progressive Passer
+Sweden Women's,Ingrid Filippa Angeldal,333.0,19.0,10.0,19.0,5.14,2.7,5.14,12.98,Progressive Passer
+Spain,Marco Asensio Willemsen,229.0,6.0,10.0,17.0,2.36,3.93,6.68,12.969999999999999,Ball Carrier
+Tunisia,Youssef Msakni,174.0,6.0,9.0,10.0,3.1,4.66,5.17,12.93,Complete Progressor
+Denmark Women's,Janni Thomsen,245.0,3.0,13.0,19.0,1.1,4.78,6.98,12.860000000000001,Ball Carrier
+Lyon,Xherdan Shaqiri,77.0,1.0,3.0,7.0,1.17,3.51,8.18,12.86,Ball Carrier
+Denmark,Kasper Dolberg,120.0,2.0,2.0,13.0,1.5,1.5,9.75,12.75,Progression Outlet
+Ghana,Kamaldeen Sulemana,71.0,0.0,4.0,6.0,0.0,5.07,7.61,12.68,Ball Carrier
+Spain,Alejandro Balde Martínez,135.0,3.0,2.0,14.0,2.0,1.33,9.33,12.66,Progression Outlet
+AS Monaco,Sofiane Diop,64.0,2.0,3.0,4.0,2.81,4.22,5.62,12.649999999999999,Ball Carrier
+Italy Women's,Sara Gama,150.0,12.0,8.0,1.0,7.2,4.8,0.6,12.6,Complete Progressor
+Sweden Women's,Eva Sofia Jakobsson,50.0,1.0,1.0,5.0,1.8,1.8,9.0,12.6,Progression Outlet
+Brazil,Éverton Augusto de Barros Ribeiro,43.0,2.0,3.0,1.0,4.19,6.28,2.09,12.56,Complete Progressor
+East Bengal,Songpu Singsit,43.0,1.0,2.0,3.0,2.09,4.19,6.28,12.56,Ball Carrier
+Goa,Makan Winkle Chote,702.0,21.0,32.0,45.0,2.69,4.1,5.77,12.559999999999999,Ball Carrier
+Tunisia,Naïm Sliti,122.0,4.0,7.0,6.0,2.95,5.16,4.43,12.54,Ball Carrier
+England Women's,Alessia Russo,266.0,7.0,10.0,20.0,2.37,3.38,6.77,12.52,Ball Carrier
+Lens,David Pereira da Costa,151.0,5.0,8.0,8.0,2.98,4.77,4.77,12.52,Ball Carrier
+Netherlands Women's,Victoria Pelova,187.0,6.0,10.0,10.0,2.89,4.81,4.81,12.509999999999998,Ball Carrier
+Portugal,Bruno Miguel Borges Fernandes,375.0,25.0,9.0,18.0,6.0,2.16,4.32,12.48,Progressive Passer
+Jamshedpur,Boris Singh Thangjam,996.0,26.0,51.0,61.0,2.35,4.61,5.51,12.47,Ball Carrier
+Nantes,Quentin Merlin,123.0,7.0,4.0,6.0,5.12,2.93,4.39,12.440000000000001,Complete Progressor
+Sweden Women's,Emma Stina Blackstenius,355.0,2.0,16.0,31.0,0.51,4.06,7.86,12.43,Ball Carrier
+OGC Nice,Hichem Boudaoui,87.0,1.0,5.0,6.0,1.03,5.17,6.21,12.41,Ball Carrier
+Chennaiyin,Mirlan Murzaev,1066.0,35.0,60.0,51.0,2.95,5.07,4.31,12.329999999999998,Ball Carrier
+Morocco,Abderrazak Hamdallah,73.0,1.0,5.0,4.0,1.23,6.16,4.93,12.32,Ball Carrier
+Lyon,Bruno Guimarães Rodriguez Moura,95.0,8.0,4.0,1.0,7.58,3.79,0.95,12.32,Complete Progressor
+England,Jack Grealish,95.0,3.0,5.0,5.0,2.84,4.74,4.74,12.32,Ball Carrier
+Saint-Étienne,Adil Aouchiche,66.0,1.0,3.0,5.0,1.36,4.09,6.82,12.27,Ball Carrier
+Nantes,Randal Kolo Muani,184.0,4.0,7.0,14.0,1.96,3.42,6.85,12.23,Ball Carrier
+Canada,Tajon Buchanan,265.0,7.0,12.0,17.0,2.38,4.08,5.77,12.23,Ball Carrier
+Spain,Pau Francisco Torres,96.0,10.0,3.0,0.0,9.38,2.81,0.0,12.190000000000001,Complete Progressor
+Portugal,Bernardo Mota Veiga de Carvalho e Silva,370.0,11.0,20.0,19.0,2.68,4.86,4.62,12.16,Ball Carrier
+Uruguay,Facundo Pellistri Rebollo,185.0,2.0,9.0,14.0,0.97,4.38,6.81,12.16,Ball Carrier
+Canada,Richie Laryea,156.0,2.0,9.0,10.0,1.15,5.19,5.77,12.11,Ball Carrier
+France Women's,Selma Bacha,216.0,5.0,9.0,15.0,2.08,3.75,6.25,12.08,Ball Carrier
+United States,Weston McKennie,269.0,18.0,8.0,10.0,6.02,2.68,3.35,12.049999999999999,Progressive Passer
+Denmark,Rasmus Nissen Kristensen,232.0,13.0,5.0,13.0,5.04,1.94,5.04,12.02,Progressive Passer
+Canada,Jonathan David,195.0,7.0,8.0,11.0,3.23,3.69,5.08,12.0,Complete Progressor
+Marseille,Cengiz Ünder,120.0,2.0,6.0,8.0,1.5,4.5,6.0,12.0,Ball Carrier
+United States,Shaquell Moore,30.0,1.0,1.0,2.0,3.0,3.0,6.0,12.0,Ball Carrier
+Portugal Women's,Andreia Alexandra Norton,270.0,12.0,15.0,9.0,4.0,5.0,3.0,12.0,Complete Progressor
+Canada,Cyle Larin,135.0,8.0,5.0,5.0,5.33,3.33,3.33,11.99,Complete Progressor
+Croatia,Lovro Majer,143.0,2.0,6.0,11.0,1.26,3.78,6.92,11.96,Ball Carrier
+Strasbourg,Adrien Thomasson,68.0,3.0,3.0,3.0,3.97,3.97,3.97,11.91,Complete Progressor
+Metz,Farid Boulaya,68.0,3.0,3.0,3.0,3.97,3.97,3.97,11.91,Complete Progressor
+Paris Saint-Germain,Juan Bernat Velasco,801.0,19.0,23.0,64.0,2.13,2.58,7.19,11.9,Progression Outlet
+England,Philip Foden,265.0,6.0,9.0,20.0,2.04,3.06,6.79,11.89,Ball Carrier
+Lens,Gaël Kakuta,53.0,2.0,2.0,3.0,3.4,3.4,5.09,11.89,Complete Progressor
+Hyderabad,Eduardo García Martín,560.0,31.0,13.0,30.0,4.98,2.09,4.82,11.89,Progressive Passer
+Germany,Nico Schlotterbeck,106.0,8.0,4.0,2.0,6.79,3.4,1.7,11.889999999999999,Complete Progressor
+United States,Sergino Dest,304.0,14.0,13.0,13.0,4.14,3.85,3.85,11.84,Complete Progressor
+Spain Women's,María Pilar León Cebrián,399.0,43.0,9.0,0.0,9.7,2.03,0.0,11.729999999999999,Progressive Passer
+Portugal Women's,Francisca Ramos Ribeiro Nazareth Sousa,100.0,3.0,5.0,5.0,2.7,4.5,4.5,11.7,Ball Carrier
+Stade de Reims,Nathanaël Mbuku,100.0,1.0,5.0,7.0,0.9,4.5,6.3,11.7,Ball Carrier
+AS Monaco,Youssouf Fofana,54.0,4.0,1.0,2.0,6.67,1.67,3.33,11.67,Progressive Passer
+Metz,William Mikelbrencis,54.0,1.0,3.0,3.0,1.67,5.0,5.0,11.67,Ball Carrier
+Chennaiyin,Lallianzuala Chhangte,658.0,11.0,32.0,42.0,1.5,4.38,5.74,11.620000000000001,Ball Carrier
+Poland,Nicola Zalewski,62.0,2.0,2.0,4.0,2.9,2.9,5.81,11.61,Ball Carrier
+France,Antoine Griezmann,576.0,23.0,20.0,31.0,3.59,3.12,4.84,11.55,Complete Progressor
+Portugal,Raphaël Adelino José Guerreiro,298.0,10.0,14.0,14.0,3.02,4.23,4.23,11.48,Complete Progressor
+Italy Women's,Valentina Giacinti,149.0,2.0,6.0,11.0,1.21,3.62,6.64,11.469999999999999,Ball Carrier
+Italy Women's,Lucia Di Guglielmo,151.0,8.0,5.0,6.0,4.77,2.98,3.58,11.33,Complete Progressor
+NorthEast United,Mathias Coureur,835.0,20.0,36.0,49.0,2.16,3.88,5.28,11.32,Ball Carrier
+Nantes,Ludovic Blas,183.0,7.0,7.0,9.0,3.44,3.44,4.43,11.309999999999999,Complete Progressor
+Denmark,Mathias Jensen,88.0,4.0,1.0,6.0,4.09,1.02,6.14,11.25,Progressive Passer
+Tunisia,Ferjani Sassi,56.0,5.0,0.0,2.0,8.04,0.0,3.21,11.25,Progressive Passer
+NorthEast United,Manvir Singh,80.0,0.0,3.0,7.0,0.0,3.38,7.87,11.25,Ball Carrier
+Senegal,Ismaïla Sarr,360.0,8.0,19.0,18.0,2.0,4.75,4.5,11.25,Ball Carrier
+Goa,Nongdamba Singh Naorem,304.0,3.0,13.0,22.0,0.89,3.85,6.51,11.25,Ball Carrier
+France,Benjamin Pavard,88.0,7.0,0.0,4.0,7.16,0.0,4.09,11.25,Progressive Passer
+Jamshedpur,Jordan Murray,713.0,19.0,34.0,36.0,2.4,4.29,4.54,11.23,Ball Carrier
+Portugal,Cristiano Ronaldo dos Santos Aveiro,297.0,6.0,9.0,22.0,1.82,2.73,6.67,11.219999999999999,Progression Outlet
+Mumbai City,Raynier Fernandes,602.0,24.0,18.0,33.0,3.59,2.69,4.93,11.209999999999999,Progressive Passer
+Iran,Mehdi Taremi,299.0,8.0,14.0,15.0,2.41,4.21,4.52,11.14,Ball Carrier
+Iceland Women's,Svava Rós Guðmundsdóttir,73.0,1.0,3.0,5.0,1.23,3.7,6.16,11.09,Ball Carrier
+Portugal,Otávio Edmilson da Silva Monteiro,195.0,9.0,5.0,10.0,4.15,2.31,4.62,11.080000000000002,Progressive Passer
+Portugal,Ricardo Jorge Luz Horta,130.0,2.0,4.0,10.0,1.38,2.77,6.92,11.07,Progression Outlet
+Japan,Miki Yamane,57.0,3.0,1.0,3.0,4.74,1.58,4.74,11.06,Progressive Passer
+NorthEast United,Marcelo Leite Pereira,473.0,13.0,24.0,21.0,2.47,4.57,4.0,11.040000000000001,Ball Carrier
+Qatar,Akram Hassan Afif,278.0,10.0,10.0,14.0,3.24,3.24,4.53,11.010000000000002,Complete Progressor
+Mexico,Carlos Uriel Antuna Romero,90.0,0.0,2.0,9.0,0.0,2.0,9.0,11.0,Progression Outlet
+Croatia,Andrej Kramarić,468.0,7.0,16.0,34.0,1.35,3.08,6.54,10.969999999999999,Ball Carrier
+Paris Saint-Germain,Achraf Hakimi Mouh,1705.0,39.0,51.0,117.0,2.06,2.69,6.18,10.93,Progression Outlet
+Switzerland,Renato Steffen,33.0,1.0,1.0,2.0,2.73,2.73,5.45,10.91,Progression Outlet
+Spain Women's,Irene Paredes Hernandez,396.0,39.0,9.0,0.0,8.86,2.05,0.0,10.91,Progressive Passer
+South Korea,Hee-Chan Hwang,124.0,2.0,6.0,7.0,1.45,4.35,5.08,10.879999999999999,Ball Carrier
+Spain,Jorge Resurrección Merodio,58.0,4.0,0.0,3.0,6.21,0.0,4.66,10.870000000000001,Progressive Passer
+ATK Mohun Bagan,Manvir Singh,1873.0,43.0,80.0,103.0,2.07,3.84,4.95,10.86,Ball Carrier
+Odisha,Nandhakumar Sekar,739.0,14.0,35.0,40.0,1.71,4.26,4.87,10.84,Ball Carrier
+Chennaiyin,Khumanthem Ninthoinganba Meetei,541.0,10.0,30.0,25.0,1.66,4.99,4.16,10.81,Ball Carrier
+Brazil,Danilo Luiz da Silva,284.0,15.0,9.0,10.0,4.75,2.85,3.17,10.77,Complete Progressor
+Hyderabad,Nikhil Poojary,1356.0,31.0,56.0,75.0,2.06,3.72,4.98,10.760000000000002,Ball Carrier
+England,Bukayo Saka,276.0,2.0,11.0,20.0,0.65,3.59,6.52,10.76,Ball Carrier
+Germany Women's,Nicole Anyomi,92.0,2.0,4.0,5.0,1.96,3.91,4.89,10.76,Ball Carrier
+Hyderabad,Aniket Anil Jadhav,1132.0,19.0,50.0,66.0,1.51,3.98,5.25,10.74,Ball Carrier
+England Women's,Georgia Stanway,511.0,20.0,20.0,21.0,3.52,3.52,3.7,10.74,Complete Progressor
+Uruguay,Edinson Roberto Cavani Gómez,134.0,3.0,4.0,9.0,2.01,2.69,6.04,10.739999999999998,Progression Outlet
+Denmark,Joakim Mæhle,260.0,7.0,8.0,16.0,2.42,2.77,5.54,10.73,Progression Outlet
+Brazil,Frederico Rodrigues Santos,143.0,4.0,4.0,9.0,2.52,2.52,5.66,10.7,Progression Outlet
+Rennes,Martin Terrier,160.0,2.0,7.0,10.0,1.12,3.94,5.62,10.68,Ball Carrier
+ATK Mohun Bagan,David Joel Williams,692.0,26.0,26.0,30.0,3.38,3.38,3.9,10.66,Complete Progressor
+Spain Women's,Patricia Guijarro Gutiérrez,397.0,24.0,10.0,13.0,5.44,2.27,2.95,10.66,Progressive Passer
+Lille,Jonathan Bamba,169.0,4.0,8.0,8.0,2.13,4.26,4.26,10.649999999999999,Ball Carrier
+Montpellier,Florent Mollet,76.0,1.0,3.0,5.0,1.18,3.55,5.92,10.649999999999999,Ball Carrier
+Jamshedpur,Ritwik Kumar Das,981.0,18.0,43.0,55.0,1.65,3.94,5.05,10.64,Ball Carrier
+Belgium Women's,Elena Dhont,237.0,6.0,10.0,12.0,2.28,3.8,4.56,10.64,Ball Carrier
+Goa,Alexander Romario Jesuraj,431.0,8.0,13.0,30.0,1.67,2.71,6.26,10.64,Progression Outlet
+Goa,Eduardo Bedia Peláez,1415.0,108.0,32.0,27.0,6.87,2.04,1.72,10.63,Progressive Passer
+France,Marcus Thuram,161.0,3.0,11.0,5.0,1.68,6.15,2.8,10.629999999999999,Ball Carrier
+Saint-Étienne,Ryad Boudebouz,161.0,9.0,6.0,4.0,5.03,3.35,2.24,10.620000000000001,Complete Progressor
+Mumbai City,Vikram Pratap Singh,645.0,8.0,37.0,31.0,1.12,5.16,4.33,10.61,Ball Carrier
+Marseille,Mattéo Guendouzi Olié,187.0,7.0,8.0,7.0,3.37,3.85,3.37,10.59,Complete Progressor
+Rennes,Flavien Tait,85.0,6.0,4.0,0.0,6.35,4.24,0.0,10.59,Complete Progressor
+Mexico,Raúl Alonso Jiménez Rodríguez,68.0,3.0,2.0,3.0,3.97,2.65,3.97,10.59,Progressive Passer
+Montpellier,Stephy Alvaro Mavididi,51.0,1.0,2.0,3.0,1.76,3.53,5.29,10.58,Ball Carrier
+East Bengal,Francisco José Sota Bernard,324.0,15.0,8.0,15.0,4.17,2.22,4.17,10.56,Progressive Passer
+OGC Nice,Flavius Daniliuc,77.0,6.0,2.0,1.0,7.01,2.34,1.17,10.52,Progressive Passer
+Kerala Blasters,Jorge Rolando Pereyra Díaz,1570.0,38.0,65.0,80.0,2.18,3.73,4.59,10.5,Ball Carrier
+Mumbai City,Bipin Singh Thounajam,1711.0,26.0,67.0,106.0,1.37,3.52,5.58,10.47,Ball Carrier
+Canada,David Junior Hoilett,164.0,6.0,5.0,8.0,3.29,2.74,4.39,10.42,Progressive Passer
+Paris Saint-Germain,Marco Verratti,1530.0,92.0,49.0,36.0,5.41,2.88,2.12,10.41,Complete Progressor
+Nantes,Fábio Pereira da Silva,52.0,1.0,2.0,3.0,1.73,3.46,5.19,10.379999999999999,Ball Carrier
+Croatia,Mateo Kovačić,642.0,34.0,22.0,18.0,4.77,3.08,2.52,10.37,Complete Progressor
+ATK Mohun Bagan,Roy Krishna,1233.0,35.0,43.0,64.0,2.55,3.14,4.67,10.36,Ball Carrier
+Cameroon,Vincent Paté Aboubakar,149.0,2.0,5.0,10.0,1.21,3.02,6.04,10.27,Ball Carrier
+England,Marcus Rashford,158.0,1.0,5.0,12.0,0.57,2.85,6.84,10.26,Ball Carrier
+Nantes,Marcus Coco,79.0,2.0,4.0,3.0,2.28,4.56,3.42,10.26,Ball Carrier
+Germany Women's,Sara Däbritz,422.0,25.0,14.0,9.0,5.33,2.99,1.92,10.24,Complete Progressor
+Netherlands Women's,Lieke Martens,246.0,5.0,7.0,16.0,1.83,2.56,5.85,10.24,Progression Outlet
+Italy Women's,Cristiana Girelli,176.0,3.0,5.0,12.0,1.53,2.56,6.14,10.23,Progression Outlet
+Argentina,Rodrigo Javier De Paul,625.0,28.0,24.0,19.0,4.03,3.46,2.74,10.23,Complete Progressor
+Denmark,Thomas Delaney,44.0,3.0,0.0,2.0,6.14,0.0,4.09,10.23,Progressive Passer
+Montpellier,Jordan Ferri,88.0,5.0,4.0,1.0,5.11,4.09,1.02,10.219999999999999,Complete Progressor
+Kerala Blasters,Vincy Barretto,432.0,8.0,17.0,24.0,1.67,3.54,5.0,10.21,Ball Carrier
+Italy Women's,Lisa Boattin,283.0,15.0,10.0,7.0,4.77,3.18,2.23,10.18,Complete Progressor
+Spain,Rodrigo Hernández Cascante,409.0,31.0,15.0,0.0,6.82,3.3,0.0,10.120000000000001,Complete Progressor
+Croatia,Marko Livaja,250.0,5.0,8.0,15.0,1.8,2.88,5.4,10.08,Ball Carrier
+Belgium Women's,Tessa Wullaert,366.0,11.0,13.0,17.0,2.7,3.2,4.18,10.08,Ball Carrier
+Spain,César Azpilicueta Tanco,143.0,9.0,2.0,5.0,5.66,1.26,3.15,10.07,Progressive Passer
+Netherlands,Cody Mathès Gakpo,456.0,11.0,21.0,19.0,2.17,4.14,3.75,10.059999999999999,Ball Carrier
+Japan,Daichi Kamada,323.0,10.0,8.0,18.0,2.79,2.23,5.02,10.04,Progression Outlet
+Netherlands,Denzel Dumfries,502.0,11.0,9.0,36.0,1.97,1.61,6.45,10.030000000000001,Progression Outlet
+NorthEast United,Suhair Vadakkepeedika,1634.0,48.0,51.0,83.0,2.64,2.81,4.57,10.02,Ball Carrier
+Strasbourg,Dimitri Liénard,90.0,2.0,1.0,7.0,2.0,1.0,7.0,10.0,Progression Outlet
+Denmark Women's,Pernille Mosegaard Harder,270.0,9.0,13.0,8.0,3.0,4.33,2.67,10.0,Ball Carrier
+Iceland Women's,Áslaug Munda Gunnlaugsdóttir,36.0,1.0,3.0,0.0,2.5,7.5,0.0,10.0,Ball Carrier
+Lille,Timothy Weah,81.0,2.0,3.0,4.0,2.22,3.33,4.44,9.990000000000002,Ball Carrier
+Rennes,Benjamin Bourigeaud,153.0,3.0,4.0,10.0,1.76,2.35,5.88,9.99,Progression Outlet
+Croatia,Luka Modrić,659.0,42.0,18.0,13.0,5.74,2.46,1.78,9.979999999999999,Progressive Passer
+Goa,Airam López Cabrera,759.0,24.0,15.0,45.0,2.85,1.78,5.34,9.969999999999999,Progression Outlet
+Uruguay,Darwin Gabriel Núñez Ribeiro,244.0,2.0,10.0,15.0,0.74,3.69,5.53,9.96,Ball Carrier
+Japan,Yuto Nagatomo,208.0,4.0,8.0,11.0,1.73,3.46,4.76,9.95,Ball Carrier
+France Women's,Eve Perisset,389.0,18.0,10.0,15.0,4.16,2.31,3.47,9.940000000000001,Progressive Passer
+East Bengal,Antonio Perošević,1134.0,21.0,52.0,52.0,1.67,4.13,4.13,9.93,Ball Carrier
+France,Theo Bernard François Hernández,526.0,19.0,12.0,27.0,3.25,2.05,4.62,9.92,Progressive Passer
+Hyderabad,Halicharan Narzary,127.0,3.0,4.0,7.0,2.13,2.83,4.96,9.92,Ball Carrier
+Austria Women's,Julia Hickelsberger Füller,245.0,4.0,11.0,12.0,1.47,4.04,4.41,9.92,Ball Carrier
+Saudi Arabia,Nawaf Shaker Al Abid,91.0,1.0,4.0,5.0,0.99,3.96,4.95,9.9,Ball Carrier
+OGC Nice,Pablo Paulino Rosario,91.0,5.0,2.0,3.0,4.95,1.98,2.97,9.9,Progressive Passer
+Germany,Niklas Süle,282.0,21.0,8.0,2.0,6.7,2.55,0.64,9.89,Progressive Passer
+Spain,Pablo Martín Páez Gavira,292.0,10.0,9.0,13.0,3.08,2.77,4.01,9.86,Progressive Passer
+Cameroon,André-Frank Zambo Anguissa,265.0,16.0,7.0,6.0,5.43,2.38,2.04,9.85,Progressive Passer
+Japan,Ritsu Doan,220.0,5.0,10.0,9.0,2.05,4.09,3.68,9.82,Ball Carrier
+Croatia,Ivan Perišić,670.0,15.0,28.0,30.0,2.01,3.76,4.03,9.8,Ball Carrier
+Germany Women's,Tabea Waßmuth,120.0,3.0,3.0,7.0,2.25,2.25,5.25,9.75,Progression Outlet
+Brazil,Alex Sandro Lobo Silva,194.0,15.0,3.0,3.0,6.96,1.39,1.39,9.74,Progressive Passer
+United States,Timothy Weah,314.0,6.0,8.0,20.0,1.72,2.29,5.73,9.74,Progression Outlet
+Canada,Alphonso Davies,277.0,4.0,13.0,13.0,1.3,4.22,4.22,9.739999999999998,Ball Carrier
+Chennaiyin,Rahim Ali,954.0,23.0,36.0,44.0,2.17,3.4,4.15,9.72,Ball Carrier
+England Women's,Francesca Kirby,398.0,12.0,10.0,21.0,2.71,2.26,4.75,9.719999999999999,Progression Outlet
+Jamshedpur,Seminlen Doungel,1122.0,28.0,50.0,43.0,2.25,4.01,3.45,9.71,Ball Carrier
+Italy Women's,Flaminia Simonetti,204.0,5.0,9.0,8.0,2.21,3.97,3.53,9.709999999999999,Ball Carrier
+Odisha,Liridon Krasniqi,753.0,37.0,23.0,21.0,4.42,2.75,2.51,9.68,Progressive Passer
+Germany Women's,Lina Magull,335.0,13.0,7.0,16.0,3.49,1.88,4.3,9.67,Progressive Passer
+Belgium,Thomas Meunier,214.0,4.0,5.0,14.0,1.68,2.1,5.89,9.67,Progression Outlet
+England Women's,Jill Scott,56.0,1.0,2.0,3.0,1.61,3.21,4.82,9.64,Ball Carrier
+England,Callum Wilson,56.0,2.0,2.0,2.0,3.21,3.21,3.21,9.629999999999999,Complete Progressor
+Odisha,Ariday Cabrera Suárez,981.0,14.0,43.0,48.0,1.28,3.94,4.4,9.620000000000001,Ball Carrier
+NorthEast United,Deshorn Brown,853.0,10.0,36.0,45.0,1.06,3.8,4.75,9.61,Ball Carrier
+Italy Women's,Valentina Bergamaschi,263.0,7.0,6.0,15.0,2.4,2.05,5.13,9.579999999999998,Progression Outlet
+Lille,Renato Júnior Luz Sanches,94.0,7.0,1.0,2.0,6.7,0.96,1.91,9.57,Progressive Passer
+Serbia,Sergej Milinković-Savić,235.0,13.0,4.0,8.0,4.98,1.53,3.06,9.57,Progressive Passer
+Saudi Arabia,Salem Mohammed Al Dawsari,292.0,9.0,12.0,10.0,2.77,3.7,3.08,9.55,Ball Carrier
+Ecuador,Romario Andrés Ibarra Mina,66.0,1.0,4.0,2.0,1.36,5.45,2.73,9.540000000000001,Ball Carrier
+Lyon,Lucas Tolentino Coelho de Lima,85.0,4.0,5.0,0.0,4.24,5.29,0.0,9.530000000000001,Complete Progressor
+Cameroon,Karl Brillant Toko Ekambi,170.0,1.0,9.0,8.0,0.53,4.76,4.24,9.530000000000001,Ball Carrier
+Spain,Sergio Busquets i Burgos,369.0,29.0,4.0,6.0,7.07,0.98,1.46,9.510000000000002,Progressive Passer
+NorthEast United,Marco Sahanek,502.0,14.0,18.0,21.0,2.51,3.23,3.76,9.5,Ball Carrier
+Costa Rica,Jewison Bennette,114.0,1.0,7.0,4.0,0.79,5.53,3.16,9.48,Ball Carrier
+Germany,Jonas Hofmann,38.0,1.0,2.0,1.0,2.37,4.74,2.37,9.48,Ball Carrier
+Costa Rica,Joel Nathaniel Campbell Samuels,285.0,12.0,8.0,10.0,3.79,2.53,3.16,9.48,Progressive Passer
+Netherlands Women's,Damaris Berta Egurrola Wienke,76.0,5.0,1.0,2.0,5.92,1.18,2.37,9.469999999999999,Progressive Passer
+NorthEast United,Imran Khan,1213.0,40.0,37.0,50.0,2.97,2.75,3.71,9.43,Supporting Progressor
+Morocco,Sofiane Boufal,468.0,15.0,22.0,12.0,2.88,4.23,2.31,9.42,Ball Carrier
+Spain Women's,Lucía García Córdoba,191.0,1.0,7.0,12.0,0.47,3.3,5.65,9.42,Ball Carrier
+Odisha,Isak Vanlalruatfela,153.0,6.0,5.0,5.0,3.53,2.94,2.94,9.41,Complete Progressor
+United States,Antonee Robinson,373.0,9.0,14.0,16.0,2.17,3.38,3.86,9.41,Ball Carrier
+Bordeaux,Alberth Josué Elis Martínez,67.0,0.0,3.0,4.0,0.0,4.03,5.37,9.4,Ball Carrier
+Netherlands Women's,Vivianne Miedema,211.0,3.0,7.0,12.0,1.28,2.99,5.12,9.39,Ball Carrier
+Serbia,Saša Lukić,259.0,11.0,12.0,4.0,3.82,4.17,1.39,9.38,Complete Progressor
+Norway Women's,Amalie Vevle Eikeland,144.0,3.0,4.0,8.0,1.88,2.5,5.0,9.379999999999999,Progression Outlet
+Canada,Stephen Antunes Eustáquio,125.0,10.0,1.0,2.0,7.2,0.72,1.44,9.36,Progressive Passer
+Sweden Women's,Hanna Erica Maria Glas,366.0,10.0,8.0,20.0,2.46,1.97,4.92,9.35,Progression Outlet
+Chennaiyin,Vladimir Koman Jr.,1341.0,81.0,32.0,26.0,5.44,2.15,1.74,9.33,Progressive Passer
+Paris Saint-Germain,Leandro Daniel Paredes,610.0,51.0,9.0,3.0,7.52,1.33,0.44,9.29,Progressive Passer
+Germany Women's,Alexandra Popp,368.0,7.0,8.0,23.0,1.71,1.96,5.62,9.29,Progression Outlet
+United States,Joshua Sargent,155.0,1.0,6.0,9.0,0.58,3.48,5.23,9.29,Ball Carrier
+Kerala Blasters,Álvaro Vázquez García,1850.0,35.0,54.0,102.0,1.7,2.63,4.96,9.29,Progression Outlet
+Kerala Blasters,Prasanth Karuthadathkuni,350.0,4.0,15.0,17.0,1.03,3.86,4.37,9.26,Ball Carrier
+Senegal,Youssouf Sabaly,379.0,14.0,6.0,19.0,3.32,1.42,4.51,9.25,Progressive Passer
+England,Jude Bellingham,429.0,18.0,12.0,14.0,3.78,2.52,2.94,9.24,Progressive Passer
+Norway Women's,Celin Bizet Ildhusøy,39.0,0.0,1.0,3.0,0.0,2.31,6.92,9.23,Progression Outlet
+Cameroon,Nicolas Moumi Ngamaleu,88.0,2.0,1.0,6.0,2.05,1.02,6.14,9.209999999999999,Progression Outlet
+Goa,Seriton Fernandes,1366.0,36.0,49.0,54.0,2.37,3.23,3.56,9.16,Ball Carrier
+France,Jordan Veretout,59.0,4.0,0.0,2.0,6.1,0.0,3.05,9.149999999999999,Progressive Passer
+Paris Saint-Germain,Sergio Ramos García,701.0,62.0,6.0,3.0,7.96,0.77,0.39,9.120000000000001,Progressive Passer
+Jamshedpur,Nerijus Valskis,474.0,14.0,9.0,25.0,2.66,1.71,4.75,9.120000000000001,Progression Outlet
+ATK Mohun Bagan,Prabir Das,831.0,22.0,25.0,37.0,2.38,2.71,4.01,9.1,Supporting Progressor
+Lens,Florian Sotoca,119.0,4.0,4.0,4.0,3.03,3.03,3.03,9.09,Complete Progressor
+Goa,Leander D''Cunha,436.0,11.0,13.0,20.0,2.27,2.68,4.13,9.08,Progression Outlet
+Ecuador,Enner Remberto Valencia Lastra,258.0,3.0,7.0,16.0,1.05,2.44,5.58,9.07,Progression Outlet
+Mexico,Jorge Eduardo Sánchez Ramos,179.0,7.0,4.0,7.0,3.52,2.01,3.52,9.049999999999999,Progressive Passer
+Serbia,Strahinja Pavlović,249.0,17.0,7.0,1.0,6.14,2.53,0.36,9.03,Progressive Passer
+Croatia,Borna Sosa,439.0,10.0,16.0,18.0,2.05,3.28,3.69,9.02,Ball Carrier
+Kerala Blasters,Adrián Nicolás Luna Retamar,2028.0,79.0,50.0,74.0,3.51,2.22,3.28,9.01,Progressive Passer
+Denmark Women's,Sanne Troelsgaard-Nielsen,150.0,10.0,5.0,0.0,6.0,3.0,0.0,9.0,Complete Progressor
+Germany,Thomas Müller,200.0,4.0,3.0,13.0,1.8,1.35,5.85,9.0,Progression Outlet
+Morocco,Anass Zaroury,30.0,1.0,1.0,1.0,3.0,3.0,3.0,9.0,Ball Carrier
+Japan,Takefusa Kubo,90.0,3.0,3.0,3.0,3.0,3.0,3.0,9.0,Ball Carrier
+Montpellier,Nicholas Gioacchini,30.0,1.0,0.0,2.0,3.0,0.0,6.0,9.0,Progression Outlet
+Lens,Massadio Haïdara,40.0,2.0,1.0,1.0,4.5,2.25,2.25,9.0,Progressive Passer
+Kerala Blasters,Chencho Gyeltshen,432.0,5.0,18.0,20.0,1.04,3.75,4.17,8.96,Ball Carrier
+Japan,Takuma Asano,181.0,1.0,6.0,11.0,0.5,2.98,5.47,8.95,Ball Carrier
+Belgium,Eden Hazard,121.0,5.0,3.0,4.0,3.72,2.23,2.98,8.93,Progressive Passer
+Cameroon,Martin Hongla Yma II,121.0,5.0,3.0,4.0,3.72,2.23,2.98,8.93,Progressive Passer
+England,Mason Mount,192.0,4.0,6.0,9.0,1.88,2.81,4.22,8.91,Ball Carrier
+England,Kieran Trippier,212.0,7.0,3.0,11.0,2.97,1.27,4.67,8.91,Progression Outlet
+Sweden Women's,Linda Brigitta Sembrant,202.0,16.0,4.0,0.0,7.13,1.78,0.0,8.91,Progressive Passer
+Argentina,Alexis Mac Allister,546.0,18.0,15.0,21.0,2.97,2.47,3.46,8.9,Supporting Progressor
+Switzerland,Ruben Vargas,284.0,2.0,12.0,14.0,0.63,3.8,4.44,8.870000000000001,Ball Carrier
+Belgium,Leandro Trossard,102.0,2.0,3.0,5.0,1.76,2.65,4.41,8.82,Progression Outlet
+Wales,Brennan Johnson,102.0,2.0,5.0,3.0,1.76,4.41,2.65,8.82,Ball Carrier
+Japan,Kaoru Mitoma,174.0,5.0,8.0,4.0,2.59,4.14,2.07,8.799999999999999,Ball Carrier
+Australia,Garang Kuol,41.0,1.0,1.0,2.0,2.2,2.2,4.39,8.79,Progression Outlet
+Goa,Muhammed Nemil Valiyattil,379.0,9.0,12.0,16.0,2.14,2.85,3.8,8.79,Ball Carrier
+Portugal,Nuno Mendes,41.0,2.0,1.0,1.0,4.39,2.2,2.2,8.79,Progressive Passer
+Bengaluru,Prince Vinny Ibara Doniama,1066.0,19.0,29.0,56.0,1.6,2.45,4.73,8.780000000000001,Progression Outlet
+Saint-Étienne,Denis Bouanga,164.0,0.0,7.0,9.0,0.0,3.84,4.94,8.780000000000001,Ball Carrier
+Goa,Devendra Dhaku Murgaokar,1037.0,14.0,33.0,54.0,1.22,2.86,4.69,8.77,Ball Carrier
+Ghana,Osman Bukari,72.0,1.0,2.0,4.0,1.25,2.5,5.0,8.75,Progression Outlet
+Spain,Álvaro Borja Morata Martín,175.0,3.0,3.0,11.0,1.54,1.54,5.66,8.74,Progression Outlet
+Odisha,Redeem Tlang,309.0,2.0,13.0,15.0,0.58,3.79,4.37,8.74,Ball Carrier
+Japan,Hidemasa Morita,289.0,13.0,10.0,5.0,4.05,3.11,1.56,8.72,Complete Progressor
+Tunisia,Wajdi Kechrida,124.0,1.0,4.0,7.0,0.73,2.9,5.08,8.71,Ball Carrier
+Paris Saint-Germain,Xavi Simons,93.0,0.0,4.0,5.0,0.0,3.87,4.84,8.71,Ball Carrier
+Hyderabad,Aaren D''Silva,124.0,3.0,6.0,3.0,2.18,4.35,2.18,8.709999999999999,Ball Carrier
+Netherlands,Luuk de Jong,62.0,1.0,2.0,3.0,1.45,2.9,4.35,8.7,Ball Carrier
+Germany Women's,Giulia Gwinn,528.0,12.0,15.0,24.0,2.05,2.56,4.09,8.7,Progression Outlet
+Netherlands,Steven Berghuis,207.0,6.0,8.0,6.0,2.61,3.48,2.61,8.7,Ball Carrier
+France,Kingsley Coman,176.0,1.0,5.0,11.0,0.51,2.56,5.62,8.690000000000001,Progression Outlet
+France,Youssouf Fofana,228.0,13.0,4.0,5.0,5.13,1.58,1.97,8.68,Progressive Passer
+OGC Nice,Kasper Dolberg,156.0,2.0,4.0,9.0,1.15,2.31,5.19,8.65,Progression Outlet
+Switzerland Women's,Ramona Bachmann,260.0,6.0,12.0,7.0,2.08,4.15,2.42,8.65,Ball Carrier
+Sweden Women's,Gun Nathalie Björn,438.0,35.0,5.0,2.0,7.19,1.03,0.41,8.63,Progressive Passer
+Norway Women's,Karina Sævik,73.0,1.0,3.0,3.0,1.23,3.7,3.7,8.629999999999999,Ball Carrier
+Costa Rica,Johan Alberto Venegas Ulloa,73.0,1.0,2.0,4.0,1.23,2.47,4.93,8.629999999999999,Progression Outlet
+Hyderabad,Rohit Danu,804.0,14.0,25.0,38.0,1.57,2.8,4.25,8.620000000000001,Progression Outlet
+Iceland Women's,Agla María Albertsdóttir,115.0,3.0,1.0,7.0,2.35,0.78,5.48,8.61,Progression Outlet
+Denmark Women's,Karen Holmgaard,115.0,4.0,3.0,4.0,3.13,2.35,3.13,8.61,Progressive Passer
+ATK Mohun Bagan,Joni Ensio Kauko,1500.0,64.0,41.0,38.0,3.84,2.46,2.28,8.58,Progressive Passer
+Switzerland,Xherdan Shaqiri,232.0,8.0,5.0,9.0,3.1,1.94,3.49,8.530000000000001,Progressive Passer
+Portugal,José Diogo Dalot Teixeira,264.0,8.0,9.0,8.0,2.73,3.07,2.73,8.53,Ball Carrier
+Bengaluru,Leon Augustine Asokan,95.0,0.0,3.0,6.0,0.0,2.84,5.68,8.52,Ball Carrier
+Hyderabad,Joel Joseph Chianese,1110.0,24.0,32.0,49.0,1.95,2.59,3.97,8.51,Supporting Progressor
+Australia,Craig Goodwin,233.0,7.0,6.0,9.0,2.7,2.32,3.48,8.5,Supporting Progressor
+Saudi Arabia,Sami Khalil Al Naji,53.0,1.0,3.0,1.0,1.7,5.09,1.7,8.49,Ball Carrier
+Croatia,Bruno Petković,244.0,5.0,8.0,10.0,1.84,2.95,3.69,8.48,Ball Carrier
+Serbia,Aleksandar Mitrović,266.0,2.0,6.0,17.0,0.68,2.03,5.75,8.46,Progression Outlet
+Odisha,Francisco Javier Hernández González,1497.0,41.0,50.0,49.0,2.46,3.01,2.95,8.42,Ball Carrier
+Senegal,Iliman Ndiaye,139.0,0.0,5.0,8.0,0.0,3.24,5.18,8.42,Ball Carrier
+Jamshedpur,Daniel Chima Chukwu,781.0,7.0,28.0,38.0,0.81,3.23,4.38,8.42,Ball Carrier
+Troyes,Yasser Larouci,75.0,1.0,5.0,1.0,1.2,6.0,1.2,8.4,Ball Carrier
+Denmark Women's,Katrine Veje,258.0,11.0,10.0,3.0,3.84,3.49,1.05,8.38,Complete Progressor
+Saudi Arabia,Saud Abdullah Abdul Hamid,290.0,10.0,9.0,8.0,3.1,2.79,2.48,8.370000000000001,Progressive Passer
+Portugal Women's,Diana Micaela Abreu de Sousa e Silva,269.0,6.0,6.0,13.0,2.01,2.01,4.35,8.37,Progression Outlet
+Denmark,Andreas Evald Cornelius,97.0,1.0,2.0,6.0,0.93,1.86,5.57,8.36,Progression Outlet
+Uruguay,Federico Santiago Valverde Dipetta,291.0,13.0,6.0,8.0,4.02,1.86,2.47,8.35,Progressive Passer
+AS Monaco,Wissam Ben Yedder,54.0,2.0,1.0,2.0,3.33,1.67,3.33,8.33,Progressive Passer
+Lens,Przemysław Frankowski,173.0,3.0,5.0,8.0,1.56,2.6,4.16,8.32,Progression Outlet
+Lille,Jonathan David,173.0,4.0,6.0,6.0,2.08,3.12,3.12,8.32,Ball Carrier
+Belgium,Yannick Ferreira Carrasco,119.0,0.0,2.0,9.0,0.0,1.51,6.81,8.32,Progression Outlet
+England,Harry Kane,401.0,13.0,11.0,13.0,2.92,2.47,2.92,8.31,Supporting Progressor
+Australia,Jamie MacLaren,65.0,0.0,2.0,4.0,0.0,2.77,5.54,8.31,Progression Outlet
+Saint-Étienne,Arnaud Nordin,65.0,2.0,2.0,2.0,2.77,2.77,2.77,8.31,Supporting Progressor
+Clermont Foot,Jodel Dossou,65.0,3.0,1.0,2.0,4.15,1.38,2.77,8.3,Progressive Passer
+Clermont Foot,Jason Berthomier,65.0,2.0,1.0,3.0,2.77,1.38,4.15,8.3,Progression Outlet
+Strasbourg,Sanjin Prcić,76.0,6.0,1.0,0.0,7.11,1.18,0.0,8.290000000000001,Progressive Passer
+Portugal,Gonçalo Matias Ramos,163.0,3.0,4.0,8.0,1.66,2.21,4.42,8.29,Progression Outlet
+Portugal,João Mário Naval da Costa Eduardo,87.0,1.0,2.0,5.0,1.03,2.07,5.17,8.27,Progression Outlet
+Cameroon,Bryan Mbeumo,218.0,5.0,5.0,10.0,2.06,2.06,4.13,8.25,Progression Outlet
+Netherlands,Jurriën David Norman Timber,404.0,22.0,9.0,6.0,4.9,2.0,1.34,8.24,Progressive Passer
+Japan,Wataru Endo,317.0,16.0,7.0,6.0,4.54,1.99,1.7,8.23,Progressive Passer
+Austria Women's,Laura Feiersinger,318.0,9.0,14.0,6.0,2.55,3.96,1.7,8.209999999999999,Ball Carrier
+ATK Mohun Bagan,Abhishek Dhananjay Suryavanshi,44.0,3.0,0.0,1.0,6.14,0.0,2.05,8.19,Progressive Passer
+South Korea,Chul Hong,44.0,1.0,1.0,2.0,2.05,2.05,4.09,8.19,Progression Outlet
+Marseille,Pol Mikel Lirola Kosok,110.0,0.0,2.0,8.0,0.0,1.64,6.55,8.19,Progression Outlet
+Portugal,Danilo Luís Hélio Pereira,99.0,8.0,1.0,0.0,7.27,0.91,0.0,8.18,Progressive Passer
+Belgium Women's,Janice Cayman,364.0,8.0,9.0,16.0,1.98,2.23,3.96,8.17,Supporting Progressor
+Germany,Antonio Rüdiger,287.0,22.0,4.0,0.0,6.9,1.25,0.0,8.15,Progressive Passer
+Mumbai City,Vignesh Dakshinamurthy,599.0,21.0,16.0,17.0,3.16,2.4,2.55,8.11,Progressive Passer
+Japan,Junya Ito,333.0,4.0,13.0,13.0,1.08,3.51,3.51,8.1,Ball Carrier
+Lille,Mehmet Zeki Çelik,178.0,5.0,6.0,5.0,2.53,3.03,2.53,8.09,Ball Carrier
+Uruguay,Rodrigo Bentancur Colmán,224.0,10.0,4.0,6.0,4.02,1.61,2.41,8.04,Progressive Passer
+Bengaluru,Namgyal Bhutia,280.0,8.0,5.0,12.0,2.57,1.61,3.86,8.04,Supporting Progressor
+Netherlands,Steven Bergwijn,269.0,3.0,9.0,12.0,1.0,3.01,4.01,8.02,Ball Carrier
+AS Monaco,Djibril Sidibé,90.0,3.0,4.0,1.0,3.0,4.0,1.0,8.0,Ball Carrier
+Senegal,Krépin Diatta,180.0,2.0,5.0,9.0,1.0,2.5,4.5,8.0,Progression Outlet
+Bengaluru,Jayesh Dilip Rane,552.0,10.0,17.0,22.0,1.63,2.77,3.59,7.99,Supporting Progressor
+Belgium,Dries Mertens,79.0,0.0,2.0,5.0,0.0,2.28,5.7,7.98,Progression Outlet
+Paris Saint-Germain,Mauro Emanuel Icardi Rivero,383.0,5.0,9.0,20.0,1.17,2.11,4.7,7.98,Progression Outlet
+Lille,Nanitamo Jonathan Ikoné,79.0,2.0,3.0,2.0,2.28,3.42,2.28,7.979999999999999,Ball Carrier
+Odisha,Jerry Mawihmingthanga,1480.0,25.0,44.0,62.0,1.52,2.68,3.77,7.970000000000001,Supporting Progressor
+Uruguay,Guillermo Varela Olivera,204.0,6.0,6.0,6.0,2.65,2.65,2.65,7.949999999999999,Supporting Progressor
+Tunisia,Taha Yassine Khenissi,34.0,1.0,1.0,1.0,2.65,2.65,2.65,7.949999999999999,Supporting Progressor
+Netherlands Women's,Romée Leuchter,34.0,0.0,0.0,3.0,0.0,0.0,7.94,7.94,Progression Outlet
+Norway Women's,Ada Stolsmo Hegerberg,261.0,4.0,9.0,10.0,1.38,3.1,3.45,7.930000000000001,Ball Carrier
+Troyes,Issa Kabore,91.0,2.0,2.0,4.0,1.98,1.98,3.96,7.92,Supporting Progressor
+Lille,Gabriel Gudmundsson,91.0,1.0,5.0,2.0,0.99,4.95,1.98,7.92,Ball Carrier
+England Women's,Leah Williamson,592.0,45.0,7.0,0.0,6.84,1.06,0.0,7.9,Progressive Passer
+Chennaiyin,Syed Suhail Pasha,206.0,3.0,4.0,11.0,1.31,1.75,4.81,7.869999999999999,Progression Outlet
+Argentina,Julián Álvarez,469.0,7.0,15.0,19.0,1.34,2.88,3.65,7.869999999999999,Ball Carrier
+Sweden Women's,Hanna Ulrika Bennison,80.0,5.0,1.0,1.0,5.62,1.12,1.12,7.86,Progressive Passer
+Portugal,João Pedro Cavaco Cancelo,332.0,12.0,5.0,12.0,3.25,1.36,3.25,7.86,Progressive Passer
+Ghana,Abdul Rahman Baba,206.0,6.0,6.0,6.0,2.62,2.62,2.62,7.86,Supporting Progressor
+Hyderabad,Bartholomew Owogbalor Ogbeche,1764.0,41.0,41.0,72.0,2.09,2.09,3.67,7.85,Supporting Progressor
+Morocco,Ilias Chair,46.0,0.0,3.0,1.0,0.0,5.87,1.96,7.83,Ball Carrier
+Belgium,Kevin De Bruyne,276.0,8.0,8.0,8.0,2.61,2.61,2.61,7.83,Supporting Progressor
+Belgium,Leander Dendoncker,161.0,11.0,2.0,1.0,6.15,1.12,0.56,7.83,Progressive Passer
+Bengaluru,Sivasakthi Narayanan,69.0,1.0,1.0,4.0,1.3,1.3,5.22,7.82,Progression Outlet
+Poland,Robert Lewandowski,380.0,8.0,11.0,14.0,1.89,2.61,3.32,7.82,Supporting Progressor
+Paris Saint-Germain,Idrissa Gana Gueye,1360.0,76.0,18.0,24.0,5.03,1.19,1.59,7.8100000000000005,Progressive Passer
+Sweden Women's,Lina Mona Andréa Hurtig,173.0,0.0,3.0,12.0,0.0,1.56,6.24,7.800000000000001,Progression Outlet
+East Bengal,Marcelo Ribeiro dos Santos,369.0,6.0,8.0,18.0,1.46,1.95,4.39,7.8,Progression Outlet
+Canada,Sam Adekugbe,104.0,3.0,2.0,4.0,2.6,1.73,3.46,7.79,Supporting Progressor
+Japan,Yuki Soma,81.0,1.0,3.0,3.0,1.11,3.33,3.33,7.7700000000000005,Ball Carrier
+Morocco,Hakim Ziyech,649.0,17.0,17.0,22.0,2.36,2.36,3.05,7.77,Supporting Progressor
+Brazil,Richarlison de Andrade,325.0,4.0,7.0,17.0,1.11,1.94,4.71,7.76,Progression Outlet
+Belgium Women's,Tinne De Caigny,371.0,10.0,5.0,17.0,2.43,1.21,4.12,7.76,Progression Outlet
+Norway Women's,Frida Maanum,174.0,8.0,3.0,4.0,4.14,1.55,2.07,7.76,Progressive Passer
+Bordeaux,Anel Ahmedhodžić,93.0,3.0,4.0,1.0,2.9,3.87,0.97,7.739999999999999,Ball Carrier
+Wales,Harry Wilson,163.0,5.0,4.0,5.0,2.76,2.21,2.76,7.7299999999999995,Supporting Progressor
+Croatia,Josip Juranović,606.0,15.0,10.0,27.0,2.23,1.49,4.01,7.7299999999999995,Supporting Progressor
+Rennes,Gaëtan Laborde,175.0,2.0,7.0,6.0,1.03,3.6,3.09,7.72,Ball Carrier
+Spain Women's,Teresa Abelleira Dueñas,70.0,4.0,1.0,1.0,5.14,1.29,1.29,7.72,Progressive Passer
+Wales,Neco Williams,210.0,5.0,7.0,6.0,2.14,3.0,2.57,7.710000000000001,Ball Carrier
+Chennaiyin,Edwin Sydney Vanspaul,924.0,33.0,19.0,27.0,3.21,1.85,2.63,7.69,Progressive Passer
+NorthEast United,Lalkhawpuimawia Lalkhawpuimawia,480.0,7.0,10.0,24.0,1.31,1.88,4.5,7.6899999999999995,Progression Outlet
+Odisha,Jonathas Cristian de Jesus,1079.0,13.0,26.0,53.0,1.08,2.17,4.42,7.67,Progression Outlet
+Switzerland,Noah Okafor,47.0,0.0,2.0,2.0,0.0,3.83,3.83,7.66,Ball Carrier
+Iceland Women's,Karólína Lea Vilhjálmsdóttir,270.0,7.0,9.0,7.0,2.33,3.0,2.33,7.66,Ball Carrier
+Bengaluru,Sunil Chhetri,1422.0,34.0,28.0,59.0,2.15,1.77,3.73,7.65,Supporting Progressor
+South Korea,Woo-Yeong Jeong,47.0,0.0,1.0,3.0,0.0,1.91,5.74,7.65,Progression Outlet
+Germany Women's,Lena Lattwein,189.0,13.0,1.0,2.0,6.19,0.48,0.95,7.62,Progressive Passer
+Bengaluru,Yroundu Musavu-King,119.0,8.0,2.0,0.0,6.05,1.51,0.0,7.56,Progressive Passer
+Hyderabad,Asish Rai,1393.0,33.0,41.0,43.0,2.13,2.65,2.78,7.559999999999999,Supporting Progressor
+Lorient,Terem Igobor Moffi,167.0,4.0,4.0,6.0,2.16,2.16,3.23,7.550000000000001,Supporting Progressor
+Ghana,Mohammed Kudus,251.0,2.0,9.0,10.0,0.72,3.23,3.59,7.54,Ball Carrier
+Netherlands Women's,Jill Roord,310.0,6.0,9.0,11.0,1.74,2.61,3.19,7.539999999999999,Supporting Progressor
+Austria Women's,Nicole Billa,347.0,4.0,9.0,16.0,1.04,2.33,4.15,7.5200000000000005,Progression Outlet
+Rennes,Baptiste Santamaría,108.0,5.0,1.0,3.0,4.17,0.83,2.5,7.5,Progressive Passer
+Cameroon,Georges-Kévin Nkoudou Mbida,36.0,1.0,1.0,1.0,2.5,2.5,2.5,7.5,Supporting Progressor
+Marseille,Valentin Rongier,144.0,4.0,2.0,6.0,2.5,1.25,3.75,7.5,Supporting Progressor
+Portugal,João Félix Sequeira,336.0,4.0,9.0,15.0,1.07,2.41,4.02,7.5,Supporting Progressor
+Belgium Women's,Hannah Eurlings,84.0,0.0,1.0,6.0,0.0,1.07,6.43,7.5,Progression Outlet
+Lens,Seko Fofana,181.0,8.0,5.0,2.0,3.98,2.49,0.99,7.460000000000001,Progressive Passer
+Netherlands,Daley Blind,447.0,18.0,4.0,15.0,3.62,0.81,3.02,7.449999999999999,Progressive Passer
+United States,Cameron Carter-Vickers,97.0,6.0,2.0,0.0,5.57,1.86,0.0,7.430000000000001,Progressive Passer
+Australia,Mathew Leckie,339.0,2.0,9.0,17.0,0.53,2.39,4.51,7.43,Progression Outlet
+Denmark,Jesper Lindstrøm,206.0,2.0,10.0,5.0,0.87,4.37,2.18,7.42,Ball Carrier
+Mexico,Ernesto Alexis Vega Rojas,194.0,5.0,5.0,6.0,2.32,2.32,2.78,7.42,Supporting Progressor
+Bengaluru,Ajay Chhetri,219.0,16.0,1.0,1.0,6.58,0.41,0.41,7.4,Progressive Passer
+Saudi Arabia,Sultan Abdullah Salim Al Ghannam,134.0,5.0,3.0,3.0,3.36,2.01,2.01,7.379999999999999,Progressive Passer
+Netherlands,Frenkie de Jong,489.0,27.0,9.0,4.0,4.97,1.66,0.74,7.37,Progressive Passer
+Portugal Women's,Catarina Amado,220.0,11.0,2.0,5.0,4.5,0.82,2.05,7.37,Progressive Passer
+Germany Women's,Jule Brand,208.0,2.0,8.0,7.0,0.87,3.46,3.03,7.359999999999999,Ball Carrier
+Jamshedpur,Alexandre Monteiro de Lima,1187.0,41.0,36.0,20.0,3.11,2.73,1.52,7.359999999999999,Progressive Passer
+United States,Tim Ream,380.0,26.0,5.0,0.0,6.16,1.18,0.0,7.34,Progressive Passer
+Bengaluru,Edmund Lalrindika,111.0,0.0,2.0,7.0,0.0,1.62,5.68,7.3,Progression Outlet
+Germany Women's,Sydney Lohmann,74.0,2.0,2.0,2.0,2.43,2.43,2.43,7.290000000000001,Supporting Progressor
+South Korea,Moon-Hwan Kim,383.0,7.0,9.0,15.0,1.64,2.11,3.52,7.27,Supporting Progressor
+Denmark,Pierre-Emile Højbjerg,273.0,15.0,3.0,4.0,4.95,0.99,1.32,7.260000000000001,Progressive Passer
+Denmark,Simon Thorup Kjær,62.0,4.0,1.0,0.0,5.81,1.45,0.0,7.26,Progressive Passer
+Hyderabad,Sahil Tavora,607.0,32.0,8.0,9.0,4.74,1.19,1.33,7.26,Progressive Passer
+Qatar,Ismaeel Mohammad Mohammad,174.0,0.0,4.0,10.0,0.0,2.07,5.17,7.24,Progression Outlet
+Senegal,Idrissa Gana Gueye,286.0,11.0,6.0,6.0,3.46,1.89,1.89,7.239999999999999,Progressive Passer
+Bengaluru,Cleiton Augusto Oliveira Silva,1572.0,27.0,30.0,69.0,1.55,1.72,3.95,7.220000000000001,Supporting Progressor
+Senegal,Ismail Jakobs,287.0,8.0,9.0,6.0,2.51,2.82,1.88,7.21,Ball Carrier
+Mexico,Kevin Nahin Álvarez Campos,75.0,3.0,0.0,3.0,3.6,0.0,3.6,7.2,Progressive Passer
+Stade de Reims,Valon Berisha,50.0,2.0,2.0,0.0,3.6,3.6,0.0,7.2,Complete Progressor
+Marseille,Amine Harit,50.0,3.0,1.0,0.0,5.4,1.8,0.0,7.2,Progressive Passer
+England Women's,Keira Walsh,600.0,34.0,6.0,8.0,5.1,0.9,1.2,7.2,Progressive Passer
+Mumbai City,Ahmed Jahouh,1304.0,79.0,12.0,13.0,5.45,0.83,0.9,7.180000000000001,Progressive Passer
+Bengaluru,Ajith Kumar,302.0,8.0,9.0,7.0,2.38,2.68,2.09,7.15,Supporting Progressor
+Mumbai City,Ygor de Oliveira Ferreira,390.0,4.0,9.0,18.0,0.92,2.08,4.15,7.15,Progression Outlet
+Belgium,Michy Batshuayi Tunga,151.0,0.0,4.0,8.0,0.0,2.38,4.77,7.1499999999999995,Progression Outlet
+Denmark Women's,Sofie Bruun Bredgaard,38.0,1.0,0.0,2.0,2.37,0.0,4.74,7.11,Progression Outlet
+Tunisia,Issam Jebali,190.0,2.0,5.0,8.0,0.95,2.37,3.79,7.11,Supporting Progressor
+Rennes,Hamari Traoré,190.0,5.0,3.0,7.0,2.37,1.42,3.32,7.109999999999999,Supporting Progressor
+Northern Ireland,Simone Magill,76.0,1.0,4.0,1.0,1.18,4.74,1.18,7.1,Ball Carrier
+OGC Nice,Melvin Bard,178.0,3.0,4.0,7.0,1.52,2.02,3.54,7.08,Supporting Progressor
+Iran,Ali Karimi,127.0,4.0,1.0,5.0,2.83,0.71,3.54,7.08,Supporting Progressor
+Denmark Women's,Stine Larsen,51.0,1.0,2.0,1.0,1.76,3.53,1.76,7.05,Ball Carrier
+Spain,Anssumane Fati,51.0,0.0,1.0,3.0,0.0,1.76,5.29,7.05,Progression Outlet
+South Korea,Sang-Ho Na,128.0,0.0,3.0,7.0,0.0,2.11,4.92,7.029999999999999,Progression Outlet
+Iran,Sardar Azmoun,128.0,2.0,4.0,4.0,1.41,2.81,2.81,7.029999999999999,Ball Carrier
+Portugal,Vitor Machado Ferreira,128.0,6.0,1.0,3.0,4.22,0.7,2.11,7.029999999999999,Progressive Passer
+Wales,Gareth Frank Bale,231.0,3.0,5.0,10.0,1.17,1.95,3.9,7.02,Supporting Progressor
+United States,Haji Wright,154.0,3.0,3.0,6.0,1.75,1.75,3.51,7.01,Supporting Progressor
+AS Monaco,Axel Disasi,90.0,7.0,0.0,0.0,7.0,0.0,0.0,7.0,Progressive Passer
+Croatia,Marcelo Brozović,565.0,25.0,9.0,10.0,3.98,1.43,1.59,7.0,Progressive Passer
+Paris Saint-Germain,Nuno Mendes,1298.0,29.0,24.0,48.0,2.01,1.66,3.33,7.0,Supporting Progressor
+Chennaiyin,Anirudh Thapa,1598.0,46.0,31.0,47.0,2.59,1.75,2.65,6.99,Supporting Progressor
+Rennes,Birger Meling,181.0,5.0,5.0,4.0,2.49,2.49,1.99,6.970000000000001,Supporting Progressor
+Mumbai City,Bradden Inman,531.0,16.0,8.0,17.0,2.71,1.36,2.88,6.95,Supporting Progressor
+Netherlands Women's,Danielle van de Donk,337.0,7.0,5.0,14.0,1.87,1.34,3.74,6.95,Supporting Progressor
+East Bengal,Naorem Mahesh Singh,1204.0,31.0,26.0,36.0,2.32,1.94,2.69,6.949999999999999,Supporting Progressor
+Netherlands Women's,Dominique Johanna Anna Petrone Janssen,402.0,18.0,5.0,8.0,4.03,1.12,1.79,6.94,Progressive Passer
+Switzerland,Djibril Sow,260.0,8.0,9.0,3.0,2.77,3.12,1.04,6.930000000000001,Ball Carrier
+Mumbai City,Gurkirat Singh,78.0,2.0,0.0,4.0,2.31,0.0,4.62,6.93,Progression Outlet
+OGC Nice,Andy Delort,117.0,4.0,2.0,3.0,3.08,1.54,2.31,6.93,Progressive Passer
+Ecuador,Jeremy Leonel Sarmiento Morante,91.0,2.0,2.0,3.0,1.98,1.98,2.97,6.93,Supporting Progressor
+AS Monaco,Aleksandr Golovin,91.0,1.0,3.0,3.0,0.99,2.97,2.97,6.93,Ball Carrier
+Chennaiyin,Łukasz Gikiewicz,860.0,14.0,14.0,38.0,1.47,1.47,3.98,6.92,Supporting Progressor
+Germany,Lukas Klostermann,78.0,2.0,3.0,1.0,2.31,3.46,1.15,6.92,Ball Carrier
+England Women's,Rachel Daly,485.0,24.0,4.0,9.0,4.45,0.74,1.67,6.86,Progressive Passer
+Japan,Hiroki Sakai,118.0,5.0,1.0,3.0,3.81,0.76,2.29,6.86,Progressive Passer
+Canada,Ismael Koné,118.0,5.0,3.0,1.0,3.81,2.29,0.76,6.859999999999999,Progressive Passer
+Switzerland,Breel-Donald Embolo,328.0,1.0,11.0,13.0,0.27,3.02,3.57,6.859999999999999,Ball Carrier
+Mexico,Néstor Alejandro Araújo Razo,92.0,6.0,0.0,1.0,5.87,0.0,0.98,6.85,Progressive Passer
+Stade de Reims,Dion Lopy,105.0,3.0,3.0,2.0,2.57,2.57,1.71,6.85,Supporting Progressor
+Qatar,Homam Alamin Ahmed,263.0,4.0,7.0,9.0,1.37,2.4,3.08,6.85,Supporting Progressor
+Uruguay,José Martín Cáceres Silva,92.0,6.0,1.0,0.0,5.87,0.98,0.0,6.85,Progressive Passer
+Croatia,Mario Pašalić,276.0,8.0,6.0,7.0,2.61,1.96,2.28,6.85,Supporting Progressor
+France Women's,Marie-Antoinette Katoto,92.0,1.0,1.0,5.0,0.98,0.98,4.89,6.85,Progression Outlet
+Norway Women's,Ingrid Syrstad Engen,276.0,17.0,1.0,3.0,5.54,0.33,0.98,6.85,Progressive Passer
+Cameroon,Christian Mougang Bassogog,66.0,0.0,3.0,2.0,0.0,4.09,2.73,6.82,Ball Carrier
+Ecuador,José Adoni Cifuentes Charcopa,66.0,2.0,0.0,3.0,2.73,0.0,4.09,6.82,Progression Outlet
+Senegal,Pape Matar Sarr,66.0,3.0,1.0,1.0,4.09,1.36,1.36,6.8100000000000005,Progressive Passer
+Lyon,Islam Slimani,93.0,0.0,3.0,4.0,0.0,2.9,3.87,6.77,Ball Carrier
+Netherlands Women's,Jackie Groenen,307.0,6.0,8.0,9.0,1.76,2.35,2.64,6.75,Supporting Progressor
+Stade de Reims,El Bilal Toure,80.0,1.0,0.0,5.0,1.12,0.0,5.62,6.74,Progression Outlet
+Hyderabad,Mohammad Yasir,883.0,14.0,24.0,28.0,1.43,2.45,2.85,6.73,Supporting Progressor
+NorthEast United,Khassa Camara,629.0,35.0,5.0,7.0,5.01,0.72,1.0,6.7299999999999995,Progressive Passer
+Strasbourg,Lucas Perrin,67.0,2.0,2.0,1.0,2.69,2.69,1.34,6.72,Supporting Progressor
+Argentina,Leandro Daniel Paredes,229.0,14.0,2.0,1.0,5.5,0.79,0.39,6.68,Progressive Passer
+Norway Women's,Julie Blakstad,256.0,6.0,7.0,6.0,2.11,2.46,2.11,6.68,Supporting Progressor
+Strasbourg,Frédéric Guilbert,81.0,1.0,0.0,5.0,1.11,0.0,5.56,6.67,Progression Outlet
+Saint-Étienne,Timothée Kolodziejczak,135.0,4.0,2.0,4.0,2.67,1.33,2.67,6.67,Supporting Progressor
+Portugal Women's,Tatiana Vanessa Ferreira Pinto,257.0,6.0,3.0,10.0,2.1,1.05,3.5,6.65,Supporting Progressor
+Ecuador,Pervis Josué Estupiñán Tenorio,285.0,7.0,6.0,8.0,2.21,1.89,2.53,6.629999999999999,Supporting Progressor
+Strasbourg,Ludovic Ajorque,68.0,0.0,0.0,5.0,0.0,0.0,6.62,6.62,Progression Outlet
+France Women's,Ella Palis,68.0,5.0,0.0,0.0,6.62,0.0,0.0,6.62,Progressive Passer
+Lille,Hatem Ben Arfa,68.0,2.0,2.0,1.0,2.65,2.65,1.32,6.62,Supporting Progressor
+Bordeaux,Rémi Oudin,68.0,0.0,2.0,3.0,0.0,2.65,3.97,6.62,Supporting Progressor
+Brazil,Marcos Aoás Corrêa,450.0,22.0,8.0,3.0,4.4,1.6,0.6,6.6,Progressive Passer
+France Women's,Sandie Toletti,369.0,15.0,2.0,10.0,3.66,0.49,2.44,6.59,Progressive Passer
+Qatar,Hassan Khalid Al Heidos,205.0,8.0,4.0,3.0,3.51,1.76,1.32,6.59,Progressive Passer
+East Bengal,Daniel Chima Chukwu,670.0,10.0,14.0,25.0,1.34,1.88,3.36,6.58,Supporting Progressor
+Kerala Blasters,Sahal Abdul Samad,1509.0,22.0,40.0,48.0,1.31,2.39,2.86,6.5600000000000005,Supporting Progressor
+Sweden Women's,Amanda Ilestedt,412.0,19.0,7.0,4.0,4.15,1.53,0.87,6.550000000000001,Progressive Passer
+Austria Women's,Barbara Dunst,358.0,4.0,12.0,10.0,1.01,3.02,2.51,6.54,Ball Carrier
+Ghana,Thomas Teye Partey,289.0,13.0,5.0,3.0,4.05,1.56,0.93,6.539999999999999,Progressive Passer
+Argentina,Nahuel Molina Lucero,592.0,14.0,12.0,17.0,2.13,1.82,2.58,6.53,Supporting Progressor
+Ecuador,Gonzalo Jordy Plata Jiménez,276.0,5.0,9.0,6.0,1.63,2.93,1.96,6.5200000000000005,Ball Carrier
+Netherlands Women's,Lineth Beerensteyn,221.0,1.0,8.0,7.0,0.41,3.26,2.85,6.52,Ball Carrier
+Tunisia,Ali Abdi,207.0,3.0,5.0,7.0,1.3,2.17,3.04,6.51,Supporting Progressor
+Rennes,Lovro Majer,83.0,1.0,3.0,2.0,1.08,3.25,2.17,6.5,Ball Carrier
+East Bengal,Thongkhosiem Haokip,679.0,8.0,18.0,23.0,1.06,2.39,3.05,6.5,Supporting Progressor
+Switzerland,Silvan Widmer,277.0,7.0,4.0,9.0,2.27,1.3,2.92,6.49,Supporting Progressor
+Cameroon,Jean-Eric Maxim Choupo-Moting,264.0,4.0,9.0,6.0,1.36,3.07,2.05,6.4799999999999995,Ball Carrier
+Goa,Saviour Gama,917.0,16.0,19.0,31.0,1.57,1.86,3.04,6.470000000000001,Supporting Progressor
+Hyderabad,Akash Mishra,2089.0,54.0,59.0,37.0,2.33,2.54,1.59,6.46,Supporting Progressor
+South Korea,Min Jae Kim,279.0,15.0,5.0,0.0,4.84,1.61,0.0,6.45,Progressive Passer
+Portugal,Rúben Diogo Da Silva Neves,266.0,13.0,3.0,3.0,4.4,1.02,1.02,6.4399999999999995,Progressive Passer
+Bengaluru,Sarthak Golui,56.0,3.0,0.0,1.0,4.82,0.0,1.61,6.430000000000001,Progressive Passer
+Nantes,Pedro Chirivella Burgos,182.0,13.0,0.0,0.0,6.43,0.0,0.0,6.43,Progressive Passer
+Australia,Nathaniel Atkinson,84.0,4.0,0.0,2.0,4.29,0.0,2.14,6.43,Progressive Passer
+Poland,Piotr Zieliński,336.0,14.0,7.0,3.0,3.75,1.88,0.8,6.43,Progressive Passer
+Saudi Arabia,Mohammed Kanoo,294.0,8.0,7.0,6.0,2.45,2.14,1.84,6.43,Supporting Progressor
+Rennes,Jonas Martin,169.0,8.0,4.0,0.0,4.26,2.13,0.0,6.39,Progressive Passer
+Australia,Keanu Baccus,127.0,1.0,3.0,5.0,0.71,2.13,3.54,6.38,Supporting Progressor
+Sweden Women's,Jonna Ann-Charlotte Andersson,198.0,4.0,2.0,8.0,1.82,0.91,3.64,6.37,Limited Progression
+Brazil,Fábio Henrique Tavares,99.0,6.0,1.0,0.0,5.45,0.91,0.0,6.36,Progressive Passer
+South Korea,In-Beom Hwang,353.0,15.0,7.0,3.0,3.82,1.78,0.76,6.359999999999999,Progressive Passer
+Iran,Ramin Rezaeian,199.0,3.0,4.0,7.0,1.36,1.81,3.17,6.34,Supporting Progressor
+Brazil,Pedro Guilherme Abreu dos Santos,71.0,1.0,0.0,4.0,1.27,0.0,5.07,6.34,Progression Outlet
+Mumbai City,Diego Maurício Machado de Brito,214.0,3.0,6.0,6.0,1.26,2.52,2.52,6.300000000000001,Supporting Progressor
+Bengaluru,Naorem Roshan Singh,1524.0,47.0,33.0,26.0,2.78,1.95,1.54,6.27,Supporting Progressor
+Switzerland,Granit Xhaka,374.0,18.0,7.0,1.0,4.33,1.68,0.24,6.25,Progressive Passer
+Paris Saint-Germain,Abdou Diallo,360.0,22.0,2.0,1.0,5.5,0.5,0.25,6.25,Progressive Passer
+Bengaluru,Damaitphang Lyngdoh,101.0,1.0,3.0,3.0,0.89,2.67,2.67,6.23,Supporting Progressor
+Morocco,Azzedine Ounahi,579.0,15.0,16.0,9.0,2.33,2.49,1.4,6.220000000000001,Supporting Progressor
+Uruguay,Giorgian Daniel De Arrascaeta Benedetti,116.0,3.0,1.0,4.0,2.33,0.78,3.1,6.210000000000001,Supporting Progressor
+Paris Saint-Germain,Ander Herrera Agüera,319.0,8.0,5.0,9.0,2.26,1.41,2.54,6.21,Supporting Progressor
+Portugal,João Maria Lobo Alves Palhinha Gonçalves,58.0,2.0,1.0,1.0,3.1,1.55,1.55,6.2,Progressive Passer
+Belgium,Timothy Castagne,276.0,15.0,2.0,2.0,4.89,0.65,0.65,6.19,Progressive Passer
+Ghana,Alidu Seidu,160.0,5.0,4.0,2.0,2.81,2.25,1.12,6.180000000000001,Supporting Progressor
+Brazil,Gabriel Fernando de Jesus,102.0,1.0,3.0,3.0,0.88,2.65,2.65,6.18,Supporting Progressor
+Wales,Ethan Ampadu,262.0,14.0,3.0,1.0,4.81,1.03,0.34,6.18,Progressive Passer
+Chennaiyin,Jerry Lalrinzuala,1593.0,29.0,37.0,43.0,1.64,2.09,2.43,6.16,Supporting Progressor
+France Women's,Wendie Renard,497.0,33.0,1.0,0.0,5.98,0.18,0.0,6.16,Progressive Passer
+United States,DeAndre Yedlin,44.0,1.0,1.0,1.0,2.05,2.05,2.05,6.1499999999999995,Supporting Progressor
+Jamshedpur,Ishan Pandita,440.0,2.0,10.0,18.0,0.41,2.05,3.68,6.140000000000001,Supporting Progressor
+Goa,Sanson Pereira,513.0,13.0,12.0,10.0,2.28,2.11,1.75,6.14,Supporting Progressor
+Mexico,Carlos Alberto Rodríguez Gómez,44.0,1.0,0.0,2.0,2.05,0.0,4.09,6.14,Progression Outlet
+Serbia,Nemanja Maksimović,132.0,7.0,1.0,1.0,4.77,0.68,0.68,6.129999999999999,Progressive Passer
+Chennaiyin,Keisham Reagan Singh,1222.0,29.0,27.0,27.0,2.14,1.99,1.99,6.12,Supporting Progressor
+Denmark Women's,Signe Kallesøe Bruun,118.0,2.0,2.0,4.0,1.53,1.53,3.05,6.109999999999999,Supporting Progressor
+Hyderabad,Javier Siverio Toro,1005.0,13.0,14.0,41.0,1.16,1.25,3.67,6.08,Limited Progression
+Mumbai City,Vinit Rai Chamling,252.0,11.0,4.0,2.0,3.93,1.43,0.71,6.07,Progressive Passer
+Denmark,Martin Braithwaite Christensen,104.0,0.0,1.0,6.0,0.0,0.87,5.19,6.0600000000000005,Progression Outlet
+Jamshedpur,Mohammad Mobashir Rahman,550.0,19.0,10.0,8.0,3.11,1.64,1.31,6.0600000000000005,Progressive Passer
+Lorient,Enzo Le Fée,178.0,4.0,2.0,6.0,2.02,1.01,3.03,6.0600000000000005,Supporting Progressor
+Croatia,Borna Barišić,119.0,2.0,2.0,4.0,1.51,1.51,3.03,6.05,Supporting Progressor
+Senegal,Pape Gueye,164.0,6.0,3.0,2.0,3.29,1.65,1.1,6.039999999999999,Progressive Passer
+Kerala Blasters,Nishu Kumar Tashni,494.0,8.0,6.0,19.0,1.46,1.09,3.46,6.01,Limited Progression
+Brazil,Lucas Tolentino Coelho de Lima,315.0,8.0,1.0,12.0,2.29,0.29,3.43,6.01,Supporting Progressor
+NorthEast United,Rochharzela Rochharzela,404.0,7.0,9.0,11.0,1.56,2.0,2.45,6.01,Supporting Progressor
+Montpellier,Arnaud Souquet,75.0,1.0,2.0,2.0,1.2,2.4,2.4,6.0,Supporting Progressor
+Italy Women's,Elisa Bartoli,225.0,7.0,5.0,3.0,2.8,2.0,1.2,6.0,Supporting Progressor
+Portugal Women's,Andreia Martins Faria,30.0,1.0,0.0,1.0,3.0,0.0,3.0,6.0,Supporting Progressor
+Strasbourg,Alexander Djiku,90.0,6.0,0.0,0.0,6.0,0.0,0.0,6.0,Progressive Passer
+Chennaiyin,Germanpreet Singh,855.0,25.0,15.0,17.0,2.63,1.58,1.79,6.0,Supporting Progressor
+Mexico,Luis Gerardo Chávez Magallón,285.0,12.0,4.0,3.0,3.79,1.26,0.95,6.0,Progressive Passer
+Argentina,Lautaro Javier Martínez,270.0,1.0,5.0,12.0,0.33,1.67,4.0,6.0,Supporting Progressor
+United States,Jesus Ferreira,45.0,1.0,0.0,2.0,2.0,0.0,4.0,6.0,Supporting Progressor
+Ecuador,Michael Steveen Estrada Martínez,225.0,5.0,2.0,8.0,2.0,0.8,3.2,6.0,Supporting Progressor
+Germany Women's,Felicitas Rauch,451.0,15.0,4.0,11.0,2.99,0.8,2.2,5.99,Supporting Progressor
+Paris Saint-Germain,Georginio Wijnaldum,919.0,26.0,9.0,26.0,2.55,0.88,2.55,5.9799999999999995,Supporting Progressor
+Italy Women's,Martina Rosucci,196.0,12.0,1.0,0.0,5.51,0.46,0.0,5.97,Progressive Passer
+Paris Saint-Germain,Thilo Kehrer,860.0,31.0,5.0,21.0,3.24,0.52,2.2,5.960000000000001,Progressive Passer
+Tunisia,Mohamed Dräger,136.0,2.0,2.0,5.0,1.32,1.32,3.31,5.95,Supporting Progressor
+Poland,Arkadiusz Milik,106.0,1.0,3.0,3.0,0.85,2.55,2.55,5.949999999999999,Supporting Progressor
+Argentina,Marcos Javier Acuña,394.0,7.0,6.0,13.0,1.6,1.37,2.97,5.94,Supporting Progressor
+England,Jordan Brian Henderson,273.0,8.0,3.0,7.0,2.64,0.99,2.31,5.9399999999999995,Supporting Progressor
+Hyderabad,Hitesh Sharma,653.0,32.0,4.0,7.0,4.41,0.55,0.96,5.92,Progressive Passer
+Costa Rica,Bryan Oviedo,259.0,3.0,5.0,9.0,1.04,1.74,3.13,5.91,Supporting Progressor
+Argentina,Exequiel Alejandro Palacios,61.0,3.0,1.0,0.0,4.43,1.48,0.0,5.91,Progressive Passer
+Lens,Arnaud Kalimuendo Muinga,137.0,1.0,5.0,3.0,0.66,3.28,1.97,5.91,Ball Carrier
+Belgium Women's,Féli Petra Delacauw,61.0,2.0,0.0,2.0,2.95,0.0,2.95,5.9,Supporting Progressor
+Spain,Marcos Llorente Moreno,122.0,4.0,1.0,3.0,2.95,0.74,2.21,5.9,Supporting Progressor
+Japan,Ao Tanaka,168.0,6.0,1.0,4.0,3.21,0.54,2.14,5.890000000000001,Progressive Passer
+England,Harry Maguire,445.0,21.0,8.0,0.0,4.25,1.62,0.0,5.87,Progressive Passer
+Wales,Kieffer Roberto Francisco Moore,245.0,2.0,4.0,10.0,0.73,1.47,3.67,5.87,Supporting Progressor
+Northern Ireland,Lauren Wade,261.0,3.0,7.0,7.0,1.03,2.41,2.41,5.8500000000000005,Supporting Progressor
+Iran,Mehdi Torabi,77.0,4.0,0.0,1.0,4.68,0.0,1.17,5.85,Progressive Passer
+Portugal,Matheus Luiz Nunes,77.0,0.0,3.0,2.0,0.0,3.51,2.34,5.85,Ball Carrier
+Morocco,Achraf Hakimi Mouh,647.0,11.0,14.0,17.0,1.53,1.95,2.36,5.84,Supporting Progressor
+Qatar,Abdulaziz Hatem Mohammed Abdullah,201.0,4.0,3.0,6.0,1.79,1.34,2.69,5.82,Supporting Progressor
+Belgium Women's,Laura Deloose,124.0,3.0,3.0,2.0,2.18,2.18,1.45,5.8100000000000005,Supporting Progressor
+Bordeaux,Enock Kwateng,93.0,1.0,4.0,1.0,0.97,3.87,0.97,5.81,Ball Carrier
+Saint-Étienne,Wahbi Khazri,93.0,2.0,3.0,1.0,1.94,2.9,0.97,5.81,Ball Carrier
+Uruguay,Luis Alberto Suárez Díaz,155.0,1.0,4.0,5.0,0.58,2.32,2.9,5.8,Supporting Progressor
+Brazil,Carlos Henrique Casimiro,406.0,20.0,1.0,5.0,4.43,0.22,1.11,5.76,Progressive Passer
+Netherlands Women's,Lynn Wilms,391.0,11.0,6.0,8.0,2.53,1.38,1.84,5.75,Supporting Progressor
+Jamshedpur,Komal Thatal,470.0,4.0,11.0,15.0,0.77,2.11,2.87,5.75,Supporting Progressor
+Nantes,Sébastien Corchia,63.0,1.0,1.0,2.0,1.43,1.43,2.86,5.72,Supporting Progressor
+Germany Women's,Lea Schüller,126.0,1.0,1.0,6.0,0.71,0.71,4.29,5.71,Progression Outlet
+Lens,Cheick Oumar Doucoure,174.0,9.0,2.0,0.0,4.66,1.03,0.0,5.69,Progressive Passer
+France,Adrien Rabiot,507.0,16.0,10.0,6.0,2.84,1.78,1.07,5.69,Supporting Progressor
+Goa,Princeton Rebello,981.0,38.0,14.0,10.0,3.49,1.28,0.92,5.69,Progressive Passer
+Serbia,Nemanja Gudelj,95.0,3.0,1.0,2.0,2.84,0.95,1.89,5.68,Supporting Progressor
+Senegal,Boulaye Dia,317.0,1.0,8.0,11.0,0.28,2.27,3.12,5.67,Supporting Progressor
+Austria Women's,Sarah Zadrazil,366.0,10.0,7.0,6.0,2.46,1.72,1.48,5.66,Supporting Progressor
+South Korea,Jae-Sung Lee,207.0,3.0,2.0,8.0,1.3,0.87,3.48,5.65,Limited Progression
+Spain,Daniel Carvajal Ramos,144.0,4.0,1.0,4.0,2.5,0.62,2.5,5.62,Supporting Progressor
+Lorient,Thomas Monconduit,176.0,11.0,0.0,0.0,5.62,0.0,0.0,5.62,Progressive Passer
+Bengaluru,Suresh Singh Wangjam,1320.0,38.0,22.0,22.0,2.59,1.5,1.5,5.59,Supporting Progressor
+Brazil,Daniel Alves da Silva,129.0,4.0,2.0,2.0,2.79,1.4,1.4,5.59,Supporting Progressor
+Chennaiyin,Nerijus Valskis,725.0,10.0,10.0,25.0,1.24,1.24,3.1,5.58,Limited Progression
+Iran,Ehsan Hajsafi,242.0,7.0,4.0,4.0,2.6,1.49,1.49,5.58,Supporting Progressor
+ATK Mohun Bagan,Ashutosh Mehta,1048.0,27.0,14.0,24.0,2.32,1.2,2.06,5.58,Supporting Progressor
+France,Randal Kolo Muani,195.0,0.0,4.0,8.0,0.0,1.85,3.69,5.54,Supporting Progressor
+Saudi Arabia,Firas Tariq Nasser Al Albirakan,277.0,2.0,8.0,7.0,0.65,2.6,2.27,5.52,Supporting Progressor
+Iran,Sadegh Moharrami,98.0,0.0,3.0,3.0,0.0,2.76,2.76,5.52,Supporting Progressor
+Portugal Women's,Joana Filipa Gaspar Silva Marchão,212.0,8.0,1.0,4.0,3.4,0.42,1.7,5.52,Progressive Passer
+Canada,Alistair Johnston,277.0,7.0,5.0,5.0,2.27,1.62,1.62,5.51,Supporting Progressor
+NorthEast United,Joe Zoherliana,686.0,15.0,10.0,17.0,1.97,1.31,2.23,5.51,Supporting Progressor
+Jamshedpur,Laldinliana Renthlei,1780.0,59.0,21.0,29.0,2.98,1.06,1.47,5.51,Supporting Progressor
+Poland,Jakub Kamiński,245.0,0.0,5.0,10.0,0.0,1.84,3.67,5.51,Supporting Progressor
+ATK Mohun Bagan,Subhasish Bose,1894.0,52.0,32.0,32.0,2.47,1.52,1.52,5.51,Supporting Progressor
+Clermont Foot,Mohamed Bayo,82.0,2.0,2.0,1.0,2.2,2.2,1.1,5.5,Supporting Progressor
+Ecuador,Moisés Isaac Caicedo Corozo,278.0,9.0,5.0,3.0,2.91,1.62,0.97,5.5,Supporting Progressor
+Kerala Blasters,Rahul Kannoly Praveen,279.0,5.0,5.0,7.0,1.61,1.61,2.26,5.48,Supporting Progressor
+Tunisia,Anis Ben Slimane,148.0,4.0,1.0,4.0,2.43,0.61,2.43,5.470000000000001,Supporting Progressor
+Australia,Fran Karačić,99.0,5.0,1.0,0.0,4.55,0.91,0.0,5.46,Progressive Passer
+WNT Finland,Ria Öling,198.0,3.0,3.0,6.0,1.36,1.36,2.73,5.45,Supporting Progressor
+Lorient,Laurent Abergel,182.0,5.0,5.0,1.0,2.47,2.47,0.49,5.430000000000001,Supporting Progressor
+Jamshedpur,Ricky Lallawmawma,1988.0,68.0,27.0,25.0,3.08,1.22,1.13,5.43,Progressive Passer
+Mumbai City,Amey Ganesh Ranawade,1078.0,19.0,24.0,22.0,1.59,2.0,1.84,5.43,Supporting Progressor
+Argentina,Nicolás Alejandro Tagliafico,382.0,4.0,2.0,17.0,0.94,0.47,4.01,5.42,Limited Progression
+Odisha,Isaac Vanmalsawma Chhakchhuak,1331.0,40.0,22.0,18.0,2.7,1.49,1.22,5.41,Supporting Progressor
+Denmark,Joachim Andersen,284.0,15.0,2.0,0.0,4.75,0.63,0.0,5.38,Progressive Passer
+Bordeaux,Jean Emile Junior Onana Onana,67.0,3.0,0.0,1.0,4.03,0.0,1.34,5.37,Progressive Passer
+Spain Women's,Irene Guerrero Sanmartín,67.0,1.0,1.0,2.0,1.34,1.34,2.69,5.37,Supporting Progressor
+Bengaluru,Muhammad Ashique Kuruniyan,1058.0,17.0,29.0,17.0,1.45,2.47,1.45,5.37,Supporting Progressor
+Brazil,Thiago Emiliano da Silva,403.0,22.0,2.0,0.0,4.91,0.45,0.0,5.36,Progressive Passer
+Netherlands Women's,Kerstin Yasmijn Casparij,168.0,7.0,1.0,2.0,3.75,0.54,1.07,5.36,Progressive Passer
+Argentina,Enzo Fernandez,590.0,21.0,6.0,8.0,3.2,0.92,1.22,5.34,Progressive Passer
+Mumbai City,Lalengmawia Ralte,1809.0,77.0,15.0,15.0,3.83,0.75,0.75,5.33,Progressive Passer
+Iran,Milad Mohammadi,203.0,0.0,5.0,7.0,0.0,2.22,3.1,5.32,Supporting Progressor
+East Bengal,Bikash Jairu,559.0,8.0,8.0,17.0,1.29,1.29,2.74,5.32,Limited Progression
+France,Aurélien Djani Tchouaméni,645.0,30.0,4.0,4.0,4.19,0.56,0.56,5.3100000000000005,Progressive Passer
+Germany Women's,Marina Hegering,492.0,25.0,4.0,0.0,4.57,0.73,0.0,5.300000000000001,Progressive Passer
+Stade de Reims,Bradley Locko,136.0,3.0,2.0,3.0,1.99,1.32,1.99,5.3,Supporting Progressor
+Stade de Reims,Martin Adeline,34.0,2.0,0.0,0.0,5.29,0.0,0.0,5.29,Progressive Passer
+Iceland Women's,Alexandra Jóhannsdóttir,34.0,0.0,0.0,2.0,0.0,0.0,5.29,5.29,Progression Outlet
+Costa Rica,Keysher Fuller Spence,255.0,3.0,4.0,8.0,1.06,1.41,2.82,5.289999999999999,Supporting Progressor
+Mumbai City,Igor Angulo Albóniga,1329.0,17.0,13.0,48.0,1.15,0.88,3.25,5.279999999999999,Limited Progression
+Saudi Arabia,Saleh Khalid Al Shehri,222.0,2.0,6.0,5.0,0.81,2.43,2.03,5.27,Supporting Progressor
+Brazil,Éder Gabriel Militão,359.0,12.0,4.0,5.0,3.01,1.0,1.25,5.26,Supporting Progressor
+Bengaluru,Bruno Edgar Silva Almeida,1763.0,73.0,15.0,14.0,3.73,0.77,0.71,5.21,Progressive Passer
+Poland,Krystian Bielik,225.0,10.0,3.0,0.0,4.0,1.2,0.0,5.2,Progressive Passer
+United States,Tyler Adams,381.0,14.0,7.0,1.0,3.31,1.65,0.24,5.2,Progressive Passer
+Croatia,Ante Budimir,52.0,0.0,0.0,3.0,0.0,0.0,5.19,5.19,Progression Outlet
+Switzerland,Eray Ervin Cömert,52.0,1.0,1.0,1.0,1.73,1.73,1.73,5.1899999999999995,Supporting Progressor
+Italy Women's,Arianna Caruso,156.0,4.0,2.0,3.0,2.31,1.15,1.73,5.1899999999999995,Supporting Progressor
+Paris Saint-Germain,Danilo Luís Hélio Pereira,1423.0,55.0,15.0,12.0,3.48,0.95,0.76,5.1899999999999995,Progressive Passer
+Hyderabad,João Victor de Albuquerque Bruno,1947.0,78.0,20.0,14.0,3.61,0.92,0.65,5.180000000000001,Progressive Passer
+Belgium Women's,Justine Vanhaevermaet,330.0,16.0,2.0,1.0,4.36,0.55,0.27,5.18,Progressive Passer
+Tunisia,Mohamed Ali Ben Romdhane,70.0,1.0,2.0,1.0,1.29,2.57,1.29,5.15,Supporting Progressor
+Italy Women's,Martina Piemonte,70.0,0.0,1.0,3.0,0.0,1.29,3.86,5.15,Limited Progression
+Metz,Didier Lamkel Zé,70.0,0.0,3.0,1.0,0.0,3.86,1.29,5.15,Ball Carrier
+Bengaluru,Danish Farooq Bhat,1158.0,28.0,17.0,21.0,2.18,1.32,1.63,5.13,Supporting Progressor
+Bengaluru,Rohit Kumar,211.0,7.0,3.0,2.0,2.99,1.28,0.85,5.12,Supporting Progressor
+Bordeaux,Marcelo Antônio Guedes Filho,88.0,4.0,1.0,0.0,4.09,1.02,0.0,5.109999999999999,Progressive Passer
+South Korea,Jin-Su Kim,336.0,3.0,5.0,11.0,0.8,1.34,2.95,5.09,Supporting Progressor
+Kerala Blasters,Soraisham Sandeep Singh,795.0,20.0,10.0,15.0,2.26,1.13,1.7,5.09,Supporting Progressor
+WNT Finland,Sanni Maija Franssi,177.0,1.0,5.0,4.0,0.51,2.54,2.03,5.08,Supporting Progressor
+Netherlands,Davy Klaassen,195.0,3.0,2.0,6.0,1.38,0.92,2.77,5.07,Limited Progression
+Tunisia,Ellyes Joris Skhiri,284.0,10.0,3.0,3.0,3.17,0.95,0.95,5.07,Progressive Passer
+NorthEast United,Laldanmawia Ralte,622.0,13.0,10.0,12.0,1.88,1.45,1.74,5.07,Supporting Progressor
+East Bengal,Amir Derviševič,481.0,19.0,5.0,3.0,3.56,0.94,0.56,5.0600000000000005,Progressive Passer
+France,Eduardo Camavinga,178.0,4.0,1.0,5.0,2.02,0.51,2.53,5.0600000000000005,Supporting Progressor
+Clermont Foot,Akim Zedadka,89.0,2.0,1.0,2.0,2.02,1.01,2.02,5.050000000000001,Supporting Progressor
+Lens,Jonathan Clauss,161.0,1.0,3.0,5.0,0.56,1.68,2.8,5.04,Supporting Progressor
+Ghana,Tariq Lamptey,107.0,1.0,3.0,2.0,0.84,2.52,1.68,5.04,Supporting Progressor
+Belgium,Amadou Onana,107.0,1.0,3.0,2.0,0.84,2.52,1.68,5.04,Supporting Progressor
+Denmark Women's,Rikke Marie Madsen,125.0,2.0,2.0,3.0,1.44,1.44,2.16,5.04,Supporting Progressor
+Germany Women's,Kathrin Julia Hendrich,521.0,18.0,10.0,1.0,3.11,1.73,0.17,5.01,Progressive Passer
+Stade de Reims,Moreto Moro Cassamã,90.0,2.0,2.0,1.0,2.0,2.0,1.0,5.0,Supporting Progressor
+Clermont Foot,Johan Gastien,90.0,3.0,1.0,1.0,3.0,1.0,1.0,5.0,Supporting Progressor
+Troyes,Abdu Conté,90.0,2.0,1.0,2.0,2.0,1.0,2.0,5.0,Supporting Progressor
+Troyes,Florian Tardieu,90.0,4.0,1.0,0.0,4.0,1.0,0.0,5.0,Progressive Passer
+Iceland Women's,Hallbera Guðný Gísladóttir,234.0,10.0,2.0,1.0,3.85,0.77,0.38,5.0,Progressive Passer
+Montpellier,Sacha Delaye,72.0,1.0,1.0,2.0,1.25,1.25,2.5,5.0,Limited Progression
+Canada,Jonathan Osorio,126.0,2.0,3.0,2.0,1.43,2.14,1.43,5.0,Supporting Progressor
+Spain,Aymeric Laporte,306.0,12.0,5.0,0.0,3.53,1.47,0.0,5.0,Progressive Passer
+England,Declan Rice,435.0,20.0,3.0,1.0,4.14,0.62,0.21,4.97,Progressive Passer
+Mexico,Edson Omar Álvarez Velázquez,181.0,4.0,6.0,0.0,1.99,2.98,0.0,4.97,Ball Carrier
+Costa Rica,Celso Borges Mora,254.0,12.0,0.0,2.0,4.25,0.0,0.71,4.96,Progressive Passer
+Germany,Leon Goretzka,164.0,2.0,2.0,5.0,1.1,1.1,2.74,4.94,Limited Progression
+Uruguay,Matías Vecino Falero,201.0,8.0,2.0,1.0,3.58,0.9,0.45,4.930000000000001,Progressive Passer
+South Korea,Kang-In Lee,165.0,5.0,4.0,0.0,2.73,2.18,0.0,4.91,Supporting Progressor
+Tunisia,Dylan Daniel Mahmoud Bronn,165.0,4.0,1.0,4.0,2.18,0.55,2.18,4.91,Supporting Progressor
+Metz,Pape Matar Sarr,92.0,3.0,1.0,1.0,2.93,0.98,0.98,4.890000000000001,Supporting Progressor
+WNT Finland,Essi Sainio,166.0,4.0,3.0,2.0,2.17,1.63,1.08,4.88,Supporting Progressor
+Northern Ireland,Kirsty McGuinness,185.0,1.0,6.0,3.0,0.49,2.92,1.46,4.87,Ball Carrier
+Odisha,Daniel Lalhlimpuia,240.0,3.0,3.0,7.0,1.12,1.12,2.62,4.86,Limited Progression
+AS Monaco,Myron Boadu,37.0,0.0,0.0,2.0,0.0,0.0,4.86,4.86,Progression Outlet
+Portugal Women's,Ana Borges,260.0,5.0,1.0,8.0,1.73,0.35,2.77,4.85,Limited Progression
+Troyes,Renaud Ripart,93.0,2.0,2.0,1.0,1.94,1.94,0.97,4.85,Supporting Progressor
+France Women's,Aïssatou Tounkara,186.0,10.0,0.0,0.0,4.84,0.0,0.0,4.84,Progressive Passer
+Odisha,Paul Ramfangzauva,429.0,13.0,5.0,5.0,2.73,1.05,1.05,4.83,Supporting Progressor
+England,Kyle Walker,242.0,7.0,1.0,5.0,2.6,0.37,1.86,4.83,Supporting Progressor
+Mumbai City,Mandar Rao Desai,951.0,15.0,13.0,23.0,1.42,1.23,2.18,4.83,Limited Progression
+Netherlands Women's,Aniek Nouwen,112.0,6.0,0.0,0.0,4.82,0.0,0.0,4.82,Progressive Passer
+Iceland Women's,Berglind Björg Þorvaldsdóttir,224.0,3.0,1.0,8.0,1.21,0.4,3.21,4.82,Limited Progression
+Australia,Riley McGree,261.0,5.0,2.0,7.0,1.72,0.69,2.41,4.82,Limited Progression
+Bengaluru,Banana Yaya,243.0,9.0,3.0,1.0,3.33,1.11,0.37,4.8100000000000005,Progressive Passer
+Bordeaux,Ui-Jo Hwang,75.0,0.0,1.0,3.0,0.0,1.2,3.6,4.8,Limited Progression
+Australia,Ajdin Hrustic,75.0,0.0,1.0,3.0,0.0,1.2,3.6,4.8,Limited Progression
+Lille,Reinildo Isnard Mandava,94.0,1.0,1.0,3.0,0.96,0.96,2.87,4.79,Limited Progression
+Metz,Vincent Pajot,94.0,1.0,2.0,2.0,0.96,1.91,1.91,4.78,Supporting Progressor
+Lyon,Malo Gusto,94.0,2.0,1.0,2.0,1.91,0.96,1.91,4.78,Supporting Progressor
+Lyon,Emerson Palmieri dos Santos,94.0,0.0,3.0,2.0,0.0,2.87,1.91,4.78,Ball Carrier
+Switzerland Women's,Géraldine Reuteler,245.0,2.0,5.0,6.0,0.73,1.84,2.2,4.7700000000000005,Supporting Progressor
+Denmark,Andreas Christensen,283.0,12.0,3.0,0.0,3.82,0.95,0.0,4.77,Progressive Passer
+England Women's,Millie Bright,548.0,25.0,3.0,1.0,4.11,0.49,0.16,4.760000000000001,Progressive Passer
+Switzerland Women's,Eseosa Aigbogun,208.0,4.0,5.0,2.0,1.73,2.16,0.87,4.76,Supporting Progressor
+Belgium,Romelu Lukaku Menama,57.0,0.0,0.0,3.0,0.0,0.0,4.74,4.74,Progression Outlet
+Denmark Women's,Kathrine Møller Kühl,95.0,3.0,1.0,1.0,2.84,0.95,0.95,4.74,Supporting Progressor
+Norway Women's,Vilde Bøe Risa,95.0,3.0,1.0,1.0,2.84,0.95,0.95,4.74,Supporting Progressor
+Mexico,Orbelín Pineda Alvarado,76.0,1.0,1.0,2.0,1.18,1.18,2.37,4.73,Limited Progression
+England,John Stones,456.0,18.0,6.0,0.0,3.55,1.18,0.0,4.7299999999999995,Progressive Passer
+South Korea,Heung-Min Son,381.0,4.0,7.0,9.0,0.94,1.65,2.13,4.72,Supporting Progressor
+Qatar,Assim Omer Al Haj Madibo,153.0,6.0,1.0,1.0,3.53,0.59,0.59,4.71,Progressive Passer
+Chennaiyin,Jobby Justin,153.0,2.0,0.0,6.0,1.18,0.0,3.53,4.71,Limited Progression
+Uruguay,Sebastián Coates Nión,191.0,7.0,1.0,2.0,3.3,0.47,0.94,4.709999999999999,Progressive Passer
+Poland,Bartosz Bereszyński,347.0,5.0,4.0,9.0,1.3,1.04,2.33,4.67,Limited Progression
+Morocco,Yahia Attiyat allah,328.0,3.0,5.0,9.0,0.82,1.37,2.47,4.66,Supporting Progressor
+East Bengal,Naocha Huidrom Singh,389.0,6.0,6.0,8.0,1.39,1.39,1.85,4.63,Supporting Progressor
+Bengaluru,Iman Basafa,234.0,6.0,4.0,2.0,2.31,1.54,0.77,4.62,Supporting Progressor
+Netherlands,Teun Koopmeiners,234.0,8.0,3.0,1.0,3.08,1.15,0.38,4.61,Progressive Passer
+Northern Ireland,Marissa Callaghan,215.0,1.0,5.0,5.0,0.42,2.09,2.09,4.6,Supporting Progressor
+Germany Women's,Sara Doorsoun-Khajeh,118.0,3.0,3.0,0.0,2.29,2.29,0.0,4.58,Supporting Progressor
+Canada,Atiba Hutchinson,157.0,6.0,1.0,1.0,3.44,0.57,0.57,4.58,Progressive Passer
+Switzerland Women's,Sandy Mändly,197.0,3.0,3.0,4.0,1.37,1.37,1.83,4.57,Supporting Progressor
+Cameroon,Ngoran Suiru Fai Collins,278.0,7.0,5.0,2.0,2.27,1.62,0.65,4.54,Supporting Progressor
+France,Jules Koundé,496.0,11.0,8.0,6.0,2.0,1.45,1.09,4.54,Supporting Progressor
+Portugal,Kléper Laveran Lima Ferreira,379.0,17.0,2.0,0.0,4.04,0.47,0.0,4.51,Progressive Passer
+South Korea,Woo-Young Jung,319.0,13.0,1.0,2.0,3.67,0.28,0.56,4.51,Progressive Passer
+Japan,Daizen Maeda,180.0,2.0,3.0,4.0,1.0,1.5,2.0,4.5,Supporting Progressor
+Paris Saint-Germain,Presnel Kimpembe,1727.0,69.0,8.0,9.0,3.6,0.42,0.47,4.49,Progressive Passer
+France Women's,Griedge Mbock Bathy Nka,301.0,12.0,3.0,0.0,3.59,0.9,0.0,4.49,Progressive Passer
+Iran,Ali Gholizadeh,201.0,3.0,2.0,5.0,1.34,0.9,2.24,4.48,Limited Progression
+NorthEast United,Hernán Daniel Santana Trujillo,1571.0,50.0,18.0,10.0,2.86,1.03,0.57,4.46,Supporting Progressor
+Wales,Daniel James,162.0,1.0,2.0,5.0,0.56,1.11,2.78,4.45,Limited Progression
+France,Raphaël Varane,507.0,15.0,10.0,0.0,2.66,1.78,0.0,4.44,Supporting Progressor
+Stade de Reims,Yunis Abdelhamid,183.0,5.0,4.0,0.0,2.46,1.97,0.0,4.43,Supporting Progressor
+East Bengal,Lalrinliana Hnamte,938.0,16.0,15.0,15.0,1.54,1.44,1.44,4.42,Supporting Progressor
+Sweden Women's,Sara Caroline Seger,224.0,8.0,1.0,2.0,3.21,0.4,0.8,4.41,Progressive Passer
+NorthEast United,Gurjinder Kumar,1347.0,28.0,18.0,20.0,1.87,1.2,1.34,4.41,Limited Progression
+Marseille,Luan Peres Petroni,184.0,7.0,1.0,1.0,3.42,0.49,0.49,4.4,Progressive Passer
+Poland,Przemysław Frankowski,246.0,1.0,3.0,8.0,0.37,1.1,2.93,4.4,Limited Progression
+Portugal Women's,Dolores Isabel Jacome Silva,205.0,7.0,1.0,2.0,3.07,0.44,0.88,4.39,Progressive Passer
+Portugal,William Silva de Carvalho,226.0,9.0,1.0,1.0,3.58,0.4,0.4,4.38,Progressive Passer
+Stade de Reims,Jens-Lys Michel Cajuste,62.0,2.0,0.0,1.0,2.9,0.0,1.45,4.35,Supporting Progressor
+Marseille,Boubacar Kamara,166.0,7.0,0.0,1.0,3.8,0.0,0.54,4.34,Progressive Passer
+Denmark Women's,Sofie Svava,104.0,1.0,3.0,1.0,0.87,2.6,0.87,4.34,Supporting Progressor
+Netherlands,Wout Weghorst,104.0,1.0,1.0,3.0,0.87,0.87,2.6,4.34,Limited Progression
+Tunisia,Aïssa Bilal Laïdouni,249.0,6.0,3.0,3.0,2.17,1.08,1.08,4.33,Supporting Progressor
+France,Axel Disasi,104.0,2.0,1.0,2.0,1.73,0.87,1.73,4.33,Limited Progression
+Denmark Women's,Rikke Læntver Sevecke,272.0,10.0,3.0,0.0,3.31,0.99,0.0,4.3,Progressive Passer
+Clermont Foot,Saîf-Eddine Khaoui,63.0,0.0,1.0,2.0,0.0,1.43,2.86,4.29,Supporting Progressor
+Morocco,Walid Cheddira,63.0,0.0,2.0,1.0,0.0,2.86,1.43,4.29,Ball Carrier
+Ecuador,Angelo Smit Preciado Quiñónez,272.0,5.0,3.0,5.0,1.65,0.99,1.65,4.289999999999999,Limited Progression
+Croatia,Nikola Vlašić,211.0,1.0,5.0,4.0,0.43,2.13,1.71,4.27,Supporting Progressor
+Goa,Aibanbha Kupar Dohling,1375.0,26.0,23.0,16.0,1.7,1.51,1.05,4.26,Supporting Progressor
+Austria Women's,Laura Wienroither,274.0,4.0,4.0,5.0,1.31,1.31,1.64,4.26,Limited Progression
+NorthEast United,Mohammed Irshad,784.0,16.0,8.0,13.0,1.84,0.92,1.49,4.25,Limited Progression
+East Bengal,Jackichand Singh,127.0,0.0,0.0,6.0,0.0,0.0,4.25,4.25,Progression Outlet
+Costa Rica,Gerson Torres Barrantes,64.0,0.0,2.0,1.0,0.0,2.81,1.41,4.22,Ball Carrier
+Belgium,Toby Alderweireld,277.0,10.0,2.0,1.0,3.25,0.65,0.32,4.22,Progressive Passer
+Cameroon,Nouhou Tolo,278.0,7.0,1.0,5.0,2.27,0.32,1.62,4.21,Supporting Progressor
+WNT Finland,Linda Sällström,236.0,1.0,5.0,5.0,0.38,1.91,1.91,4.2,Supporting Progressor
+Costa Rica,Anthony Daniel Contreras Enríquez,129.0,0.0,2.0,4.0,0.0,1.4,2.79,4.1899999999999995,Supporting Progressor
+Germany Women's,Lena Oberdorf,473.0,15.0,4.0,3.0,2.85,0.76,0.57,4.180000000000001,Supporting Progressor
+France,Dayotchanculle Upamecano,495.0,19.0,4.0,0.0,3.45,0.73,0.0,4.18,Progressive Passer
+Belgium Women's,Marie Minnaert,173.0,2.0,2.0,4.0,1.04,1.04,2.08,4.16,Limited Progression
+Northern Ireland,Demi Vance,260.0,3.0,4.0,5.0,1.04,1.38,1.73,4.15,Supporting Progressor
+Serbia,Nikola Milenković,282.0,8.0,3.0,2.0,2.55,0.96,0.64,4.1499999999999995,Supporting Progressor
+Sweden Women's,Magdalena Lilly Eriksson,414.0,17.0,1.0,1.0,3.7,0.22,0.22,4.140000000000001,Progressive Passer
+Netherlands,Marten de Roon,196.0,5.0,0.0,4.0,2.3,0.0,1.84,4.14,Supporting Progressor
+ATK Mohun Bagan,Carl Gerard McHugh,1333.0,48.0,4.0,9.0,3.24,0.27,0.61,4.12,Progressive Passer
+Jamshedpur,PC Laldinpuia,284.0,9.0,2.0,2.0,2.85,0.63,0.63,4.11,Supporting Progressor
+Cameroon,Gaël Ondoua,44.0,2.0,0.0,0.0,4.09,0.0,0.0,4.09,Progressive Passer
+Paris Saint-Germain,Eric Junior Dina Ebimbe,66.0,2.0,0.0,1.0,2.73,0.0,1.36,4.09,Supporting Progressor
+ATK Mohun Bagan,Lenny Rodrigues,1013.0,34.0,5.0,7.0,3.02,0.44,0.62,4.08,Progressive Passer
+Cameroon,Pierre Kunde Malong,132.0,2.0,2.0,2.0,1.36,1.36,1.36,4.08,Supporting Progressor
+Croatia,Joško Gvardiol,707.0,21.0,9.0,2.0,2.67,1.15,0.25,4.07,Supporting Progressor
+Lorient,Ibrahima Koné,67.0,0.0,1.0,2.0,0.0,1.34,2.69,4.03,Supporting Progressor
+Austria Women's,Verena Hanshaw,357.0,4.0,7.0,5.0,1.01,1.76,1.26,4.03,Supporting Progressor
+Clermont Foot,Arial Benabent Mendy,90.0,1.0,1.0,2.0,1.0,1.0,2.0,4.0,Limited Progression
+Lille,Benjamin André,90.0,2.0,2.0,0.0,2.0,2.0,0.0,4.0,Supporting Progressor
+Norway Women's,Maria Thorisdottir,181.0,8.0,0.0,0.0,3.98,0.0,0.0,3.98,Progressive Passer
+East Bengal,Mohammed Rafique,1108.0,20.0,16.0,13.0,1.62,1.3,1.06,3.98,Limited Progression
+Portugal Women's,Fátima Alexandra Figueira Pinto,68.0,2.0,0.0,1.0,2.65,0.0,1.32,3.9699999999999998,Supporting Progressor
+Qatar,Almoez Ali Zainalabiddin Abdulla,227.0,1.0,3.0,6.0,0.4,1.19,2.38,3.9699999999999998,Limited Progression
+Australia,Jackson Irvine,363.0,9.0,3.0,4.0,2.23,0.74,0.99,3.96,Supporting Progressor
+Kerala Blasters,Jessel Carneiro,935.0,20.0,8.0,13.0,1.93,0.77,1.25,3.95,Supporting Progressor
+Croatia,Josip Stanišić,92.0,1.0,1.0,2.0,0.98,0.98,1.96,3.92,Limited Progression
+Iran,Karim Ansarifard,46.0,1.0,0.0,1.0,1.96,0.0,1.96,3.92,Supporting Progressor
+Marseille,William Saliba,184.0,8.0,0.0,0.0,3.91,0.0,0.0,3.91,Progressive Passer
+East Bengal,Balwant Singh,116.0,1.0,2.0,2.0,0.78,1.55,1.55,3.88,Supporting Progressor
+Qatar,Karim Boudiaf,186.0,5.0,1.0,2.0,2.42,0.48,0.97,3.87,Supporting Progressor
+Netherlands,Nathan Aké,491.0,8.0,8.0,5.0,1.47,1.47,0.92,3.86,Supporting Progressor
+Japan,Maya Yoshida,397.0,16.0,1.0,0.0,3.63,0.23,0.0,3.86,Progressive Passer
+Stade de Reims,Marshall Nyasha Munetsi,94.0,3.0,0.0,1.0,2.87,0.0,0.96,3.83,Supporting Progressor
+Qatar,Bassam Hisham Al Rawi,94.0,4.0,0.0,0.0,3.83,0.0,0.0,3.83,Progressive Passer
+Italy Women's,Elena Linari,282.0,9.0,3.0,0.0,2.87,0.96,0.0,3.83,Supporting Progressor
+Austria Women's,Sarah Puntigam,353.0,9.0,4.0,2.0,2.29,1.02,0.51,3.8200000000000003,Supporting Progressor
+Kerala Blasters,Ayush Adhikari,686.0,16.0,5.0,8.0,2.1,0.66,1.05,3.8100000000000005,Supporting Progressor
+Uruguay,Mathías Olivera Miramontes,260.0,1.0,6.0,4.0,0.35,2.08,1.38,3.81,Supporting Progressor
+East Bengal,Darren Sidoel,663.0,11.0,5.0,12.0,1.49,0.68,1.63,3.8,Limited Progression
+Senegal,Nampalys Mendy,285.0,9.0,3.0,0.0,2.84,0.95,0.0,3.79,Supporting Progressor
+Mexico,Jesús Daniel Gallardo Vasconcelos,285.0,4.0,3.0,5.0,1.26,0.95,1.58,3.79,Limited Progression
+Paris Saint-Germain,Marcos Aoás Corrêa,2189.0,80.0,10.0,2.0,3.29,0.41,0.08,3.7800000000000002,Progressive Passer
+Hyderabad,Mark Zothanpuia,72.0,3.0,0.0,0.0,3.75,0.0,0.0,3.75,Progressive Passer
+Saudi Arabia,Abdulelah Al Amri,192.0,7.0,1.0,0.0,3.28,0.47,0.0,3.75,Progressive Passer
+Denmark,Victor Nelsson,96.0,4.0,0.0,0.0,3.75,0.0,0.0,3.75,Progressive Passer
+Morocco,Sofyan Amrabat,676.0,22.0,6.0,0.0,2.93,0.8,0.0,3.7300000000000004,Supporting Progressor
+Iran,Ahmad Nourollahi,218.0,5.0,2.0,2.0,2.06,0.83,0.83,3.72,Supporting Progressor
+Kerala Blasters,Sanjeev Stalin,532.0,10.0,5.0,7.0,1.69,0.85,1.18,3.7199999999999998,Limited Progression
+Tunisia,Ali Maâloul,97.0,3.0,0.0,1.0,2.78,0.0,0.93,3.71,Supporting Progressor
+Netherlands Women's,Sherida Spitse,389.0,12.0,3.0,1.0,2.78,0.69,0.23,3.6999999999999997,Supporting Progressor
+Hyderabad,Souvik Chakrabarti,975.0,27.0,6.0,7.0,2.49,0.55,0.65,3.69,Supporting Progressor
+Iran,Morteza Pouraliganji,293.0,11.0,0.0,1.0,3.38,0.0,0.31,3.69,Progressive Passer
+Goa,Lalhmangaihsanga Ralte,122.0,5.0,0.0,0.0,3.69,0.0,0.0,3.69,Progressive Passer
+Ecuador,Carlos Armando Gruezo Arboleda,49.0,1.0,1.0,0.0,1.84,1.84,0.0,3.68,Supporting Progressor
+Uruguay,José María Giménez de Vargas,294.0,9.0,3.0,0.0,2.76,0.92,0.0,3.6799999999999997,Supporting Progressor
+Belgium Women's,Laura De Neve,245.0,8.0,2.0,0.0,2.94,0.73,0.0,3.67,Supporting Progressor
+Iran,Mohammad Hossein Kanani Zadegan,49.0,2.0,0.0,0.0,3.67,0.0,0.0,3.67,Progressive Passer
+Kerala Blasters,Jeakson Singh Thaunaojam,1655.0,52.0,7.0,8.0,2.83,0.38,0.44,3.65,Supporting Progressor
+Goa,Glan Martins,840.0,26.0,6.0,2.0,2.79,0.64,0.21,3.64,Supporting Progressor
+Lille,Amadou Onana,99.0,1.0,2.0,1.0,0.91,1.82,0.91,3.64,Supporting Progressor
+Ghana,Jordan Ayew,148.0,0.0,3.0,3.0,0.0,1.82,1.82,3.64,Supporting Progressor
+WNT Finland,Emmi Alanen,272.0,5.0,4.0,2.0,1.65,1.32,0.66,3.63,Supporting Progressor
+WNT Finland,Emma Wilhelmina Koivisto,224.0,1.0,4.0,4.0,0.4,1.61,1.61,3.62,Supporting Progressor
+Switzerland,Ricardo Iván Rodríguez Araya,372.0,6.0,2.0,7.0,1.45,0.48,1.69,3.62,Limited Progression
+Saudi Arabia,Abdullah Mohammed Madu,50.0,2.0,0.0,0.0,3.6,0.0,0.0,3.6,Progressive Passer
+Troyes,Ike Ugbo,75.0,0.0,1.0,2.0,0.0,1.2,2.4,3.5999999999999996,Limited Progression
+Qatar,Abdelkarim Hassan Al Haj Fadlalla,276.0,7.0,3.0,1.0,2.28,0.98,0.33,3.59,Supporting Progressor
+Belgium Women's,Davina Philtjens,326.0,4.0,1.0,8.0,1.1,0.28,2.21,3.59,Limited Progression
+OGC Nice,Dante Bonfim da Costa Santos,176.0,6.0,1.0,0.0,3.07,0.51,0.0,3.58,Progressive Passer
+Belgium,Jan Vertonghen,277.0,11.0,0.0,0.0,3.57,0.0,0.0,3.57,Progressive Passer
+Belgium Women's,Jody Vangheluwe,202.0,4.0,2.0,2.0,1.78,0.89,0.89,3.56,Limited Progression
+Belgium,Youri Tielemans,101.0,2.0,0.0,2.0,1.78,0.0,1.78,3.56,Limited Progression
+Costa Rica,Brandon Aguilera Zamora,101.0,1.0,0.0,3.0,0.89,0.0,2.67,3.56,Limited Progression
+Nantes,Samuel Moutoussamy,76.0,3.0,0.0,0.0,3.55,0.0,0.0,3.55,Progressive Passer
+Belgium,Axel Witsel,278.0,4.0,3.0,4.0,1.29,0.97,1.29,3.55,Limited Progression
+NorthEast United,Provat Lakra,1221.0,23.0,15.0,10.0,1.7,1.11,0.74,3.55,Limited Progression
+OGC Nice,Jordan Lotomba,102.0,3.0,1.0,0.0,2.65,0.88,0.0,3.53,Supporting Progressor
+Argentina,Cristian Gabriel Romero,560.0,19.0,3.0,0.0,3.05,0.48,0.0,3.53,Progressive Passer
+Montpellier,Matheus Soares Thuler,51.0,1.0,1.0,0.0,1.76,1.76,0.0,3.52,Supporting Progressor
+Senegal,Abdou Diallo,334.0,8.0,4.0,1.0,2.16,1.08,0.27,3.5100000000000002,Supporting Progressor
+South Korea,Jun-Ho Son,77.0,2.0,0.0,1.0,2.34,0.0,1.17,3.51,Supporting Progressor
+Switzerland Women's,Ana-Maria Crnogorčević,284.0,4.0,4.0,3.0,1.27,1.27,0.95,3.49,Limited Progression
+Goa,Anisa Anwar Ali,928.0,18.0,16.0,2.0,1.75,1.55,0.19,3.4899999999999998,Supporting Progressor
+Odisha,Lalruatthara Lalruatthara,882.0,14.0,11.0,9.0,1.43,1.12,0.92,3.4699999999999998,Limited Progression
+Goa,Iván Garrido González,1528.0,43.0,14.0,2.0,2.53,0.82,0.12,3.4699999999999998,Supporting Progressor
+Japan,Shogo Taniguchi,208.0,7.0,1.0,0.0,3.03,0.43,0.0,3.46,Progressive Passer
+Tunisia,Yassine Meriah,287.0,10.0,1.0,0.0,3.14,0.31,0.0,3.45,Progressive Passer
+Northern Ireland,Rebecca Holloway,183.0,4.0,3.0,0.0,1.97,1.48,0.0,3.45,Supporting Progressor
+Argentina,Gonzalo Ariel Montiel,131.0,2.0,1.0,2.0,1.37,0.69,1.37,3.43,Limited Progression
+Wales,Connor Roberts,210.0,4.0,0.0,4.0,1.71,0.0,1.71,3.42,Limited Progression
+Mumbai City,Rowllin Borges,53.0,2.0,0.0,0.0,3.4,0.0,0.0,3.4,Progressive Passer
+Netherlands Women's,Stephanie van der Gragt,399.0,13.0,0.0,2.0,2.93,0.0,0.45,3.3800000000000003,Supporting Progressor
+Ghana,Iñaki Williams Arthuer,267.0,1.0,4.0,5.0,0.34,1.35,1.69,3.38,Supporting Progressor
+Kerala Blasters,Lalthathanga Khawlhring,1704.0,43.0,11.0,10.0,2.27,0.58,0.53,3.38,Supporting Progressor
+Australia,Aaron Mooy,374.0,12.0,1.0,1.0,2.89,0.24,0.24,3.37,Supporting Progressor
+Saint-Étienne,Harold Moukoudi,80.0,2.0,1.0,0.0,2.25,1.12,0.0,3.37,Supporting Progressor
+Spain Women's,Laia Aleixandri López,161.0,3.0,1.0,2.0,1.68,0.56,1.12,3.3600000000000003,Limited Progression
+Croatia,Dejan Lovren,616.0,19.0,4.0,0.0,2.78,0.58,0.0,3.36,Supporting Progressor
+Argentina,Nicolás Hernán Otamendi,724.0,23.0,4.0,0.0,2.86,0.5,0.0,3.36,Supporting Progressor
+Iceland Women's,Sara Björk Gunnarsdóttir,215.0,5.0,1.0,2.0,2.09,0.42,0.84,3.3499999999999996,Supporting Progressor
+East Bengal,Rahul Kumar Paswan,55.0,0.0,0.0,2.0,0.0,0.0,3.27,3.27,Limited Progression
+Mexico,Héctor Miguel Herrera López,166.0,3.0,1.0,2.0,1.63,0.54,1.08,3.25,Limited Progression
+ATK Mohun Bagan,Deepak Tangri,1248.0,26.0,7.0,12.0,1.88,0.5,0.87,3.25,Supporting Progressor
+Italy Women's,Manuela Giugliano,139.0,4.0,0.0,1.0,2.59,0.0,0.65,3.2399999999999998,Supporting Progressor
+Wales,Aaron Ramsey,278.0,4.0,1.0,5.0,1.29,0.32,1.62,3.2300000000000004,Limited Progression
+Portugal Women's,Diana Catarina Ribeiro Gomes,279.0,9.0,1.0,0.0,2.9,0.32,0.0,3.2199999999999998,Supporting Progressor
+Mexico,Héctor Alfredo Moreno Herrera,282.0,7.0,2.0,1.0,2.23,0.64,0.32,3.19,Supporting Progressor
+Iran,Saeid Ezatolahi Afagh,227.0,5.0,2.0,1.0,1.98,0.79,0.4,3.17,Supporting Progressor
+Bengaluru,Parag Satish Shrivas,851.0,15.0,6.0,9.0,1.59,0.63,0.95,3.17,Limited Progression
+Nantes,Kalifa Coulibaly,57.0,1.0,0.0,1.0,1.58,0.0,1.58,3.16,Limited Progression
+Iceland Women's,Dagný Brynjarsdóttir,285.0,6.0,1.0,3.0,1.89,0.32,0.95,3.16,Supporting Progressor
+ATK Mohun Bagan,José Luis Espinosa Arroyo,1552.0,46.0,7.0,1.0,2.67,0.41,0.06,3.14,Supporting Progressor
+Ghana,Salis Abdul Samed,258.0,6.0,2.0,1.0,2.09,0.7,0.35,3.14,Supporting Progressor
+Saint-Étienne,Lucas Gourna-Douath,86.0,3.0,0.0,0.0,3.14,0.0,0.0,3.14,Progressive Passer
+Tunisia,Montassar Omar Talbi,287.0,6.0,2.0,2.0,1.88,0.63,0.63,3.1399999999999997,Supporting Progressor
+WNT Finland,Adelina Engman,115.0,1.0,1.0,2.0,0.78,0.78,1.57,3.13,Limited Progression
+Saint-Étienne,Mahdi Camara,173.0,5.0,1.0,0.0,2.6,0.52,0.0,3.12,Supporting Progressor
+Kerala Blasters,Harmanjot Singh Khabra,1706.0,26.0,13.0,20.0,1.37,0.69,1.06,3.12,Limited Progression
+Jamshedpur,Jitendra Singh,1536.0,34.0,10.0,9.0,1.99,0.59,0.53,3.1100000000000003,Supporting Progressor
+Chennaiyin,Ariel Borysiuk,1220.0,39.0,3.0,0.0,2.88,0.22,0.0,3.1,Supporting Progressor
+South Korea,Gue-Sung Cho,291.0,1.0,2.0,7.0,0.31,0.62,2.16,3.09,Limited Progression
+East Bengal,Wahengbam Angousana Luwang,873.0,17.0,8.0,5.0,1.75,0.82,0.52,3.09,Limited Progression
+Mumbai City,Rahul Bheke,1661.0,40.0,7.0,10.0,2.17,0.38,0.54,3.09,Supporting Progressor
+Montpellier,Joris Chotard,88.0,3.0,0.0,0.0,3.07,0.0,0.0,3.07,Progressive Passer
+Norway Women's,Guro Bergsvand,147.0,4.0,1.0,0.0,2.45,0.61,0.0,3.06,Supporting Progressor
+Saudi Arabia,Riyadh Sharahili,59.0,1.0,1.0,0.0,1.53,1.53,0.0,3.06,Supporting Progressor
+East Bengal,Daniel Gomes,59.0,1.0,1.0,0.0,1.53,1.53,0.0,3.06,Supporting Progressor
+France,Olivier Giroud,472.0,3.0,1.0,12.0,0.57,0.19,2.29,3.05,Limited Progression
+Lens,Christopher Wooh,89.0,1.0,2.0,0.0,1.01,2.02,0.0,3.0300000000000002,Supporting Progressor
+Morocco,Zakaria Aboukhlal,89.0,0.0,2.0,1.0,0.0,2.02,1.01,3.0300000000000002,Supporting Progressor
+AS Monaco,Aurélien Djani Tchouaméni,89.0,3.0,0.0,0.0,3.03,0.0,0.0,3.03,Progressive Passer
+Lorient,Vincent Le Goff,179.0,3.0,1.0,2.0,1.51,0.5,1.01,3.0199999999999996,Limited Progression
+Qatar,Pedro Miguel Correia,269.0,3.0,2.0,4.0,1.0,0.67,1.34,3.01,Limited Progression
+Austria Women's,Carina Wenninger,360.0,9.0,3.0,0.0,2.25,0.75,0.0,3.0,Supporting Progressor
+Senegal,Pathé Ismaël Ciss,150.0,4.0,1.0,0.0,2.4,0.6,0.0,3.0,Supporting Progressor
+South Korea,Ui-Jo Hwang,120.0,0.0,0.0,4.0,0.0,0.0,3.0,3.0,Limited Progression
+Senegal,Famara Diedhiou,90.0,1.0,0.0,2.0,1.0,0.0,2.0,3.0,Limited Progression
+NorthEast United,Pragyan Sundar Gogoi,723.0,14.0,4.0,6.0,1.74,0.5,0.75,2.99,Limited Progression
+England Women's,Ellen White,331.0,1.0,3.0,7.0,0.27,0.82,1.9,2.9899999999999998,Limited Progression
+Saint-Étienne,Falaye Sacko,91.0,0.0,2.0,1.0,0.0,1.98,0.99,2.9699999999999998,Supporting Progressor
+Poland,Matty Cash,364.0,3.0,4.0,5.0,0.74,0.99,1.24,2.9699999999999998,Limited Progression
+Odisha,Lalhrezuala Sailung,608.0,10.0,3.0,7.0,1.48,0.44,1.04,2.96,Limited Progression
+Uruguay,Diego Roberto Godín Leal,152.0,4.0,0.0,1.0,2.37,0.0,0.59,2.96,Supporting Progressor
+NorthEast United,Ngasepam Tondonba Singh,429.0,4.0,6.0,4.0,0.84,1.26,0.84,2.94,Limited Progression
+Bordeaux,Josuha Guilavogui,92.0,3.0,0.0,0.0,2.93,0.0,0.0,2.93,Supporting Progressor
+Lyon,Maxence Caqueret,92.0,3.0,0.0,0.0,2.93,0.0,0.0,2.93,Supporting Progressor
+France,Ibrahima Konaté,308.0,9.0,1.0,0.0,2.63,0.29,0.0,2.92,Supporting Progressor
+Switzerland,Denis Lemi Zakaria Lako Lado,62.0,0.0,1.0,1.0,0.0,1.45,1.45,2.9,Supporting Progressor
+England,Trent Alexander-Arnold,31.0,1.0,0.0,0.0,2.9,0.0,0.0,2.9,Supporting Progressor
+Australia,Awer Mabil,31.0,0.0,0.0,1.0,0.0,0.0,2.9,2.9,Limited Progression
+Japan,Ko Itakura,279.0,7.0,1.0,1.0,2.26,0.32,0.32,2.8999999999999995,Supporting Progressor
+Switzerland,Nico Elvedi,187.0,2.0,4.0,0.0,0.96,1.93,0.0,2.8899999999999997,Supporting Progressor
+Ghana,Daniel Amartey,283.0,5.0,3.0,1.0,1.59,0.95,0.32,2.86,Limited Progression
+Qatar,Boualem Khoukhi,284.0,6.0,2.0,1.0,1.9,0.63,0.32,2.8499999999999996,Supporting Progressor
+Serbia,Filip Mladenović,64.0,1.0,0.0,1.0,1.41,0.0,1.41,2.82,Limited Progression
+WNT Finland,Heidi Kollanen,64.0,0.0,1.0,1.0,0.0,1.41,1.41,2.82,Supporting Progressor
+Brazil,Alex Nicolao Telles,64.0,2.0,0.0,0.0,2.81,0.0,0.0,2.81,Supporting Progressor
+Northern Ireland,Abbie Magee,129.0,2.0,2.0,0.0,1.4,1.4,0.0,2.8,Supporting Progressor
+Odisha,Sahil Panwar,1158.0,25.0,5.0,6.0,1.94,0.39,0.47,2.8,Supporting Progressor
+Morocco,Noussair Mazraoui,355.0,2.0,2.0,7.0,0.51,0.51,1.77,2.79,Limited Progression
+Ghana,Mohamed Salisu,293.0,5.0,4.0,0.0,1.54,1.23,0.0,2.77,Limited Progression
+Netherlands,Matthijs de Ligt,98.0,2.0,1.0,0.0,1.84,0.92,0.0,2.7600000000000002,Limited Progression
+Northern Ireland,Rachel Furness,230.0,5.0,1.0,1.0,1.96,0.39,0.39,2.74,Supporting Progressor
+East Bengal,Hira Mondal,1408.0,18.0,11.0,14.0,1.15,0.7,0.89,2.7399999999999998,Limited Progression
+Japan,Takehiro Tomiyasu,197.0,5.0,1.0,0.0,2.28,0.46,0.0,2.7399999999999998,Supporting Progressor
+Costa Rica,Álvaro Zamora,33.0,1.0,0.0,0.0,2.73,0.0,0.0,2.73,Supporting Progressor
+Belgium Women's,Julie Biesmans,363.0,6.0,3.0,2.0,1.49,0.74,0.5,2.73,Limited Progression
+Netherlands,Virgil van Dijk,497.0,14.0,1.0,0.0,2.54,0.18,0.0,2.72,Supporting Progressor
+Jamshedpur,Pronay Halder,993.0,24.0,2.0,4.0,2.18,0.18,0.36,2.72,Supporting Progressor
+Nantes,Dennis Appiah,133.0,2.0,1.0,1.0,1.35,0.68,0.68,2.7100000000000004,Limited Progression
+Morocco,Youssef En-Nesyri,537.0,2.0,4.0,10.0,0.34,0.67,1.68,2.69,Limited Progression
+Odisha,Sebastian Thangmuansang,234.0,3.0,2.0,2.0,1.15,0.77,0.77,2.69,Limited Progression
+Belgium Women's,Sari Kees,371.0,9.0,2.0,0.0,2.18,0.49,0.0,2.67,Supporting Progressor
+Metz,Amadou Salif Mbengue,34.0,0.0,1.0,0.0,0.0,2.65,0.0,2.65,Supporting Progressor
+Morocco,Selim Amallah,410.0,2.0,2.0,8.0,0.44,0.44,1.76,2.64,Limited Progression
+Denmark Women's,Sofie Junge Pedersen,273.0,5.0,1.0,2.0,1.65,0.33,0.66,2.64,Limited Progression
+Qatar,Mohammed Muntari,68.0,1.0,0.0,1.0,1.32,0.0,1.32,2.64,Limited Progression
+WNT Finland,Elli Pikkujämsä,272.0,4.0,3.0,1.0,1.32,0.99,0.33,2.64,Limited Progression
+Costa Rica,Yeltsin Ignacio Tejeda Valverde,274.0,7.0,0.0,1.0,2.3,0.0,0.33,2.63,Supporting Progressor
+Saint-Étienne,Zaydou Youssouf,103.0,0.0,2.0,1.0,0.0,1.75,0.87,2.62,Supporting Progressor
+Mexico,César Jasib Montes Castro,277.0,6.0,2.0,0.0,1.95,0.65,0.0,2.6,Supporting Progressor
+Hyderabad,Khassa Camara,278.0,6.0,1.0,1.0,1.94,0.32,0.32,2.5799999999999996,Supporting Progressor
+Odisha,Hendry Antonay,816.0,11.0,5.0,7.0,1.21,0.55,0.77,2.5300000000000002,Limited Progression
+Odisha,Vinit Rai Chamling,570.0,15.0,1.0,0.0,2.37,0.16,0.0,2.5300000000000002,Supporting Progressor
+Stade de Reims,Wout Faes,178.0,4.0,1.0,0.0,2.02,0.51,0.0,2.5300000000000002,Supporting Progressor
+ATK Mohun Bagan,Pritam Kotal,1995.0,31.0,10.0,15.0,1.4,0.45,0.68,2.53,Limited Progression
+Norway Women's,Tuva Hansen,214.0,3.0,1.0,2.0,1.26,0.42,0.84,2.52,Limited Progression
+Wales,Chris Mepham,286.0,7.0,1.0,0.0,2.2,0.31,0.0,2.5100000000000002,Supporting Progressor
+Marseille,Duje Ćaleta-Car,179.0,4.0,1.0,0.0,2.01,0.5,0.0,2.51,Supporting Progressor
+Poland,Krzysztof Piątek,36.0,0.0,1.0,0.0,0.0,2.5,0.0,2.5,Supporting Progressor
+England,Eric Dier,36.0,1.0,0.0,0.0,2.5,0.0,0.0,2.5,Supporting Progressor
+Switzerland,Fabian Rieder,72.0,0.0,1.0,1.0,0.0,1.25,1.25,2.5,Limited Progression
+Lorient,Houboulang Mendes,180.0,2.0,2.0,1.0,1.0,1.0,0.5,2.5,Limited Progression
+Mexico,Henry Josué Martín Mex,146.0,0.0,1.0,3.0,0.0,0.62,1.85,2.47,Limited Progression
+Stade de Reims,Andreaw Gravillon,182.0,3.0,2.0,0.0,1.48,0.99,0.0,2.4699999999999998,Limited Progression
+South Korea,Young-Gwon Kim,367.0,9.0,1.0,0.0,2.21,0.25,0.0,2.46,Supporting Progressor
+Cameroon,Jean-Charles Castelletto,184.0,3.0,2.0,0.0,1.47,0.98,0.0,2.45,Limited Progression
+Kerala Blasters,Marko Lešković,1952.0,49.0,4.0,0.0,2.26,0.18,0.0,2.44,Supporting Progressor
+NorthEast United,Sehnaj Singh,665.0,14.0,1.0,3.0,1.89,0.14,0.41,2.44,Supporting Progressor
+Costa Rica,Ronald Alberto Matarrita Ulate,37.0,0.0,1.0,0.0,0.0,2.43,0.0,2.43,Supporting Progressor
+Switzerland Women's,Coumba Sow,260.0,2.0,2.0,3.0,0.69,0.69,1.04,2.42,Limited Progression
+Ecuador,Jhegson Sebastián Méndez Carabalí,186.0,5.0,0.0,0.0,2.42,0.0,0.0,2.42,Supporting Progressor
+Senegal,Pape Abou Cissé,112.0,3.0,0.0,0.0,2.41,0.0,0.0,2.41,Supporting Progressor
+Switzerland,Haris Seferović,75.0,1.0,0.0,1.0,1.2,0.0,1.2,2.4,Limited Progression
+Costa Rica,Francisco Javier Calvo Quesada,189.0,4.0,1.0,0.0,1.9,0.48,0.0,2.38,Supporting Progressor
+Odisha,Moirangthem Thoiba Singh,1295.0,23.0,7.0,4.0,1.6,0.49,0.28,2.37,Limited Progression
+Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,114.0,0.0,0.0,3.0,0.0,0.0,2.37,2.37,Limited Progression
+OGC Nice,Morgan Schneiderlin,114.0,2.0,0.0,1.0,1.58,0.0,0.79,2.37,Limited Progression
+Portugal,Rúben Santos Gato Alves Dias,382.0,10.0,0.0,0.0,2.36,0.0,0.0,2.36,Supporting Progressor
+Serbia,Dušan Vlahović,76.0,0.0,1.0,1.0,0.0,1.18,1.18,2.36,Limited Progression
+Marseille,Arkadiusz Milik,77.0,0.0,0.0,2.0,0.0,0.0,2.34,2.34,Limited Progression
+Iran,Alireza Jahanbakhsh,77.0,0.0,1.0,1.0,0.0,1.17,1.17,2.34,Limited Progression
+Australia,Mitchell Thomas Duke,270.0,3.0,3.0,1.0,1.0,1.0,0.33,2.33,Limited Progression
+France,William Saliba,39.0,1.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
+East Bengal,Franjo Prce,1260.0,24.0,5.0,3.0,1.71,0.36,0.21,2.28,Limited Progression
+France Women's,Charlotte Bilbault,434.0,7.0,3.0,1.0,1.45,0.62,0.21,2.28,Limited Progression
+NorthEast United,Gani Ahmed Nigam,79.0,1.0,0.0,1.0,1.14,0.0,1.14,2.28,Limited Progression
+Switzerland,Edimilson Fernandes,159.0,1.0,0.0,3.0,0.57,0.0,1.7,2.27,Limited Progression
+Canada,Steven de Sousa Vitoria,280.0,7.0,0.0,0.0,2.25,0.0,0.0,2.25,Supporting Progressor
+WNT Finland,Olga Ahtinen,40.0,1.0,0.0,0.0,2.25,0.0,0.0,2.25,Supporting Progressor
+Australia,Jason Cummings,40.0,0.0,0.0,1.0,0.0,0.0,2.25,2.25,Limited Progression
+East Bengal,Sourav Das,1377.0,24.0,8.0,2.0,1.57,0.52,0.13,2.2199999999999998,Limited Progression
+Montpellier,Valère Germain,41.0,1.0,0.0,0.0,2.2,0.0,0.0,2.2,Supporting Progressor
+Ghana,André Ayew Pelé,205.0,0.0,1.0,4.0,0.0,0.44,1.76,2.2,Limited Progression
+WNT Finland,Natalia Kuikka,205.0,5.0,0.0,0.0,2.2,0.0,0.0,2.2,Supporting Progressor
+Senegal,Kalidou Koulibaly,377.0,9.0,0.0,0.0,2.15,0.0,0.0,2.15,Supporting Progressor
+Costa Rica,Carlos Manuel Martínez Castro,42.0,0.0,0.0,1.0,0.0,0.0,2.14,2.14,Limited Progression
+Uruguay,Maximiliano Gómez González,42.0,0.0,1.0,0.0,0.0,2.14,0.0,2.14,Supporting Progressor
+Hyderabad,Juan Antonio González Fernández,1821.0,39.0,3.0,1.0,1.93,0.15,0.05,2.13,Supporting Progressor
+Mumbai City,Serigne Mourtada Fall,1690.0,35.0,3.0,2.0,1.86,0.16,0.11,2.13,Limited Progression
+Switzerland,Manuel Obafemi Akanji,382.0,8.0,1.0,0.0,1.88,0.24,0.0,2.12,Supporting Progressor
+Nantes,Jean-Charles Castelletto,172.0,2.0,2.0,0.0,1.05,1.05,0.0,2.1,Limited Progression
+Hyderabad,Nim Dorjee Tamang,734.0,10.0,3.0,4.0,1.23,0.37,0.49,2.09,Limited Progression
+Bengaluru,Wungngayam Muirang,262.0,2.0,2.0,2.0,0.69,0.69,0.69,2.07,Limited Progression
+Mumbai City,Mohamad Rakip,263.0,0.0,3.0,3.0,0.0,1.03,1.03,2.06,Limited Progression
+Poland,Sebastian Szymański,131.0,1.0,0.0,2.0,0.69,0.0,1.37,2.06,Limited Progression
+Iceland Women's,Gunnhildur Yrsa Jónsdóttir,175.0,2.0,0.0,2.0,1.03,0.0,1.03,2.06,Limited Progression
+Troyes,Rominigue Kouamé N''Guessan,88.0,1.0,1.0,0.0,1.02,1.02,0.0,2.04,Limited Progression
+Odisha,Víctor Mongil Adeva,1555.0,33.0,1.0,1.0,1.91,0.06,0.06,2.03,Supporting Progressor
+Iceland Women's,Guðrún Arnardóttir,180.0,4.0,0.0,0.0,2.0,0.0,0.0,2.0,Supporting Progressor
+Netherlands,Vincent Janssen,90.0,0.0,0.0,2.0,0.0,0.0,2.0,2.0,Limited Progression
+AS Monaco,Guillermo Alfonso Maripán Loaysa,90.0,1.0,1.0,0.0,1.0,1.0,0.0,2.0,Limited Progression
+Serbia,Milos Veljkovic,227.0,5.0,0.0,0.0,1.98,0.0,0.0,1.98,Supporting Progressor
+Saint-Étienne,Miguel Ángel Trauco Saavedra,91.0,1.0,1.0,0.0,0.99,0.99,0.0,1.98,Limited Progression
+WNT Finland,Juliette Kemppi,91.0,1.0,1.0,0.0,0.99,0.99,0.0,1.98,Limited Progression
+Lille,Tiago Emanuel Embaló Djaló,91.0,2.0,0.0,0.0,1.98,0.0,0.0,1.98,Supporting Progressor
+Bengaluru,Alan Henrique Costa,1596.0,30.0,5.0,0.0,1.69,0.28,0.0,1.97,Limited Progression
+OGC Nice,Mario Lemina,137.0,3.0,0.0,0.0,1.97,0.0,0.0,1.97,Supporting Progressor
+East Bengal,Amarjit Singh Kiyam Singh,1010.0,6.0,3.0,13.0,0.53,0.27,1.16,1.96,Limited Progression
+Cameroon,Enzo Ebosse,92.0,2.0,0.0,0.0,1.96,0.0,0.0,1.96,Supporting Progressor
+Iceland Women's,Sif Atladóttir,92.0,2.0,0.0,0.0,1.96,0.0,0.0,1.96,Supporting Progressor
+Nantes,Andrei Girotto,185.0,3.0,1.0,0.0,1.46,0.49,0.0,1.95,Limited Progression
+Morocco,Abdelhamid Sabiri,185.0,0.0,2.0,2.0,0.0,0.97,0.97,1.94,Limited Progression
+Hyderabad,Konsham Chinglensana Singh,1967.0,33.0,9.0,0.0,1.51,0.41,0.0,1.92,Limited Progression
+Canada,Kamal Miller,281.0,6.0,0.0,0.0,1.92,0.0,0.0,1.92,Supporting Progressor
+Ecuador,Piero Martín Hincapié Reyna,283.0,5.0,1.0,0.0,1.59,0.32,0.0,1.9100000000000001,Limited Progression
+Switzerland,Remo Freuler,329.0,4.0,1.0,2.0,1.09,0.27,0.55,1.9100000000000001,Limited Progression
+East Bengal,Raju Eknath Gaikwad,762.0,10.0,2.0,4.0,1.18,0.24,0.47,1.89,Limited Progression
+Lille,Miguel Ângelo da Silva Rocha,95.0,2.0,0.0,0.0,1.89,0.0,0.0,1.89,Supporting Progressor
+Poland,Grzegorz Krychowiak,336.0,5.0,1.0,1.0,1.34,0.27,0.27,1.8800000000000001,Limited Progression
+Portugal,António João Pereira Albuquerque Tavares Silva,96.0,2.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
+ATK Mohun Bagan,Bidyananda Singh Ningthoujam,48.0,1.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
+Iran,Seyed Majid Hosseini,289.0,6.0,0.0,0.0,1.87,0.0,0.0,1.87,Limited Progression
+NorthEast United,Zakaria Diallo,626.0,13.0,0.0,0.0,1.87,0.0,0.0,1.87,Limited Progression
+Saudi Arabia,Ali Al Hassan,49.0,0.0,0.0,1.0,0.0,0.0,1.84,1.84,Limited Progression
+Morocco,Abdessamad Ezzalzouli,99.0,0.0,1.0,1.0,0.0,0.91,0.91,1.82,Limited Progression
+Odisha,Nikhil Raj Murugesh Kumar,99.0,1.0,0.0,1.0,0.91,0.0,0.91,1.82,Limited Progression
+Kerala Blasters,Abdul Hakku Nediyodath,50.0,1.0,0.0,0.0,1.8,0.0,0.0,1.8,Limited Progression
+Ecuador,Jackson Gabriel Porozo Vernaza,101.0,1.0,1.0,0.0,0.89,0.89,0.0,1.78,Limited Progression
+Wales,Ben Davies,253.0,2.0,1.0,2.0,0.71,0.36,0.71,1.7799999999999998,Limited Progression
+Morocco,Romain Saïss,458.0,7.0,2.0,0.0,1.38,0.39,0.0,1.77,Limited Progression
+Poland,Jakub Piotr Kiwior,360.0,6.0,1.0,0.0,1.5,0.25,0.0,1.75,Limited Progression
+Norway Women's,Maren Nævdal Mjelde,259.0,5.0,0.0,0.0,1.74,0.0,0.0,1.74,Limited Progression
+Kerala Blasters,Moirangthem Givson Singh,106.0,2.0,0.0,0.0,1.7,0.0,0.0,1.7,Limited Progression
+East Bengal,Joyner Lourenco,693.0,7.0,3.0,3.0,0.91,0.39,0.39,1.69,Limited Progression
+Portugal Women's,Carole da Silva Costa,268.0,4.0,1.0,0.0,1.34,0.34,0.0,1.6800000000000002,Limited Progression
+Kerala Blasters,Enes Sipović,707.0,13.0,0.0,0.0,1.65,0.0,0.0,1.65,Limited Progression
+Metz,Boubacar Traore,55.0,1.0,0.0,0.0,1.64,0.0,0.0,1.64,Limited Progression
+Costa Rica,Youstin Delfin Salas Gómez,56.0,0.0,1.0,0.0,0.0,1.61,0.0,1.61,Supporting Progressor
+Saint-Étienne,Mickaël Nade,169.0,3.0,0.0,0.0,1.6,0.0,0.0,1.6,Limited Progression
+Netherlands Women's,Marisa Christiane Wilhelmina Olislagers,113.0,1.0,0.0,1.0,0.8,0.0,0.8,1.6,Limited Progression
+Brazil,Gleison Bremer Silva Nascimento,117.0,2.0,0.0,0.0,1.54,0.0,0.0,1.54,Limited Progression
+Lille,José Miguel da Rocha Fonte,176.0,3.0,0.0,0.0,1.53,0.0,0.0,1.53,Limited Progression
+Chennaiyin,Narayan Das,1726.0,18.0,7.0,4.0,0.94,0.37,0.21,1.52,Limited Progression
+WNT Finland,Eveliina Summanen,238.0,2.0,0.0,2.0,0.76,0.0,0.76,1.52,Limited Progression
+Denmark Women's,Simone Boye-Sørensen,119.0,0.0,1.0,1.0,0.0,0.76,0.76,1.52,Limited Progression
+Jamshedpur,Eli Sabia Filho,1419.0,19.0,4.0,1.0,1.21,0.25,0.06,1.52,Limited Progression
+Argentina,Germán Alejandro Pezzella,60.0,1.0,0.0,0.0,1.5,0.0,0.0,1.5,Limited Progression
+Saudi Arabia,Abdulelah Saad Hameed Al-Malki,186.0,2.0,0.0,1.0,0.97,0.0,0.48,1.45,Limited Progression
+Rennes,Warmed Omari,189.0,3.0,0.0,0.0,1.43,0.0,0.0,1.43,Limited Progression
+Kerala Blasters,Bijoy Varghese,453.0,7.0,0.0,0.0,1.39,0.0,0.0,1.39,Limited Progression
+NorthEast United,Patrick Flottmann,1228.0,16.0,3.0,0.0,1.17,0.22,0.0,1.39,Limited Progression
+Switzerland Women's,Rahel Kiwic,130.0,1.0,1.0,0.0,0.69,0.69,0.0,1.38,Limited Progression
+Switzerland Women's,Lia Wälti,266.0,3.0,1.0,0.0,1.02,0.34,0.0,1.36,Limited Progression
+Costa Rica,Óscar Esau Duarte Gaitán,273.0,4.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
+East Bengal,Subha Ghosh,68.0,0.0,0.0,1.0,0.0,0.0,1.32,1.32,Limited Progression
+Jamshedpur,Peter Hartley,1632.0,24.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
+France,Mattéo Guendouzi Olié,68.0,0.0,0.0,1.0,0.0,0.0,1.32,1.32,Limited Progression
+Saudi Arabia,Mohammed Al Burayk,68.0,0.0,1.0,0.0,0.0,1.32,0.0,1.32,Supporting Progressor
+Germany,Thilo Kehrer,69.0,1.0,0.0,0.0,1.3,0.0,0.0,1.3,Limited Progression
+Iceland Women's,Glódís Perla Viggósdóttir,277.0,4.0,0.0,0.0,1.3,0.0,0.0,1.3,Limited Progression
+Senegal,Cheikhou Kouyaté,70.0,0.0,1.0,0.0,0.0,1.29,0.0,1.29,Limited Progression
+Mumbai City,Mehtab Singh,980.0,12.0,1.0,1.0,1.1,0.09,0.09,1.2800000000000002,Limited Progression
+Ecuador,Felix Eduardo Torres Caicedo,284.0,4.0,0.0,0.0,1.27,0.0,0.0,1.27,Limited Progression
+Chennaiyin,Mohammad Sajid Dhot,498.0,7.0,0.0,0.0,1.27,0.0,0.0,1.27,Limited Progression
+ATK Mohun Bagan,Sandesh Jhingan,715.0,10.0,0.0,0.0,1.26,0.0,0.0,1.26,Limited Progression
+Switzerland,Fabian Lukas Schär,143.0,2.0,0.0,0.0,1.26,0.0,0.0,1.26,Limited Progression
+Wales,Joe Rodon,287.0,3.0,1.0,0.0,0.94,0.31,0.0,1.25,Limited Progression
+Bengaluru,Pratik Prabhakar Chaudhari,1164.0,11.0,5.0,0.0,0.85,0.39,0.0,1.24,Limited Progression
+Switzerland Women's,Luana Bühler,151.0,2.0,0.0,0.0,1.19,0.0,0.0,1.19,Limited Progression
+Australia,Aziz Eraltay Behich,382.0,3.0,2.0,0.0,0.71,0.47,0.0,1.18,Limited Progression
+Northern Ireland,Rebecca Mckenna,159.0,1.0,0.0,1.0,0.57,0.0,0.57,1.14,Limited Progression
+NorthEast United,Mashoor Shereef Thangalakath,1039.0,12.0,1.0,0.0,1.04,0.09,0.0,1.1300000000000001,Limited Progression
+Morocco,Jawad El Yamiq,316.0,3.0,1.0,0.0,0.85,0.28,0.0,1.13,Limited Progression
+Goa,Dylan Fox,561.0,6.0,1.0,0.0,0.96,0.16,0.0,1.1199999999999999,Limited Progression
+East Bengal,Ananta Tamang,84.0,1.0,0.0,0.0,1.07,0.0,0.0,1.07,Limited Progression
+Iceland Women's,Guðný Árnadóttir,84.0,0.0,0.0,1.0,0.0,0.0,1.07,1.07,Limited Progression
+Odisha,Héctor Rodas Ramírez,1186.0,14.0,0.0,0.0,1.06,0.0,0.0,1.06,Limited Progression
+Saint-Étienne,Yvann Macon,85.0,0.0,0.0,1.0,0.0,0.0,1.06,1.06,Limited Progression
+Jamshedpur,Narender Gahlot,851.0,9.0,1.0,0.0,0.95,0.11,0.0,1.06,Limited Progression
+Croatia,Josip Šutalo,86.0,1.0,0.0,0.0,1.05,0.0,0.0,1.05,Limited Progression
+East Bengal,Ankit Mukherjee,348.0,3.0,0.0,1.0,0.78,0.0,0.26,1.04,Limited Progression
+Northern Ireland,Julie Nelson,260.0,3.0,0.0,0.0,1.04,0.0,0.0,1.04,Limited Progression
+East Bengal,Adil Khan,863.0,7.0,2.0,1.0,0.73,0.21,0.1,1.04,Limited Progression
+Lens,Facundo Axel Medina,87.0,1.0,0.0,0.0,1.03,0.0,0.0,1.03,Limited Progression
+Lorient,Léo Pétrot,87.0,1.0,0.0,0.0,1.03,0.0,0.0,1.03,Limited Progression
+Morocco,Nayef Aguerd,352.0,4.0,0.0,0.0,1.02,0.0,0.0,1.02,Limited Progression
+Montpellier,Nicolas Louis Marcel Cozza,88.0,1.0,0.0,0.0,1.02,0.0,0.0,1.02,Limited Progression
+Clermont Foot,Jean-Claude Billong,88.0,0.0,1.0,0.0,0.0,1.02,0.0,1.02,Limited Progression
+Troyes,Giulian Biancone,88.0,0.0,0.0,1.0,0.0,0.0,1.02,1.02,Limited Progression
+Nantes,Nicolas Pallois,88.0,1.0,0.0,0.0,1.02,0.0,0.0,1.02,Limited Progression
+Metz,Boubakar Kouyate,89.0,1.0,0.0,0.0,1.01,0.0,0.0,1.01,Limited Progression
+Northern Ireland,Sarah Cathryn Ann Robson,270.0,2.0,1.0,0.0,0.67,0.33,0.0,1.0,Limited Progression
+Troyes,Xavier Chavalerin,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+Strasbourg,Gerzino Nyamsi,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+WNT Finland,Nora Heroum,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+East Bengal,Tomislav Mrčela,636.0,7.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+Lens,Jonathan Gradit,182.0,0.0,2.0,0.0,0.0,0.99,0.0,0.99,Limited Progression
+Iceland Women's,Elísa Vidarsdóttir,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+Cameroon,Nicolas Alexis Julio N'Koulou Ndoubena,181.0,2.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+Chennaiyin,Deepak Devrani,366.0,4.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
+Bordeaux,Stian Rode Gregersen,92.0,1.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
+Montpellier,Maxime Esteve,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
+Metz,Dylan Daniel Mahmoud Bronn,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
+Metz,Fali Candé,94.0,0.0,0.0,1.0,0.0,0.0,0.96,0.96,Limited Progression
+Lyon,Jason Denayer,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
+Rennes,Nayef Aguerd,187.0,2.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
+Cameroon,Christopher Wooh,95.0,0.0,1.0,0.0,0.0,0.95,0.0,0.95,Limited Progression
+Iceland Women's,Ingibjörg Sigurðardóttir,96.0,0.0,1.0,0.0,0.0,0.94,0.0,0.94,Limited Progression
+Tunisia,Nader Ghandri,97.0,1.0,0.0,0.0,0.93,0.0,0.0,0.93,Limited Progression
+Australia,Miloš Degenek,194.0,1.0,0.0,1.0,0.46,0.0,0.46,0.92,Limited Progression
+United States,Walker Zimmerman,299.0,3.0,0.0,0.0,0.9,0.0,0.0,0.9,Limited Progression
+Chennaiyin,Slavko Damjanović,1693.0,13.0,4.0,0.0,0.69,0.21,0.0,0.8999999999999999,Limited Progression
+South Korea,Kyung-Won Kwon,101.0,0.0,1.0,0.0,0.0,0.89,0.0,0.89,Limited Progression
+Kerala Blasters,Hormipam Ruivah,1146.0,9.0,1.0,1.0,0.71,0.08,0.08,0.8699999999999999,Limited Progression
+Chennaiyin,Salam Ranjan Singh,208.0,1.0,1.0,0.0,0.43,0.43,0.0,0.86,Limited Progression
+Argentina,Lisandro Martínez,317.0,3.0,0.0,0.0,0.85,0.0,0.0,0.85,Limited Progression
+Austria Women's,Viktoria Schnaderbeck,215.0,2.0,0.0,0.0,0.84,0.0,0.0,0.84,Limited Progression
+Cameroon,Samuel Yves Oum Gwet,108.0,0.0,0.0,1.0,0.0,0.0,0.83,0.83,Limited Progression
+Saudi Arabia,Ali Albulayhi,229.0,1.0,1.0,0.0,0.39,0.39,0.0,0.78,Limited Progression
+Australia,Harry Souttar,375.0,3.0,0.0,0.0,0.72,0.0,0.0,0.72,Limited Progression
+Denmark Women's,Stine Ballisager Pedersen,274.0,1.0,1.0,0.0,0.33,0.33,0.0,0.66,Limited Progression
+Odisha,Gaurav Bora,866.0,4.0,2.0,0.0,0.42,0.21,0.0,0.63,Limited Progression
+Austria Women's,Marina Georgieva,155.0,1.0,0.0,0.0,0.58,0.0,0.0,0.58,Limited Progression
+Kerala Blasters,Albino Gomes,322.0,1.0,0.0,1.0,0.28,0.0,0.28,0.56,Limited Progression
+WNT Finland,Anna Åsa Olivia Westerlund,180.0,1.0,0.0,0.0,0.5,0.0,0.0,0.5,Limited Progression
+Australia,Kye Rowles,367.0,2.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
+Poland,Kamil Glik,367.0,2.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
+Northern Ireland,Chloe Mccarron,184.0,0.0,0.0,1.0,0.0,0.0,0.49,0.49,Limited Progression
+NorthEast United,Jestin George,224.0,1.0,0.0,0.0,0.4,0.0,0.0,0.4,Limited Progression
+Costa Rica,Kendall Jamaal Waston Manley,231.0,0.0,0.0,1.0,0.0,0.0,0.39,0.39,Limited Progression
+Switzerland Women's,Viola Calligaris,279.0,1.0,0.0,0.0,0.32,0.0,0.0,0.32,Limited Progression
+Ghana,Lawrence Ati-Zigi,293.0,1.0,0.0,0.0,0.31,0.0,0.0,0.31,Limited Progression
+Goa,Mohamed Ali,318.0,1.0,0.0,0.0,0.28,0.0,0.0,0.28,Limited Progression
+Kerala Blasters,Prabhushkan Singh Gill,1781.0,2.0,0.0,0.0,0.1,0.0,0.0,0.1,Limited Progression
+Odisha,Nikhil Prabhu,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+WNT Finland,Anna Emlia Auvinen,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mexico,Érick Gabriel Gutiérrez Galaviz,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Matthieu Dreyer,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Austria Women's,Katharina Schiechtl,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+NorthEast United,William Lalnunfela,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Goa,Naveen Kumar,367.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iran,Roozbeh Cheshmi,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iran,Alireza Safar Beiranvand,107.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Alidu Seidu,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Doğan Alemdar,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cameroon,Devis Rogers Epassy Mboka,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mumbai City,Mohammad Nawaz,1539.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Salman Mohammed Al Faraj,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Northern Ireland,Kelsie Burrows,78.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+England,Kalvin Phillips,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Sven Botman,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+East Bengal,Sankar Roy,454.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Italy Women's,Laura Giuliani,280.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Mohammed Khalil Al Owais,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Badr Banoun,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mexico,José Andrés Guardado Hernández,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+England Women's,Mary Alexandra Earps,586.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Chennaiyin,Vishal Kaith,824.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Tunisia,Aymen Dahmen,289.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+WNT Finland,Katriina Talaslahti,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Poland,Wojciech Szczęsny,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+France Women's,Pauline Peyraud Magnin,479.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Odisha,Kamaljit Singh,1111.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+OGC Nice,Walter Daniel Benítez,178.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Stade de Reims,Predrag Rajković,179.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ghana,Alexander Djiku,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Etienne Green,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Montpellier,Dimitry Bertaud,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Qatar,Saad Abdullah Al Sheeb,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Alfred Benjamin Gomis,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Costa Rica,Keylor Navas Gamboa,284.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Brazil,Ederson Santana de Moraes,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland Women's,Sandrine Mauron,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Jamshedpur,Anas Edathodika,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Costa Rica,Bryan Ruiz González,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Achraf Dari,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Denmark Women's,Lene Christensen,267.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+South Korea,Seung-Gyu Kim,377.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Jamshedpur,Pawan Kumar,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Portugal,Diogo Meireles Costa,468.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mumbai City,Phurba Tempa Lachenpa,270.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bengaluru,Gurpreet Singh Sandhu,1373.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ecuador,Hernán Ismael Galíndez,262.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+NorthEast United,Mirshad Koottappunna,971.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Argentina,Damián Emiliano Martínez,704.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Qatar,Meshaal Aissa Barsham,185.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Serbia,Ivan Ilić,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Kerala Blasters,Yendrembam Denechandra Meitei,66.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nantes,Alban Lafont,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Denmark,Kasper Schmeichel,277.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Paris Saint-Germain,Keylor Navas Gamboa,1123.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Jean Lucas de Souza Oliveira,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Jamshedpur,Rehnesh Thumbirumbu Paramba,1810.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Arthur Desmas,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Odisha,Arshdeep Singh Saini,733.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ghana,Gideon Mensah,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Portugal Women's,Patricia Isabel Sousa Barros Morais,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Troyes,Jessy Moulin,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+France,Steve Mandanda,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mumbai City,Hmingthanmawia Ralte,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Canada,Mark Anthony Kaye,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Northern Ireland,Laura Rafferty,65.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lens,Jean-Louis Leca,184.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Netherlands Women's,Daphne van Domselaar,367.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Alexander Nübel,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Bilal El Khannous,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iran,Seyed Hossein Hosseini,164.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+England,Jordan Pickford,448.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Portugal Women's,Inês Teixeira Pereira,190.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Ismail Jakobs,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland Women's,Gaëlle Thalmann,281.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Canada,Milan Borjan,279.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Ivo Grbić,165.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Nelson Sissoko,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Julien Laporte,177.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Joseff Morrell,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ecuador,Alan Steven Franco Palma,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Belgium Women's,Nicky Evrard,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Austria Women's,Manuela Zinsberger,346.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Germany,Manuel Neuer,276.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+United States,Kellyn Kai Perry-Acosta,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+United States,Matthew Charles Turner,371.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cameroon,André Onana,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Australia,Mathew Ryan,366.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Italy Women's,Aurora Galli,44.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Serbia,Stefan Mitrović,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Paul Nardi,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Yohann Magnin,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Munir Mohand Mohamedi,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Croatia,Dominik Livaković,694.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Danny Ward,105.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Joe Allen,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland,Yann Sommer,265.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+ATK Mohun Bagan,Amrinder Singh,2011.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland,Gregor Kobel,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Brazil,Alisson Ramsés Becker,386.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Hassan Mohammed Al-Tambakti,197.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Northern Ireland,Nadine Caldwell,56.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bordeaux,Gaëtan Poussin,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Moritz Jenz,83.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Paris Saint-Germain,Gianluigi Donnarumma,1181.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+East Bengal,Suvam Sen,418.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Chennaiyin,Samik Mitra,88.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Germany Women's,Merle Frohms,568.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Netherlands,Andries Noppert,494.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Marseille,Pau López Sabata,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Belgium,Thibaut Courtois,267.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+OGC Nice,Jean-Clair Todibo,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Poland,Michał Skóraś,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Poland,Karol Świderski,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Paul Bernardoni,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Metz,Marc-Aurèle Caillard,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Goa,Dheeraj Singh Moirangthem,1363.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Eliaquim Mangala,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+NorthEast United,Subhasish Roy Chowdhury,834.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Senegal,Edouard Mendy,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Chennaiyin,Debjit Majumder,910.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Serbia,Vanja Milinković Savić,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Yassine Bounou,582.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+East Bengal,Arindam Bhattacharja,951.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+France,Hugo Lloris,591.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+WNT Finland,Tuija Annika Hyyrynen,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Strasbourg,Matz Sels,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Hyderabad,Gurmeet Singh,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Goa,Hrithik Tiwari,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iceland Women's,Sandra Sigurðardóttir,276.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Serhou Guirassy,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+ATK Mohun Bagan,Sumit Rathi,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Yasir Gharsan Al Shahrani,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lyon,Jérôme Boateng,64.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lens,Kevin Danso,142.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Troyes,Erik Palmer-Brown,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Metz,Sikou Niakate,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Wayne Hennessey,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland Women's,Svenja Fölmli,41.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland Women's,Noelle Maritz,282.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Hyderabad,Laxmikant Kattimani,2050.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Northern Ireland,Jacqueline Burns,273.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mexico,Francisco Guillermo Ochoa Magaña,281.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland Women's,Julia Stierli,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lyon,Anthony Lopes,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Spain Women's,Sandra Paños García-Villamil,382.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Costa Rica,Juan Pablo Vargas Campos,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Metz,Jean-Armel Kana-Biyik,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+WNT Finland,Tinja-Riikka Tellervo Korpela,179.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Argentina,Guido Rodríguez,55.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Norway Women's,Guro Pettersen,255.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Uruguay,Sergio Rochet Álvarez,285.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Spain,Unai Simón Mendibil,398.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland Women's,Nadine Riesen,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Sweden Women's,Rut Hedvig Lindahl,437.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bengaluru,Lara Sharma,450.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Japan,Shūichi Gonda,385.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression

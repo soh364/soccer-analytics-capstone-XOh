@@ -184,69 +184,9 @@ class TacticalClustering:
         }
     
     # In clustering_analysis.py, replace the characterize_archetypes method:
-
-    def characterize_archetypes(self, profiles_df, cluster_centers, labels, archetype_names=None):
-        """
-        Generate detailed archetype characterization.
-        
-        Args:
-            profiles_df: Original profiles DataFrame (pandas)
-            cluster_centers: Cluster centers DataFrame (pandas)
-            labels: Cluster labels
-            archetype_names: Optional dict mapping cluster_id to name
-            
-        Returns:
-            dict with characterization for each cluster
-        """
-        profiles_df = profiles_df.copy()
-        profiles_df['cluster'] = labels
-        
-        characterization = {}
-        k = len(np.unique(labels))
-        
-        for cluster_id in range(k):
-            cluster_teams = profiles_df[profiles_df['cluster'] == cluster_id].copy()
-            center = cluster_centers.iloc[cluster_id]
-            
-            # Calculate deviations from global mean
-            deviations = {}
-            for dim in self.dimensions:
-                global_mean = profiles_df[dim].mean()
-                global_std = profiles_df[dim].std()
-                cluster_mean = center[dim]
-                deviation = (cluster_mean - global_mean) / global_std
-                deviations[dim] = deviation
-            
-            # Top characteristics
-            top_high = sorted(deviations.items(), key=lambda x: x[1], reverse=True)[:3]
-            top_low = sorted(deviations.items(), key=lambda x: x[1])[:3]
-            
-            # Representative teams (closest to center) - FIX HERE
-            distances = []
-            for idx, row in cluster_teams.iterrows():
-                team_vector = row[self.dimensions].values.astype(float)
-                center_vector = center[self.dimensions].values.astype(float)
-                dist = np.sqrt(((team_vector - center_vector)**2).sum())
-                distances.append(dist)
-            
-            cluster_teams['dist_to_center'] = distances
-            representative = cluster_teams.nsmallest(5, 'dist_to_center')['team'].tolist()
-            
-            characterization[cluster_id] = {
-                'name': archetype_names[cluster_id] if archetype_names else f'Cluster {cluster_id}',
-                'size': len(cluster_teams),
-                'high_characteristics': top_high,
-                'low_characteristics': top_low,
-                'representative_teams': representative,
-                'all_teams': cluster_teams['team'].tolist(),
-                'center': center[self.dimensions].to_dict()
-            }
-        
-        return characterization
     
     def print_k_comparison(self, k_range=range(2, 9), random_state=42):
-        """Display k-selection metrics with a dedicated GMM Agreement column"""
-        from IPython.display import display, HTML
+        """Display k-selection metrics in clean text format"""
         from sklearn.mixture import GaussianMixture
         from sklearn.metrics import adjusted_rand_score
         from sklearn.cluster import KMeans
@@ -258,145 +198,89 @@ class TacticalClustering:
         # 2. Calculate GMM ARI for each k
         ari_scores = []
         for k in k_range:
-            # FIX: changed n_components to n_clusters
             km = KMeans(n_clusters=k, n_init=10, random_state=random_state)
             km_labels = km.fit_predict(self.scaled_data)
             
-            # GMM still uses n_components
             gmm = GaussianMixture(n_components=k, random_state=random_state)
             gmm_labels = gmm.fit_predict(self.scaled_data)
             
-            # Measure agreement
             ari = adjusted_rand_score(km_labels, gmm_labels)
             ari_scores.append(ari)
         
         results['gmm_ari'] = ari_scores
         
-        # 3. Identify optimal k for highlighting
+        # 3. Identify optimal k
         best_sil = results.loc[results['silhouette'].idxmax(), 'k']
         best_ch = results.loc[results['calinski_harabasz'].idxmax(), 'k']
         best_db = results.loc[results['davies_bouldin'].idxmin(), 'k']
         best_ari = results.loc[results['gmm_ari'].idxmax(), 'k']
         
-        # 4. Generate Table Rows
-        rows_html = ""
+        # 4. Print formatted table
+        print("\n" + "="*90)
+        print("K-SELECTION: TACTICAL IDENTITY CONVERGENCE")
+        print("="*90)
+        
+        # Header
+        print(f"{'k':<4} {'Inertia':<10} {'Silhouette':<12} {'Calinski':<12} {'DB Index':<12} {'GMM ARI':<12}")
+        print(f"{'':4} {'↓ (ELBOW)':<10} {'↑ (SEP)':<12} {'↑ (VAR)':<12} {'↓ (SIM)':<12} {'↑ (AGREE)':<12}")
+        print("-"*90)
+        
+        # Data rows
         for _, row in results.iterrows():
             k = int(row['k'])
             
-            def cell(val, fmt, is_best, color="#2d6a4f"):
-                bg = "background:#e8f5e9;" if is_best else ""
-                icon = " ✓" if is_best else ""
-                return f'<td class="value" style="{bg} color:{color};">{val:{fmt}}{icon}</td>'
+            # Add checkmarks for best values
+            sil_str = f"{row['silhouette']:.3f}" + (" ✓" if k == best_sil else "  ")
+            ch_str = f"{row['calinski_harabasz']:.2f}" + (" ✓" if k == best_ch else "  ")
+            db_str = f"{row['davies_bouldin']:.3f}" + (" ✓" if k == best_db else "  ")
+            ari_str = f"{row['gmm_ari']:.3f}" + (" ✓" if k == best_ari else "  ")
             
-            rows_html += f"""<tr>
-                <td class="metric">{k}</td>
-                <td class="value">{row['inertia']:.0f}</td>
-                {cell(row['silhouette'], '.3f', k == best_sil)}
-                {cell(row['calinski_harabasz'], '.2f', k == best_ch)}
-                {cell(row['davies_bouldin'], '.3f', k == best_db)}
-                {cell(row['gmm_ari'], '.3f', k == best_ari, color="#1a1a2e")}
-            </tr>"""
+            print(f"{k:<4} {row['inertia']:<10.0f} {sil_str:<12} {ch_str:<12} {db_str:<12} {ari_str:<12}")
         
-        # 5. Build Final HTML
-        html = f"""
-        <style>
-            .kt-container {{
-                max-width: 750px; /* Limits width so it doesn't stretch across the screen */
-                margin: 10px 0;   /* Aligns to the left with small vertical spacing */
-            }}
-            .kt {{ 
-                border-collapse:collapse; 
-                font-family:-apple-system,sans-serif; 
-                font-size:13px; 
-                width: 100%; /* Table fills the 750px container */
-                box-shadow: 0 1px 3px rgba(0,0,0,0.1);
-            }}
-            .kt th {{ background:#1a1a2e; color:white; padding:10px 14px; text-align:left; font-weight:600; }}
-            .kt td {{ padding:8px 14px; border-bottom:1px solid #e0e0e0; }}
-            .kt .metric {{ font-weight:700; color:#1a1a2e; text-align:center; background:#f8f9fa; }}
-            .kt .value {{ font-family:'SF Mono',monospace; font-weight:600; }}
-            .kt .dir {{ font-size:10px; color:#999; font-weight:400; display:block; margin-top:2px; }}
-        </style>
-        <div class="kt-container">
-            <h4 style="font-family:-apple-system,sans-serif; color:#1a1a2e; margin-bottom:10px;">
-                K-Selection: Tactical Identity Convergence (k={int(k_range[0])}–{int(k_range[-1])})
-            </h4>
-            <table class="kt">
-                <tr>
-                    <th>k</th>
-                    <th>Inertia <span class="dir">↓ (Elbow)</span></th>
-                    <th>Silhouette <span class="dir">↑ (Separation)</span></th>
-                    <th>Calinski <span class="dir">↑ (Variance)</span></th>
-                    <th>DB Index <span class="dir">↓ (Similarity)</span></th>
-                    <th style="background:#2d3436;">GMM ARI <span class="dir" style="color:#dfe6e9;">↑ (Agreement)</span></th>
-                </tr>
-                {rows_html}
-            </table>
-        </div>
-        """
-        display(HTML(html))
+        print("="*90)
+        
         return results
-        
-    def print_validation_summary(self, validation):
-            """Print formatted validation results as a clean table"""
-            from IPython.display import display, HTML
-            
-            # Main metrics table
-            rows = [
-                ("Silhouette Score", f"{validation['silhouette_avg']:.3f}", "-1 to +1 (higher = better)"),
-                ("Calinski-Harabasz Index", f"{validation['calinski_harabasz']:.2f}", "Higher = better-defined"),
-                ("Davies-Bouldin Index", f"{validation['davies_bouldin']:.3f}", "Lower = better (0 is perfect)"),
-                ("Variance Explained", f"{validation['variance_explained']:.1%}", "By k clusters"),
-                ("K-means vs GMM Agreement", f"{validation['kmeans_vs_gmm_ari']:.3f}", "ARI: 1.0 = perfect agreement"),
-            ]
-            
-            if validation.get('inertia'):
-                rows.insert(3, ("Inertia", f"{validation['inertia']:.2f}", "Within-cluster sum of squares"))
-            
-            if validation.get('kmeans_vs_hierarchical_ari'):
-                rows.append(("K-means vs Hierarchical", f"{validation['kmeans_vs_hierarchical_ari']:.3f}", "ARI: 1.0 = perfect agreement"))
-            
-            html = """
-            <style>
-                .val-table { border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 13px; width: 100%; }
-                .val-table th { background: #1a1a2e; color: white; padding: 10px 14px; text-align: left; font-weight: 600; }
-                .val-table td { padding: 8px 14px; border-bottom: 1px solid #e0e0e0; }
-                .val-table tr:hover { background: #f5f5f5; }
-                .val-table .metric { font-weight: 600; color: #1a1a2e; }
-                .val-table .value { font-family: 'SF Mono', monospace; font-size: 14px; font-weight: 700; color: #2d6a4f; }
-                .val-table .note { color: #666; font-size: 11px; }
-                .sil-table { border-collapse: collapse; font-family: -apple-system, sans-serif; font-size: 13px; margin-top: 12px; }
-                .sil-table th { background: #1a1a2e; color: white; padding: 8px 14px; text-align: left; }
-                .sil-table td { padding: 6px 14px; border-bottom: 1px solid #e0e0e0; font-family: 'SF Mono', monospace; }
-            </style>
-            <h4 style="font-family: -apple-system, sans-serif; color: #1a1a2e; margin-bottom: 8px;">Cluster Validation Summary</h4>
-            <table class="val-table">
-                <tr><th>Metric</th><th>Value</th><th>Interpretation</th></tr>
-            """
-            
-            for metric, value, note in rows:
-                html += f'<tr><td class="metric">{metric}</td><td class="value">{value}</td><td class="note">{note}</td></tr>'
-            
-            html += "</table>"
-            
-            # Silhouette by cluster
-            html += """
-            <h4 style="font-family: -apple-system, sans-serif; color: #1a1a2e; margin-top: 16px; margin-bottom: 8px;">Silhouette Score by Cluster</h4>
-            <table class="sil-table">
-                <tr><th>Cluster</th><th>Silhouette</th><th>Cohesion</th></tr>
-            """
-            
-            for cluster_id, sil in validation['silhouette_by_cluster'].items():
-                bar_width = int(sil * 300)
-                color = '#2d6a4f' if sil > 0.25 else '#e76f51' if sil > 0.15 else '#d62828'
-                bar = f'<div style="background:{color}; width:{bar_width}px; height:14px; border-radius:3px; display:inline-block;"></div>'
-                html += f'<tr><td style="font-weight:600;">Cluster {cluster_id}</td><td>{sil:.3f}</td><td>{bar}</td></tr>'
-            
-            html += "</table>"
-            
-            display(HTML(html))
 
+
+    def render_tactical_dna(self, clustering_results):
+        """
+        Renders all 8 tactical dimensions in a clean text table.
+        """
+        # Extract centers from the dictionary
+        centers = clustering_results['centers']
         
+        print("\n" + "="*110)
+        print("TACTICAL DNA: 8-DIMENSIONAL CLUSTER CENTERS")
+        print("="*110)
+        
+        # Header
+        print(f"{'Cluster':<10} {'D1:Press':<10} {'D2:Terr':<10} {'D3:Ctrl':<10} {'D4:Eff':<10} "
+            f"{'D5:Pos':<10} {'D6:Threat':<10} {'D7:Style':<10} {'D8:Build':<10} {'Size':<6}")
+        print("-"*110)
+        
+        # Data rows
+        for _, row in centers.iterrows():
+            cluster_id = f"Cluster {int(row['cluster'])}"
+            
+            print(f"{cluster_id:<10} "
+                f"{row['pressing_intensity']:<10.3f} "
+                f"{row['territorial_dominance']:<10.2f} "
+                f"{row['ball_control']:<10.2f} "
+                f"{row['possession_efficiency']:<10.4f} "
+                f"{row['defensive_positioning']:<10.3f} "
+                f"{row['attacking_threat']:<10.3f} "
+                f"{row['progression_style']:<10.3f} "
+                f"{row['buildup_quality']:<10.4f} "
+                f"n={int(row['size']):<4}")
+        
+        print("="*110)
+        
+        # Add dimension key
+        print("\nDIMENSION KEY:")
+        print("  D1: Pressing Intensity    | D2: Territorial Dominance | D3: Ball Control")
+        print("  D4: Possession Efficiency | D5: Defensive Positioning | D6: Attacking Threat")
+        print("  D7: Progression Style     | D8: Build-up Quality")
+        print()
 
     def print_archetype_summary(self, characterization, total_teams=None):
             """Display archetype characterization as styled HTML cards"""
@@ -405,7 +289,7 @@ class TacticalClustering:
             if total_teams is None:
                 total_teams = sum(c['size'] for c in characterization.values())
             # Archetype colors — use these consistently across all visuals
-            colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
+            colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01', 3: '#06A77D'}
 
             cards_html = ""
             for cluster_id, info in characterization.items():
@@ -477,3 +361,63 @@ class TacticalClustering:
             """
             
             display(HTML(html))
+
+    def characterize_archetypes(self, profiles_df, cluster_centers, labels, archetype_names=None):
+            """
+            Generate detailed archetype characterization.
+            
+            Args:
+                profiles_df: Original profiles DataFrame (pandas)
+                cluster_centers: Cluster centers DataFrame (pandas)
+                labels: Cluster labels
+                archetype_names: Optional dict mapping cluster_id to name
+                
+            Returns:
+                dict with characterization for each cluster
+            """
+            profiles_df = profiles_df.copy()
+            profiles_df['cluster'] = labels
+            
+            characterization = {}
+            k = len(np.unique(labels))
+            
+            for cluster_id in range(k):
+                cluster_teams = profiles_df[profiles_df['cluster'] == cluster_id].copy()
+                center = cluster_centers.iloc[cluster_id]
+                
+                # Calculate deviations from global mean
+                deviations = {}
+                for dim in self.dimensions:
+                    global_mean = profiles_df[dim].mean()
+                    global_std = profiles_df[dim].std()
+                    cluster_mean = center[dim]
+                    deviation = (cluster_mean - global_mean) / global_std
+                    deviations[dim] = deviation
+                
+                # Top characteristics
+                top_high = sorted(deviations.items(), key=lambda x: x[1], reverse=True)[:3]
+                top_low = sorted(deviations.items(), key=lambda x: x[1])[:3]
+                
+                # Representative teams (closest to center) - FIX HERE
+                distances = []
+                for idx, row in cluster_teams.iterrows():
+                    team_vector = row[self.dimensions].values.astype(float)
+                    center_vector = center[self.dimensions].values.astype(float)
+                    dist = np.sqrt(((team_vector - center_vector)**2).sum())
+                    distances.append(dist)
+                
+                cluster_teams['dist_to_center'] = distances
+                representative = cluster_teams.nsmallest(5, 'dist_to_center')['team'].tolist()
+                
+                characterization[cluster_id] = {
+                    'name': archetype_names[cluster_id] if archetype_names else f'Cluster {cluster_id}',
+                    'size': len(cluster_teams),
+                    'high_characteristics': top_high,
+                    'low_characteristics': top_low,
+                    'representative_teams': representative,
+                    'all_teams': cluster_teams['team'].tolist(),
+                    'center': center[self.dimensions].to_dict()
+                }
+            
+            return characterization
+    

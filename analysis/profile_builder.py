@@ -1,177 +1,127 @@
 """
-Build 12-dimensional tactical profiles from filtered metrics.
-Uses Polars for efficient aggregation.
+Build 8-dimensional team profiles from tournament metrics.
 """
 
 import polars as pl
-from typing import Dict
 
-def build_team_profile(metrics: Dict[str, pl.DataFrame], verbose: bool = True) -> pl.DataFrame:
+
+def build_team_profile_8d(metrics, verbose=True):
     """
-    Build 12-dimensional tactical profiles for all teams.
+    Build 8-dimensional team tactical profiles.
     
     Args:
-        metrics: Dictionary of filtered Polars DataFrames from TacticalDataLoader
-        verbose: Print progress messages
-    
+        metrics: Dict of polars DataFrames from load_tournament_data_8d()
+        verbose: Print progress
+        
     Returns:
-        Polars DataFrame with columns: ['team', 'dimension_1', ..., 'dimension_12']
+        polars DataFrame with 8 dimensions per team
     """
     
     if verbose:
-        print(f"\n{'='*60}")
-        print(f"BUILDING TEAM TACTICAL PROFILES")
-        print(f"{'='*60}\n")
+        print("\n" + "="*70)
+        print("BUILDING 8-DIMENSIONAL TEAM PROFILES")
+        print("="*70)
     
     # Get unique teams
-    teams = metrics['qual']['team'].unique().to_list()
+    teams = metrics['ppda']['team'].unique().sort()
     
     if verbose:
         print(f"Teams to profile: {len(teams)}")
     
-    # D1 & D2: From possession quality
-    d1_d2 = (
-        metrics['qual']
+    # D1: Pressing Intensity (inverse PPDA - lower PPDA = higher intensity)
+    d1 = (
+        metrics['ppda']
         .group_by('team')
         .agg([
-            pl.col('possession_pct').mean().alias('possession_dominance'),
-            pl.col('field_tilt_pct').mean().alias('territorial_control')
+            (1 / pl.col('ppda').mean()).alias('pressing_intensity')
         ])
     )
     
-    # D3: Possession efficiency (inverted EPR)
+    # D2: Territorial Dominance (field tilt %)
+    d2 = (
+        metrics['field_tilt']
+        .group_by('team')
+        .agg([
+            pl.col('field_tilt_pct').mean().alias('territorial_dominance')
+        ])
+    )
+    
+    # D3: Ball Control (possession %)
     d3 = (
-        metrics['eff']
+        metrics['possession_pct']
+        .group_by('team')
+        .agg([
+            pl.col('possession_pct').mean().alias('ball_control')
+        ])
+    )
+    
+    # D4: Possession Efficiency (inverse EPR - lower EPR = more efficient)
+    d4 = (
+        metrics['epr']
         .group_by('team')
         .agg([
             (1 / pl.col('epr').mean()).alias('possession_efficiency')
         ])
     )
     
-    # D4: Progression intensity
-    d4 = (
-        metrics['prog_summary']
-        .group_by('team')
-        .agg([
-            pl.col('progressive_actions').mean().alias('progression_intensity')
-        ])
-    )
-    
-    # D5: Progression method
+    # D5: Defensive Positioning (line height)
     d5 = (
-        metrics['prog_detail']
+        metrics['line_height']
         .group_by('team')
         .agg([
-            pl.col('progression_method_ratio').mean().alias('progression_method')
+            pl.col('defensive_line_height').mean().alias('defensive_positioning')
         ])
     )
     
-    # D6: Build-up complexity
+    # D6: Attacking Threat (total xG)
     d6 = (
-        metrics['xg_buildup']
+        metrics['xg']
         .group_by('team')
         .agg([
-            pl.col('avg_xg_per_buildup_possession').mean().alias('buildup_complexity')
+            pl.col('total_xg').mean().alias('attacking_threat')
         ])
     )
     
-    # D7: Offensive threat
+    # D7: Progression Style (pass-to-carry ratio)
     d7 = (
-        metrics['xg_total']
+        metrics['progression']
         .group_by('team')
         .agg([
-            pl.col('xg').mean().alias('offensive_threat')
+            (pl.col('progressive_passes').sum() / pl.col('progressive_carries').sum()).alias('progression_style')
         ])
     )
     
-    # D8: Tempo
+    # D8: Build-up Quality
     d8 = (
-        metrics['seq']
+        metrics['buildup']
         .group_by('team')
         .agg([
-            pl.col('avg_passes_per_sequence').mean().alias('tempo')
+            pl.col('avg_xg_per_buildup_possession').mean().alias('buildup_quality')
         ])
     )
     
-    # D9: Press intensity (inverted PPDA)
-    d9 = (
-        metrics['ppda']
-        .group_by('team')
-        .agg([
-            (1 / pl.col('ppda').mean()).alias('press_intensity')
-        ])
-    )
-    
-    # D10: Defensive line height
-    d10 = (
-        metrics['def_line']
-        .group_by('team')
-        .agg([
-            pl.col('defensive_line_height').mean().alias('defensive_line_height')
-        ])
-    )
-    
-    # D11: Press Effectiveness (ENHANCED with pressure success)
-    # Calculate turnover component
-    d11_turnovers = (
-        metrics['turnover']
-        .group_by('team')
-        .agg([
-            pl.col('final_third_turnovers').mean().alias('turnover_rate')
-        ])
-    )
-    
-    # Calculate pressure success component
-    d11_pressure = (
-        metrics['pressure']
-        .group_by('team')
-        .agg([
-            (pl.col('pressure_regains').sum() * 100.0 / 
-             pl.col('total_pressures').sum()).alias('pressure_success')
-        ])
-    )
-    
-    # Combine into press effectiveness
-    d11 = (
-        d11_turnovers
-        .join(d11_pressure, on='team', how='left')
-        .with_columns([
-            (
-                (pl.col('turnover_rate').clip(upper_bound=15) / 15.0) * 0.5 +
-                (pl.col('pressure_success') / 100.0) * 0.5
-            ).alias('press_effectiveness')
-        ])
-        .select(['team', 'press_effectiveness'])
-    )
-    
-    # D12: Counter speed
-    d12 = (
-        metrics['counter']
-        .group_by('team')
-        .agg([
-            pl.col('avg_speed_units_per_sec').mean().alias('counter_speed')
-        ])
-    )
-    
-    # Join all dimensions (Polars join is very fast)
+    # Join all dimensions (use LEFT joins to avoid duplicate columns)
     profile = (
-        d1_d2
+        d1
+        .join(d2, on='team', how='left')
         .join(d3, on='team', how='left')
         .join(d4, on='team', how='left')
         .join(d5, on='team', how='left')
         .join(d6, on='team', how='left')
         .join(d7, on='team', how='left')
         .join(d8, on='team', how='left')
-        .join(d9, on='team', how='left')
-        .join(d10, on='team', how='left')
-        .join(d11, on='team', how='left')
-        .join(d12, on='team', how='left')
     )
     
     if verbose:
         print(f"\n✓ Profiles created: {len(profile)} teams")
-        print(f"  Dimensions: {len(profile.columns) - 1}")
-        print(f"\nMissing data summary:")
-        print(profile.null_count())
+        print(f"  Dimensions: 8")
+        
+        # Check for missing data
+        null_counts = profile.null_count()
+        total_nulls = null_counts.select(pl.all().sum()).to_numpy()[0].sum()
+        
+        if total_nulls > 0:
+            print("\n⚠️  Missing data summary:")
+            print(null_counts)
     
     return profile
