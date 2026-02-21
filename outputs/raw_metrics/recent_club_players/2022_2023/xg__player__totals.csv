@@ -1,66 +1,36 @@
 season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2022/2023,Neymar da Silva Santos Junior,Paris Saint-Germain,14,33,7.4,12.0,4.6
 2022/2023,Kylian Mbappé Lottin,Paris Saint-Germain,29,128,23.3,27.0,3.7
-2023,Hinata Miyazawa,Japan Women's,4,13,1.87,5.0,3.13
 2022/2023,Achraf Hakimi Mouh,Paris Saint-Germain,12,16,2.39,5.0,2.61
 2023,Jacinto Muondo Dala,Angola,3,9,1.52,4.0,2.48
-2023,Lauren James,England Women's,4,9,0.67,3.0,2.33
-2023,Amanda Ilestedt,Sweden Women's,3,9,1.84,4.0,2.16
 2022/2023,Lionel Andrés Messi Cuccittini,Paris Saint-Germain,32,129,13.87,16.0,2.13
 2023,Emilio Nsue López,Equatorial Guinea,4,9,2.95,5.0,2.05
 2022/2023,Carlos Soler Barragán,Paris Saint-Germain,6,8,1.01,3.0,1.99
-2023,Eugénie Le Sommer,France Women's,4,14,2.06,4.0,1.94
-2023,Olga  Carmona García,Spain Women's,5,11,0.27,2.0,1.73
 2023,Ademola Lookman,Nigeria,5,8,1.32,3.0,1.68
-2023,Linda Lizeth Caicedo Alegría,Colombia Women's,4,8,0.33,2.0,1.67
-2023,Ariadina Alves Borges,Brazil Women's,3,7,1.36,3.0,1.64
 2023,Robert Taylor,Inter Miami,2,5,0.37,2.0,1.63
-2023,Esmee Brugts,Netherlands Women's,4,8,0.39,2.0,1.61
 2023,Mohammed Kudus,Ghana,2,9,0.41,2.0,1.59
 2022/2023,Mama Samba Baldé,Troyes,1,5,0.51,2.0,1.49
 2023,Lassine Sinayoko,Mali,4,9,1.53,3.0,1.47
 2023,William Troost-Ekong,Nigeria,3,6,2.54,4.0,1.46
 2023,Facundo Farías,Inter Miami,5,10,0.58,2.0,1.42
-2023,Sophie Roman Haug,Norway Women's,3,13,1.64,3.0,1.36
-2023,Alexandra Popp,Germany Women's,3,15,2.71,4.0,1.29
-2023,Aitana Bonmati Conca,Spain Women's,6,19,1.75,3.0,1.25
 2023,Mohamed Bayo,Guinea,4,9,1.77,3.0,1.23
-2023,Hayley Emma Raso,Australia Women's,7,10,1.81,3.0,1.19
-2023,Rebecka Blomqvist,Sweden Women's,5,5,1.86,3.0,1.14
-2023,Lindsey Michelle Horan,United States Women's,3,14,1.86,3.0,1.14
 2023,Sébastien Haller,Côte d'Ivoire,4,11,1.88,3.0,1.12
 2023,Baghdad Bounedjah,Algeria,3,9,1.89,3.0,1.11
-2023,Hildah Tholakele Magaia,South Africa Women's,3,6,0.9,2.0,1.1
 2023,Cristóvão Paciência Mabululo,Angola,5,14,1.93,3.0,1.07
-2023,Alessia Russo,England Women's,6,22,1.98,3.0,1.02
-2023,Fridolina Rolfö,Sweden Women's,5,12,3.02,4.0,0.98
-2023,Léa Le Garrec,France Women's,2,5,0.09,1.0,0.91
 2023,Franck Yannick Kessié,Côte d'Ivoire,5,11,2.14,3.0,0.86
 2023,Kevin Lenini Gonçalves Pereira de Pina,Cape Verde Islands,3,5,0.15,1.0,0.85
-2023,Jill Roord,Netherlands Women's,4,18,3.16,4.0,0.84
 2022/2023,Renato Júnior Luz Sanches,Paris Saint-Germain,9,14,1.17,2.0,0.83
-2023,Manuela Vanegas Cataño,Colombia Women's,3,5,0.19,1.0,0.81
-2023,Ibtissam Jraïdi,Morocco Women's,3,5,0.23,1.0,0.77
 2022/2023,Branco van den Boomen,Toulouse,2,7,0.26,1.0,0.74
-2023,María Catalina Usme Pineda,Colombia Women's,4,8,1.27,2.0,0.73
 2023,Mostafa Mohamed Ahmed Abdallah,Egypt,4,15,3.29,4.0,0.71
-2023,Katie McCabe,Republic of Ireland Women's,3,6,0.29,1.0,0.71
 2023,Hakim Ziyech,Morocco,3,7,0.29,1.0,0.71
-2023,Teresa Abelleira Dueñas,Spain Women's,5,10,0.31,1.0,0.69
-2023,Lauren Hemp,England Women's,6,13,2.31,3.0,0.69
-2023,Marta Alexandra Cox Villarreal,Panama Women's,2,8,0.32,1.0,0.68
 2022/2023,Ignatius Kpene Ganago,Nantes,2,5,0.33,1.0,0.67
-2023,Adriana Kristina Leon,Canada Women's,3,5,0.35,1.0,0.65
 2022/2023,Sergio Ramos García,Paris Saint-Germain,11,15,1.36,2.0,0.64
-2023,Kosovare Asllani,Sweden Women's,2,5,0.37,1.0,0.63
 2022/2023,Jonathan Bamba,Lille,2,7,1.39,2.0,0.61
 2023,Sidi Bouna Sidi Amar,Mauritania,3,7,0.4,1.0,0.6
-2023,Caroline Graham Hansen,Norway Women's,2,10,0.41,1.0,0.59
 2023,Simon Adingra,Côte d'Ivoire,5,6,0.41,1.0,0.59
 2023,Ablie Jallow,Gambia,2,5,0.42,1.0,0.58
 2023,Benjamin Cremaschi,Inter Miami,3,5,0.42,1.0,0.58
 2023,Ryan Isaac Mendes da Graça,Cape Verde Islands,3,6,1.43,2.0,0.57
-2023,Arianna Caruso,Italy Women's,2,5,1.44,2.0,0.56
 2023,Mahmoud Ibrahim Hassan,Egypt,3,6,0.44,1.0,0.56
 2023,Omar Marmoush,Egypt,4,9,1.48,2.0,0.52
 2023,Aguibou Camara,Guinea,3,5,0.49,1.0,0.51
@@ -70,137 +40,65 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Aboubakary Koita,Mauritania,4,12,0.52,1.0,0.48
 2023,Gilson Benchimol Tavares,Cape Verde Islands,2,6,0.52,1.0,0.48
 2023,Bertrand Isidore Traoré,Burkina Faso,4,11,2.53,3.0,0.47
-2023,Amalie Jørgensen Vangsgaard,Denmark Women's,3,5,0.53,1.0,0.47
-2023,Mina Tanaka,Japan Women's,4,13,1.54,2.0,0.46
 2023,Sadio Mané,Senegal,3,7,1.54,2.0,0.46
-2023,Wendie Renard,France Women's,4,6,1.55,2.0,0.45
-2023,Salma Paralluelo Ayingono,Spain Women's,7,19,1.55,2.0,0.45
 2023,Frank Magri,Cameroon,3,6,0.56,1.0,0.44
 2022/2023,Juan Bernat Velasco,Paris Saint-Germain,6,6,0.57,1.0,0.43
-2023,Klara Bühl,Germany Women's,3,8,0.59,1.0,0.41
-2023,Risa Shimizu,Japan Women's,3,5,0.6,1.0,0.4
-2023,Uchenna Kanu,Nigeria Women's,3,6,0.6,1.0,0.4
-2023,Chloe Kelly,England Women's,4,8,1.6,2.0,0.4
-2023,Débora Cristiane de Oliveira,Brazil Women's,3,6,0.61,1.0,0.39
 2023,Seko Fofana,Côte d'Ivoire,6,17,0.62,1.0,0.38
-2023,Shuang Wang,China PR Women's,3,5,1.64,2.0,0.36
 2023,Habibou Mouhamadou Diallo,Senegal,3,5,1.64,2.0,0.36
-2023,Guro Reiten,Norway Women's,3,9,1.64,2.0,0.36
 2023,Deivi Miguel Vieira,Angola,3,6,0.66,1.0,0.34
-2023,Leicy Maria Santos Herrera,Colombia Women's,5,9,0.67,1.0,0.33
 2023,Jean-Philippe Krasso,Côte d'Ivoire,3,7,0.67,1.0,0.33
-2023,Emily Louise van Egmond,Australia Women's,4,9,0.68,1.0,0.32
 2022/2023,Warren Zaire Emery,Paris Saint-Germain,5,7,0.68,1.0,0.32
-2023,Hikaru Naomoto,Japan Women's,2,7,0.68,1.0,0.32
 2022/2023,Fabián Ruiz Peña,Paris Saint-Germain,13,18,1.69,2.0,0.31
 2023,Mohamed Konaté,Burkina Faso,3,8,0.71,1.0,0.29
-2023,Asisat Lamina Oshoala,Nigeria Women's,4,10,0.78,1.0,0.22
-2023,Racheal Kundananji,Zambia Women's,2,8,0.81,1.0,0.19
 2023,Karl Brillant Toko Ekambi,Cameroon,2,6,0.81,1.0,0.19
-2023,Elin Ingrid Johanna Rubensson,Sweden Women's,4,8,1.83,2.0,0.17
 2023,Silas Katompa Mvumpa,Congo DR,5,5,1.85,2.0,0.15
-2023,Seraina Piubel,Switzerland Women's,3,5,0.86,1.0,0.14
-2023,Ellie Madison Carpenter,Australia Women's,3,5,0.86,1.0,0.14
-2023,Samantha May Kerr,Australia Women's,4,11,1.88,2.0,0.12
-2023,Andi Sullivan,United States Women's,3,5,0.89,1.0,0.11
-2023,Alanna Stephanie Kennedy,Australia Women's,3,7,0.9,1.0,0.1
-2023,Sophia Olivia Smith,United States Women's,4,14,1.92,2.0,0.08
-2022/2023,Folarin Balogun,Stade de Reims,1,6,0.93,1.0,0.07
 2023,Arthur Masuaku,Congo DR,4,7,0.93,1.0,0.07
+2022/2023,Folarin Balogun,Stade de Reims,1,6,0.93,1.0,0.07
 2023,Leonardo Campana Romero,Inter Miami,4,7,0.94,1.0,0.06
-2023,Christy Onyenaturuchi Ucheibe,Nigeria Women's,4,6,0.95,1.0,0.05
 2023,Mohamed Abdel Monem,Egypt,4,6,0.95,1.0,0.05
-2023,Caitlin Jade Foord,Australia Women's,6,17,1.97,2.0,0.03
-2023,Francisca Ramos Ribeiro Nazareth Sousa,Portugal Women's,2,5,1.01,1.0,-0.01
-2023,Kadidiatou Diani,France Women's,5,20,5.01,5.0,-0.01
 2023,Ismaïla Sarr,Senegal,4,7,1.02,1.0,-0.02
-2023,Hannah Wilkinson,New Zealand Women's,2,9,1.02,1.0,-0.02
-2023,Nicolas Pépé,Côte d'Ivoire,4,5,1.06,1.0,-0.06
 2023,Achraf Hakimi Mouh,Morocco,4,6,1.06,1.0,-0.06
-2023,Vicki Becho,France Women's,3,7,1.07,1.0,-0.07
-2023,Maëlle Lakrar,France Women's,3,10,2.1,2.0,-0.1
-2023,Kyra Lillee Cooney-Cross,Australia Women's,4,5,0.1,0.0,-0.1
-2023,Kholosa Biyana,South Africa Women's,3,5,0.11,0.0,-0.11
-2023,Lineth Beerensteyn,Netherlands Women's,3,12,1.12,1.0,-0.12
+2023,Nicolas Pépé,Côte d'Ivoire,4,5,1.06,1.0,-0.06
 2023,Jules Olivier Ntcham,Cameroon,3,5,0.12,0.0,-0.12
-2023,Danielle van de Donk,Netherlands Women's,3,5,1.12,1.0,-0.12
-2023,Rasheedat Busayo Ajibade,Nigeria Women's,3,7,1.12,1.0,-0.12
-2023,Melissa Herrera Monge,Costa Rica Women's,3,5,1.13,1.0,-0.13
-2023,Sofia Cantore,Italy Women's,2,5,0.14,0.0,-0.14
-2023,Lorena Bedoya Durango,Colombia Women's,4,7,0.14,0.0,-0.14
 2023,Ambrosini Antonio Cabaça Salvador,Angola,4,7,1.15,1.0,-0.15
-2023,Barbra Banda,Zambia Women's,2,9,1.17,1.0,-0.17
-2023,Katrina Gorry,Australia Women's,6,12,1.17,1.0,-0.17
-2023,Rachel Daly,England Women's,5,12,2.17,2.0,-0.17
-2023,Andreia de Jesus Jacinto,Portugal Women's,2,5,0.18,0.0,-0.18
-2023,Malia Grace Steinmetz,New Zealand Women's,3,5,0.19,0.0,-0.19
 2023,Lameck Banda,Zambia,2,5,0.2,0.0,-0.2
-2023,Catherine Joan Bott,New Zealand Women's,3,5,0.21,0.0,-0.21
 2023,Stephane Aziz Ki,Burkina Faso,2,8,0.21,0.0,-0.21
-2023,María Florencia Bonsegundo,Argentina Women's,2,5,0.21,0.0,-0.21
 2023,Yves Bissouma,Mali,3,6,0.22,0.0,-0.22
-2023,Mariana Valeria Larroquette,Argentina Women's,3,6,0.22,0.0,-0.22
-2023,Wilfried Stephane Singo,Côte d'Ivoire,3,5,0.23,0.0,-0.23
 2022/2023,Mattéo Guendouzi Olié,Marseille,2,5,0.23,0.0,-0.23
-2023,Ramona Bachmann,Switzerland Women's,3,6,1.24,1.0,-0.24
-2023,Ingrid Filippa Angeldal,Sweden Women's,5,13,1.24,1.0,-0.24
-2023,Deroy Duarte,Cape Verde Islands,2,5,0.25,0.0,-0.25
-2023,Kenza Dali,France Women's,4,13,1.25,1.0,-0.25
-2023,Atlanta Reigan Primus,Jamaica Women's,2,6,0.25,0.0,-0.25
-2023,Khadija Monifa Shaw,Jamaica Women's,3,7,0.25,0.0,-0.25
+2023,Wilfried Stephane Singo,Côte d'Ivoire,3,5,0.23,0.0,-0.23
 2023,Emam Ashour Metwally Abdelghany,Egypt,3,7,0.25,0.0,-0.25
-2023,Ibrahim Sangaré,Côte d'Ivoire,2,5,0.26,0.0,-0.26
+2023,Deroy Duarte,Cape Verde Islands,2,5,0.25,0.0,-0.25
 2023,Hamdi Fathi,Egypt,4,7,0.26,0.0,-0.26
+2023,Ibrahim Sangaré,Côte d'Ivoire,2,5,0.26,0.0,-0.26
 2023,Musa Barrow,Gambia,3,8,0.27,0.0,-0.27
-2023,Millie Bright,England Women's,3,5,0.27,0.0,-0.27
-2023,Cortnee Brooke Vine,Australia Women's,3,6,1.28,1.0,-0.28
-2023,Yui Hasegawa,Japan Women's,4,7,0.28,0.0,-0.28
-2023,Ada Stolsmo Hegerberg,Norway Women's,2,5,0.28,0.0,-0.28
 2023,Samuel Moutoussamy,Congo DR,6,9,2.28,2.0,-0.28
-2023,Alexia Putellas Segura,Spain Women's,5,5,0.28,0.0,-0.28
-2023,Luana Bertolucci Paixão,Brazil Women's,3,6,0.29,0.0,-0.29
 2023,Tiago Manuel Dias Correia,Cape Verde Islands,4,17,1.29,1.0,-0.29
 2022/2023,Nuno Albertino Varela Tavares,Marseille,2,8,0.3,0.0,-0.3
 2023,Sekou Koita,Mali,3,6,0.3,0.0,-0.3
 2023,Mohamed Youcef Belaïli,Algeria,3,10,0.31,0.0,-0.31
-2023,Trinity Rain Moyer-Rodman,United States Women's,2,7,0.31,0.0,-0.31
-2023,Sphephelo S''Miso Sithole,South Africa,4,5,0.31,0.0,-0.31
-2023,Drew Spence,Jamaica Women's,2,7,0.31,0.0,-0.31
 2023,Chancel Mbemba Mangulu,Congo DR,5,7,2.31,2.0,-0.31
-2023,Lieke Martens,Netherlands Women's,4,19,1.32,1.0,-0.32
+2023,Sphephelo S''Miso Sithole,South Africa,4,5,0.31,0.0,-0.31
 2022/2023,Marcos Paulo Mesquita Lopes,Troyes,1,5,0.32,0.0,-0.32
 2022/2023,Nuno Mendes,Paris Saint-Germain,7,10,1.33,1.0,-0.33
-2023,Lucy Bronze,England Women's,4,7,0.33,0.0,-0.33
 2023,Gaël Kakuta,Congo DR,4,8,0.34,0.0,-0.34
-2023,Magdalena Lilly Eriksson,Sweden Women's,5,8,1.34,1.0,-0.34
-2023,Nérilia Mondesir,Haiti Women's,3,7,0.35,0.0,-0.35
-2023,Pernille Mosegaard Harder,Denmark Women's,4,11,1.35,1.0,-0.35
 2022/2023,Habibou Mouhamadou Diallo,Strasbourg,1,5,0.35,0.0,-0.35
 2023,Frank Onyeka,Nigeria,4,6,0.36,0.0,-0.36
 2023,Alex Iwobi,Nigeria,5,7,0.36,0.0,-0.36
 2023,Kennedy Amutenya,Namibia,4,6,0.37,0.0,-0.37
 2023,Christian Kouamé,Côte d'Ivoire,3,5,1.38,1.0,-0.38
-2023,Thembi Kgatlana,South Africa Women's,4,19,2.38,2.0,-0.38
-2023,Emilie Haavi,Norway Women's,2,5,0.38,0.0,-0.38
-2023,Ashleigh Plumptre,Nigeria Women's,2,5,0.38,0.0,-0.38
 2023,Mihlali Samson Mayambela,South Africa,3,8,1.39,1.0,-0.39
-2023,Beatriz Zaneratto João,Brazil Women's,2,9,1.4,1.0,-0.4
-2023,Stephanie-Elise Catley,Australia Women's,4,5,2.42,2.0,-0.42
-2022/2023,Alexis Alejandro Sánchez Sánchez,Marseille,2,6,0.42,0.0,-0.42
 2023,Thapelo James Morena,South Africa,3,5,0.42,0.0,-0.42
+2022/2023,Alexis Alejandro Sánchez Sánchez,Marseille,2,6,0.42,0.0,-0.42
 2023,Max-Alain Gradel,Côte d'Ivoire,3,6,0.42,0.0,-0.42
 2023,Obite Evan Ndicka,Côte d'Ivoire,4,7,0.43,0.0,-0.43
-2023,Telma Raquel Velosa Encarnação,Portugal Women's,2,8,1.43,1.0,-0.43
 2022/2023,Hugo Ekitike,Paris Saint-Germain,10,19,2.44,2.0,-0.44
 2023,Ahmed Sayed,Egypt,3,10,0.45,0.0,-0.45
 2022/2023,Marco Verratti,Paris Saint-Germain,5,5,0.45,0.0,-0.45
-2023,Georges-Kévin Nkoudou Mbida,Cameroon,3,6,0.46,0.0,-0.46
-2023,Kerolin Nicoli Israel Ferraz,Brazil Women's,3,7,0.46,0.0,-0.46
 2023,Moses Daddy-Ajala Simon,Nigeria,4,5,0.46,0.0,-0.46
-2023,María Francesca Caldentey Oliver,Spain Women's,5,9,1.48,1.0,-0.48
+2023,Georges-Kévin Nkoudou Mbida,Cameroon,3,6,0.46,0.0,-0.46
+2023,Josef Alexander Martínez Mencia,Inter Miami,2,5,0.51,0.0,-0.51
 2023,Youssef En-Nesyri,Morocco,3,8,1.51,1.0,-0.51
 2023,Teboho Mokoena,South Africa,7,22,3.51,3.0,-0.51
-2023,Josef Alexander Martínez Mencia,Inter Miami,2,5,0.51,0.0,-0.51
 2022/2023,Ikoma Loïs Openda,Lens,1,8,0.52,0.0,-0.52
 2022/2023,Muhammed Cham Saracevic,Clermont Foot,2,5,0.52,0.0,-0.52
 2022/2023,Thijs Dallinga,Toulouse,2,5,0.53,0.0,-0.53
@@ -209,55 +107,29 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Simon Bokote Banza,Congo DR,3,5,0.55,0.0,-0.55
 2022/2023,Jonathan David,Lille,2,10,1.56,1.0,-0.56
 2023,Zaidu Sanusi,Nigeria,4,6,0.56,0.0,-0.56
-2023,Riko Ueki,Japan Women's,5,11,2.58,2.0,-0.58
-2023,Esther Gonzalez Rodríguez,Spain Women's,4,17,1.58,1.0,-0.58
 2022/2023,Moussa Dembélé,Lyon,2,5,0.59,0.0,-0.59
 2023,Théo Bongonda Mbul''Ofeko Batombo,Congo DR,5,10,0.6,0.0,-0.6
 2023,Aubrey Maphosa Modiba,South Africa,5,6,1.63,1.0,-0.63
-2023,Mayra Tatiana Ramírez Ramírez,Colombia Women's,4,12,0.64,0.0,-0.64
 2023,Youssef Msakni,Tunisia,2,6,0.66,0.0,-0.66
 2023,Amadou Haïdara,Mali,3,9,0.67,0.0,-0.67
-2023,Aoba Fujino,Japan Women's,4,13,1.67,1.0,-0.67
-2023,Coumba Sow,Switzerland Women's,3,5,0.68,0.0,-0.68
-2023,Julie Beth Ertz,United States Women's,4,9,0.69,0.0,-0.69
-2023,Jordyn Pamela Huitema,Canada Women's,3,12,0.7,0.0,-0.7
-2023,Valentina Giacinti,Italy Women's,3,8,0.7,0.0,-0.7
-2023,Amine Adli,Morocco,3,5,0.71,0.0,-0.71
-2023,Frida Maanum,Norway Women's,4,9,0.71,0.0,-0.71
 2023,Fiston Kalala Mayele,Congo DR,3,5,0.71,0.0,-0.71
-2023,Adriana Leal da Silva,Brazil Women's,3,8,0.72,0.0,-0.72
+2023,Amine Adli,Morocco,3,5,0.71,0.0,-0.71
 2022/2023,Danilo Luís Hélio Pereira,Paris Saint-Germain,10,15,1.72,1.0,-0.72
 2023,Jovane Eduardo Borges Cabral,Cape Verde Islands,4,9,0.72,0.0,-0.72
-2023,Irene Paredes Hernandez,Spain Women's,5,9,0.73,0.0,-0.73
 2022/2023,Nordi Mukiele Mulere,Paris Saint-Germain,5,7,0.81,0.0,-0.81
-2023,Jéssica da Silva,Portugal Women's,2,6,0.87,0.0,-0.87
-2023,Ghizlane Chebbak,Morocco Women's,3,6,0.9,0.0,-0.9
 2022/2023,Vitor Machado Ferreira,Paris Saint-Germain,16,25,1.91,1.0,-0.91
-2023,Ana-Maria Crnogorčević,Switzerland Women's,2,5,0.93,0.0,-0.93
-2023,Kyra Carusa,Republic of Ireland Women's,3,7,0.95,0.0,-0.95
-2023,Lynn Raenie Williams,United States Women's,2,9,0.97,0.0,-0.97
 2023,Adama Traoré,Mali,3,6,0.98,0.0,-0.98
 2023,Denis Bouanga,LAFC,1,7,0.99,0.0,-0.99
-2023,Jennifer Hermoso Fuentes,Spain Women's,6,21,4.0,3.0,-1.0
-2023,Georgia Stanway,England Women's,5,10,2.03,1.0,-1.03
 2023,Evidence Makgopa,South Africa,7,13,2.06,1.0,-1.06
-2023,Selma Bacha,France Women's,4,10,1.08,0.0,-1.08
 2023,Meschak Elia,Congo DR,4,7,2.08,1.0,-1.08
-2023,Emma Stina Blackstenius,Sweden Women's,6,12,2.09,1.0,-1.09
-2023,Gun Nathalie Björn,Sweden Women's,3,5,1.1,0.0,-1.1
 2023,Willy Afonso Semedo Johnson,Cape Verde Islands,3,5,1.1,0.0,-1.1
 2022/2023,Marcos Aoás Corrêa,Paris Saint-Germain,13,16,2.13,1.0,-1.13
-2023,Morgan Guilavogui,Guinea,4,6,1.14,0.0,-1.14
 2022/2023,Alexandre Lacazette,Lyon,2,5,1.14,0.0,-1.14
-2023,Megan Anna Rapinoe,United States Women's,3,5,1.14,0.0,-1.14
-2023,Alba María Redondo Ferrer,Spain Women's,6,17,4.19,3.0,-1.19
+2023,Morgan Guilavogui,Guinea,4,6,1.14,0.0,-1.14
 2023,Cédric Bakambu,Congo DR,6,10,2.23,1.0,-1.23
 2023,Yoane Wissa,Congo DR,6,21,4.24,3.0,-1.24
-2023,Michelle Alozie,Nigeria Women's,4,7,1.27,0.0,-1.27
-2023,Percy Tau,South Africa,4,12,2.33,1.0,-1.33
 2023,Ayoub El Kaabi,Morocco,3,6,1.33,0.0,-1.33
-2023,Mary Boio Fowler,Australia Women's,4,15,3.33,2.0,-1.33
+2023,Percy Tau,South Africa,4,12,2.33,1.0,-1.33
 2023,Peter Shalulile,Namibia,2,10,1.37,0.0,-1.37
 2023,Lionel Andrés Messi Cuccittini,Inter Miami,6,20,2.47,1.0,-1.47
 2023,Victor James Osimhen,Nigeria,6,24,3.11,1.0,-2.11
-2023,Alexandra Morgan Carrasco,United States Women's,4,17,2.64,0.0,-2.64

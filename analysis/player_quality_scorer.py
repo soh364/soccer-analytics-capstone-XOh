@@ -96,8 +96,36 @@ class PlayerQualityScorer:
         for next_df in player_scores[1:]:
             combined = combined.join(next_df, on='player', how='left')
 
+        # ============================================================================
+        # FIX: Staleness Penalty (Put it here!)
+        # ============================================================================
+        # 1. Calculate the most recent year across all data sources
+        most_recent_year = max(
+            df['season_year'].max()
+            for df in self.player_data.values()
+            if 'season_year' in df.columns
+        )
+        
+        # 2. Identify players who appeared in that season
+        players_with_recent_data = set()
+        for df in self.player_data.values():
+            if 'player' in df.columns and 'season_year' in df.columns:
+                recent = df.filter(pl.col('season_year') == most_recent_year)['player'].to_list()
+                players_with_recent_data.update(recent)
+
+        # 3. Apply the penalty factor (0.55x for stale players)
+        combined = combined.with_columns(
+            pl.when(pl.col('player').is_in(list(players_with_recent_data)))
+            .then(pl.lit(1.0))
+            .otherwise(pl.lit(0.55))
+            .alias('recency_factor')
+        )
+        # ============================================================================
+
         if verbose:
             print(f"\n✓ Combined: {len(combined)} unique players")
+            n_stale = len(combined.filter(pl.col('recency_factor') < 1.0))
+            print(f"✓ Applied staleness penalty to {n_stale} inactive players")
 
         return combined
 
@@ -292,6 +320,8 @@ class PlayerQualityScorer:
 
         # Step 8: Apply league multiplier
         player_metrics = player_metrics.with_columns(
+            (pl.col('overall_quality') * pl.col('recency_factor')).alias('overall_quality')
+        ).with_columns(
             pl.col('latest_club')
             .map_elements(self.get_league_multiplier, return_dtype=pl.Float64)
             .alias('league_mult')

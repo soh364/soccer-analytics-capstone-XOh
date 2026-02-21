@@ -22,15 +22,17 @@ SCOPES = {
         'per_season': False,
     },
     'recent_club_players': {
-        # Each tuple: (season_names_to_filter, output_folder_name)
-        # Tournament seasons merged into nearest club season so decay is coherent:
-        #   2022 WC      -> 2021_2022
-        #   2023 AFCON   -> 2022_2023
-        #   2024/25 Euros/Copa -> 2023_2024
         'seasons': [
             (['2021/2022', '2022'],          '2021_2022'),
             (['2022/2023', '2023'],          '2022_2023'),
             (['2023/2024', '2024', '2025'],  '2023_2024'),
+        ],
+        # Explicitly exclude all women's competitions
+        'exclude_competitions': [
+            "FA Women's Super League",
+            "NWSL",
+            "UEFA Women's Euro",
+            "Women's World Cup",
         ],
         'output_suffix': 'recent_club_players',
         'per_season': True,
@@ -38,21 +40,30 @@ SCOPES = {
 }
 
 
-def filter_events_by_seasons(events_path, conn, season_names, loader, suffix):
+def filter_events_by_seasons(events_path, conn, season_names, loader, suffix, exclude_competitions=None):
     """Filter events to a list of season names, write to temp parquet."""
     matches_path = str(loader.available_files['matches'])
     Path("outputs").mkdir(exist_ok=True)
     filtered_path = f"outputs/temp_filtered_{suffix}.parquet"
 
     placeholders = ', '.join(['?' for _ in season_names])
+    params = list(season_names)
+
+    exclude_clause = ""
+    if exclude_competitions:
+        excl_placeholders = ', '.join(['?' for _ in exclude_competitions])
+        exclude_clause = f"AND m.competition NOT IN ({excl_placeholders})"
+        params.extend(exclude_competitions)
+
     conn.execute(f"""
         COPY (
             SELECT e.*
             FROM '{events_path}' e
             INNER JOIN '{matches_path}' m ON e.match_id = m.match_id
             WHERE m.season_name IN ({placeholders})
+            {exclude_clause}
         ) TO '{filtered_path}' (FORMAT PARQUET)
-    """, season_names)
+    """, params)
     return filtered_path
 
 
@@ -165,23 +176,26 @@ def run_pipeline_for_scope(scope_name, scope):
     temp_files = []
 
     try:
+        BASE = Path("outputs") / "raw_metrics"
+
         if scope.get('per_season'):
             # New format: list of (season_names, folder_name) tuples
             for season_names, folder_name in scope['seasons']:
                 print(f"\n  ── {folder_name} ({season_names}) ──")
                 filtered = filter_events_by_seasons(
-                    events_path, loader.conn, season_names, loader, 
-                    suffix=f"{scope['output_suffix']}__{folder_name}"
+                    events_path, loader.conn, season_names, loader,
+                    suffix=f"{scope['output_suffix']}__{folder_name}",
+                    exclude_competitions=scope.get('exclude_competitions')
                 )
                 temp_files.append(filtered)
-                out = Path("outputs") / scope['output_suffix'] / folder_name
+                out = BASE / scope['output_suffix'] / folder_name
                 out.mkdir(exist_ok=True, parents=True)
                 print(f"  ✓ Filtered: {season_names}")
                 _run_metrics(filtered, matches_path, loader.conn, out)
         else:
             filtered = filter_events_by_scope(events_path, loader.conn, scope, loader)
             temp_files.append(filtered)
-            out = Path("outputs") / scope['output_suffix']
+            out = BASE / scope['output_suffix']
             out.mkdir(exist_ok=True, parents=True)
             _run_metrics(filtered, matches_path, loader.conn, out)
 
