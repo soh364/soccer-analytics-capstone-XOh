@@ -3,7 +3,7 @@ POSITION_OVERRIDES = {
     'Jude Bellingham':              'Center Attacking Midfield',
     'Joshua Kimmich':               'Center Defensive Midfield',
     'Kevin De Bruyne':              'Center Midfield',
-    'Vitor Machado Ferreira':       'Center Midfield',  # Vitinha
+    'Vitor Machado Ferreira':       'Center Midfield',  
     'Declan Rice':                  'Center Defensive Midfield',
     'Fabián Ruiz Peña':             'Center Midfield',
     'Rodrigo Javier De Paul':       'Center Midfield',

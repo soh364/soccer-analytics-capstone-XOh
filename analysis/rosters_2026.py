@@ -1,12 +1,6 @@
 """
-2026 World Cup predicted rosters (as of February 15, 2026).
+2026 World Cup predicted rosters (February 15, 2026).
 Sources: Public football databases, transfer news.
-
-Key notes:
-  - Mikel Merino (Spain/Arsenal): Injury doubt - foot surgery Feb 9, 2026
-  - Christian Pulisic (USA/AC Milan): Career-best season
-  - Luka Modrić (Croatia/AC Milan): Final season, contract expires June 2026
-  - Lucas Paquetá (Brazil/Flamengo): Moved from West Ham on Jan 30, 2026
 """
 
 rosters_2026 = {
@@ -24,7 +18,7 @@ rosters_2026 = {
         'Pedri': 'Barcelona',
         'Gavi': 'Barcelona',
         'Dani Olmo': 'Barcelona',
-        'Mikel Merino': 'Arsenal',  # INJURY DOUBT - foot surgery Feb 9
+        'Mikel Merino': 'Arsenal',
         'Martín Zubimendi': 'Real Sociedad',
         'Álvaro Morata': 'AC Milan',
         'Nico Williams': 'Athletic Club',
@@ -60,8 +54,8 @@ rosters_2026 = {
         'Alejandro Garnacho': 'Manchester United',
         'Thiago Almada': 'Botafogo',
         'Valentín Carboni': 'Monza',
-        'Franco Mastantuono': 'Real Madrid', # 18yo sensation, moved from River Plate.
-        'Nico Paz': 'Como/Argentina',
+        'Franco Mastantuono': 'Real Madrid',
+        'Nico Paz': 'Como',
     },
     
     'England': {
@@ -153,7 +147,7 @@ rosters_2026 = {
         'Casemiro': 'Manchester United',
         'Fabinho': 'Al-Ittihad',
         'Bruno Guimarães': 'Newcastle United',
-        'Lucas Paquetá': 'Flamengo',  # CORRECTED - moved Jan 30, 2026
+        'Lucas Paquetá': 'Flamengo',
         'Neymar': 'Al-Hilal',
         'Vinícius José Paixão de Oliveira Júnior': 'Real Madrid',
         'Rodrygo': 'Real Madrid',
@@ -165,7 +159,7 @@ rosters_2026 = {
         'Pedro': 'Flamengo',
         'Endrick': 'Real Madrid',
         'Savinho': 'Manchester City',
-        'Estêvão': 'Bayern Munich',         # Moved from Chelsea/Palmeiras. 
+        'Estêvão': 'Bayern Munich',
         'Andrey Santos': 'Chelsea'
     },
     
@@ -258,7 +252,7 @@ rosters_2026 = {
         'Facundo Pellistri': 'Panathinaikos',
         'Nicolás de la Cruz': 'Flamengo',
         'Nahitan Nández': 'Al-Qadsiah',
-        'Luciano Rodríguez': 'Bahia', # UPDATED: The 2026 breakout 'Lucho'.
+        'Luciano Rodríguez': 'Bahia', 
     },
 
     'Croatia': {
@@ -268,7 +262,7 @@ rosters_2026 = {
         'Domagoj Vida': 'AEK Athens',
         'Josip Juranović': 'Union Berlin',
         'Borna Sosa': 'Torino',
-        'Luka Modrić': 'AC Milan',  # CORRECTED - Moved July 2025, contract through June 2026
+        'Luka Modrić': 'AC Milan',
         'Mateo Kovačić': 'Manchester City',
         'Marcelo Brozović': 'Al-Nassr',
         'Mario Pašalić': 'Atalanta',
@@ -305,10 +299,10 @@ rosters_2026 = {
     'Mexico': {
         'Luis Malagón': 'Club América',
         'Edson Álvarez': 'West Ham United',
-        'Santiago Giménez': 'AC Milan', 
+        'Santiago Giménez': 'AC Milan',
         'Hirving Lozano': 'San Diego FC', 
         'Raúl Jiménez': 'Fulham',
-        'Gilberto Mora': 'Feyenoord', # UPDATED: Moved to Europe Jan 2026.
+        'Gilberto Mora': 'Feyenoord',
         'Johan Vásquez': 'Genoa',
         'Jorge Sánchez': 'Cruz Azul',
         'César Montes': 'Lokomotiv Moscow',
@@ -381,20 +375,19 @@ rosters_2026 = {
         'Idrissa Gana Gueye': 'Everton', 'Lamine Camara': 'Monaco'
     },
     'Canada': {
-        'Maxime Crépeau': 'Portland Timbers', 
-        'Alphonso Davies': 'Bayern München',  # CORRECTED: Stayed at Bayern
+        'Maxime Crépeau': 'Portland Timbers',
+        'Alphonso Davies': 'Bayern München',
         'Moïse Bombito': 'Nice',
-        'Ismaël Koné': 'Marseille', 
-        'Stephen Eustáquio': 'Los Angeles FC', # UPDATE: Joined Son at LAFC
-        'Jonathan David': 'Juventus',          # CORRECTED: Move to Juve, not Villa
-        'Jacob Shaffelburg': 'Los Angeles FC', # UPDATE: High-profile MLS move
+        'Ismaël Koné': 'Marseille',
+        'Stephen Eustáquio': 'Los Angeles FC',
+        'Jonathan David': 'Juventus',
+        'Jacob Shaffelburg': 'Los Angeles FC',
         'Tajon Buchanan': 'Internazionale'
-    
     },
     'Nigeria': {
         'Stanley Nwabali': 'Chippa United', 'Calvin Bassey': 'Fulham', 'William Troost-Ekong': 'Al-Kholood',
         'Wilfred Ndidi': 'Beşiktaş', 'Alex Iwobi': 'Fulham', 'Ademola Lookman': 'Atalanta',
-        'VVictor James Osimhen': 'Galatasaray', 'Victor Boniface': 'Bayer Leverkusen', 'Samuel Chukwueze': 'AC Milan'
+        'Victor Osimhen': 'Galatasaray', 'Victor Boniface': 'Bayer Leverkusen', 'Samuel Chukwueze': 'AC Milan'
     },
     'Serbia': {
         'Vanja Milinković-Savić': 'Torino', 'Nikola Milenković': 'Nottingham Forest', 'Strahinja Pavlović': 'AC Milan',
@@ -419,7 +412,6 @@ rosters_2026 = {
 }
 
 MANAGER_TENURE = {
-    # --- LONG-TERM STABILITY (High Bonus) ---
     'France': 2012,      # Didier Deschamps
     'Croatia': 2017,     # Zlatko Dalić
     'Argentina': 2018,   # Lionel Scaloni
@@ -429,21 +421,17 @@ MANAGER_TENURE = {
     'Colombia': 2022,    # Néstor Lorenzo
     'Austria': 2022,     # Ralf Rangnick
     'Serbia': 2021,      # Dragan Stojković
-
-    # --- MID-TERM / ESTABLISHED (Standard Bonus) ---
     'Germany': 2023,     # Julian Nagelsmann
     'Portugal': 2023,    # Roberto Martínez
     'Netherlands': 2023, # Ronald Koeman
     'Uruguay': 2023,     # Marcelo Bielsa
     'Turkey': 2023,      # Vincenzo Montella
-
-    # --- NEW ERA / 2026 CYCLE APPOINTMENTS (Stability Penalty) ---
     'USA': 2024,         # Mauricio Pochettino
     'Canada': 2024,      # Jesse Marsch
     'Mexico': 2024,      # Javier Aguirre
-    'Brazil': 2025,      # Carlo Ancelotti (Started May 2025)
-    'England': 2025,     # Thomas Tuchel (Started Jan 2025)
-    'Italy': 2025,       # Gennaro Gattuso (Started June 2025)
+    'Brazil': 2025,      # Carlo Ancelotti
+    'England': 2025,     # Thomas Tuchel
+    'Italy': 2025,       # Gennaro Gattuso
     'Belgium': 2025,     # Rudi Garcia
     'Poland': 2025,      # Jan Urban
     'Nigeria': 2025,     # Éric Chelle
@@ -452,5 +440,4 @@ MANAGER_TENURE = {
     'Ecuador': 2024,     # Sebastián Beccacece
     'Senegal': 2024,     # Pape Thiaw
     'Ghana': 2024,       # Otto Addo
-    'Serbia': 2025
 }

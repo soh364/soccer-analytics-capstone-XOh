@@ -1,5 +1,4 @@
 CLUB_MAPPING_2026 = {
-    # --- Previously mapped High-Impact ---
     "Daniel Olmo Carvajal": "Barcelona",
     "Florian Wirtz": "Liverpool",
     "Jamal Musiala": "Bayern Munich",
@@ -22,8 +21,6 @@ CLUB_MAPPING_2026 = {
     "Kevin Vogt": "Union Berlin",
     "Finn Ole Becker": "Hoffenheim",
     "Robert Skov": "Hoffenheim",
-
-    # --- New Group: Ligue 1 & European Veterans ---
     "Darlin Zidane Yongwa Ngameni": "Lorient",
     "Falaye Sacko": "Montpellier",
     "Mateusz Wieteska": "Cagliari",
@@ -179,7 +176,6 @@ CLUB_MAPPING_2026 = {
     "Xherdan Shaqiri": "Basel",
     "Cheikh Ahmadou Bamba Mbacke Dieng": "Angers",
     "Ruslan Malinovskiy": "Genoa",
-    # --- Premier League Moves ---
     "Benjamin Šeško": "Manchester United",
     "Granit Xhaka": "Bayer Leverkusen",
     "Gianluigi Donnarumma": "Manchester City",
@@ -189,9 +185,7 @@ CLUB_MAPPING_2026 = {
     "Reinildo Isnard Mandava": "Sunderland",
     "Jeremy Doku": "Manchester City",
     "Matthijs de Ligt": "Manchester United",
-    "Nayef Aguerd": "Real Sociedad", # Currently on loan/moved to La Liga
-
-    # --- Bundesliga Core ---
+    "Nayef Aguerd": "Real Sociedad",
     "Oliver Baumann": "Hoffenheim",
     "Willi Orban": "RB Leipzig",
     "Romano Schmid": "Werder Bremen",
@@ -215,8 +209,6 @@ CLUB_MAPPING_2026 = {
     "Dayotchanculle Upamecano": "Bayern Munich",
     "Manuel Neuer": "Bayern Munich",
     "Gregor Kobel": "Borussia Dortmund",
-
-    # --- Ligue 1 & PSG Core ---
     "Hichem Boudaoui": "Nice",
     "Nicolás Alejandro Tagliafico": "Lyon",
     "Achraf Hakimi Mouh": "Paris Saint-Germain",
@@ -230,8 +222,6 @@ CLUB_MAPPING_2026 = {
     "Randal Kolo Muani": "Paris Saint-Germain",
     "Danilo Luís Hélio Pereira": "Al Ittihad", # Moved to Saudi
     "Jonathan David": "Lille",
-
-    # --- Other Global Stars ---
     "Lionel Andrés Messi Cuccittini": "Inter Miami",
     "Neymar da Silva Santos Junior": "Al Hilal",
     "Wout Weghorst": "Ajax",
