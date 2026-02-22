@@ -484,3 +484,24 @@ def plot_comparison_pizzas(df, p1_name, p2_name, p1_rank=None, p2_rank=None):
 
     plt.tight_layout(pad=1.5)
     plt.show()
+
+def plot_role_quadrants(df):
+    plt.figure(figsize=(12, 8), facecolor="white")
+    sns.scatterplot(
+        data=df.to_pandas(), 
+        x="progressive_passes_percentile", 
+        y="defensive_actions_percentile",
+        hue="position", size="overall_quality", alpha=0.6
+    )
+    
+    # Add Quadrant Lines
+    plt.axvline(50, color='grey', linestyle='--', alpha=0.5)
+    plt.axhline(50, color='grey', linestyle='--', alpha=0.5)
+    
+    # Annotate quadrants
+    plt.text(75, 90, "ELITE ALL-ROUNDERS", color='green', weight='bold')
+    plt.text(10, 90, "PURE DESTROYERS", color='blue', weight='bold')
+    plt.text(75, 10, "CREATIVE QUARTERBACKS", color='orange', weight='bold')
+    
+    plt.title("Role Discovery: Progression vs. Defensive Contribution", fontsize=16)
+    plt.show()

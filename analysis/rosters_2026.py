@@ -417,3 +417,39 @@ rosters_2026 = {
         'Iñaki Williams': 'Athletic Club', 'Jordan Ayew': 'Leicester City'
     }
 }
+
+MANAGER_TENURE = {
+    # --- LONG-TERM STABILITY (High Bonus) ---
+    'France': 2012,      # Didier Deschamps
+    'Croatia': 2017,     # Zlatko Dalić
+    'Argentina': 2018,   # Lionel Scaloni
+    'Japan': 2018,       # Hajime Moriyasu
+    'Spain': 2022,       # Luis de la Fuente
+    'Morocco': 2022,     # Walid Regragui
+    'Colombia': 2022,    # Néstor Lorenzo
+    'Austria': 2022,     # Ralf Rangnick
+    'Serbia': 2021,      # Dragan Stojković
+
+    # --- MID-TERM / ESTABLISHED (Standard Bonus) ---
+    'Germany': 2023,     # Julian Nagelsmann
+    'Portugal': 2023,    # Roberto Martínez
+    'Netherlands': 2023, # Ronald Koeman
+    'Uruguay': 2023,     # Marcelo Bielsa
+    'Turkey': 2023,      # Vincenzo Montella
+
+    # --- NEW ERA / 2026 CYCLE APPOINTMENTS (Stability Penalty) ---
+    'USA': 2024,         # Mauricio Pochettino
+    'Canada': 2024,      # Jesse Marsch
+    'Mexico': 2024,      # Javier Aguirre
+    'Brazil': 2025,      # Carlo Ancelotti (Started May 2025)
+    'England': 2025,     # Thomas Tuchel (Started Jan 2025)
+    'Italy': 2025,       # Gennaro Gattuso (Started June 2025)
+    'Belgium': 2025,     # Rudi Garcia
+    'Poland': 2025,      # Jan Urban
+    'Nigeria': 2025,     # Éric Chelle
+    'Denmark': 2024,     # Brian Riemer
+    'South Korea': 2024, # Hong Myung-bo
+    'Ecuador': 2024,     # Sebastián Beccacece
+    'Senegal': 2024,     # Pape Thiaw
+    'Ghana': 2024        # Otto Addo
+}
