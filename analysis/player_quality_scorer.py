@@ -10,7 +10,7 @@ import polars as pl
 import pandas as pd
 import numpy as np
 from player_metrics_config import PLAYER_METRICS, TRAIT_CATEGORIES
-from player_positions import PLAYER_POSITION_MAP
+from player_positions import POSITION_OVERRIDES
 
 
 class PlayerQualityScorer:

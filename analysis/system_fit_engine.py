@@ -4,15 +4,14 @@ import unicodedata
 import polars as pl
 from difflib import get_close_matches
 
-# Dictionary of Manager Start Years for 2026 Context
-# Long tenure = high stability. New (2025/2026) = instability.
-MANAGER_TENURE = {
-    'France': 2012, 'Argentina': 2018, 'Spain': 2022, 'Germany': 2023,
-    'USA': 2024, 'England': 2025, 'Brazil': 2024, 'Portugal': 2023,
-    'Canada': 2024, 'Mexico': 2024
-}
+# Import your external configs
+from rosters_2026 import MANAGER_TENURE
 
-def run_system_fit_engine_v3(df_players_input, df_success_input, df_archetypes_input, rosters_2026, CLUB_MAPPING_2026):
+def run_system_fit_engine(df_players_input, df_success_input, df_archetypes_input, rosters_2026, CLUB_MAPPING_2026):
+    """
+    Refined 2026 Readiness Engine.
+    Accounts for Manager Tenure, Star Power, Travel Fatigue, and Host Advantage.
+    """
     def to_pd(df): return df.to_pandas() if isinstance(df, pl.DataFrame) else df
     df_p = to_pd(df_players_input).copy()
     
@@ -22,10 +21,18 @@ def run_system_fit_engine_v3(df_players_input, df_success_input, df_archetypes_i
 
     results = []
 
+    # Comprehensive North American Club List for Recovery Edge
+    NA_CLUBS = [
+        'Inter Miami', 'LAFC', 'LA Galaxy', 'San Diego FC', 'New York City FC', 
+        'Seattle Sounders', 'Atlanta United', 'Toronto FC', 'Club América', 
+        'Chivas', 'Cruz Azul', 'Monterrey', 'Tigres UANL', 'Toluca', 'Pachuca'
+    ]
+
     for country, squad_dict in rosters_2026.items():
         found_indices = []
         for common_name in squad_dict.keys():
             n_common = norm(common_name)
+            # Match Logic (Priority: Exact/Contains -> Fuzzy)
             match = df_p[df_p['player_norm'].str.contains(n_common, na=False)]
             if not match.empty:
                 found_indices.append(match['overall_quality'].idxmax())
@@ -36,47 +43,54 @@ def run_system_fit_engine_v3(df_players_input, df_success_input, df_archetypes_i
                     found_indices.append(idx)
 
         squad_df = df_p.loc[found_indices].drop_duplicates(subset=['player']).copy()
-        if len(squad_df) == 0: continue
+        num_found = len(squad_df)
+        
+        if num_found == 0: continue
 
-        # --- NERD METRIC 1: MANAGER STABILITY ---
-        # Stability score: 1.0 (long term) to 0.85 (new manager)
+        # --- 1. MANAGER STABILITY ---
+        # Long-term (France/Arg) gets 1.05x. Brand new (England/Brazil) starts at 0.90x.
         start_year = MANAGER_TENURE.get(country, 2025)
         tenure_years = 2026 - start_year
         stability_mult = min(1.05, 0.90 + (tenure_years * 0.02))
 
-        # --- NERD METRIC 2: STAR POWER ---
-        # Top 3 players determine the "ceiling" of the team
+        # --- 2. STAR POWER (Ceiling) ---
+        # Bonus based on the quality of the top 3 match-winners
         top_3_avg = squad_df.nlargest(3, 'overall_quality')['overall_quality'].mean()
-        star_bonus = (top_3_avg - 75) * 0.15 if top_3_avg > 75 else 0
+        star_bonus = (top_3_avg - 75) * 0.20 if top_3_avg > 75 else 0
 
-        # --- NERD METRIC 3: TRAVEL & RECOVERY ---
-        # Players in MLS/Liga MX/USL have 0 jet lag. 
-        # Players in Europe have high fatigue.
+        # --- 3. RECOVERY & TRAVEL ---
+        # Players already in NA time zones avoid jet lag
         squad_df['club_2026'] = squad_df['player'].map(CLUB_MAPPING_2026)
-        
-        # Simple North American League check
-        na_leagues = ['Inter Miami', 'LAFC', 'Club América', 'LA Galaxy', 'San Diego FC', 'Minnesota United']
-        local_players = squad_df['club_2026'].isin(na_leagues).sum()
-        recovery_edge = (local_players / len(squad_df)) * 5.0 # Up to 5 points bonus
+        local_count = squad_df['club_2026'].isin(NA_CLUBS).sum()
+        recovery_edge = (local_count / num_found) * 5.0
+
+        # --- 4. HOST NATION ADVANTAGE ---
+        # Statistical boost for home support and familiarity
+        host_bonus = 1.12 if country in ['USA', 'Mexico', 'Canada'] else 1.00
 
         # --- CORE LOGIC ---
         avg_quality = squad_df['overall_quality'].mean()
-        depth_mult = min(1.0, 0.4 + (len(squad_df) * 0.06))
         
-        # Cohesion
+        # NORMALIZATION: 
+        # We use a depth multiplier that caps quickly so smaller squads 
+        # with high quality aren't punished too harshly compared to 23-man squads.
+        depth_mult = min(1.0, 0.5 + (num_found * 0.05))
+        
+        # Cohesion (Club teammates)
         valid_clubs = squad_df['club_2026'].dropna()
-        cohesion = (sum(valid_clubs.value_counts()**2) / (len(squad_df)**2)) * 10 if len(squad_df) >= 4 else 0
+        cohesion = (sum(valid_clubs.value_counts()**2) / (num_found**2)) * 10 if num_found >= 3 else 0
 
         # FINAL CALCULATION
-        # Quality * Depth * Stability + Bonuses
-        readiness = (avg_quality * depth_mult * stability_mult) + cohesion + star_bonus + recovery_edge
+        # (Quality Base * Stability * Host) + Bonuses
+        readiness = ((avg_quality * depth_mult * stability_mult) * host_bonus) + cohesion + star_bonus + recovery_edge
 
         results.append({
             'National_Team': country,
-            'Players_Found': len(squad_df),
-            'Stability_Bonus': round(stability_mult, 2),
+            'Players_Found': num_found,
+            'Stability': round(stability_mult, 2),
             'Star_Power': round(star_bonus, 2),
-            'Recovery_Edge': round(recovery_edge, 2),
+            'Recovery': round(recovery_edge, 2),
+            'Host_Adv': "Yes" if host_bonus > 1 else "No",
             'Readiness_Score': round(readiness, 2)
         })
 

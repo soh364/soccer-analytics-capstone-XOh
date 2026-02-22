@@ -451,5 +451,6 @@ MANAGER_TENURE = {
     'South Korea': 2024, # Hong Myung-bo
     'Ecuador': 2024,     # Sebastián Beccacece
     'Senegal': 2024,     # Pape Thiaw
-    'Ghana': 2024        # Otto Addo
+    'Ghana': 2024,       # Otto Addo
+    'Serbia': 2025
 }
