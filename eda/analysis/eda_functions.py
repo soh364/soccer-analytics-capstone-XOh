@@ -13,6 +13,7 @@ import polars as pl
 import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
+from IPython.display import clear_output
 
 from IPython.display import display
 import pandas as pd
@@ -47,75 +48,34 @@ def generate_summary_stats(statsbomb_dir: Path) -> dict[str, Any]:
 
 def overall_summary_table(statsbomb_dir: Path) -> None:
     """
-    Display dataset summary as a clean, professional table.
-    Simple styling, no fancy colors.
+    Display dataset summary as a clean, fixed-width ASCII table.
     """
-    # Get summary stats
+    # 1. Get stats (this might print "scanning" messages)
     summary_stats = plot_dataset_overview_summary(statsbomb_dir)
     
-    # Create DataFrame
-    data = {
-        'Dataset': ['Matches', 'Events', 'Lineups', '360° Tracking'],
-        'Records': [
-            f"{summary_stats['matches']['total']:,}",
-            f"{summary_stats['events']['total']:,}",
-            f"{summary_stats['lineups']['total']:,}",
-            f"{summary_stats['three60']['total']:,}"
-        ],
-        'Coverage': [
-            f"{summary_stats['matches']['competitions']} competitions",
-            f"{summary_stats['events']['types']} event types",
-            f"{summary_stats['lineups']['players']:,} players",
-            f"{summary_stats['three60']['matches']} matches"
-        ],
-        'Details': [
-            f"~{summary_stats['events']['total'] // summary_stats['matches']['total']:,} events/match",
-            f"{summary_stats['events']['has_location']/summary_stats['events']['total']*100:.2f}% with location",
-            f"{summary_stats['lineups']['positions']} position types",
-            f"{summary_stats['three60']['matches']/summary_stats['matches']['total']*100:.1f}% coverage"
-        ]
-    }
+    # 2. Wipe any noise from the helper function so ONLY the table shows
+    clear_output(wait=True)
     
-    df = pd.DataFrame(data)
+    header_text = "DATASET SUMMARY: STATSBOMB CORE ENGINE"
+    cols = ["Dataset", "Records", "Coverage", "Details"]
     
-    # Simple, clean styling
-    styled = df.style.set_table_styles([
-        # Header
-        {'selector': 'thead th', 'props': [
-            ('background-color', '#f8f9fa'),
-            ('color', '#212529'),
-            ('font-weight', '600'),
-            ('text-align', 'left'),
-            ('padding', '12px 15px'),
-            ('border-bottom', '2px solid #dee2e6'),
-            ('font-size', '13px')
-        ]},
-        # Body cells
-        {'selector': 'tbody td', 'props': [
-            ('padding', '12px 15px'),
-            ('border-bottom', '1px solid #e9ecef'),
-            ('font-size', '13px'),
-            ('color', '#212529')
-        ]},
-        # First column (dataset names)
-        {'selector': 'tbody td:first-child', 'props': [
-            ('font-weight', '500')
-        ]},
-        # Alternating rows
-        {'selector': 'tbody tr:nth-child(even)', 'props': [
-            ('background-color', '#f8f9fa')
-        ]},
-        # Table
-        {'selector': '', 'props': [
-            ('border-collapse', 'collapse'),
-            ('width', '100%'),
-            ('margin', '10px 0'),
-            ('border', '1px solid #dee2e6')
-        ]}
-    ]).hide(axis='index')
-    
-    display(styled)
+    rows = [
+        ["Matches", f"{summary_stats['matches']['total']:,}", f"{summary_stats['matches']['competitions']} competitions", f"~{summary_stats['events']['total'] // summary_stats['matches']['total']:,} events/match"],
+        ["Events", f"{summary_stats['events']['total']:,}", f"{summary_stats['events']['types']} types", f"{summary_stats['events']['has_location']/summary_stats['events']['total']*100:.1f}% w/ loc"],
+        ["Lineups", f"{summary_stats['lineups']['total']:,}", f"{summary_stats['lineups']['players']:,} players", f"{summary_stats['lineups']['positions']} positions"],
+        ["360 Tracking", f"{summary_stats['three60']['total']:,}", f"{summary_stats['three60']['matches']} matches", f"{summary_stats['three60']['matches']/summary_stats['matches']['total']*100:.1f}% coverage"]
+    ]
 
+    print("=" * 90)
+    print(f"{header_text:^90}")
+    print("=" * 90)
+    print(f"{cols[0]:<15} {cols[1]:<15} {cols[2]:<25} {cols[3]:<25}")
+    print("-" * 90)
+    
+    for r in rows:
+        print(f"{r[0]:<15} {r[1]:<15} {r[2]:<25} {r[3]:<25}")
+    
+    print("=" * 90)
 
 
 def plot_dataset_overview_summary(statsbomb_dir: Path, figsize=(16, 6)) -> dict[str, Any]:
@@ -159,48 +119,293 @@ def plot_dataset_overview_summary(statsbomb_dir: Path, figsize=(16, 6)) -> dict[
     
     return stats
 
-
-def plot_competition_distribution(statsbomb_dir: Path, figsize=(14, 8)) -> None:
-    """Competition distribution pie and bar charts."""
+def plot_matches_market_overview(statsbomb_dir: Path, figsize=(15, 5)) -> None:
+    """
+    Compact Matches EDA:
+    Left: Top 10 competitions by total volume.
+    Right: Yearly stacked bars by competition name (2010-2026).
+    """
+    # --- DATA PROCESSING ---
     lf = pl.scan_parquet(statsbomb_dir / "matches.parquet")
     
-    comp_dist = lf.group_by("competition_name").agg(
+    # 1. Base Data with Year
+    df_matches = lf.with_columns(
+        pl.col("match_date").cast(pl.String).str.strptime(pl.Date, "%Y-%m-%d").dt.year().alias("year")
+    ).filter(pl.col("year") >= 2010).collect()
+
+    # 2. Left Chart: Top 10 Overall
+    top_10_df = df_matches.group_by("competition_name").agg(
         pl.len().alias("count")
-    ).sort("count", descending=True).collect()
+    ).sort("count", descending=True).head(10)
+
+    # 3. Right Chart: Stacked by Competition
+    # We identify the top N competitions to color specifically, group the rest as "Other"
+    top_5_names = top_10_df.head(6)["competition_name"].to_list()
     
-    top_10 = comp_dist.head(10)
+    # Create year range for x-axis
+    all_years = sorted(list(range(2010, 2027)))
+
+    # --- STYLING & COLORS ---
+    # Using a professional palette: Navy, Gold, Crimson, Emerald, Purple
+    colors = ["#001f3f", "#d4af37", "#e63946", "#2d6a4f", "#7209b7", "#4895ef", "#adb5bd"]
+    color_map = {name: colors[i % len(colors)] for i, name in enumerate(top_5_names)}
+    other_color = "#dee2e6"
+
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize, gridspec_kw={'width_ratios': [0.8, 1.2]})
+
+    # --- LEFT: TOP 10 RANKING ---
+    ax1.barh(top_10_df["competition_name"], top_10_df["count"], color="#1a1a1a", height=0.7)
+    ax1.invert_yaxis()
+    ax1.set_title('TOTAL DATA VOLUME', loc='left', fontsize=11, fontweight='bold')
+    ax1.spines[['top', 'right']].set_visible(False)
+    ax1.tick_params(labelsize=9)
+    ax1.grid(axis='x', linestyle=':', alpha=0.5)
+
+    # --- RIGHT: YEARLY STACKED COMPETITIONS ---
+    bottoms = np.zeros(len(all_years))
     
-    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
+    # Plot top competitions
+    for name in top_5_names:
+        yearly_counts = []
+        for y in all_years:
+            count = df_matches.filter((pl.col("year") == y) & (pl.col("competition_name") == name)).height
+            yearly_counts.append(count)
+        
+        ax2.bar(all_years, yearly_counts, bottom=bottoms, label=name[:20], color=color_map[name], width=0.75)
+        bottoms += np.array(yearly_counts)
+
+    # Plot "Other" category
+    other_counts = []
+    for y in all_years:
+        count = df_matches.filter((pl.col("year") == y) & (~pl.col("competition_name").is_in(top_5_names))).height
+        other_counts.append(count)
     
-    # Left: Pie chart (Top 5)
-    top_5 = comp_dist.head(5)
-    colors = plt.cm.Set3(np.linspace(0, 1, 5))
-    
-    ax1.pie(top_5['count'].to_list(), labels=top_5['competition_name'].to_list(),
-           autopct='%1.1f%%', startangle=90, colors=colors)
-    ax1.set_title('Top 5 Competitions', fontsize=13, fontweight='bold')
-    
-    # Right: Bar chart (Top 10)
-    competitions = top_10['competition_name'].to_list()
-    counts = top_10['count'].to_list()
-    
-    bars = ax2.barh(range(len(competitions)), counts, color='steelblue', edgecolor='black')
-    ax2.set_yticks(range(len(competitions)))
-    ax2.set_yticklabels(competitions, fontsize=10)
-    ax2.set_xlabel('Number of Matches', fontsize=11)
-    ax2.set_title('Top 10 Competitions', fontsize=13, fontweight='bold')
-    ax2.invert_yaxis()
-    ax2.grid(axis='x', alpha=0.3)
-    
-    # Add value labels
-    for i, count in enumerate(counts):
-        ax2.text(count + 15, i, f'{count}', va='center', fontsize=9)
-    
+    ax2.bar(all_years, other_counts, bottom=bottoms, label="Others", color=other_color, width=0.75)
+
+    ax2.set_title('ANNUAL COMPETITION MIX (2010-2026)', loc='left', fontsize=11, fontweight='bold')
+    ax2.set_xticks(all_years)
+    ax2.set_xticklabels(all_years, rotation=45, fontsize=8)
+    ax2.spines[['top', 'right']].set_visible(False)
+    ax2.legend(bbox_to_anchor=(1.05, 1), loc='upper left', fontsize=8, frameon=False)
+    ax2.grid(axis='y', linestyle=':', alpha=0.5)
+
     plt.tight_layout()
     plt.show()
 
+import polars as pl
+import numpy as np
+import matplotlib.pyplot as plt
+from pathlib import Path
 
 
+# Sophisticated palette — perceptually distinct, matched to known competition names
+COMP_PALETTE = {
+    'La Liga':                  '#e63946',
+    'Ligue 1':                  '#f4a261',
+    'Serie A':                  '#2a9d8f',
+    'Premier League':           '#1d3557',
+    'Bundesliga':               '#e9c46a',
+    'FA Women':                 '#c77dff',
+    'FIFA World Cup':           '#2d6a4f',
+    'Women\'s World Cup':       '#457b9d',
+    'Indian Super':             '#b5838d',
+    'UEFA Euro':                '#6d6875',
+}
+
+FALLBACK_COLORS = ['#f4e285', '#a8dadc', '#ff6b6b', '#84a98c', '#cdb4db']
+
+
+def gradient_barh(ax, y, width, height, cmap_name='Blues'):
+    """Draw horizontal gradient bars — light to dark left to right."""
+    cmap = plt.get_cmap(cmap_name)
+    for this_y, this_width in zip(y, width):
+        grad = np.atleast_2d(np.linspace(0.3, 0.9, 256))
+        ax.imshow(
+            grad,
+            extent=[0, this_width, this_y - height / 2, this_y + height / 2],
+            aspect='auto', cmap=cmap, zorder=3,
+        )
+
+
+def plot_matches_market_overview(statsbomb_dir: Path, figsize=(16, 6)) -> None:
+    """
+    Matches EDA — two-panel overview.
+    Left:  Total match count per competition (gradient bars).
+    Right: Annual competition mix stacked by year (2010–2025).
+    """
+
+    # ── Data ─────────────────────────────────────────────────────────────────
+    lf = pl.scan_parquet(statsbomb_dir / "matches.parquet")
+    df_matches = (
+        lf.with_columns(
+            pl.col("match_date")
+            .cast(pl.String)
+            .str.strptime(pl.Date, "%Y-%m-%d")
+            .dt.year()
+            .alias("year")
+        )
+        .filter(pl.col("year").is_between(2010, 2025))
+        .collect()
+    )
+
+    # Left chart — top 10 competitions by match count
+    top_10_df = (
+        df_matches.group_by("competition_name")
+        .agg(pl.len().alias("match_count"))
+        .sort("match_count", descending=True)
+        .head(10)
+    )
+
+    # Right chart — top 6 competitions for stacking
+    top_10_names = top_10_df.head(10)["competition_name"].to_list()
+    all_years   = list(range(2010, 2026))
+
+    # ── Figure ────────────────────────────────────────────────────────────────
+    fig, (ax1, ax2, ax3) = plt.subplots(
+        1, 3, figsize=(22, 6),
+        gridspec_kw={'width_ratios': [0.7, 1.1, 1.1]},
+    )
+    fig.patch.set_facecolor('#ffffff')
+    for ax in (ax1, ax2):
+        ax.set_facecolor('#fafafa')
+
+    # ── Left: gradient horizontal bars ───────────────────────────────────────
+    names  = top_10_df["competition_name"].to_list()
+    counts = top_10_df["match_count"].to_list()
+    y_pos  = np.arange(len(names))
+
+    bar_colors = [plt.get_cmap('Blues')(0.3 + 0.6 * (1 - i / len(counts))) for i in range(len(counts))]
+    ax1.barh(y_pos, counts, height=0.7, color=bar_colors, zorder=3)
+
+    # Value labels
+    for y, c in zip(y_pos, counts):
+        ax1.text(c + max(counts) * 0.01, y, str(c),
+                 va='center', fontsize=8.5, color='#343a40',
+                 fontfamily='monospace', fontweight='bold')
+
+    ax1.set_yticks(y_pos)
+    ax1.set_yticklabels(names, fontsize=9, fontweight='500')
+    ax1.invert_yaxis()
+    ax1.set_title('Match Volume by Top 10 Competitions',
+                  loc='center', fontsize=11, fontweight='bold', color='#1a1a2e', pad=12)
+    ax1.spines[['top', 'right', 'left']].set_visible(False)
+    ax1.set_xlim(0, max(counts) * 1.18)
+    ax1.tick_params(axis='y', length=0)
+    ax1.grid(axis='x', linestyle=':', alpha=0.35, zorder=0)
+
+    # ── Right: stacked bars by year ───────────────────────────────────────────
+    bottoms = np.zeros(len(all_years))
+
+    for i, name in enumerate(top_10_names):
+        # Match competition name to palette — partial string match
+        color = next(
+            (v for k, v in COMP_PALETTE.items() if k.lower() in name.lower()),
+            FALLBACK_COLORS[i % len(FALLBACK_COLORS)],
+        )
+        yearly_counts = [
+            df_matches.filter(
+                (pl.col("year") == y) & (pl.col("competition_name") == name)
+            ).height
+            for y in all_years
+        ]
+        ax2.bar(
+            all_years, yearly_counts, bottom=bottoms,
+            label=name[:30], color=color,
+            width=0.75, edgecolor='white', linewidth=0.6, alpha=0.92,
+        )
+        bottoms += np.array(yearly_counts)
+
+    # Others
+    other_counts = [
+        df_matches.filter(
+            (pl.col("year") == y) & (~pl.col("competition_name").is_in(top_10_names))
+        ).height
+        for y in all_years
+    ]
+
+    for year_idx, (total, other) in enumerate(zip(bottoms + np.array(other_counts), other_counts)):
+        if total > 0:
+            ax2.text(all_years[year_idx], total + 0.5, str(int(total)),
+                    ha='center', va='bottom', fontsize=7.5,
+                    color='#343a40', fontfamily='monospace', fontweight='bold')
+            
+    ax2.bar(
+        all_years, other_counts, bottom=bottoms,
+        label='Others', color='#dee2e6',
+        width=0.75, edgecolor='white', linewidth=0.6, alpha=0.75,
+    )
+
+    ax2.set_title('Temporal Distribution by Competition (2010–2025)',
+                  loc='center', fontsize=11, fontweight='bold', color='#1a1a2e', pad=12)
+    ax2.set_xticks(all_years)
+    ax2.set_xticklabels(all_years, rotation=45, fontsize=8, color='#555')
+    ax2.spines[['top', 'right']].set_visible(False)
+    ax2.tick_params(axis='x', length=0)
+    ax2.legend(
+        bbox_to_anchor=(1.02, 1), loc='upper left',
+        fontsize=8, frameon=False, labelspacing=0.6,
+    )
+    ax2.grid(axis='y', linestyle=':', alpha=0.35)
+
+    plt.suptitle(
+        'Match Data: Competition Coverage & Temporal Scope',
+        fontsize=13, fontweight='bold', color='#1a1a2e', y=1.02,
+    )
+
+    # ── ax3: 2021–2025 zoom ───────────────────────────────────────────────────
+    zoom_years = list(range(2021, 2026))
+    bottoms3   = np.zeros(len(zoom_years))
+
+    for i, name in enumerate(top_10_names):
+        color = next(
+            (v for k, v in COMP_PALETTE.items() if k.lower() in name.lower()),
+            FALLBACK_COLORS[i % len(FALLBACK_COLORS)],
+        )
+        yearly_counts = [
+            df_matches.filter(
+                (pl.col("year") == y) & (pl.col("competition_name") == name)
+            ).height
+            for y in zoom_years
+        ]
+        ax3.bar(
+            zoom_years, yearly_counts, bottom=bottoms3,
+            label=name[:30], color=color,
+            width=0.6, edgecolor='white', linewidth=0.6, alpha=0.92,
+        )
+        bottoms3 += np.array(yearly_counts)
+
+    other_counts3 = [
+        df_matches.filter(
+            (pl.col("year") == y) & (~pl.col("competition_name").is_in(top_10_names))
+        ).height
+        for y in zoom_years
+    ]
+    ax3.bar(
+        zoom_years, other_counts3, bottom=bottoms3,
+        label='Others', color='#dee2e6',
+        width=0.6, edgecolor='white', linewidth=0.6, alpha=0.75,
+    )
+
+    # Value labels
+    for year_idx, total in enumerate(bottoms3 + np.array(other_counts3)):
+        if total > 0:
+            ax3.text(zoom_years[year_idx], total + 0.5, str(int(total)),
+                    ha='center', va='bottom', fontsize=8,
+                    color='#343a40', fontfamily='monospace', fontweight='bold')
+
+    ax3.set_title('The Modern Tactical Sample (2021–2025)',
+                loc='left', fontsize=11, fontweight='bold', color='#1a1a2e', pad=12)
+    ax3.set_xticks(zoom_years)
+    ax3.set_xticklabels(zoom_years, fontsize=9, color='#555')
+    ax3.spines[['top', 'right']].set_visible(False)
+    ax3.tick_params(axis='x', length=0)
+    ax3.get_legend().remove() if ax3.get_legend() else None
+    ax3.grid(axis='y', linestyle=':', alpha=0.35)
+
+    plt.tight_layout()
+    plt.savefig('figures/matches_overview.png',
+                dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    plt.show()
 
 def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None:
     """Temporal distribution with club vs tournament stacked bars."""
@@ -246,12 +451,18 @@ def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None
                    color='steelblue', edgecolor='black')
     
     ax.set_xlabel('Year', fontsize=12, fontweight='bold')
-    ax.set_ylabel('Number of Matches', fontsize=12, fontweight='bold')
-    ax.set_title('Temporal Distribution (2015-2025)', fontsize=14, fontweight='bold')
+    ax.set_ylabel('Number of Matches', fontsize=10, fontweight='bold')
+    ax.set_title('Temporal Distribution (2015-2025)', loc='center', fontsize=14, fontweight='bold')
     ax.set_xticks(x)
     ax.set_xticklabels(years, fontsize=11)
     ax.legend(fontsize=11, loc='upper left')
     ax.grid(axis='y', alpha=0.3)
+
+    plt.suptitle(
+        'Temporal Distribution (2015-2025)',
+        fontsize=13, fontweight='bold', color='#1a1a2e', y=1.02,
+    )
+
     
     # Calculate max value and round up to nearest 100
     max_total = max([club + tourn for club, tourn in zip(club_counts, tournament_counts)])
