@@ -51,8 +51,11 @@ def plot_clustering_validation_compact(optimization_results, figsize=(8, 3.5)):
 
 def save_figure(fig, filename, dpi=300):
     """Save figure with consistent settings"""
-    fig.savefig(f'../figures/{filename}', dpi=dpi, bbox_inches='tight')
-    print(f"Saved: outputs/figures/{filename}")
+    from pathlib import Path
+    figures_dir = Path('figures')
+    figures_dir.mkdir(parents=True, exist_ok=True)
+    fig.savefig(figures_dir / filename, dpi=dpi, bbox_inches='tight')
+    print(f"Saved: figures/{filename}")
 
 def plot_tactical_pca(profiles_df, dimensions, labels, archetype_names,
                       highlight_teams=None, figsize=(8, 6)):
