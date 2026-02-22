@@ -7,7 +7,10 @@ import numpy as np
 from sklearn.preprocessing import StandardScaler
 from sklearn.decomposition import PCA
 import matplotlib.pyplot as plt
-
+from mplsoccer import PyPizza
+import pandas as pd
+import polars as pl
+import seaborn as sns
 
 def project_to_pca(baseline_df, new_dfs, dimensions):
     """
@@ -175,12 +178,6 @@ def plot_tactical_pca(profiles_df, dimensions, labels, archetype_names,
         ax.scatter(cx, cy, c=colors[cluster_id], s=200, edgecolors='black',
                    linewidth=1, marker='D', zorder=2, alpha=0.9)
         
-        # Add archetype label near centroid
-        ax.text(cx, cy + 0.6, archetype_names[cluster_id], 
-                fontsize=8, weight='bold', ha='center',
-                color=colors[cluster_id], zorder=4,
-                bbox=dict(boxstyle='round,pad=0.3', facecolor='white', 
-                         edgecolor=colors[cluster_id], alpha=0.8))
     
     # Annotate specific teams
     if highlight_teams and 'team' in profiles_df.columns:
@@ -355,3 +352,135 @@ def run_tournament_analysis(tri_data):
     plt.tight_layout()
     plt.show()
     print(">>> Analysis Complete: G-Force Convergence Plot generated.")
+
+
+def plot_player_pizza(df, player_name, save_path=None):
+    """Compact individual pizza plot with white background and tight titles."""
+    player_data = df.filter(df['player'] == player_name).to_pandas()
+    if player_data.empty:
+        print(f"Player {player_name} not found.")
+        return
+    row = player_data.iloc[0]
+
+    params = [
+        "xg_volume_percentile", "finishing_quality_percentile", "Final_Third_Output",
+        "progressive_passes_percentile", "progressive_carries_percentile", "xg_chain_percentile",
+        "network_centrality_percentile", "team_involvement_percentile", "xg_buildup_percentile",
+        "pressure_volume_percentile", "defensive_actions_percentile", "high_turnovers_percentile"
+    ]
+    labels = [
+        "xG Volume", "Finishing", "Final 3rd\nOutput",
+        "Prog. Passes", "Prog. Carries", "xG Chain",
+        "Centrality", "Involvement", "xG Build-up",
+        "Pressure", "Def. Actions", "High\nTurnovers"
+    ]
+    values = [round(row[p], 1) for p in params]
+
+    # Reduced figsize for "Half Size" appearance (was 10,11)
+    fig, ax = plt.subplots(figsize=(6, 6.5), facecolor="white")
+
+    baker = PyPizza(
+        params=labels,
+        background_color="white",
+        straight_line_color="#E0E0E0",
+        last_circle_color="#BCBCBC",
+        last_circle_lw=2,
+        inner_circle_size=20
+    )
+
+    slice_colors = ["#1A78CF"] * 3 + ["#FF9300"] * 3 + ["#4E6111"] * 3 + ["#D70232"] * 3
+
+    baker.make_pizza(
+        values,
+        ax=ax,
+        color_blank_space="same",
+        slice_colors=slice_colors,
+        value_colors=["white"] * 12,
+        value_bck_colors=slice_colors,
+        blank_alpha=0.15,
+        param_location=105, # Pulls labels closer to the chart (default is ~110)
+        kwargs_slices=dict(edgecolor="white", zorder=2, linewidth=1),
+        kwargs_params=dict(color="#222222", fontsize=9, va="center"),
+        kwargs_values=dict(color="white", fontsize=8, zorder=3, 
+                           bbox=dict(edgecolor="white", facecolor="#222222", boxstyle="round,pad=0.2", lw=1))
+    )
+
+    # Tightened Titles (Lowered y-position and font size)
+    fig.text(0.5, 0.96, f"{row['player'].upper()}", size=16, ha="center", color="#222222", weight='bold')
+    fig.text(0.5, 0.92, f"{row['latest_club']} | {row['position']}", size=10, ha="center", color="#555555")
+
+    if save_path:
+        plt.savefig(save_path, dpi=300, bbox_inches='tight', facecolor="white")
+    plt.show()
+
+def plot_comparison_pizzas(df, p1_name, p2_name, p1_rank=None, p2_rank=None):
+    """Compact side-by-side with club in title and bold numbers inside slices."""
+    p1_data = df.filter(df['player'] == p1_name).to_pandas().iloc[0]
+    p2_data = df.filter(df['player'] == p2_name).to_pandas().iloc[0]
+
+    params = [
+        "xg_volume_percentile", "finishing_quality_percentile", "Final_Third_Output",
+        "progressive_passes_percentile", "progressive_carries_percentile", "xg_chain_percentile",
+        "network_centrality_percentile", "team_involvement_percentile", "xg_buildup_percentile",
+        "pressure_volume_percentile", "defensive_actions_percentile", "high_turnovers_percentile"
+    ]
+    labels = [
+        "xG Volume", "Finishing", "Final 3rd\nOutput",
+        "Prog. Passes", "Prog. Carries", "xG Chain",
+        "Centrality", "Involvement", "xG Build-up",
+        "Pressure", "Def. Actions", "High\nTurnovers"
+    ]
+    
+    p1_vals = [round(p1_data[p], 1) for p in params]
+    p2_vals = [round(p2_data[p], 1) for p in params]
+
+    fig, axs = plt.subplots(
+        1, 2, 
+        figsize=(12, 7), 
+        facecolor="white", 
+        subplot_kw=dict(projection='polar')
+    )
+
+    baker = PyPizza(
+        params=labels, 
+        background_color="white", 
+        straight_line_color="#E0E0E0", 
+        last_circle_color="#BCBCBC",
+        last_circle_lw=2,
+        inner_circle_size=20
+    )
+
+    colors = ["#1A78CF"]*3 + ["#FF9300"]*3 + ["#4E6111"]*3 + ["#D70232"]*3
+
+    for i, vals in enumerate([p1_vals, p2_vals]):
+        baker.make_pizza(
+            vals, 
+            ax=axs[i], 
+            color_blank_space="same", 
+            blank_alpha=0.15,
+            slice_colors=colors,
+            param_location=110, # Labels slightly outside for clarity
+            kwargs_params=dict(color="#222222", fontsize=8, va="center"),
+            # Numbers inside slices: Reduced 'offset' and bold font
+            kwargs_values=dict(
+                color="white", 
+                fontsize=8, 
+                zorder=3, 
+                fontweight='bold', # Bold numbers
+                bbox=dict(
+                    edgecolor="white", 
+                    facecolor="#222222", 
+                    boxstyle="round,pad=0.2", 
+                    lw=1
+                )
+            )
+        )
+    
+    t1_full = f"#{p1_rank}: {p1_name} ({p1_data['latest_club']})" if p1_rank else f"{p1_name} ({p1_data['latest_club']})"
+    axs[0].set_title(t1_full, color="#1A78CF", size=11, weight='bold', pad=35)
+
+    t2_full = f"#{p2_rank}: {p2_name} ({p2_data['latest_club']})" if p2_rank else f"{p2_name} ({p2_data['latest_club']})"
+    axs[1].set_title(t2_full, color="#D70232", size=11, weight='bold', pad=35)
+
+    plt.tight_layout(pad=1.5)
+    plt.show()
