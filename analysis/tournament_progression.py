@@ -5,19 +5,10 @@ import numpy as np
 import matplotlib.pyplot as plt
 
 def get_tournament_results():
-    """
-    Tournament progression data: best result per team across 2022-24 tournaments.
+    """Tournament progression data: best result per team across 2022-24 tournaments.
     
-    Scoring:
-        0 = Group stage exit
-        1 = Round of 16
-        2 = Quarter-final
-        3 = Semi-final
-        4 = Final (runner-up)
-        5 = Winner
-    
-    Returns:
-        dict of dicts: {tournament_name: {team: score}}
+    Scoring: 0=Group, 1=R16, 2=QF, 3=SF, 4=Final, 5=Winner
+    Returns dict of dicts: {tournament_name: {team: score}}
     """
     wc_2022 = {
         'Argentina': 5, 'France': 4, 'Croatia': 3, 'Morocco': 3,
@@ -54,12 +45,7 @@ def get_tournament_results():
 
 
 def get_progression_df():
-    """
-    Build progression DataFrame with best result per team across all tournaments.
-    
-    Returns:
-        DataFrame with columns: team, progression_score, best_tournament
-    """
+    """Build progression DataFrame with best result per team across all tournaments."""
     tournaments = get_tournament_results()
     
     # Collect all team scores
@@ -85,16 +71,7 @@ def get_progression_df():
 
 
 def merge_progression(tournament_pd, archetype_names=None):
-    """
-    Merge progression scores with tournament profiles.
-    
-    Args:
-        tournament_pd: Tournament profiles DataFrame with 'team' column
-        archetype_names: Optional dict mapping cluster_id to name
-    
-    Returns:
-        DataFrame with progression data merged in
-    """
+    """Merge progression scores with tournament profiles."""
     progression_df = get_progression_df()
     
     merged = tournament_pd.merge(progression_df, on='team', how='left')
@@ -114,13 +91,7 @@ def merge_progression(tournament_pd, archetype_names=None):
 
 
 def print_progression_summary(merged_df, archetype_names):
-    """
-    Display archetype success summary as styled HTML table.
-    
-    Args:
-        merged_df: DataFrame from merge_progression with 'assigned_archetype', 'progression_score'
-        archetype_names: dict mapping cluster_id to name
-    """
+    """Display archetype success summary as styled HTML table."""
     from IPython.display import display, HTML
     
     rows_html = ""
@@ -174,10 +145,7 @@ def print_progression_summary(merged_df, archetype_names):
     display(HTML(html))
 
 def plot_paradox_scatter(merged_df, archetype_names, figsize=(8, 6), ax=None):
-    """
-    Chart 8: The Paradox — Prevalence vs Success scatter.
-    The headline visual of Phase 3.
-    """
+    """Chart: Prevalence vs Success scatter showing the paradox."""
     colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
 
     if ax is None:
@@ -223,9 +191,7 @@ def plot_paradox_scatter(merged_df, archetype_names, figsize=(8, 6), ax=None):
 
 
 def plot_success_by_archetype(merged_df, archetype_names, figsize=(6, 3), ax=None):
-    """
-    Chart 9: Average progression by archetype with reference lines.
-    """
+    """Chart: Average progression by archetype with reference lines."""
     colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
 
     # Calculate stats sorted by success
@@ -282,10 +248,7 @@ def plot_success_by_archetype(merged_df, archetype_names, figsize=(6, 3), ax=Non
 
 
 def plot_progression_by_round(merged_df, archetype_names, figsize=(6, 3), ax=None):
-    """
-    Chart 10: Stacked archetype composition at each tournament stage.
-    Shows which archetypes survive each round.
-    """
+    """Chart: Stacked archetype composition at each tournament stage."""
     colors = {0: '#4895C4', 1: '#A23B72', 2: '#F18F01'}
     
     stages = [
@@ -334,19 +297,9 @@ def plot_progression_by_round(merged_df, archetype_names, figsize=(6, 3), ax=Non
     plt.tight_layout()
     return fig, ax
 
-# Add to tournament_progression.py
 
 def build_match_results(matches_df, team_archetypes_df):
-    """
-    Build match-level results with archetype assignments for both teams.
-    
-    Args:
-        matches_df: Raw match data with home_team, away_team, home_score, away_score
-        team_archetypes_df: DataFrame with 'team' and 'assigned_archetype' columns
-    
-    Returns:
-        DataFrame with match results and archetype matchup info
-    """
+    """Build match-level results with archetype assignments for both teams."""
     # Filter to tournament competitions
     tournament_comps = ['FIFA World Cup', "FIFA Women's World Cup", 
                         'UEFA Euro', 'Copa America']
@@ -383,16 +336,7 @@ def build_match_results(matches_df, team_archetypes_df):
 
 
 def archetype_vs_archetype(match_results, archetype_names):
-    """
-    Calculate win/draw/loss rates for each archetype matchup.
-    
-    Args:
-        match_results: DataFrame from build_match_results
-        archetype_names: dict of {cluster_id: name}
-    
-    Returns:
-        DataFrame with matchup statistics
-    """
+    """Calculate win/draw/loss rates for each archetype matchup."""
     matchups = []
     
     for cid_a, name_a in archetype_names.items():

@@ -252,5 +252,5 @@ def plot_comparison_pizzas(df, p1_name, p2_name, p1_rank=None, p2_rank=None):
     axs[1].set_title(t2_full, color="#D70232", size=11, weight='bold', pad=35)
 
     plt.tight_layout(pad=1.5)
-    plt.show()
+    return fig
 

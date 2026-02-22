@@ -1,10 +1,4 @@
-"""
-Calculate 0-100 quality scores for players using:
-- 13 metrics across 4 trait categories
-- Time-decay weighting (recent performance weighted higher)
-- Position-based trait weighting
-- League quality multipliers
-"""
+"""Calculate 0-100 quality scores for players using 13 metrics across 4 trait categories, time-decay weighting, position-based weights, and league multipliers."""
 
 import polars as pl
 import pandas as pd
@@ -31,9 +25,7 @@ class PlayerQualityScorer:
     def aggregate_player_metrics(self, verbose=True):
         """Aggregate all metrics per player with time-decay weighting."""
         if verbose:
-            print("\n" + "="*70)
-            print("AGGREGATING PLAYER METRICS")
-            print("="*70)
+            print("Aggregating player metrics...")
 
         player_scores = []
         MIN_MATCHES = 5
@@ -51,11 +43,9 @@ class PlayerQualityScorer:
             if column not in df.columns or 'player' not in df.columns:
                 continue
 
-            # Find volume column
             volume_col = next((c for c in ['matches', 'minutes_played', 'total_mins']
                                if c in df.columns), None)
 
-            # Add time decay weight
             df = df.with_columns(
                 pl.col('season_year').map_elements(
                     self.calculate_time_decay_weight,
@@ -73,37 +63,31 @@ class PlayerQualityScorer:
                 ])
             )
 
-            # Apply volume filter
             if volume_col:
                 default_threshold = MIN_MATCHES if volume_col == 'matches' else MIN_MINUTES
                 metric_threshold = config.get('min_volume', default_threshold)
                 agg_df = agg_df.filter(pl.col('volume') >= metric_threshold)
 
-            # Calculate weighted average metric
-            # Inside the loop, keep volume in the select
             agg_df = agg_df.with_columns(
                 (pl.col('w_sum') / pl.col('w_total')).alias(metric_name)
-            ).select(['player', metric_name, 'volume'])  # ← keep volume here
+            ).select(['player', metric_name, 'volume'])
 
             player_scores.append(agg_df)
 
             if verbose:
-                print(f"  ✓ {metric_name}: {len(agg_df)} players")
+                print(f"  {metric_name}: {len(agg_df)} players")
 
         if not player_scores:
             raise ValueError("No metrics aggregated")
 
-        # Join all metrics
-        combined = player_scores[0]  # this is finishing_quality, has volume
+        combined = player_scores[0]
         for next_df in player_scores[1:]:
             combined = combined.join(
-                next_df.drop('volume'),  # drop volume from all others
+                next_df.drop('volume'),
                 on='player', 
                 how='left'
             )
 
-        # After joining all metrics, shrink finishing_quality toward mean
-        # Bayesian shrinkage
         if 'finishing_quality' in combined.columns:
             global_mean = combined['finishing_quality'].mean()
             k = 10
@@ -115,16 +99,13 @@ class PlayerQualityScorer:
 
         # Drop volume before staleness penalty
         combined = combined.drop('volume')
-        # ============================================================================
-        # Staleness Penalty - Graduated
-        # ============================================================================
+
         most_recent_year = max(
             df['season_year'].max()
             for df in self.player_data.values()
             if 'season_year' in df.columns
         )
 
-        # Build sets for each recency tier
         players_current = set()
         players_one_season_ago = set()
 
@@ -140,7 +121,6 @@ class PlayerQualityScorer:
                 )['player'].to_list()
                 players_one_season_ago.update(one_ago)
 
-        # Players in one_season_ago but NOT in current
         players_one_season_ago = players_one_season_ago - players_current
 
         combined = combined.with_columns(
@@ -156,13 +136,8 @@ class PlayerQualityScorer:
             n_current = len(combined.filter(pl.col('recency_factor') == 1.0))
             n_one_ago = len(combined.filter(pl.col('recency_factor') == 0.85))
             n_stale = len(combined.filter(pl.col('recency_factor') == 0.70))
-            print(f"✓ Recency: {n_current} current, {n_one_ago} one season ago, {n_stale} stale")
-        # ============================================================================
-
-        if verbose:
-            print(f"\n✓ Combined: {len(combined)} unique players")
-            n_stale = len(combined.filter(pl.col('recency_factor') < 1.0))
-            print(f"✓ Applied staleness penalty to {n_stale} inactive players")
+            print(f"Recency: {n_current} current, {n_one_ago} one season ago, {n_stale} stale")
+            print(f"Combined: {len(combined)} unique players")
 
         return combined
 
@@ -180,11 +155,11 @@ class PlayerQualityScorer:
         return df
 
     def calculate_trait_scores(self, player_metrics_df, verbose=True):
+        """Calculate trait scores from percentile metrics."""
         for trait_name, metric_list in TRAIT_CATEGORIES.items():
             percentile_cols = [f'{m}_percentile' for m in metric_list
                             if f'{m}_percentile' in player_metrics_df.columns]
             if percentile_cols:
-                # Fill nulls with 0 so missing metrics penalise rather than get skipped
                 filled = [pl.col(c).fill_null(0) for c in percentile_cols]
                 player_metrics_df = player_metrics_df.with_columns(
                     trait_avg=pl.mean_horizontal(filled),
@@ -298,10 +273,7 @@ class PlayerQualityScorer:
                     df.at[idx, trait] = row[trait] * weights[trait]
 
         if verbose:
-            print("\n" + "="*70)
-            print("POSITION-WEIGHTED TRAITS")
-            print("="*70)
-            print("Position distribution (top 10):")
+            print("Position-weighted traits:")
             for pos, count in sorted(position_counts.items(), key=lambda x: x[1], reverse=True)[:10]:
                 print(f"  {pos}: {count} players")
 
@@ -330,17 +302,15 @@ class PlayerQualityScorer:
         return pl.from_pandas(df)
 
     def score_players(self, verbose=True):
-        # Step 1: Aggregate
+        """Calculate final quality scores for all players."""
         player_metrics = self.aggregate_player_metrics(verbose=verbose)
 
-        # Step 2: Join league_mult BEFORE percentile normalization
         if self.latest_team_map is not None:
             player_metrics = player_metrics.join(
                 self.latest_team_map.select(['player', 'latest_club']),
                 on='player', how='left'
             )
         
-        # Step 2b: Attach league_mult and scale raw metrics
         metric_cols = [m for m in PLAYER_METRICS.keys() if m in player_metrics.columns]
         player_metrics = player_metrics.with_columns(
             pl.col('latest_club')
@@ -352,17 +322,14 @@ class PlayerQualityScorer:
                 (pl.col(col) * pl.col('league_mult')).alias(col)
             )
 
-        # Step 3: Now normalize to percentiles (ISL players naturally rank lower)
         player_metrics = self.normalize_to_percentile(player_metrics, metric_cols)
 
-        # Step 4: Join latest_team_map (club + position)
         if self.latest_team_map is not None:
             cols_to_drop = [c for c in ['latest_club', 'position'] if c in player_metrics.columns]
             if cols_to_drop:
                 player_metrics = player_metrics.drop(cols_to_drop)
             player_metrics = player_metrics.join(self.latest_team_map, on='player', how='left')
 
-        # Step 5: Resolve missing positions via static map
         player_metrics = player_metrics.with_columns(
             pl.struct(["player", "position"]).map_elements(
                 lambda x: self.get_player_position(x["player"], x["position"]),
@@ -370,26 +337,20 @@ class PlayerQualityScorer:
             ).alias("position")
         )
 
-        # Step 6: Calculate trait scores FIRST
         player_metrics = self.calculate_trait_scores(player_metrics, verbose=verbose)
 
-        # Step 7: THEN apply position-based trait weights
         if 'position' in player_metrics.columns:
             player_metrics = self.apply_position_weights(player_metrics, verbose=verbose)
 
-        # Step 8: Calculate overall quality from weighted traits
         player_metrics = self.calculate_overall_quality(player_metrics)
 
-        # Step 9: Apply recency only - league already baked into percentiles
         player_metrics = player_metrics.with_columns(
             (pl.col('overall_quality') * pl.col('recency_factor')).clip(0, 100).alias('overall_quality')
         )
 
         if verbose:
-            print("\n" + "="*70)
-            print("QUALITY SCORING COMPLETE")
-            print("="*70)
+            print("Quality scoring complete")
             print(f"Players scored: {len(player_metrics)}")
-            print(f"Avg overall quality: {player_metrics['overall_quality'].mean():.1f}")
+            print(f"Avg quality: {player_metrics['overall_quality'].mean():.1f}")
 
         return player_metrics
