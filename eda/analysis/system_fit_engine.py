@@ -23,7 +23,7 @@ CONFEDERATION = {
     'Croatia': 'UEFA', 'Switzerland': 'UEFA', 'Serbia': 'UEFA',
     'Turkey': 'UEFA', 'Denmark': 'UEFA', 'Belgium': 'UEFA',
     'Argentina': 'CONMEBOL', 'Brazil': 'CONMEBOL', 'Colombia': 'CONMEBOL',
-    'Uruguay': 'CONMEBOL',
+    'Uruguay': 'CONMEBOL', 'Ecuador': 'CONMEBOL',
     'Morocco': 'CAF', 'Nigeria': 'CAF', 'Senegal': 'CAF', 'Ghana': 'CAF',
     'Japan': 'AFC', 'South Korea': 'AFC', 'Australia': 'AFC',
     'United States': 'CONCACAF', 'Mexico': 'CONCACAF', 'Canada': 'CONCACAF',
@@ -160,7 +160,7 @@ def run_system_fit_engine(
 
         # ── Star power (top 3 found players) ────────────────────────────
         top_3_avg = squad_df.nlargest(3, 'overall_quality')['overall_quality'].mean()
-        star_bonus = (top_3_avg - 63) * 0.20 if top_3_avg > 63 else 0
+        star_bonus = (top_3_avg - 58) * 0.25 if top_3_avg > 58 else 0
 
         # ── Recovery edge (NA-based players) ────────────────────────────
         squad_df['club_2026'] = squad_df['player'].map(CLUB_MAPPING_2026)
@@ -228,3 +228,4 @@ def run_system_fit_engine(
         .sort_values('Readiness_Score', ascending=False)
         .reset_index(drop=True)
     )
+

@@ -257,3 +257,241 @@ def plot_comparison_pizzas(df, p1_name, p2_name, p1_rank=None, p2_rank=None):
     plt.tight_layout(pad=1.5)
     return fig
 
+"""
+2026 World Cup Readiness — Visualizations
+==========================================
+1. Quadrant Plot: Readiness Score vs Archetype Tournament Success Rate
+2. Upset Potential Index: which teams punch above their weight
+"""
+
+import matplotlib.pyplot as plt
+import matplotlib.patches as mpatches
+import matplotlib.patheffects as pe
+import seaborn as sns
+import pandas as pd
+import numpy as np
+
+# ── Style ─────────────────────────────────────────────────────────────────────
+plt.rcParams.update({
+    'font.family':      'monospace',
+    'axes.facecolor':   '#ffffff',
+    'figure.facecolor': '#ffffff',
+    'text.color':       '#1a1a2e',
+    'axes.labelcolor':  '#1a1a2e',
+    'xtick.color':      '#555555',
+    'ytick.color':      '#555555',
+    'axes.edgecolor':   '#cccccc',
+    'grid.color':       '#e8e8e8',
+    'grid.linewidth':   0.8,
+})
+
+# Confederation colours
+CONF_COLORS = {
+    'UEFA':     '#4dabf7',
+    'CONMEBOL': '#69db7c',
+    'CAF':      '#ffd43b',
+    'CONCACAF': '#f783ac',
+    'AFC':      '#da77f2',
+}
+
+# Archetype tournament success rates (from archetype_success.csv)
+ARCHETYPE_SUCCESS = {
+    'Elite Dominators':       68.75,   # r16_plus_pct
+    'Conservative Pressers':  40.00,
+    'Pragmatic Builders':     45.45,
+    'Survival Mode':          23.08,
+    'Unknown':                35.00,
+}
+
+
+# ── 1. Quadrant Plot ──────────────────────────────────────────────────────────
+
+def plot_quadrant(df: pd.DataFrame, save_path: str = 'figures/wc2026_quadrant.png'):
+    """
+    X: Readiness Score  — overall squad quality + context factors
+    Y: Star Power       — top-3 player ceiling
+    Story:
+      Top-right    → ELITE:        high floor + high ceiling (France, Germany)
+      Top-left     → DARK HORSES:  weaker squad but match-winners (England, Croatia)
+      Bottom-right → GRINDERS:     strong system, no superstar (Argentina, Spain)
+      Bottom-left  → ALSO-RANS:    low floor, low ceiling
+    """
+    try:
+        from adjustText import adjust_text
+        HAS_ADJUST = True
+    except ImportError:
+        HAS_ADJUST = False
+
+    df = df.copy()
+
+    x     = df['Readiness_Score']
+    y     = df['Star_Power']
+    x_mid = x.median()
+    y_mid = y.median()
+    x_min, x_max = x.min() - 3,  x.max() + 5
+    y_min, y_max = y.min() - 0.3, y.max() + 0.6
+
+    fig, ax = plt.subplots(figsize=(15, 10))
+    fig.patch.set_facecolor('#ffffff')
+    ax.set_facecolor('#fafafa')
+
+    # Quadrant shading
+    ax.axhspan(y_mid, y_max, xmin=0,   xmax=0.5, alpha=0.07, color='#f59f00', zorder=0)  # dark horses
+    ax.axhspan(y_mid, y_max, xmin=0.5, xmax=1.0, alpha=0.07, color='#2f9e44', zorder=0)  # elite
+    ax.axhspan(y_min, y_mid, xmin=0.5, xmax=1.0, alpha=0.07, color='#1971c2', zorder=0)  # grinders
+    ax.axhspan(y_min, y_mid, xmin=0,   xmax=0.5, alpha=0.03, color='#868e96', zorder=0)  # also-rans
+
+    # Dividers
+    ax.axvline(x_mid, color='#ced4da', linewidth=1.0, linestyle='--', zorder=1)
+    ax.axhline(y_mid, color='#ced4da', linewidth=1.0, linestyle='--', zorder=1)
+
+    # Quadrant labels
+    qkw = dict(fontsize=9, style='italic', fontfamily='monospace', alpha=0.45, fontweight='bold')
+    ax.text(x_min + 0.5, y_max - 0.08, 'DARK HORSES',  color='#f59f00', **qkw)
+    ax.text(x_mid + 0.3, y_max - 0.08, 'ELITE',        color='#2f9e44', **qkw)
+    ax.text(x_mid + 0.3, y_min + 0.05, 'GRINDERS',     color='#1971c2', **qkw)
+    ax.text(x_min + 0.5, y_min + 0.05, 'ALSO-RANS',    color='#868e96', **qkw)
+
+    # Scatter + labels
+    texts = []
+    for _, row in df.iterrows():
+        color = CONF_COLORS.get(row['Confederation'], '#868e96')
+        size  = 160 + row['Players_Found'] * 20
+        ax.scatter(
+            row['Readiness_Score'], row['Star_Power'],
+            s=size, color=color, alpha=0.88,
+            edgecolors='white', linewidth=1.8, zorder=3,
+        )
+        t = ax.text(
+            row['Readiness_Score'], row['Star_Power'],
+            row['National_Team'],
+            fontsize=8.5, fontfamily='monospace',
+            color='#212529', fontweight='bold',
+            ha='center', va='bottom', zorder=4,
+        )
+        texts.append(t)
+
+    if HAS_ADJUST:
+        adjust_text(
+            texts, ax=ax,
+            arrowprops=dict(arrowstyle='-', color='#adb5bd', lw=0.7),
+            expand_points=(1.5, 1.8),
+        )
+
+    # Legend
+    handles = [
+        mpatches.Patch(facecolor=c, edgecolor='white', label=conf)
+        for conf, c in CONF_COLORS.items()
+        if conf in df['Confederation'].values
+    ]
+    leg = ax.legend(
+        handles=handles, loc='upper left',
+        fontsize=8.5, framealpha=0.9,
+        facecolor='#f8f9fa', edgecolor='#dee2e6',
+        title='Confederation', title_fontsize=8,
+    )
+    leg.get_title().set_fontfamily('monospace')
+
+    ax.set_xlim(x_min, x_max)
+    ax.set_ylim(y_min, y_max)
+    ax.set_xlabel('Readiness Score  (squad quality + stability + context)  →',
+                  fontsize=11, labelpad=12, color='#343a40')
+    ax.set_ylabel('Star Power  (top-3 player ceiling above baseline)  →',
+                  fontsize=11, labelpad=12, color='#343a40')
+    ax.set_title(
+        '2026 WORLD CUP — SQUAD FLOOR vs STAR CEILING',
+        fontsize=14, fontweight='bold', color='#1a1a2e',
+        pad=20, fontfamily='monospace',
+    )
+    ax.text(
+        0.01, -0.06,
+        '● Bubble size = players matched in database   '
+        '|   Star Power = avg top-3 quality above dataset baseline',
+        transform=ax.transAxes, fontsize=7.5, color='#868e96', style='italic',
+    )
+
+    ax.grid(True, alpha=0.35, linewidth=0.6)
+    ax.spines[['top', 'right']].set_visible(False)
+
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    plt.show()
+    print(f'Saved: {save_path}')
+    if not HAS_ADJUST:
+        print("Tip: pip install adjustText for better label placement")
+
+
+# ── 2. Upset Potential Index ──────────────────────────────────────────────────
+
+def compute_upset_index(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Upset Potential = (Star Power + Cohesion) / Readiness Score
+    High = team with dangerous ceiling but inconsistent floor.
+    Low  = consistent, hard to upset on a good day.
+    """
+    df = df.copy()
+    df['Upset_Index'] = ((df['Star_Power'] + df['Cohesion']) / df['Readiness_Score'] * 100).round(2)
+    return df.sort_values('Upset_Index', ascending=False).reset_index(drop=True)
+
+
+def plot_upset_index(df: pd.DataFrame, save_path: str = 'figures/wc2026_upset.png'):
+    df_upset = compute_upset_index(df)
+
+    fig, ax = plt.subplots(figsize=(12, 9))
+    fig.patch.set_facecolor('#ffffff')
+    ax.set_facecolor('#ffffff')
+
+    colors = [CONF_COLORS.get(c, '#868e96') for c in df_upset['Confederation']]
+
+    bars = ax.barh(
+        df_upset['National_Team'],
+        df_upset['Upset_Index'],
+        color=colors, alpha=0.85, edgecolor='white', linewidth=0.8, height=0.65,
+    )
+
+    # Value labels
+    for bar, val in zip(bars, df_upset['Upset_Index']):
+        ax.text(bar.get_width() + 0.15, bar.get_y() + bar.get_height() / 2,
+                f'{val:.1f}', va='center', fontsize=8.5,
+                color='#495057', fontfamily='monospace', fontweight='bold')
+
+    # Median line
+    median_ui = df_upset['Upset_Index'].median()
+    ax.axvline(median_ui, color='#adb5bd', linewidth=1.2, linestyle='--', zorder=0)
+    ax.text(median_ui + 0.1, len(df_upset) - 0.5, 'median',
+            fontsize=7.5, color='#adb5bd', fontfamily='monospace', style='italic')
+
+    # Legend
+    handles = [
+        mpatches.Patch(facecolor=c, edgecolor='white', label=conf)
+        for conf, c in CONF_COLORS.items()
+    ]
+    leg = ax.legend(
+        handles=handles, loc='lower right',
+        fontsize=8.5, framealpha=0.9,
+        facecolor='#f8f9fa', edgecolor='#dee2e6',
+        title='Confederation', title_fontsize=8,
+    )
+    leg.get_title().set_fontfamily('monospace')
+
+    ax.invert_yaxis()
+    ax.set_xlabel('Upset Potential Index  →', fontsize=11, labelpad=12, color='#343a40')
+    ax.set_title(
+        '2026 WORLD CUP — UPSET POTENTIAL INDEX\n(Star Power + Cohesion relative to overall Readiness Score)',
+        fontsize=13, fontweight='bold', color='#1a1a2e',
+        pad=16, fontfamily='monospace',
+    )
+    ax.set_xlim(0, df_upset['Upset_Index'].max() + 2)
+    ax.spines[['top', 'right']].set_visible(False)
+    ax.grid(axis='x', alpha=0.35, linewidth=0.6)
+    ax.tick_params(axis='y', labelsize=9.5, colors='#343a40')
+    ax.text(
+        0.01, -0.06,
+        'Index = (Star Power + Cohesion) / Readiness Score × 100   |   High = dangerous ceiling, inconsistent floor',
+        transform=ax.transAxes, fontsize=7.5, color='#868e96', style='italic',
+    )
+
+    plt.tight_layout()
+    plt.savefig(save_path, dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    plt.show()
+    print(f'Saved: {save_path}')
