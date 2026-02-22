@@ -200,6 +200,8 @@ def plot_competition_distribution(statsbomb_dir: Path, figsize=(14, 8)) -> None:
     plt.show()
 
 
+
+
 def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None:
     """Temporal distribution with club vs tournament stacked bars."""
     lf = pl.scan_parquet(statsbomb_dir / "matches.parquet")
@@ -251,11 +253,16 @@ def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None
     ax.legend(fontsize=11, loc='upper left')
     ax.grid(axis='y', alpha=0.3)
     
+    # Calculate max value and round up to nearest 100
+    max_total = max([club + tourn for club, tourn in zip(club_counts, tournament_counts)])
+    y_max = ((max_total // 100) + 1) * 100 + 100  # Round up to nearest 100 + add 100 padding
+    ax.set_ylim(0, y_max)
+    
     # Add total labels
     for i, (club, tourn) in enumerate(zip(club_counts, tournament_counts)):
         total = club + tourn
         if total > 0:
-            ax.text(i, total + 20, f'{total}', ha='center', fontsize=9)
+            ax.text(i, total + (y_max * 0.02), f'{total}', ha='center', fontsize=9)
     
     plt.tight_layout()
     plt.show()
@@ -431,6 +438,142 @@ def plot_360_coverage_analysis(statsbomb_dir: Path, figsize=(14, 6)) -> None:
     
     plt.tight_layout()
     plt.show()
+    
+def plot_360_player_heatmap(statsbomb_dir: Path, figsize=(14, 10)) -> None:
+    """
+    Create a heatmap showing player positions from 360° tracking data.
+    Uses one match as an example to show the richness of tracking data.
+    """
+    import matplotlib.patches as patches
+    from matplotlib.colors import LinearSegmentedColormap
+    import numpy as np
+    
+    # Load 360 data
+    three60_lf = pl.scan_parquet(statsbomb_dir / "three_sixty.parquet")
+    
+    # Get a match with good 360 coverage
+    match_counts = three60_lf.group_by("match_id").agg(
+        pl.len().alias("count")
+    ).sort("count", descending=True).collect()
+    
+    # Use the match with most tracking data
+    sample_match_id = match_counts['match_id'][0]
+    
+    # Get data for this match
+    match_data = three60_lf.filter(
+        pl.col("match_id") == sample_match_id
+    ).collect()
+    
+    print(f"Visualizing match ID: {sample_match_id}")
+    print(f"Tracking points: {len(match_data):,}")
+    
+    # Extract player positions (visible players around the event)
+    all_x = []
+    all_y = []
+    
+    for row in match_data.iter_rows(named=True):
+        x = row.get('location_x')
+        y = row.get('location_y')
+        if x is not None and y is not None:
+            all_x.append(x)
+            all_y.append(y)
+    
+    # Create figure with pitch
+    fig, (ax1, ax2) = plt.subplots(1, 2, figsize=figsize)
+    
+    # --- Left: Heatmap ---
+    # Create 2D histogram (heatmap)
+    heatmap, xedges, yedges = np.histogram2d(
+        all_x, all_y, 
+        bins=[40, 30],
+        range=[[0, 120], [0, 80]]
+    )
+    
+    # Plot heatmap
+    extent = [0, 120, 0, 80]
+    
+    # Custom colormap
+    colors = ['#f7fbff', '#6baed6', '#2171b5', '#e74c3c']
+    n_bins = 100
+    cmap = LinearSegmentedColormap.from_list('custom', colors, N=n_bins)
+    
+    im = ax1.imshow(
+        heatmap.T, 
+        extent=extent, 
+        origin='lower',
+        cmap=cmap,
+        aspect='auto',
+        interpolation='gaussian'
+    )
+    
+    # Draw pitch lines
+    draw_pitch(ax1, patches)
+    
+    ax1.set_xlim(0, 120)
+    ax1.set_ylim(0, 80)
+    ax1.set_xlabel('Pitch Length (yards)', fontsize=11, fontweight='bold')
+    ax1.set_ylabel('Pitch Width (yards)', fontsize=11, fontweight='bold')
+    ax1.set_title('360° Tracking Data: Player Position Heatmap', 
+                 fontsize=13, fontweight='bold')
+    
+    # Add colorbar
+    cbar = plt.colorbar(im, ax=ax1, fraction=0.046, pad=0.04)
+    cbar.set_label('Activity Density', rotation=270, labelpad=20, fontweight='bold')
+    
+    # --- Right: Scatter plot ---
+    ax2.scatter(all_x, all_y, alpha=0.3, s=1, c='steelblue')
+    
+    # Draw pitch lines
+    draw_pitch(ax2, patches)
+    
+    ax2.set_xlim(0, 120)
+    ax2.set_ylim(0, 80)
+    ax2.set_xlabel('Pitch Length (yards)', fontsize=11, fontweight='bold')
+    ax2.set_ylabel('Pitch Width (yards)', fontsize=11, fontweight='bold')
+    ax2.set_title('360° Tracking Data: All Position Points', 
+                 fontsize=13, fontweight='bold')
+    ax2.text(60, -10, f'{len(all_x):,} tracking points', 
+            ha='center', fontsize=10, style='italic')
+    
+    plt.tight_layout()
+    plt.show()
+
+
+def draw_pitch(ax, patches):
+    """Draw football pitch lines on axis"""
+    # Pitch outline
+    ax.add_patch(patches.Rectangle((0, 0), 120, 80, 
+                                   linewidth=2, edgecolor='white', 
+                                   facecolor='none'))
+    
+    # Halfway line
+    ax.plot([60, 60], [0, 80], color='white', linewidth=2)
+    
+    # Center circle
+    center_circle = patches.Circle((60, 40), 10, 
+                                   linewidth=2, edgecolor='white', 
+                                   facecolor='none')
+    ax.add_patch(center_circle)
+    
+    # Penalty boxes
+    ax.add_patch(patches.Rectangle((0, 18), 18, 44, 
+                                   linewidth=2, edgecolor='white', 
+                                   facecolor='none'))
+    ax.add_patch(patches.Rectangle((102, 18), 18, 44, 
+                                   linewidth=2, edgecolor='white', 
+                                   facecolor='none'))
+    
+    # Goal boxes
+    ax.add_patch(patches.Rectangle((0, 30), 6, 20, 
+                                   linewidth=2, edgecolor='white', 
+                                   facecolor='none'))
+    ax.add_patch(patches.Rectangle((114, 30), 6, 20, 
+                                   linewidth=2, edgecolor='white', 
+                                   facecolor='none'))
+    
+    # Set green pitch background
+    ax.set_facecolor('#2d5f3a')
+
 
 def plot_reference_breakdown(statsbomb_dir: Path, figsize=(10, 6)) -> None:
     """Reference dataset entity type breakdown."""
