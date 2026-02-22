@@ -20,7 +20,7 @@ class PlayerQualityScorer:
         self.player_data = player_data
         self.current_year = current_year
         self.decay_lambda = decay_lambda
-        self.min_minutes = 450
+        self.min_minutes = 900
         self.latest_team_map = latest_team_map
 
     def calculate_time_decay_weight(self, season_year):
@@ -75,13 +75,15 @@ class PlayerQualityScorer:
 
             # Apply volume filter
             if volume_col:
-                threshold = MIN_MATCHES if volume_col == 'matches' else MIN_MINUTES
-                agg_df = agg_df.filter(pl.col('volume') >= threshold)
+                default_threshold = MIN_MATCHES if volume_col == 'matches' else MIN_MINUTES
+                metric_threshold = config.get('min_volume', default_threshold)
+                agg_df = agg_df.filter(pl.col('volume') >= metric_threshold)
 
             # Calculate weighted average metric
+            # Inside the loop, keep volume in the select
             agg_df = agg_df.with_columns(
                 (pl.col('w_sum') / pl.col('w_total')).alias(metric_name)
-            ).select(['player', metric_name])
+            ).select(['player', metric_name, 'volume'])  # ← keep volume here
 
             player_scores.append(agg_df)
 
@@ -92,34 +94,69 @@ class PlayerQualityScorer:
             raise ValueError("No metrics aggregated")
 
         # Join all metrics
-        combined = player_scores[0]
+        combined = player_scores[0]  # this is finishing_quality, has volume
         for next_df in player_scores[1:]:
-            combined = combined.join(next_df, on='player', how='left')
+            combined = combined.join(
+                next_df.drop('volume'),  # drop volume from all others
+                on='player', 
+                how='left'
+            )
 
+        # After joining all metrics, shrink finishing_quality toward mean
+        # Bayesian shrinkage
+        if 'finishing_quality' in combined.columns:
+            global_mean = combined['finishing_quality'].mean()
+            k = 10
+            combined = combined.with_columns(
+                ((pl.col('finishing_quality') * pl.col('volume') + global_mean * k)
+                / (pl.col('volume') + k))
+                .alias('finishing_quality')
+            )
+
+        # Drop volume before staleness penalty
+        combined = combined.drop('volume')
         # ============================================================================
-        # FIX: Staleness Penalty (Put it here!)
+        # Staleness Penalty - Graduated
         # ============================================================================
-        # 1. Calculate the most recent year across all data sources
         most_recent_year = max(
             df['season_year'].max()
             for df in self.player_data.values()
             if 'season_year' in df.columns
         )
-        
-        # 2. Identify players who appeared in that season
-        players_with_recent_data = set()
+
+        # Build sets for each recency tier
+        players_current = set()
+        players_one_season_ago = set()
+
         for df in self.player_data.values():
             if 'player' in df.columns and 'season_year' in df.columns:
-                recent = df.filter(pl.col('season_year') == most_recent_year)['player'].to_list()
-                players_with_recent_data.update(recent)
+                current = df.filter(
+                    pl.col('season_year') == most_recent_year
+                )['player'].to_list()
+                players_current.update(current)
+                
+                one_ago = df.filter(
+                    pl.col('season_year') == most_recent_year - 1
+                )['player'].to_list()
+                players_one_season_ago.update(one_ago)
 
-        # 3. Apply the penalty factor (0.55x for stale players)
+        # Players in one_season_ago but NOT in current
+        players_one_season_ago = players_one_season_ago - players_current
+
         combined = combined.with_columns(
-            pl.when(pl.col('player').is_in(list(players_with_recent_data)))
+            pl.when(pl.col('player').is_in(list(players_current)))
             .then(pl.lit(1.0))
-            .otherwise(pl.lit(0.55))
+            .when(pl.col('player').is_in(list(players_one_season_ago)))
+            .then(pl.lit(0.85))
+            .otherwise(pl.lit(0.70))
             .alias('recency_factor')
         )
+
+        if verbose:
+            n_current = len(combined.filter(pl.col('recency_factor') == 1.0))
+            n_one_ago = len(combined.filter(pl.col('recency_factor') == 0.85))
+            n_stale = len(combined.filter(pl.col('recency_factor') == 0.70))
+            print(f"✓ Recency: {n_current} current, {n_one_ago} one season ago, {n_stale} stale")
         # ============================================================================
 
         if verbose:
@@ -137,26 +174,26 @@ class PlayerQualityScorer:
             df = df.with_columns(
                 pl.col(col).rank(method='average')
                   .truediv(pl.col(col).count())
-                  .mul(100)
+                  .mul(99)
                   .alias(f'{col}_percentile')
             )
         return df
 
     def calculate_trait_scores(self, player_metrics_df, verbose=True):
-        """Calculate 4 trait scores from percentile columns."""
         for trait_name, metric_list in TRAIT_CATEGORIES.items():
             percentile_cols = [f'{m}_percentile' for m in metric_list
-                               if f'{m}_percentile' in player_metrics_df.columns]
+                            if f'{m}_percentile' in player_metrics_df.columns]
             if percentile_cols:
+                # Fill nulls with 0 so missing metrics penalise rather than get skipped
+                filled = [pl.col(c).fill_null(0) for c in percentile_cols]
                 player_metrics_df = player_metrics_df.with_columns(
-                    trait_avg=pl.mean_horizontal(percentile_cols),
-                    trait_max=pl.max_horizontal(percentile_cols)
+                    trait_avg=pl.mean_horizontal(filled),
+                    trait_max=pl.max_horizontal(filled)
                 ).with_columns(
-                    # 70/30: rewards elite peak while acknowledging rounded contribution
                     (pl.col("trait_max") * 0.7 + pl.col("trait_avg") * 0.3).alias(trait_name)
                 ).drop(["trait_avg", "trait_max"])
         return player_metrics_df
-
+    
     @staticmethod
     def get_league_multiplier(team_name):
         """Return league quality multiplier based on club tier."""
@@ -194,7 +231,7 @@ class PlayerQualityScorer:
             "Tier_5": [
                 "Mumbai City", "Hyderabad", "Kerala Blasters", "Bengaluru",
                 "ATK Mohun Bagan", "Chennaiyin", "Jamshedpur", "Odisha",
-                "Gazélec Ajaccio", "Angers SCO",
+                "Gazélec Ajaccio", "Angers SCO", "Al-Arabi Qatar"
             ]}
         if team_name in CLUB_TIERS["Tier_1"]: return 1.3
         if team_name in CLUB_TIERS["Tier_2"]: return 1.15
@@ -215,29 +252,29 @@ class PlayerQualityScorer:
             return {'Mobility_Intensity': 0.1, 'Progression': 0.3,
                     'Control': 0.2, 'Final_Third_Output': 0.0}
         elif 'center back' in pos or 'centre back' in pos:
-            return {'Mobility_Intensity': 0.9, 'Progression': 0.6,
-                    'Control': 0.5, 'Final_Third_Output': 0.2}
+            return {'Mobility_Intensity': 0.45, 'Progression': 0.55,
+                    'Control': 0.55, 'Final_Third_Output': 0.15}
         elif any(x in pos for x in ['left back', 'right back', 'wing back']):
-            return {'Mobility_Intensity': 0.7, 'Progression': 1.0,
-                    'Control': 0.7, 'Final_Third_Output': 0.5}
+            return {'Mobility_Intensity': 0.85, 'Progression': 1.0,
+                    'Control': 0.65, 'Final_Third_Output': 0.55}
         elif 'defensive midfield' in pos:
-            return {'Mobility_Intensity': 1.0, 'Progression': 0.8,
-                    'Control': 0.9, 'Final_Third_Output': 0.3}
+            return {'Mobility_Intensity': 0.75, 'Progression': 0.75,
+                    'Control': 0.85, 'Final_Third_Output': 0.4}
         elif 'center midfield' in pos or 'centre midfield' in pos:
-            return {'Mobility_Intensity': 0.8, 'Progression': 1.0,
-                    'Control': 1.0, 'Final_Third_Output': 0.7}
+            return {'Mobility_Intensity': 0.80, 'Progression': 0.80,
+                    'Control': 0.80, 'Final_Third_Output': 0.65}
         elif 'attacking midfield' in pos:
-            return {'Mobility_Intensity': 0.4, 'Progression': 0.9,
-                    'Control': 1.0, 'Final_Third_Output': 1.0}
+            return {'Mobility_Intensity': 0.65, 'Progression': 0.85,
+                    'Control': 0.95, 'Final_Third_Output': 1.0}
         elif 'wing' in pos and 'back' not in pos:
-            return {'Mobility_Intensity': 0.9, 'Progression': 0.8,
-                    'Control': 0.8, 'Final_Third_Output': 1.0}
+            return {'Mobility_Intensity': 1.0, 'Progression': 0.80,
+                    'Control': 0.75, 'Final_Third_Output': 1.0}
         elif any(x in pos for x in ['forward', 'striker']):
-            return {'Mobility_Intensity': 0.3, 'Progression': 0.5,
-                    'Control': 0.6, 'Final_Third_Output': 1.0}
+            return {'Mobility_Intensity': 0.50, 'Progression': 0.55,
+                    'Control': 0.75, 'Final_Third_Output': 1.0}
         else:
-            return {'Mobility_Intensity': 1.0, 'Progression': 1.0,
-                    'Control': 1.0, 'Final_Third_Output': 1.0}
+            return {'Mobility_Intensity': 0.75, 'Progression': 0.85,
+                    'Control': 0.85, 'Final_Third_Output': 0.75}
 
     def get_player_position(self, player_name, current_pos):
         """Resolve position: use current if available, else fall back to static map."""
@@ -271,30 +308,52 @@ class PlayerQualityScorer:
         return pl.from_pandas(df)
 
     def calculate_overall_quality(self, player_metrics_df):
-        """Calculate overall quality score from trait scores."""
-        trait_cols = list(TRAIT_CATEGORIES.keys())
-        available_traits = [t for t in trait_cols if t in player_metrics_df.columns]
+        """Calculate overall quality score from trait scores using weighted mean."""
+        df = player_metrics_df.to_pandas()
+        traits = ['Mobility_Intensity', 'Progression', 'Control', 'Final_Third_Output']
 
-        if not available_traits:
-            raise ValueError("No trait scores available")
+        for idx, row in df.iterrows():
+            pos = row.get('position', None)
+            weights = self._get_position_weights(pos)
 
-        player_metrics_df = player_metrics_df.with_columns(
-            pl.concat_list(available_traits).list.mean().alias('overall_quality')
-        )
-        return player_metrics_df
+            weighted_sum = 0
+            weight_total = 0
+            for t in traits:
+                if t in df.columns:
+                    if pd.notna(row[t]):
+                        weighted_sum += row[t] * weights[t]
+                    # Always add to denominator whether null or not
+                    weight_total += weights[t]
+
+            df.at[idx, 'overall_quality'] = weighted_sum / weight_total if weight_total > 0 else 0
+
+        return pl.from_pandas(df)
 
     def score_players(self, verbose=True):
-        """Full scoring pipeline: aggregate → normalize → traits → position → quality."""
-
-        # Step 1: Aggregate metrics with time decay
+        # Step 1: Aggregate
         player_metrics = self.aggregate_player_metrics(verbose=verbose)
 
-        # Step 2: Normalize to percentiles
+        # Step 2: Join league_mult BEFORE percentile normalization
+        if self.latest_team_map is not None:
+            player_metrics = player_metrics.join(
+                self.latest_team_map.select(['player', 'latest_club']),
+                on='player', how='left'
+            )
+        
+        # Step 2b: Attach league_mult and scale raw metrics
         metric_cols = [m for m in PLAYER_METRICS.keys() if m in player_metrics.columns]
-        player_metrics = self.normalize_to_percentile(player_metrics, metric_cols)
+        player_metrics = player_metrics.with_columns(
+            pl.col('latest_club')
+            .map_elements(self.get_league_multiplier, return_dtype=pl.Float64)
+            .alias('league_mult')
+        )
+        for col in metric_cols:
+            player_metrics = player_metrics.with_columns(
+                (pl.col(col) * pl.col('league_mult')).alias(col)
+            )
 
-        # Step 3: Calculate trait scores
-        player_metrics = self.calculate_trait_scores(player_metrics, verbose=verbose)
+        # Step 3: Now normalize to percentiles (ISL players naturally rank lower)
+        player_metrics = self.normalize_to_percentile(player_metrics, metric_cols)
 
         # Step 4: Join latest_team_map (club + position)
         if self.latest_team_map is not None:
@@ -311,24 +370,19 @@ class PlayerQualityScorer:
             ).alias("position")
         )
 
-        # Step 6: Apply position-based trait weights
+        # Step 6: Calculate trait scores FIRST
+        player_metrics = self.calculate_trait_scores(player_metrics, verbose=verbose)
+
+        # Step 7: THEN apply position-based trait weights
         if 'position' in player_metrics.columns:
             player_metrics = self.apply_position_weights(player_metrics, verbose=verbose)
 
-        # Step 7: Calculate overall quality
+        # Step 8: Calculate overall quality from weighted traits
         player_metrics = self.calculate_overall_quality(player_metrics)
 
-        # Step 8: Apply league multiplier
+        # Step 9: Apply recency only - league already baked into percentiles
         player_metrics = player_metrics.with_columns(
-            (pl.col('overall_quality') * pl.col('recency_factor')).alias('overall_quality')
-        ).with_columns(
-            pl.col('latest_club')
-            .map_elements(self.get_league_multiplier, return_dtype=pl.Float64)
-            .alias('league_mult')
-        ).with_columns(
-            (pl.col('overall_quality') * pl.col('league_mult'))
-            .clip(0, 100)
-            .alias('overall_quality')
+            (pl.col('overall_quality') * pl.col('recency_factor')).clip(0, 100).alias('overall_quality')
         )
 
         if verbose:
