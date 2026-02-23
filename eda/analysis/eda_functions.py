@@ -17,6 +17,7 @@ from IPython.display import clear_output
 
 from IPython.display import display
 import pandas as pd
+import matplotlib.gridspec as gridspec
 
 # Set plotting style
 sns.set_style('whitegrid')
@@ -192,12 +193,6 @@ def plot_matches_market_overview(statsbomb_dir: Path, figsize=(15, 5)) -> None:
     plt.tight_layout()
     plt.show()
 
-import polars as pl
-import numpy as np
-import matplotlib.pyplot as plt
-from pathlib import Path
-
-
 # Sophisticated palette — perceptually distinct, matched to known competition names
 COMP_PALETTE = {
     'La Liga':                  '#e63946',
@@ -227,7 +222,7 @@ def gradient_barh(ax, y, width, height, cmap_name='Blues'):
         )
 
 
-def plot_matches_market_overview(statsbomb_dir: Path, figsize=(16, 6)) -> None:
+def plot_matches_market_overview(statsbomb_dir: Path, figsize=(20, 6)) -> None:
     """
     Matches EDA — two-panel overview.
     Left:  Total match count per competition (gradient bars).
@@ -261,10 +256,25 @@ def plot_matches_market_overview(statsbomb_dir: Path, figsize=(16, 6)) -> None:
     all_years   = list(range(2010, 2026))
 
     # ── Figure ────────────────────────────────────────────────────────────────
-    fig, (ax1, ax2, ax3) = plt.subplots(
-        1, 3, figsize=(22, 6),
-        gridspec_kw={'width_ratios': [0.7, 1.1, 1.1]},
-    )
+    fig = plt.figure(figsize=figsize)
+    # Define a 2x2 grid, but we'll merge cells
+    gs = gridspec.GridSpec(1, 3, width_ratios=[0.8, 1.5, 1.1])
+    
+    ax1 = fig.add_subplot(gs[0, 0])
+    ax2 = fig.add_subplot(gs[0, 1])
+    ax3 = fig.add_subplot(gs[0, 2])
+
+    # THE CRITICAL FIX: 
+    # Force the layout to ignore the long names and just 'clip' them if necessary
+    # This pulls the second chart left aggressively
+    plt.subplots_adjust(left=0.15, wspace=0.1)
+    plt.subplots_adjust(wspace=0.05) 
+
+    fig.patch.set_facecolor('#ffffff')
+    for ax in (ax1, ax2, ax3): # Applied to all three for consistency
+        ax.set_facecolor('#fafafa')
+
+        
     fig.patch.set_facecolor('#ffffff')
     for ax in (ax1, ax2):
         ax.set_facecolor('#fafafa')
@@ -326,7 +336,7 @@ def plot_matches_market_overview(statsbomb_dir: Path, figsize=(16, 6)) -> None:
     for year_idx, (total, other) in enumerate(zip(bottoms + np.array(other_counts), other_counts)):
         if total > 0:
             ax2.text(all_years[year_idx], total + 0.5, str(int(total)),
-                    ha='center', va='bottom', fontsize=7.5,
+                    ha='center', va='bottom', fontsize=9,
                     color='#343a40', fontweight='bold')
             
     ax2.bar(
@@ -343,7 +353,7 @@ def plot_matches_market_overview(statsbomb_dir: Path, figsize=(16, 6)) -> None:
     ax2.tick_params(axis='x', length=0)
     ax2.legend(
         bbox_to_anchor=(1.02, 1), loc='upper left',
-        fontsize=8, frameon=False, labelspacing=0.6,
+        fontsize=10, frameon=False, labelspacing=0.6,
     )
     ax2.grid(axis='y', linestyle=':', alpha=0.35)
 
@@ -390,11 +400,15 @@ def plot_matches_market_overview(statsbomb_dir: Path, figsize=(16, 6)) -> None:
     for year_idx, total in enumerate(bottoms3 + np.array(other_counts3)):
         if total > 0:
             ax3.text(zoom_years[year_idx], total + 0.5, str(int(total)),
-                    ha='center', va='bottom', fontsize=8,
+                    ha='center', va='bottom', fontsize=10,
                     color='#343a40', fontweight='bold')
+            
+    import textwrap
+    wrapped_names = [textwrap.fill(name, 15) for name in names] # Wrap at 15 chars
+    ax1.set_yticklabels(wrapped_names, fontsize=8)
 
     ax3.set_title('The Modern Tactical Sample (2021–2025)',
-                loc='left', fontsize=11, fontweight='bold', color='#1a1a2e', pad=12)
+                loc='center', fontsize=11, fontweight='bold', color='#1a1a2e', pad=14)
     ax3.set_xticks(zoom_years)
     ax3.set_xticklabels(zoom_years, fontsize=9, color='#555')
     ax3.spines[['top', 'right']].set_visible(False)
@@ -478,9 +492,7 @@ def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None
     plt.tight_layout()
     plt.show()
 
-import polars as pl
-import matplotlib.pyplot as plt
-from pathlib import Path
+
 
 def plot_event_type_distribution(statsbomb_dir: Path, figsize=(10, 5)) -> None:
     """Fast, clean distribution chart with Emerald gradient, counts, and clear % labels."""
@@ -619,9 +631,106 @@ def plot_player_participation(statsbomb_dir: Path, figsize=(14, 7)) -> None:
     plt.tight_layout()
     plt.show()
 
-import polars as pl
-import matplotlib.pyplot as plt
-from pathlib import Path
+
+def plot_player_versatility_gradient(statsbomb_dir: Path, player_name: str):
+    # 1. The "Nerdy" Tiered Palette
+    POSITION_COLOURS = {
+        # --- THE DEFENSIVE BLOCK (Deep Forest Greens) ---
+        'Center Back': '#132a13', 'Left Center Back': '#31572c', 'Right Center Back': '#4f772d',
+        'Left Back': '#90a955', 'Right Back': '#ecf39e', 
+        'Left Wing Back': '#95d5b2', 'Right Wing Back': '#b7e4c7', 
+        'Goalkeeper': '#6c757d',
+
+        # --- THE CONTROLLERS / '6' (Deep Midnight Purples) ---
+        # Darker and more "Purple-Navy" to separate from the blues
+        'Center Defensive Midfield': '#240046', 
+        'Left Defensive Midfield': '#3c096c', 
+        'Right Defensive Midfield': '#5a189a',
+
+        # --- THE ENGINES / '8' (Vibrant Cyan/Electric Blues) ---
+        # Shifted away from purple tones toward "Bright Water" tones
+        'Center Midfield': '#0077b6', 
+        'Left Center Midfield': '#00b4d8', 
+        'Right Center Midfield': '#48cae4',
+        'Left Midfield': '#90e0ef', 
+        'Right Midfield': '#ade8f4',
+
+        # --- THE CREATORS / '10' (Electric Magentas) ---
+        'Center Attacking Midfield': '#ff006e', 
+        'Left Attacking Midfield': '#ff70a6', 
+        'Right Attacking Midfield': '#ff97b7',
+
+        # --- THE FINISHERS (Hot Oranges/Reds) ---
+        'Center Forward': '#6a040f', 'Left Center Forward': '#9d0208', 'Right Center Forward': '#d00000',
+        'Secondary Striker': '#dc2f02', 'Left Wing': '#e85d04', 'Right Wing': '#f48c06',
+        
+        'nan': '#adb5bd'
+    }
+
+    # 2. Data Loading (read_parquet for DataFrame)
+    lineups = pl.read_parquet(statsbomb_dir / "lineups.parquet")
+    matches = pl.read_parquet(statsbomb_dir / "matches.parquet")
+
+    df = lineups.join(matches, on="match_id").filter(
+        pl.col("player_name").str.to_lowercase().str.contains(player_name.lower())
+    )
+
+    if df.is_empty():
+        return print(f"No data for {player_name}")
+
+    def parse_time(s):
+        try:
+            p = s.split(':')
+            return float(p[0]) + float(p[1])/60.0
+        except: return 90.0
+
+    # 3. Processing
+    res = (
+        df.with_columns([
+            pl.col("from_time").map_elements(parse_time, return_dtype=pl.Float64).alias("start"),
+            pl.col("to_time").map_elements(parse_time, return_dtype=pl.Float64).alias("end"),
+            pl.col("position_name").cast(pl.Utf8).str.strip_chars().fill_null("nan")
+        ])
+        .with_columns((pl.col("end") - pl.col("start")).alias("mins"))
+        .group_by(["season_name", "position_name"])
+        .agg(pl.col("mins").sum())
+        .pivot(index="season_name", on="position_name", values="mins")
+        .fill_null(0)
+        .sort("season_name")
+    )
+
+    # 4. Plotting
+    seasons = res["season_name"].to_list()
+    # Only include positions that have > 0 minutes total
+    positions = [pos for pos in res.columns if pos != "season_name" and res[pos].sum() > 0]
+    
+    # Sort positions based on their order in POSITION_COLOURS (Defense to Attack)
+    # This makes the legend look logically ordered
+    order = list(POSITION_COLOURS.keys())
+    positions.sort(key=lambda x: order.index(x) if x in order else 999)
+
+    fig, ax = plt.subplots(figsize=(10, 7))
+    bottom = np.zeros(len(seasons))
+    
+    for pos in positions:
+        vals = np.array(res[pos].to_list())
+        color = POSITION_COLOURS.get(pos, '#333333') 
+        ax.bar(seasons, vals, bottom=bottom, label=pos, color=color, edgecolor='white', alpha=0.9, width=0.7)
+        bottom += vals
+
+    # 5. Presentation Styling
+    ax.set_ylim(0, max(bottom) * 1.1) 
+    ax.set_title(f"Tactical Profile Evolution: {player_name}", fontsize=14, fontweight='bold', loc='center', pad=25)
+    ax.set_ylabel("Minutes Played", fontsize=12)
+    
+    plt.xticks(rotation=45, ha='right')
+    
+    # CLEAN LEGEND: Only shows roles played, organized by tier
+    ax.legend(title="Tactical Roles (Played)", bbox_to_anchor=(1.02, 1), loc='upper left', frameon=False, fontsize=9)
+    
+    plt.grid(axis='y', linestyle='--', alpha=0.3)
+    plt.tight_layout()
+    plt.show()
 
 def plot_360_coverage_analysis(statsbomb_dir: Path, figsize=(10, 4.5)) -> None:
     """Efficiently loads and plots 360° tracking data coverage."""

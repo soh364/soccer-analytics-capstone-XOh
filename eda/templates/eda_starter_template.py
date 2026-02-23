@@ -336,8 +336,37 @@ def analyze_sb_events() -> dict[str, Any]:
         "passes": pass_stats["total"][0],
     }
 
-
 def analyze_sb_lineups() -> dict[str, Any]:
+    header("STATSBOMB: LINEUPS")
+    lf = pl.scan_parquet(STATSBOMB_DIR / "lineups.parquet")
+
+    stats = lf.select(
+        [
+            pl.len().alias("total"),
+            pl.col("match_id").n_unique().alias("matches"),
+            pl.col("player_name").n_unique().alias("players"),
+        ]
+    ).collect()
+
+    print(
+        f"Records: {stats['total'][0]:,} | Matches: {stats['matches'][0]:,} | Players: {stats['players'][0]:,}"
+    )
+
+    sub("Position Distribution")
+    dist(lf, "position_name")
+
+    cards = (
+        lf.filter(pl.col("card_type").is_not_null()).select(pl.len()).collect()[0, 0]
+    )
+    print(f"\nTotal cards: {cards:,}")
+
+    return {
+        "records": stats["total"][0],
+        "players": stats["players"][0],
+        "cards": cards,
+    }
+
+def analyze_sb_lineups_adv() -> dict[str, Any]:
     header("STATSBOMB: LINEUPS")
     lf = pl.scan_parquet(STATSBOMB_DIR / "lineups.parquet")
 
@@ -420,6 +449,19 @@ def analyze_sb_lineups() -> dict[str, Any]:
     print("\nTop Carded Players:")
     print(top_carded)
 
+    # 6. Versatility Spotlight: The "Mac Allister" Case
+    sub("Tactical Versatility Spotlight")
+    # Finding the "Ultimate Versatility Kings"
+    kings = (
+        lf.group_by("player_name")
+        .agg(pl.col("position_name").n_unique().alias("unique_positions"))
+        .sort("unique_positions", descending=True)
+        .head(5)
+        .collect()
+    )
+    print("\nTop Versatility Kings (Unique Positions Played):")
+    print(kings)
+
     return {
         "records": total_rec,
         "played": played_count,
@@ -450,14 +492,34 @@ def analyze_sb_360() -> dict[str, Any]:
 
     return {"records": stats["total"][0], "events": stats["events"][0]}
 
-
 def analyze_sb_reference() -> dict[str, Any]:
+    header("STATSBOMB: REFERENCE")
+    lf = pl.scan_parquet(STATSBOMB_DIR / "reference.parquet")
+
+    total = lf.select(pl.len()).collect()[0, 0]
+    print(f"Total records: {total:,}")
+
+    sub("Entity Types")
+    dist(lf, "table_name")
+
+    return {"records": total}
+
+def analyze_sb_reference_adv() -> dict[str, Any]:
     header("STATSBOMB: REFERENCE")
     lf = pl.scan_parquet(STATSBOMB_DIR / "reference.parquet")
 
     # 1. Entity Distribution (Now at the top)
     sub("Entity Distribution")
     dist(lf, "table_name")
+
+    # 2. Total Counts & ID Overlap
+    stats = lf.select([
+        pl.len().alias("total"),
+        pl.col("id").n_unique().alias("unique_ids")
+    ]).collect()
+    total, unique_ids = stats['total'][0], stats['unique_ids'][0]
+    print(f"\nTotal records: {total:,} | Unique IDs: {unique_ids:,}")
+    print(f"Note: {total - unique_ids} ID collisions occur across different categories.")
 
     # 3. Name Collisions (Different IDs, Same Name)
     sub("Entity Name Collisions")
