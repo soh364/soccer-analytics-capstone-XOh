@@ -11,7 +11,7 @@ from src.metrics import (
     analyze_progression_profile, calculate_team_progression_summary,
     calculate_xg_chain, calculate_xg_buildup, calculate_team_xg_buildup,
     calculate_pass_network_centrality,
-    calculate_packing,
+    calculate_packing
 )
 
 SCOPES = {
@@ -163,6 +163,19 @@ def _run_metrics(events_path, matches_path, conn, out):
     network = calculate_pass_network_centrality(events_path, conn, matches=matches_path)
     network.to_csv(out / "advanced__player__network_centrality.csv", index=False)
     log_metric("Network Centrality", len(network))
+
+    # Packing — requires 360 data
+    three_sixty_path = str(loader.available_files.get('three_sixty', ''))
+    if three_sixty_path:
+        from src.metrics.packing import calculate_packing
+        packing = calculate_packing(
+            events_path, three_sixty_path,
+            conn=conn, matches=matches_path, min_passes=5
+        )
+        packing.to_csv(out / "advanced__player__packing.csv", index=False)
+        log_metric("Packing", len(packing))
+    else:
+        print("     [!] Packing skipped — no 360 data available for this scope")
 
 
 def run_pipeline_for_scope(scope_name, scope):

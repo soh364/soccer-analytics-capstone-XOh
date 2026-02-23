@@ -5,7 +5,7 @@ Uses 8 files with 13 dimensions across 4 trait categories.
 
 PLAYER_METRICS = {
     # ========================================================================
-    # FINISHING & EFFICIENCY (2 metrics from 1 file)
+    # FINISHING & EFFICIENCY 
     # ========================================================================
     'finishing_quality': {
         'file': 'xg__player__totals.csv',
@@ -25,7 +25,7 @@ PLAYER_METRICS = {
     },
     
     # ========================================================================
-    # PROGRESSION (2 metrics from 1 file)
+    # PROGRESSION 
     # ========================================================================
     'progressive_passes': {
         'file': 'progression__player__profile.csv',
@@ -45,7 +45,7 @@ PLAYER_METRICS = {
     },
     
     # ========================================================================
-    # ATTACKING CONTRIBUTION (2 metrics from 1 file)
+    # ATTACKING CONTRIBUTION 
     # ========================================================================
     'xg_chain': {
         'file': 'advanced__player__xg_chain.csv',
@@ -65,7 +65,7 @@ PLAYER_METRICS = {
     },
     
     # ========================================================================
-    # BUILD-UP QUALITY (2 metrics from 2 files)
+    # BUILD-UP QUALITY 
     # ========================================================================
     'xg_buildup': {
         'file': 'advanced__player__xg_buildup.csv',
@@ -85,7 +85,7 @@ PLAYER_METRICS = {
     },
     
     # ========================================================================
-    # DEFENSIVE CONTRIBUTION (3 metrics from 1 file)
+    # DEFENSIVE CONTRIBUTION 
     # ========================================================================
     'defensive_actions': {
         'file': 'defensive__player__profile.csv',
@@ -105,7 +105,7 @@ PLAYER_METRICS = {
     },
     
     # ========================================================================
-    # PRESSING QUALITY (2 metrics from 1 file)
+    # PRESSING QUALITY 
     # ========================================================================
     'pressure_volume': {
         'file': 'defensive__player__pressures.csv',
@@ -124,17 +124,6 @@ PLAYER_METRICS = {
         'higher_is_better': True
     },
     
-    # ========================================================================
-    # LINE-BREAKING (1 metric from 1 file)
-    # ========================================================================
-    'packing': {
-        'file': 'advanced__player__packing.csv',
-        'column': 'avg_packing_per_pass',
-        'trait_category': 'Progression',
-        'description': 'Line-breaking ability',
-        'min_minutes': 450,
-        'higher_is_better': True
-    },
 }
 
 # Trait category mapping

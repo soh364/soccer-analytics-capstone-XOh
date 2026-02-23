@@ -1,6 +1,6 @@
 from pathlib import Path
 import polars as pl
-from player_metrics_config import PLAYER_METRICS
+from analysis.player_metrics_config import PLAYER_METRICS
 
 
 def parse_season_year(season_name: str) -> int:
@@ -249,9 +249,6 @@ class PlayerDataLoader:
 def load_player_data_for_scoring(scopes_to_load, verbose=True) -> dict:
     """
     Convenience function. Accepts scope name strings or legacy (scope, year) tuples.
-    
-    Usage:
-        player_data = load_player_data_for_scoring(['recent_club_players'])
     """
     loader = PlayerDataLoader()
     if isinstance(scopes_to_load, str):
