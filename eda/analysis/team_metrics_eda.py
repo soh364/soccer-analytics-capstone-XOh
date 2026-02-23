@@ -1,37 +1,48 @@
 import polars as pl
 import matplotlib.pyplot as plt
 import numpy as np
+import matplotlib.patches as mpatches
+from matplotlib.patches import Ellipse
+from pathlib import Path
+import seaborn as sns
+from matplotlib.patches import FancyArrowPatch
+from pathlib import Path
+import math
+
+from analysis.visualization import save_figure
 
 def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
-    """Violin plots for all 8 tactical dimensions."""
+    """Violin plots for tactical dimensions grouped by color/category."""
     
-    # Metric column mapping
-    COL_MAP = {
-        'ppda':        'ppda',
-        'field_tilt':  'field_tilt_pct',
-        'possession_pct': 'possession_pct',
-        'epr':         'epr',
-        'line_height': 'defensive_line_height',
-        'xg':          'total_xg',
-        'progression': None,  # derived
-        'buildup':     'avg_xg_per_buildup_possession',
+    # Define Categories and their Colors
+    # Group 1: Defensive (Red), Group 2: Territorial (Emerald), Group 3: Attacking (Blue)
+    CAT_COLORS = {
+        'defensive':  {'body': '#e63946', 'median': '#a80000'},
+        'territory':  {'body': '#2a9d8f', 'median': '#164e47'},
+        'attacking':  {'body': '#457b9d', 'median': '#1d3557'}
     }
+
+    # Metric grouping and mapping
+    METRIC_CONFIG = [
+        # (Key, Column, Label, Category)
+        ('ppda', 'ppda', 'PPDA', 'defensive'),
+        ('line_height', 'defensive_line_height', 'Defensive Line Height', 'defensive'),
+        ('field_tilt', 'field_tilt_pct', 'Field Tilt %', 'territory'),
+        ('possession_pct', 'possession_pct', 'Possession %', 'territory'),
+        ('progression', None, 'Progressive Carry %', 'territory'),
+        ('xg', 'total_xg', 'Total npxG', 'attacking'),
+        ('epr', 'epr', 'EPR\n(Efficiency)', 'attacking'),
+        ('buildup', 'avg_xg_per_buildup_possession', 'xG per Buildup', 'attacking'),
+    ]
     
-    LABELS = {
-        'ppda':           'PPDA\n(lower = more press)',
-        'field_tilt':     'Field Tilt %',
-        'possession_pct': 'Possession %',
-        'epr':            'EPR\n(lower = more efficient)',
-        'line_height':    'Defensive Line Height',
-        'xg':             'Total xG',
-        'progression':    'Progressive Carry %',
-        'buildup':        'xG per Buildup Possession',
-    }
+    fig, axes = plt.subplots(2, 4, figsize=figsize)
+    fig.patch.set_facecolor('#ffffff')
+    axes = axes.flatten()
     
-    data = []
-    labels = []
-    
-    for key, col in COL_MAP.items():
+    for i, (key, col, label, cat) in enumerate(METRIC_CONFIG):
+        ax = axes[i]
+        
+        # ── DATA EXTRACTION ──────────────────────────────────────────────────
         if key == 'progression':
             df = metrics['progression']
             vals = (df['progressive_carries'] / 
@@ -40,46 +51,52 @@ def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
         elif key in metrics and col:
             vals = metrics[key][col].drop_nulls().to_list()
         else:
+            ax.axis('off') # Hide empty plots if data is missing
             continue
-        data.append(vals)
-        labels.append(LABELS[key])
-    
-    fig, axes = plt.subplots(2, 4, figsize=figsize)
-    fig.patch.set_facecolor('#ffffff')
-    axes = axes.flatten()
-    
-    for i, (vals, label) in enumerate(zip(data, labels)):
-        ax = axes[i]
+
+        # ── PLOTTING ─────────────────────────────────────────────────────────
         ax.set_facecolor('#fafafa')
+        colors = CAT_COLORS[cat]
+        
         vp = ax.violinplot(vals, showmedians=True, showextrema=True)
         
+        # Apply group-specific colors
         for pc in vp['bodies']:
-            pc.set_facecolor('#4dabf7')
-            pc.set_alpha(0.7)
-        vp['cmedians'].set_color('#1d3557')
-        vp['cmedians'].set_linewidth(2)
+            pc.set_facecolor(colors['body'])
+            pc.set_alpha(0.6)
+            pc.set_edgecolor(colors['median'])
         
-        ax.set_title(label, fontsize=9, fontweight='bold')
+        vp['cmedians'].set_color(colors['median'])
+        vp['cmedians'].set_linewidth(2.5)
+        
+        # Style extrema lines (top/bottom)
+        for part in ['cbars', 'cmins', 'cmaxes']:
+            vp[part].set_color('#adb5bd')
+            vp[part].set_linewidth(1)
+
+        # ── ANNOTATIONS ──────────────────────────────────────────────────────
+        median = np.median(vals)
+        ax.text(1.2, median, f'{median:.2f}',
+                va='center', fontsize=10, color=colors['median'],
+                fontweight='bold', bbox=dict(facecolor='white', alpha=0.6, edgecolor='none', pad=0.5))
+        
+        ax.set_title(label, fontsize=10, fontweight='bold', color='#343a40')
         ax.set_xticks([])
         ax.spines[['top', 'right']].set_visible(False)
-        ax.grid(axis='y', alpha=0.3)
-        
-        # Annotate median
-        median = np.median(vals)
-        ax.text(1.15, median, f'{median:.2f}',
-                va='center', fontsize=8, color='#1d3557',
-                fontweight='bold')
+        ax.grid(axis='y', linestyle=':', alpha=0.5)
     
-    fig.suptitle('Distribution of 8 Tactical Dimensions Across All Team-Matches',
-                 fontsize=14, fontweight='bold', y=1.02)
-    plt.tight_layout()
-    plt.savefig('figures/2_1_metric_distributions.png', dpi=180,
-                bbox_inches='tight', facecolor='#ffffff')
+    # Adjust layout to prevent overlap with title
+    fig.suptitle('Tactical Footprint: Distribution of Core Metrics',
+                 fontsize=14, fontweight='bold', y=0.98, color='#1d3557')
+    
+    plt.tight_layout(rect=[0, 0, 1, 0.95])
+    
+    # Use your save_figure function
+    save_figure(fig, 'team_metric_violins.png', dpi=180)
     plt.show()
 
 def plot_correlation_matrix(metrics: dict, figsize=(10, 8)):
     """Heatmap of inter-metric correlations — validates non-redundancy."""
-    import seaborn as sns
     
     # Build a flat df joined on match_id + team
     base = metrics['ppda'].rename({'ppda': 'PPDA'})
@@ -124,81 +141,15 @@ def plot_correlation_matrix(metrics: dict, figsize=(10, 8)):
         square=True,
     )
     
-    ax.set_title('II.2 — Inter-Metric Correlation Matrix\nValidating non-redundancy of the 8-dimension framework',
-                 fontsize=11, fontweight='bold', pad=14)
+    ax.set_title('Validation: The Inter-Metric Correlation Matrix',
+                 fontsize=14, fontweight='bold', pad=14)
     ax.tick_params(axis='x', rotation=45, labelsize=9)
     ax.tick_params(axis='y', rotation=0, labelsize=9)
     
     plt.tight_layout()
-    plt.savefig('figures/2_2_correlation_matrix.png', dpi=180,
-                bbox_inches='tight', facecolor='#ffffff')
+    save_figure(fig, 'team_metrics_corr.png', dpi=180)
     plt.show()
 
-def plot_metric_extremes(metrics: dict, figsize=(14, 10)):
-    """Top 5 and bottom 5 teams per metric — validates metrics against known football reality."""
-    
-    # Aggregate metrics to team level (mean across matches)
-    MIN_MATCHES = 5  
-
-    def team_mean(key, col, alias):
-        return (metrics[key]
-                .group_by('team')
-                .agg([
-                    pl.col(col).mean().alias(alias),
-                    pl.len().alias('n_matches')
-                ])
-                .filter(pl.col('n_matches') >= MIN_MATCHES))
-    
-    team_metrics = {
-        'PPDA':       team_mean('ppda',         'ppda',                        'PPDA'),
-        'Field Tilt': team_mean('field_tilt',   'field_tilt_pct',              'Field Tilt'),
-        'Possession': team_mean('possession_pct','possession_pct',             'Possession'),
-        'npxG':       team_mean('xg',           'total_xg',                    'npxG'),
-        'Line Height':team_mean('line_height',  'defensive_line_height',       'Line Height'),
-        'xG Buildup': team_mean('buildup',      'avg_xg_per_buildup_possession','xG Buildup'),
-    }
-    
-    # For PPDA: lower = better press, so invert ranking label
-    invert = {'PPDA', 'EPR'}
-    
-    fig, axes = plt.subplots(2, 3, figsize=figsize)
-    fig.patch.set_facecolor('#ffffff')
-    axes = axes.flatten()
-    
-    for i, (metric_name, df) in enumerate(team_metrics.items()):
-        ax = axes[i]
-        ax.set_facecolor('#fafafa')
-        col = df.columns[-1]
-        
-        ascending = metric_name in invert
-        sorted_df = df.sort(col, descending=not ascending).head(8).to_pandas()
-        
-        colors = ['#2f9e44' if j < 3 else '#adb5bd' 
-                  for j in range(len(sorted_df))]
-        
-        bars = ax.barh(sorted_df['team'], sorted_df[col],
-                      color=colors, height=0.65,
-                      edgecolor='white', alpha=0.88)
-        
-        for bar, val in zip(bars, sorted_df[col]):
-            ax.text(bar.get_width() + sorted_df[col].max() * 0.01,
-                   bar.get_y() + bar.get_height() / 2,
-                   f'{val:.2f}', va='center', fontsize=8,
-                   color='#343a40')
-        
-        ax.invert_yaxis()
-        ax.set_title(metric_name, fontsize=10, fontweight='bold',
-                    fontfamily='monospace')
-        ax.spines[['top', 'right']].set_visible(False)
-        ax.tick_params(axis='y', labelsize=8)
-        ax.grid(axis='x', alpha=0.3)
-    
-    fig.suptitle('II.3 — Top Teams per Tactical Dimension\nSanity check: do the right teams appear?',
-                 fontsize=12, fontweight='bold', y=1.02)
-    plt.tight_layout()
-    plt.savefig('figures/2_3_metric_extremes.png', dpi=180,
-                bbox_inches='tight', facecolor='#ffffff')
-    plt.show()
 
 def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
     """
@@ -301,10 +252,8 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
                     row['team'],
                     (row['ppda'], row['possession_pct']),
                     xytext=(5, 4), textcoords='offset points',
-                    fontsize=7, fontfamily='monospace', color='#343a40'
+                    fontsize=8, color='#343a40'
                 )
-
-    from matplotlib.patches import Ellipse
 
     winner_zone = Ellipse(
         xy=(8, 57), width=8, height=15,
@@ -313,7 +262,7 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
         linewidth=1.5, alpha=0.6, zorder=4
     )
     ax.add_patch(winner_zone)
-    ax.text(4.5, 63.5, 'Winner Zone', fontsize=8,
+    ax.text(4.5, 65, 'Winner Zone', fontsize=10,
             color='#2d6a4f', 
             fontstyle='italic')
 
@@ -325,7 +274,7 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
     xm, ym = df['ppda'].median(), df['possession_pct'].median()
     xmin, xmax = ax.get_xlim()
     ymin, ymax = ax.get_ylim()
-    quad_kw = dict(fontsize=8, color='#868e96',
+    quad_kw = dict(fontsize=10, color='#868e96',
                    fontstyle='italic', alpha=0.7)
     ax.text(xmin + 0.5, ymax - 1,  'High Press\nHigh Possession', **quad_kw)
     ax.text(xmax - 6,   ymax - 1,  'Low Press\nHigh Possession', **quad_kw, ha='right')
@@ -337,8 +286,8 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
     ax.set_title(
         'Tactical Identity vs Tournament Depth (2022 FIFA World Cup)\n'
         'PPDA × Possession × npxG (bubble size) × Tournament Result',
-        fontsize=11, fontweight='bold',
-        loc='left', pad=14
+        fontsize=14, fontweight='bold',
+        loc='center', pad=14
     )
     ax.spines[['top', 'right']].set_visible(False)
     ax.legend(fontsize=8, frameon=False, title='Tournament Depth',
@@ -351,15 +300,8 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
                    edgecolors='white', label=label)
 
     plt.tight_layout()
-    plt.savefig('figures/2_4_tactical_scatter.png', dpi=180,
-                bbox_inches='tight', facecolor='#ffffff')
+    save_figure(fig, 'tactical_scatter.png', dpi=180)
     plt.show()
-
-
-import polars as pl
-import numpy as np
-import matplotlib.pyplot as plt
-from pathlib import Path
 
 
 def extract_match_results(statsbomb_dir: Path) -> pl.DataFrame:
@@ -458,7 +400,7 @@ def plot_outcome_by_quadrant(
         'High Press\nHigh Possession': '#2d6a4f',
         'High Press\nLow Possession':  '#4dabf7',
         'Low Press\nHigh Possession':  '#f4a261',
-        'Low Press\nLow Possession':   '#dee2e6',
+        'Low Press\nLow Possession':   "#d7749c",
     }
 
     # ── Figure ────────────────────────────────────────────────────────────────
@@ -496,29 +438,29 @@ def plot_outcome_by_quadrant(
     for i, (w, d, l, n) in enumerate(zip(wins, draws, losses, ns)):
         if w > 0.05:
             ax1.text(i, w / 2, f'{w:.0%}',
-                     ha='center', va='center', fontsize=9.5,
-                     fontweight='bold', fontfamily='monospace', color='white')
+                     ha='center', va='center', fontsize=9,
+                     fontweight='bold', color='white')
         if d > 0.05:
             ax1.text(i, w + d / 2, f'{d:.0%}',
-                     ha='center', va='center', fontsize=8,
-                     fontfamily='monospace', color='#495057')
+                     ha='center', va='center', fontsize=9,
+                     color='#495057')
         if l > 0.05:
             ax1.text(i, w + d + l / 2, f'{l:.0%}',
-                     ha='center', va='center', fontsize=8,
-                     fontfamily='monospace', color='#868e96')
+                     ha='center', va='center', fontsize=9,
+                     color='#868e96')
         ax1.text(i, -0.05, f'n={n}',
-                 ha='center', fontsize=7.5,
-                 fontfamily='monospace', color='#868e96')
+                 ha='center', fontsize=9,
+                 color='#868e96')
 
     ax1.set_xticks(x)
-    ax1.set_xticklabels(quads, fontsize=8.5, fontfamily='monospace')
+    ax1.set_xticklabels(quads, fontsize=8.5)
     ax1.set_ylabel('Match Outcome Rate', fontsize=9, color='#343a40')
     ax1.set_ylim(-0.1, 1.08)
     ax1.set_title('Win / Draw / Loss Rate by Tactical Quadrant',
                   fontsize=10, fontweight='bold',
-                  fontfamily='monospace', loc='left')
+                  loc='left')
     ax1.spines[['top', 'right']].set_visible(False)
-    ax1.legend(fontsize=8, frameon=False, loc='upper right')
+    ax1.legend(fontsize=8, loc='upper right')
     ax1.grid(axis='y', alpha=0.25, linestyle=':')
 
     # ── Right: win rate horizontal bar ────────────────────────────────────────
@@ -536,37 +478,26 @@ def plot_outcome_by_quadrant(
         ax2.text(
             val + 0.005, bar.get_y() + bar.get_height() / 2,
             f'{val:.0%}', va='center', fontsize=9,
-            fontfamily='monospace', fontweight='bold', color='#343a40'
+            fontweight='bold', color='#343a40'
         )
 
     ax2.set_xlim(0, max(summary['win_rate']) * 1.3)
     ax2.set_title('Win Rate Ranking',
                   fontsize=10, fontweight='bold',
-                  fontfamily='monospace', loc='left')
+                  loc='left')
     ax2.spines[['top', 'right']].set_visible(False)
     ax2.tick_params(axis='y', labelsize=8)
     ax2.grid(axis='x', alpha=0.25, linestyle=':')
 
     fig.suptitle(
-        'II.5 — Does Tactical Identity Predict Match Outcomes?\n'
-        'WC 2022 + Euro 2024  |  Quadrants split on dataset medians',
-        fontsize=11, fontweight='bold',
-        fontfamily='monospace', y=1.03
+        'Does Tactical Identity Predict Match Outcomes?\n'
+        'WC 2022 + Euro 2024  |  Quadrants Split on Dataset Medians',
+        fontsize=14, fontweight='bold',y=1.03
     )
 
     plt.tight_layout()
-    plt.savefig('figures/2_5_outcome_by_quadrant.png',
-                dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    save_figure(fig, 'team_outcome_by_quadrant.png', dpi=180)
     plt.show()
-
-import polars as pl
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from matplotlib.patches import FancyArrowPatch
-from pathlib import Path
-import math
-
 
 # ─────────────────────────────────────────────────────────────────────────────
 # HELPER: build flat joined df from metrics dict
@@ -606,108 +537,110 @@ INVERT = {'ppda', 'epr'}
 
 
 # ─────────────────────────────────────────────────────────────────────────────
-# 1. RADAR — WC 2022 vs Euro 2024
+# 1. RADAR 
 # ─────────────────────────────────────────────────────────────────────────────
 
-def plot_competition_radar(metrics: dict, statsbomb_dir: Path, figsize=(10, 8)):
+def get_granular_means(target_df, global_df):
+    means = {}
+    for col in DIM_COLS:
+        # 1. Get Global Stats
+        g_mean = global_df[col].mean()
+        g_std  = global_df[col].std()
+        
+        # 2. Get Tournament Average
+        t_val = target_df[col].mean()
+        
+        # 3. Calculate Z-Score: How many standard deviations from the norm?
+        # A z-score of 0 means exactly average.
+        z = (t_val - g_mean) / g_std if g_std != 0 else 0
+        
+        # 4. Map to Radar Space
+        # We'll map +/- 1 Standard Deviation to the 0.3 - 0.7 range.
+        # This "stretches" the middle of the chart where the real action is.
+        normed = 0.5 + (z * 0.2) 
+        
+        if col in INVERT:
+            normed = 0.5 - (z * 0.2)
+            
+        means[col] = max(0.1, min(0.9, normed))
+    return means
+
+def plot_competition_radar(metrics: dict, statsbomb_dir: Path, figsize=(8, 6)):
     """
-    Radar chart comparing average tactical profile:
-    WC 2022 vs Euro 2024.
+    Granular Z-Score Radar: Magnifies tactical deviations by scaling 
+    tournament means relative to the Global Standard Deviation.
     """
     matches = pl.read_parquet(statsbomb_dir / "matches.parquet")
-
-    comp_map = matches.select([
-        pl.col('match_id'),
-        pl.col('competition_name'),
-    ])
-
+    comp_map = matches.select([pl.col('match_id'), pl.col('competition_name')])
     flat = _build_flat(metrics).join(comp_map, on='match_id', how='left')
 
-    wc     = flat.filter(pl.col('competition_name').str.contains('World Cup'))
-    euro   = flat.filter(pl.col('competition_name').str.contains('Euro'))
-    copa   = flat.filter(pl.col('competition_name').str.contains('Copa America'))
-    afcon  = flat.filter(pl.col('competition_name').str.contains('African Cup'))
-
-    def norm_means(df):
-        """Return 0-1 normalised mean per dimension (inverted where needed)."""
+    def get_z_normed_means(target_df, global_df):
         means = {}
         for col in DIM_COLS:
-            if col not in df.columns:
-                means[col] = 0.5
-                continue
-            col_data = flat[col].drop_nulls()
-            mn, mx = col_data.min(), col_data.max()
-            val = df[col].mean()
-            normed = (val - mn) / (mx - mn) if mx != mn else 0.5
+            # 1. Global Baseline Stats (The 'Nerd' Anchor)
+            g_mean = global_df[col].mean()
+            g_std  = global_df[col].std()
+            
+            # 2. Tournament Average
+            t_val = target_df[col].mean()
+            
+            # 3. Z-Score: Distance from the global norm in Std Dev units
+            z = (t_val - g_mean) / g_std if g_std != 0 else 0
+            
+            # 4. Scaling for Radar (Visual 'Zoom')
+            # 0.5 is the Mean. We map +/- 1 Std Dev to a 0.2 shift (0.3 - 0.7).
+            normed = 0.5 + (z * 0.2)
+            
+            # Invert for PPDA/EPR so 'more intense/efficient' pushes the line OUT
             if col in INVERT:
-                normed = 1 - normed
-            means[col] = normed
+                normed = 0.5 - (z * 0.2)
+            
+            # Clip for visual bounds (0.1 to 0.9)
+            means[col] = max(0.1, min(0.9, normed))
         return means
 
-    wc_means   = norm_means(wc)
-    euro_means = norm_means(euro)
-    copa_means  = norm_means(copa)
-    afcon_means = norm_means(afcon)
+    # Generate granular tournament profiles
+    wc_vals    = [get_z_normed_means(flat.filter(pl.col('competition_name').str.contains('World Cup')), flat)[c] for c in DIM_COLS]
+    euro_vals  = [get_z_normed_means(flat.filter(pl.col('competition_name').str.contains('Euro')), flat)[c] for c in DIM_COLS]
+    copa_vals  = [get_z_normed_means(flat.filter(pl.col('competition_name').str.contains('Copa America')), flat)[c] for c in DIM_COLS]
+    afcon_vals = [get_z_normed_means(flat.filter(pl.col('competition_name').str.contains('African Cup')), flat)[c] for c in DIM_COLS]
 
-    copa_vals  = [copa_means[c]  for c in DIM_COLS] + [copa_means[DIM_COLS[0]]]
-    afcon_vals = [afcon_means[c] for c in DIM_COLS] + [afcon_means[DIM_COLS[0]]]
+    # Close loops for radar geometry
+    for v in [wc_vals, euro_vals, copa_vals, afcon_vals]: v.append(v[0])
 
     # Radar setup
-    N      = len(DIM_COLS)
+    N = len(DIM_COLS)
     angles = [n / float(N) * 2 * math.pi for n in range(N)]
     angles += angles[:1]
-
-    wc_vals   = [wc_means[c]   for c in DIM_COLS] + [wc_means[DIM_COLS[0]]]
-    euro_vals = [euro_means[c] for c in DIM_COLS] + [euro_means[DIM_COLS[0]]]
 
     fig, ax = plt.subplots(figsize=figsize, subplot_kw=dict(polar=True))
     fig.patch.set_facecolor('#ffffff')
     ax.set_facecolor('#fafafa')
-
-    # Grid
     ax.set_theta_offset(math.pi / 2)
     ax.set_theta_direction(-1)
+    
+    # Grid & Labels
     ax.set_xticks(angles[:-1])
-    ax.set_xticklabels(DIM_LABELS, fontsize=9.5,
-                       fontfamily='monospace', color='#343a40')
-    ax.set_ylim(0, 1)
-    ax.set_yticks([0.25, 0.5, 0.75])
-    ax.set_yticklabels(['0.25', '0.50', '0.75'], fontsize=7, color='#adb5bd')
-    ax.spines['polar'].set_color('#dee2e6')
-    ax.grid(color='#dee2e6', linewidth=0.8)
+    ax.set_xticklabels(DIM_LABELS, fontsize=10, color='#343a40', fontweight='bold')
+    ax.set_ylim(0, 1.0)
+    ax.set_yticks([0.3, 0.5, 0.7])
+    ax.set_yticklabels(['-1σ', 'Global Mean', '+1σ'], fontsize=8, color='#adb5bd')
+    
+    # The Global Mean Anchor Ring
+    grid_angles = [n / 100 * 2 * math.pi for n in range(101)]
+    ax.plot(grid_angles, [0.5]*101, color='#ced4da', linestyle='-', linewidth=1.2, alpha=0.6, zorder=1)
 
-    # WC 2022
-    ax.plot(angles, wc_vals, color='#1d3557', linewidth=2.2,
-            linestyle='-', label='WC 2022')
-    ax.fill(angles, wc_vals, color='#1d3557', alpha=0.12)
+    # Plot Tournament Lines
+    ax.plot(angles, wc_vals, color="#ffc60b", linewidth=2.5, label='World Cup 2022', zorder=5)
+    ax.plot(angles, euro_vals, color='#e63946', linewidth=2, linestyle='--', label='Euro 2024')
+    ax.plot(angles, copa_vals, color="#00c050", linewidth=2, linestyle='-.', label='Copa América')
+    ax.plot(angles, afcon_vals, color="#0066ff", linewidth=2, linestyle=':', label='AFCON')
 
-    # Euro 2024
-    ax.plot(angles, euro_vals, color='#e63946', linewidth=2.2,
-            linestyle='--', label='Euro 2024')
-    ax.fill(angles, euro_vals, color='#e63946', alpha=0.10)
-
-
-    ax.plot(angles, copa_vals,  color='#f4a261', linewidth=2.2,
-            linestyle='-.', label='Copa América')
-    ax.fill(angles, copa_vals,  color='#f4a261', alpha=0.08)
-
-    ax.plot(angles, afcon_vals, color='#c77dff', linewidth=2.2,
-            linestyle=':', label='AFCON')
-    ax.fill(angles, afcon_vals, color='#c77dff', alpha=0.08)
-
-    ax.legend(loc='upper right', bbox_to_anchor=(1.25, 1.1),
-              fontsize=9, frameon=False)
-
-    ax.set_title(
-        'II.6 — Average Tactical Profile by Tournament\n'
-        'WC 2022 vs Euro 2024  |  Normalised 0–1 (higher = more of concept)',
-        fontsize=11, fontweight='bold', fontfamily='monospace',
-        pad=20, loc='center'
-    )
+    ax.legend(loc='upper right', bbox_to_anchor=(1.35, 1.1), fontsize=9)
+    ax.set_title('Tactical Variance: Deviations from Global Mean ($\sigma$)', 
+                 fontsize=14, fontweight='bold', pad=30)
 
     plt.tight_layout()
-    plt.savefig('figures/2_6_competition_radar.png',
-                dpi=180, bbox_inches='tight', facecolor='#ffffff')
     plt.show()
 
 
@@ -765,12 +698,12 @@ def plot_match_volatility(metrics: dict, min_matches: int = 3, figsize=(14, 6)):
                 ax.text(row[col] + sorted_vol[col].max() * 0.01,
                         row['team'], f"{row[col]:.1f}",
                         va='center', fontsize=7.5,
-                        fontfamily='monospace', color='#2d6a4f',
+                        color='#2d6a4f',
                         fontweight='bold')
 
         ax.set_xlabel(label, fontsize=9, color='#343a40')
         ax.set_title(title, fontsize=10, fontweight='bold',
-                     fontfamily='monospace', loc='left')
+                     loc='left')
         ax.spines[['top', 'right']].set_visible(False)
         ax.tick_params(axis='y', labelsize=7)
         ax.grid(axis='x', alpha=0.25, linestyle=':')
@@ -784,116 +717,14 @@ def plot_match_volatility(metrics: dict, min_matches: int = 3, figsize=(14, 6)):
                loc='lower right', bbox_to_anchor=(0.98, 0.02))
 
     fig.suptitle(
-        'II.7 — Tactical Consistency: Match-to-Match Volatility by Team\n'
-        'Standard deviation across all matches  |  min 3 matches',
-        fontsize=11, fontweight='bold', fontfamily='monospace', y=1.02
+        'Tactical Consistency: Match-to-Match Volatility by Team\n'
+        'Standard Deviation Across All Matches  |  Min 3 Matches',
+        fontsize=14, fontweight='bold', y=1.02
     )
 
     plt.tight_layout()
-    plt.savefig('figures/2_7_match_volatility.png',
-                dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    save_figure(fig, 'match_volatility.png', dpi=180)
     plt.show()
-
-
-# ─────────────────────────────────────────────────────────────────────────────
-# 3. WINNER PROFILE — deep runs vs early exits across all 8 dimensions
-# ─────────────────────────────────────────────────────────────────────────────
-
-def plot_winner_profile(
-    metrics: dict,
-    depth_map: dict,
-    figsize=(14, 6)
-):
-    """
-    Grouped bar chart: mean of each tactical dimension for
-    'Deep Run' (SF+) vs 'Early Exit' (Group + R16).
-
-    depth_map: dict mapping team name -> tournament depth int
-               (1=Group, 2=R16, 3=QF, 4=SF, 5=Final, 6=Winner)
-    """
-    flat = _build_flat(metrics).to_pandas()
-    flat['depth'] = flat['team'].map(depth_map)
-    flat = flat.dropna(subset=['depth'])
-
-    flat['group'] = flat['depth'].apply(
-        lambda d: 'Deep Run (SF+)' if d >= 4 else 'Early Exit (≤R16)'
-    )
-
-    # Normalise each dimension 0-1 for comparability
-    for col in DIM_COLS:
-        if col not in flat.columns:
-            continue
-        mn, mx = flat[col].min(), flat[col].max()
-        if mx != mn:
-            flat[f'{col}_norm'] = (flat[col] - mn) / (mx - mn)
-            if col in INVERT:
-                flat[f'{col}_norm'] = 1 - flat[f'{col}_norm']
-        else:
-            flat[f'{col}_norm'] = 0.5
-
-    norm_cols = [f'{c}_norm' for c in DIM_COLS if f'{c}_norm' in flat.columns]
-
-    summary = flat.groupby('group')[norm_cols].mean().reset_index()
-
-    # ── Plot ──────────────────────────────────────────────────────────────────
-    fig, ax = plt.subplots(figsize=figsize)
-    fig.patch.set_facecolor('#ffffff')
-    ax.set_facecolor('#fafafa')
-
-    x     = np.arange(len(norm_cols))
-    width = 0.35
-
-    deep_row  = summary[summary['group'] == 'Deep Run (SF+)'].iloc[0]
-    early_row = summary[summary['group'] == 'Early Exit (≤R16)'].iloc[0]
-
-    deep_vals  = [deep_row[c]  for c in norm_cols]
-    early_vals = [early_row[c] for c in norm_cols]
-
-    bars1 = ax.bar(x - width/2, deep_vals,  width,
-                   color='#2d6a4f', alpha=0.88,
-                   edgecolor='white', label='Deep Run (SF+)')
-    bars2 = ax.bar(x + width/2, early_vals, width,
-                   color='#adb5bd', alpha=0.75,
-                   edgecolor='white', label='Early Exit (≤R16)')
-
-    # Delta annotations above each pair
-    for i, (d, e) in enumerate(zip(deep_vals, early_vals)):
-        delta = d - e
-        color = '#2d6a4f' if delta > 0 else '#e63946'
-        sign  = '+' if delta > 0 else ''
-        ax.text(i, max(d, e) + 0.02, f'{sign}{delta:.2f}',
-                ha='center', fontsize=8,
-                fontfamily='monospace', color=color, fontweight='bold')
-
-    ax.set_xticks(x)
-    ax.set_xticklabels(
-        [l + ('\n↑ better' if c not in INVERT else '\n↓ better')
-         for l, c in zip(DIM_LABELS, DIM_COLS)],
-        fontsize=8.5, fontfamily='monospace'
-    )
-    ax.set_ylabel('Normalised Score (0–1)', fontsize=9, color='#343a40')
-    ax.set_ylim(0, 1.15)
-    ax.spines[['top', 'right']].set_visible(False)
-    ax.legend(fontsize=9, frameon=False)
-    ax.grid(axis='y', alpha=0.25, linestyle=':')
-
-    ax.set_title(
-        'II.8 — Tactical DNA of Tournament Success\n'
-        'Mean normalised score: Deep Runs (SF+) vs Early Exits  |  delta labelled above',
-        fontsize=11, fontweight='bold', fontfamily='monospace',
-        loc='left', pad=14
-    )
-
-    plt.tight_layout()
-    plt.savefig('figures/2_8_winner_profile.png',
-                dpi=180, bbox_inches='tight', facecolor='#ffffff')
-    plt.show()
-
-import polars as pl
-import numpy as np
-import matplotlib.pyplot as plt
-import matplotlib.patches as mpatches
-from pathlib import Path
 
 
 # 2026 World Cup qualified teams — update as needed
@@ -942,7 +773,6 @@ CONF_LABELS = {
     '#f783ac': 'CONCACAF',
     '#da77f2': 'AFC',
 }
-
 
 def plot_tactical_consistency_scatter(
     metrics: dict,
@@ -1006,7 +836,7 @@ def plot_tactical_consistency_scatter(
 
     # Quadrant labels
     label_kw = dict(fontsize=8.5, fontfamily='monospace',
-                    fontstyle='italic', alpha=0.55)
+                    fontstyle='italic', alpha=0.9)
     ax.text(xmin + 0.1, ymin + 0.2,  'TACTICALLY RIGID',       color='#2d6a4f', **label_kw)
     ax.text(xmin + 0.1, ymax - 0.5,  'POSSESSION-ADAPTIVE',    color='#4dabf7', **label_kw)
     ax.text(ppda_med + 0.1, ymin + 0.2, 'PRESSING-ADAPTIVE',   color='#f4a261', **label_kw)
@@ -1023,7 +853,7 @@ def plot_tactical_consistency_scatter(
             team,
             (row['ppda_std'], row['poss_std']),
             xytext=(5, 4), textcoords='offset points',
-            fontsize=7.5, fontfamily='monospace', color='#343a40'
+            fontsize=9, color='#343a40'
         )
 
     ax.set_xlabel('Std Dev of PPDA  (lower = consistent pressing)',
@@ -1042,16 +872,15 @@ def plot_tactical_consistency_scatter(
     ]
     ax.legend(handles=handles, fontsize=8, frameon=False,
               title='Confederation', title_fontsize=8,
-              loc='upper right')
+              loc='lower right')
 
     ax.set_title(
-        'II.7 — Tactical Consistency: 2026 World Cup Teams\n'
-        'Match-to-match volatility in pressing and possession identity',
-        fontsize=11, fontweight='bold', fontfamily='monospace',
-        loc='left', pad=14
+        'Tactical Consistency: 2026 World Cup Teams\n'
+        'Match-to-Match Volatility in Pressing and Possession Identity',
+        fontsize=14, fontweight='bold', 
+        loc='center', pad=14
     )
 
     plt.tight_layout()
-    plt.savefig('figures/2_7_tactical_consistency.png',
-                dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    save_figure(fig, 'tactical_consistency.png', dpi=180)
     plt.show()
