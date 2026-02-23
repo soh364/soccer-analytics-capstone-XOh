@@ -101,7 +101,17 @@ def log_metric(name, count):
     print(f"     [+] {name}: {count:,} records")
 
 
-def _run_metrics(events_path, matches_path, conn, out):
+def _run_metrics(events_path, matches_path, three_sixty_path, conn, out):
+    """Run all metrics calculations.
+    
+    Args:
+        events_path: Path to (filtered) events parquet
+        matches_path: Path to matches parquet
+        three_sixty_path: Path to 360 data parquet (or empty string if not available)
+        conn: DuckDB connection
+        out: Output directory for CSVs
+    """
+    
     print("  [1/6] Possession & Defensive - TEAM")
     for fn, path, label in [
         (calculate_ppda,                    "possession__team__ppda.csv",         "PPDA"),
@@ -165,15 +175,16 @@ def _run_metrics(events_path, matches_path, conn, out):
     log_metric("Network Centrality", len(network))
 
     # Packing — requires 360 data
-    three_sixty_path = str(loader.available_files.get('three_sixty', ''))
     if three_sixty_path:
-        from src.metrics.packing import calculate_packing
-        packing = calculate_packing(
-            events_path, three_sixty_path,
-            conn=conn, matches=matches_path, min_passes=5
-        )
-        packing.to_csv(out / "advanced__player__packing.csv", index=False)
-        log_metric("Packing", len(packing))
+        try:
+            packing = calculate_packing(
+                events_path, three_sixty_path,
+                conn=conn, matches=matches_path, min_passes=5
+            )
+            packing.to_csv(out / "advanced__player__packing.csv", index=False)
+            log_metric("Packing", len(packing))
+        except Exception as e:
+            print(f"     [!] Packing failed: {e}")
     else:
         print("     [!] Packing skipped — no 360 data available for this scope")
 
@@ -186,13 +197,15 @@ def run_pipeline_for_scope(scope_name, scope):
     loader = load_data(data_dir="./data/Statsbomb")
     events_path = str(loader.available_files['events'])
     matches_path = str(loader.available_files['matches'])
+    three_sixty_path = str(loader.available_files.get('three_sixty', ''))
     temp_files = []
 
     try:
         BASE = Path("outputs") / "raw_metrics"
 
         if scope.get('per_season'):
-            # New format: list of (season_names, folder_name) tuples
+            # Per-season processing: create subfolder for each season
+            # Structure: outputs/raw_metrics/{scope_name}/{season_folder}/
             for season_names, folder_name in scope['seasons']:
                 print(f"\n  ── {folder_name} ({season_names}) ──")
                 filtered = filter_events_by_seasons(
@@ -201,16 +214,26 @@ def run_pipeline_for_scope(scope_name, scope):
                     exclude_competitions=scope.get('exclude_competitions')
                 )
                 temp_files.append(filtered)
+                
+                # Create output folder: outputs/raw_metrics/{scope_name}/{season_folder}/
                 out = BASE / scope['output_suffix'] / folder_name
                 out.mkdir(exist_ok=True, parents=True)
                 print(f"  ✓ Filtered: {season_names}")
-                _run_metrics(filtered, matches_path, loader.conn, out)
+                print(f"  ✓ Output: {out}")
+                
+                _run_metrics(filtered, matches_path, three_sixty_path, loader.conn, out)
         else:
+            # Single scope processing
+            # Structure: outputs/raw_metrics/{scope_name}/
             filtered = filter_events_by_scope(events_path, loader.conn, scope, loader)
             temp_files.append(filtered)
+            
+            # Create output folder: outputs/raw_metrics/{scope_name}/
             out = BASE / scope['output_suffix']
             out.mkdir(exist_ok=True, parents=True)
-            _run_metrics(filtered, matches_path, loader.conn, out)
+            print(f"  ✓ Output: {out}")
+            
+            _run_metrics(filtered, matches_path, three_sixty_path, loader.conn, out)
 
     finally:
         import os
@@ -219,17 +242,42 @@ def run_pipeline_for_scope(scope_name, scope):
                 os.remove(f)
         loader.close()
 
-    print(f"\n✓ COMPLETE: {scope_name}\n")
+    print(f"\nCOMPLETE: {scope_name}\n")
 
 
 def main():
     import sys
     scope_names = sys.argv[1:] if len(sys.argv) > 1 else list(SCOPES.keys())
+    
+    print(f"\n{'='*70}")
+    print(f"SOCCER ANALYTICS PIPELINE")
+    print(f"{'='*70}")
+    print(f"Scopes to process: {', '.join(scope_names)}")
+    print(f"{'='*70}\n")
+    
     for scope_name in scope_names:
         if scope_name not in SCOPES:
-            print(f"Unknown scope: {scope_name}. Available: {list(SCOPES.keys())}")
+            print(f"Unknown scope: {scope_name}")
+            print(f"   Available: {list(SCOPES.keys())}")
             continue
         run_pipeline_for_scope(scope_name, SCOPES[scope_name])
+    
+    print(f"\n{'='*70}")
+    print(f"ALL SCOPES COMPLETE")
+    print(f"{'='*70}\n")
+    
+    print("OUTPUT STRUCTURE:")
+    print("outputs/raw_metrics/")
+    print("  ├── men_tourn_2022_24/")
+    print("  │   ├── possession__team__ppda.csv")
+    print("  │   ├── defensive__player__pressures.csv")
+    print("  │   └── ...")
+    print("  └── recent_club_players/")
+    print("      ├── 2021_2022/")
+    print("      │   ├── possession__team__ppda.csv")
+    print("      │   └── ...")
+    print("      ├── 2022_2023/")
+    print("      └── 2023_2024/")
 
 
 if __name__ == "__main__":

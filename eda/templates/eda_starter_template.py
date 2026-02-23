@@ -18,7 +18,8 @@ warnings.filterwarnings("ignore")
 # Constants
 TOP_N = 10
 WIDTH = 80
-DATA_DIR = Path(__file__).parent.parent / "data"
+BASE_PATH = Path.cwd().parent
+DATA_DIR = BASE_PATH / "data"
 POLYMARKET_DIR = DATA_DIR / "Polymarket"
 STATSBOMB_DIR = DATA_DIR / "Statsbomb"
 
@@ -340,32 +341,90 @@ def analyze_sb_lineups() -> dict[str, Any]:
     header("STATSBOMB: LINEUPS")
     lf = pl.scan_parquet(STATSBOMB_DIR / "lineups.parquet")
 
-    stats = lf.select(
-        [
-            pl.len().alias("total"),
-            pl.col("match_id").n_unique().alias("matches"),
-            pl.col("player_name").n_unique().alias("players"),
-        ]
-    ).collect()
-
-    print(
-        f"Records: {stats['total'][0]:,} | Matches: {stats['matches'][0]:,} | Players: {stats['players'][0]:,}"
+    # 1. Basic Stats & Quality (Duplicates)
+    stats = lf.select([
+        pl.len().alias("total"),
+        pl.col("match_id").n_unique().alias("matches"),
+        pl.col("player_name").n_unique().alias("players"),
+    ]).collect()
+    
+    total_rec = stats['total'][0]
+    total_matches = stats['matches'][0]
+    
+    # Calculate duplicates (position changes)
+    dup_count = (
+        lf.group_by(["match_id", "player_id"])
+        .len()
+        .filter(pl.col("len") > 1)
+        .select(pl.col("len").sum())
+        .collect()[0, 0] or 0
     )
 
+    print(f"Records: {total_rec:,} | Matches: {total_matches:,} | Unique Players: {stats['players'][0]:,}")
+    print(f"Quality: {dup_count:,} duplicate (match_id, player_id) pairs ({(dup_count/total_rec)*100:.1f}%), likely position changes.")
+
+    # 2. Time Parsing Logic
+    def parse_min(col_name):
+        return (
+            pl.col(col_name).str.split(":").list.get(0).cast(pl.Float64) + 
+            pl.col(col_name).str.split(":").list.get(1).cast(pl.Float64) / 60
+        ).fill_null(90.0)
+
+    # Calculate Duration and Starter status
+    lf_enriched = lf.with_columns([
+        (parse_min("to_time") - parse_min("from_time")).alias("duration"),
+        (pl.col("from_time") == "00:00").alias("is_starter")
+    ])
+
+    # Aggregate by player-match (collapsing position changes)
+    pm_stats = lf_enriched.group_by(["match_id", "player_id"]).agg([
+        pl.col("duration").sum(),
+        pl.col("is_starter").any().alias("started"),
+        pl.col("player_name").first()
+    ]).collect()
+
+    # 3. Participation & Subs
+    played_df = pm_stats.filter(pl.col("duration") > 0)
+    played_count = played_df.height
+    print(f"Participation: Only {(played_count/total_rec)*100:.1f}% actually played ({played_count:,}).")
+
+    avg_subs = (played_df.filter(~pl.col("started")).height / total_matches)
+    starter_avg = played_df.filter(pl.col("started")).select(pl.col("duration").mean())[0,0]
+    sub_avg = played_df.filter(~pl.col("started")).select(pl.col("duration").mean())[0,0]
+    print(f"Substitutions: {avg_subs:.1f} avg per match. Starters {starter_avg:.1f} min avg, subs {sub_avg:.1f} min avg.")
+
+    # 4. Tables (The original tables you wanted to keep)
     sub("Position Distribution")
     dist(lf, "position_name")
 
-    cards = (
-        lf.filter(pl.col("card_type").is_not_null()).select(pl.len()).collect()[0, 0]
+    sub("Playing Time Distribution")
+    time_bins = played_df.with_columns(
+        pl.when(pl.col("duration") >= 90).then(pl.lit("90+ min"))
+        .when(pl.col("duration") >= 60).then(pl.lit("60-90 min"))
+        .when(pl.col("duration") >= 30).then(pl.lit("30-60 min"))
+        .otherwise(pl.lit("< 30 min")).alias("bin")
     )
-    print(f"\nTotal cards: {cards:,}")
+    dist(time_bins.lazy(), "bin")
+
+    # 5. Cards
+    sub("Card Analysis")
+    card_lf = lf.filter(pl.col("card_type").is_not_null())
+    card_results = card_lf.collect()
+    total_cards = card_results.height
+    yellow_pct = (card_results.filter(pl.col("card_type").str.contains("Yellow")).height / total_cards) * 100
+    
+    print(f"Total cards: {total_cards:,} ({ (total_cards/total_rec)*100:.1f}% of records)")
+    print(f"Yellow card frequency: {yellow_pct:.1f}%")
+    
+    top_carded = card_results.group_by("player_name").len().sort("len", descending=True).head(5)
+    print("\nTop Carded Players:")
+    print(top_carded)
 
     return {
-        "records": stats["total"][0],
-        "players": stats["players"][0],
-        "cards": cards,
+        "records": total_rec,
+        "played": played_count,
+        "cards": total_cards
     }
-
 
 def analyze_sb_360() -> dict[str, Any]:
     header("STATSBOMB: THREE SIXTY")
@@ -396,13 +455,42 @@ def analyze_sb_reference() -> dict[str, Any]:
     header("STATSBOMB: REFERENCE")
     lf = pl.scan_parquet(STATSBOMB_DIR / "reference.parquet")
 
-    total = lf.select(pl.len()).collect()[0, 0]
-    print(f"Total records: {total:,}")
-
-    sub("Entity Types")
+    # 1. Entity Distribution (Now at the top)
+    sub("Entity Distribution")
     dist(lf, "table_name")
 
-    return {"records": total}
+    # 3. Name Collisions (Different IDs, Same Name)
+    sub("Entity Name Collisions")
+    # Group by table and name to find different IDs sharing a name
+    collisions = (
+        lf.group_by(["table_name", "name"])
+        .agg(pl.col("id").n_unique().alias("id_count"))
+        .filter(pl.col("id_count") > 1)
+        .collect()
+    )
+    
+    p_dupes = collisions.filter(pl.col("table_name") == "player").height
+    t_dupes = collisions.filter(pl.col("table_name") == "team").height
+    
+    print(f"- Players: {p_dupes} duplicate names (different entities)")
+    print(f"- Teams: {t_dupes} duplicate names (different entities)")
+    if not collisions.is_empty():
+        print(collisions.sort("id_count", descending=True).head(5))
+
+    # 4. Team Metadata (Gender Table)
+    sub("Team Gender Analysis (Top 3)")
+    gender_sample = (
+        lf.filter((pl.col("table_name") == "team") & (pl.col("extra_info").is_not_null()))
+        .select(["name", "extra_info"])
+        .head(3)
+        .collect()
+    )
+    print(gender_sample)
+
+    return {
+        "player_collisions": p_dupes,
+        "team_collisions": t_dupes
+    }
 
 
 def cross_analysis() -> dict[str, Any]:

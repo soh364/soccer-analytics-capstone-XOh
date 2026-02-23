@@ -12,8 +12,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2021/2022,Ariday Cabrera Suárez,Odisha,15,37,2.65,5.0,2.35
 2021/2022,Jorge Ortiz Mendoza,Goa,14,60,5.67,8.0,2.33
 2021/2022,Hugo Adnan Boumous,ATK Mohun Bagan,12,22,2.77,5.0,2.23
-2021/2022,Deshorn Brown,NorthEast United,9,26,4.91,7.0,2.09
 2022,Julián Álvarez,Argentina,5,11,1.91,4.0,2.09
+2021/2022,Deshorn Brown,NorthEast United,9,26,4.91,7.0,2.09
 2021/2022,Kiyan Nassiri Giri,ATK Mohun Bagan,5,8,1.03,3.0,1.97
 2021/2022,Bipin Singh Thounajam,Mumbai City,18,35,4.1,6.0,1.9
 2022,Álvaro Borja Morata Martín,Spain,4,8,1.11,3.0,1.89
@@ -24,8 +24,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2021/2022,Serigne Mourtada Fall,Mumbai City,10,15,1.26,3.0,1.74
 2021/2022,Amir Derviševič,East Bengal,5,8,0.31,2.0,1.69
 2021/2022,Danilo Luís Hélio Pereira,Paris Saint-Germain,9,15,2.33,4.0,1.67
-2022,Marcus Rashford,England,5,11,1.38,3.0,1.62
 2021/2022,Danish Farooq Bhat,Bengaluru,8,15,1.38,3.0,1.62
+2022,Marcus Rashford,England,5,11,1.38,3.0,1.62
 2021/2022,Javier Siverio Toro,Hyderabad,15,38,5.41,7.0,1.59
 2021/2022,Mohammed Irshad,NorthEast United,7,12,0.44,2.0,1.56
 2021/2022,Ygor de Oliveira Ferreira,Mumbai City,11,19,1.44,3.0,1.56
@@ -44,13 +44,13 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2021/2022,Ahmed Jahouh,Mumbai City,12,23,1.65,3.0,1.35
 2022,Mohammed Kudus,Ghana,3,8,0.66,2.0,1.34
 2022,Gonçalo Matias Ramos,Portugal,2,7,1.67,3.0,1.33
-2021/2022,Thongkhosiem Haokip,East Bengal,6,8,0.71,2.0,1.29
 2022,Gue-Sung Cho,South Korea,3,8,0.71,2.0,1.29
+2021/2022,Thongkhosiem Haokip,East Bengal,6,8,0.71,2.0,1.29
 2021/2022,Héctor Rodas Ramírez,Odisha,8,10,0.73,2.0,1.27
 2021/2022,Akash Mishra,Hyderabad,10,12,0.75,2.0,1.25
 2021/2022,Diego Maurício Machado de Brito,Mumbai City,5,6,1.77,3.0,1.23
-2022,Enner Remberto Valencia Lastra,Ecuador,3,9,1.92,3.0,1.08
 2021/2022,Neymar da Silva Santos Junior,Paris Saint-Germain,17,43,9.92,11.0,1.08
+2022,Enner Remberto Valencia Lastra,Ecuador,3,9,1.92,3.0,1.08
 2021/2022,Ritwik Kumar Das,Jamshedpur,11,21,2.98,4.0,1.02
 2021/2022,Antonio Perošević,East Bengal,14,51,3.02,4.0,0.98
 2022,Bruno Miguel Borges Fernandes,Portugal,2,8,1.03,2.0,0.97
@@ -66,18 +66,18 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2022,Carlos Henrique Casimiro,Brazil,4,10,1.14,2.0,0.86
 2022,Kai Havertz,Germany,1,5,1.16,2.0,0.84
 2021/2022,Seko Fofana,Lens,2,6,0.16,1.0,0.84
+2021/2022,Alan Henrique Costa,Bengaluru,7,11,1.22,2.0,0.78
 2022,Luis Gerardo Chávez Magallón,Mexico,2,10,0.22,1.0,0.78
 2021/2022,Laldanmawia Ralte,NorthEast United,6,10,3.22,4.0,0.78
-2021/2022,Alan Henrique Costa,Bengaluru,7,11,1.22,2.0,0.78
-2021/2022,Leandro Daniel Paredes,Paris Saint-Germain,5,6,0.23,1.0,0.77
 2021/2022,Mashoor Shereef Thangalakath,NorthEast United,4,5,0.23,1.0,0.77
+2021/2022,Leandro Daniel Paredes,Paris Saint-Germain,5,6,0.23,1.0,0.77
 2021/2022,Paul Ramfangzauva,Odisha,6,7,0.24,1.0,0.76
-2021/2022,Sahil Tavora,Hyderabad,7,8,0.25,1.0,0.75
 2022,Mitchell Thomas Duke,Australia,3,7,0.25,1.0,0.75
+2021/2022,Sahil Tavora,Hyderabad,7,8,0.25,1.0,0.75
 2022,Theo Bernard François Hernández,France,3,5,0.26,1.0,0.74
 2022,Takuma Asano,Japan,4,9,1.28,2.0,0.72
-2021/2022,Roy Krishna,ATK Mohun Bagan,12,37,6.28,7.0,0.72
 2021/2022,Naorem Roshan Singh,Bengaluru,9,13,0.28,1.0,0.72
+2021/2022,Roy Krishna,ATK Mohun Bagan,12,37,6.28,7.0,0.72
 2022,Wahbi Khazri,Tunisia,2,5,0.3,1.0,0.7
 2021/2022,Muhammad Ashique Kuruniyan,Bengaluru,9,12,0.32,1.0,0.68
 2021/2022,Gaëtan Laborde,Rennes,2,5,0.37,1.0,0.63
@@ -92,35 +92,35 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2022,Alexis Mac Allister,Argentina,3,7,0.5,1.0,0.5
 2022,Daley Blind,Netherlands,3,5,0.52,1.0,0.48
 2022,Ángel Fabián Di María Hernández,Argentina,3,7,0.53,1.0,0.47
+2021/2022,Álvaro Vázquez García,Kerala Blasters,22,72,7.53,8.0,0.47
 2021/2022,Vikram Pratap Singh,Mumbai City,7,16,2.53,3.0,0.47
 2021/2022,Ariel Borysiuk,Chennaiyin,10,22,0.53,1.0,0.47
-2021/2022,Álvaro Vázquez García,Kerala Blasters,22,72,7.53,8.0,0.47
 2021/2022,Prince Vinny Ibara Doniama,Bengaluru,14,35,3.55,4.0,0.45
-2021/2022,David Joel Williams,ATK Mohun Bagan,11,24,3.55,4.0,0.45
 2021/2022,Khassa Camara,NorthEast United,6,12,0.55,1.0,0.45
+2021/2022,David Joel Williams,ATK Mohun Bagan,11,24,3.55,4.0,0.45
+2021/2022,Nikhil Poojary,Hyderabad,11,14,0.56,1.0,0.44
 2021/2022,Harmanjot Singh Khabra,Kerala Blasters,6,9,0.56,1.0,0.44
 2022,Salem Mohammed Al Dawsari,Saudi Arabia,3,7,1.56,2.0,0.44
-2021/2022,Nikhil Poojary,Hyderabad,11,14,0.56,1.0,0.44
 2022,Hee-Chan Hwang,South Korea,2,6,0.57,1.0,0.43
-2021/2022,Redeem Tlang,Odisha,3,7,0.59,1.0,0.41
 2022,Lovro Majer,Croatia,4,5,1.59,2.0,0.41
-2022,Marco Asensio Willemsen,Spain,4,10,0.61,1.0,0.39
+2021/2022,Redeem Tlang,Odisha,3,7,0.59,1.0,0.41
 2021/2022,Randal Kolo Muani,Nantes,2,6,1.61,2.0,0.39
+2022,Marco Asensio Willemsen,Spain,4,10,0.61,1.0,0.39
 2022,Michy Batshuayi Tunga,Belgium,2,6,0.62,1.0,0.38
-2021/2022,Jorge Rolando Pereyra Díaz,Kerala Blasters,14,37,7.64,8.0,0.36
 2021/2022,Kevin Gameiro,Strasbourg,1,5,0.64,1.0,0.36
+2021/2022,Jorge Rolando Pereyra Díaz,Kerala Blasters,14,37,7.64,8.0,0.36
 2021/2022,Jordan Murray,Jamshedpur,14,33,3.65,4.0,0.35
 2022,Boulaye Dia,Senegal,4,8,0.66,1.0,0.34
 2022,Haji Wright,United States,4,7,0.66,1.0,0.34
 2022,João Félix Sequeira,Portugal,4,11,0.67,1.0,0.33
 2021/2022,Pronay Halder,Jamshedpur,5,7,0.67,1.0,0.33
-2021/2022,Rahul Bheke,Mumbai City,8,12,1.69,2.0,0.31
-2022,Niclas Füllkrug,Germany,3,8,1.69,2.0,0.31
 2021/2022,Jayesh Dilip Rane,Bengaluru,6,14,0.69,1.0,0.31
+2022,Niclas Füllkrug,Germany,3,8,1.69,2.0,0.31
+2021/2022,Rahul Bheke,Mumbai City,8,12,1.69,2.0,0.31
 2021/2022,Mirlan Murzaev,Chennaiyin,13,32,1.73,2.0,0.27
-2022,Adrien Rabiot,France,5,9,0.73,1.0,0.27
 2022,Serge Gnabry,Germany,3,12,0.73,1.0,0.27
 2021/2022,Naorem Mahesh Singh,East Bengal,13,24,1.73,2.0,0.27
+2022,Adrien Rabiot,France,5,9,0.73,1.0,0.27
 2022,Ivan Perišić,Croatia,6,16,0.76,1.0,0.24
 2021/2022,Marco Sahanek,NorthEast United,6,15,0.78,1.0,0.22
 2021/2022,Alexandre Monteiro de Lima,Jamshedpur,10,15,0.79,1.0,0.21
@@ -132,8 +132,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2022,Achraf Hakimi Mouh,Morocco,4,5,0.92,1.0,0.08
 2021/2022,Nerijus Valskis,Chennaiyin,8,15,1.94,2.0,0.06
 2021/2022,Iman Basafa,Bengaluru,4,6,0.94,1.0,0.06
-2021/2022,Anirudh Thapa,Chennaiyin,9,13,0.95,1.0,0.05
 2021/2022,Subhasish Bose,ATK Mohun Bagan,10,16,0.95,1.0,0.05
+2021/2022,Anirudh Thapa,Chennaiyin,9,13,0.95,1.0,0.05
 2021/2022,Rohit Danu,Hyderabad,9,15,1.97,2.0,0.03
 2021/2022,Aibanbha Kupar Dohling,Goa,8,12,0.98,1.0,0.02
 2021/2022,Rochharzela Rochharzela,NorthEast United,7,9,0.99,1.0,0.01
@@ -142,43 +142,43 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2021/2022,Ricky Lallawmawma,Jamshedpur,4,5,0.07,0.0,-0.07
 2021/2022,Eli Sabia Filho,Jamshedpur,6,11,1.08,1.0,-0.08
 2021/2022,Moirangthem Thoiba Singh,Odisha,5,5,0.08,0.0,-0.08
+2022,Daniel Olmo Carvajal,Spain,4,12,1.08,1.0,-0.08
 2021/2022,Terem Igobor Moffi,Lorient,2,7,1.08,1.0,-0.08
 2022,Ahmad Nourollahi,Iran,2,5,0.08,0.0,-0.08
-2022,Daniel Olmo Carvajal,Spain,4,12,1.08,1.0,-0.08
 2021/2022,Lalrinliana Hnamte,East Bengal,10,14,1.09,1.0,-0.09
 2021/2022,Keisham Reagan Singh,Chennaiyin,5,6,0.09,0.0,-0.09
 2021/2022,Ayush Adhikari,Kerala Blasters,7,10,1.09,1.0,-0.09
-2021/2022,Soraisham Sandeep Singh,Kerala Blasters,3,5,0.1,0.0,-0.1
 2021/2022,Presnel Kimpembe,Paris Saint-Germain,6,6,1.1,1.0,-0.1
-2022,Federico Santiago Valverde Dipetta,Uruguay,3,7,0.12,0.0,-0.12
+2021/2022,Soraisham Sandeep Singh,Kerala Blasters,3,5,0.1,0.0,-0.1
 2022,Kang-In Lee,South Korea,3,5,0.12,0.0,-0.12
+2022,Federico Santiago Valverde Dipetta,Uruguay,3,7,0.12,0.0,-0.12
 2022,Neymar da Silva Santos Junior,Brazil,3,12,2.13,2.0,-0.13
 2022,İlkay Gündoğan,Germany,1,6,1.13,1.0,-0.13
 2022,Luka Modrić,Croatia,6,7,1.13,1.0,-0.13
 2021/2022,Asish Rai,Hyderabad,8,10,0.14,0.0,-0.14
-2022,Christian Pulisic,United States,3,9,1.14,1.0,-0.14
 2021/2022,Rahim Ali,Chennaiyin,10,20,2.14,2.0,-0.14
+2022,Christian Pulisic,United States,3,9,1.14,1.0,-0.14
 2022,Antony Matheus dos Santos,Brazil,4,6,0.15,0.0,-0.15
-2021/2022,Amarjit Singh Kiyam Singh,East Bengal,5,5,0.16,0.0,-0.16
 2021/2022,Nuno Mendes,Paris Saint-Germain,6,6,0.16,0.0,-0.16
-2021/2022,Sourav Das,East Bengal,9,10,0.17,0.0,-0.17
-2021/2022,Nerijus Valskis,Jamshedpur,5,17,2.17,2.0,-0.17
+2021/2022,Amarjit Singh Kiyam Singh,East Bengal,5,5,0.16,0.0,-0.16
 2021/2022,Jerry Lalrinzuala,Chennaiyin,5,6,0.17,0.0,-0.17
 2021/2022,Lenny Rodrigues,ATK Mohun Bagan,6,7,0.17,0.0,-0.17
+2021/2022,Sourav Das,East Bengal,9,10,0.17,0.0,-0.17
+2021/2022,Nerijus Valskis,Jamshedpur,5,17,2.17,2.0,-0.17
 2022,Kevin De Bruyne,Belgium,3,7,0.18,0.0,-0.18
 2021/2022,Germanpreet Singh,Chennaiyin,7,13,1.18,1.0,-0.18
-2021/2022,Hira Mondal,East Bengal,5,8,0.18,0.0,-0.18
 2022,Wataru Endo,Japan,2,6,0.18,0.0,-0.18
-2022,Aurélien Djani Tchouaméni,France,6,7,1.18,1.0,-0.18
 2022,Memphis Depay,Netherlands,3,10,1.18,1.0,-0.18
+2022,Aurélien Djani Tchouaméni,France,6,7,1.18,1.0,-0.18
+2021/2022,Hira Mondal,East Bengal,5,8,0.18,0.0,-0.18
 2021/2022,Achraf Hakimi Mouh,Paris Saint-Germain,9,9,1.19,1.0,-0.19
 2021/2022,Laldinliana Renthlei,Jamshedpur,7,7,0.19,0.0,-0.19
 2022,Pierre Kunde Malong,Cameroon,2,5,0.19,0.0,-0.19
-2022,Nikola Vlašić,Croatia,5,7,2.2,2.0,-0.2
 2022,In-Beom Hwang,South Korea,4,6,0.2,0.0,-0.2
+2022,Nikola Vlašić,Croatia,5,7,2.2,2.0,-0.2
 2021/2022,Manvir Singh,ATK Mohun Bagan,18,46,6.21,6.0,-0.21
-2021/2022,Pragyan Sundar Gogoi,NorthEast United,6,7,0.22,0.0,-0.22
 2022,Pedro Guilherme Abreu dos Santos,Brazil,2,5,1.22,1.0,-0.22
+2021/2022,Pragyan Sundar Gogoi,NorthEast United,6,7,0.22,0.0,-0.22
 2021/2022,Provat Lakra,NorthEast United,5,8,0.23,0.0,-0.23
 2022,Azzedine Ounahi,Morocco,3,6,0.24,0.0,-0.24
 2022,Hirving Rodrigo Lozano Bahena,Mexico,3,6,0.24,0.0,-0.24
@@ -192,73 +192,73 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2021/2022,Deepak Tangri,ATK Mohun Bagan,10,12,0.29,0.0,-0.29
 2022,Granit Xhaka,Switzerland,3,6,0.3,0.0,-0.3
 2021/2022,Nishu Kumar Tashni,Kerala Blasters,7,11,1.3,1.0,-0.3
-2021/2022,Ludovic Blas,Nantes,2,7,1.31,1.0,-0.31
 2021/2022,Ashutosh Mehta,ATK Mohun Bagan,6,7,0.31,0.0,-0.31
+2021/2022,Ludovic Blas,Nantes,2,7,1.31,1.0,-0.31
+2022,Sofiane Boufal,Morocco,6,7,0.32,0.0,-0.32
 2021/2022,Georginio Wijnaldum,Paris Saint-Germain,8,11,1.32,1.0,-0.32
 2022,Mohammed Kanoo,Saudi Arabia,2,6,0.32,0.0,-0.32
-2022,Sofiane Boufal,Morocco,6,7,0.32,0.0,-0.32
+2021/2022,Nongdamba Singh Naorem,Goa,4,5,0.33,0.0,-0.33
 2022,Joshua Kimmich,Germany,3,7,0.33,0.0,-0.33
 2022,Harry Kane,England,4,12,2.33,2.0,-0.33
-2021/2022,Nongdamba Singh Naorem,Goa,4,5,0.33,0.0,-0.33
 2021/2022,Narayan Das,Chennaiyin,5,5,0.34,0.0,-0.34
 2021/2022,Seminlen Doungel,Jamshedpur,13,24,2.35,2.0,-0.35
 2021/2022,Eduardo Bedia Peláez,Goa,15,37,1.36,1.0,-0.36
-2022,Ousmane Dembélé,France,5,8,0.36,0.0,-0.36
 2021/2022,Lallianzuala Chhangte,Mumbai City,6,10,0.36,0.0,-0.36
 2021/2022,Hitesh Sharma,Hyderabad,4,6,0.36,0.0,-0.36
+2022,Ousmane Dembélé,France,5,8,0.36,0.0,-0.36
 2022,Marcelo Brozović,Croatia,4,5,1.37,1.0,-0.37
 2022,Weston McKennie,United States,2,5,0.38,0.0,-0.38
 2021/2022,Seriton Fernandes,Goa,5,6,0.38,0.0,-0.38
 2022,Breel-Donald Embolo,Switzerland,3,6,2.39,2.0,-0.39
 2021/2022,Pritam Kotal,ATK Mohun Bagan,8,9,1.39,1.0,-0.39
-2021/2022,Aniket Anil Jadhav,Hyderabad,14,37,2.4,2.0,-0.4
 2021/2022,Lallianzuala Chhangte,Chennaiyin,7,16,1.4,1.0,-0.4
-2021/2022,Glan Martins,Goa,7,15,0.41,0.0,-0.41
+2021/2022,Aniket Anil Jadhav,Hyderabad,14,37,2.4,2.0,-0.4
 2021/2022,Parag Satish Shrivas,Bengaluru,5,6,0.41,0.0,-0.41
+2021/2022,Glan Martins,Goa,7,15,0.41,0.0,-0.41
 2021/2022,Iván Garrido González,Goa,5,5,1.42,1.0,-0.42
 2022,Daichi Kamada,Japan,4,6,0.42,0.0,-0.42
-2021/2022,Mohammad Mobashir Rahman,Jamshedpur,7,12,0.43,0.0,-0.43
 2021/2022,Suhair Vadakkepeedika,NorthEast United,18,46,3.43,3.0,-0.43
-2021/2022,Dango Aboubacar Faissal Ouattara,Lorient,2,7,0.44,0.0,-0.44
-2021/2022,Bijoy Varghese,Kerala Blasters,4,6,0.44,0.0,-0.44
+2021/2022,Mohammad Mobashir Rahman,Jamshedpur,7,12,0.43,0.0,-0.43
 2021/2022,Víctor Mongil Adeva,Odisha,5,5,0.44,0.0,-0.44
+2021/2022,Bijoy Varghese,Kerala Blasters,4,6,0.44,0.0,-0.44
+2021/2022,Dango Aboubacar Faissal Ouattara,Lorient,2,7,0.44,0.0,-0.44
 2022,Heung-Min Son,South Korea,4,9,0.45,0.0,-0.45
 2021/2022,Patrick Flottmann,NorthEast United,5,8,1.46,1.0,-0.46
-2021/2022,Suresh Singh Wangjam,Bengaluru,8,11,0.47,0.0,-0.47
 2021/2022,Syed Suhail Pasha,Chennaiyin,5,5,0.47,0.0,-0.47
+2021/2022,Suresh Singh Wangjam,Bengaluru,8,11,0.47,0.0,-0.47
 2022,Harry Maguire,England,4,6,0.49,0.0,-0.49
-2021/2022,Boris Singh Thangjam,Jamshedpur,12,20,2.5,2.0,-0.5
 2022,Antoine Griezmann,France,3,6,0.5,0.0,-0.5
 2021/2022,Prabir Das,ATK Mohun Bagan,10,13,0.5,0.0,-0.5
-2021/2022,Nandhakumar Sekar,Odisha,10,13,1.51,1.0,-0.51
+2021/2022,Boris Singh Thangjam,Jamshedpur,12,20,2.5,2.0,-0.5
 2021/2022,Lalengmawia Ralte,Mumbai City,9,14,0.51,0.0,-0.51
+2021/2022,Nandhakumar Sekar,Odisha,10,13,1.51,1.0,-0.51
 2021/2022,Jeakson Singh Thaunaojam,Kerala Blasters,10,13,1.53,1.0,-0.53
-2021/2022,Lalthathanga Khawlhring,Kerala Blasters,12,16,0.54,0.0,-0.54
 2021/2022,Isaac Vanmalsawma Chhakchhuak,Odisha,7,8,0.54,0.0,-0.54
+2021/2022,Lalthathanga Khawlhring,Kerala Blasters,12,16,0.54,0.0,-0.54
 2021/2022,Carl Gerard McHugh,ATK Mohun Bagan,8,15,0.56,0.0,-0.56
-2022,Rodrigo Javier De Paul,Argentina,5,7,0.57,0.0,-0.57
 2021/2022,Edwin Sydney Vanspaul,Chennaiyin,9,16,0.57,0.0,-0.57
+2022,Rodrigo Javier De Paul,Argentina,5,7,0.57,0.0,-0.57
 2021/2022,Mauro Emanuel Icardi Rivero,Paris Saint-Germain,6,15,2.58,2.0,-0.58
 2021/2022,Sergio Ramos García,Paris Saint-Germain,5,11,1.59,1.0,-0.59
-2021/2022,Franjo Prce,East Bengal,7,8,1.6,1.0,-0.6
 2021/2022,Brandon Fernandes,Goa,6,12,0.6,0.0,-0.6
-2022,Kieffer Roberto Francisco Moore,Wales,3,6,0.64,0.0,-0.64
-2022,Youssef Msakni,Tunisia,2,9,0.64,0.0,-0.64
+2021/2022,Franjo Prce,East Bengal,7,8,1.6,1.0,-0.6
 2021/2022,Marcelo Leite Pereira,NorthEast United,7,15,1.64,1.0,-0.64
+2022,Youssef Msakni,Tunisia,2,9,0.64,0.0,-0.64
 2021/2022,Souvik Chakrabarti,Hyderabad,10,18,0.64,0.0,-0.64
+2022,Kieffer Roberto Francisco Moore,Wales,3,6,0.64,0.0,-0.64
 2022,Bruno Guimarães Rodriguez Moura,Brazil,2,5,0.65,0.0,-0.65
 2021/2022,Ángel Fabián Di María Hernández,Paris Saint-Germain,17,44,4.66,4.0,-0.66
 2022,Antonio Rüdiger,Germany,3,6,0.66,0.0,-0.66
 2021/2022,Mohammed Rafique,East Bengal,8,11,0.67,0.0,-0.67
 2021/2022,Liridon Krasniqi,Odisha,4,5,0.67,0.0,-0.67
-2021/2022,Francisco José Sota Bernard,East Bengal,5,13,0.68,0.0,-0.68
 2021/2022,Muhammed Nemil Valiyattil,Goa,8,10,0.68,0.0,-0.68
+2021/2022,Francisco José Sota Bernard,East Bengal,5,13,0.68,0.0,-0.68
 2022,Ernesto Alexis Vega Rojas,Mexico,3,9,0.69,0.0,-0.69
 2021/2022,Jitendra Singh,Jamshedpur,7,11,0.69,0.0,-0.69
 2022,Tajon Buchanan,Canada,3,5,0.71,0.0,-0.71
 2021/2022,Hernán Daniel Santana Trujillo,NorthEast United,15,35,1.72,1.0,-0.72
-2021/2022,Gurjinder Kumar,NorthEast United,8,12,0.75,0.0,-0.75
 2021/2022,Daniel Chima Chukwu,East Bengal,8,18,2.75,2.0,-0.75
+2021/2022,Gurjinder Kumar,NorthEast United,8,12,0.75,0.0,-0.75
 2022,Marko Livaja,Croatia,4,7,1.77,1.0,-0.77
 2021/2022,Juan Antonio González Fernández,Hyderabad,11,11,0.78,0.0,-0.78
 2021/2022,Imran Khan,NorthEast United,10,13,0.79,0.0,-0.79
