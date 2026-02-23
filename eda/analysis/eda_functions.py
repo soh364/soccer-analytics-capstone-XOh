@@ -141,7 +141,7 @@ def plot_matches_market_overview(statsbomb_dir: Path, figsize=(15, 5)) -> None:
 
     # 3. Right Chart: Stacked by Competition
     # We identify the top N competitions to color specifically, group the rest as "Other"
-    top_5_names = top_10_df.head(6)["competition_name"].to_list()
+    top_5_names = top_10_df.head(10)["competition_name"].to_list()
     
     # Create year range for x-axis
     all_years = sorted(list(range(2010, 2027)))
@@ -222,203 +222,114 @@ def gradient_barh(ax, y, width, height, cmap_name='Blues'):
         )
 
 
-def plot_matches_market_overview(statsbomb_dir: Path, figsize=(20, 6)) -> None:
-    """
-    Matches EDA — two-panel overview.
-    Left:  Total match count per competition (gradient bars).
-    Right: Annual competition mix stacked by year (2010–2025).
-    """
-
+def plot_matches_market_overview(statsbomb_dir: Path, figsize=(20, 7)) -> None:
     # ── Data ─────────────────────────────────────────────────────────────────
     lf = pl.scan_parquet(statsbomb_dir / "matches.parquet")
     df_matches = (
         lf.with_columns(
-            pl.col("match_date")
-            .cast(pl.String)
+            pl.col("match_date").cast(pl.String)
             .str.strptime(pl.Date, "%Y-%m-%d")
-            .dt.year()
-            .alias("year")
+            .dt.year().alias("year")
         )
         .filter(pl.col("year").is_between(2010, 2025))
         .collect()
     )
 
-    # Left chart — top 10 competitions by match count
-    top_10_df = (
+    # Left chart — Top 8 for the Ranking
+    top_8_df = (
         df_matches.group_by("competition_name")
         .agg(pl.len().alias("match_count"))
         .sort("match_count", descending=True)
-        .head(10)
+        .head(8)
     )
 
-    # Right chart — top 6 competitions for stacking
-    top_10_names = top_10_df.head(10)["competition_name"].to_list()
-    all_years   = list(range(2010, 2026))
+    # Right chart — Let's use Top 12 to ensure UEFA Euro/World Cups aren't hidden
+    top_stack_df = (
+        df_matches.group_by("competition_name")
+        .agg(pl.len().alias("match_count"))
+        .sort("match_count", descending=True)
+        .head(12) 
+    )
+    
+    top_stack_names = top_stack_df["competition_name"].to_list()
+    all_years = list(range(2010, 2026))
 
     # ── Figure ────────────────────────────────────────────────────────────────
     fig = plt.figure(figsize=figsize)
-    # Define a 2x2 grid, but we'll merge cells
-    gs = gridspec.GridSpec(1, 3, width_ratios=[0.8, 1.5, 1.1])
+    # Squeezed first ratio to 0.4 to shrink the X-axis footprint
+    gs = gridspec.GridSpec(1, 2, width_ratios=[0.4, 1.6])
     
     ax1 = fig.add_subplot(gs[0, 0])
     ax2 = fig.add_subplot(gs[0, 1])
-    ax3 = fig.add_subplot(gs[0, 2])
 
-    # THE CRITICAL FIX: 
-    # Force the layout to ignore the long names and just 'clip' them if necessary
-    # This pulls the second chart left aggressively
-    plt.subplots_adjust(left=0.15, wspace=0.1)
-    plt.subplots_adjust(wspace=0.05) 
-
-    fig.patch.set_facecolor('#ffffff')
-    for ax in (ax1, ax2, ax3): # Applied to all three for consistency
-        ax.set_facecolor('#fafafa')
-
-        
-    fig.patch.set_facecolor('#ffffff')
-    for ax in (ax1, ax2):
-        ax.set_facecolor('#fafafa')
-
-    # ── Left: gradient horizontal bars ───────────────────────────────────────
-    names  = top_10_df["competition_name"].to_list()
-    counts = top_10_df["match_count"].to_list()
+    # ── Left: Shrunken Bars & Large Names ────────────────────────────────────
+    names  = top_8_df["competition_name"].to_list()
+    counts = top_8_df["match_count"].to_list()
     y_pos  = np.arange(len(names))
 
     bar_colors = [plt.get_cmap('Blues')(0.3 + 0.6 * (1 - i / len(counts))) for i in range(len(counts))]
     ax1.barh(y_pos, counts, height=0.7, color=bar_colors, zorder=3)
 
-    # Value labels
     for y, c in zip(y_pos, counts):
-        ax1.text(c + max(counts) * 0.01, y, str(c),
-                 va='center', fontsize=8.5, color='#343a40',
-                 fontweight='bold')
+        ax1.text(c + max(counts) * 0.05, y, str(c), va='center', fontsize=11, fontweight='bold')
 
+    # FIX: Increased font size to 14 and kept wrapped
+    wrapped_names = [textwrap.fill(name, 12) for name in names] 
     ax1.set_yticks(y_pos)
-    ax1.set_yticklabels(names, fontsize=9, fontweight='500')
-    ax1.invert_yaxis()
-    ax1.set_title('Match Volume by Top 10 Competitions',
-                  loc='center', fontsize=11, fontweight='bold', color='#1a1a2e', pad=12)
-    ax1.spines[['top', 'right', 'left']].set_visible(False)
-    ax1.set_xlim(0, max(counts) * 1.18)
-    ax1.tick_params(axis='y', length=0)
-    ax1.grid(axis='x', linestyle=':', alpha=0.35, zorder=0)
+    ax1.set_yticklabels(wrapped_names, fontsize=10, fontweight='400', ha='right')
 
-    # ── Right: stacked bars by year ───────────────────────────────────────────
+    ax1.invert_yaxis()
+    ax1.set_title('Top 8 Competition by Volume', fontsize=12, fontweight='bold', pad=12)
+    
+    # FIX: Shrink the x-axis footprint by making the limit much larger than the bars
+    ax1.set_xlim(0, max(counts) * 1.8) 
+    ax1.spines[['top', 'right', 'left', 'bottom']].set_visible(False)
+    ax1.set_xticks([]) 
+    ax1.tick_params(axis='y', length=0)
+
+    # ── Right: Stacked Bars (Ensuring Euro is visible) ──────────────────────
     bottoms = np.zeros(len(all_years))
 
-    for i, name in enumerate(top_10_names):
-        # Match competition name to palette — partial string match
+    for i, name in enumerate(top_stack_names):
         color = next(
             (v for k, v in COMP_PALETTE.items() if k.lower() in name.lower()),
             FALLBACK_COLORS[i % len(FALLBACK_COLORS)],
         )
         yearly_counts = [
-            df_matches.filter(
-                (pl.col("year") == y) & (pl.col("competition_name") == name)
-            ).height
+            df_matches.filter((pl.col("year") == y) & (pl.col("competition_name") == name)).height
             for y in all_years
         ]
-        ax2.bar(
-            all_years, yearly_counts, bottom=bottoms,
-            label=name[:30], color=color,
-            width=0.75, edgecolor='white', linewidth=0.6, alpha=0.92,
-        )
+        ax2.bar(all_years, yearly_counts, bottom=bottoms, label=name[:30], color=color,
+                width=0.8, edgecolor='white', linewidth=0.5)
         bottoms += np.array(yearly_counts)
 
-    # Others
+    # Others Category
     other_counts = [
-        df_matches.filter(
-            (pl.col("year") == y) & (~pl.col("competition_name").is_in(top_10_names))
-        ).height
+        df_matches.filter((pl.col("year") == y) & (~pl.col("competition_name").is_in(top_stack_names))).height
         for y in all_years
     ]
+    ax2.bar(all_years, other_counts, bottom=bottoms, label='Others', color='#dee2e6', width=0.8)
 
-    for year_idx, (total, other) in enumerate(zip(bottoms + np.array(other_counts), other_counts)):
+    # Totals on top
+    for year_idx, total in enumerate(bottoms + np.array(other_counts)):
         if total > 0:
-            ax2.text(all_years[year_idx], total + 0.5, str(int(total)),
-                    ha='center', va='bottom', fontsize=9,
-                    color='#343a40', fontweight='bold')
-            
-    ax2.bar(
-        all_years, other_counts, bottom=bottoms,
-        label='Others', color='#dee2e6',
-        width=0.75, edgecolor='white', linewidth=0.6, alpha=0.75,
-    )
+            ax2.text(all_years[year_idx], total + 1, str(int(total)),
+                    ha='center', va='bottom', fontsize=10, fontweight='bold')
 
-    ax2.set_title('Temporal Distribution by Competition (2010–2025)',
-                  loc='center', fontsize=11, fontweight='bold', color='#1a1a2e', pad=12)
+    ax2.set_title('Annual Competition Mix (2010–2025)', fontsize=12, fontweight='bold', pad=12)
     ax2.set_xticks(all_years)
-    ax2.set_xticklabels(all_years, rotation=45, fontsize=8, color='#555')
+    ax2.set_xticklabels(all_years, rotation=45, fontsize=10)
+    ax2.legend(loc='upper right', bbox_to_anchor=(0.99, 0.99), fontsize=9, frameon=True, facecolor='white', framealpha=0.8)
     ax2.spines[['top', 'right']].set_visible(False)
-    ax2.tick_params(axis='x', length=0)
-    ax2.legend(
-        bbox_to_anchor=(1.02, 1), loc='upper left',
-        fontsize=10, frameon=False, labelspacing=0.6,
-    )
-    ax2.grid(axis='y', linestyle=':', alpha=0.35)
 
-    plt.suptitle(
-        'Match Data: Competition Coverage & Temporal Scope',
-        fontsize=14, fontweight='bold', color='#1a1a2e', y=1.02,
-    )
-
-    # ── ax3: 2021–2025 zoom ───────────────────────────────────────────────────
-    zoom_years = list(range(2021, 2026))
-    bottoms3   = np.zeros(len(zoom_years))
-
-    for i, name in enumerate(top_10_names):
-        color = next(
-            (v for k, v in COMP_PALETTE.items() if k.lower() in name.lower()),
-            FALLBACK_COLORS[i % len(FALLBACK_COLORS)],
-        )
-        yearly_counts = [
-            df_matches.filter(
-                (pl.col("year") == y) & (pl.col("competition_name") == name)
-            ).height
-            for y in zoom_years
-        ]
-        ax3.bar(
-            zoom_years, yearly_counts, bottom=bottoms3,
-            label=name[:30], color=color,
-            width=0.6, edgecolor='white', linewidth=0.6, alpha=0.92,
-        )
-        bottoms3 += np.array(yearly_counts)
-
-    other_counts3 = [
-        df_matches.filter(
-            (pl.col("year") == y) & (~pl.col("competition_name").is_in(top_10_names))
-        ).height
-        for y in zoom_years
-    ]
-    ax3.bar(
-        zoom_years, other_counts3, bottom=bottoms3,
-        label='Others', color='#dee2e6',
-        width=0.6, edgecolor='white', linewidth=0.6, alpha=0.75,
-    )
-
-    # Value labels
-    for year_idx, total in enumerate(bottoms3 + np.array(other_counts3)):
-        if total > 0:
-            ax3.text(zoom_years[year_idx], total + 0.5, str(int(total)),
-                    ha='center', va='bottom', fontsize=10,
-                    color='#343a40', fontweight='bold')
-            
-    import textwrap
-    wrapped_names = [textwrap.fill(name, 15) for name in names] # Wrap at 15 chars
-    ax1.set_yticklabels(wrapped_names, fontsize=8)
-
-    ax3.set_title('The Modern Tactical Sample (2021–2025)',
-                loc='center', fontsize=11, fontweight='bold', color='#1a1a2e', pad=14)
-    ax3.set_xticks(zoom_years)
-    ax3.set_xticklabels(zoom_years, fontsize=9, color='#555')
-    ax3.spines[['top', 'right']].set_visible(False)
-    ax3.tick_params(axis='x', length=0)
-    ax3.get_legend().remove() if ax3.get_legend() else None
-    ax3.grid(axis='y', linestyle=':', alpha=0.35)
-
-    plt.tight_layout()
-    plt.savefig('figures/matches_overview.png',
-                dpi=180, bbox_inches='tight', facecolor='#ffffff')
+    # ── FINAL SPACING ADJUSTMENT (The Gap Killer) ──
+    # left=0.22 gives room for the big labels, wspace=0.05 snaps the charts together
+    plt.subplots_adjust(left=0.22, right=0.97, wspace=0.05, top=0.85, bottom=0.15)
+    
+    plt.suptitle('Match Data: Competition Coverage & Temporal Scope', fontsize=14, fontweight='bold', y=0.96)
+    
+    # REMOVED tight_layout to preserve subplots_adjust
+    plt.savefig('figures/matches_overview.png', dpi=180, bbox_inches='tight')
     plt.show()
 
 def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None:
@@ -465,7 +376,7 @@ def plot_temporal_coverage_stacked(statsbomb_dir: Path, figsize=(16, 7)) -> None
                    color='steelblue', edgecolor='black')
     
     ax.set_xlabel('Year', fontsize=12, fontweight='bold')
-    ax.set_ylabel('Number of Matches', fontsize=10, fontweight='bold')
+    ax.set_ylabel('Number of Matches', fontsize=12, fontweight='bold')
     ax.set_title('Temporal Distribution (2015-2025)', loc='center', fontsize=14, fontweight='bold')
     ax.set_xticks(x)
     ax.set_xticklabels(years, fontsize=11)
