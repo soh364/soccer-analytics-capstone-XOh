@@ -29,7 +29,7 @@ def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
         ('field_tilt', 'field_tilt_pct', 'Field Tilt %', 'territory'),
         ('possession_pct', 'possession_pct', 'Possession %', 'territory'),
         ('progression', None, 'Progressive Carry %', 'territory'),
-        ('xg', 'total_xg', 'Total npxG', 'attacking'),
+        ('xg', 'npxg', 'npxg', 'attacking'),
         ('epr', 'epr', 'EPR\n(Efficiency)', 'attacking'),
         ('buildup', 'avg_xg_per_buildup_possession', 'xG per Buildup', 'attacking'),
     ]
@@ -105,7 +105,7 @@ def plot_correlation_matrix(metrics: dict, figsize=(10, 8)):
         ('possession_pct', 'possession_pct',                  'Possession %'),
         ('epr',            'epr',                             'EPR'),
         ('line_height',    'defensive_line_height',           'Line Height'),
-        ('xg',             'total_xg',                        'npxG'),
+        ('xg',             'npxg',                        'npxG'),
         ('buildup',        'avg_xg_per_buildup_possession',   'xG Buildup'),
     ]
     
@@ -148,6 +148,7 @@ def plot_correlation_matrix(metrics: dict, figsize=(10, 8)):
     plt.tight_layout()
     save_figure(fig, 'team_metrics_corr.png', dpi=180)
     plt.show()
+
 
 
 def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
@@ -209,7 +210,7 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
                 on='team'
             )
             .join(
-                metrics['xg'].group_by('team').agg(pl.col('total_xg').mean().alias('npxg')),
+                metrics['xg'].group_by('team').agg(pl.col('npxg').mean().alias('npxg')),
                 on='team'
             ))
 
@@ -283,7 +284,7 @@ def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
     ax.set_xlabel('PPDA (lower = more pressing)', fontsize=10, color='#343a40')
     ax.set_ylabel('Possession %', fontsize=10, color='#343a40')
     ax.set_title(
-        'Tactical Identity vs Tournament Depth (2022 FIFA World Cup)\n'
+        'Tactical Identity vs Tournament Depth: 2022 FIFA World Cup\n'
         'PPDA × Possession × npxG (bubble size) × Tournament Result',
         fontsize=14, fontweight='bold',
         loc='center', pad=14
@@ -490,7 +491,7 @@ def plot_outcome_by_quadrant(
 
     fig.suptitle(
         'Does Tactical Identity Predict Match Outcomes?\n'
-        'WC 2022 + Euro 2024  |  Quadrants Split on Dataset Medians',
+        'Quadrants Split on Dataset Medians',
         fontsize=14, fontweight='bold',y=1.03
     )
 
@@ -525,7 +526,7 @@ def _build_flat(metrics: dict) -> pl.DataFrame:
 
 
 DIM_COLS = ['ppda', 'field_tilt_pct', 'possession_pct', 'epr',
-            'defensive_line_height', 'total_xg',
+            'defensive_line_height', 'npxg',
             'avg_xg_per_buildup_possession', 'carry_pct']
 
 DIM_LABELS = ['PPDA', 'Field Tilt %', 'Possession %', 'EPR',
