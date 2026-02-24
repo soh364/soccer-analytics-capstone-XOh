@@ -138,7 +138,7 @@ DEFENSIVE_PROFILE_COLORS = {
 # LOADER
 # ─────────────────────────────────────────────────────────────────────────────
 
-def load_all() -> dict:
+def load_all_players() -> dict:
     """
     Returns nested dict: data[season][filename] = DataFrame
     Adds a 'season_folder' column to each df for downstream use.

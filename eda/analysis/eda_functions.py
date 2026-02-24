@@ -588,7 +588,7 @@ def draw_pitch(ax, patches):
     ax.set_facecolor('#2d5f3a')
 
 
-def plot_event_type_distribution(statsbomb_dir: Path, figsize=(10, 5)) -> None:
+def plot_event_type_distribution(statsbomb_dir: Path, figsize=(8, 4)) -> None:
     
     # 1. High-speed Lazy Load (only reads 'type' column)
     events_lf = pl.scan_parquet(statsbomb_dir / "events.parquet").select("type")

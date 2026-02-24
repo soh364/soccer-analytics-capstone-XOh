@@ -50,7 +50,7 @@ class TournamentDataLoader8D:
             },
             'xg': {
                 'file': 'xg__team__totals.csv',
-                'columns': ['match_id', 'team', 'total_xg'],
+                'columns': ['match_id', 'team', 'npxg'],
                 'dimension': 'D6: Attacking Threat'
             },
             'progression': {
