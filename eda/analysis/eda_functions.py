@@ -595,7 +595,7 @@ def plot_event_type_distribution(statsbomb_dir: Path, figsize=(8, 4)) -> None:
     events_lf = pl.scan_parquet(statsbomb_dir / "events.parquet").select("type")
     
     total_count = events_lf.select(pl.len()).collect().item()
-    dist = events_lf.group_by("type").agg(pl.len().alias("n")).sort("n", descending=True).head(10).collect()
+    dist = events_lf.group_by("type").agg(pl.len().alias("n")).sort("n", descending=True).head(15).collect()
 
     # 2. Setup Gradient Colormap based on #2a9d8f
     # Creates a smooth transition from dark teal to your color
