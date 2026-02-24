@@ -11,6 +11,7 @@ from pathlib import Path
 from typing import Any
 import polars as pl
 import matplotlib.pyplot as plt
+import sklearn
 import seaborn as sns
 import numpy as np
 from IPython.display import clear_output

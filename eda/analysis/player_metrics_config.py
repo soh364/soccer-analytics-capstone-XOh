@@ -4,9 +4,7 @@ Uses 8 files with 13 dimensions across 4 trait categories.
 """
 
 PLAYER_METRICS = {
-    # ========================================================================
-    # FINISHING & EFFICIENCY 
-    # ========================================================================
+
     'finishing_quality': {
         'file': 'xg__player__totals.csv',
         'column': 'goals_minus_xg',
@@ -24,9 +22,6 @@ PLAYER_METRICS = {
         'higher_is_better': True
     },
     
-    # ========================================================================
-    # PROGRESSION 
-    # ========================================================================
     'progressive_passes': {
         'file': 'progression__player__profile.csv',
         'column': 'progressive_passes_p90',
@@ -52,9 +47,6 @@ PLAYER_METRICS = {
         'higher_is_better': True
     },
     
-    # ========================================================================
-    # ATTACKING CONTRIBUTION 
-    # ========================================================================
     'xg_chain': {
         'file': 'advanced__player__xg_chain.csv',
         'column': 'xg_chain_per90',
@@ -66,15 +58,12 @@ PLAYER_METRICS = {
     'team_involvement': {
         'file': 'advanced__player__xg_chain.csv',
         'column': 'team_involvement_pct',
-        'trait_category': 'Control',
+        'trait_category': 'Final_Third_Output',
         'description': '% of team xG chains involved in',
         'min_minutes': 450,
         'higher_is_better': True
     },
     
-    # ========================================================================
-    # BUILD-UP QUALITY 
-    # ========================================================================
     'xg_buildup': {
         'file': 'advanced__player__xg_buildup.csv',
         'column': 'xg_buildup_per90',
@@ -92,9 +81,6 @@ PLAYER_METRICS = {
         'higher_is_better': True
     },
     
-    # ========================================================================
-    # DEFENSIVE CONTRIBUTION 
-    # ========================================================================
     'defensive_actions': {
         'file': 'defensive__player__profile.csv',
         'column': 'total_defensive_actions',
@@ -111,10 +97,7 @@ PLAYER_METRICS = {
         'min_minutes': 450,
         'higher_is_better': True
     },
-    
-    # ========================================================================
-    # PRESSING QUALITY 
-    # ========================================================================
+
     'pressure_volume': {
         'file': 'defensive__player__pressures.csv',
         'column': 'pressures_per_90',
@@ -123,6 +106,7 @@ PLAYER_METRICS = {
         'min_minutes': 450,
         'higher_is_better': True
     },
+
     'pressure_success': {
         'file': 'defensive__player__pressures.csv',
         'column': 'pressure_success_pct',
@@ -137,7 +121,7 @@ PLAYER_METRICS = {
 # Trait category mapping
 TRAIT_CATEGORIES = {
     'Mobility_Intensity': ['defensive_actions', 'high_turnovers', 'pressure_volume', 'pressure_success'],
-    'Progression': ['progressive_passes', 'progressive_carries', 'packing'],
-    'Control': ['team_involvement', 'network_centrality', 'xg_buildup'], 
-    'Final_Third_Output': ['finishing_quality', 'xg_volume', 'xg_chain']
+    'Progression': ['progressive_carries', 'packing'],
+    'Control': ['network_centrality'], 
+    'Final_Third_Output': ['finishing_quality', 'xg_volume', 'xg_chain', 'xg_buildup', 'team_involvement', ]
 }

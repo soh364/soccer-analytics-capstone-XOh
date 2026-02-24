@@ -47,46 +47,65 @@ MIN_MATCHES  = 5
 # Files to load per season, with human-readable labels and the minutes column
 FILE_CONFIG = {
     "xg__player__totals.csv": {
-        "label":       "xG Totals",
+        "label":       "Goals − xG",
         "minutes_col": "minutes",
-        "metric_col":  "goals_minus_xg",
-        "metric_label":"Goals − xG",
+        "metrics": [
+            {"metric_col": "goals_minus_xg", "metric_label": "Goals − xG"},
+            {"metric_col": "xg",             "metric_label": "xG Volume"},
+        ],
     },
     "progression__player__profile.csv": {
         "label":       "Progression Profile",
         "minutes_col": "total_mins",
-        "metric_col":  "total_progressive_actions_p90",
-        "metric_label":"Progressive Actions p90",
+        "metrics": [
+            {"metric_col": "progressive_passes_p90",  "metric_label": "Progressive Passes p90"},
+            {"metric_col": "progressive_carries_p90", "metric_label": "Progressive Carries p90"},
+        ],
     },
     "advanced__player__xg_chain.csv": {
         "label":       "xG Chain",
         "minutes_col": "minutes_played",
-        "metric_col":  "xg_chain_per90",
-        "metric_label":"xG Chain p90",
+        "metrics": [
+            {"metric_col": "xg_chain_per90",       "metric_label": "xG Chain p90"},
+            {"metric_col": "team_involvement_pct",  "metric_label": "Team Involvement %"},
+        ],
     },
     "advanced__player__xg_buildup.csv": {
         "label":       "xG Buildup",
         "minutes_col": "minutes_played",
-        "metric_col":  "xg_buildup_per90",
-        "metric_label":"xG Buildup p90",
+        "metrics": [
+            {"metric_col": "xg_buildup_per90", "metric_label": "xG Buildup p90"},
+        ],
     },
     "advanced__player__packing.csv": {
         "label":       "Packing",
         "minutes_col": None,
-        "metric_col":  "avg_packing_per_pass",
-        "metric_label":"Avg Packing",
+        "metrics": [
+            {"metric_col": "avg_packing_per_pass", "metric_label": "Avg Packing"},
+        ],
     },
     "advanced__player__network_centrality.csv": {
         "label":       "Network Centrality",
         "minutes_col": None,
-        "metric_col":  "network_involvement_pct",
-        "metric_label":"Network Involvement %",
+        "metrics": [
+            {"metric_col": "network_involvement_pct", "metric_label": "Network Involvement %"},
+        ],
     },
     "defensive__player__pressures.csv": {
         "label":       "Pressures",
         "minutes_col": "minutes_played",
-        "metric_col":  "pressures_per_90",
-        "metric_label":"Pressures p90",
+        "metrics": [
+            {"metric_col": "pressures_per_90",     "metric_label": "Pressures p90"},
+            {"metric_col": "pressure_success_pct", "metric_label": "Pressure Success %"},
+        ],
+    },
+    "defensive__player__profile.csv": {
+        "label":       "Defensive Actions",
+        "minutes_col": None,
+        "metrics": [
+            {"metric_col": "total_defensive_actions", "metric_label": "Total Defensive Actions"},
+            {"metric_col": "high_turnovers",          "metric_label": "High Turnovers"},
+        ],
     },
 }
 
@@ -311,57 +330,165 @@ def plot_row_counts(data: dict, figsize=(13, 6)):
     save_figure(fig, 'player_metrics_row_counts.png', dpi=180)
     plt.show()
 
+def plot_row_counts(data: dict, figsize=(16, 6)):
+    """Grouped bar chart: row counts per metric, split by season."""
+    records = []
+    for season, files in data.items():
+        for fname, df in files.items():
+            if fname not in FILE_CONFIG:
+                continue
+            for metric in FILE_CONFIG[fname]["metrics"]:
+                col = metric["metric_col"]
+                label = metric["metric_label"]
+                # count non-null rows for this specific metric column
+                count = df[col].dropna().shape[0] if col in df.columns else 0
+                records.append({
+                    "season": season,
+                    "metric": label,
+                    "rows":   count,
+                })
 
-def plot_coverage_heatmap(data: dict, figsize=(12, 5)):
-    """Heatmap: unique player counts per file × season."""
-    labels  = [FILE_CONFIG[f]["label"] for f in FILE_CONFIG]
-    matrix  = np.zeros((len(SEASONS), len(FILE_CONFIG)))
-
-    for i, season in enumerate(SEASONS):
-        for j, fname in enumerate(FILE_CONFIG):
-            if fname in data[season]:
-                matrix[i, j] = data[season][fname]["player"].nunique()
+    df_counts = pd.DataFrame(records)
+    
+    # preserve order from FILE_CONFIG
+    metrics_ordered = [
+        m["metric_label"]
+        for fname in FILE_CONFIG
+        for m in FILE_CONFIG[fname]["metrics"]
+    ]
 
     fig, ax = plt.subplots(figsize=figsize)
     fig.patch.set_facecolor("#ffffff")
+    ax.set_facecolor("#fafafa")
 
-    sns.heatmap(
-        matrix, ax=ax,
-        xticklabels=labels,
-        yticklabels=[s.replace("_", "/") for s in SEASONS],
-        cmap="YlGn", annot=True, fmt=".0f",
-        annot_kws={"size": 9},
-        linewidths=0.5, linecolor="#f0f0f0",
-        cbar_kws={"shrink": 0.7, "label": "Unique Players"},
-    )
+    x     = np.arange(len(metrics_ordered))
+    n     = len(SEASONS)
+    width = 0.25
 
-    ax.set_xticklabels(ax.get_xticklabels(), rotation=30, ha="right", fontsize=9)
-    ax.set_yticklabels(ax.get_yticklabels(), rotation=0, fontsize=9)
+    for i, season in enumerate(SEASONS):
+        subset = df_counts[df_counts["season"] == season]
+        counts = [
+            subset[subset["metric"] == lbl]["rows"].values[0]
+            if lbl in subset["metric"].values else 0
+            for lbl in metrics_ordered
+        ]
+        offset = (i - n / 2 + 0.5) * width
+        bars = ax.bar(x + offset, counts, width,
+                      color=SEASON_COLORS[season], alpha=0.88,
+                      edgecolor="white", label=season.replace("_", "/"))
+        for bar, val in zip(bars, counts):
+            if val > 0:
+                ax.text(bar.get_x() + bar.get_width() / 2,
+                        bar.get_height() + 50,
+                        f"{val:,}", ha="center", fontsize=8,
+                        color="#495057")
+
+    ax.set_xticks(x)
+    ax.set_xticklabels(metrics_ordered, ha="right",
+                       fontsize=9, rotation=30)
+    ax.set_ylabel("Row Count", fontsize=12)
+    ax.spines[["top", "right"]].set_visible(False)
+    ax.legend(fontsize=10, title="Season", title_fontsize=10)
+    ax.grid(axis="y", alpha=0.25, linestyle=":")
     ax.set_title(
-        "Unique Player Coverage per File × Season",
-        fontsize=11, fontweight="bold",
+        "Raw Record Counts per Metric and Season",
+        fontsize=14, fontweight="bold",
         loc="center", pad=14
     )
 
     plt.tight_layout()
-    save_figure(fig, 'coverage_heatmap.png', dpi=180)
+    save_figure(fig, 'player_metrics_row_counts.png', dpi=180)
     plt.show()
 
+def plot_player_metric_correlations(data: dict, figsize=(12, 10)):
+    """Heatmap of inter-metric correlations across all 12 player metrics."""
+    
+    all_metrics = {}
+    
+    for fname, cfg in FILE_CONFIG.items():
+        for metric in cfg["metrics"]:
+            col = metric["metric_col"]
+            label = metric["metric_label"]
+            frames = []
+            for season in SEASONS:
+                if fname in data[season] and col in data[season][fname].columns:
+                    frames.append(data[season][fname][[col]].rename(columns={col: label}))
+            if frames:
+                all_metrics[label] = pd.concat(frames, ignore_index=True)[label]
+    
+    # Build correlation df — no player join, just raw value distributions
+    combined = pd.DataFrame(all_metrics)
+    corr = combined.corr()
+    mask = np.triu(np.ones_like(corr, dtype=bool))
+    
+    fig, ax = plt.subplots(figsize=figsize)
+    fig.patch.set_facecolor("#ffffff")
+    ax.set_facecolor("#fafafa")
+    
+    sns.heatmap(
+        corr, ax=ax, mask=mask,
+        cmap="RdBu_r", center=0, vmin=-1, vmax=1,
+        annot=True, fmt=".2f",
+        annot_kws={"size": 8, "fontfamily": "monospace"},
+        linewidths=0.5, linecolor="#f0f0f0",
+        cbar_kws={"shrink": 0.8, "label": "Pearson r"},
+        square=True,
+    )
+    
+    ax.set_title(
+        "Validation: Player Metric Correlation Matrix",
+        fontsize=14, fontweight="bold", pad=14
+    )
+    ax.tick_params(axis="x", rotation=45, labelsize=8)
+    ax.tick_params(axis="y", rotation=0, labelsize=8)
+    
+    plt.tight_layout()
+    save_figure(fig, "player_metrics_corr.png", dpi=180)
+    plt.show()
 
-def plot_metric_distributions_pl(data: dict, figsize=(16, 8)):
-    """Violin plots for key metrics across all seasons combined."""
+TRAIT_COLORS = {
+    'Mobility_Intensity':  '#f03e3e',  # red
+    'Progression':         '#1971c2',  # blue
+    'Control':             '#2f9e44',  # green
+    'Final_Third_Output':  '#e67700',  # orange
+}
+
+# Map metric labels to trait categories
+METRIC_LABEL_TRAIT = {
+    # Final_Third_Output
+    "Goals − xG":          "Final_Third_Output",
+    "xG Volume":           "Final_Third_Output",
+    "xG Chain p90":        "Final_Third_Output",
+    "Team Involvement %":  "Final_Third_Output",
+    "xG Buildup p90":      "Final_Third_Output",
+    # Progression
+    "Progressive Passes p90":  "Progression",
+    "Progressive Carries p90": "Progression",
+    "Avg Packing":             "Progression",
+    # Control
+    "Network Involvement %":   "Control",
+    # Mobility_Intensity
+    "Pressures p90":           "Mobility_Intensity",
+    "Pressure Success %":      "Mobility_Intensity",
+    "Total Defensive Actions": "Mobility_Intensity",
+    "High Turnovers":          "Mobility_Intensity",
+}
+
+
+def plot_metric_distributions_pl(data: dict, figsize=(16, 10)):
     metric_data = {}
     for fname, cfg in FILE_CONFIG.items():
-        col = cfg["metric_col"]
-        frames = []
-        for season in SEASONS:
-            if fname in data[season] and col in data[season][fname].columns:
-                frames.append(data[season][fname][[col, "season_folder"]].dropna())
-        if frames:
-            metric_data[cfg["metric_label"]] = pd.concat(frames, ignore_index=True)
+        for metric in cfg["metrics"]:
+            col = metric["metric_col"]
+            label = metric["metric_label"]
+            frames = []
+            for season in SEASONS:
+                if fname in data[season] and col in data[season][fname].columns:
+                    frames.append(data[season][fname][[col, "season_folder"]].dropna())
+            if frames:
+                metric_data[label] = pd.concat(frames, ignore_index=True)
 
-    n_metrics = len(metric_data)
-    fig, axes  = plt.subplots(2, 4, figsize=figsize)
+    fig, axes = plt.subplots(3, 4, figsize=figsize)
     fig.patch.set_facecolor("#ffffff")
     axes = axes.flatten()
 
@@ -372,15 +499,23 @@ def plot_metric_distributions_pl(data: dict, figsize=(16, 8)):
         ax.set_facecolor("#fafafa")
         col = df.columns[0]
 
-        p99 = df[col].quantile(0.99)
+        p99  = df[col].quantile(0.99)
         vals = df[col].clip(upper=p99).dropna().tolist()
+
+        # trait colour
+        trait = METRIC_LABEL_TRAIT.get(label, "Control")
+        color = TRAIT_COLORS[trait]
 
         vp = ax.violinplot(vals, showmedians=True, showextrema=True)
         for pc in vp["bodies"]:
-            pc.set_facecolor("#4dabf7")
+            pc.set_facecolor(color)
             pc.set_alpha(0.65)
         vp["cmedians"].set_color("#1d3557")
         vp["cmedians"].set_linewidth(2)
+        for part in ["cbars", "cmins", "cmaxes"]:
+            if part in vp:
+                vp[part].set_color(color)
+                vp[part].set_linewidth(1.2)
 
         median = np.median(vals)
         ax.text(1.18, median, f"{median:.2f}",
@@ -393,8 +528,7 @@ def plot_metric_distributions_pl(data: dict, figsize=(16, 8)):
                     transform=ax.transAxes, ha="center", fontsize=6.5,
                     color="#e63946")
 
-        ax.set_title(label, fontsize=8.5, fontweight="bold",
-                     fontfamily="monospace")
+        ax.set_title(label, fontsize=10, fontweight="bold", color="#1d3557")
         ax.set_xticks([])
         ax.spines[["top", "right"]].set_visible(False)
         ax.grid(axis="y", alpha=0.25, linestyle=":")
@@ -402,17 +536,24 @@ def plot_metric_distributions_pl(data: dict, figsize=(16, 8)):
     for j in range(i + 1, len(axes)):
         axes[j].set_visible(False)
 
+    # legend
+    legend_handles = [
+        plt.matplotlib.patches.Patch(facecolor=col, alpha=0.75,
+                                     label=trait.replace("_", " "))
+        for trait, col in TRAIT_COLORS.items()
+    ]
+    fig.legend(handles=legend_handles, loc="lower center", ncol=4,
+               fontsize=10, frameon=False, bbox_to_anchor=(0.5, -0.02))
+
     fig.suptitle(
-        "Raw Metric Distributions (all seasons, p99 capped)",
+        "Raw Metric Distributions (p99 capped)",
         fontsize=14, fontweight="bold", y=1.02
     )
     plt.tight_layout()
-    save_figure(fig, 'metric_distributions.png', dpi=180)
+    save_figure(fig, "metric_distributions.png", dpi=180)
     plt.show()
 
-
-def plot_minutes_distribution(data: dict, figsize=(13, 5)):
-    """Histogram of minutes played across files that have a minutes column."""
+def plot_minutes_distribution(data: dict, figsize=(13, 6)):
     fig, axes = plt.subplots(1, 3, figsize=figsize)
     fig.patch.set_facecolor("#ffffff")
 
@@ -422,12 +563,14 @@ def plot_minutes_distribution(data: dict, figsize=(13, 5)):
         if cfg["minutes_col"] is not None
     }
 
+    # Take the first 3 relevant files
     selected = list(files_with_mins.items())[:3]
 
-    for ax, (fname, cfg) in zip(axes, selected):
+    for i, (ax, (fname, cfg)) in enumerate(zip(axes, selected)):
         ax.set_facecolor("#fafafa")
         col = cfg["minutes_col"]
 
+        # Aggregate minutes across all seasons
         frames = []
         for season in SEASONS:
             if fname in data[season] and col in data[season][fname].columns:
@@ -440,35 +583,43 @@ def plot_minutes_distribution(data: dict, figsize=(13, 5)):
         mins = pd.concat(frames)[col].dropna()
         mins = mins[mins > 0]
 
-        ax.hist(mins, bins=40, color="#4dabf7", alpha=0.75,
+        # Plotting the distribution
+        ax.hist(mins, bins=35, color="#4dabf7", alpha=0.8,
                 edgecolor="white", linewidth=0.5)
 
+        # Threshold line
         ax.axvline(MIN_MINUTES, color="#e63946", linestyle="--",
-                   linewidth=1.5, label=f"Min threshold ({MIN_MINUTES} mins)")
+                   linewidth=1.5, label=f"Threshold ({MIN_MINUTES}m)")
 
+        # Percentage annotation
         pct_below = (mins < MIN_MINUTES).mean() * 100
-        ax.text(MIN_MINUTES + 20, ax.get_ylim()[1] * 0.85,
-                f"{pct_below:.0f}% below\nthreshold",
-                fontsize=8, color="#e63946")
+        ax.text(MIN_MINUTES + 25, ax.get_ylim()[1] * 0.80,
+                f"{pct_below:.0f}% < {MIN_MINUTES}m",
+                fontsize=9, color="#e63946", fontweight="bold")
 
-        ax.set_xlabel("Minutes Played", fontsize=9)
-        ax.set_ylabel("Player Count", fontsize=9)
-        ax.set_title(cfg["label"], fontsize=9, fontweight="bold")
+        # Styling
+        ax.set_xlabel("Minutes Played", fontsize=10)
+        ax.set_ylabel("Player Count" if i == 0 else "", fontsize=10)
+        ax.set_title(cfg["label"], fontsize=12, fontweight="bold", pad=10)
         ax.spines[["top", "right"]].set_visible(False)
-        ax.legend(fontsize=7.5, frameon=False)
-        ax.grid(axis="y", alpha=0.25, linestyle=":")
+        ax.legend(fontsize=8, loc="upper right", frameon=False)
+        ax.grid(axis="y", alpha=0.2, linestyle="--")
 
-    fig.suptitle(
-        "Minutes Played Distribution",
-        fontsize=14,
-        fontweight="bold",
-        x=0.5,
-        ha='center'
+    plt.subplots_adjust(left=0.1, right=0.9, top=0.82, bottom=0.15, wspace=0.25)
+
+    # Place the title at exactly 0.5 (the middle of the image)
+    # This will now align with the midpoint of your adjusted plots.
+    fig.text(
+        0.5, 0.94, 
+        "Minutes Played Distribution", 
+        fontsize=14, 
+        fontweight="bold", 
+        ha='center', 
+        va='top'
     )
-    plt.tight_layout()
+
     save_figure(fig, 'player_mins_dis.png', dpi=180)
     plt.show()
-
 
 # ─────────────────────────────────────────────────────────────────────────────
 # EXISTING ADVANCED VISUALIZATIONS (III.7-9)
@@ -579,7 +730,7 @@ def plot_player_archetype_scatter(player_data: dict, figures_dir: Path = FIGURES
     # Quadrant labels
     xmin, xmax = ax.get_xlim()
     ymin, ymax = ax.get_ylim()
-    kw = dict(fontsize=8.5, fontfamily="monospace", fontstyle="italic", alpha=0.7)
+    kw = dict(fontsize=8.5, fontstyle="italic", alpha=0.7)
     
     ax.text(xm + (xmax-xm)*0.05, ym + (ymax-ym)*0.6,
             "CREATIVE\nHUBS", color="#e63946", **kw)
@@ -607,7 +758,7 @@ def plot_player_archetype_scatter(player_data: dict, figures_dir: Path = FIGURES
         # Add label
         ax.annotate(short, (row["xg_chain_per90"], row["network_involvement_pct"]),
                     xytext=(5, 4), textcoords="offset points",
-                    fontsize=7, fontfamily="monospace",
+                    fontsize=7, 
                     color="#343a40", fontweight="bold",
                     bbox=dict(boxstyle="round,pad=0.3", fc="white", ec=player_color, alpha=0.8))
 
@@ -618,17 +769,17 @@ def plot_player_archetype_scatter(player_data: dict, figures_dir: Path = FIGURES
     ]
     ax.legend(handles=handles, fontsize=8, frameon=False, 
               title="Attack Level", title_fontsize=8,
-              loc="upper left")
+              loc="upper right")
 
     ax.set_xlabel("xG Chain p90  (attacking involvement)", fontsize=10)
     ax.set_ylabel("Network Involvement %  (structural centrality)", fontsize=10)
     ax.spines[["top", "right"]].set_visible(False)
     ax.grid(alpha=0.2, linestyle=":", zorder=0)
     ax.set_title(
-        "III.7 — Player Archetype Map: Attacking vs Playmaking\n"
-        f"xG Chain × Network Involvement  |  {SEASON_LABELS.get(season, season)}, min {MIN_MINUTES} mins",
-        fontsize=11, fontweight="bold", fontfamily="monospace",
-        loc="left", pad=14
+        "Player Archetype Scatter Plot\n"
+        f"xG Chain × Network Involvement  |  {SEASON_LABELS.get(season, season)} (minimum {MIN_MINUTES} mins)",
+        fontsize=14, fontweight="bold", 
+        loc="center", pad=14
     )
 
     
@@ -691,7 +842,7 @@ def plot_player_consistency(player_data: dict, figures_dir: Path = FIGURES_DIR,
 
     xmin, xmax = ax.get_xlim()
     ymin, ymax = ax.get_ylim()
-    kw = dict(fontsize=8.5, fontfamily="monospace", fontstyle="italic", alpha=0.7)
+    kw = dict(fontsize=8.5, fontstyle="italic", alpha=0.7)
     ax.text(xm + (xmax-xm)*0.05, ymin + (ym-ymin)*0.05,
             "ELITE\nCONSISTENT", color="#2d6a4f", **kw)
     ax.text(xm + (xmax-xm)*0.05, ym + (ymax-ym)*0.6,
@@ -717,7 +868,7 @@ def plot_player_consistency(player_data: dict, figures_dir: Path = FIGURES_DIR,
         
         # Create text annotation
         txt = ax.annotate(short, (row["mean"], row["cv"]),
-                        fontsize=7, fontfamily="monospace",
+                        fontsize=7, 
                         color="#343a40", fontweight="bold",
                         bbox=dict(boxstyle="round,pad=0.3", fc="white", ec=row["color"], alpha=0.8))
         texts.append(txt)
@@ -741,11 +892,11 @@ def plot_player_consistency(player_data: dict, figures_dir: Path = FIGURES_DIR,
     ax.spines[["top", "right"]].set_visible(False)
     ax.grid(alpha=0.2, linestyle=":", zorder=0)
     ax.set_title(
-        "III.8 — Player Consistency: Quality vs Reliability\n"
+        "Player Consistency: Quality vs Reliability\n"
         f"xG Chain mean vs match-to-match variance  |  "
-        f"{SEASON_LABELS.get(season, season)}, min {MIN_MATCHES} matches",
-        fontsize=11, fontweight="bold", fontfamily="monospace",
-        loc="left", pad=14
+        f"{SEASON_LABELS.get(season, season)} (min {MIN_MATCHES} matches)",
+        fontsize=14, fontweight="bold", 
+        loc="center", pad=14
     )
 
     plt.tight_layout()
@@ -897,7 +1048,7 @@ def plot_player_trajectory(player_data: dict, figures_dir: Path = FIGURES_DIR,
         # Title = player name
         short = player.split()[0] + " " + player.split()[1]
         ax.set_title(short, fontsize=9.5, fontweight="bold", 
-                    color=color, fontfamily="monospace", pad=8)
+                    color=color, pad=8)
         
         # Add trajectory label (smaller, bottom corner)
         ax.text(0.98, 0.05, traj_type, transform=ax.transAxes,
@@ -911,7 +1062,7 @@ def plot_player_trajectory(player_data: dict, figures_dir: Path = FIGURES_DIR,
     fig.suptitle(
         "III.9 — Player Development Trajectories (2021-2024)\n"
         "Normalized composite score: xG Chain + Network + Progression",
-        fontsize=13, fontweight="bold", fontfamily="monospace", y=0.995
+        fontsize=13, fontweight="bold", y=0.995
     )
 
     plt.tight_layout()
@@ -991,11 +1142,9 @@ def plot_quality_minutes_scatter(player_data: dict, figures_dir: Path = FIGURES_
     xmin, xmax = 0, player_stats["total_minutes"].max() * 1.05
     ymin, ymax = ax.get_ylim()
     
-    kw = dict(fontsize=9, fontfamily="monospace", fontstyle="italic", 
+    kw = dict(fontsize=9, fontstyle="italic", 
               alpha=0.6, fontweight="bold")
-    
-    ax.text(xmax * 0.6, ymax * 0.95, "⭐ ELITE STARTERS", color="#2d6a4f", ha="center", **kw)
-    ax.text(150, ymax * 0.95, "⚠️ SUPER-SUBS\n(Small Sample)", color="#e63946", ha="center", **kw)
+
     ax.text(xmax * 0.6, ymin + (median_quality - ymin) * 0.15, "WORKHORSES", 
             color="#4dabf7", ha="center", **kw)
     ax.text(150, ymin + (median_quality - ymin) * 0.15, "BENCH WARMERS", 
@@ -1015,10 +1164,10 @@ def plot_quality_minutes_scatter(player_data: dict, figures_dir: Path = FIGURES_
     ax.grid(alpha=0.2, linestyle=":", zorder=0)
     
     ax.set_title(
-        "III.10 — Quality vs Playing Time: The Reliability Challenge\n"
-        f"Small samples mislead — super-subs vs established stars  |  {SEASON_LABELS.get(season, season)}",
-        fontsize=12, fontweight="bold", fontfamily="monospace",
-        loc="left", pad=14
+        "Quality vs Playing Time: The Reliability Challenge "
+        f"{SEASON_LABELS.get(season, season)}",
+        fontsize=14, fontweight="bold",
+        loc="center", pad=14
     )
     
     plt.tight_layout()
@@ -1085,7 +1234,7 @@ def plot_position_quality_violins(player_data: dict, figures_dir: Path = FIGURES
     fig.suptitle(
         "III.11 — Position-Specific Quality Distributions\n"
         f"What makes a player 'good' depends on position  |  {SEASON_LABELS.get(season, season)}, min 270 mins",
-        fontsize=12, fontweight="bold", fontfamily="monospace",
+        fontsize=12, fontweight="bold",
         y=1.02
     )
     
@@ -1160,7 +1309,7 @@ def plot_specialist_matrix(player_data: dict, figures_dir: Path = FIGURES_DIR,
     ax.plot([0, 100], [0, 100], color="white", linewidth=2.5, 
             linestyle="--", alpha=0.9, label="Balanced Line")
     
-    kw = dict(fontsize=11, fontfamily="monospace", fontweight="bold", alpha=0.8)
+    kw = dict(fontsize=11, fontweight="bold", alpha=0.8)
     ax.text(75, 15, "⚡ PURE ATTACKERS", color="#e63946", ha="center", **kw)
     ax.text(15, 75, "🛡️ DEFENSIVE\nSPECIALISTS", color="#2d6a4f", ha="center", **kw)
     ax.text(75, 75, "🌟 COMPLETE\n(Rare!)", color="#4dabf7", ha="center", **kw)
@@ -1203,7 +1352,7 @@ def plot_specialist_matrix(player_data: dict, figures_dir: Path = FIGURES_DIR,
     ax.set_title(
         "III.12 — The Specialist Matrix: Attacking vs Defensive Quality\n"
         f"No complete players exist — everyone specializes  |  {SEASON_LABELS.get(season, season)}, min {MIN_MINUTES} mins",
-        fontsize=12, fontweight="bold", fontfamily="monospace",
+        fontsize=12, fontweight="bold",
         loc="left", pad=14
     )
     
