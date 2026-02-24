@@ -1,32 +1,5 @@
 """
 Ball progression metrics: Progressive Passes, Progressive Carries, and Progressive Passes Received
-
-NOTE: This implementation uses a SIMPLIFIED progressive definition based on 
-single-action distance gains, not the full Opta/FBref "furthest point in last 6 passes" logic.
-For Opta/FBref compatibility (with possession chain tracking), additional implementation would be required.
-
-Our Definition (Pitch coordinates: 0-120 in x, 0-80 in y):
-1. Progressive Pass: 
-- Completed pass that moves ball ≥10 units forward (end_x - start_x >= 10), OR
-- Any completed pass into penalty area (end_x >= 102, 18 <= end_y <= 62)
-- Only from attacking 60% of pitch (start_x >= 48)
-- Only open play (Regular Play, From Counter)
-
-2. Progressive Carry:
-- Carry that moves ball ≥10 units forward when starting outside final 40% (start_x < 72), OR
-- ≥5 units forward when starting in final 40% (start_x >= 72), OR
-- Into penalty area
-- Only from attacking 60% of pitch (start_x >= 48)
-- Only open play
-
-Progressive Passes Received:
-- Same criteria as progressive passes, tracked by recipient
-
-Sources:
-- https://statsultra.com/progressive-passes-carries-received-explained/ 
-- https://dataglossary.wyscout.com/progressive_pass/
-- https://the-footballanalyst.com/progressive-carries-football-statistics-explained/
-- https://themastermindsite.com/2022/02/23/analyzing-europes-best-progressive-pass-receivers/
 """
 
 import pandas as pd
@@ -35,53 +8,38 @@ import duckdb
 from typing import Union, Optional
 
 
-def calculate_progressive_passes(events, conn=None, match_id=None, player=None) -> pd.DataFrame:
-    """
-    Calculate progressive passes using simplified distance-based definition.
-    
-    A pass is progressive if:
-    1. Completed pass into penalty area (end_x >= 102 and 18 <= end_y <= 62), OR
-    2. Moves ball ≥10 units forward (pass_end_x - start_x >= 10)
-    3. Starting from attacking 60% of pitch (start_x >= 48)
-    4. Open play only (Regular Play + From Counter)
-    """
-    
+def calculate_progressive_passes(events, conn=None, matches=None, match_id=None, player=None) -> pd.DataFrame:
+    """Calculate progressive passes using simplified distance-based definition."""
+
     if isinstance(events, str):
         if conn is None:
             conn = duckdb.connect()
 
         filters = ["e.type = 'Pass'"]
-        params = []  
+        params = []
 
         if match_id is not None:
-            filters.append("e.match_id = ?") 
+            filters.append("e.match_id = ?")
             params.append(match_id)
         if player is not None:
-            filters.append("e.player = ?")  
+            filters.append("e.player = ?")
             params.append(player)
 
         where_clause = " AND ".join(filters)
-        
+        season_join = f"LEFT JOIN '{matches}' m ON r.match_id = m.match_id" if matches else ""
+        season_select = "m.season_name," if matches else ""
+
         query = f"""
         WITH progressive_calc AS (
             SELECT 
-                e.match_id,
-                e.team,
-                e.player,
-                e.location_x,
-                e.location_y,
-                e.pass_end_location_x,
-                e.pass_end_location_y,
-                e.pass_length,
-                e.pass_outcome,
+                e.match_id, e.team, e.player,
+                e.location_x, e.location_y,
+                e.pass_end_location_x, e.pass_end_location_y,
+                e.pass_length, e.pass_outcome,
                 (e.pass_end_location_x - e.location_x) as distance_forward,
                 CASE 
-                    -- Into penalty area
-                    WHEN e.pass_end_location_x >= 102 
-                         AND e.pass_end_location_y BETWEEN 18 AND 62 THEN 1
-                    -- At least 10 units forward from attacking 60%
-                    WHEN e.location_x >= 48
-                         AND (e.pass_end_location_x - e.location_x) >= 10 THEN 1
+                    WHEN e.pass_end_location_x >= 102 AND e.pass_end_location_y BETWEEN 18 AND 62 THEN 1
+                    WHEN e.location_x >= 48 AND (e.pass_end_location_x - e.location_x) >= 10 THEN 1
                     ELSE 0
                 END as is_progressive_intent
             FROM '{events}' e
@@ -91,47 +49,35 @@ def calculate_progressive_passes(events, conn=None, match_id=None, player=None) 
               AND e.location_x IS NOT NULL
               AND e.pass_end_location_x IS NOT NULL
               AND e.pass_end_location_y IS NOT NULL
+        ),
+        r AS (
+            SELECT 
+                match_id, team, player,
+                COUNT(*) as total_passes,
+                SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) as progressive_passes,
+                SUM(is_progressive_intent) as progressive_passes_attempted,
+                ROUND(SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) * 100.0 /
+                      NULLIF(SUM(is_progressive_intent), 0), 2) as progressive_pass_completion_pct,
+                ROUND(SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) * 100.0 /
+                      COUNT(*), 2) as progressive_pass_pct,
+                ROUND(AVG(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN distance_forward END), 2) as avg_progressive_distance,
+                ROUND(AVG(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN pass_length END), 2) as avg_progressive_pass_length
+            FROM progressive_calc
+            GROUP BY match_id, team, player
+            HAVING SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) > 0
         )
-        SELECT 
-            match_id,
-            team,
-            player,
-            COUNT(*) as total_passes,
-            -- COMPLETED progressive passes
-            SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) as progressive_passes,
-            -- ATTEMPTED progressive passes (including incomplete)
-            SUM(is_progressive_intent) as progressive_passes_attempted,
-            -- Completion rate
-            ROUND(
-                SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) * 100.0 / 
-                NULLIF(SUM(is_progressive_intent), 0), 
-                2
-            ) as progressive_pass_completion_pct,
-            -- Percentage of all passes that are progressive
-            ROUND(
-                SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) * 100.0 / 
-                COUNT(*), 
-                2
-            ) as progressive_pass_pct,
-            -- Average forward distance of COMPLETED progressive passes
-            ROUND(AVG(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN distance_forward END), 2) as avg_progressive_distance,
-            -- Average total LENGTH (Euclidean) of COMPLETED progressive passes
-            ROUND(AVG(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN pass_length END), 2) as avg_progressive_pass_length
-        FROM progressive_calc
-        GROUP BY match_id, team, player
-        HAVING SUM(CASE WHEN is_progressive_intent = 1 AND pass_outcome IS NULL THEN 1 ELSE 0 END) > 0
+        SELECT {season_select} r.*
+        FROM r
+        {season_join}
         ORDER BY progressive_passes DESC
         """
-        
-        return conn.execute(query, params).df()
-    
-    else:   
-        # Pandas implementation
-        df = events.copy()
 
+        return conn.execute(query, params).df()
+
+    else:
+        df = events.copy()
         OPEN_PLAY = ['Regular Play', 'From Counter']
 
-        # Filter to ALL passes (including incomplete) in open play
         df = df[
             (df['type'] == 'Pass') &
             (df['location_x'].notna()) &
@@ -139,125 +85,88 @@ def calculate_progressive_passes(events, conn=None, match_id=None, player=None) 
             (df['pass_end_location_y'].notna()) &
             (df['play_pattern'].isin(OPEN_PLAY))
         ].copy()
-        
+
         if match_id is not None:
             df = df[df['match_id'] == match_id]
         if player is not None:
             df = df[df['player'] == player]
 
-        # Calculate pass length
         df['pass_length'] = np.sqrt(
-            (df['pass_end_location_x'] - df['location_x'])**2 + 
+            (df['pass_end_location_x'] - df['location_x'])**2 +
             (df['pass_end_location_y'] - df['location_y'])**2
         )
-        
-        # Calculate forward distance
         df['distance_forward'] = df['pass_end_location_x'] - df['location_x']
-        
-        # Determine if progressive INTENT (regardless of outcome)
-        into_box = (
-            (df['pass_end_location_x'] >= 102) & 
-            (df['pass_end_location_y'] >= 18) & 
-            (df['pass_end_location_y'] <= 62)
-        )
-        
-        forward_from_attacking_60 = (
-            (df['location_x'] >= 48) &
-            (df['distance_forward'] >= 10)
-        )
-        
+
+        into_box = ((df['pass_end_location_x'] >= 102) &
+                    (df['pass_end_location_y'] >= 18) & (df['pass_end_location_y'] <= 62))
+        forward_from_attacking_60 = ((df['location_x'] >= 48) & (df['distance_forward'] >= 10))
+
         df['is_progressive_intent'] = (into_box | forward_from_attacking_60).astype(int)
         df['is_progressive_completed'] = (df['is_progressive_intent'] == 1) & (df['pass_outcome'].isna())
-        
-        # Aggregate by player
+
         result = df.groupby(['match_id', 'team', 'player']).agg(
             total_passes=('type', 'count'),
             progressive_passes=('is_progressive_completed', 'sum'),
             progressive_passes_attempted=('is_progressive_intent', 'sum'),
             avg_progressive_distance=(
-                'distance_forward', 
-                lambda x: round(x[df.loc[x.index, 'is_progressive_completed']].mean(), 2) 
+                'distance_forward',
+                lambda x: round(x[df.loc[x.index, 'is_progressive_completed']].mean(), 2)
                 if df.loc[x.index, 'is_progressive_completed'].any() else np.nan
             ),
             avg_progressive_pass_length=(
-                'pass_length', 
-                lambda x: round(x[df.loc[x.index, 'is_progressive_completed']].mean(), 2) 
+                'pass_length',
+                lambda x: round(x[df.loc[x.index, 'is_progressive_completed']].mean(), 2)
                 if df.loc[x.index, 'is_progressive_completed'].any() else np.nan
             )
         ).reset_index()
-        
+
         result['progressive_pass_completion_pct'] = round(
-            result['progressive_passes'] * 100.0 / result['progressive_passes_attempted'].replace(0, np.nan), 2
-        )
-        
+            result['progressive_passes'] * 100.0 / result['progressive_passes_attempted'].replace(0, np.nan), 2)
         result['progressive_pass_pct'] = round(
-            result['progressive_passes'] * 100.0 / result['total_passes'], 2
-        )
-        
-        # Filter to only players with at least one progressive pass
-        result = result[result['progressive_passes'] > 0]
-        
-        return result.sort_values('progressive_passes', ascending=False)
+            result['progressive_passes'] * 100.0 / result['total_passes'], 2)
+
+        return result[result['progressive_passes'] > 0].sort_values('progressive_passes', ascending=False)
 
 
-def calculate_progressive_carries(events, conn=None, match_id=None, player=None) -> pd.DataFrame:
-    """
-    Calculate progressive carries using simplified distance-based definition.
-    
-    A carry is progressive if:
-    1. Into penalty area (end_x >= 102 and 18 <= end_y <= 62), OR
-    2. Moves ball ≥10 units forward when starting outside final 40% (start_x < 72), OR
-    3. Moves ball ≥5 units forward when starting in final 40% (start_x >= 72)
-    4. Starting from attacking 60% of pitch (start_x >= 48)
-    5. Open play only
-    """
-    
-    FINAL_40_PERCENT = 72  # Final 40% of 120-unit pitch starts at 72
-    FINAL_THIRD = 80       # Final third starts at 80
-    ATTACKING_60_PERCENT = 48  # Attacking 60% starts at 48
-    
+def calculate_progressive_carries(events, conn=None, matches=None, match_id=None, player=None) -> pd.DataFrame:
+    """Calculate progressive carries using simplified distance-based definition."""
+
+    FINAL_40_PERCENT = 72
+    FINAL_THIRD = 80
+    ATTACKING_60_PERCENT = 48
+
     if isinstance(events, str):
         if conn is None:
             conn = duckdb.connect()
-        
+
         filters = ["e.type = 'Carry'"]
-        params = [] 
+        params = []
 
         if match_id is not None:
-            filters.append("e.match_id = ?") 
+            filters.append("e.match_id = ?")
             params.append(match_id)
         if player is not None:
             filters.append("e.player = ?")
             params.append(player)
-        
+
         where_clause = " AND ".join(filters)
-        
+        season_join = f"LEFT JOIN '{matches}' m ON r.match_id = m.match_id" if matches else ""
+        season_select = "m.season_name," if matches else ""
+
         query = f"""
         WITH progressive_calc AS (
             SELECT 
-                e.match_id,
-                e.team,
-                e.player,
-                e.location_x,
-                e.location_y,
-                e.carry_end_location_x,
-                e.carry_end_location_y,
+                e.match_id, e.team, e.player,
+                e.location_x, e.location_y,
+                e.carry_end_location_x, e.carry_end_location_y,
                 (e.carry_end_location_x - e.location_x) as distance_forward,
-                SQRT(
-                    POWER(e.carry_end_location_x - e.location_x, 2) + 
-                    POWER(e.carry_end_location_y - e.location_y, 2)
-                ) as carry_distance,
+                SQRT(POWER(e.carry_end_location_x - e.location_x, 2) +
+                     POWER(e.carry_end_location_y - e.location_y, 2)) as carry_distance,
                 CASE 
-                    -- Into penalty area
-                    WHEN e.carry_end_location_x >= 102 
-                         AND e.carry_end_location_y BETWEEN 18 AND 62 THEN 1
-                    -- In final 40% (x >= 72): need 5 units forward
-                    WHEN e.location_x >= {FINAL_40_PERCENT}
-                         AND e.location_x >= {ATTACKING_60_PERCENT}
+                    WHEN e.carry_end_location_x >= 102 AND e.carry_end_location_y BETWEEN 18 AND 62 THEN 1
+                    WHEN e.location_x >= {FINAL_40_PERCENT} AND e.location_x >= {ATTACKING_60_PERCENT}
                          AND (e.carry_end_location_x - e.location_x) >= 5 THEN 1
-                    -- Outside final 40% (x < 72): need 10 units forward
-                    WHEN e.location_x < {FINAL_40_PERCENT}
-                         AND e.location_x >= {ATTACKING_60_PERCENT}
+                    WHEN e.location_x < {FINAL_40_PERCENT} AND e.location_x >= {ATTACKING_60_PERCENT}
                          AND (e.carry_end_location_x - e.location_x) >= 10 THEN 1
                     ELSE 0
                 END as is_progressive,
@@ -270,42 +179,34 @@ def calculate_progressive_carries(events, conn=None, match_id=None, player=None)
               AND e.location_x IS NOT NULL
               AND e.carry_end_location_x IS NOT NULL
               AND e.carry_end_location_y IS NOT NULL
+        ),
+        r AS (
+            SELECT 
+                match_id, team, player,
+                COUNT(*) as total_carries,
+                SUM(is_progressive) as progressive_carries,
+                ROUND(SUM(is_progressive) * 100.0 / COUNT(*), 2) as progressive_carry_pct,
+                ROUND(AVG(CASE WHEN is_progressive = 1 THEN distance_forward END), 2) as avg_progressive_distance,
+                ROUND(AVG(CASE WHEN is_progressive = 1 THEN carry_distance END), 2) as avg_progressive_carry_length,
+                ROUND(AVG(CASE WHEN is_progressive = 1 THEN distance_forward / NULLIF(carry_distance, 0) END) * 100, 2) as progressive_carry_directness_pct,
+                SUM(CASE WHEN is_progressive = 1 AND into_final_third = 1 THEN 1 ELSE 0 END) as progressive_carries_into_final_third,
+                SUM(CASE WHEN is_progressive = 1 AND into_penalty_area = 1 THEN 1 ELSE 0 END) as progressive_carries_into_penalty_area
+            FROM progressive_calc
+            GROUP BY match_id, team, player
+            HAVING SUM(is_progressive) > 0
         )
-        SELECT 
-            match_id,
-            team,
-            player,
-            COUNT(*) as total_carries,
-            SUM(is_progressive) as progressive_carries,
-            ROUND(SUM(is_progressive) * 100.0 / COUNT(*), 2) as progressive_carry_pct,
-            -- Distance metrics
-            ROUND(AVG(CASE WHEN is_progressive = 1 THEN distance_forward END), 2) as avg_progressive_distance,
-            ROUND(AVG(CASE WHEN is_progressive = 1 THEN carry_distance END), 2) as avg_progressive_carry_length,
-            -- Directness: forward_distance / total_distance (how straight vs meandering)
-            ROUND(
-                AVG(CASE WHEN is_progressive = 1 THEN 
-                    distance_forward / NULLIF(carry_distance, 0) 
-                END) * 100, 
-                2
-            ) as progressive_carry_directness_pct,
-            -- Zone penetration
-            SUM(CASE WHEN is_progressive = 1 AND into_final_third = 1 THEN 1 ELSE 0 END) as progressive_carries_into_final_third,
-            SUM(CASE WHEN is_progressive = 1 AND into_penalty_area = 1 THEN 1 ELSE 0 END) as progressive_carries_into_penalty_area
-        FROM progressive_calc
-        GROUP BY match_id, team, player
-        HAVING SUM(is_progressive) > 0
+        SELECT {season_select} r.*
+        FROM r
+        {season_join}
         ORDER BY progressive_carries DESC
         """
-        
-        return conn.execute(query, params).df()
-    
-    else:   
-        # Pandas implementation
-        df = events.copy()
 
+        return conn.execute(query, params).df()
+
+    else:
+        df = events.copy()
         OPEN_PLAY = ['Regular Play', 'From Counter']
 
-        # Filter to carries in open play
         df = df[
             (df['type'] == 'Carry') &
             (df['location_x'].notna()) &
@@ -318,51 +219,31 @@ def calculate_progressive_carries(events, conn=None, match_id=None, player=None)
             df = df[df['match_id'] == match_id]
         if player is not None:
             df = df[df['player'] == player]
-        
-        # Calculate distance metrics
+
         df['distance_forward'] = df['carry_end_location_x'] - df['location_x']
         df['carry_distance'] = np.sqrt(
-            (df['carry_end_location_x'] - df['location_x'])**2 + 
+            (df['carry_end_location_x'] - df['location_x'])**2 +
             (df['carry_end_location_y'] - df['location_y'])**2
         )
-        
-        # Determine if progressive using split-zone thresholds
-        into_box = (
-            (df['carry_end_location_x'] >= 102) & 
-            (df['carry_end_location_y'] >= 18) & 
-            (df['carry_end_location_y'] <= 62)
-        )
-        
-        # In final 40% (x >= 72): 5 units forward, from attacking 60%
-        in_final_40 = (
-            (df['location_x'] >= FINAL_40_PERCENT) &
-            (df['location_x'] >= ATTACKING_60_PERCENT) &
-            (df['distance_forward'] >= 5)
-        )
-        
-        # Outside final 40% (x < 72): 10 units forward, from attacking 60%
-        outside_final_40 = (
-            (df['location_x'] < FINAL_40_PERCENT) &
-            (df['location_x'] >= ATTACKING_60_PERCENT) &
-            (df['distance_forward'] >= 10)
-        )
-        
+
+        into_box = ((df['carry_end_location_x'] >= 102) &
+                    (df['carry_end_location_y'] >= 18) & (df['carry_end_location_y'] <= 62))
+        in_final_40 = ((df['location_x'] >= FINAL_40_PERCENT) &
+                       (df['location_x'] >= ATTACKING_60_PERCENT) & (df['distance_forward'] >= 5))
+        outside_final_40 = ((df['location_x'] < FINAL_40_PERCENT) &
+                            (df['location_x'] >= ATTACKING_60_PERCENT) & (df['distance_forward'] >= 10))
+
         df['is_progressive'] = (into_box | in_final_40 | outside_final_40).astype(int)
-        
-        # Zone penetration flags
         df['into_final_third'] = (df['carry_end_location_x'] >= FINAL_THIRD).astype(int)
         df['into_penalty_area'] = into_box.astype(int)
-        
-        # Directness calculation (forward distance / total distance)
         df['carry_directness'] = (df['distance_forward'] / df['carry_distance'].replace(0, np.nan)) * 100
-        
-        # Aggregate by player
+
         result = df.groupby(['match_id', 'team', 'player']).agg(
             total_carries=('type', 'count'),
             progressive_carries=('is_progressive', 'sum'),
             avg_progressive_distance=(
-                'distance_forward', 
-                lambda x: round(x[df.loc[x.index, 'is_progressive'] == 1].mean(), 2) 
+                'distance_forward',
+                lambda x: round(x[df.loc[x.index, 'is_progressive'] == 1].mean(), 2)
                 if (df.loc[x.index, 'is_progressive'] == 1).any() else np.nan
             ),
             avg_progressive_carry_length=(
@@ -377,41 +258,28 @@ def calculate_progressive_carries(events, conn=None, match_id=None, player=None)
             ),
             progressive_carries_into_final_third=(
                 'is_progressive',
-                lambda x: ((df.loc[x.index, 'is_progressive'] == 1) & 
-                          (df.loc[x.index, 'into_final_third'] == 1)).sum()
+                lambda x: ((df.loc[x.index, 'is_progressive'] == 1) &
+                           (df.loc[x.index, 'into_final_third'] == 1)).sum()
             ),
             progressive_carries_into_penalty_area=(
                 'is_progressive',
-                lambda x: ((df.loc[x.index, 'is_progressive'] == 1) & 
-                          (df.loc[x.index, 'into_penalty_area'] == 1)).sum()
+                lambda x: ((df.loc[x.index, 'is_progressive'] == 1) &
+                           (df.loc[x.index, 'into_penalty_area'] == 1)).sum()
             )
         ).reset_index()
-        
+
         result['progressive_carry_pct'] = round(
-            result['progressive_carries'] * 100.0 / result['total_carries'], 2
-        )
-        
-        # Filter to only players with at least one progressive carry
-        result = result[result['progressive_carries'] > 0]
-        
-        return result.sort_values('progressive_carries', ascending=False)
+            result['progressive_carries'] * 100.0 / result['total_carries'], 2)
+
+        return result[result['progressive_carries'] > 0].sort_values('progressive_carries', ascending=False)
 
 
-def calculate_progressive_passes_received(events, conn=None, match_id=None, player=None):
-    """
-    Calculate progressive passes received using simplified distance-based definition.
-    
-    Counts completed passes received by a player that meet the progressive pass definition:
-    1. Into penalty area, OR
-    2. ≥10 units forward from attacking 60% of pitch
-    """
+def calculate_progressive_passes_received(events, conn=None, matches=None, match_id=None, player=None):
+    """Calculate progressive passes received."""
 
-    # Zone 14 definition: roughly x between 80-102 (penalty box edge), y between 25-55 (central corridor)
-    ZONE_14_X_MIN = 80
-    ZONE_14_X_MAX = 102
-    ZONE_14_Y_MIN = 25
-    ZONE_14_Y_MAX = 55
-    FINAL_THIRD_X = 80  # Final third starts at 80
+    ZONE_14_X_MIN, ZONE_14_X_MAX = 80, 102
+    ZONE_14_Y_MIN, ZONE_14_Y_MAX = 25, 55
+    FINAL_THIRD_X = 80
     ATTACKING_60_PERCENT = 48
 
     if isinstance(events, str):
@@ -424,42 +292,28 @@ def calculate_progressive_passes_received(events, conn=None, match_id=None, play
         if match_id is not None:
             where_parts.append("e.match_id = ?")
             params.append(match_id)
-
         if player is not None:
             where_parts.append("e.pass_recipient = ?")
             params.append(player)
 
         where_clause = " AND ".join(where_parts)
+        season_join = f"LEFT JOIN '{matches}' m ON r.match_id = m.match_id" if matches else ""
+        season_select = "m.season_name," if matches else ""
 
         query = f"""
         WITH progressive_calc AS (
             SELECT
-                e.match_id,
-                e.team,
-                e.pass_recipient as player,
-                e.location_x,
-                e.pass_end_location_x,
-                e.pass_end_location_y,
+                e.match_id, e.team, e.pass_recipient as player,
+                e.location_x, e.pass_end_location_x, e.pass_end_location_y,
                 (e.pass_end_location_x - e.location_x) AS distance_forward,
                 CASE
-                    WHEN e.pass_end_location_x >= 102
-                         AND e.pass_end_location_y BETWEEN 18 AND 62
-                    THEN 1
-                    WHEN e.location_x >= {ATTACKING_60_PERCENT}
-                         AND (e.pass_end_location_x - e.location_x) >= 10
-                    THEN 1
+                    WHEN e.pass_end_location_x >= 102 AND e.pass_end_location_y BETWEEN 18 AND 62 THEN 1
+                    WHEN e.location_x >= {ATTACKING_60_PERCENT} AND (e.pass_end_location_x - e.location_x) >= 10 THEN 1
                     ELSE 0
                 END AS is_progressive,
-                CASE
-                    WHEN e.pass_end_location_x >= {FINAL_THIRD_X} THEN 1
-                    ELSE 0
-                END as in_final_third,
-                CASE
-                    WHEN e.pass_end_location_x BETWEEN {ZONE_14_X_MIN} AND {ZONE_14_X_MAX}
-                         AND e.pass_end_location_y BETWEEN {ZONE_14_Y_MIN} AND {ZONE_14_Y_MAX}
-                    THEN 1
-                    ELSE 0
-                END as in_zone_14
+                CASE WHEN e.pass_end_location_x >= {FINAL_THIRD_X} THEN 1 ELSE 0 END as in_final_third,
+                CASE WHEN e.pass_end_location_x BETWEEN {ZONE_14_X_MIN} AND {ZONE_14_X_MAX}
+                          AND e.pass_end_location_y BETWEEN {ZONE_14_Y_MIN} AND {ZONE_14_Y_MAX} THEN 1 ELSE 0 END as in_zone_14
             FROM '{events}' e
             WHERE {where_clause}
               AND e.play_pattern IS NOT NULL
@@ -467,42 +321,38 @@ def calculate_progressive_passes_received(events, conn=None, match_id=None, play
               AND e.location_x IS NOT NULL
               AND e.pass_end_location_x IS NOT NULL
               AND e.pass_end_location_y IS NOT NULL
+        ),
+        r AS (
+            SELECT
+                match_id, team, player,
+                COUNT(*) AS total_passes_received,
+                SUM(is_progressive) AS progressive_passes_received,
+                ROUND(SUM(is_progressive) * 100.0 / COUNT(*), 2) AS progressive_passes_received_pct,
+                SUM(CASE WHEN is_progressive = 1 AND in_final_third = 1 THEN 1 ELSE 0 END) as progressive_receptions_final_third,
+                SUM(CASE WHEN is_progressive = 1 AND in_zone_14 = 1 THEN 1 ELSE 0 END) as progressive_receptions_zone_14,
+                ROUND(AVG(CASE WHEN is_progressive = 1 THEN pass_end_location_x END), 2) AS avg_reception_x,
+                ROUND(AVG(CASE WHEN is_progressive = 1 THEN pass_end_location_y END), 2) AS avg_reception_y,
+                ROUND(AVG(CASE WHEN is_progressive = 1 THEN distance_forward END), 2) AS avg_progressive_distance
+            FROM progressive_calc
+            GROUP BY match_id, team, player
+            HAVING SUM(is_progressive) > 0
         )
-        SELECT
-            match_id,
-            team,
-            player,
-            COUNT(*) AS total_passes_received,
-            SUM(is_progressive) AS progressive_passes_received,
-            ROUND(SUM(is_progressive) * 100.0 / COUNT(*), 2) AS progressive_passes_received_pct,
-            -- High-value zones
-            SUM(CASE WHEN is_progressive = 1 AND in_final_third = 1 THEN 1 ELSE 0 END) as progressive_receptions_final_third,
-            SUM(CASE WHEN is_progressive = 1 AND in_zone_14 = 1 THEN 1 ELSE 0 END) as progressive_receptions_zone_14,
-            -- Location metrics
-            ROUND(AVG(CASE WHEN is_progressive = 1 THEN pass_end_location_x END), 2) AS avg_reception_x,
-            ROUND(AVG(CASE WHEN is_progressive = 1 THEN pass_end_location_y END), 2) AS avg_reception_y,
-            ROUND(AVG(CASE WHEN is_progressive = 1 THEN distance_forward END), 2) AS avg_progressive_distance
-        FROM progressive_calc
-        GROUP BY match_id, team, player
-        HAVING SUM(is_progressive) > 0
+        SELECT {season_select} r.*
+        FROM r
+        {season_join}
         ORDER BY progressive_passes_received DESC
         """
 
         return conn.execute(query, params).df()
 
-    else:   
-        # Pandas implementation
+    else:
         df = events.copy()
-
         OPEN_PLAY = ['Regular Play', 'From Counter']
 
         df = df[
-            (df["type"] == "Pass") &
-            (df["pass_outcome"].isna()) &
-            (df["location_x"].notna()) &
-            (df["pass_end_location_x"].notna()) &
-            (df["pass_end_location_y"].notna()) &
-            (df["pass_recipient"].notna()) &
+            (df["type"] == "Pass") & (df["pass_outcome"].isna()) &
+            (df["location_x"].notna()) & (df["pass_end_location_x"].notna()) &
+            (df["pass_end_location_y"].notna()) & (df["pass_recipient"].notna()) &
             (df['play_pattern'].isin(OPEN_PLAY))
         ].copy()
 
@@ -513,153 +363,107 @@ def calculate_progressive_passes_received(events, conn=None, match_id=None, play
 
         df["distance_forward"] = df["pass_end_location_x"] - df["location_x"]
 
-        into_box = (
-            (df["pass_end_location_x"] >= 102)
-            & (df["pass_end_location_y"] >= 18)
-            & (df["pass_end_location_y"] <= 62)
-        )
-        
-        forward_from_attacking_60 = (
-            (df['location_x'] >= ATTACKING_60_PERCENT) &
-            (df['distance_forward'] >= 10)
-        )
+        into_box = ((df["pass_end_location_x"] >= 102) &
+                    (df["pass_end_location_y"] >= 18) & (df["pass_end_location_y"] <= 62))
+        forward_from_attacking_60 = ((df['location_x'] >= ATTACKING_60_PERCENT) & (df['distance_forward'] >= 10))
 
         df["is_progressive"] = (into_box | forward_from_attacking_60).astype(int)
-        
-        # High-value zones
         df['in_final_third'] = (df['pass_end_location_x'] >= FINAL_THIRD_X).astype(int)
         df['in_zone_14'] = (
-            (df['pass_end_location_x'] >= ZONE_14_X_MIN) &
-            (df['pass_end_location_x'] <= ZONE_14_X_MAX) &
-            (df['pass_end_location_y'] >= ZONE_14_Y_MIN) &
-            (df['pass_end_location_y'] <= ZONE_14_Y_MAX)
+            (df['pass_end_location_x'] >= ZONE_14_X_MIN) & (df['pass_end_location_x'] <= ZONE_14_X_MAX) &
+            (df['pass_end_location_y'] >= ZONE_14_Y_MIN) & (df['pass_end_location_y'] <= ZONE_14_Y_MAX)
         ).astype(int)
 
         grouped = (
-            df.groupby(["match_id", "team", "pass_recipient"])
-            .agg(
+            df.groupby(["match_id", "team", "pass_recipient"]).agg(
                 total_passes_received=("type", "count"),
                 progressive_passes_received=("is_progressive", "sum"),
                 progressive_receptions_final_third=(
-                    "is_progressive", 
-                    lambda x: ((df.loc[x.index, "is_progressive"] == 1) & 
-                              (df.loc[x.index, "in_final_third"] == 1)).sum()
+                    "is_progressive",
+                    lambda x: ((df.loc[x.index, "is_progressive"] == 1) &
+                               (df.loc[x.index, "in_final_third"] == 1)).sum()
                 ),
                 progressive_receptions_zone_14=(
-                    "is_progressive", 
-                    lambda x: ((df.loc[x.index, "is_progressive"] == 1) & 
-                              (df.loc[x.index, "in_zone_14"] == 1)).sum()
+                    "is_progressive",
+                    lambda x: ((df.loc[x.index, "is_progressive"] == 1) &
+                               (df.loc[x.index, "in_zone_14"] == 1)).sum()
                 ),
-            )
-            .reset_index()
-            .rename(columns={"pass_recipient": "player"})
+            ).reset_index().rename(columns={"pass_recipient": "player"})
         )
 
         grouped["progressive_passes_received_pct"] = (
-            grouped["progressive_passes_received"] * 100.0 / grouped["total_passes_received"]
-        ).round(2)
+            grouped["progressive_passes_received"] * 100.0 / grouped["total_passes_received"]).round(2)
 
         prog_only = df[df["is_progressive"] == 1]
-
         extra = (
-            prog_only.groupby(["match_id", "team", "pass_recipient"])
-            .agg(
+            prog_only.groupby(["match_id", "team", "pass_recipient"]).agg(
                 avg_reception_x=("pass_end_location_x", "mean"),
                 avg_reception_y=("pass_end_location_y", "mean"),
                 avg_progressive_distance=("distance_forward", "mean"),
-            )
-            .round(2)
-            .reset_index()
-            .rename(columns={"pass_recipient": "player"})
+            ).round(2).reset_index().rename(columns={"pass_recipient": "player"})
         )
 
         result = grouped.merge(extra, on=["match_id", "team", "player"], how="left")
-        result = result[result["progressive_passes_received"] > 0]
+        return result[result["progressive_passes_received"] > 0].sort_values(
+            "progressive_passes_received", ascending=False)
 
-        return result.sort_values("progressive_passes_received", ascending=False)
 
+def calculate_progressive_actions(events, conn=None, matches=None, match_id=None, player=None) -> pd.DataFrame:
+    """Combined progressive involvement = passes + carries + received."""
 
-def calculate_progressive_actions(events, conn=None, match_id=None, player=None) -> pd.DataFrame:
-    """
-    Combined progressive involvement = passes + carries + received
+    prog_passes = calculate_progressive_passes(events, conn, matches=matches, match_id=match_id, player=player)
+    prog_carries = calculate_progressive_carries(events, conn, matches=matches, match_id=match_id, player=player)
+    prog_received = calculate_progressive_passes_received(events, conn, matches=matches, match_id=match_id, player=player)
 
-    NOTE: This counts actions separately, which may "double count" territory if a player carries then passes through the same zone.
-    """
-    
-    prog_passes = calculate_progressive_passes(events, conn, match_id, player)
-    prog_carries = calculate_progressive_carries(events, conn, match_id, player)
-    prog_received = calculate_progressive_passes_received(events, conn, match_id, player)
-    
     result = prog_passes.merge(
         prog_carries[['match_id', 'team', 'player', 'progressive_carries']],
-        on=['match_id', 'team', 'player'],
-        how='outer'
-    )
-    
-    result = result.merge(
+        on=['match_id', 'team', 'player'], how='outer'
+    ).merge(
         prog_received[['match_id', 'team', 'player', 'progressive_passes_received']],
-        on=['match_id', 'team', 'player'],
-        how='outer'
-    )
-
-    result = result.fillna({
-        'progressive_passes': 0, 
-        'progressive_carries': 0,
-        'progressive_passes_received': 0
-    })
+        on=['match_id', 'team', 'player'], how='outer'
+    ).fillna({'progressive_passes': 0, 'progressive_carries': 0, 'progressive_passes_received': 0})
 
     result['progressive_actions'] = (
-        result['progressive_passes'] + 
-        result['progressive_carries'] + 
-        result['progressive_passes_received']
+        result['progressive_passes'] + result['progressive_carries'] + result['progressive_passes_received']
     )
 
-    result = result.sort_values('progressive_actions', ascending=False)
-    
-    return result[['match_id', 'team', 'player', 'progressive_passes', 
-                   'progressive_carries', 'progressive_passes_received', 'progressive_actions']]
+    keep_cols = ['match_id', 'team', 'player', 'progressive_passes',
+                 'progressive_carries', 'progressive_passes_received', 'progressive_actions']
+    if 'season_name' in result.columns:
+        keep_cols = ['season_name'] + keep_cols
+
+    return result[keep_cols].sort_values('progressive_actions', ascending=False)
 
 
-def calculate_progressive_actions_no_overlap(events, conn=None, match_id=None, player=None) -> pd.DataFrame:
-    """
-    Calculate progressive actions while avoiding double-counting overlapping territory.
-    
-    This creates a "unique progressive distance" metric that tracks the furthest
-    point a player moved the ball forward in a possession, regardless of whether
-    they did it via carries, passes, or both.
-    
-    This is useful for avoiding "stat padding" where a player gets credit for
-    carrying 10 units then passing 10 units through the same territory.
-    """
-    
+def calculate_progressive_actions_no_overlap(events, conn=None, matches=None, match_id=None, player=None) -> pd.DataFrame:
+    """Calculate progressive actions while avoiding double-counting overlapping territory."""
+
     if isinstance(events, str):
-        # DuckDB implementation
         if conn is None:
             conn = duckdb.connect()
-        
+
         filters = ["e.type IN ('Pass', 'Carry')"]
         params = []
-        
+
         if match_id is not None:
             filters.append("e.match_id = ?")
             params.append(match_id)
         if player is not None:
             filters.append("e.player = ?")
             params.append(player)
-        
+
         where_clause = " AND ".join(filters)
-        
+        season_join = f"LEFT JOIN '{matches}' m ON r.match_id = m.match_id" if matches else ""
+        season_select = "m.season_name," if matches else ""
+
         query = f"""
         WITH player_actions AS (
             SELECT 
-                e.match_id,
-                e.team,
-                e.player,
+                e.match_id, e.team, e.player,
                 CAST(e.match_id AS VARCHAR) || '_' || CAST(e.possession AS VARCHAR) as possession_id,
                 e.location_x as start_x,
                 COALESCE(e.pass_end_location_x, e.carry_end_location_x) as end_x,
-                e.type,
-                e.index_num,
+                e.type, e.index_num,
                 CASE 
                     WHEN e.type = 'Pass' AND e.pass_outcome IS NULL THEN 1
                     WHEN e.type = 'Carry' THEN 1
@@ -669,17 +473,12 @@ def calculate_progressive_actions_no_overlap(events, conn=None, match_id=None, p
             WHERE {where_clause}
               AND e.play_pattern IN ('Regular Play', 'From Counter')
               AND e.location_x >= 48
-              AND (
-                  (e.type = 'Pass' AND e.pass_end_location_x IS NOT NULL)
-                  OR (e.type = 'Carry' AND e.carry_end_location_x IS NOT NULL)
-              )
+              AND ((e.type = 'Pass' AND e.pass_end_location_x IS NOT NULL)
+                OR (e.type = 'Carry' AND e.carry_end_location_x IS NOT NULL))
         ),
         possession_contributions AS (
             SELECT 
-                possession_id,
-                match_id,
-                team,
-                player,
+                possession_id, match_id, team, player,
                 MIN(start_x) as contribution_start_x,
                 MAX(end_x) as contribution_end_x,
                 COUNT(*) as total_actions,
@@ -690,68 +489,54 @@ def calculate_progressive_actions_no_overlap(events, conn=None, match_id=None, p
             GROUP BY possession_id, match_id, team, player
         ),
         progressive_contributions AS (
-            SELECT 
-                *,
+            SELECT *,
                 (contribution_end_x - contribution_start_x) as unique_progressive_distance,
-                CASE 
-                    WHEN (contribution_end_x - contribution_start_x) >= 10 THEN 1
-                    ELSE 0
-                END as is_progressive_contribution
+                CASE WHEN (contribution_end_x - contribution_start_x) >= 10 THEN 1 ELSE 0 END as is_progressive_contribution
             FROM possession_contributions
+        ),
+        r AS (
+            SELECT 
+                match_id, team, player,
+                COUNT(*) as possessions_contributed,
+                SUM(is_progressive_contribution) as progressive_possessions,
+                ROUND(SUM(unique_progressive_distance), 2) as total_unique_progressive_distance,
+                ROUND(AVG(CASE WHEN is_progressive_contribution = 1 THEN unique_progressive_distance END), 2) as avg_unique_progressive_distance,
+                ROUND(SUM(passes) * 1.0 / SUM(total_actions) * 100, 2) as progressive_action_pass_pct,
+                ROUND(SUM(carries) * 1.0 / SUM(total_actions) * 100, 2) as progressive_action_carry_pct
+            FROM progressive_contributions
+            GROUP BY match_id, team, player
+            HAVING SUM(is_progressive_contribution) > 0
         )
-        SELECT 
-            match_id,
-            team,
-            player,
-            COUNT(*) as possessions_contributed,
-            SUM(is_progressive_contribution) as progressive_possessions,
-            ROUND(SUM(unique_progressive_distance), 2) as total_unique_progressive_distance,
-            ROUND(AVG(CASE WHEN is_progressive_contribution = 1 THEN unique_progressive_distance END), 2) as avg_unique_progressive_distance,
-            ROUND(SUM(passes) * 1.0 / SUM(total_actions) * 100, 2) as progressive_action_pass_pct,
-            ROUND(SUM(carries) * 1.0 / SUM(total_actions) * 100, 2) as progressive_action_carry_pct
-        FROM progressive_contributions
-        GROUP BY match_id, team, player
-        HAVING SUM(is_progressive_contribution) > 0
+        SELECT {season_select} r.*
+        FROM r
+        {season_join}
         ORDER BY progressive_possessions DESC
         """
-        
+
         return conn.execute(query, params).df()
-    
-    else:   
-        # Pandas implementation
+
+    else:
         df = events.copy()
-        
         OPEN_PLAY = ['Regular Play', 'From Counter']
-        
-        # Filter to passes and carries from attacking 60%
+
         df = df[
             (df['type'].isin(['Pass', 'Carry'])) &
             (df['play_pattern'].isin(OPEN_PLAY)) &
             (df['location_x'] >= 48) &
-            (
-                ((df['type'] == 'Pass') & (df['pass_end_location_x'].notna())) |
-                ((df['type'] == 'Carry') & (df['carry_end_location_x'].notna()))
-            )
+            (((df['type'] == 'Pass') & (df['pass_end_location_x'].notna())) |
+             ((df['type'] == 'Carry') & (df['carry_end_location_x'].notna())))
         ].copy()
-        
+
         if match_id is not None:
             df = df[df['match_id'] == match_id]
         if player is not None:
             df = df[df['player'] == player]
-        
-        # Create possession identifier
+
         df['possession_id'] = df['match_id'].astype(str) + '_' + df['possession'].astype(str)
-        
-        # Get end location
         df['end_x'] = df['pass_end_location_x'].fillna(df['carry_end_location_x'])
-        
-        # Filter to valid actions (completed passes or all carries)
-        df = df[
-            ((df['type'] == 'Pass') & (df['pass_outcome'].isna())) |
-            (df['type'] == 'Carry')
-        ].copy()
-        
-        # Group by player per possession
+
+        df = df[((df['type'] == 'Pass') & (df['pass_outcome'].isna())) | (df['type'] == 'Carry')].copy()
+
         possession_contributions = df.groupby(['match_id', 'team', 'player', 'possession_id']).agg(
             contribution_start_x=('location_x', 'min'),
             contribution_end_x=('end_x', 'max'),
@@ -759,18 +544,12 @@ def calculate_progressive_actions_no_overlap(events, conn=None, match_id=None, p
             passes=('type', lambda x: (x == 'Pass').sum()),
             carries=('type', lambda x: (x == 'Carry').sum())
         ).reset_index()
-        
-        # Calculate unique progressive distance
+
         possession_contributions['unique_progressive_distance'] = (
-            possession_contributions['contribution_end_x'] - 
-            possession_contributions['contribution_start_x']
-        )
-        
+            possession_contributions['contribution_end_x'] - possession_contributions['contribution_start_x'])
         possession_contributions['is_progressive_contribution'] = (
-            possession_contributions['unique_progressive_distance'] >= 10
-        ).astype(int)
-        
-        # Aggregate to player level
+            possession_contributions['unique_progressive_distance'] >= 10).astype(int)
+
         result = possession_contributions.groupby(['match_id', 'team', 'player']).agg(
             possessions_contributed=('possession_id', 'count'),
             progressive_possessions=('is_progressive_contribution', 'sum'),
@@ -784,36 +563,22 @@ def calculate_progressive_actions_no_overlap(events, conn=None, match_id=None, p
             total_carries=('carries', 'sum'),
             total_actions=('total_actions', 'sum')
         ).reset_index()
-        
-        result['progressive_action_pass_pct'] = round(
-            result['total_passes'] * 100.0 / result['total_actions'], 2
-        )
-        result['progressive_action_carry_pct'] = round(
-            result['total_carries'] * 100.0 / result['total_actions'], 2
-        )
-        
-        result = result[result['progressive_possessions'] > 0]
-        
-        return result.sort_values('progressive_possessions', ascending=False)
+
+        result['progressive_action_pass_pct'] = round(result['total_passes'] * 100.0 / result['total_actions'], 2)
+        result['progressive_action_carry_pct'] = round(result['total_carries'] * 100.0 / result['total_actions'], 2)
+
+        return result[result['progressive_possessions'] > 0].sort_values('progressive_possessions', ascending=False)
 
 
-def analyze_progression_profile(events, conn=None, match_id=None, min_minutes=30):
-    """
-    Analyze player progression profiles with per-90 normalization.
-    
-    Classifies players into progression archetypes based on their rates of:
-    - Progressive passing
-    - Progressive carrying  
-    - Progressive passes received
-    """
-    
-    prog_passes = calculate_progressive_passes(events, conn, match_id)
-    prog_carries = calculate_progressive_carries(events, conn, match_id)
-    prog_received = calculate_progressive_passes_received(events, conn, match_id)
+def analyze_progression_profile(events, conn=None, matches=None, match_id=None, min_minutes=30):
+    """Analyze player progression profiles with per-90 normalization."""
 
-    # Calculate minutes played
+    prog_passes = calculate_progressive_passes(events, conn, matches=matches, match_id=match_id)
+    prog_carries = calculate_progressive_carries(events, conn, matches=matches, match_id=match_id)
+    prog_received = calculate_progressive_passes_received(events, conn, matches=matches, match_id=match_id)
+
     if isinstance(events, str):
-        if conn is None: 
+        if conn is None:
             conn = duckdb.connect()
         mins_query = f"""
             WITH match_mins AS (
@@ -823,13 +588,12 @@ def analyze_progression_profile(events, conn=None, match_id=None, min_minutes=30
             SELECT team, player, SUM(m) as total_mins FROM match_mins GROUP BY 1, 2
         """
         player_mins = conn.execute(mins_query).df()
-    else:   
+    else:
         player_mins = events[events['player'].notna()].groupby(['match_id', 'team', 'player'])['minute'].agg(
             lambda x: x.max() - x.min()
         ).reset_index()
         player_mins = player_mins.groupby(['team', 'player'])['minute'].sum().reset_index(name='total_mins')
 
-    # Aggregate metrics
     p_agg = prog_passes.groupby(['team', 'player'])['progressive_passes'].sum().reset_index()
     c_agg = prog_carries.groupby(['team', 'player'])['progressive_carries'].sum().reset_index()
     r_agg = prog_received.groupby(['team', 'player'])['progressive_passes_received'].sum().reset_index()
@@ -843,13 +607,12 @@ def analyze_progression_profile(events, conn=None, match_id=None, min_minutes=30
 
     result = result[result["total_mins"] >= min_minutes].copy()
 
-    # Per-90 normalization
     result["progressive_passes_p90"] = round((result["progressive_passes"] / result["total_mins"]) * 90, 2)
     result["progressive_carries_p90"] = round((result["progressive_carries"] / result["total_mins"]) * 90, 2)
     result["progressive_passes_received_p90"] = round((result["progressive_passes_received"] / result["total_mins"]) * 90, 2)
-    result["total_progressive_actions_p90"] = result["progressive_passes_p90"] + result["progressive_carries_p90"] + result["progressive_passes_received_p90"]
+    result["total_progressive_actions_p90"] = (
+        result["progressive_passes_p90"] + result["progressive_carries_p90"] + result["progressive_passes_received_p90"])
 
-    # Classification
     pass_p75 = result["progressive_passes_p90"].quantile(0.75)
     carry_p75 = result["progressive_carries_p90"].quantile(0.75)
     recv_p75 = result["progressive_passes_received_p90"].quantile(0.75)
@@ -858,110 +621,68 @@ def analyze_progression_profile(events, conn=None, match_id=None, min_minutes=30
 
     def classify_progression_type(row):
         p, c, r = row["progressive_passes_p90"], row["progressive_carries_p90"], row["progressive_passes_received_p90"]
-        if p >= pass_p75 and c >= carry_p75: 
-            return "Complete Progressor"
-        if p >= pass_p75: 
-            return "Progressive Passer"
-        if c >= carry_p75: 
-            return "Ball Carrier"
-        if r >= recv_p75: 
-            return "Progression Outlet"
-        if p >= pass_p50 or c >= carry_p50: 
-            return "Supporting Progressor"
+        if p >= pass_p75 and c >= carry_p75: return "Complete Progressor"
+        if p >= pass_p75: return "Progressive Passer"
+        if c >= carry_p75: return "Ball Carrier"
+        if r >= recv_p75: return "Progression Outlet"
+        if p >= pass_p50 or c >= carry_p50: return "Supporting Progressor"
         return "Limited Progression"
 
     result["progression_type"] = result.apply(classify_progression_type, axis=1)
-    
     return result.sort_values("total_progressive_actions_p90", ascending=False)
 
 
-def calculate_team_progression_summary(events, conn=None, match_id=None) -> pd.DataFrame:
-    """
-    Aggregate progressive actions to TEAM level per match.
-    
-    Returns match-team level summary suitable for tactical profiling.
-    """
-    
-    # Get player-level data
-    prog_actions = calculate_progressive_actions(events, conn, match_id)
-    
-    # Aggregate to team level
-    team_summary = prog_actions.groupby(['match_id', 'team']).agg({
+def calculate_team_progression_summary(events, conn=None, matches=None, match_id=None) -> pd.DataFrame:
+    """Aggregate progressive actions to TEAM level per match."""
+
+    prog_actions = calculate_progressive_actions(events, conn, matches=matches, match_id=match_id)
+
+    group_cols = ['match_id', 'team']
+    if 'season_name' in prog_actions.columns:
+        group_cols = ['season_name'] + group_cols
+
+    team_summary = prog_actions.groupby(group_cols).agg({
         'progressive_passes': 'sum',
         'progressive_carries': 'sum',
         'progressive_passes_received': 'sum',
         'progressive_actions': 'sum'
     }).reset_index()
-    
-    # Calculate ratios
+
     team_summary['progressive_carry_pct'] = round(
-        team_summary['progressive_carries'] * 100.0 / 
-        team_summary['progressive_actions'], 2
-    )
-    
+        team_summary['progressive_carries'] * 100.0 / team_summary['progressive_actions'], 2)
     team_summary['progressive_pass_pct'] = round(
-        team_summary['progressive_passes'] * 100.0 / 
-        team_summary['progressive_actions'], 2
-    )
-    
+        team_summary['progressive_passes'] * 100.0 / team_summary['progressive_actions'], 2)
+
     return team_summary
 
 
-def calculate_team_progression_detail(events, conn=None, match_id=None) -> pd.DataFrame:
-    """
-    Detailed team-level progression metrics including carries and passes separately.
-    
-    Returns richer data for building progression method dimension.
-    """
-    
-    # Get detailed player-level data
-    prog_passes = calculate_progressive_passes(events, conn, match_id)
-    prog_carries = calculate_progressive_carries(events, conn, match_id)
-    
-    # Aggregate passes to team level
-    team_passes = prog_passes.groupby(['match_id', 'team']).agg({
-        'progressive_passes': 'sum',
-        'total_passes': 'sum',
-        'avg_progressive_distance': 'mean',
-        'avg_progressive_pass_length': 'mean'
-    }).reset_index()
-    
-    team_passes = team_passes.rename(columns={
-        'avg_progressive_distance': 'avg_progressive_pass_distance',
-    })
-    
-    # Aggregate carries to team level
-    team_carries = prog_carries.groupby(['match_id', 'team']).agg({
-        'progressive_carries': 'sum',
-        'total_carries': 'sum',
-        'avg_progressive_distance': 'mean',
-        'avg_progressive_carry_length': 'mean',
-        'progressive_carries_into_final_third': 'sum',
-        'progressive_carries_into_penalty_area': 'sum'
-    }).reset_index()
-    
-    team_carries = team_carries.rename(columns={
-        'avg_progressive_distance': 'avg_progressive_carry_distance',
-    })
-    
-    # Merge
-    team_detail = team_passes.merge(
-        team_carries,
-        on=['match_id', 'team'],
-        how='outer'
-    ).fillna(0)
-    
-    # Calculate progression method ratio
+def calculate_team_progression_detail(events, conn=None, matches=None, match_id=None) -> pd.DataFrame:
+    """Detailed team-level progression metrics including carries and passes separately."""
+
+    prog_passes = calculate_progressive_passes(events, conn, matches=matches, match_id=match_id)
+    prog_carries = calculate_progressive_carries(events, conn, matches=matches, match_id=match_id)
+
+    group_cols = ['match_id', 'team']
+    if 'season_name' in prog_passes.columns:
+        group_cols = ['season_name'] + group_cols
+
+    team_passes = prog_passes.groupby(group_cols).agg({
+        'progressive_passes': 'sum', 'total_passes': 'sum',
+        'avg_progressive_distance': 'mean', 'avg_progressive_pass_length': 'mean'
+    }).reset_index().rename(columns={'avg_progressive_distance': 'avg_progressive_pass_distance'})
+
+    team_carries = prog_carries.groupby(group_cols).agg({
+        'progressive_carries': 'sum', 'total_carries': 'sum',
+        'avg_progressive_distance': 'mean', 'avg_progressive_carry_length': 'mean',
+        'progressive_carries_into_final_third': 'sum', 'progressive_carries_into_penalty_area': 'sum'
+    }).reset_index().rename(columns={'avg_progressive_distance': 'avg_progressive_carry_distance'})
+
+    team_detail = team_passes.merge(team_carries, on=group_cols, how='outer').fillna(0)
+
     team_detail['progression_method_ratio'] = round(
-        team_detail['progressive_carries'] / 
-        (team_detail['progressive_carries'] + team_detail['progressive_passes']),
-        3
-    )
-    
-    # Total progressive actions
+        team_detail['progressive_carries'] /
+        (team_detail['progressive_carries'] + team_detail['progressive_passes']), 3)
     team_detail['total_progressive_actions'] = (
-        team_detail['progressive_carries'] + 
-        team_detail['progressive_passes']
-    )
-    
+        team_detail['progressive_carries'] + team_detail['progressive_passes'])
+
     return team_detail

@@ -1,0 +1,2529 @@
+season_name,match_id,team,player,total_pressures,counterpresses,pressure_regains,high_pressures,pressure_success_pct,minutes_played,pressures_per_90
+2022/2023,3837928,Lyon,Bradley Barcola,57,6.0,6.0,15,10.53,71,72.25
+2022/2023,3837896,Nantes,Samuel Moutoussamy,52,4.0,13.0,5,25.0,91,51.43
+2022/2023,3837928,Lyon,Johann Lepenant,51,6.0,10.0,7,19.61,61,75.25
+2022/2023,3837954,Angers,Himad Abdelli,51,5.0,9.0,11,17.65,91,50.44
+2022/2023,3837987,AC Ajaccio,Mickaël Barreto,48,7.0,6.0,4,12.5,82,52.68
+2022/2023,3837902,Stade Brestois,Hugo Magnetti,47,10.0,7.0,9,14.89,94,45.0
+2022/2023,3837987,AC Ajaccio,Vincent Marchetti,46,8.0,10.0,1,21.74,88,47.05
+2022/2023,3837885,Paris Saint-Germain,Fabián Ruiz Peña,45,12.0,12.0,9,26.67,92,44.02
+2022/2023,3837954,Angers,Jean-Mattéo Bahoya Négoce,43,3.0,6.0,11,13.95,86,45.0
+2022/2023,3837902,Stade Brestois,Steve Michel Mounié,42,4.0,2.0,3,4.76,66,57.27
+2022/2023,3837947,Paris Saint-Germain,Carlos Soler Barragán,39,8.0,8.0,11,20.51,91,38.57
+2022/2023,3837902,Stade Brestois,Haris Belkebla,39,5.0,9.0,3,23.08,94,37.34
+2022/2023,3837928,Lyon,Thiago Henrique Mendes Ribeiro,39,4.0,14.0,3,35.9,92,38.15
+2023,3922237,Angola,Deivi Miguel Vieira,38,9.0,4.0,10,10.53,69,49.57
+2022/2023,3838017,Clermont Foot,Elbasan Rashani,37,5.0,5.0,18,13.51,92,36.2
+2023,3922242,Senegal,Ismail Jakobs,37,5.0,10.0,5,27.03,121,27.52
+2022/2023,3837918,Rennes,Benjamin Bourigeaud,36,3.0,7.0,9,19.44,95,34.11
+2022/2023,3838004,Strasbourg,Morgan Sanson,36,5.0,5.0,7,13.89,86,37.67
+2022/2023,3837885,Paris Saint-Germain,Vitor Machado Ferreira,36,12.0,6.0,7,16.67,91,35.6
+2022/2023,3837954,Angers,Adrien Hunou,36,5.0,2.0,10,5.56,86,37.67
+2022/2023,3837680,Paris Saint-Germain,Marco Verratti,35,14.0,10.0,7,28.57,96,32.81
+2023,3920393,Namibia,Prins Menelik Tjiueza,35,9.0,4.0,15,11.43,72,43.75
+2023,3920391,Mali,Kamory Doumbia,35,4.0,13.0,11,37.14,91,34.62
+2022/2023,3837876,Lille,Jonathan David,35,6.0,8.0,22,22.86,95,33.16
+2022/2023,3837859,Toulouse,Stijn Spierings,35,6.0,7.0,3,20.0,89,35.39
+2022/2023,3837928,Lyon,Nicolás Alejandro Tagliafico,35,8.0,4.0,7,11.43,94,33.51
+2022/2023,3838004,Strasbourg,Mouhamadou Diarra,35,2.0,5.0,7,14.29,90,35.0
+2022/2023,3837963,Lorient,Laurent Abergel,35,4.0,9.0,2,25.71,93,33.87
+2022/2023,3837928,Paris Saint-Germain,Vitor Machado Ferreira,35,12.0,5.0,8,14.29,82,38.41
+2022/2023,3837717,Lyon,Maxence Caqueret,35,5.0,10.0,7,28.57,73,43.15
+2023,3922659,Mali,Kamory Doumbia,34,4.0,8.0,14,23.53,95,32.21
+2022/2023,3837928,Lyon,Sael Kumbedi Nseke,34,3.0,7.0,2,20.59,61,50.16
+2022/2023,3837918,Rennes,Arnaud Kalimuendo Muinga,34,5.0,3.0,16,8.82,76,40.26
+2022/2023,3838004,Strasbourg,Jean-Ricner Bellegarde,33,3.0,1.0,5,3.03,85,34.94
+2022/2023,3837896,Paris Saint-Germain,Warren Zaire Emery,33,8.0,5.0,6,15.15,85,34.94
+2023,3920400,Senegal,Lamine Camara,33,12.0,2.0,4,6.06,83,35.78
+2023,3920416,South Africa,Teboho Mokoena,33,8.0,7.0,4,21.21,94,31.6
+2022/2023,3837683,Toulouse,Stijn Spierings,33,5.0,6.0,5,18.18,91,32.64
+2023,3920385,Mozambique,Ricardo Martins Guimarães,33,5.0,7.0,0,21.21,88,33.75
+2022/2023,3837706,Stade Brestois,Pierre Lees Melou,32,4.0,6.0,3,18.75,70,41.14
+2022/2023,3837706,Stade Brestois,Haris Belkebla,32,1.0,5.0,3,15.63,87,33.1
+2023,3877194,Charlotte,Brandt Bronico,32,5.0,5.0,10,15.63,89,32.36
+2023,3920418,Tanzania,Haji Mnoga,32,4.0,7.0,5,21.88,88,32.73
+2023,3920408,Côte d'Ivoire,Ibrahim Sangaré,32,10.0,8.0,7,25.0,96,30.0
+2023,3920418,Congo DR,Samuel Moutoussamy,32,6.0,4.0,3,12.5,92,31.3
+2022/2023,3837859,Toulouse,Fares Chaïbi,32,5.0,3.0,5,9.38,92,31.3
+2023,3920403,Angola,Manuel Luís da Silva Cafumana,32,4.0,7.0,2,21.88,92,31.3
+2023,3877060,Inter Miami,Diego Alexander Gómez Amarilla,32,8.0,11.0,9,34.38,83,34.7
+2022/2023,3837747,Marseille,Valentin Rongier,32,8.0,2.0,6,6.25,94,30.64
+2022/2023,3837902,Paris Saint-Germain,Warren Zaire Emery,31,4.0,6.0,7,19.35,88,31.7
+2022/2023,3838004,Strasbourg,Ibrahima Sissoko,31,3.0,4.0,2,12.9,74,37.7
+2023,3920390,Angola,Alfredo Kulembe Ribeiro,31,2.0,7.0,2,22.58,87,32.07
+2022/2023,3837727,OGC Nice,Gaëtan Laborde,31,9.0,2.0,17,6.45,83,33.61
+2022/2023,3837747,Paris Saint-Germain,Fabián Ruiz Peña,31,6.0,10.0,3,32.26,95,29.37
+2023,3920415,Mauritania,Bodda Mouhsine,31,5.0,9.0,1,29.03,100,27.9
+2023,3877090,Inter Miami,Diego Alexander Gómez Amarilla,31,10.0,6.0,3,19.35,85,32.82
+2022/2023,3837896,Nantes,Ludovic Blas,31,6.0,5.0,6,16.13,93,30.0
+2022/2023,3837954,Angers,Ibrahima Niane,30,3.0,4.0,7,13.33,68,39.71
+2023,3922659,Côte d'Ivoire,Franck Yannick Kessié,30,5.0,10.0,3,33.33,116,23.28
+2022/2023,3837771,Troyes,Xavier Chavalerin,30,8.0,6.0,5,20.0,86,31.4
+2022/2023,3837896,Paris Saint-Germain,Fabián Ruiz Peña,30,11.0,6.0,13,20.0,95,28.42
+2022/2023,3837896,Nantes,Florent Mollet,30,4.0,3.0,2,10.0,69,39.13
+2022/2023,3837844,Montpellier,Téji Savanier,30,5.0,10.0,4,33.33,93,29.03
+2023,3920401,Gambia,Alieu Fadera,30,3.0,7.0,6,23.33,61,44.26
+2022/2023,3837987,AC Ajaccio,Mounaim El Idrissy,30,4.0,4.0,2,13.33,62,43.55
+2022/2023,3837998,Paris Saint-Germain,Warren Zaire Emery,30,3.0,7.0,6,23.33,93,29.03
+2023,3922242,Senegal,Lamine Camara,30,7.0,3.0,2,10.0,86,31.4
+2022/2023,3837938,OGC Nice,Hichem Boudaoui,30,2.0,5.0,8,16.67,73,36.99
+2023,3877115,Toronto FC,Alonso Coello Camarero,30,3.0,7.0,0,23.33,68,39.71
+2023,3922838,Congo DR,Samuel Moutoussamy,30,6.0,7.0,2,23.33,93,29.03
+2022/2023,3837938,Paris Saint-Germain,Vitor Machado Ferreira,30,8.0,4.0,2,13.33,92,29.35
+2023,3922240,Congo DR,Samuel Moutoussamy,30,6.0,8.0,8,26.67,117,23.08
+2022/2023,3837938,Paris Saint-Germain,Achraf Hakimi Mouh,30,6.0,10.0,7,33.33,93,29.03
+2022/2023,3837987,AC Ajaccio,Kevin Spadanuda,30,4.0,5.0,2,16.67,61,44.26
+2023,3920396,Egypt,Hamdi Fathi,29,3.0,7.0,5,24.14,90,29.0
+2023,3922659,Mali,Lassine Sinayoko,29,6.0,5.0,20,17.24,87,30.0
+2022/2023,3837752,AC Ajaccio,Vincent Marchetti,29,8.0,7.0,4,24.14,89,29.33
+2022/2023,3837859,Paris Saint-Germain,Vitor Machado Ferreira,29,6.0,4.0,10,13.79,93,28.06
+2023,3922243,South Africa,Percy Tau,29,2.0,3.0,3,10.34,98,26.63
+2023,3920386,Nigeria,Frank Onyeka,29,6.0,10.0,1,34.48,95,27.47
+2022/2023,3837987,AC Ajaccio,Thomas Mangani,29,3.0,5.0,0,17.24,79,33.04
+2022/2023,3837954,Angers,Batista Mendy,29,3.0,6.0,4,20.69,88,29.66
+2023,3920416,South Africa,Percy Tau,29,3.0,10.0,10,34.48,92,28.37
+2022/2023,3837938,OGC Nice,Aaron Ramsey,29,7.0,5.0,9,17.24,80,32.63
+2023,3922244,Burkina Faso,Ismahila Ouédraogo,29,7.0,3.0,0,10.34,67,38.96
+2023,3922242,Senegal,Pape Matar Sarr,29,5.0,8.0,1,27.59,122,21.39
+2023,3920412,Guinea,Aguibou Camara,28,7.0,7.0,8,25.0,96,26.25
+2022/2023,3837928,Lyon,Alexandre Lacazette,28,4.0,4.0,7,14.29,68,37.06
+2022/2023,3837885,Marseille,Valentin Rongier,28,1.0,8.0,2,28.57,91,27.69
+2023,3920405,Congo DR,Charles Pickel,28,4.0,7.0,3,25.0,81,31.11
+2023,3920395,Zambia,Fashion Sakala,28,5.0,3.0,4,10.71,95,26.53
+2022/2023,3837896,Paris Saint-Germain,Vitor Machado Ferreira,28,9.0,8.0,12,28.57,92,27.39
+2022/2023,3837659,Paris Saint-Germain,Marco Verratti,28,6.0,9.0,13,32.14,85,29.65
+2022/2023,3837918,Rennes,Lesley Chimuanya Ugochukwu,28,3.0,6.0,5,21.43,77,32.73
+2023,3922242,Senegal,Habibou Mouhamadou Diallo,28,3.0,2.0,6,7.14,66,38.18
+2022/2023,3837963,Lorient,Darlin Zidane Yongwa Ngameni,28,4.0,6.0,9,21.43,93,27.1
+2022/2023,3837918,Paris Saint-Germain,Marco Verratti,28,6.0,4.0,5,14.29,95,26.53
+2023,3922837,Nigeria,Frank Onyeka,27,7.0,6.0,2,22.22,101,24.06
+2023,3920396,Ghana,Jordan Ayew,27,6.0,3.0,9,11.11,95,25.58
+2022/2023,3837963,Paris Saint-Germain,Marco Verratti,27,7.0,6.0,4,22.22,93,26.13
+2023,3920413,Gambia,Yankuba Minteh,27,6.0,4.0,9,14.81,99,24.55
+2023,3920416,Tunisia,Aïssa Bilal Laïdouni,27,8.0,7.0,4,25.93,93,26.13
+2022/2023,3837839,Stade de Reims,Marshall Nyasha Munetsi,27,2.0,5.0,5,18.52,74,32.84
+2023,3920419,Zambia,Edward Chilufya,27,7.0,4.0,6,14.81,70,34.71
+2022/2023,3837785,Paris Saint-Germain,Marco Verratti,27,3.0,5.0,5,18.52,81,30.0
+2022/2023,3837717,Lyon,Alexandre Lacazette,27,8.0,3.0,8,11.11,92,26.41
+2023,3922356,Guinea,Aguibou Camara,27,11.0,8.0,5,29.63,93,26.13
+2023,3920416,Tunisia,Hamza Rafia,27,4.0,4.0,2,14.81,69,35.22
+2023,3920385,Egypt,Hamdi Fathi,27,3.0,5.0,1,18.52,100,24.3
+2022/2023,3837827,Rennes,Lovro Majer,27,8.0,8.0,4,29.63,88,27.61
+2023,3877170,Cincinnati,Obinna Nwobodo,27,4.0,6.0,1,22.22,87,27.93
+2023,3920417,Namibia,Bethuel Muzeu,27,4.0,3.0,9,11.11,73,33.29
+2023,3922242,Senegal,Sadio Mané,26,2.0,3.0,5,11.54,128,18.28
+2022/2023,3837859,Toulouse,Ado Onaiwu,26,4.0,1.0,3,3.85,61,38.36
+2022/2023,3837998,Auxerre,Birama Touré,26,1.0,6.0,3,23.08,93,25.16
+2023,3920396,Egypt,Emam Ashour Metwally Abdelghany,26,5.0,9.0,6,34.62,94,24.89
+2023,3920418,Congo DR,Charles Pickel,26,4.0,4.0,5,15.38,67,34.93
+2022/2023,3837902,Paris Saint-Germain,Carlos Soler Barragán,26,2.0,1.0,10,3.85,79,29.62
+2022/2023,3837947,Lens,Ikoma Loïs Openda,26,4.0,5.0,11,19.23,89,26.29
+2022/2023,3837727,OGC Nice,Youcef Atal,26,3.0,8.0,8,30.77,74,31.62
+2022/2023,3837752,AC Ajaccio,Mounaim El Idrissy,26,2.0,2.0,12,7.69,73,32.05
+2023,3920397,Guinea-Bissau,Franculino Gluda Djú,26,4.0,3.0,15,11.54,76,30.79
+2023,3922658,South Africa,Teboho Mokoena,26,5.0,6.0,5,23.08,121,19.34
+2022/2023,3837876,Lille,Angel Gomes,26,4.0,4.0,15,15.38,86,27.21
+2023,3920389,Guinea,Aguibou Camara,26,9.0,5.0,7,19.23,95,24.63
+2023,3920393,Namibia,Ryan Nyambe,26,4.0,9.0,0,34.62,93,25.16
+2022/2023,3837839,Stade de Reims,Jens-Lys Michel Cajuste,26,4.0,4.0,11,15.38,81,28.89
+2023,3920387,Ghana,Jordan Ayew,26,3.0,6.0,6,23.08,93,25.16
+2023,3922658,South Africa,Evidence Makgopa,26,4.0,3.0,10,11.54,102,22.94
+2022/2023,3837771,Troyes,Mama Samba Baldé,26,8.0,1.0,10,3.85,89,26.29
+2022/2023,3838004,Paris Saint-Germain,Marco Verratti,26,4.0,7.0,2,26.92,89,26.29
+2023,3922240,Congo DR,Gedeon Kalulu Kyatengwa,26,5.0,6.0,3,23.08,129,18.14
+2023,3922241,Mauritania,Bodda Mouhsine,26,8.0,10.0,3,38.46,99,23.64
+2022/2023,3837938,OGC Nice,Nicolas Pépé,26,0.0,5.0,12,19.23,90,26.0
+2023,3922242,Senegal,Ismaïla Sarr,26,3.0,6.0,8,23.08,95,24.63
+2022/2023,3837918,Rennes,Désiré Doué,26,2.0,8.0,7,30.77,66,35.45
+2022/2023,3837706,Stade Brestois,Jean-Kevin Duverne,25,4.0,4.0,8,16.0,93,24.19
+2022/2023,3837706,Stade Brestois,Mahdi Camara,25,4.0,5.0,6,20.0,61,36.89
+2022/2023,3837876,Lille,Benjamin André,25,3.0,4.0,4,16.0,96,23.44
+2023,3920409,Guinea-Bissau,Euciodálcio Gomes,25,4.0,5.0,5,20.0,87,25.86
+2022/2023,3837771,Troyes,Wilson Odobert,25,4.0,2.0,3,8.0,80,28.13
+2023,3923880,Congo DR,Simon Bokote Banza,25,3.0,3.0,15,12.0,77,29.22
+2022/2023,3837902,Stade Brestois,Pierre Lees Melou,25,3.0,6.0,2,24.0,93,24.19
+2023,3920416,South Africa,Sphephelo S''Miso Sithole,25,3.0,7.0,3,28.0,94,23.94
+2023,3920390,Angola,Manuel Luís da Silva Cafumana,25,3.0,2.0,0,8.0,93,24.19
+2022/2023,3837902,Paris Saint-Germain,Marco Verratti,25,6.0,8.0,5,32.0,94,23.94
+2022/2023,3837706,Stade Brestois,Franck Honorat,25,7.0,2.0,11,8.0,94,23.94
+2022/2023,3837947,Lens,Adrien Thomasson,25,2.0,3.0,8,12.0,45,50.0
+2022/2023,3837885,Paris Saint-Germain,Marco Verratti,25,5.0,4.0,2,16.0,91,24.73
+2022/2023,3837963,Lorient,Enzo Le Fée,25,1.0,4.0,3,16.0,91,24.73
+2023,3920400,Cameroon,Frank Magri,25,8.0,2.0,18,8.0,95,23.68
+2023,3922237,Angola,Alfredo Kulembe Ribeiro,25,5.0,6.0,4,24.0,69,32.61
+2023,3922658,Cape Verde Islands,Jamiro Gregory Monteiro Alvarenga,25,4.0,5.0,6,20.0,85,26.47
+2022/2023,3837954,Paris Saint-Germain,Achraf Hakimi Mouh,25,8.0,6.0,12,24.0,92,24.46
+2023,3922237,Namibia,Riaan Hanamub,25,6.0,9.0,4,36.0,94,23.94
+2023,3922659,Mali,Falaye Sacko,25,6.0,8.0,4,32.0,118,19.07
+2023,3920393,Namibia,Absalom Iimbondi,25,5.0,2.0,5,8.0,90,25.0
+2022/2023,3837818,Angers,Himad Abdelli,25,3.0,4.0,4,16.0,61,36.89
+2023,3920386,Equatorial Guinea,Ibán Salvador Edu,25,3.0,10.0,6,40.0,92,24.46
+2023,3920386,Nigeria,Ademola Lookman,25,4.0,5.0,8,20.0,95,23.68
+2023,3922241,Mauritania,Ibrahima Keita,25,3.0,8.0,5,32.0,78,28.85
+2023,3920384,Guinea-Bissau,Alfa Semedo Esteves,25,4.0,3.0,3,12.0,93,24.19
+2023,3920415,Mauritania,Ibrahima Keita,25,3.0,8.0,0,32.0,101,22.28
+2023,3923880,Congo DR,Samuel Moutoussamy,25,3.0,6.0,6,24.0,121,18.6
+2023,3920418,Congo DR,Fiston Kalala Mayele,25,2.0,3.0,16,12.0,67,33.58
+2023,3922242,Senegal,Nicolas Jackson,24,3.0,6.0,12,25.0,54,40.0
+2022/2023,3837747,Paris Saint-Germain,Marco Verratti,24,6.0,10.0,4,41.67,94,22.98
+2023,3920393,Namibia,Petrus Shitembi,24,5.0,5.0,2,20.83,61,35.41
+2023,3922321,Nigeria,Ademola Lookman,24,7.0,4.0,7,16.67,94,22.98
+2023,3920385,Egypt,Mohamed Salah,24,7.0,7.0,11,29.17,100,21.6
+2022/2023,3837859,Toulouse,Branco van den Boomen,24,5.0,3.0,7,12.5,92,23.48
+2023,3922238,Nigeria,Victor James Osimhen,24,4.0,6.0,11,25.0,98,22.04
+2023,3920400,Senegal,Pape Matar Sarr,24,5.0,3.0,2,12.5,73,29.59
+2023,3920418,Tanzania,Mbwana Ally Samatta,24,4.0,7.0,7,29.17,85,25.41
+2023,3922238,Nigeria,Ademola Lookman,24,5.0,5.0,6,20.83,100,21.6
+2022/2023,3837954,Paris Saint-Germain,Carlos Soler Barragán,24,6.0,2.0,11,8.33,60,36.0
+2022/2023,3837662,Lille,Benjamin André,24,6.0,4.0,3,16.67,57,37.89
+2023,3920404,Mali,Lassine Sinayoko,24,5.0,2.0,11,8.33,81,26.67
+2022/2023,3837785,Auxerre,Birama Touré,24,5.0,7.0,4,29.17,90,24.0
+2023,3920416,Tunisia,Anis Ben Slimane,24,2.0,3.0,8,12.5,58,37.24
+2023,3877115,Inter Miami,Sergio Busquets i Burgos,24,2.0,7.0,6,29.17,92,23.48
+2023,3920400,Cameroon,André-Frank Zambo Anguissa,24,3.0,7.0,6,29.17,92,23.48
+2022/2023,3837839,Paris Saint-Germain,Achraf Hakimi Mouh,24,10.0,7.0,9,29.17,94,22.98
+2023,3920384,Côte d'Ivoire,Ibrahim Sangaré,24,7.0,5.0,3,20.83,89,24.27
+2023,3922837,Nigeria,Ademola Lookman,24,7.0,3.0,11,12.5,101,21.39
+2023,3920410,Mozambique,Ricardo Martins Guimarães,24,6.0,2.0,4,8.33,86,25.12
+2023,3920407,South Africa,Teboho Mokoena,24,6.0,6.0,1,25.0,92,23.48
+2022/2023,3837727,Paris Saint-Germain,Achraf Hakimi Mouh,24,6.0,6.0,4,25.0,93,23.23
+2023,3920417,Namibia,Prins Menelik Tjiueza,23,8.0,4.0,1,17.39,73,28.36
+2023,3920388,Gambia,Ebrima Darboe,23,4.0,7.0,2,30.43,80,25.88
+2022/2023,3837896,Nantes,Andrei Girotto,23,3.0,9.0,0,39.13,93,22.26
+2023,3920391,South Africa,Thapelo Maseko,23,4.0,3.0,5,13.04,85,24.35
+2022/2023,3837947,Paris Saint-Germain,Vitor Machado Ferreira,23,4.0,1.0,9,4.35,92,22.5
+2023,3922238,Nigeria,Zaidu Sanusi,23,7.0,6.0,4,26.09,79,26.2
+2022/2023,3837896,Nantes,Moussa Sissoko,23,3.0,5.0,3,21.74,80,25.88
+2022/2023,3837680,AS Monaco,Mohamed Camara,23,3.0,6.0,4,26.09,72,28.75
+2023,3920396,Ghana,Antoine Semenyo,23,0.0,1.0,6,4.35,96,21.56
+2022/2023,3837938,OGC Nice,Terem Igobor Moffi,23,4.0,2.0,15,8.7,82,25.24
+2023,3920411,Egypt,Marwan Attia Fahim Ghallab,23,3.0,7.0,2,30.43,98,21.12
+2022/2023,3837844,Montpellier,Stephy Alvaro Mavididi,23,2.0,4.0,5,17.39,92,22.5
+2022/2023,3837998,Auxerre,Han-Noah Massengo,23,3.0,4.0,2,17.39,94,22.02
+2022/2023,3838017,Clermont Foot,Johan Gastien,23,7.0,5.0,9,21.74,86,24.07
+2022/2023,3837683,Toulouse,Rafael Rogério da Silva,23,4.0,8.0,6,34.78,87,23.79
+2023,3920412,Senegal,Habibou Mouhamadou Diallo,23,3.0,3.0,14,13.04,87,23.79
+2023,3877060,Inter Miami,Dixon Jair Arroyo Espinoza,23,3.0,3.0,1,13.04,92,22.5
+2022/2023,3837938,OGC Nice,Melvin Bard,23,2.0,5.0,2,21.74,64,32.34
+2023,3920419,Morocco,Achraf Hakimi Mouh,23,6.0,5.0,4,21.74,94,22.02
+2023,3922238,Nigeria,Frank Onyeka,23,6.0,11.0,4,47.83,98,21.12
+2022/2023,3837998,Paris Saint-Germain,Marco Verratti,23,3.0,5.0,4,21.74,95,21.79
+2022/2023,3837918,Rennes,Karl Brillant Toko Ekambi,23,3.0,3.0,7,13.04,92,22.5
+2023,3877072,Nashville SC,Brian Anunga,23,2.0,3.0,1,13.04,92,22.5
+2022/2023,3837885,Marseille,Mattéo Guendouzi Olié,23,5.0,5.0,7,21.74,91,22.75
+2023,3920392,Mauritania,Aboubakary Koita,22,5.0,5.0,6,22.73,89,22.25
+2022/2023,3837839,Stade de Reims,Folarin Balogun,22,2.0,3.0,14,13.64,95,20.84
+2023,3877090,LAFC,Mateusz Bogusz,22,7.0,6.0,6,27.27,95,20.84
+2023,3920390,Angola,Núrio Domingos Matias Fortuna,22,3.0,3.0,3,13.64,91,21.76
+2022/2023,3837998,Auxerre,Lassine Sinayoko,22,8.0,2.0,6,9.09,84,23.57
+2023,3920392,Mauritania,Ibrahima Keita,22,3.0,9.0,1,40.91,91,21.76
+2022/2023,3837752,Paris Saint-Germain,Marco Verratti,22,2.0,9.0,1,40.91,92,21.52
+2023,3877194,Charlotte,Andrew Privett,22,3.0,5.0,4,22.73,92,21.52
+2023,3922242,Senegal,Krépin Diatta,22,1.0,7.0,2,31.82,121,16.36
+2023,3920413,Cameroon,André-Frank Zambo Anguissa,22,4.0,5.0,4,22.73,99,20.0
+2023,3920387,Ghana,Ransford Königsdörffer,22,1.0,3.0,7,13.64,61,32.46
+2022/2023,3837928,Paris Saint-Germain,Renato Júnior Luz Sanches,22,6.0,4.0,5,18.18,73,27.12
+2023,3920407,South Africa,Percy Tau,22,6.0,2.0,3,9.09,94,21.06
+2023,3920391,Mali,Lassine Sinayoko,22,5.0,3.0,8,13.64,85,23.29
+2023,3877194,Inter Miami,Gregore de Magalhães Silva,22,6.0,7.0,5,31.82,70,28.29
+2022/2023,3837818,Angers,Batista Mendy,22,4.0,6.0,0,27.27,79,25.06
+2023,3920393,Namibia,Peter Shalulile,22,2.0,6.0,14,27.27,96,20.63
+2022/2023,3837859,Toulouse,Brecht Dejaegere,22,3.0,2.0,5,9.09,80,24.75
+2022/2023,3838004,Strasbourg,Frédéric Guilbert,22,1.0,4.0,4,18.18,90,22.0
+2023,3922244,Mali,Adama Traoré,22,3.0,3.0,14,13.64,72,27.5
+2023,3920414,Burkina Faso,Dango Aboubacar Faissal Ouattara,22,7.0,4.0,16,18.18,98,20.2
+2023,3920404,Mali,Diadie Samassekou,22,5.0,9.0,1,40.91,82,24.15
+2022/2023,3837844,Montpellier,Joris Chotard,22,3.0,3.0,1,13.64,81,24.44
+2023,3920411,Cape Verde Islands,Kenny Rocha Santos,22,7.0,2.0,3,9.09,98,20.2
+2023,3920416,Tunisia,Mohamed Elias Achouri,22,2.0,5.0,3,22.73,69,28.7
+2022/2023,3837818,Paris Saint-Germain,Hugo Ekitike,22,9.0,7.0,13,31.82,77,25.71
+2022/2023,3837954,Angers,Justin-Noël Kalumba Mwana Ngongo,22,2.0,4.0,7,18.18,90,22.0
+2023,3920392,Mauritania,Guessouma Fofana,22,6.0,6.0,1,27.27,66,30.0
+2023,3920393,Namibia,Aprocious Petrus,21,7.0,7.0,2,33.33,96,19.69
+2023,3920415,Mauritania,Sidi Bouna Sidi Amar,21,0.0,5.0,1,23.81,79,23.92
+2023,3922658,Cape Verde Islands,Jovane Eduardo Borges Cabral,21,3.0,1.0,10,4.76,86,21.98
+2022/2023,3837876,Paris Saint-Germain,Fabián Ruiz Peña,21,4.0,6.0,2,28.57,74,25.54
+2022/2023,3837938,Paris Saint-Germain,Carlos Soler Barragán,21,4.0,4.0,7,19.05,88,21.48
+2023,3922240,Congo DR,Théo Bongonda Mbul''Ofeko Batombo,21,5.0,9.0,6,42.86,123,15.37
+2022/2023,3838017,Paris Saint-Germain,Marco Verratti,21,2.0,2.0,4,9.52,90,21.0
+2022/2023,3837928,Lyon,Mathis Rayan Cherki,21,3.0,2.0,4,9.52,68,27.79
+2023,3920412,Senegal,Ismail Jakobs,21,2.0,8.0,4,38.1,86,21.98
+2022/2023,3837727,Paris Saint-Germain,Vitor Machado Ferreira,21,4.0,3.0,4,14.29,91,20.77
+2022/2023,3837683,Toulouse,Branco van den Boomen,21,5.0,5.0,2,23.81,75,25.2
+2022/2023,3837662,Lille,Jonathan David,21,5.0,1.0,8,4.76,89,21.24
+2022/2023,3837680,Paris Saint-Germain,Achraf Hakimi Mouh,21,7.0,4.0,8,19.05,94,20.11
+2023,3922244,Mali,Lassine Sinayoko,21,6.0,4.0,14,19.05,92,20.54
+2023,3923881,Nigeria,Ademola Lookman,21,5.0,3.0,7,14.29,78,24.23
+2022/2023,3837928,Lyon,Sinaly Diomande,21,0.0,10.0,0,47.62,90,21.0
+2023,3922658,South Africa,Sphephelo S''Miso Sithole,21,3.0,6.0,2,28.57,117,16.15
+2023,3920401,Gambia,Ebrima Darboe,21,6.0,5.0,3,23.81,59,32.03
+2023,3922659,Mali,Nene Dorgeles,21,2.0,7.0,5,33.33,55,34.36
+2022/2023,3837947,Lens,Facundo Axel Medina,21,2.0,5.0,2,23.81,88,21.48
+2023,3920394,Morocco,Youssef En-Nesyri,21,6.0,4.0,15,19.05,81,23.33
+2022/2023,3837876,Lille,Rémy Cabella,21,10.0,5.0,5,23.81,87,21.72
+2023,3922837,Nigeria,Calvin Bassey Ughelumba,21,2.0,5.0,0,23.81,121,15.62
+2022/2023,3838004,Strasbourg,Habibou Mouhamadou Diallo,21,1.0,1.0,11,4.76,86,21.98
+2023,3920413,Cameroon,Enzo Gianni Tchato Mbiayi,21,1.0,6.0,2,28.57,98,19.29
+2023,3920414,Burkina Faso,Ismahila Ouédraogo,21,3.0,6.0,3,28.57,87,21.72
+2023,3920415,Mauritania,Omaré Gassama,21,3.0,3.0,2,14.29,98,19.29
+2023,3922837,South Africa,Percy Tau,21,4.0,1.0,7,4.76,121,15.62
+2022/2023,3837747,Paris Saint-Germain,Achraf Hakimi Mouh,21,6.0,5.0,3,23.81,86,21.98
+2023,3920391,South Africa,Sphephelo S''Miso Sithole,21,6.0,4.0,3,19.05,93,20.32
+2023,3920414,Burkina Faso,Gustavo Fabrice Sangaré,21,1.0,6.0,0,28.57,96,19.69
+2023,3920412,Senegal,Nampalys Mendy,21,2.0,3.0,2,14.29,95,19.89
+2023,3877072,Inter Miami,Sergio Busquets i Burgos,21,6.0,2.0,7,9.52,97,19.48
+2022/2023,3837844,Paris Saint-Germain,Carlos Soler Barragán,21,5.0,6.0,8,28.57,90,21.0
+2023,3920397,Equatorial Guinea,Ibán Salvador Edu,21,4.0,7.0,4,33.33,79,23.92
+2023,3920407,Namibia,Ryan Nyambe,20,6.0,6.0,2,30.0,72,25.0
+2023,3922658,Cape Verde Islands,Kenny Rocha Santos,20,7.0,3.0,4,15.0,117,15.38
+2023,3920418,Congo DR,Gaël Kakuta,20,8.0,6.0,8,30.0,86,20.93
+2022/2023,3837662,Paris Saint-Germain,Neymar da Silva Santos Junior,20,7.0,2.0,5,10.0,90,20.0
+2023,3922659,Côte d'Ivoire,Max-Alain Gradel,20,3.0,3.0,3,15.0,71,25.35
+2022/2023,3837818,Paris Saint-Germain,Vitor Machado Ferreira,20,5.0,5.0,4,25.0,85,21.18
+2023,3922237,Namibia,Bethuel Muzeu,20,2.0,4.0,4,20.0,69,26.09
+2023,3877170,Inter Miami,Facundo Farías,20,5.0,1.0,11,5.0,91,19.78
+2022/2023,3837827,Paris Saint-Germain,Warren Zaire Emery,20,5.0,6.0,4,30.0,71,25.35
+2022/2023,3837947,Paris Saint-Germain,Fabián Ruiz Peña,20,5.0,6.0,3,30.0,92,19.57
+2023,3920404,Tunisia,Hamza Rafia,20,2.0,1.0,3,5.0,77,23.38
+2023,3877072,Inter Miami,Diego Alexander Gómez Amarilla,20,6.0,4.0,8,20.0,69,26.09
+2023,3920393,Namibia,Kennedy Amutenya,20,4.0,3.0,0,15.0,96,18.75
+2023,3920394,Morocco,Sofyan Amrabat,20,3.0,5.0,4,25.0,94,19.15
+2023,3922244,Mali,Mohamed Camara,20,5.0,4.0,2,20.0,92,19.57
+2022/2023,3838004,Strasbourg,Ismael Doukoure,20,0.0,7.0,0,35.0,84,21.43
+2022/2023,3837998,Auxerre,Gideon Mensah,20,3.0,4.0,6,20.0,95,18.95
+2022/2023,3837987,AC Ajaccio,Ismaël Chester Diallo,20,5.0,5.0,2,25.0,67,26.87
+2023,3920406,Zambia,Patson Daka,20,1.0,3.0,12,15.0,97,18.56
+2022/2023,3837938,Paris Saint-Germain,Fabián Ruiz Peña,20,4.0,5.0,0,25.0,83,21.69
+2023,3920391,South Africa,Percy Tau,20,3.0,5.0,8,25.0,91,19.78
+2023,3920416,South Africa,Themba Zwane,20,2.0,3.0,8,15.0,79,22.78
+2023,3922244,Burkina Faso,Issa Kabore,20,8.0,4.0,6,20.0,95,18.95
+2023,3922243,South Africa,Teboho Mokoena,20,4.0,6.0,1,30.0,100,18.0
+2022/2023,3837876,Lille,Jonathan Bamba,20,1.0,3.0,5,15.0,96,18.75
+2023,3922237,Angola,Manuel Luís da Silva Cafumana,20,7.0,6.0,2,30.0,94,19.15
+2023,3920394,Tanzania,Novatus Dismas Miroshi,20,4.0,5.0,1,25.0,68,26.47
+2023,3922837,South Africa,Evidence Makgopa,20,6.0,4.0,7,20.0,122,14.75
+2023,3920406,Zambia,Lameck Banda,20,6.0,2.0,6,10.0,84,21.43
+2023,3920392,Mauritania,Omaré Gassama,20,3.0,6.0,0,30.0,97,18.56
+2023,3922837,Nigeria,Victor James Osimhen,20,7.0,4.0,16,20.0,109,16.51
+2022/2023,3837747,Marseille,Jordan Veretout,20,3.0,8.0,2,40.0,79,22.78
+2023,3920414,Angola,Augusto de Jesus Corte Real Carneiro,20,2.0,8.0,2,40.0,98,18.37
+2022/2023,3837859,Toulouse,Zakaria Aboukhlal,20,4.0,2.0,8,10.0,80,22.5
+2023,3922658,South Africa,Themba Zwane,20,6.0,3.0,7,15.0,93,19.35
+2023,3920400,Cameroon,Olivier Michel Kemen,20,7.0,3.0,6,15.0,95,18.95
+2022/2023,3837659,Paris Saint-Germain,Neymar da Silva Santos Junior,20,2.0,6.0,11,30.0,89,20.22
+2023,3877170,Inter Miami,Benjamin Cremaschi,20,1.0,5.0,6,25.0,95,18.95
+2023,3922244,Mali,Kamory Doumbia,20,7.0,3.0,3,15.0,98,18.37
+2023,3923880,Congo DR,Grady Diangana,20,2.0,2.0,4,10.0,67,26.87
+2023,3877060,Inter Miami,Leonardo Campana Romero,20,3.0,6.0,7,30.0,59,30.51
+2023,3922658,South Africa,Aubrey Maphosa Modiba,20,2.0,8.0,2,40.0,125,14.4
+2023,3920407,Namibia,Prins Menelik Tjiueza,20,2.0,5.0,5,25.0,72,25.0
+2022/2023,3837727,OGC Nice,Mario Lemina,20,2.0,7.0,0,35.0,73,24.66
+2023,3920394,Morocco,Selim Amallah,20,3.0,4.0,7,20.0,69,26.09
+2022/2023,3837785,Auxerre,Hamza Sakhi,20,4.0,5.0,1,25.0,83,21.69
+2023,3922242,Côte d'Ivoire,Ibrahim Sangaré,20,6.0,8.0,2,40.0,71,25.35
+2023,3923880,Congo DR,Aaron Tshibola,20,2.0,3.0,3,15.0,44,40.91
+2022/2023,3837771,Paris Saint-Germain,Marco Verratti,20,5.0,6.0,9,30.0,84,21.43
+2022/2023,3837938,OGC Nice,Khéphren Thuram-Ulien,19,3.0,1.0,8,5.26,91,18.79
+2023,3877115,Toronto FC,Jonathan Osorio,19,6.0,3.0,3,15.79,87,19.66
+2023,3920390,Angola,Zito André Sebastião Luvumbo,19,4.0,4.0,4,21.05,77,22.21
+2023,3877170,Cincinnati,Ian Murphy,19,4.0,6.0,1,31.58,93,18.39
+2022/2023,3837947,Lens,Przemysław Frankowski,19,4.0,3.0,7,15.79,91,18.79
+2023,3877115,Inter Miami,Tomás Agustín Avilés Mancilla,19,5.0,8.0,4,42.11,65,26.31
+2023,3920418,Tanzania,Himid Mao Mkami,19,2.0,4.0,0,21.05,70,24.43
+2022/2023,3838017,Clermont Foot,Grejohn Kyei,19,2.0,2.0,13,10.53,83,20.6
+2022/2023,3837839,Stade de Reims,Alexis Flips,19,4.0,6.0,7,31.58,74,23.11
+2023,3920391,South Africa,Teboho Mokoena,19,10.0,0.0,2,0.0,93,18.39
+2023,3920413,Gambia,Ali Sowe,19,5.0,3.0,14,15.79,72,23.75
+2022/2023,3837998,Auxerre,Gauthier Hein,19,3.0,2.0,6,10.53,84,20.36
+2022/2023,3838004,Strasbourg,Lucas Perrin,19,0.0,1.0,4,5.26,85,20.12
+2023,3920397,Equatorial Guinea,Basilio Ndong Owono Nchamaaa,19,3.0,6.0,1,31.58,94,18.19
+2022/2023,3837954,Paris Saint-Germain,Vitor Machado Ferreira,19,9.0,8.0,4,42.11,87,19.66
+2022/2023,3837885,Marseille,Jordan Veretout,19,3.0,4.0,6,21.05,91,18.79
+2023,3922321,Nigeria,Temitayo Olufisayo Olaoluwa Aina,19,2.0,12.0,1,63.16,94,18.19
+2023,3920386,Equatorial Guinea,Federico Bikoro Akieme Nchama,19,4.0,3.0,0,15.79,95,18.0
+2022/2023,3837818,Angers,Nabil Bentaleb,19,1.0,6.0,0,31.58,92,18.59
+2023,3922244,Mali,Lassana Coulibaly,19,7.0,3.0,9,15.79,73,23.42
+2022/2023,3837947,Lens,Jonathan Gradit,19,1.0,3.0,1,15.79,81,21.11
+2022/2023,3837896,Nantes,Ignatius Kpene Ganago,19,2.0,0.0,4,0.0,79,21.65
+2023,3920385,Mozambique,Alfons Amade,19,1.0,3.0,3,15.79,99,17.27
+2022/2023,3837938,OGC Nice,Antoine Mendy,19,4.0,5.0,7,26.32,62,27.58
+2022/2023,3838004,Paris Saint-Germain,Vitor Machado Ferreira,19,8.0,4.0,2,21.05,83,20.6
+2022/2023,3837928,Paris Saint-Germain,Achraf Hakimi Mouh,19,4.0,7.0,6,36.84,92,18.59
+2023,3920408,Equatorial Guinea,Basilio Ndong Owono Nchamaaa,19,1.0,5.0,0,26.32,95,18.0
+2022/2023,3837650,Paris Saint-Germain,Marco Verratti,19,7.0,2.0,4,10.53,81,21.11
+2023,3920390,Angola,Cristóvão Paciência Mabululo,19,2.0,2.0,7,10.53,52,32.88
+2022/2023,3837954,Paris Saint-Germain,Fabián Ruiz Peña,19,5.0,3.0,5,15.79,92,18.59
+2023,3922241,Mauritania,Sidi Bouna Sidi Amar,19,3.0,7.0,3,36.84,65,26.31
+2022/2023,3837998,Paris Saint-Germain,Fabián Ruiz Peña,19,9.0,5.0,10,26.32,78,21.92
+2022/2023,3837902,Stade Brestois,Romain Del Castillo,19,5.0,4.0,2,21.05,74,23.11
+2023,3920418,Congo DR,Silas Katompa Mvumpa,19,5.0,4.0,5,21.05,52,32.88
+2023,3877194,Inter Miami,Leonardo Campana Romero,19,2.0,5.0,13,26.32,89,19.21
+2022/2023,3837727,OGC Nice,Melvin Bard,19,2.0,6.0,6,31.58,92,18.59
+2023,3920397,Guinea-Bissau,Moreto Moro Cassamã,19,3.0,5.0,3,26.32,63,27.14
+2022/2023,3837947,Lens,Seko Fofana,19,0.0,1.0,3,5.26,89,19.21
+2023,3920413,Cameroon,Frank Magri,19,6.0,4.0,13,21.05,71,24.08
+2023,3920386,Equatorial Guinea,Basilio Ndong Owono Nchamaaa,19,4.0,8.0,3,42.11,94,18.19
+2023,3920400,Senegal,Ismail Jakobs,19,3.0,3.0,2,15.79,97,17.63
+2022/2023,3837695,Nantes,Samuel Moutoussamy,19,2.0,3.0,2,15.79,78,21.92
+2022/2023,3837928,Lyon,Junior Castello Lukeba,19,2.0,3.0,1,15.79,90,19.0
+2023,3877115,Toronto FC,Deandre Kerr,19,3.0,5.0,7,26.32,67,25.52
+2023,3922241,Cape Verde Islands,João Paulo Moreira Fernandes,19,4.0,8.0,5,42.11,100,17.1
+2022/2023,3837785,Paris Saint-Germain,Achraf Hakimi Mouh,19,1.0,4.0,9,21.05,91,18.79
+2023,3920416,Tunisia,Ellyes Joris Skhiri,19,3.0,6.0,2,31.58,83,20.6
+2023,3920414,Angola,Alfredo Kulembe Ribeiro,19,4.0,4.0,3,21.05,76,22.5
+2023,3920401,Guinea,Morgan Guilavogui,19,6.0,5.0,8,26.32,74,23.11
+2022/2023,3837987,AC Ajaccio,Mohamed Youssouf,19,1.0,9.0,4,47.37,86,19.88
+2023,3920412,Senegal,Sadio Mané,19,5.0,1.0,14,5.26,95,18.0
+2022/2023,3837947,Lens,Jean Emile Junior Onana Onana,19,1.0,2.0,2,10.53,47,36.38
+2023,3920404,Tunisia,Ellyes Joris Skhiri,19,2.0,4.0,2,21.05,96,17.81
+2022/2023,3837885,Marseille,Leonardo Julián Balerdi Rossa,18,2.0,7.0,2,38.89,90,18.0
+2022/2023,3837928,Paris Saint-Germain,Fabián Ruiz Peña,18,4.0,5.0,4,27.78,35,46.29
+2023,3920399,Mozambique,Ricardo Martins Guimarães,18,5.0,5.0,1,27.78,95,17.05
+2023,3920416,South Africa,Aubrey Maphosa Modiba,18,3.0,5.0,3,27.78,92,17.61
+2023,3920413,Cameroon,Darlin Zidane Yongwa Ngameni,18,7.0,5.0,4,27.78,73,22.19
+2022/2023,3837706,Paris Saint-Germain,Presnel Kimpembe,18,4.0,7.0,1,38.89,94,17.23
+2023,3920418,Congo DR,Gedeon Kalulu Kyatengwa,18,2.0,3.0,0,16.67,93,17.42
+2022/2023,3838004,Paris Saint-Germain,Renato Júnior Luz Sanches,18,3.0,3.0,4,16.67,90,18.0
+2023,3920402,Algeria,Rayan Aït Nouri,18,5.0,9.0,3,50.0,98,16.53
+2023,3920401,Gambia,Musa Barrow,18,2.0,1.0,4,5.56,96,16.88
+2023,3920401,Guinea,Aguibou Camara,18,4.0,4.0,9,22.22,94,17.23
+2022/2023,3837659,Montpellier,Téji Savanier,18,3.0,7.0,1,38.89,85,19.06
+2022/2023,3837902,Stade Brestois,Jean-Kevin Duverne,18,4.0,5.0,3,27.78,91,17.8
+2023,3922238,Nigeria,Alex Iwobi,18,6.0,2.0,4,11.11,97,16.7
+2023,3922237,Namibia,Absalom Iimbondi,18,2.0,7.0,4,38.89,67,24.18
+2023,3922837,South Africa,Sphephelo S''Miso Sithole,18,6.0,4.0,1,22.22,120,13.5
+2022/2023,3837771,Paris Saint-Germain,Nordi Mukiele Mulere,18,4.0,9.0,2,50.0,92,17.61
+2023,3877090,Inter Miami,Facundo Farías,18,4.0,2.0,4,11.11,73,22.19
+2022/2023,3837844,Paris Saint-Germain,Achraf Hakimi Mouh,18,9.0,5.0,7,27.78,93,17.42
+2022/2023,3837859,Paris Saint-Germain,Achraf Hakimi Mouh,18,3.0,0.0,6,0.0,92,17.61
+2022/2023,3837683,Toulouse,Moussa Diarra,18,0.0,5.0,1,27.78,89,18.2
+2022/2023,3837876,Paris Saint-Germain,Neymar da Silva Santos Junior,18,3.0,3.0,3,16.67,49,33.06
+2023,3923881,Nigeria,Frank Onyeka,18,2.0,5.0,2,27.78,84,19.29
+2023,3922243,Morocco,Youssef En-Nesyri,18,1.0,5.0,7,27.78,100,16.2
+2023,3922237,Namibia,Aprocious Petrus,18,4.0,2.0,3,11.11,93,17.42
+2023,3920407,South Africa,Aubrey Maphosa Modiba,18,5.0,9.0,2,50.0,93,17.42
+2023,3920409,Nigeria,Frank Onyeka,18,3.0,3.0,4,16.67,61,26.56
+2023,3877060,New York Red Bulls,Andrés Felipe Reyes Ambuila,18,6.0,3.0,1,16.67,92,17.61
+2022/2023,3838004,Paris Saint-Germain,Warren Zaire Emery,18,2.0,1.0,1,5.56,90,18.0
+2023,3920390,Angola,Loide António Augusto,18,1.0,4.0,2,22.22,77,21.04
+2023,3922321,Nigeria,Frank Onyeka,18,2.0,3.0,2,16.67,86,18.84
+2023,3920419,Morocco,Sofyan Amrabat,18,4.0,7.0,1,38.89,93,17.42
+2023,3922238,Nigeria,Moses Daddy-Ajala Simon,18,6.0,4.0,7,22.22,95,17.05
+2023,3922658,Cape Verde Islands,Garry Mendes Rodrigues,18,2.0,3.0,6,16.67,70,23.14
+2022/2023,3837717,Lyon,Mateus Cardoso Lemos Martins,18,5.0,2.0,6,11.11,74,21.89
+2023,3877072,Nashville SC,Fafà Picault,18,2.0,4.0,2,22.22,80,20.25
+2023,3920406,Tanzania,Simon Happygod Msuva,18,4.0,1.0,6,5.56,94,17.23
+2022/2023,3837928,Lyon,Maxence Caqueret,18,2.0,4.0,0,22.22,31,52.26
+2022/2023,3837902,Paris Saint-Germain,Timothee Pembele,18,2.0,5.0,3,27.78,74,21.89
+2022/2023,3837885,Marseille,Nuno Albertino Varela Tavares,18,3.0,6.0,7,33.33,90,18.0
+2023,3922837,South Africa,Teboho Mokoena,18,2.0,2.0,1,11.11,119,13.61
+2023,3920387,Ghana,Iddrisu Baba Mohammed,18,1.0,1.0,3,5.56,97,16.7
+2022/2023,3837680,AS Monaco,Youssouf Fofana,18,3.0,5.0,0,27.78,92,17.61
+2022/2023,3837771,Troyes,Rominigue Kouamé N''Guessan,18,5.0,5.0,2,27.78,75,21.6
+2022/2023,3837680,AS Monaco,Aleksandr Golovin,18,4.0,2.0,4,11.11,63,25.71
+2022/2023,3838017,Paris Saint-Germain,Warren Zaire Emery,18,2.0,5.0,4,27.78,92,17.61
+2022/2023,3837947,Paris Saint-Germain,Achraf Hakimi Mouh,18,5.0,5.0,9,27.78,90,18.0
+2022/2023,3837839,Stade de Reims,Yunis Abdelhamid,18,1.0,4.0,6,22.22,93,17.42
+2022/2023,3837650,Clermont Foot,Maxime Gonalons,18,2.0,2.0,5,11.11,84,19.29
+2023,3922659,Mali,Diadie Samassekou,18,4.0,6.0,2,33.33,101,16.04
+2023,3922242,Côte d'Ivoire,Jean Michaël Seri,18,6.0,5.0,1,27.78,118,13.73
+2023,3920416,South Africa,Evidence Makgopa,18,5.0,5.0,5,27.78,83,19.52
+2023,3877090,Inter Miami,Benjamin Cremaschi,18,2.0,2.0,1,11.11,73,22.19
+2023,3920402,Algeria,Baghdad Bounedjah,18,1.0,3.0,9,16.67,98,16.53
+2023,3920403,Mauritania,Ibrahima Keita,18,7.0,9.0,3,50.0,95,17.05
+2022/2023,3837963,Lorient,Ibrahima Koné,18,3.0,2.0,2,11.11,64,25.31
+2023,3922659,Mali,Amadou Haïdara,18,2.0,5.0,2,27.78,61,26.56
+2023,3877060,New York Red Bulls,Daniel Edelman,18,3.0,6.0,3,33.33,92,17.61
+2023,3920391,South Africa,Evidence Makgopa,17,2.0,3.0,7,17.65,68,22.5
+2023,3920400,Senegal,Habibou Mouhamadou Diallo,17,6.0,4.0,7,23.53,80,19.13
+2023,3920392,Burkina Faso,Ibrahim Blati Touré,17,3.0,3.0,2,17.65,97,15.77
+2022/2023,3837827,Rennes,Désiré Doué,17,4.0,8.0,0,47.06,66,23.18
+2023,3920387,Ghana,Antoine Semenyo,17,3.0,1.0,8,5.88,60,25.5
+2022/2023,3837727,OGC Nice,Aaron Ramsey,17,5.0,2.0,4,11.76,60,25.5
+2022/2023,3837839,Paris Saint-Germain,Fabián Ruiz Peña,17,7.0,4.0,5,23.53,67,22.84
+2022/2023,3837839,Paris Saint-Germain,Neymar da Silva Santos Junior,17,2.0,4.0,7,23.53,81,18.89
+2022/2023,3837885,Paris Saint-Germain,Nuno Mendes,17,5.0,6.0,2,35.29,75,20.4
+2022/2023,3837859,Paris Saint-Germain,Carlos Soler Barragán,17,2.0,5.0,5,29.41,75,20.4
+2023,3922244,Burkina Faso,Mohamed Konaté,17,1.0,2.0,8,11.76,98,15.61
+2023,3922658,Cape Verde Islands,Steven Moreira,17,7.0,2.0,6,11.76,120,12.75
+2023,3877115,Inter Miami,David Ruiz,17,2.0,5.0,11,29.41,64,23.91
+2023,3922244,Mali,Amadou Haïdara,17,3.0,2.0,5,11.76,72,21.25
+2023,3920416,Tunisia,Ali Abdi,17,4.0,5.0,4,29.41,92,16.63
+2023,3920396,Egypt,Omar Kamal Abdel Wahed,17,2.0,7.0,2,41.18,95,16.11
+2023,3920418,Congo DR,Yoane Wissa,17,3.0,3.0,4,17.65,93,16.45
+2023,3920404,Mali,Lassana Coulibaly,17,1.0,6.0,2,35.29,95,16.11
+2022/2023,3837876,Paris Saint-Germain,Marco Verratti,17,5.0,6.0,2,35.29,95,16.11
+2023,3877115,Toronto FC,Franco Ibarra,17,1.0,3.0,4,17.65,57,26.84
+2023,3920387,Ghana,Denis Odoi,17,1.0,4.0,0,23.53,98,15.61
+2023,3920386,Equatorial Guinea,Pablo Ganet Cómitre,17,5.0,4.0,2,23.53,73,20.96
+2022/2023,3837785,Auxerre,Mathias Autret,17,2.0,1.0,2,5.88,64,23.91
+2023,3920409,Guinea-Bissau,Janio Bikel Figueiredo Silva,17,2.0,4.0,3,23.53,94,16.28
+2023,3922238,Cameroon,Frank Magri,17,5.0,5.0,8,29.41,100,15.3
+2023,3920414,Angola,Bruno Lourenço Pinto de Almeida Paz,17,4.0,3.0,1,17.65,63,24.29
+2022/2023,3837827,Rennes,Amine Gouiri,17,3.0,2.0,4,11.76,88,17.39
+2023,3920405,Congo DR,Samuel Moutoussamy,17,2.0,3.0,2,17.65,89,17.19
+2023,3877170,Inter Miami,Sergio Busquets i Burgos,17,10.0,10.0,4,58.82,95,16.11
+2022/2023,3837844,Montpellier,Christ-Emmanuel Faitout Maouassa,17,2.0,4.0,3,23.53,81,18.89
+2023,3920392,Burkina Faso,Steeve Yago,17,2.0,8.0,6,47.06,96,15.94
+2023,3920404,Tunisia,Aïssa Bilal Laïdouni,17,3.0,1.0,0,5.88,96,15.94
+2022/2023,3837885,Paris Saint-Germain,Marcos Aoás Corrêa,17,5.0,2.0,2,11.76,91,16.81
+2023,3920415,Mauritania,Khadim Diaw,17,2.0,5.0,1,29.41,98,15.61
+2023,3922239,Equatorial Guinea,Carlos Akapo Martínez,17,6.0,3.0,3,17.65,93,16.45
+2023,3920387,Cape Verde Islands,Steven Moreira,17,3.0,6.0,2,35.29,99,15.45
+2023,3920410,Ghana,Salis Abdul Samed,17,1.0,4.0,1,23.53,93,16.45
+2023,3920395,Zambia,Patson Daka,17,4.0,3.0,6,17.65,95,16.11
+2023,3877090,LAFC,Ilie Sánchez Farrés,17,4.0,7.0,3,41.18,80,19.13
+2023,3920397,Equatorial Guinea,Federico Bikoro Akieme Nchama,17,3.0,4.0,1,23.53,96,15.94
+2023,3920409,Guinea-Bissau,Famana Quizera,17,3.0,4.0,6,23.53,67,22.84
+2023,3920387,Ghana,Gideon Mensah,17,3.0,5.0,0,29.41,98,15.61
+2023,3920403,Mauritania,Bodda Mouhsine,17,3.0,3.0,1,17.65,86,17.79
+2023,3877115,Inter Miami,DeAndre Yedlin,17,3.0,1.0,7,5.88,91,16.81
+2023,3922240,Egypt,Mostafa Mohamed Ahmed Abdallah,17,0.0,3.0,7,17.65,123,12.44
+2023,3920408,Côte d'Ivoire,Franck Yannick Kessié,17,3.0,4.0,0,23.53,96,15.94
+2023,3922240,Congo DR,Simon Bokote Banza,17,8.0,6.0,10,35.29,56,27.32
+2023,3920402,Burkina Faso,Gustavo Fabrice Sangaré,17,5.0,2.0,5,11.76,82,18.66
+2022/2023,3837818,Paris Saint-Germain,Juan Bernat Velasco,17,5.0,6.0,2,35.29,91,16.81
+2022/2023,3838017,Clermont Foot,Muhammed Cham Saracevic,17,5.0,2.0,8,11.76,69,22.17
+2023,3920399,Cape Verde Islands,Jamiro Gregory Monteiro Alvarenga,17,1.0,3.0,6,17.65,78,19.62
+2023,3920419,Zambia,Lameck Banda,17,2.0,6.0,2,35.29,92,16.63
+2023,3920396,Ghana,Gideon Mensah,17,1.0,5.0,0,29.41,91,16.81
+2023,3922837,Nigeria,Temitayo Olufisayo Olaoluwa Aina,17,3.0,3.0,3,17.65,123,12.44
+2023,3920409,Guinea-Bissau,Fernando de Lacerda Gomes,17,4.0,4.0,0,23.53,93,16.45
+2023,3920404,Tunisia,Mohamed Elias Achouri,17,3.0,3.0,5,17.65,69,22.17
+2023,3920403,Mauritania,Omaré Gassama,17,4.0,4.0,2,23.53,93,16.45
+2023,3920407,South Africa,Themba Zwane,17,4.0,5.0,5,29.41,69,22.17
+2022/2023,3837928,Paris Saint-Germain,Marcos Aoás Corrêa,17,8.0,9.0,2,52.94,93,16.45
+2023,3920397,Guinea-Bissau,Janio Bikel Figueiredo Silva,17,3.0,2.0,1,11.76,97,15.77
+2023,3920404,Mali,Amadou Haïdara,17,3.0,3.0,6,17.65,69,22.17
+2023,3922239,Equatorial Guinea,Ibán Salvador Edu,17,5.0,5.0,5,29.41,91,16.81
+2023,3922239,Equatorial Guinea,Pablo Ganet Cómitre,17,3.0,3.0,2,17.65,95,16.11
+2023,3920419,Zambia,Kennedy Musonda,17,7.0,0.0,2,0.0,70,21.86
+2022/2023,3837659,Montpellier,Enzo Gianni Tchato Mbiayi,17,1.0,6.0,1,35.29,88,17.39
+2022/2023,3837839,Stade de Reims,Thibault De Smet,17,3.0,3.0,5,17.65,93,16.45
+2023,3920393,Tunisia,Mohamed Elias Achouri,17,4.0,5.0,4,29.41,91,16.81
+2022/2023,3838017,Clermont Foot,Maxime Gonalons,17,2.0,4.0,5,23.53,69,22.17
+2023,3920415,Mauritania,Idrissa Thiam,17,2.0,6.0,0,35.29,73,20.96
+2022/2023,3837928,Paris Saint-Germain,Marco Verratti,17,4.0,5.0,3,29.41,59,25.93
+2023,3922241,Mauritania,Aboubakary Koita,17,6.0,4.0,7,23.53,95,16.11
+2023,3920406,Tanzania,Mbwana Ally Samatta,17,4.0,1.0,6,5.88,96,15.94
+2023,3920417,Namibia,Ivan Kamberipa,17,2.0,6.0,4,35.29,93,16.45
+2023,3922237,Angola,Cristóvão Paciência Mabululo,17,5.0,4.0,7,23.53,82,18.66
+2023,3920414,Angola,Valdomiro Tualungo Paulo Lameiras,17,2.0,3.0,0,17.65,94,16.28
+2023,3920407,South Africa,Sphephelo S''Miso Sithole,17,9.0,6.0,3,35.29,69,22.17
+2022/2023,3838017,Paris Saint-Germain,Achraf Hakimi Mouh,17,4.0,3.0,5,17.65,92,16.63
+2023,3920400,Senegal,Sadio Mané,17,1.0,1.0,9,5.88,97,15.77
+2023,3920419,Morocco,Ayoub El Kaabi,17,5.0,3.0,9,17.65,72,21.25
+2023,3920399,Cape Verde Islands,Kevin Lenini Gonçalves Pereira de Pina,17,5.0,5.0,3,29.41,94,16.28
+2023,3920397,Equatorial Guinea,José Ndong Machín Dicombo,17,2.0,3.0,4,17.65,96,15.94
+2023,3877090,Inter Miami,Tomás Agustín Avilés Mancilla,17,3.0,2.0,0,11.76,94,16.28
+2023,3920396,Ghana,Majeed Ashimeru,17,2.0,4.0,0,23.53,59,25.93
+2023,3920417,Namibia,Aprocious Petrus,17,4.0,4.0,3,23.53,81,18.89
+2023,3920387,Ghana,Joseph Paintsil,17,5.0,6.0,1,35.29,60,25.5
+2022/2023,3837662,Paris Saint-Germain,Kylian Mbappé Lottin,17,1.0,1.0,11,5.88,89,17.19
+2023,3877170,Cincinnati,Luciano Federico Acosta,16,5.0,5.0,6,31.25,87,16.55
+2023,3920391,South Africa,Themba Zwane,16,2.0,2.0,4,12.5,72,20.0
+2023,3920415,Mauritania,Aboubakary Koita,16,2.0,2.0,3,12.5,80,18.0
+2023,3922242,Senegal,Kalidou Koulibaly,16,2.0,4.0,0,25.0,120,12.0
+2023,3920413,Cameroon,Jules Olivier Ntcham,16,4.0,4.0,3,25.0,99,14.55
+2022/2023,3837844,Montpellier,Valère Germain,16,7.0,3.0,7,18.75,57,25.26
+2023,3920404,Mali,Kamory Doumbia,16,1.0,3.0,1,18.75,80,18.0
+2023,3920411,Egypt,Omar Marmoush,16,5.0,2.0,11,12.5,80,18.0
+2023,3922837,South Africa,Mothobi Mvala,16,1.0,7.0,0,43.75,126,11.43
+2023,3920396,Ghana,Salis Abdul Samed,16,4.0,8.0,0,50.0,84,17.14
+2023,3922837,South Africa,Aubrey Maphosa Modiba,16,1.0,6.0,1,37.5,116,12.41
+2023,3920414,Angola,Cristóvão Paciência Mabululo,16,3.0,4.0,7,25.0,76,18.95
+2023,3920415,Algeria,Ramiz Larbi Zerrouki,16,6.0,4.0,2,25.0,100,14.4
+2023,3922838,Côte d'Ivoire,Sébastien Haller,16,1.0,4.0,8,25.0,89,16.18
+2022/2023,3837918,Rennes,Birger Meling,16,1.0,5.0,4,31.25,88,16.36
+2022/2023,3837876,Lille,André Filipe Tavares Gomes,16,2.0,1.0,2,6.25,92,15.65
+2023,3922243,Morocco,Sofyan Amrabat,16,2.0,4.0,2,25.0,91,15.82
+2023,3923880,Congo DR,Joris Kayembe Ditu,16,5.0,6.0,3,37.5,126,11.43
+2023,3920406,Tanzania,Morice Michael Abraham,16,5.0,0.0,2,0.0,38,37.89
+2023,3920389,Guinea,Morgan Guilavogui,16,2.0,4.0,3,25.0,55,26.18
+2023,3877090,LAFC,Mario González Gutiérrez,16,2.0,1.0,11,6.25,60,24.0
+2022/2023,3837963,Paris Saint-Germain,Sergio Ramos García,16,1.0,4.0,0,25.0,94,15.32
+2023,3922659,Côte d'Ivoire,Ghislain Konan,16,2.0,6.0,0,37.5,118,12.2
+2023,3920399,Cape Verde Islands,Ryan Isaac Mendes da Graça,16,3.0,6.0,4,37.5,93,15.48
+2023,3922356,Congo DR,Samuel Moutoussamy,16,2.0,2.0,1,12.5,90,16.0
+2022/2023,3837818,Angers,Adrien Hunou,16,3.0,1.0,8,6.25,61,23.61
+2023,3920418,Tanzania,Novatus Dismas Miroshi,16,8.0,5.0,3,31.25,91,15.82
+2023,3922242,Senegal,Moussa Niakhate,16,1.0,6.0,0,37.5,124,11.61
+2023,3922838,Congo DR,Gedeon Kalulu Kyatengwa,16,6.0,7.0,2,43.75,88,16.36
+2023,3920391,Mali,Falaye Sacko,16,3.0,2.0,1,12.5,92,15.65
+2022/2023,3837844,Montpellier,Leo Leroy,16,2.0,1.0,6,6.25,61,23.61
+2023,3877194,Inter Miami,Diego Alexander Gómez Amarilla,16,2.0,5.0,3,31.25,92,15.65
+2022/2023,3837902,Stade Brestois,Franck Honorat,16,1.0,4.0,1,25.0,94,15.32
+2023,3920391,Mali,Yves Bissouma,16,2.0,6.0,4,37.5,57,25.26
+2023,3920404,Tunisia,Anis Ben Slimane,16,3.0,2.0,4,12.5,87,16.55
+2023,3920386,Nigeria,Alhassan Yusuf,16,7.0,4.0,1,25.0,66,21.82
+2022/2023,3837987,Paris Saint-Germain,Fabián Ruiz Peña,16,7.0,4.0,6,25.0,63,22.86
+2023,3920399,Cape Verde Islands,Jovane Eduardo Borges Cabral,16,2.0,5.0,3,31.25,74,19.46
+2023,3920386,Equatorial Guinea,Jannick Buyla Sam,16,1.0,6.0,1,37.5,73,19.73
+2023,3920384,Guinea-Bissau,Jefferson Anilson Silva Encada,16,2.0,8.0,2,50.0,92,15.65
+2022/2023,3837844,Montpellier,Boubakar Kouyate,16,0.0,7.0,0,43.75,93,15.48
+2023,3920398,Nigeria,Calvin Bassey Ughelumba,16,2.0,6.0,1,37.5,98,14.69
+2023,3877194,Charlotte,Jere Juhani Uronen,16,7.0,6.0,3,37.5,89,16.18
+2023,3920389,Cameroon,André-Frank Zambo Anguissa,16,4.0,4.0,4,25.0,96,15.0
+2023,3877170,Inter Miami,David Ruiz,16,6.0,4.0,7,25.0,53,27.17
+2023,3877060,New York Red Bulls,Lucas Lima Linhares,16,1.0,5.0,10,31.25,91,15.82
+2022/2023,3837752,AC Ajaccio,Mathieu Coutadeur,16,2.0,4.0,4,25.0,89,16.18
+2023,3920385,Egypt,Mohamed Naser Elsayed Elneny,16,4.0,2.0,2,12.5,76,18.95
+2023,3920391,South Africa,Khuliso Johnson Mudau,16,3.0,4.0,3,25.0,89,16.18
+2023,3920391,Mali,Aliou Dieng,16,5.0,6.0,3,37.5,76,18.95
+2022/2023,3837818,Angers,Pierrick Capelle,16,5.0,3.0,1,18.75,60,24.0
+2022/2023,3837896,Paris Saint-Germain,Nuno Mendes,16,4.0,8.0,4,50.0,94,15.32
+2022/2023,3837928,Paris Saint-Germain,Nuno Mendes,16,6.0,3.0,4,18.75,92,15.65
+2023,3877072,Nashville SC,Shaquell Moore,16,1.0,4.0,0,25.0,92,15.65
+2023,3922242,Côte d'Ivoire,Jean-Philippe Krasso,16,4.0,5.0,9,31.25,70,20.57
+2022/2023,3837659,Montpellier,Sepe Elye Wahi,16,2.0,0.0,2,0.0,76,18.95
+2023,3922659,Côte d'Ivoire,Seko Fofana,16,1.0,4.0,1,25.0,121,11.9
+2023,3920388,Senegal,Lamine Camara,16,2.0,3.0,3,18.75,94,15.32
+2023,3922244,Burkina Faso,Ibrahim Blati Touré,16,5.0,3.0,1,18.75,93,15.48
+2023,3920397,Guinea-Bissau,Alfa Semedo Esteves,16,6.0,5.0,2,31.25,85,16.94
+2023,3920411,Cape Verde Islands,Erickson Patrick Correia Andrade,16,2.0,5.0,1,31.25,69,20.87
+2023,3920406,Zambia,Kings Kangwa,16,3.0,1.0,3,6.25,74,19.46
+2022/2023,3837987,Paris Saint-Germain,Marco Verratti,16,5.0,5.0,7,31.25,63,22.86
+2023,3922239,Guinea,Aguibou Camara,16,3.0,3.0,5,18.75,97,14.85
+2022/2023,3837752,Paris Saint-Germain,Fabián Ruiz Peña,16,2.0,4.0,5,25.0,82,17.56
+2022/2023,3837747,Marseille,Mattéo Guendouzi Olié,16,4.0,4.0,3,25.0,95,15.16
+2023,3877194,Charlotte,Enzo Nahuel Copetti,16,2.0,4.0,11,25.0,86,16.74
+2023,3922241,Cape Verde Islands,Jovane Eduardo Borges Cabral,16,6.0,5.0,3,31.25,84,17.14
+2023,3920406,Tanzania,Mzamiru Yassin,16,4.0,3.0,0,18.75,93,15.48
+2022/2023,3837706,Stade Brestois,Brendan Chardonnet,16,1.0,2.0,3,12.5,93,15.48
+2022/2023,3837717,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,16,8.0,4.0,9,25.0,93,15.48
+2023,3877060,New York Red Bulls,Sean Nealis,16,4.0,5.0,1,31.25,92,15.65
+2022/2023,3838017,Clermont Foot,Maximiliano Caufriez,16,7.0,4.0,5,25.0,86,16.74
+2023,3920414,Burkina Faso,Stephane Aziz Ki,16,3.0,3.0,8,18.75,87,16.55
+2023,3920408,Côte d'Ivoire,Oumar Diakité,16,6.0,3.0,4,18.75,82,17.56
+2023,3920408,Equatorial Guinea,Ibán Salvador Edu,16,2.0,7.0,2,43.75,77,18.7
+2023,3920407,Namibia,Aprocious Petrus,16,2.0,5.0,1,31.25,94,15.32
+2023,3922241,Mauritania,Souleymane Anne,16,4.0,2.0,4,12.5,78,18.46
+2023,3920403,Angola,Alfredo Kulembe Ribeiro,16,4.0,5.0,1,31.25,85,16.94
+2022/2023,3838004,Strasbourg,Colin Dagba,16,2.0,1.0,0,6.25,64,22.5
+2022/2023,3837844,Paris Saint-Germain,Fabián Ruiz Peña,16,2.0,4.0,9,25.0,90,16.0
+2022/2023,3837885,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,16,4.0,5.0,8,31.25,88,16.36
+2023,3920393,Namibia,Riaan Hanamub,15,7.0,4.0,0,26.67,94,14.36
+2023,3877115,Inter Miami,Facundo Farías,15,3.0,2.0,9,13.33,88,15.34
+2023,3920410,Ghana,Jordan Ayew,15,4.0,4.0,6,26.67,94,14.36
+2023,3920390,Angola,Jonathan Buatu Mananga,15,3.0,5.0,0,33.33,96,14.06
+2023,3877072,Nashville SC,Dax McCarty,15,1.0,2.0,2,13.33,62,21.77
+2022/2023,3837727,OGC Nice,Sofiane Diop,15,1.0,3.0,4,20.0,92,14.67
+2023,3877170,Inter Miami,Noah Allen,15,1.0,2.0,2,13.33,94,14.36
+2022/2023,3837902,Paris Saint-Germain,Nuno Mendes,15,5.0,4.0,5,26.67,94,14.36
+2023,3920403,Angola,Eddie Marcos Melo Afonso,15,4.0,4.0,2,26.67,90,15.0
+2023,3922237,Namibia,Petrus Shitembi,15,2.0,4.0,2,26.67,34,39.71
+2022/2023,3837896,Nantes,Nicolas Pallois,15,0.0,4.0,0,26.67,69,19.57
+2023,3920419,Zambia,Emmanuel Justine Rabby Banda,15,1.0,1.0,1,6.67,92,14.67
+2023,3920400,Senegal,Krépin Diatta,15,3.0,6.0,3,40.0,94,14.36
+2022/2023,3837717,Paris Saint-Germain,Neymar da Silva Santos Junior,15,2.0,2.0,3,13.33,85,15.88
+2023,3922838,Congo DR,Cédric Bakambu,15,3.0,7.0,4,46.67,68,19.85
+2022/2023,3837717,Lyon,Johann Lepenant,15,2.0,5.0,4,33.33,47,28.72
+2023,3920409,Nigeria,Joe Aribo,15,1.0,3.0,0,20.0,62,21.77
+2023,3920394,Tanzania,Himid Mao Mkami,15,1.0,0.0,1,0.0,91,14.84
+2023,3920405,Morocco,Achraf Hakimi Mouh,15,6.0,4.0,2,26.67,95,14.21
+2022/2023,3837885,Marseille,Sead Kolašinac,15,5.0,2.0,7,13.33,90,15.0
+2022/2023,3837717,Lyon,Karl Brillant Toko Ekambi,15,1.0,0.0,3,0.0,86,15.7
+2023,3920409,Nigeria,Samuel Chimerenka Chukwueze,15,5.0,3.0,9,20.0,79,17.09
+2023,3920387,Ghana,Majeed Ashimeru,15,3.0,2.0,1,13.33,86,15.7
+2023,3920407,South Africa,Evidence Makgopa,15,4.0,2.0,7,13.33,79,17.09
+2023,3920391,Mali,Sekou Koita,15,0.0,0.0,5,0.0,86,15.7
+2023,3920397,Equatorial Guinea,Carlos Akapo Martínez,15,1.0,3.0,0,20.0,79,17.09
+2023,3922237,Namibia,Peter Shalulile,15,1.0,5.0,9,33.33,94,14.36
+2023,3923880,Congo DR,Meschak Elia,15,4.0,3.0,6,20.0,99,13.64
+2022/2023,3837938,OGC Nice,Youssouf Ndayishimiye,15,2.0,3.0,4,20.0,89,15.17
+2023,3920418,Tanzania,Faisal Salum Abdalla,15,4.0,3.0,2,20.0,78,17.31
+2022/2023,3837727,Paris Saint-Germain,Fabián Ruiz Peña,15,3.0,0.0,0,0.0,71,19.01
+2023,3920410,Mozambique,Infren Da Conceição David Matola,15,4.0,4.0,1,26.67,95,14.21
+2023,3877060,Inter Miami,Noah Allen,15,3.0,6.0,0,40.0,92,14.67
+2023,3922659,Côte d'Ivoire,Willy Boly,15,0.0,7.0,0,46.67,74,18.24
+2023,3920405,Congo DR,Arthur Masuaku,15,1.0,2.0,1,13.33,96,14.06
+2022/2023,3837998,Auxerre,Akim Zedadka,15,3.0,2.0,2,13.33,93,14.52
+2022/2023,3837659,Montpellier,Jordan Ferri,15,2.0,5.0,1,33.33,91,14.84
+2022/2023,3837987,Paris Saint-Germain,Hugo Ekitike,15,3.0,6.0,9,40.0,81,16.67
+2023,3920408,Equatorial Guinea,Carlos Akapo Martínez,15,0.0,4.0,0,26.67,94,14.36
+2023,3922837,Nigeria,Alhassan Yusuf,15,3.0,1.0,2,6.67,56,24.11
+2023,3920413,Gambia,Yusupha Bobb,15,1.0,2.0,1,13.33,68,19.85
+2023,3920408,Equatorial Guinea,José Ndong Machín Dicombo,15,1.0,2.0,0,13.33,82,16.46
+2023,3920413,Gambia,Alasana Manneh,15,4.0,2.0,1,13.33,99,13.64
+2023,3922240,Congo DR,Meschak Elia,15,2.0,6.0,5,40.0,106,12.74
+2023,3920405,Morocco,Sofyan Amrabat,15,4.0,5.0,1,33.33,98,13.78
+2022/2023,3837662,Paris Saint-Germain,Achraf Hakimi Mouh,15,1.0,4.0,5,26.67,79,17.09
+2023,3920388,Gambia,Yankuba Minteh,15,3.0,4.0,3,26.67,82,16.46
+2023,3920385,Mozambique,Stanley Ratifo,15,3.0,1.0,2,6.67,67,20.15
+2022/2023,3837827,Rennes,Adrien Truffert,15,4.0,5.0,3,33.33,73,18.49
+2022/2023,3837695,Paris Saint-Germain,Marco Verratti,15,1.0,5.0,3,33.33,61,22.13
+2022/2023,3837659,Paris Saint-Germain,Presnel Kimpembe,15,3.0,4.0,4,26.67,90,15.0
+2022/2023,3837785,Auxerre,Paul Joly,15,2.0,4.0,2,26.67,57,23.68
+2023,3920393,Tunisia,Anis Ben Slimane,15,2.0,3.0,3,20.0,82,16.46
+2023,3920414,Angola,Deivi Miguel Vieira,15,0.0,4.0,3,26.67,56,24.11
+2023,3922243,South Africa,Thapelo James Morena,15,7.0,3.0,5,20.0,98,13.78
+2023,3922659,Côte d'Ivoire,Oumar Diakité,15,7.0,6.0,6,40.0,50,27.0
+2023,3922243,South Africa,Sphephelo S''Miso Sithole,15,1.0,4.0,0,26.67,86,15.7
+2022/2023,3837918,Paris Saint-Germain,Nuno Mendes,15,2.0,6.0,3,40.0,95,14.21
+2023,3922240,Congo DR,Charles Pickel,15,2.0,3.0,1,20.0,78,17.31
+2022/2023,3837727,Paris Saint-Germain,Nordi Mukiele Mulere,15,3.0,6.0,3,40.0,93,14.52
+2023,3922240,Egypt,Mohamed Hany Gamal Eldemerdash,15,1.0,6.0,3,40.0,127,10.63
+2023,3922239,Guinea,Mory Konaté,15,2.0,4.0,0,26.67,78,17.31
+2023,3920402,Burkina Faso,Steeve Yago,15,2.0,6.0,0,40.0,93,14.52
+2022/2023,3837963,Lorient,Bonke Innocent,15,0.0,2.0,0,13.33,57,23.68
+2023,3920405,Congo DR,Gedeon Kalulu Kyatengwa,15,4.0,6.0,2,40.0,91,14.84
+2022/2023,3837818,Paris Saint-Germain,Nordi Mukiele Mulere,15,5.0,4.0,6,26.67,90,15.0
+2023,3922244,Burkina Faso,Gustavo Fabrice Sangaré,15,4.0,3.0,0,20.0,86,15.7
+2022/2023,3837680,AS Monaco,Ruben Aguilar,15,4.0,5.0,3,33.33,88,15.34
+2022/2023,3837827,Rennes,Lesley Chimuanya Ugochukwu,15,5.0,2.0,1,13.33,93,14.52
+2022/2023,3837818,Paris Saint-Germain,Fabián Ruiz Peña,15,5.0,4.0,6,26.67,77,17.53
+2022/2023,3837954,Angers,Abdoulaye Bamba,15,1.0,4.0,4,26.67,87,15.52
+2022/2023,3837885,Marseille,Ruslan Malinovskiy,15,5.0,4.0,5,26.67,80,16.88
+2023,3877060,Inter Miami,Tomás Agustín Avilés Mancilla,15,1.0,5.0,0,33.33,92,14.67
+2023,3920419,Morocco,Azzedine Ounahi,15,3.0,0.0,6,0.0,83,16.27
+2022/2023,3838004,Strasbourg,Gerzino Nyamsi,15,1.0,4.0,1,26.67,85,15.88
+2023,3877090,LAFC,Kellyn Kai Perry-Acosta,15,2.0,4.0,6,26.67,44,30.68
+2022/2023,3837859,Paris Saint-Germain,Fabián Ruiz Peña,15,5.0,4.0,5,26.67,92,14.67
+2023,3920387,Cape Verde Islands,Kevin Lenini Gonçalves Pereira de Pina,15,1.0,5.0,0,33.33,97,13.92
+2023,3922356,Guinea,Morgan Guilavogui,15,3.0,3.0,6,20.0,58,23.28
+2023,3920403,Angola,Ambrosini Antonio Cabaça Salvador,15,2.0,2.0,4,13.33,60,22.5
+2022/2023,3837918,Rennes,Warmed Omari,15,0.0,1.0,0,6.67,89,15.17
+2023,3920391,Mali,Hamari Traoré,15,2.0,7.0,2,46.67,92,14.67
+2023,3877194,Charlotte,Karol Świderski,15,2.0,4.0,12,26.67,74,18.24
+2023,3922238,Nigeria,Calvin Bassey Ughelumba,15,5.0,7.0,2,46.67,100,13.5
+2022/2023,3837680,Paris Saint-Germain,Presnel Kimpembe,15,2.0,5.0,2,33.33,95,14.21
+2023,3877194,Inter Miami,Tomás Agustín Avilés Mancilla,15,2.0,4.0,1,26.67,85,15.88
+2023,3920418,Congo DR,Arthur Masuaku,15,5.0,4.0,2,26.67,94,14.36
+2022/2023,3837938,OGC Nice,Jean-Clair Todibo,15,2.0,4.0,1,26.67,90,15.0
+2023,3920402,Burkina Faso,Mohamed Konaté,15,2.0,2.0,6,13.33,62,21.77
+2023,3920419,Zambia,Miguel Changa Chaiwa,15,2.0,3.0,2,20.0,93,14.52
+2022/2023,3838017,Paris Saint-Germain,Hugo Ekitike,15,4.0,1.0,5,6.67,57,23.68
+2023,3920410,Mozambique,Alfons Amade,15,7.0,5.0,2,33.33,72,18.75
+2023,3920413,Gambia,Jacob Mendy,15,4.0,4.0,3,26.67,100,13.5
+2023,3922241,Cape Verde Islands,Ryan Isaac Mendes da Graça,15,3.0,6.0,5,40.0,99,13.64
+2023,3920411,Egypt,Mostafa Mohamed Ahmed Abdallah,15,3.0,2.0,10,13.33,98,13.78
+2023,3922244,Mali,Falaye Sacko,15,3.0,2.0,1,13.33,98,13.78
+2022/2023,3837717,Lyon,Corentin Tolisso,15,2.0,1.0,3,6.67,45,30.0
+2023,3920392,Mauritania,Souleymane Anne,15,4.0,3.0,9,20.0,70,19.29
+2022/2023,3837717,Lyon,Nicolás Alejandro Tagliafico,14,1.0,6.0,1,42.86,92,13.7
+2023,3877170,Cincinnati,Matt Miazga,14,4.0,6.0,0,42.86,95,13.26
+2023,3920396,Egypt,Mohamed Naser Elsayed Elneny,14,5.0,2.0,3,14.29,67,18.81
+2023,3877090,LAFC,Denis Bouanga,14,3.0,4.0,9,28.57,94,13.4
+2023,3920401,Guinea,Ibrahim Diakité,14,5.0,4.0,6,28.57,85,14.82
+2023,3920401,Gambia,Ablie Jallow,14,1.0,2.0,3,14.29,96,13.13
+2023,3920417,Namibia,Riaan Hanamub,14,0.0,3.0,0,21.43,93,13.55
+2022/2023,3837827,Paris Saint-Germain,Achraf Hakimi Mouh,14,3.0,4.0,2,28.57,40,31.5
+2022/2023,3837785,Paris Saint-Germain,Neymar da Silva Santos Junior,14,3.0,3.0,7,21.43,74,17.03
+2022/2023,3837902,Stade Brestois,Noah Fadiga,14,2.0,2.0,1,14.29,78,16.15
+2023,3922838,Congo DR,Arthur Masuaku,14,2.0,5.0,1,35.71,94,13.4
+2023,3920416,Tunisia,Wajdi Kechrida,14,3.0,4.0,2,28.57,93,13.55
+2022/2023,3837938,Paris Saint-Germain,Nuno Mendes,14,5.0,4.0,6,28.57,76,16.58
+2022/2023,3837998,Auxerre,Rayan Ny Aina Arnaldo Raveloson,14,1.0,5.0,1,35.71,94,13.4
+2023,3922239,Guinea,Morgan Guilavogui,14,3.0,0.0,1,0.0,59,21.36
+2023,3922243,Morocco,Abdessamad Ezzalzouli,14,3.0,2.0,6,14.29,65,19.38
+2023,3920403,Mauritania,Aboubakary Koita,14,4.0,4.0,5,28.57,94,13.4
+2023,3920411,Egypt,Emam Ashour Metwally Abdelghany,14,1.0,3.0,4,21.43,100,12.6
+2023,3922659,Côte d'Ivoire,Jean Michaël Seri,14,1.0,6.0,1,42.86,85,14.82
+2023,3922658,Cape Verde Islands,João Paulo Moreira Fernandes,14,1.0,4.0,0,28.57,120,10.5
+2022/2023,3837947,Lens,Florian Sotoca,14,2.0,1.0,3,7.14,47,26.81
+2023,3920407,Namibia,Riaan Hanamub,14,0.0,5.0,0,35.71,91,13.85
+2023,3922239,Guinea,Amadou Diawara,14,4.0,4.0,0,28.57,95,13.26
+2023,3922243,South Africa,Khuliso Johnson Mudau,14,0.0,4.0,0,28.57,97,12.99
+2023,3920404,Tunisia,Ali Abdi,14,2.0,3.0,4,21.43,97,12.99
+2022/2023,3837680,Paris Saint-Germain,Renato Júnior Luz Sanches,14,2.0,2.0,6,14.29,63,20.0
+2023,3922658,Cape Verde Islands,Kevin Lenini Gonçalves Pereira de Pina,14,1.0,3.0,1,21.43,64,19.69
+2023,3877194,Charlotte,Adilson Malanda,14,2.0,3.0,0,21.43,85,14.82
+2022/2023,3837839,Stade de Reims,Emmanuel Agbadou,14,2.0,6.0,1,42.86,88,14.32
+2022/2023,3837695,Paris Saint-Germain,Pablo Sarabia García,14,4.0,3.0,6,21.43,69,18.26
+2023,3920416,South Africa,Thapelo James Morena,14,3.0,3.0,5,21.43,65,19.38
+2023,3877194,Inter Miami,Sergio Busquets i Burgos,14,2.0,4.0,0,28.57,93,13.55
+2023,3920396,Egypt,Mostafa Mohamed Ahmed Abdallah,14,2.0,4.0,3,28.57,95,13.26
+2023,3920400,Cameroon,Georges-Kévin Nkoudou Mbida,14,3.0,5.0,4,35.71,96,13.13
+2023,3920396,Ghana,Denis Odoi,14,5.0,1.0,0,7.14,95,13.26
+2023,3920409,Nigeria,Moses Daddy-Ajala Simon,14,2.0,4.0,4,28.57,95,13.26
+2022/2023,3837876,Lille,Bafodé Diakité,14,3.0,2.0,3,14.29,65,19.38
+2023,3920411,Cape Verde Islands,Bryan Silva Teixera,14,3.0,4.0,5,28.57,35,36.0
+2022/2023,3837659,Paris Saint-Germain,Sergio Ramos García,14,2.0,3.0,2,21.43,90,14.0
+2023,3922241,Mauritania,Khadim Diaw,14,3.0,6.0,0,42.86,99,12.73
+2022/2023,3837987,Paris Saint-Germain,Achraf Hakimi Mouh,14,2.0,3.0,5,21.43,76,16.58
+2022/2023,3837876,Paris Saint-Germain,Vitor Machado Ferreira,14,2.0,1.0,1,7.14,73,17.26
+2022/2023,3837827,Paris Saint-Germain,Nordi Mukiele Mulere,14,2.0,4.0,1,28.57,53,23.77
+2023,3920393,Tunisia,Haythem Jouini,14,1.0,3.0,7,21.43,81,15.56
+2023,3877170,Cincinnati,Nick Hagglund,14,1.0,7.0,0,50.0,92,13.7
+2023,3922240,Egypt,Ahmed Sayed,14,3.0,4.0,5,28.57,89,14.16
+2023,3920406,Tanzania,Denis Kibu,14,5.0,4.0,3,28.57,69,18.26
+2023,3877194,Inter Miami,DeAndre Yedlin,14,3.0,1.0,1,7.14,86,14.65
+2023,3877170,Cincinnati,Brandon Vázquez Toledo,14,1.0,3.0,4,21.43,87,14.48
+2022/2023,3837727,OGC Nice,Pablo Paulino Rosario,14,1.0,4.0,3,28.57,91,13.85
+2023,3922659,Côte d'Ivoire,Simon Adingra,14,0.0,3.0,4,21.43,37,34.05
+2023,3920413,Gambia,Muhammed Sanneh,14,2.0,6.0,1,42.86,93,13.55
+2023,3920384,Guinea-Bissau,Opa Sangante,14,2.0,3.0,0,21.43,93,13.55
+2023,3922658,South Africa,Percy Tau,14,2.0,3.0,2,21.43,84,15.0
+2022/2023,3837706,Stade Brestois,Lilian Brassier,14,2.0,2.0,1,14.29,93,13.55
+2023,3920403,Angola,Jacinto Muondo Dala,14,1.0,4.0,6,28.57,84,15.0
+2023,3920408,Equatorial Guinea,Federico Bikoro Akieme Nchama,14,1.0,4.0,0,28.57,89,14.16
+2023,3877170,Inter Miami,Serhiy Kryvtsov,14,2.0,3.0,0,21.43,94,13.4
+2023,3920411,Cape Verde Islands,Dylan Tavares dos Santos,14,1.0,5.0,1,35.71,98,12.86
+2023,3877060,New York Red Bulls,John Tolkin,14,1.0,3.0,7,21.43,91,13.85
+2022/2023,3837918,Paris Saint-Germain,Vitor Machado Ferreira,14,1.0,3.0,3,21.43,95,13.26
+2022/2023,3837659,Montpellier,Wahbi Khazri,14,5.0,5.0,5,35.71,77,16.36
+2022/2023,3837683,Toulouse,Anthony Rouault,14,2.0,7.0,0,50.0,91,13.85
+2023,3922321,Nigeria,Zaidu Sanusi,14,3.0,0.0,4,0.0,95,13.26
+2023,3922240,Congo DR,Arthur Masuaku,14,2.0,6.0,1,42.86,120,10.5
+2022/2023,3837771,Troyes,Jackson Gabriel Porozo Vernaza,14,3.0,3.0,0,21.43,84,15.0
+2022/2023,3837717,Lyon,Malo Gusto,14,4.0,7.0,3,50.0,92,13.7
+2022/2023,3837683,Toulouse,Zakaria Aboukhlal,14,0.0,4.0,4,28.57,63,20.0
+2022/2023,3837785,Auxerre,Gideon Mensah,14,5.0,3.0,3,21.43,88,14.32
+2023,3877090,Inter Miami,Sergio Busquets i Burgos,14,4.0,5.0,0,35.71,89,14.16
+2023,3922658,South Africa,Thapelo James Morena,14,5.0,2.0,5,14.29,61,20.66
+2023,3922243,Morocco,Selim Amallah,14,3.0,2.0,4,14.29,58,21.72
+2023,3920400,Cameroon,Enzo Gianni Tchato Mbiayi,14,1.0,2.0,3,14.29,90,14.0
+2023,3877060,New York Red Bulls,Frankie Amaya,14,4.0,4.0,5,28.57,63,20.0
+2022/2023,3837954,Angers,Yan Valery,14,1.0,8.0,2,57.14,89,14.16
+2023,3920387,Cape Verde Islands,Jovane Eduardo Borges Cabral,14,2.0,3.0,3,21.43,83,15.18
+2023,3920410,Mozambique,Geny Cipriano Catamo,14,4.0,4.0,3,28.57,95,13.26
+2022/2023,3837662,Lille,Jonathan Bamba,14,1.0,0.0,8,0.0,84,15.0
+2023,3920386,Nigeria,Victor James Osimhen,14,3.0,1.0,11,7.14,96,13.13
+2022/2023,3837938,OGC Nice,Dante Bonfim da Costa Santos,14,4.0,3.0,2,21.43,90,14.0
+2022/2023,3837902,Stade Brestois,Achraf Dari,14,1.0,3.0,1,21.43,90,14.0
+2023,3922237,Angola,Eddie Marcos Melo Afonso,14,1.0,3.0,1,21.43,94,13.4
+2023,3920394,Morocco,Achraf Hakimi Mouh,14,4.0,5.0,7,35.71,96,13.13
+2023,3920412,Guinea,Amadou Diawara,14,4.0,4.0,1,28.57,93,13.55
+2023,3877090,LAFC,Aaron Long,14,1.0,4.0,2,28.57,93,13.55
+2022/2023,3837706,Stade Brestois,Islam Slimani,14,2.0,3.0,4,21.43,94,13.4
+2022/2023,3837771,Paris Saint-Germain,Fabián Ruiz Peña,14,4.0,6.0,5,42.86,32,39.38
+2023,3920392,Burkina Faso,Stephane Aziz Ki,14,5.0,5.0,6,35.71,85,14.82
+2023,3920418,Congo DR,Meschak Elia,14,2.0,0.0,6,0.0,38,33.16
+2023,3922321,Angola,Manuel Luís da Silva Cafumana,14,4.0,5.0,1,35.71,95,13.26
+2023,3922838,Côte d'Ivoire,Ghislain Konan,14,4.0,4.0,2,28.57,92,13.7
+2023,3920400,Cameroon,Christopher Wooh,14,3.0,3.0,1,21.43,96,13.13
+2022/2023,3837896,Nantes,Jean-Charles Castelletto,14,3.0,2.0,0,14.29,89,14.16
+2022/2023,3837706,Paris Saint-Germain,Vitor Machado Ferreira,14,3.0,2.0,6,14.29,86,14.65
+2023,3920400,Cameroon,Yvan Neyou Noupa,13,2.0,4.0,4,30.77,78,15.0
+2023,3920405,Morocco,Hakim Ziyech,13,3.0,2.0,2,15.38,71,16.48
+2023,3920401,Gambia,Saidy Janko,13,3.0,2.0,1,15.38,96,12.19
+2023,3922238,Cameroon,Jules Olivier Ntcham,13,5.0,3.0,3,23.08,98,11.94
+2023,3920403,Mauritania,Sidi Bouna Sidi Amar,13,4.0,5.0,4,38.46,79,14.81
+2023,3922239,Guinea,Mohamed Bayo,13,0.0,3.0,4,23.08,97,12.06
+2022/2023,3837771,Paris Saint-Germain,Neymar da Silva Santos Junior,13,3.0,2.0,9,15.38,92,12.72
+2023,3920414,Burkina Faso,Issa Kabore,13,3.0,3.0,3,23.08,96,12.19
+2023,3920411,Cape Verde Islands,Gilson Benchimol Tavares,13,3.0,1.0,6,7.69,62,18.87
+2023,3920403,Angola,Deivi Miguel Vieira,13,5.0,2.0,4,15.38,75,15.6
+2023,3920394,Morocco,Abdessamad Ezzalzouli,13,5.0,1.0,9,7.69,69,16.96
+2023,3877115,Toronto FC,Federico Bernardeschi,13,2.0,1.0,2,7.69,90,13.0
+2023,3877060,New York Red Bulls,Elias Manoel Alves de Paula,13,0.0,2.0,8,15.38,45,26.0
+2022/2023,3837896,Nantes,Jaouen Hadjam,13,0.0,3.0,2,23.08,67,17.46
+2022/2023,3837827,Paris Saint-Germain,Neymar da Silva Santos Junior,13,3.0,1.0,7,7.69,95,12.32
+2022/2023,3837839,Stade de Reims,Thomas Foket,13,1.0,2.0,2,15.38,91,12.86
+2023,3877060,Inter Miami,Benjamin Cremaschi,13,3.0,2.0,4,15.38,19,61.58
+2022/2023,3837885,Marseille,Alexis Alejandro Sánchez Sánchez,13,4.0,3.0,9,23.08,79,14.81
+2023,3920401,Gambia,Jacob Mendy,13,0.0,4.0,1,30.77,95,12.32
+2023,3920388,Senegal,Moussa Niakhate,13,2.0,3.0,0,23.08,80,14.63
+2022/2023,3837859,Toulouse,Anthony Rouault,13,1.0,5.0,0,38.46,92,12.72
+2022/2023,3837747,Marseille,Leonardo Julián Balerdi Rossa,13,0.0,5.0,2,38.46,93,12.58
+2022/2023,3837963,Paris Saint-Germain,Marcos Aoás Corrêa,13,3.0,5.0,3,38.46,93,12.58
+2023,3920389,Guinea,Moriba Kourouma Kourouma,13,4.0,3.0,2,23.08,91,12.86
+2022/2023,3837680,AS Monaco,Guillermo Alfonso Maripán Loaysa,13,1.0,7.0,0,53.85,94,12.45
+2022/2023,3837818,Angers,Souleyman Doumbia,13,2.0,4.0,2,30.77,94,12.45
+2022/2023,3837963,Paris Saint-Germain,Vitor Machado Ferreira,13,6.0,4.0,9,30.77,64,18.28
+2022/2023,3837896,Nantes,Fabien Centonze,13,1.0,4.0,1,30.77,93,12.58
+2022/2023,3837928,Paris Saint-Germain,Danilo Luís Hélio Pereira,13,3.0,3.0,0,23.08,94,12.45
+2022/2023,3837827,Paris Saint-Germain,Sergio Ramos García,13,1.0,4.0,0,30.77,95,12.32
+2023,3877115,Toronto FC,Sigurd Rosted,13,1.0,3.0,2,23.08,91,12.86
+2023,3920389,Cameroon,Olivier Michel Kemen,13,2.0,4.0,3,30.77,84,13.93
+2022/2023,3837747,Marseille,Alexis Alejandro Sánchez Sánchez,13,2.0,1.0,9,7.69,78,15.0
+2022/2023,3837818,Angers,Abdallah Dipo Sima,13,3.0,1.0,2,7.69,79,14.81
+2022/2023,3837876,Paris Saint-Germain,Juan Bernat Velasco,13,2.0,4.0,0,30.77,65,18.0
+2023,3920407,Namibia,Petrus Shitembi,13,4.0,4.0,0,30.77,49,23.88
+2022/2023,3837747,Paris Saint-Germain,Neymar da Silva Santos Junior,13,3.0,2.0,4,15.38,87,13.45
+2022/2023,3837771,Troyes,Renaud Ripart,13,1.0,5.0,2,38.46,20,58.5
+2023,3877060,New York Red Bulls,Peter Stroud,13,1.0,2.0,5,15.38,47,24.89
+2023,3920414,Burkina Faso,Abdoul Razack Guiebre,13,6.0,7.0,4,53.85,76,15.39
+2023,3920411,Cape Verde Islands,Edilson Alberto Monteiro Sanches Borges,13,0.0,5.0,0,38.46,97,12.06
+2022/2023,3837785,Paris Saint-Germain,Nuno Mendes,13,0.0,4.0,4,30.77,90,13.0
+2022/2023,3837876,Paris Saint-Germain,Hugo Ekitike,13,4.0,3.0,4,23.08,45,26.0
+2022/2023,3837963,Paris Saint-Germain,Carlos Soler Barragán,13,2.0,4.0,3,30.77,43,27.21
+2023,3920392,Mauritania,Hemeya Tanjy,13,4.0,8.0,1,61.54,56,20.89
+2022/2023,3837650,Paris Saint-Germain,Presnel Kimpembe,13,3.0,3.0,0,23.08,89,13.15
+2022/2023,3837727,Paris Saint-Germain,Hugo Ekitike,13,2.0,3.0,6,23.08,58,20.17
+2023,3922240,Egypt,Mohamed Hamdy Sharaf,13,2.0,8.0,2,61.54,50,23.4
+2022/2023,3837752,Paris Saint-Germain,Achraf Hakimi Mouh,13,5.0,8.0,3,61.54,88,13.3
+2022/2023,3837938,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,13,4.0,4.0,8,30.77,91,12.86
+2023,3920384,Guinea-Bissau,Mama Samba Baldé,13,2.0,1.0,4,7.69,84,13.93
+2022/2023,3837785,Paris Saint-Germain,Nordi Mukiele Mulere,13,1.0,3.0,1,23.08,90,13.0
+2022/2023,3837695,Nantes,Andrei Girotto,13,2.0,7.0,2,53.85,88,13.3
+2023,3877090,LAFC,Ryan Hollingshead,13,2.0,2.0,5,15.38,92,12.72
+2023,3920412,Senegal,Pape Matar Sarr,13,3.0,3.0,1,23.08,70,16.71
+2023,3920417,Mali,Nene Dorgeles,13,10.0,1.0,3,7.69,93,12.58
+2023,3877194,Inter Miami,Benjamin Cremaschi,13,3.0,1.0,3,7.69,73,16.03
+2022/2023,3837987,Paris Saint-Germain,Juan Bernat Velasco,13,6.0,5.0,5,38.46,82,14.27
+2023,3920401,Gambia,Hamza Barry,13,2.0,2.0,2,15.38,35,33.43
+2023,3877072,Nashville SC,Alex Muyl,13,2.0,1.0,0,7.69,62,18.87
+2023,3920415,Mauritania,Souleymane Anne,13,5.0,2.0,5,15.38,69,16.96
+2022/2023,3837771,Troyes,Marcos Paulo Mesquita Lopes,13,4.0,3.0,3,23.08,88,13.3
+2023,3920410,Ghana,Joseph Paintsil,13,1.0,1.0,6,7.69,47,24.89
+2022/2023,3837918,Paris Saint-Germain,Fabián Ruiz Peña,13,2.0,3.0,1,23.08,55,21.27
+2023,3920397,Equatorial Guinea,Pablo Ganet Cómitre,13,5.0,2.0,3,15.38,72,16.25
+2022/2023,3837650,Clermont Foot,Johan Gastien,13,1.0,0.0,2,0.0,87,13.45
+2023,3920399,Cape Verde Islands,João Paulo Moreira Fernandes,13,3.0,7.0,3,53.85,93,12.58
+2022/2023,3837771,Paris Saint-Germain,Carlos Soler Barragán,13,5.0,5.0,5,38.46,76,15.39
+2023,3877170,Cincinnati,Júnior Leonardo Moreno Borrero,13,3.0,4.0,1,30.77,64,18.28
+2023,3922659,Mali,Fousseni Diabaté,13,2.0,2.0,11,15.38,61,19.18
+2023,3877060,New York Red Bulls,Cory Burke,13,0.0,2.0,3,15.38,25,46.8
+2022/2023,3837662,Lille,Angel Gomes,13,1.0,3.0,0,23.08,89,13.15
+2023,3920401,Gambia,Noah Sonko-Sundberg,13,4.0,2.0,3,15.38,80,14.63
+2022/2023,3837717,Paris Saint-Germain,Marco Verratti,13,6.0,3.0,3,23.08,63,18.57
+2023,3920409,Guinea-Bissau,Franculino Gluda Djú,13,3.0,1.0,6,7.69,49,23.88
+2023,3922242,Côte d'Ivoire,Odilon Kossonou,13,5.0,5.0,1,38.46,115,10.17
+2023,3922238,Cameroon,Christopher Wooh,13,1.0,6.0,0,46.15,100,11.7
+2022/2023,3837963,Lorient,Romain Faivre,13,1.0,0.0,1,0.0,93,12.58
+2022/2023,3837876,Paris Saint-Germain,Presnel Kimpembe,13,2.0,3.0,0,23.08,90,13.0
+2023,3920405,Morocco,Youssef En-Nesyri,13,4.0,2.0,3,15.38,79,14.81
+2023,3920387,Cape Verde Islands,Jamiro Gregory Monteiro Alvarenga,13,2.0,4.0,7,30.77,83,14.1
+2023,3923881,Côte d'Ivoire,Jean Michaël Seri,13,1.0,5.0,2,38.46,91,12.86
+2022/2023,3837928,Lyon,Corentin Tolisso,13,0.0,3.0,1,23.08,31,37.74
+2023,3920406,Zambia,Benedict Chepeshi,13,3.0,2.0,2,15.38,85,13.76
+2023,3920403,Angola,Núrio Domingos Matias Fortuna,13,3.0,4.0,1,30.77,94,12.45
+2023,3920419,Zambia,Lubambo Musonda,13,0.0,1.0,0,7.69,94,12.45
+2023,3920398,Nigeria,Ademola Lookman,13,3.0,4.0,2,30.77,78,15.0
+2023,3923881,Nigeria,Samuel Chimerenka Chukwueze,13,3.0,4.0,4,30.77,54,21.67
+2022/2023,3837947,Paris Saint-Germain,Nuno Mendes,12,3.0,2.0,2,16.67,76,14.21
+2023,3922239,Equatorial Guinea,Basilio Ndong Owono Nchamaaa,12,1.0,2.0,1,16.67,92,11.74
+2023,3920410,Ghana,Gideon Mensah,12,0.0,3.0,0,25.0,95,11.37
+2023,3920390,Algeria,Baghdad Bounedjah,12,2.0,3.0,6,25.0,66,16.36
+2023,3920391,Mali,Fousseni Diabaté,12,2.0,3.0,1,25.0,17,63.53
+2022/2023,3838017,Clermont Foot,Mehdi Zeffane,12,2.0,1.0,7,8.33,45,24.0
+2023,3920415,Algeria,Mohamed El Amine Amoura,12,0.0,3.0,4,25.0,68,15.88
+2022/2023,3837839,Stade de Reims,Junya Ito,12,1.0,1.0,2,8.33,82,13.17
+2022/2023,3837680,AS Monaco,Takumi Minamino,12,3.0,2.0,6,16.67,31,34.84
+2022/2023,3837659,Montpellier,Théo Sainte-Luce,12,5.0,0.0,3,0.0,83,13.01
+2023,3922321,Angola,Eddie Marcos Melo Afonso,12,2.0,4.0,3,33.33,76,14.21
+2022/2023,3837706,Stade Brestois,Mathias Pereira Lage,12,3.0,2.0,3,16.67,23,46.96
+2022/2023,3837695,Nantes,Mostafa Mohamed Ahmed Abdallah,12,1.0,0.0,8,0.0,79,13.67
+2022/2023,3837827,Rennes,Arnaud Kalimuendo Muinga,12,1.0,3.0,4,25.0,74,14.59
+2023,3922241,Cape Verde Islands,Jamiro Gregory Monteiro Alvarenga,12,2.0,4.0,2,33.33,100,10.8
+2023,3922237,Namibia,Ivan Kamberipa,12,3.0,6.0,0,50.0,94,11.49
+2022/2023,3837859,Toulouse,Moussa Diarra,12,2.0,0.0,1,0.0,70,15.43
+2023,3920384,Côte d'Ivoire,Ghislain Konan,12,3.0,5.0,1,41.67,92,11.74
+2023,3877115,Inter Miami,Leonardo Campana Romero,12,3.0,1.0,8,8.33,26,41.54
+2022/2023,3837706,Paris Saint-Germain,Achraf Hakimi Mouh,12,1.0,4.0,2,33.33,91,11.87
+2022/2023,3837818,Angers,Cédric Hountondji,12,0.0,4.0,0,33.33,86,12.56
+2023,3920390,Algeria,Rayan Aït Nouri,12,5.0,4.0,4,33.33,93,11.61
+2023,3920398,Nigeria,Temitayo Olufisayo Olaoluwa Aina,12,0.0,4.0,1,33.33,95,11.37
+2023,3922243,South Africa,Aubrey Maphosa Modiba,12,1.0,4.0,2,33.33,100,10.8
+2023,3920386,Nigeria,Alex Iwobi,12,1.0,4.0,4,33.33,93,11.61
+2023,3920388,Senegal,Habibou Mouhamadou Diallo,12,2.0,1.0,8,8.33,57,18.95
+2023,3920408,Côte d'Ivoire,Christian Kouamé,12,3.0,1.0,7,8.33,63,17.14
+2023,3920394,Tanzania,Morice Michael Abraham,12,3.0,2.0,1,16.67,49,22.04
+2022/2023,3837752,AC Ajaccio,Bevic Moussiti-Oko,12,1.0,1.0,5,8.33,56,19.29
+2023,3922240,Egypt,Hamdi Fathi,12,3.0,3.0,5,25.0,98,11.02
+2022/2023,3837947,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,12,4.0,2.0,6,16.67,92,11.74
+2022/2023,3837659,Paris Saint-Germain,Achraf Hakimi Mouh,12,3.0,5.0,4,41.67,85,12.71
+2023,3923881,Côte d'Ivoire,Simon Adingra,12,1.0,6.0,4,50.0,95,11.37
+2023,3920415,Algeria,Baghdad Bounedjah,12,1.0,1.0,8,8.33,101,10.69
+2023,3922241,Cape Verde Islands,Deroy Duarte,12,4.0,1.0,1,8.33,65,16.62
+2023,3922838,Côte d'Ivoire,Seko Fofana,12,3.0,2.0,1,16.67,60,18.0
+2023,3920384,Guinea-Bissau,Mauro Daniel Rodrigues Teixeira,12,3.0,1.0,3,8.33,74,14.59
+2022/2023,3837839,Paris Saint-Germain,Carlos Soler Barragán,12,1.0,5.0,3,41.67,61,17.7
+2022/2023,3837844,Montpellier,Maxime Esteve,12,1.0,2.0,1,16.67,92,11.74
+2023,3920389,Cameroon,Frank Magri,12,4.0,1.0,6,8.33,72,15.0
+2022/2023,3837771,Paris Saint-Germain,Vitor Machado Ferreira,12,5.0,3.0,5,25.0,58,18.62
+2023,3920393,Tunisia,Wajdi Kechrida,12,3.0,4.0,1,33.33,94,11.49
+2022/2023,3837818,Paris Saint-Germain,Sergio Ramos García,12,3.0,6.0,1,50.0,93,11.61
+2022/2023,3837683,Paris Saint-Germain,Nuno Mendes,12,3.0,3.0,5,25.0,81,13.33
+2022/2023,3837650,Paris Saint-Germain,Pablo Sarabia García,12,2.0,1.0,2,8.33,73,14.79
+2023,3922239,Equatorial Guinea,José Ndong Machín Dicombo,12,2.0,0.0,1,0.0,95,11.37
+2023,3920411,Egypt,Ahmed Mohamed Abo El Fotouh Mohamed,12,1.0,3.0,3,25.0,48,22.5
+2023,3920391,Mali,Amadou Haïdara,12,0.0,5.0,0,41.67,85,12.71
+2023,3922659,Mali,Adama Traoré,12,3.0,2.0,4,16.67,61,17.7
+2023,3877194,Charlotte,Ashley Westwood,12,4.0,2.0,2,16.67,93,11.61
+2023,3920409,Nigeria,Calvin Bassey Ughelumba,12,2.0,7.0,2,58.33,93,11.61
+2023,3920398,Nigeria,Zaidu Sanusi,12,3.0,4.0,5,33.33,77,14.03
+2022/2023,3837998,Auxerre,Souleymane Isaak Toure,12,0.0,2.0,0,16.67,94,11.49
+2023,3877060,New York Red Bulls,Dru Yearwood,12,3.0,1.0,4,8.33,45,24.0
+2023,3920395,Congo DR,Samuel Moutoussamy,12,3.0,1.0,1,8.33,94,11.49
+2022/2023,3837844,Paris Saint-Germain,Renato Júnior Luz Sanches,12,3.0,3.0,2,25.0,60,18.0
+2022/2023,3837827,Paris Saint-Germain,Juan Bernat Velasco,12,2.0,2.0,2,16.67,94,11.49
+2023,3922321,Angola,Alfredo Kulembe Ribeiro,12,5.0,3.0,4,25.0,64,16.88
+2022/2023,3837876,Paris Saint-Germain,Kylian Mbappé Lottin,12,2.0,0.0,9,0.0,95,11.37
+2023,3920402,Algeria,Ramy Bensebaini,12,2.0,3.0,0,25.0,97,11.13
+2023,3877060,New York Red Bulls,Tom Barlow,12,1.0,2.0,8,16.67,48,22.5
+2022/2023,3837662,Lille,Bafodé Diakité,12,1.0,4.0,2,33.33,88,12.27
+2023,3877170,Cincinnati,Yuya Kubo,12,2.0,3.0,0,25.0,30,36.0
+2022/2023,3837896,Paris Saint-Germain,Marcos Aoás Corrêa,12,4.0,2.0,3,16.67,75,14.4
+2023,3920408,Equatorial Guinea,Emilio Nsue López,12,3.0,0.0,3,0.0,75,14.4
+2023,3920384,Guinea-Bissau,Janio Bikel Figueiredo Silva,12,4.0,4.0,0,33.33,93,11.61
+2023,3920401,Gambia,Ebrima Colley,12,3.0,0.0,3,0.0,70,15.43
+2023,3922658,Cape Verde Islands,Roberto Lopes,12,3.0,3.0,0,25.0,120,9.0
+2023,3877170,Cincinnati,Santiago Arias Naranjo,12,1.0,4.0,2,33.33,92,11.74
+2023,3920385,Mozambique,Witiness Chimoio João Quembo,12,1.0,3.0,1,25.0,80,13.5
+2022/2023,3837963,Lorient,Ayman Kari,12,2.0,2.0,3,16.67,35,30.86
+2022/2023,3837650,Paris Saint-Germain,Neymar da Silva Santos Junior,12,2.0,1.0,8,8.33,87,12.41
+2023,3920386,Equatorial Guinea,Carlos Akapo Martínez,12,3.0,5.0,0,41.67,95,11.37
+2023,3920412,Senegal,Ismaïla Sarr,12,3.0,1.0,5,8.33,69,15.65
+2023,3922242,Côte d'Ivoire,Serge Aurier,12,3.0,2.0,3,16.67,126,8.57
+2023,3920388,Senegal,Abdou Diallo,12,1.0,5.0,0,41.67,57,18.95
+2023,3923880,Congo DR,Brian Jephte Bayeye,12,0.0,4.0,0,33.33,86,12.56
+2023,3920389,Guinea,Antoine Conte,12,1.0,2.0,1,16.67,54,20.0
+2023,3920400,Senegal,Ismaïla Sarr,12,5.0,1.0,5,8.33,77,14.03
+2023,3920389,Guinea,Mory Konaté,12,2.0,2.0,1,16.67,93,11.61
+2023,3920386,Nigeria,Moses Daddy-Ajala Simon,12,3.0,1.0,7,8.33,67,16.12
+2023,3920399,Cape Verde Islands,Deroy Duarte,12,2.0,4.0,3,33.33,76,14.21
+2023,3920411,Egypt,Hamdi Fathi,12,1.0,2.0,3,16.67,47,22.98
+2023,3920392,Burkina Faso,Mohamed Konaté,12,2.0,2.0,8,16.67,83,13.01
+2023,3920393,Tunisia,Ellyes Joris Skhiri,12,3.0,5.0,1,41.67,91,11.87
+2023,3920398,Côte d'Ivoire,Ibrahim Sangaré,12,0.0,2.0,2,16.67,93,11.61
+2022/2023,3837727,OGC Nice,Mattia Viti,12,1.0,5.0,2,41.67,93,11.61
+2023,3923880,Congo DR,Silas Katompa Mvumpa,12,1.0,5.0,5,41.67,77,14.03
+2023,3922242,Côte d'Ivoire,Ghislain Konan,12,4.0,4.0,2,33.33,117,9.23
+2023,3920416,Tunisia,Yassine Meriah,12,3.0,4.0,2,33.33,94,11.49
+2023,3922659,Mali,Lassana Coulibaly,12,3.0,4.0,2,33.33,86,12.56
+2023,3920390,Algeria,Fares Chaïbi,12,4.0,0.0,6,0.0,95,11.37
+2023,3920419,Morocco,Ismael Saibari,12,2.0,2.0,5,16.67,67,16.12
+2022/2023,3837662,Lille,Yusuf Yazıcı,12,1.0,0.0,4,0.0,56,19.29
+2023,3920413,Cameroon,Christopher Wooh,12,1.0,3.0,0,25.0,91,11.87
+2023,3922239,Guinea,Sekou Oumar Sylla,12,2.0,2.0,3,16.67,77,14.03
+2023,3922242,Côte d'Ivoire,Obite Evan Ndicka,12,3.0,5.0,0,41.67,116,9.31
+2023,3922837,Nigeria,Bright Osayi-Samuel,12,1.0,2.0,3,16.67,119,9.08
+2023,3877060,New York Red Bulls,Omir Guadalupe Fernandez Mosso,12,0.0,1.0,3,8.33,74,14.59
+2022/2023,3837662,Paris Saint-Germain,Vitor Machado Ferreira,12,0.0,2.0,3,16.67,81,13.33
+2023,3922244,Burkina Faso,Edmond Fayçal Tapsoba,12,4.0,2.0,0,16.67,97,11.13
+2022/2023,3837680,Paris Saint-Germain,Neymar da Silva Santos Junior,12,6.0,2.0,3,16.67,95,11.37
+2023,3920396,Egypt,Mostafa Fathi,12,5.0,4.0,5,33.33,48,22.5
+2023,3922838,Côte d'Ivoire,Franck Yannick Kessié,12,4.0,4.0,2,33.33,94,11.49
+2023,3922241,Mauritania,El Hacen Houeibib,12,3.0,7.0,0,58.33,96,11.25
+2022/2023,3837680,Paris Saint-Germain,Kylian Mbappé Lottin,12,0.0,0.0,7,0.0,95,11.37
+2022/2023,3837706,Paris Saint-Germain,Neymar da Silva Santos Junior,12,3.0,2.0,7,16.67,76,14.21
+2023,3877194,Charlotte,Nathan Byrne,12,1.0,4.0,1,33.33,88,12.27
+2022/2023,3837650,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,11,2.0,6.0,7,54.55,89,11.12
+2023,3922243,Morocco,Amine Adli,11,4.0,2.0,3,18.18,58,17.07
+2022/2023,3837998,Paris Saint-Germain,Kylian Mbappé Lottin,11,1.0,1.0,5,9.09,95,10.42
+2023,3920388,Senegal,Sadio Mané,11,2.0,5.0,6,45.45,94,10.53
+2023,3920401,Guinea,Abdoulaye Touré,11,3.0,5.0,4,45.45,97,10.21
+2022/2023,3837650,Clermont Foot,Muhammed Cham Saracevic,11,4.0,1.0,3,9.09,72,13.75
+2023,3920394,Tanzania,Ibrahim Abdallah Hamad,11,1.0,6.0,0,54.55,93,10.65
+2023,3920416,Tunisia,Montassar Omar Talbi,11,1.0,2.0,1,18.18,91,10.88
+2023,3920389,Guinea,Facinet Conte,11,1.0,2.0,3,18.18,40,24.75
+2023,3922242,Côte d'Ivoire,Max-Alain Gradel,11,4.0,2.0,5,18.18,58,17.07
+2022/2023,3837706,Paris Saint-Germain,Fabián Ruiz Peña,11,3.0,5.0,0,45.45,32,30.94
+2023,3920387,Ghana,Alexander Djiku,11,1.0,5.0,0,45.45,95,10.42
+2023,3877090,Inter Miami,Jordi Alba Ramos,11,1.0,3.0,1,27.27,80,12.38
+2023,3920393,Namibia,Bethuel Muzeu,11,1.0,1.0,1,9.09,20,49.5
+2023,3877194,Charlotte,Kamil Jóźwiak,11,6.0,4.0,4,36.36,66,15.0
+2023,3877072,Inter Miami,Dixon Jair Arroyo Espinoza,11,4.0,4.0,2,36.36,48,20.63
+2023,3922321,Nigeria,Moses Daddy-Ajala Simon,11,3.0,4.0,5,36.36,94,10.53
+2022/2023,3837839,Paris Saint-Germain,Marcos Aoás Corrêa,11,2.0,2.0,0,18.18,90,11.0
+2023,3922242,Côte d'Ivoire,Oumar Diakité,11,4.0,3.0,4,27.27,59,16.78
+2023,3877072,Nashville SC,Teal Alexander Bunbury,11,0.0,1.0,2,9.09,46,21.52
+2023,3922321,Nigeria,Calvin Bassey Ughelumba,11,0.0,5.0,1,45.45,96,10.31
+2023,3922241,Cape Verde Islands,Roberto Lopes,11,1.0,4.0,1,36.36,99,10.0
+2023,3920402,Burkina Faso,Adamo Nagalo,11,1.0,3.0,0,27.27,82,12.07
+2023,3877115,Inter Miami,Serhiy Kryvtsov,11,1.0,4.0,0,36.36,92,10.76
+2022/2023,3838004,Paris Saint-Germain,Danilo Luís Hélio Pereira,11,4.0,2.0,0,18.18,91,10.88
+2023,3920410,Mozambique,Reinildo Isnard Mandava,11,2.0,2.0,0,18.18,95,10.42
+2022/2023,3837902,Paris Saint-Germain,Fabián Ruiz Peña,11,2.0,3.0,4,27.27,74,13.38
+2022/2023,3837650,Paris Saint-Germain,Nuno Mendes,11,4.0,0.0,6,0.0,76,13.03
+2023,3922238,Cameroon,Karl Brillant Toko Ekambi,11,1.0,2.0,5,18.18,95,10.42
+2023,3923881,Côte d'Ivoire,Sébastien Haller,11,0.0,2.0,9,18.18,85,11.65
+2022/2023,3837827,Paris Saint-Germain,Vitor Machado Ferreira,11,5.0,5.0,4,45.45,71,13.94
+2022/2023,3837683,Toulouse,Mikkel Desler,11,3.0,3.0,1,27.27,90,11.0
+2022/2023,3837683,Toulouse,Fares Chaïbi,11,4.0,0.0,6,0.0,26,38.08
+2022/2023,3837683,Paris Saint-Germain,Vitor Machado Ferreira,11,4.0,6.0,0,54.55,91,10.88
+2023,3920384,Guinea-Bissau,Carlos Manuel Cardoso Mané,11,2.0,1.0,1,9.09,64,15.47
+2023,3922658,Cape Verde Islands,Willy Afonso Semedo Johnson,11,1.0,2.0,3,18.18,57,17.37
+2023,3920385,Egypt,Mostafa Mohamed Ahmed Abdallah,11,1.0,0.0,7,0.0,90,11.0
+2023,3920403,Mauritania,Guessouma Fofana,11,4.0,4.0,0,36.36,58,17.07
+2022/2023,3837947,Paris Saint-Germain,Marcos Aoás Corrêa,11,1.0,3.0,2,27.27,87,11.38
+2023,3920410,Ghana,Antoine Semenyo,11,1.0,2.0,7,18.18,71,13.94
+2022/2023,3837947,Lens,Deiver Andrés Machado Mena,11,1.0,1.0,4,9.09,71,13.94
+2023,3920395,Zambia,Lubambo Musonda,11,6.0,0.0,3,0.0,73,13.56
+2023,3920393,Namibia,Deon Hotto Kavendji,11,1.0,3.0,5,27.27,93,10.65
+2023,3920399,Mozambique,Reinildo Isnard Mandava,11,2.0,4.0,1,36.36,94,10.53
+2022/2023,3837727,Paris Saint-Germain,Neymar da Silva Santos Junior,11,1.0,2.0,2,18.18,92,10.76
+2022/2023,3837896,Paris Saint-Germain,Nordi Mukiele Mulere,11,4.0,2.0,5,18.18,70,14.14
+2023,3922240,Congo DR,Aaron Tshibola,11,0.0,1.0,3,9.09,48,20.63
+2022/2023,3837680,AS Monaco,Wissam Ben Yedder,11,3.0,0.0,7,0.0,96,10.31
+2023,3920418,Tanzania,Mohamed Hussein Mohamed,11,0.0,6.0,0,54.55,94,10.53
+2023,3920402,Burkina Faso,Ibrahim Blati Touré,11,2.0,2.0,1,18.18,96,10.31
+2023,3922837,South Africa,Khuliso Johnson Mudau,11,1.0,4.0,2,36.36,121,8.18
+2023,3920401,Guinea,Sekou Oumar Sylla,11,2.0,4.0,2,36.36,75,13.2
+2023,3922837,Nigeria,William Troost-Ekong,11,1.0,1.0,0,9.09,125,7.92
+2023,3922321,Angola,Deivi Miguel Vieira,11,1.0,3.0,3,27.27,65,15.23
+2022/2023,3837844,Montpellier,Sérigné Faye,11,3.0,1.0,1,9.09,30,33.0
+2022/2023,3837695,Nantes,Pedro Chirivella Burgos,11,2.0,3.0,4,27.27,90,11.0
+2022/2023,3837706,Paris Saint-Germain,Marco Verratti,11,5.0,3.0,4,27.27,61,16.23
+2023,3922658,South Africa,Khuliso Johnson Mudau,11,0.0,5.0,0,45.45,101,9.8
+2023,3922240,Egypt,Marwan Attia Fahim Ghallab,11,1.0,4.0,1,36.36,82,12.07
+2023,3922238,Cameroon,André-Frank Zambo Anguissa,11,3.0,5.0,4,45.45,99,10.0
+2023,3920411,Egypt,Ahmed Elsayed Ali Elsayed Hegazy,11,2.0,6.0,0,54.55,97,10.21
+2023,3922238,Cameroon,Nicolas Moumi Ngamaleu,11,3.0,4.0,5,36.36,85,11.65
+2022/2023,3837827,Paris Saint-Germain,Hugo Ekitike,11,2.0,0.0,10,0.0,53,18.68
+2022/2023,3837662,Paris Saint-Germain,Marco Verratti,11,2.0,3.0,1,27.27,62,15.97
+2022/2023,3837954,Paris Saint-Germain,Kylian Mbappé Lottin,11,2.0,3.0,6,27.27,90,11.0
+2023,3920396,Egypt,Ahmed Elsayed Ali Elsayed Hegazy,11,3.0,4.0,0,36.36,96,10.31
+2023,3920398,Côte d'Ivoire,Franck Yannick Kessié,11,5.0,2.0,7,18.18,96,10.31
+2023,3920385,Egypt,Mahmoud Ibrahim Hassan,11,3.0,1.0,6,9.09,65,15.23
+2022/2023,3837947,Paris Saint-Germain,Kylian Mbappé Lottin,11,1.0,0.0,9,0.0,89,11.12
+2023,3923880,South Africa,Khuliso Johnson Mudau,11,0.0,3.0,1,27.27,94,10.53
+2023,3920403,Angola,Manuel Keliano,11,1.0,3.0,0,27.27,30,33.0
+2023,3920405,Congo DR,Yoane Wissa,11,0.0,2.0,2,18.18,96,10.31
+2022/2023,3837998,Auxerre,Jubal Rocha Mendes Junior,11,1.0,2.0,1,18.18,94,10.53
+2023,3920393,Tunisia,Youssef Msakni,11,1.0,7.0,1,63.64,95,10.42
+2023,3922838,Congo DR,Henoc Inonga Baka,11,2.0,3.0,0,27.27,93,10.65
+2023,3920390,Algeria,Nabil Bentaleb,11,3.0,2.0,2,18.18,70,14.14
+2023,3920400,Senegal,Pape Gueye,11,2.0,5.0,0,45.45,97,10.21
+2023,3877072,Nashville SC,Aníbal Cesis Godoy,11,1.0,1.0,0,9.09,32,30.94
+2023,3920400,Cameroon,Nouhou Tolo,11,1.0,4.0,1,36.36,96,10.31
+2022/2023,3837727,OGC Nice,Alexis Beka Beka,11,2.0,1.0,1,9.09,15,66.0
+2023,3920409,Nigeria,Temitayo Olufisayo Olaoluwa Aina,11,4.0,3.0,5,27.27,93,10.65
+2022/2023,3837650,Paris Saint-Germain,Vitor Machado Ferreira,11,3.0,0.0,4,0.0,66,15.0
+2023,3920409,Nigeria,Raphael Onyedika,11,0.0,2.0,1,18.18,24,41.25
+2022/2023,3837680,AS Monaco,Maghnes Akliouche,11,0.0,2.0,1,18.18,38,26.05
+2023,3922838,Congo DR,Gaël Kakuta,11,2.0,1.0,3,9.09,45,22.0
+2022/2023,3837662,Paris Saint-Germain,Sergio Ramos García,11,0.0,1.0,0,9.09,78,12.69
+2023,3920388,Senegal,Ismail Jakobs,11,2.0,1.0,2,9.09,95,10.42
+2023,3920409,Guinea-Bissau,Zinho Gano,11,0.0,0.0,6,0.0,46,21.52
+2023,3877090,Inter Miami,DeAndre Yedlin,11,3.0,1.0,3,9.09,94,10.53
+2023,3877170,Cincinnati,Aaron Salem Boupendza Pozzi,11,3.0,0.0,6,0.0,50,19.8
+2023,3877090,LAFC,Cristian Gonzalo Olivera Ibarra,11,3.0,1.0,7,9.09,34,29.12
+2022/2023,3837827,Rennes,Christopher Wooh,11,0.0,2.0,1,18.18,93,10.65
+2023,3877115,Inter Miami,Noah Allen,11,6.0,4.0,4,36.36,58,17.07
+2023,3923880,Congo DR,Omenuke Mfulu,11,1.0,4.0,0,36.36,77,12.86
+2023,3922321,Angola,Cristóvão Paciência Mabululo,11,0.0,3.0,10,27.27,93,10.65
+2023,3920391,South Africa,Mothobi Mvala,11,1.0,6.0,1,54.55,90,11.0
+2022/2023,3837918,Rennes,Baptiste Santamaría,11,2.0,1.0,0,9.09,16,61.88
+2023,3922241,Cape Verde Islands,Steven Moreira,11,3.0,2.0,4,18.18,94,10.53
+2022/2023,3837928,Lyon,Houssem Aouar,11,2.0,2.0,1,18.18,26,38.08
+2023,3920394,Tanzania,Charles M'Mombwa,11,2.0,3.0,2,27.27,94,10.53
+2023,3920404,Mali,Falaye Sacko,11,1.0,2.0,1,18.18,98,10.1
+2023,3920413,Gambia,Ablie Jallow,11,2.0,2.0,4,18.18,83,11.93
+2022/2023,3837752,AC Ajaccio,Romain Hamouma,11,4.0,2.0,8,18.18,35,28.29
+2023,3877060,Inter Miami,Sergio Busquets i Burgos,11,4.0,4.0,1,36.36,32,30.94
+2023,3922659,Côte d'Ivoire,Sébastien Haller,11,2.0,4.0,5,36.36,79,12.53
+2022/2023,3837896,Paris Saint-Germain,Carlos Soler Barragán,11,1.0,4.0,0,36.36,24,41.25
+2023,3922356,Guinea,Naby Deco Keïta,11,7.0,2.0,2,18.18,95,10.42
+2022/2023,3837650,Clermont Foot,Elbasan Rashani,11,3.0,0.0,6,0.0,80,12.38
+2023,3920406,Tanzania,Faisal Salum Abdalla,11,2.0,2.0,0,18.18,58,17.07
+2023,3877060,Inter Miami,Facundo Farías,11,1.0,1.0,4,9.09,71,13.94
+2023,3920402,Burkina Faso,Issa Kabore,11,3.0,4.0,3,36.36,96,10.31
+2022/2023,3837954,Angers,Ousmane Camara,11,2.0,2.0,0,18.18,63,15.71
+2023,3922240,Egypt,Mahmoud Ibrahim Hassan,11,1.0,3.0,4,27.27,82,12.07
+2023,3922658,Cape Verde Islands,Ryan Isaac Mendes da Graça,11,3.0,4.0,4,36.36,64,15.47
+2023,3920388,Senegal,Ismaïla Sarr,11,3.0,2.0,5,18.18,74,13.38
+2023,3920417,Mali,Fousseni Diabaté,11,2.0,2.0,1,18.18,80,12.38
+2022/2023,3837747,Marseille,Amine Harit,11,2.0,1.0,0,9.09,70,14.14
+2022/2023,3837928,Paris Saint-Germain,El Chadaille Bitshiabu,11,2.0,6.0,1,54.55,59,16.78
+2022/2023,3837785,Auxerre,Lassine Sinayoko,11,4.0,2.0,3,18.18,55,18.0
+2022/2023,3837752,Paris Saint-Germain,Renato Júnior Luz Sanches,10,4.0,1.0,0,10.0,61,14.75
+2023,3920390,Algeria,Ismael Bennacer,10,4.0,2.0,3,20.0,79,11.39
+2022/2023,3837839,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,10,5.0,0.0,4,0.0,94,9.57
+2023,3877072,Inter Miami,Tomás Agustín Avilés Mancilla,10,2.0,2.0,1,20.0,94,9.57
+2023,3920395,Zambia,Kings Kangwa,10,4.0,3.0,0,30.0,87,10.34
+2023,3877060,Inter Miami,David Ruiz,10,2.0,2.0,0,20.0,59,15.25
+2023,3920384,Côte d'Ivoire,Seko Fofana,10,4.0,2.0,2,20.0,93,9.68
+2022/2023,3837662,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,10,1.0,2.0,4,20.0,90,10.0
+2023,3920415,Algeria,Rayan Aït Nouri,10,3.0,4.0,4,40.0,95,9.47
+2023,3920397,Equatorial Guinea,José Antonio Miranda Boacho,10,1.0,4.0,5,40.0,77,11.69
+2023,3922242,Senegal,Idrissa Gueye,10,0.0,3.0,2,30.0,34,26.47
+2022/2023,3837706,Stade Brestois,Christophe Hérelle,10,1.0,2.0,2,20.0,61,14.75
+2023,3920402,Burkina Faso,Adama Guira,10,1.0,2.0,1,20.0,37,24.32
+2022/2023,3837885,Paris Saint-Germain,Nordi Mukiele Mulere,10,0.0,3.0,2,30.0,60,15.0
+2022/2023,3837987,Paris Saint-Germain,Kylian Mbappé Lottin,10,4.0,3.0,9,30.0,89,10.11
+2023,3920410,Ghana,Denis Odoi,10,1.0,2.0,1,20.0,69,13.04
+2022/2023,3837650,Clermont Foot,Jim Allevinah,10,2.0,3.0,5,30.0,71,12.68
+2022/2023,3837998,Paris Saint-Germain,Marcos Aoás Corrêa,10,2.0,1.0,1,10.0,94,9.57
+2023,3920402,Burkina Faso,Abdoul Fessal Tapsoba,10,4.0,3.0,4,30.0,82,10.98
+2023,3922659,Côte d'Ivoire,Christian Kouamé,10,1.0,1.0,3,10.0,49,18.37
+2023,3920404,Tunisia,Youssef Msakni,10,1.0,2.0,4,20.0,87,10.34
+2023,3922237,Angola,Jacinto Muondo Dala,10,3.0,3.0,5,30.0,83,10.84
+2023,3920406,Zambia,Emmanuel Justine Rabby Banda,10,5.0,3.0,3,30.0,96,9.38
+2022/2023,3837650,Clermont Foot,Komnen Andrić,10,0.0,1.0,6,10.0,87,10.34
+2023,3922240,Egypt,Mohamed Naser Elsayed Elneny,10,0.0,5.0,0,50.0,111,8.11
+2023,3922658,Cape Verde Islands,Erickson Patrick Correia Andrade,10,0.0,2.0,0,20.0,63,14.29
+2023,3920392,Burkina Faso,Adama Guira,10,0.0,2.0,0,20.0,89,10.11
+2023,3922237,Angola,Jonathan Buatu Mananga,10,3.0,3.0,0,30.0,94,9.57
+2023,3920385,Egypt,Ahmed Sayed,10,2.0,2.0,2,20.0,83,10.84
+2023,3922242,Côte d'Ivoire,Simon Adingra,10,2.0,3.0,2,30.0,56,16.07
+2023,3922238,Nigeria,Temitayo Olufisayo Olaoluwa Aina,10,1.0,2.0,2,20.0,95,9.47
+2023,3920411,Egypt,Mohamed Abdel Monem,10,1.0,4.0,0,40.0,100,9.0
+2022/2023,3837938,Paris Saint-Germain,Marcos Aoás Corrêa,10,1.0,4.0,1,40.0,92,9.78
+2023,3922241,Cape Verde Islands,Kevin Lenini Gonçalves Pereira de Pina,10,6.0,5.0,1,50.0,99,9.09
+2022/2023,3837839,Paris Saint-Germain,Warren Zaire Emery,10,3.0,1.0,0,10.0,11,81.82
+2022/2023,3837662,Lille,Ismaily Gonçalves dos Santos,10,3.0,1.0,1,10.0,88,10.23
+2022/2023,3837659,Paris Saint-Germain,Nuno Mendes,10,3.0,4.0,6,40.0,90,10.0
+2023,3920415,Mauritania,Guessouma Fofana,10,0.0,3.0,0,30.0,30,30.0
+2023,3920413,Gambia,Omar Colley,10,0.0,3.0,0,30.0,68,13.24
+2022/2023,3837885,Marseille,Cengiz Ünder,10,2.0,2.0,5,20.0,80,11.25
+2023,3920397,Equatorial Guinea,Luis Miguel Nlavo Asue,10,1.0,0.0,1,0.0,15,60.0
+2023,3922244,Burkina Faso,Sacha Jordan Bansé,10,1.0,3.0,1,30.0,30,30.0
+2023,3920413,Cameroon,Georges-Kévin Nkoudou Mbida,10,3.0,2.0,5,20.0,94,9.57
+2023,3922838,Congo DR,Meschak Elia,10,2.0,1.0,3,10.0,76,11.84
+2023,3920413,Cameroon,Karl Brillant Toko Ekambi,10,2.0,4.0,3,40.0,95,9.47
+2022/2023,3837680,Paris Saint-Germain,Nuno Mendes,10,1.0,1.0,2,10.0,93,9.68
+2023,3922356,Guinea,Mohamed Bayo,10,5.0,0.0,6,0.0,91,9.89
+2023,3920388,Senegal,Pathé Ismaël Ciss,10,1.0,4.0,0,40.0,38,23.68
+2023,3922240,Congo DR,Chancel Mbemba Mangulu,10,0.0,1.0,0,10.0,131,6.87
+2022/2023,3837963,Paris Saint-Germain,Fabián Ruiz Peña,10,2.0,1.0,7,10.0,47,19.15
+2022/2023,3837706,Stade Brestois,Noah Fadiga,10,1.0,3.0,2,30.0,70,12.86
+2022/2023,3837695,Nantes,Dennis Appiah,10,1.0,3.0,0,30.0,91,9.89
+2022/2023,3837918,Rennes,Ibrahim Salah,10,0.0,1.0,0,10.0,16,56.25
+2022/2023,3837752,Paris Saint-Germain,Juan Bernat Velasco,10,1.0,4.0,0,40.0,92,9.78
+2022/2023,3837659,Montpellier,Christ-Emmanuel Faitout Maouassa,10,3.0,4.0,2,40.0,69,13.04
+2023,3920397,Equatorial Guinea,Saúl Basilio Coco-Bassey Oubiña,10,1.0,5.0,0,50.0,96,9.38
+2022/2023,3837876,Paris Saint-Germain,Sergio Ramos García,10,1.0,5.0,0,50.0,95,9.47
+2022/2023,3837938,Paris Saint-Germain,Kylian Mbappé Lottin,10,5.0,4.0,5,40.0,92,9.78
+2023,3922321,Nigeria,Victor James Osimhen,10,1.0,1.0,6,10.0,93,9.68
+2023,3920402,Algeria,Mohamed El Amine Amoura,10,3.0,2.0,6,20.0,53,16.98
+2023,3920396,Ghana,Iñaki Williams Arthuer,10,2.0,0.0,2,0.0,71,12.68
+2022/2023,3837717,Lyon,Moussa Dembélé,10,1.0,2.0,5,20.0,93,9.68
+2023,3922658,South Africa,Gomolemo Grant Kekana,10,1.0,3.0,1,30.0,120,7.5
+2022/2023,3837963,Lorient,Montassar Omar Talbi,10,2.0,5.0,0,50.0,94,9.57
+2023,3923881,Côte d'Ivoire,Seko Fofana,10,0.0,2.0,0,20.0,86,10.47
+2023,3920417,Namibia,Peter Shalulile,10,2.0,0.0,7,0.0,89,10.11
+2023,3920385,Egypt,Mohamed Abdel Monem,10,0.0,6.0,0,60.0,101,8.91
+2023,3877170,Inter Miami,DeAndre Yedlin,10,2.0,5.0,5,50.0,75,12.0
+2022/2023,3837859,Paris Saint-Germain,Hugo Ekitike,10,1.0,1.0,5,10.0,85,10.59
+2023,3877115,Inter Miami,Kamal Miller,10,0.0,3.0,0,30.0,92,9.78
+2023,3922243,Morocco,Romain Saïss,10,0.0,4.0,1,40.0,100,9.0
+2023,3920404,Mali,Sekou Koita,10,3.0,1.0,5,10.0,68,13.24
+2023,3920417,Mali,Moussa Diarra,10,3.0,1.0,0,10.0,67,13.43
+2023,3920398,Nigeria,Alex Iwobi,10,3.0,1.0,3,10.0,92,9.78
+2022/2023,3837844,Paris Saint-Germain,Vitor Machado Ferreira,10,6.0,1.0,6,10.0,68,13.24
+2023,3920401,Guinea,Mohamed Bayo,10,1.0,0.0,5,0.0,91,9.89
+2023,3877115,Toronto FC,Kobe Franklin,10,3.0,3.0,3,30.0,91,9.89
+2023,3920396,Ghana,Mohammed Kudus,10,3.0,2.0,0,20.0,89,10.11
+2023,3922242,Côte d'Ivoire,Sébastien Haller,10,0.0,2.0,4,20.0,53,16.98
+2022/2023,3837747,Marseille,Eric Bertrand Bailly,10,1.0,2.0,4,20.0,42,21.43
+2023,3922244,Burkina Faso,Abdoul Fessal Tapsoba,10,1.0,2.0,1,20.0,48,18.75
+2023,3920406,Zambia,Kennedy Musonda,10,0.0,2.0,4,20.0,21,42.86
+2023,3920407,Namibia,Lubeni Haukongo,10,3.0,5.0,0,50.0,94,9.57
+2022/2023,3837859,Paris Saint-Germain,Nuno Mendes,10,3.0,1.0,3,10.0,73,12.33
+2022/2023,3837947,Lens,Angelo Fulgini,10,2.0,2.0,3,20.0,44,20.45
+2022/2023,3837963,Paris Saint-Germain,Juan Bernat Velasco,10,2.0,2.0,1,20.0,55,16.36
+2023,3920399,Mozambique,Elias Gaspar Pelembe,10,5.0,2.0,5,20.0,48,18.75
+2022/2023,3837727,OGC Nice,Ross Barkley,10,0.0,2.0,2,20.0,60,15.0
+2022/2023,3837928,Paris Saint-Germain,Hugo Ekitike,10,3.0,3.0,2,30.0,33,27.27
+2023,3922838,Côte d'Ivoire,Max-Alain Gradel,10,2.0,2.0,4,20.0,89,10.11
+2022/2023,3837752,AC Ajaccio,Mohamed Youcef Belaïli,10,2.0,4.0,5,40.0,82,10.98
+2022/2023,3837785,Paris Saint-Germain,Carlos Soler Barragán,10,1.0,1.0,5,10.0,60,15.0
+2023,3920393,Namibia,Ngero Kaanjuka Katua,10,1.0,1.0,1,10.0,29,31.03
+2023,3920412,Guinea,Facinet Conte,10,0.0,3.0,3,30.0,73,12.33
+2023,3923880,Congo DR,Chancel Mbemba Mangulu,10,2.0,1.0,1,10.0,126,7.14
+2023,3920390,Angola,Jacinto Muondo Dala,10,0.0,2.0,2,20.0,86,10.47
+2023,3920385,Mozambique,Gildo Lourenço Vilanculos,10,0.0,0.0,0,0.0,47,19.15
+2023,3920413,Cameroon,Nouhou Tolo,10,0.0,1.0,0,10.0,98,9.18
+2023,3920407,Namibia,Absalom Iimbondi,10,4.0,5.0,2,50.0,46,19.57
+2023,3920418,Tanzania,Bakari Nondo Mwamnyeto,10,2.0,4.0,0,40.0,91,9.89
+2023,3920419,Zambia,Patson Daka,10,1.0,1.0,4,10.0,90,10.0
+2022/2023,3837827,Rennes,Jeremy Doku,10,1.0,1.0,3,10.0,29,31.03
+2023,3877115,Toronto FC,Michael Bradley,10,0.0,2.0,0,20.0,92,9.78
+2022/2023,3837859,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,10,0.0,2.0,6,20.0,93,9.68
+2023,3920396,Ghana,Alexander Djiku,10,1.0,3.0,0,30.0,95,9.47
+2022/2023,3837885,Paris Saint-Germain,Warren Zaire Emery,10,3.0,3.0,3,30.0,25,36.0
+2022/2023,3837954,Angers,Waniss Taibi,10,1.0,2.0,2,20.0,4,225.0
+2023,3920392,Mauritania,Idrissa Thiam,10,4.0,3.0,1,30.0,57,15.79
+2022/2023,3837727,OGC Nice,Dante Bonfim da Costa Santos,10,4.0,3.0,2,30.0,91,9.89
+2023,3922356,Congo DR,Cédric Bakambu,10,2.0,3.0,5,30.0,70,12.86
+2023,3920410,Ghana,Mohamed Salisu,10,0.0,3.0,0,30.0,93,9.68
+2023,3920403,Mauritania,Pape Ibnou Bâ,10,4.0,2.0,4,20.0,58,15.52
+2023,3920385,Mozambique,Edmilson Gabriel Dove,9,1.0,2.0,0,22.22,98,8.27
+2023,3922237,Angola,Valdomiro Tualungo Paulo Lameiras,9,3.0,3.0,2,33.33,19,42.63
+2023,3922321,Angola,Jonathan Buatu Mananga,9,1.0,4.0,1,44.44,96,8.44
+2023,3922837,Nigeria,Samuel Chimerenka Chukwueze,9,3.0,2.0,1,22.22,58,13.97
+2023,3920401,Guinea,Issiaga Sylla,9,0.0,3.0,0,33.33,96,8.44
+2022/2023,3837859,Paris Saint-Germain,Warren Zaire Emery,9,2.0,2.0,3,22.22,14,57.86
+2023,3920392,Burkina Faso,Issa Kabore,9,2.0,3.0,3,33.33,98,8.27
+2023,3920418,Tanzania,Lusajo Mwaikenda,9,2.0,2.0,1,22.22,91,8.9
+2023,3922237,Namibia,Uetuuru Kambato,9,0.0,1.0,3,11.11,24,33.75
+2022/2023,3837818,Paris Saint-Germain,Neymar da Silva Santos Junior,9,5.0,3.0,4,33.33,93,8.71
+2022/2023,3837918,Paris Saint-Germain,El Chadaille Bitshiabu,9,0.0,3.0,0,33.33,94,8.62
+2023,3922239,Equatorial Guinea,Jannick Buyla Sam,9,1.0,2.0,0,22.22,83,9.76
+2023,3920393,Tunisia,Mohamed Ali Ben Romdhane,9,2.0,3.0,1,33.33,48,16.88
+2023,3920415,Algeria,Houssem Aouar,9,2.0,5.0,3,55.56,47,17.23
+2022/2023,3837902,Stade Brestois,Félix Lemaréchal,9,2.0,3.0,1,33.33,17,47.65
+2022/2023,3837727,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,9,0.0,1.0,5,11.11,87,9.31
+2023,3877170,Inter Miami,Tomás Agustín Avilés Mancilla,9,2.0,3.0,0,33.33,54,15.0
+2023,3877072,Inter Miami,Lionel Andrés Messi Cuccittini,9,2.0,3.0,8,33.33,96,8.44
+2023,3922356,Congo DR,Charles Pickel,9,1.0,2.0,4,22.22,89,9.1
+2023,3922244,Mali,Hamari Traoré,9,2.0,3.0,1,33.33,99,8.18
+2022/2023,3837859,Paris Saint-Germain,Marcos Aoás Corrêa,9,1.0,1.0,0,11.11,92,8.8
+2022/2023,3837987,AC Ajaccio,Clément Vidal,9,1.0,3.0,0,33.33,88,9.2
+2022/2023,3837896,Nantes,Marcus Coco,9,2.0,1.0,2,11.11,15,54.0
+2023,3877072,Nashville SC,Luke Haakenson,9,1.0,1.0,1,11.11,28,28.93
+2022/2023,3838017,Clermont Foot,Vivaldo Borges dos Santos Neto,9,2.0,2.0,5,22.22,87,9.31
+2023,3920399,Cape Verde Islands,Tiago Manuel Dias Correia,9,1.0,2.0,4,22.22,57,14.21
+2023,3877170,Cincinnati,Sergio Henrique Santos Gomes,9,3.0,3.0,2,33.33,41,19.76
+2023,3922242,Senegal,Iliman Ndiaye,9,3.0,0.0,1,0.0,24,33.75
+2023,3922658,South Africa,Mihlali Samson Mayambela,9,0.0,1.0,8,11.11,35,23.14
+2023,3922838,Côte d'Ivoire,Simon Adingra,9,3.0,1.0,4,11.11,79,10.25
+2023,3923881,Nigeria,Victor James Osimhen,9,4.0,1.0,5,11.11,94,8.62
+2023,3920414,Angola,Jacinto Muondo Dala,9,1.0,1.0,2,11.11,54,15.0
+2023,3922659,Mali,Boubacar Traore,9,4.0,4.0,3,44.44,36,22.5
+2023,3920397,Guinea-Bissau,Marciano Sanca Tchami,9,1.0,3.0,5,33.33,32,25.31
+2023,3920409,Nigeria,Bright Osayi-Samuel,9,2.0,3.0,0,33.33,79,10.25
+2023,3920400,Cameroon,Nicolas Moumi Ngamaleu,9,2.0,2.0,3,22.22,73,11.1
+2023,3920412,Guinea,Moriba Kourouma Kourouma,9,3.0,2.0,2,22.22,71,11.41
+2022/2023,3837717,Lyon,Junior Castello Lukeba,9,3.0,2.0,2,22.22,87,9.31
+2023,3920417,Mali,Yves Bissouma,9,5.0,2.0,1,22.22,93,8.71
+2023,3920404,Mali,Hamari Traoré,9,0.0,5.0,0,55.56,97,8.35
+2023,3923880,South Africa,Mihlali Samson Mayambela,9,3.0,2.0,2,22.22,86,9.42
+2023,3920419,Morocco,Sofiane Boufal,9,6.0,2.0,5,22.22,67,12.09
+2023,3922240,Egypt,Ahmed Elsayed Ali Elsayed Hegazy,9,1.0,2.0,0,22.22,128,6.33
+2023,3922237,Angola,Kialonda Gaspar,9,1.0,3.0,0,33.33,92,8.8
+2023,3920389,Guinea,Mohamed Bayo,9,4.0,1.0,3,11.11,82,9.88
+2023,3877060,Inter Miami,Jordi Alba Ramos,9,1.0,3.0,3,33.33,92,8.8
+2022/2023,3837752,AC Ajaccio,Oumar Gonzalez,9,0.0,4.0,0,44.44,90,9.0
+2023,3920414,Angola,Eddie Marcos Melo Afonso,9,1.0,2.0,1,22.22,94,8.62
+2023,3920412,Guinea,Issiaga Sylla,9,1.0,4.0,1,44.44,91,8.9
+2022/2023,3837662,Paris Saint-Germain,Nuno Mendes,9,1.0,2.0,1,22.22,60,13.5
+2023,3877090,LAFC,Carlos Alberto Vela Garrido,9,0.0,1.0,5,11.11,92,8.8
+2022/2023,3837987,Paris Saint-Germain,Marcos Aoás Corrêa,9,1.0,1.0,1,11.11,89,9.1
+2023,3920410,Ghana,André Ayew Pelé,9,2.0,2.0,4,22.22,50,16.2
+2023,3922837,Nigeria,Alex Iwobi,9,2.0,0.0,0,0.0,62,13.06
+2023,3920389,Cameroon,Darlin Zidane Yongwa Ngameni,9,4.0,5.0,4,55.56,95,8.53
+2023,3922321,Nigeria,Alex Iwobi,9,4.0,3.0,1,33.33,79,10.25
+2022/2023,3837998,Paris Saint-Germain,Vitor Machado Ferreira,9,3.0,2.0,3,22.22,41,19.76
+2023,3920384,Guinea-Bissau,Fali Candé,9,0.0,3.0,0,33.33,90,9.0
+2022/2023,3837706,Paris Saint-Germain,Kylian Mbappé Lottin,9,3.0,1.0,7,11.11,77,10.52
+2022/2023,3837998,Paris Saint-Germain,Sergio Ramos García,9,3.0,4.0,0,44.44,94,8.62
+2022/2023,3837785,Auxerre,M''Baye Babacar Niang,9,3.0,1.0,1,11.11,57,14.21
+2022/2023,3837683,Toulouse,Rasmus Nicolaisen,9,1.0,6.0,0,66.67,47,17.23
+2023,3920384,Guinea-Bissau,Franculino Gluda Djú,9,2.0,0.0,6,0.0,24,33.75
+2023,3922838,Côte d'Ivoire,Wilfried Stephane Singo,9,3.0,3.0,3,33.33,94,8.62
+2022/2023,3837987,AC Ajaccio,Ivane Chegra,9,3.0,2.0,3,22.22,24,33.75
+2023,3920392,Mauritania,Yacoub Aly Abeid,9,1.0,4.0,0,44.44,97,8.35
+2023,3922838,Congo DR,Yoane Wissa,9,2.0,4.0,4,44.44,68,11.91
+2023,3922356,Guinea,Mouctar Diakhaby,9,2.0,4.0,0,44.44,94,8.62
+2023,3877194,Inter Miami,Noah Allen,9,3.0,1.0,1,11.11,66,12.27
+2023,3920395,Zambia,Roderick Kabwe,9,1.0,3.0,0,33.33,95,8.53
+2023,3920395,Congo DR,Gedeon Kalulu Kyatengwa,9,3.0,2.0,2,22.22,93,8.71
+2023,3920386,Nigeria,Temitayo Olufisayo Olaoluwa Aina,9,5.0,2.0,2,22.22,81,10.0
+2023,3922838,Congo DR,Chancel Mbemba Mangulu,9,2.0,5.0,0,55.56,93,8.71
+2023,3920388,Gambia,Ali Sowe,9,4.0,0.0,4,0.0,63,12.86
+2023,3920396,Egypt,Omar Marmoush,9,3.0,1.0,6,11.11,89,9.1
+2023,3920411,Cape Verde Islands,Willy Afonso Semedo Johnson,9,1.0,3.0,1,33.33,94,8.62
+2022/2023,3837902,Paris Saint-Germain,Sergio Ramos García,9,0.0,4.0,1,44.44,89,9.1
+2022/2023,3837844,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,9,4.0,5.0,6,55.56,92,8.8
+2022/2023,3837928,Lyon,Dejan Lovren,9,1.0,2.0,2,22.22,88,9.2
+2022/2023,3837859,Paris Saint-Germain,El Chadaille Bitshiabu,9,1.0,2.0,0,22.22,79,10.25
+2023,3920388,Gambia,Ebou Adams,9,3.0,3.0,0,33.33,45,18.0
+2023,3923881,Nigeria,Zaidu Sanusi,9,1.0,1.0,2,11.11,87,9.31
+2022/2023,3837885,Paris Saint-Germain,Kylian Mbappé Lottin,9,1.0,1.0,5,11.11,91,8.9
+2023,3923880,Congo DR,Dylan Batubinsika,9,0.0,0.0,0,0.0,93,8.71
+2023,3920398,Nigeria,Frank Onyeka,9,2.0,4.0,2,44.44,96,8.44
+2022/2023,3837680,Paris Saint-Germain,Sergio Ramos García,9,2.0,2.0,3,22.22,93,8.71
+2023,3920398,Côte d'Ivoire,Ousmane Diomande,9,0.0,2.0,0,22.22,98,8.27
+2023,3920389,Cameroon,Jules Olivier Ntcham,9,1.0,1.0,2,11.11,92,8.8
+2023,3920417,Mali,Lassine Sinayoko,9,2.0,0.0,2,0.0,51,15.88
+2023,3877090,LAFC,Timothy Tillman,9,3.0,2.0,1,22.22,50,16.2
+2023,3877090,Inter Miami,Serhiy Kryvtsov,9,2.0,4.0,0,44.44,91,8.9
+2022/2023,3837747,Paris Saint-Germain,Nordi Mukiele Mulere,9,1.0,3.0,2,33.33,69,11.74
+2023,3920388,Gambia,Hamza Barry,9,0.0,3.0,0,33.33,29,27.93
+2022/2023,3837706,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,9,5.0,1.0,4,11.11,93,8.71
+2022/2023,3837680,AS Monaco,Axel Disasi,9,0.0,2.0,3,22.22,95,8.53
+2022/2023,3837683,Paris Saint-Germain,Marco Verratti,9,2.0,6.0,1,66.67,67,12.09
+2022/2023,3837752,AC Ajaccio,Cédric Avinel,9,1.0,3.0,0,33.33,91,8.9
+2022/2023,3837918,Paris Saint-Germain,Juan Bernat Velasco,9,0.0,2.0,0,22.22,55,14.73
+2023,3922241,Mauritania,Hemeya Tanjy,9,1.0,3.0,1,33.33,65,12.46
+2022/2023,3837695,Paris Saint-Germain,Presnel Kimpembe,9,2.0,2.0,2,22.22,90,9.0
+2023,3920409,Nigeria,Kenneth Josiah Omeruo,9,0.0,4.0,0,44.44,91,8.9
+2023,3920397,Equatorial Guinea,Emilio Nsue López,9,1.0,2.0,5,22.22,83,9.76
+2023,3920412,Guinea,Naby Deco Keïta,9,1.0,0.0,1,0.0,61,13.28
+2023,3920409,Guinea-Bissau,Edgar Miguel Ié,9,2.0,3.0,0,33.33,94,8.62
+2023,3922237,Namibia,Ngero Kaanjuka Katua,9,3.0,3.0,1,33.33,59,13.73
+2023,3923880,Congo DR,Théo Bongonda Mbul''Ofeko Batombo,9,0.0,2.0,3,22.22,30,27.0
+2023,3920384,Côte d'Ivoire,Jean-Philippe Krasso,9,1.0,1.0,5,11.11,60,13.5
+2023,3920390,Algeria,Ramiz Larbi Zerrouki,9,2.0,6.0,0,66.67,23,35.22
+2023,3920393,Tunisia,Aïssa Bilal Laïdouni,9,1.0,4.0,1,44.44,50,16.2
+2023,3920393,Tunisia,Ali Maâloul,9,3.0,2.0,3,22.22,95,8.53
+2023,3920412,Senegal,Krépin Diatta,9,2.0,2.0,2,22.22,94,8.62
+2023,3920388,Gambia,Saidy Janko,9,3.0,4.0,2,44.44,94,8.62
+2023,3920385,Mozambique,Clésio Bauque,9,2.0,2.0,1,22.22,55,14.73
+2022/2023,3837938,OGC Nice,Bilal Brahimi,9,1.0,1.0,2,11.11,25,32.4
+2023,3920418,Tanzania,Simon Happygod Msuva,9,1.0,0.0,2,0.0,85,9.53
+2023,3922240,Congo DR,Cédric Bakambu,9,0.0,0.0,0,0.0,62,13.06
+2023,3920399,Cape Verde Islands,Roberto Lopes,9,0.0,5.0,0,55.56,88,9.2
+2022/2023,3837963,Lorient,Cheikh Ahmadou Bamba Mbacke Dieng,9,2.0,1.0,1,11.11,26,31.15
+2022/2023,3837998,Paris Saint-Germain,Hugo Ekitike,9,1.0,1.0,6,11.11,51,15.88
+2023,3922356,Guinea,Issiaga Sylla,9,1.0,1.0,1,11.11,91,8.9
+2022/2023,3838004,Paris Saint-Germain,Juan Bernat Velasco,9,2.0,4.0,2,44.44,90,9.0
+2022/2023,3838017,Clermont Foot,Alidu Seidu,9,3.0,1.0,1,11.11,86,9.42
+2022/2023,3838017,Clermont Foot,Yohann Magnin,9,0.0,0.0,0,0.0,24,33.75
+2022/2023,3838017,Paris Saint-Germain,Vitor Machado Ferreira,9,4.0,3.0,1,33.33,57,14.21
+2023,3922242,Côte d'Ivoire,Franck Yannick Kessié,9,3.0,1.0,0,11.11,57,14.21
+2022/2023,3837827,Paris Saint-Germain,Marcos Aoás Corrêa,9,2.0,1.0,3,11.11,96,8.44
+2022/2023,3837771,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,9,3.0,1.0,8,11.11,90,9.0
+2022/2023,3837963,Paris Saint-Germain,Nuno Mendes,9,1.0,2.0,5,22.22,39,20.77
+2022/2023,3837785,Paris Saint-Germain,Danilo Luís Hélio Pereira,9,1.0,2.0,1,22.22,90,9.0
+2023,3922356,Guinea,Ibrahim Diakité,9,3.0,4.0,3,44.44,90,9.0
+2023,3923881,Côte d'Ivoire,Serge Aurier,9,1.0,4.0,1,44.44,67,12.09
+2023,3920417,Namibia,Ngero Kaanjuka Katua,9,1.0,1.0,0,11.11,89,9.1
+2022/2023,3837902,Stade Brestois,Lilian Brassier,9,1.0,5.0,0,55.56,85,9.53
+2022/2023,3837695,Nantes,Nicolas Pallois,9,1.0,3.0,0,33.33,90,9.0
+2023,3922837,Nigeria,Moses Daddy-Ajala Simon,9,3.0,1.0,3,11.11,60,13.5
+2023,3920394,Tanzania,Tarryn Allarakhia,9,0.0,2.0,1,22.22,37,21.89
+2022/2023,3837747,Paris Saint-Germain,Vitor Machado Ferreira,9,4.0,2.0,3,22.22,93,8.71
+2023,3920387,Cape Verde Islands,Ryan Isaac Mendes da Graça,9,1.0,3.0,3,33.33,67,12.09
+2023,3920417,Namibia,Deon Hotto Kavendji,8,2.0,3.0,2,37.5,91,7.91
+2023,3920388,Senegal,Pape Gueye,8,5.0,1.0,3,12.5,77,9.35
+2022/2023,3837717,Paris Saint-Germain,Nuno Mendes,8,2.0,3.0,4,37.5,94,7.66
+2023,3922659,Mali,Sikou Niakate,8,1.0,3.0,1,37.5,124,5.81
+2023,3920412,Guinea,Saidou Sow,8,4.0,4.0,0,50.0,94,7.66
+2023,3920412,Guinea,Antoine Conte,8,2.0,3.0,0,37.5,62,11.61
+2022/2023,3837928,Paris Saint-Germain,Warren Zaire Emery,8,1.0,0.0,0,0.0,20,36.0
+2022/2023,3837998,Auxerre,Nuno Miguel da Costa Jóia,8,3.0,2.0,4,25.0,84,8.57
+2023,3920387,Ghana,Ernest Appiah Nuamah,8,1.0,2.0,3,25.0,35,20.57
+2022/2023,3838017,Paris Saint-Germain,Sergio Ramos García,8,1.0,1.0,0,12.5,89,8.09
+2023,3922244,Mali,Sikou Niakate,8,1.0,2.0,1,25.0,98,7.35
+2023,3922838,Congo DR,Simon Bokote Banza,8,2.0,1.0,4,12.5,23,31.3
+2022/2023,3838017,Paris Saint-Germain,El Chadaille Bitshiabu,8,1.0,1.0,1,12.5,80,9.0
+2023,3920399,Mozambique,Domingos João Macandza,8,2.0,2.0,3,25.0,77,9.35
+2022/2023,3837902,Stade Brestois,Jérémy Le Douaron,8,2.0,1.0,1,12.5,24,30.0
+2023,3922837,South Africa,Themba Zwane,8,1.0,2.0,2,25.0,75,9.6
+2023,3920395,Congo DR,Henoc Inonga Baka,8,1.0,4.0,0,50.0,94,7.66
+2022/2023,3837747,Paris Saint-Germain,Kylian Mbappé Lottin,8,2.0,1.0,5,12.5,91,7.91
+2023,3920387,Cape Verde Islands,Garry Mendes Rodrigues,8,1.0,2.0,1,25.0,28,25.71
+2023,3877115,Toronto FC,Lorenzo Insigne,8,2.0,2.0,2,25.0,90,8.0
+2022/2023,3837885,Paris Saint-Germain,Sergio Ramos García,8,0.0,3.0,0,37.5,85,8.47
+2023,3920398,Nigeria,Victor James Osimhen,8,2.0,1.0,4,12.5,87,8.28
+2022/2023,3837695,Paris Saint-Germain,Juan Bernat Velasco,8,4.0,2.0,5,25.0,47,15.32
+2022/2023,3837680,AS Monaco,Kevin Volland,8,1.0,2.0,6,25.0,24,30.0
+2023,3922838,Côte d'Ivoire,Obite Evan Ndicka,8,2.0,3.0,0,37.5,93,7.74
+2023,3920400,Cameroon,Jean-Charles Castelletto,8,1.0,4.0,0,50.0,95,7.58
+2022/2023,3838017,Clermont Foot,Mateusz Wieteska,8,0.0,2.0,0,25.0,92,7.83
+2022/2023,3837876,Paris Saint-Germain,Warren Zaire Emery,8,0.0,2.0,2,25.0,17,42.35
+2023,3922239,Guinea,Issiaga Sylla,8,0.0,3.0,1,37.5,95,7.58
+2022/2023,3837947,Paris Saint-Germain,Danilo Luís Hélio Pereira,8,1.0,0.0,0,0.0,92,7.83
+2023,3920415,Mauritania,Bakari Camara,8,0.0,1.0,1,12.5,20,36.0
+2023,3920414,Angola,Joaquim Marcos Cunga Balanga,8,1.0,1.0,0,12.5,96,7.5
+2023,3920413,Gambia,Musa Barrow,8,1.0,1.0,2,12.5,98,7.35
+2023,3920395,Congo DR,Charles Pickel,8,0.0,1.0,1,12.5,93,7.74
+2022/2023,3837747,Marseille,Jonathan Clauss,8,1.0,0.0,5,0.0,92,7.83
+2023,3920405,Morocco,Azzedine Ounahi,8,4.0,3.0,2,37.5,79,9.11
+2023,3877194,Charlotte,Kerwin Calderón Vargas,8,1.0,1.0,1,12.5,66,10.91
+2023,3920412,Senegal,Kalidou Koulibaly,8,2.0,2.0,0,25.0,95,7.58
+2023,3877090,LAFC,Jesús David Murillo Largacha,8,2.0,3.0,0,37.5,43,16.74
+2022/2023,3837747,Marseille,Samuel Gigot,8,2.0,1.0,0,12.5,26,27.69
+2022/2023,3837963,Paris Saint-Germain,Achraf Hakimi Mouh,8,2.0,2.0,2,25.0,19,37.89
+2023,3920404,Tunisia,Wajdi Kechrida,8,1.0,5.0,1,62.5,96,7.5
+2023,3920404,Tunisia,Yassine Meriah,8,1.0,3.0,0,37.5,96,7.5
+2023,3920418,Congo DR,Chancel Mbemba Mangulu,8,2.0,5.0,1,62.5,93,7.74
+2022/2023,3837785,Auxerre,Gaëtan Perrin,8,2.0,2.0,6,25.0,33,21.82
+2022/2023,3838004,Paris Saint-Germain,Sergio Ramos García,8,1.0,3.0,0,37.5,91,7.91
+2023,3922838,Congo DR,Fiston Kalala Mayele,8,2.0,2.0,6,25.0,23,31.3
+2023,3920398,Nigeria,Moses Daddy-Ajala Simon,8,1.0,0.0,3,0.0,27,26.67
+2023,3922321,Angola,Jacinto Muondo Dala,8,2.0,2.0,3,25.0,83,8.67
+2023,3922837,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,8,1.0,5.0,2,62.5,115,6.26
+2023,3922659,Côte d'Ivoire,Wilfried Stephane Singo,8,4.0,5.0,2,62.5,73,9.86
+2023,3920395,Congo DR,Gaël Kakuta,8,3.0,1.0,1,12.5,68,10.59
+2022/2023,3837827,Rennes,Arthur Theate,8,3.0,2.0,1,25.0,90,8.0
+2023,3923880,South Africa,Aubrey Maphosa Modiba,8,0.0,3.0,0,37.5,123,5.85
+2022/2023,3837902,Paris Saint-Germain,Kylian Mbappé Lottin,8,4.0,2.0,4,25.0,94,7.66
+2023,3923881,Nigeria,Alex Iwobi,8,1.0,1.0,0,12.5,78,9.23
+2023,3877090,LAFC,Diego José Palacios Espinoza,8,1.0,1.0,2,12.5,32,22.5
+2023,3922838,Congo DR,Charles Pickel,8,3.0,0.0,1,0.0,67,10.75
+2023,3920386,Equatorial Guinea,José Ndong Machín Dicombo,8,0.0,1.0,2,12.5,80,9.0
+2022/2023,3837954,Angers,Abdallah Dipo Sima,8,0.0,1.0,2,12.5,19,37.89
+2023,3920412,Senegal,Idrissa Gana Gueye,8,2.0,3.0,0,37.5,20,36.0
+2022/2023,3837662,Lille,Gabriel Gudmundsson,8,1.0,2.0,3,25.0,56,12.86
+2022/2023,3837954,Paris Saint-Germain,Juan Bernat Velasco,8,0.0,3.0,0,37.5,88,8.18
+2022/2023,3837827,Rennes,Hamari Traoré,8,3.0,0.0,2,0.0,92,7.83
+2023,3920416,Tunisia,Youssef Msakni,8,3.0,1.0,0,12.5,35,20.57
+2022/2023,3837771,Troyes,Yoann Salmier,8,1.0,2.0,0,25.0,90,8.0
+2023,3920407,Namibia,Ngero Kaanjuka Katua,8,1.0,2.0,0,25.0,48,15.0
+2023,3920393,Tunisia,Yassine Meriah,8,2.0,4.0,0,50.0,94,7.66
+2023,3920405,Morocco,Amine Adli,8,1.0,2.0,1,25.0,23,31.3
+2023,3920417,Mali,Hamari Traoré,8,1.0,3.0,2,37.5,93,7.74
+2022/2023,3837987,AC Ajaccio,Cédric Avinel,8,0.0,0.0,0,0.0,83,8.67
+2023,3920388,Gambia,Alasana Manneh,8,2.0,2.0,0,25.0,65,11.08
+2023,3920408,Côte d'Ivoire,Wilfried Stephane Singo,8,2.0,0.0,2,0.0,96,7.5
+2023,3920402,Algeria,Mohamed Youcef Belaïli,8,1.0,3.0,3,37.5,73,9.86
+2022/2023,3837747,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,8,3.0,3.0,5,37.5,79,9.11
+2023,3922658,Cape Verde Islands,Laros Duarte,8,1.0,4.0,2,50.0,36,20.0
+2022/2023,3837818,Angers,Sofiane Boufal,8,0.0,1.0,2,12.5,31,23.23
+2023,3920407,Namibia,Kennedy Amutenya,8,1.0,3.0,0,37.5,92,7.83
+2022/2023,3837844,Paris Saint-Germain,Nuno Mendes,8,1.0,5.0,1,62.5,69,10.43
+2022/2023,3837998,Paris Saint-Germain,Juan Bernat Velasco,8,0.0,3.0,2,37.5,90,8.0
+2022/2023,3837938,OGC Nice,Gaëtan Laborde,8,1.0,1.0,5,12.5,12,60.0
+2023,3920404,Mali,Boubakar Kouyate,8,3.0,3.0,0,37.5,92,7.83
+2023,3920405,Congo DR,Gaël Kakuta,8,2.0,1.0,2,12.5,55,13.09
+2023,3920387,Cape Verde Islands,João Paulo Moreira Fernandes,8,1.0,1.0,0,12.5,96,7.5
+2022/2023,3837680,AS Monaco,Benoît Badiashile Mukinayi,8,0.0,1.0,0,12.5,93,7.74
+2022/2023,3837706,Paris Saint-Germain,Sergio Ramos García,8,0.0,1.0,1,12.5,94,7.66
+2022/2023,3837918,Rennes,Christopher Wooh,8,1.0,2.0,0,25.0,92,7.83
+2023,3920389,Cameroon,Karl Brillant Toko Ekambi,8,1.0,4.0,7,50.0,91,7.91
+2022/2023,3837695,Paris Saint-Germain,Nuno Mendes,8,1.0,4.0,0,50.0,45,16.0
+2022/2023,3838004,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,8,3.0,2.0,3,25.0,91,7.91
+2022/2023,3837859,Toulouse,Thijs Dallinga,8,1.0,0.0,8,0.0,30,24.0
+2022/2023,3837785,Paris Saint-Germain,Kylian Mbappé Lottin,8,2.0,1.0,7,12.5,90,8.0
+2022/2023,3837662,Paris Saint-Germain,Marcos Aoás Corrêa,8,2.0,5.0,1,62.5,87,8.28
+2022/2023,3837706,Stade Brestois,Hugo Magnetti,8,2.0,1.0,1,12.5,32,22.5
+2022/2023,3837706,Paris Saint-Germain,Juan Bernat Velasco,8,2.0,1.0,2,12.5,77,9.35
+2023,3922243,South Africa,Themba Zwane,8,3.0,0.0,1,0.0,68,10.59
+2023,3922356,Guinea,Amadou Diawara,8,3.0,2.0,0,25.0,68,10.59
+2023,3922238,Cameroon,Oumar Gonzalez,8,1.0,6.0,0,75.0,77,9.35
+2023,3922838,Congo DR,Aaron Tshibola,8,2.0,2.0,1,25.0,25,28.8
+2023,3920388,Gambia,Muhammed Badamosi,8,0.0,0.0,1,0.0,24,30.0
+2023,3920394,Tanzania,Haji Mnoga,8,1.0,1.0,2,12.5,88,8.18
+2023,3922240,Egypt,Mahmoud Hamada,8,2.0,4.0,0,50.0,49,14.69
+2023,3922321,Angola,Kialonda Gaspar,8,0.0,5.0,0,62.5,96,7.5
+2022/2023,3837928,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,8,3.0,3.0,6,37.5,93,7.74
+2023,3920390,Algeria,Riyad Mahrez,8,1.0,3.0,2,37.5,97,7.42
+2023,3922838,Congo DR,Silas Katompa Mvumpa,8,4.0,0.0,6,0.0,16,45.0
+2023,3922321,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,8,1.0,6.0,1,75.0,97,7.42
+2023,3920395,Zambia,Frankie Musonda,8,0.0,2.0,0,25.0,91,7.91
+2023,3922237,Angola,Manuel Keliano,8,2.0,1.0,1,12.5,25,28.8
+2023,3922238,Cameroon,Georges-Kévin Nkoudou Mbida,8,4.0,2.0,4,25.0,95,7.58
+2023,3877072,Nashville SC,Daniel Lovitz,8,1.0,2.0,0,25.0,95,7.58
+2023,3877072,Inter Miami,Robert Taylor,8,3.0,1.0,4,12.5,69,10.43
+2022/2023,3837928,Paris Saint-Germain,Kylian Mbappé Lottin,8,0.0,3.0,5,37.5,92,7.83
+2023,3920410,Ghana,Iddrisu Baba Mohammed,8,1.0,2.0,0,25.0,59,12.2
+2022/2023,3837752,AC Ajaccio,Mohamed Youssouf,8,1.0,3.0,2,37.5,90,8.0
+2023,3920391,Mali,Boubakar Kouyate,8,1.0,2.0,0,25.0,94,7.66
+2022/2023,3837954,Angers,Sada Thioub,8,0.0,2.0,4,25.0,23,31.3
+2022/2023,3837680,AS Monaco,Jean Lucas de Souza Oliveira,8,3.0,1.0,1,12.5,18,40.0
+2023,3877072,Nashville SC,Randall Enrique Leal Arley,8,3.0,0.0,1,0.0,48,15.0
+2023,3920397,Guinea-Bissau,Mauro Daniel Rodrigues Teixeira,8,1.0,2.0,3,25.0,75,9.6
+2023,3922242,Senegal,Abdou Diallo,8,0.0,3.0,0,37.5,117,6.15
+2023,3877194,Charlotte,Brecht Dejaegere,8,1.0,2.0,1,25.0,26,27.69
+2023,3923881,Nigeria,Temitayo Olufisayo Olaoluwa Aina,8,2.0,3.0,1,37.5,95,7.58
+2023,3923880,South Africa,Evidence Makgopa,8,1.0,1.0,6,12.5,57,12.63
+2022/2023,3837859,Toulouse,Veljko Birmančević,8,2.0,3.0,5,37.5,12,60.0
+2023,3877072,Inter Miami,Benjamin Cremaschi,8,2.0,6.0,1,75.0,26,27.69
+2023,3920406,Zambia,Fashion Sakala,8,3.0,1.0,2,12.5,74,9.73
+2022/2023,3837839,Stade de Reims,Azor Matusiwa,8,0.0,1.0,1,12.5,91,7.91
+2022/2023,3837659,Montpellier,Joris Chotard,8,4.0,2.0,0,25.0,79,9.11
+2023,3920390,Algeria,Mohamed Youcef Belaïli,8,1.0,4.0,1,50.0,66,10.91
+2022/2023,3837747,Marseille,Issa Kabore,8,3.0,2.0,3,25.0,24,30.0
+2023,3920384,Guinea-Bissau,Marcelo Amado Djaló Taritolay,8,1.0,5.0,0,62.5,88,8.18
+2022/2023,3837650,Paris Saint-Germain,Achraf Hakimi Mouh,8,4.0,1.0,5,12.5,89,8.09
+2022/2023,3838017,Clermont Foot,Jim Allevinah,8,0.0,5.0,2,62.5,47,15.32
+2022/2023,3837918,Rennes,Djed Spence,8,1.0,2.0,4,25.0,72,10.0
+2023,3920407,South Africa,Khuliso Johnson Mudau,8,4.0,4.0,0,50.0,94,7.66
+2022/2023,3837859,Paris Saint-Germain,Danilo Luís Hélio Pereira,8,1.0,4.0,1,50.0,90,8.0
+2023,3920393,Namibia,Lubeni Haukongo,8,2.0,2.0,0,25.0,95,7.58
+2023,3920407,South Africa,Gomolemo Grant Kekana,8,0.0,0.0,0,0.0,92,7.83
+2023,3922239,Equatorial Guinea,Federico Bikoro Akieme Nchama,8,1.0,1.0,3,12.5,54,13.33
+2023,3920409,Guinea-Bissau,Opa Sangante,8,0.0,3.0,0,37.5,95,7.58
+2023,3920415,Algeria,Hichem Boudaoui,8,1.0,2.0,1,25.0,61,11.8
+2022/2023,3837839,Paris Saint-Germain,Juan Bernat Velasco,8,2.0,2.0,2,25.0,92,7.83
+2023,3877115,Toronto FC,Charles Kwabena Sapong,8,1.0,0.0,4,0.0,18,40.0
+2023,3920406,Tanzania,Mudathiri Yahya,8,1.0,1.0,3,12.5,27,26.67
+2022/2023,3837695,Paris Saint-Germain,Achraf Hakimi Mouh,8,1.0,3.0,0,37.5,91,7.91
+2023,3877072,Inter Miami,Kamal Miller,8,4.0,4.0,1,50.0,93,7.74
+2023,3920405,Morocco,Mohamed Chibi,8,4.0,4.0,1,50.0,98,7.35
+2023,3920415,Algeria,Youcef Atal,8,2.0,2.0,1,25.0,79,9.11
+2023,3920405,Morocco,Selim Amallah,8,0.0,2.0,1,25.0,53,13.58
+2023,3920414,Angola,Felicio Mendes Joao Milson,8,2.0,2.0,4,25.0,17,42.35
+2023,3920392,Burkina Faso,Mamady Alex Bangré,8,2.0,2.0,5,25.0,48,15.0
+2023,3923880,South Africa,Teboho Mokoena,8,1.0,2.0,1,25.0,119,6.05
+2023,3920389,Cameroon,Harold Moukoudi,8,0.0,3.0,1,37.5,95,7.58
+2023,3920408,Equatorial Guinea,Pablo Ganet Cómitre,8,1.0,2.0,0,25.0,71,10.14
+2023,3920411,Egypt,Ahmed Sayed,8,1.0,0.0,2,0.0,73,9.86
+2023,3923880,South Africa,Nkosinathi Sibisi,8,2.0,3.0,0,37.5,122,5.9
+2023,3920386,Nigeria,William Troost-Ekong,8,1.0,1.0,0,12.5,94,7.66
+2023,3922238,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,8,1.0,3.0,0,37.5,95,7.58
+2022/2023,3837963,Paris Saint-Germain,Kylian Mbappé Lottin,7,2.0,1.0,5,14.29,91,6.92
+2023,3920394,Morocco,Mohamed Chibi,7,0.0,0.0,1,0.0,92,6.85
+2023,3920387,Cape Verde Islands,Logan Costa,7,2.0,2.0,3,28.57,98,6.43
+2022/2023,3837987,AC Ajaccio,Riad Nouri,7,0.0,0.0,0,0.0,23,27.39
+2023,3920386,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,7,0.0,3.0,0,42.86,95,6.63
+2023,3920385,Egypt,Omar Marmoush,7,2.0,0.0,6,0.0,34,18.53
+2023,3920411,Cape Verde Islands,Logan Costa,7,1.0,5.0,0,71.43,98,6.43
+2023,3922241,Cape Verde Islands,Logan Costa,7,0.0,1.0,0,14.29,99,6.36
+2023,3877090,LAFC,Sergi Palencia Hurtado,7,0.0,2.0,1,28.57,60,10.5
+2022/2023,3838004,Paris Saint-Germain,El Chadaille Bitshiabu,7,0.0,1.0,1,14.29,90,7.0
+2023,3922659,Côte d'Ivoire,Obite Evan Ndicka,7,2.0,2.0,1,28.57,119,5.29
+2023,3920410,Mozambique,Pachoio Lau Há King,7,1.0,0.0,3,0.0,84,7.5
+2023,3920394,Tanzania,Faisal Salum Abdalla,7,1.0,1.0,0,14.29,22,28.64
+2022/2023,3837876,Lille,Timothy Weah,7,0.0,2.0,1,28.57,96,6.56
+2023,3920407,South Africa,Mothobi Mvala,7,1.0,3.0,0,42.86,94,6.7
+2022/2023,3837717,Paris Saint-Germain,Fabián Ruiz Peña,7,0.0,3.0,1,42.86,56,11.25
+2022/2023,3837918,Rennes,Hamari Traoré,7,0.0,1.0,0,14.29,17,37.06
+2022/2023,3837747,Paris Saint-Germain,Juan Bernat Velasco,7,2.0,4.0,1,57.14,94,6.7
+2023,3920397,Guinea-Bissau,Jefferson Anilson Silva Encada,7,2.0,4.0,1,57.14,96,6.56
+2023,3920389,Guinea,François Kamano,7,1.0,1.0,0,14.29,42,15.0
+2022/2023,3837902,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,7,2.0,1.0,5,14.29,89,7.08
+2022/2023,3837695,Paris Saint-Germain,Renato Júnior Luz Sanches,7,1.0,1.0,1,14.29,56,11.25
+2022/2023,3837785,Auxerre,Rayan Ny Aina Arnaldo Raveloson,7,1.0,1.0,2,14.29,89,7.08
+2023,3922242,Côte d'Ivoire,Seko Fofana,7,0.0,1.0,5,14.29,71,8.87
+2022/2023,3837987,AC Ajaccio,Moussa Soumano,7,0.0,0.0,0,0.0,24,26.25
+2023,3920419,Morocco,Tarik Tissoudali,7,1.0,0.0,3,0.0,20,31.5
+2023,3877115,Inter Miami,Josef Alexander Martínez Mencia,7,1.0,0.0,2,0.0,64,9.84
+2023,3922659,Mali,Boubakar Kouyate,7,2.0,2.0,0,28.57,115,5.48
+2023,3877090,LAFC,Filip Yavorov Krastev,7,2.0,0.0,0,0.0,14,45.0
+2023,3920397,Guinea-Bissau,José Correia,7,0.0,2.0,7,28.57,17,37.06
+2023,3922241,Cape Verde Islands,Kenny Rocha Santos,7,1.0,3.0,1,42.86,28,22.5
+2023,3920401,Gambia,Omar Colley,7,0.0,1.0,0,14.29,95,6.63
+2023,3920384,Côte d'Ivoire,Ousmane Diomande,7,2.0,2.0,0,28.57,76,8.29
+2023,3877072,Nashville SC,Lukas MacNaughton,7,1.0,2.0,0,28.57,94,6.7
+2023,3922321,Angola,Valdomiro Tualungo Paulo Lameiras,7,0.0,3.0,0,42.86,48,13.13
+2023,3877115,Toronto FC,Themi Antonoglou,7,0.0,0.0,0,0.0,23,27.39
+2023,3877194,Inter Miami,Lionel Andrés Messi Cuccittini,7,3.0,2.0,5,28.57,90,7.0
+2022/2023,3837918,Paris Saint-Germain,Warren Zaire Emery,7,1.0,0.0,1,0.0,50,12.6
+2023,3920416,Tunisia,Seifeddine Jaziri,7,0.0,1.0,1,14.29,69,9.13
+2022/2023,3837662,Paris Saint-Germain,Juan Bernat Velasco,7,3.0,0.0,4,0.0,25,25.2
+2023,3920401,Guinea,Moriba Kourouma Kourouma,7,1.0,2.0,2,28.57,84,7.5
+2023,3920389,Guinea,Sekou Oumar Sylla,7,1.0,2.0,0,28.57,93,6.77
+2023,3877170,Cincinnati,Álvaro Martín Barreal,7,1.0,0.0,4,0.0,80,7.88
+2023,3920390,Algeria,Youcef Atal,7,2.0,3.0,2,42.86,79,7.97
+2023,3920405,Morocco,Nayef Aguerd,7,2.0,3.0,0,42.86,96,6.56
+2023,3920397,Equatorial Guinea,Esteban Obiang Obono,7,1.0,2.0,1,28.57,92,6.85
+2022/2023,3837771,Paris Saint-Germain,Juan Bernat Velasco,7,1.0,1.0,2,14.29,83,7.59
+2022/2023,3837683,Toulouse,Brecht Dejaegere,7,3.0,2.0,3,28.57,13,48.46
+2023,3920398,Côte d'Ivoire,Jean-Philippe Krasso,7,0.0,2.0,5,28.57,82,7.68
+2023,3920398,Côte d'Ivoire,Obite Evan Ndicka,7,1.0,2.0,0,28.57,95,6.63
+2023,3920399,Mozambique,Edson André Sitoe,7,2.0,3.0,1,42.86,91,6.92
+2023,3920394,Tanzania,Mohamed Hussein Mohamed,7,1.0,2.0,0,28.57,94,6.7
+2023,3920385,Mozambique,Domingos João Macandza,7,3.0,1.0,1,14.29,100,6.3
+2023,3920406,Tanzania,Himid Mao Mkami,7,0.0,2.0,0,28.57,69,9.13
+2023,3920388,Gambia,Ibou Touray,7,1.0,2.0,0,28.57,73,8.63
+2023,3920392,Mauritania,Oumar Ngom,7,2.0,2.0,1,28.57,30,21.0
+2022/2023,3837717,Lyon,Thiago Henrique Mendes Ribeiro,7,1.0,3.0,0,42.86,93,6.77
+2023,3920405,Congo DR,Cédric Bakambu,7,1.0,2.0,6,28.57,49,12.86
+2023,3920389,Guinea,José Kanté Martínez,7,1.0,0.0,2,0.0,11,57.27
+2023,3920411,Cape Verde Islands,Garry Mendes Rodrigues,7,1.0,1.0,1,14.29,62,10.16
+2023,3920410,Ghana,Majeed Ashimeru,7,2.0,0.0,2,0.0,35,18.0
+2022/2023,3837859,Toulouse,Vincent Sierro,7,0.0,1.0,3,14.29,12,52.5
+2023,3920392,Mauritania,Sidi Bouna Sidi Amar,7,0.0,1.0,1,14.29,35,18.0
+2023,3920416,Tunisia,Haythem Jouini,7,2.0,1.0,4,14.29,24,26.25
+2022/2023,3837839,Paris Saint-Germain,Sergio Ramos García,7,0.0,2.0,0,28.57,92,6.85
+2023,3920404,Tunisia,Montassar Omar Talbi,7,1.0,2.0,0,28.57,96,6.56
+2022/2023,3837727,Paris Saint-Germain,Juan Bernat Velasco,7,2.0,1.0,0,14.29,58,10.86
+2022/2023,3837818,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,7,1.0,4.0,5,57.14,90,7.0
+2023,3877072,Nashville SC,Hany Mukhtar,7,1.0,0.0,1,0.0,50,12.6
+2022/2023,3837827,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,7,3.0,1.0,3,14.29,94,6.7
+2023,3922238,Cameroon,Nouhou Tolo,7,1.0,3.0,1,42.86,95,6.63
+2023,3922239,Guinea,Julian Jeanvier,7,0.0,1.0,0,14.29,97,6.49
+2022/2023,3837785,Auxerre,Julian Jeanvier,7,1.0,2.0,0,28.57,86,7.33
+2022/2023,3837650,Paris Saint-Germain,Marcos Aoás Corrêa,7,1.0,0.0,0,0.0,88,7.16
+2023,3922838,Côte d'Ivoire,Jean Thierry Lazare Amani,7,2.0,1.0,1,14.29,28,22.5
+2023,3920395,Congo DR,Théo Bongonda Mbul''Ofeko Batombo,7,3.0,3.0,5,42.86,94,6.7
+2023,3922838,Côte d'Ivoire,Ibrahim Sangaré,7,2.0,2.0,1,28.57,32,19.69
+2023,3877072,Inter Miami,David Ruiz,7,2.0,1.0,2,14.29,26,24.23
+2023,3922237,Namibia,Kennedy Amutenya,7,0.0,1.0,0,14.29,58,10.86
+2023,3920386,Equatorial Guinea,Emilio Nsue López,7,2.0,1.0,5,14.29,91,6.92
+2023,3920394,Tanzania,Simon Happygod Msuva,7,3.0,1.0,3,14.29,57,11.05
+2023,3920384,Côte d'Ivoire,Franck Yannick Kessié,7,1.0,4.0,1,57.14,93,6.77
+2022/2023,3837827,Rennes,Birger Meling,7,4.0,2.0,2,28.57,19,33.16
+2022/2023,3837662,Lille,Jonas Martin,7,2.0,1.0,0,14.29,31,20.32
+2023,3920394,Morocco,Azzedine Ounahi,7,3.0,2.0,5,28.57,80,7.88
+2023,3920408,Equatorial Guinea,José Antonio Miranda Boacho,7,2.0,1.0,2,14.29,49,12.86
+2023,3920390,Angola,Felicio Mendes Joao Milson,7,3.0,2.0,1,28.57,16,39.38
+2023,3922242,Côte d'Ivoire,Christian Kouamé,7,1.0,1.0,3,14.29,44,14.32
+2023,3920408,Equatorial Guinea,Esteban Obiang Obono,7,1.0,2.0,0,28.57,96,6.56
+2023,3920409,Guinea-Bissau,Houboulang Mendes,7,0.0,3.0,1,42.86,94,6.7
+2022/2023,3837771,Troyes,Abdu Conté,7,1.0,0.0,1,0.0,71,8.87
+2023,3920388,Senegal,Kalidou Koulibaly,7,1.0,2.0,1,28.57,93,6.77
+2023,3920388,Gambia,Musa Barrow,7,4.0,1.0,4,14.29,95,6.63
+2023,3920387,Cape Verde Islands,Deroy Duarte,7,1.0,1.0,1,14.29,66,9.55
+2023,3877072,Inter Miami,DeAndre Yedlin,7,3.0,1.0,2,14.29,96,6.56
+2023,3920402,Algeria,Sofiane Feghouli,7,2.0,1.0,1,14.29,48,13.13
+2023,3920388,Gambia,Alieu Fadera,7,1.0,1.0,1,14.29,20,31.5
+2023,3920416,South Africa,Nyiko Mobbie,7,0.0,1.0,0,14.29,49,12.86
+2023,3920409,Guinea-Bissau,Marciano Sanca Tchami,7,1.0,1.0,0,14.29,41,15.37
+2023,3920407,South Africa,Thapelo James Morena,7,3.0,1.0,4,14.29,77,8.18
+2023,3920410,Mozambique,Feliciano João Jone,7,1.0,1.0,0,14.29,72,8.75
+2023,3877072,Nashville SC,Jack Maher,7,1.0,3.0,0,42.86,88,7.16
+2023,3922240,Congo DR,Yoane Wissa,7,0.0,0.0,3,0.0,77,8.18
+2023,3920409,Nigeria,Victor James Osimhen,7,4.0,2.0,3,28.57,93,6.77
+2023,3920406,Tanzania,Mohamed Hussein Mohamed,7,1.0,4.0,0,57.14,95,6.63
+2022/2023,3837747,Paris Saint-Germain,Marcos Aoás Corrêa,7,1.0,2.0,2,28.57,94,6.7
+2023,3920384,Côte d'Ivoire,Obite Evan Ndicka,7,0.0,1.0,0,14.29,93,6.77
+2023,3920384,Guinea-Bissau,Moreto Moro Cassamã,7,2.0,0.0,1,0.0,66,9.55
+2023,3920388,Gambia,Omar Colley,7,1.0,3.0,0,42.86,90,7.0
+2023,3922356,Congo DR,Gedeon Kalulu Kyatengwa,7,1.0,2.0,0,28.57,87,7.24
+2023,3922356,Congo DR,Arthur Masuaku,7,2.0,3.0,3,42.86,92,6.85
+2023,3920392,Burkina Faso,Cédric Badolo,7,2.0,3.0,4,42.86,72,8.75
+2022/2023,3837839,Paris Saint-Germain,Kylian Mbappé Lottin,7,2.0,0.0,4,0.0,96,6.56
+2023,3920389,Guinea,Ibrahim Diakité,7,2.0,3.0,0,42.86,34,18.53
+2023,3920396,Ghana,Iddrisu Baba Mohammed,7,3.0,3.0,1,42.86,33,19.09
+2023,3922244,Mali,Fousseni Diabaté,7,0.0,2.0,3,28.57,24,26.25
+2022/2023,3837947,Lens,Massadio Haïdara,7,0.0,0.0,0,0.0,16,39.38
+2023,3920399,Mozambique,Alfons Amade,7,2.0,1.0,1,14.29,65,9.69
+2023,3920403,Angola,Cristóvão Paciência Mabululo,7,2.0,0.0,6,0.0,94,6.7
+2023,3920402,Algeria,Ramiz Larbi Zerrouki,7,0.0,2.0,1,28.57,98,6.43
+2023,3920402,Burkina Faso,Ismahila Ouédraogo,7,3.0,2.0,1,28.57,57,11.05
+2023,3920410,Ghana,Mohammed Kudus,7,1.0,3.0,4,42.86,88,7.16
+2023,3922243,Morocco,Azzedine Ounahi,7,2.0,2.0,2,28.57,100,6.3
+2023,3920402,Algeria,Youcef Atal,7,1.0,1.0,0,14.29,97,6.49
+2023,3920414,Angola,Kialonda Gaspar,7,1.0,3.0,0,42.86,96,6.56
+2023,3920419,Morocco,Amine Adli,7,0.0,2.0,0,28.57,48,13.13
+2023,3920407,Namibia,Peter Shalulile,7,0.0,2.0,5,28.57,93,6.77
+2023,3920390,Angola,Manuel Keliano,7,2.0,1.0,1,14.29,6,105.0
+2023,3920408,Côte d'Ivoire,Karim Konaté,7,1.0,0.0,5,0.0,32,19.69
+2023,3920391,Mali,Lassana Coulibaly,7,2.0,1.0,2,14.29,32,19.69
+2023,3920403,Mauritania,Yacoub Aly Abeid,6,3.0,3.0,0,50.0,47,11.49
+2022/2023,3838017,Paris Saint-Germain,Kylian Mbappé Lottin,6,0.0,0.0,2,0.0,89,6.07
+2023,3920384,Guinea-Bissau,Carlos Mendes Gomes,6,2.0,3.0,4,50.0,22,24.55
+2023,3920407,Namibia,Bethuel Muzeu,6,1.0,2.0,3,33.33,48,11.25
+2022/2023,3837659,Montpellier,Falaye Sacko,6,1.0,4.0,0,66.67,90,6.0
+2023,3922239,Guinea,Mouctar Diakhaby,6,0.0,2.0,0,33.33,97,5.57
+2022/2023,3837928,Lyon,Moussa Dembélé,6,0.0,0.0,0,0.0,26,20.77
+2022/2023,3838017,Paris Saint-Germain,Carlos Soler Barragán,6,2.0,0.0,3,0.0,36,15.0
+2023,3920399,Mozambique,Edmilson Gabriel Dove,6,3.0,2.0,0,33.33,94,5.74
+2022/2023,3837998,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,2.0,0.0,4,0.0,94,5.74
+2022/2023,3837954,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,1.0,0.0,3,0.0,91,5.93
+2022/2023,3837650,Clermont Foot,Alidu Seidu,6,2.0,1.0,1,16.67,89,6.07
+2022/2023,3837650,Clermont Foot,Florent Ogier,6,3.0,1.0,0,16.67,83,6.51
+2023,3920409,Guinea-Bissau,Eulânio Ângelo Chipela Gomes,6,0.0,2.0,0,33.33,77,7.01
+2022/2023,3837918,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,2.0,2.0,4,33.33,95,5.68
+2023,3920388,Senegal,Krépin Diatta,6,0.0,5.0,1,83.33,94,5.74
+2022/2023,3837844,Paris Saint-Germain,Marcos Aoás Corrêa,6,0.0,5.0,0,83.33,93,5.81
+2023,3920398,Côte d'Ivoire,Serge Aurier,6,1.0,1.0,1,16.67,64,8.44
+2022/2023,3837947,Lens,David Pereira da Costa,6,0.0,1.0,1,16.67,9,60.0
+2022/2023,3837938,OGC Nice,Ross Barkley,6,1.0,0.0,3,0.0,11,49.09
+2023,3920399,Cape Verde Islands,Steven Moreira,6,1.0,3.0,1,50.0,74,7.3
+2023,3920416,Tunisia,Sayfallah Ltaief,6,2.0,0.0,3,0.0,25,21.6
+2023,3920401,Gambia,Muhammed Badamosi,6,0.0,1.0,4,16.67,24,22.5
+2023,3923881,Nigeria,Calvin Bassey Ughelumba,6,1.0,4.0,0,66.67,94,5.74
+2023,3923881,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,6,1.0,2.0,0,33.33,95,5.68
+2023,3920392,Mauritania,Aboubakar Kamara,6,1.0,0.0,3,0.0,27,20.0
+2023,3920397,Guinea-Bissau,Marcelo Amado Djaló Taritolay,6,1.0,1.0,2,16.67,94,5.74
+2022/2023,3837818,Paris Saint-Germain,Carlos Soler Barragán,6,1.0,2.0,1,33.33,13,41.54
+2023,3920414,Burkina Faso,Cédric Badolo,6,1.0,1.0,2,16.67,47,11.49
+2023,3922321,Nigeria,Alhassan Yusuf,6,1.0,0.0,2,0.0,16,33.75
+2023,3923880,South Africa,Themba Zwane,6,0.0,0.0,1,0.0,55,9.82
+2023,3922838,Congo DR,Théo Bongonda Mbul''Ofeko Batombo,6,0.0,1.0,1,16.67,48,11.25
+2023,3922838,Côte d'Ivoire,Jean Michaël Seri,6,2.0,2.0,0,33.33,59,9.15
+2023,3923880,South Africa,Sphephelo S''Miso Sithole,6,0.0,1.0,2,16.67,93,5.81
+2023,3922241,Mauritania,Omaré Gassama,6,0.0,3.0,2,50.0,32,16.88
+2022/2023,3837876,Paris Saint-Germain,Timothee Pembele,6,0.0,2.0,0,33.33,73,7.4
+2023,3922321,Nigeria,Joe Aribo,6,2.0,1.0,3,16.67,9,60.0
+2023,3922321,Angola,Augusto de Jesus Corte Real Carneiro,6,0.0,1.0,0,16.67,94,5.74
+2022/2023,3837963,Lorient,Gedeon Kalulu Kyatengwa,6,0.0,1.0,1,16.67,64,8.44
+2023,3920400,Senegal,Nicolas Jackson,6,1.0,1.0,2,16.67,16,33.75
+2022/2023,3837662,Paris Saint-Germain,Renato Júnior Luz Sanches,6,1.0,0.0,0,0.0,25,21.6
+2022/2023,3837662,Paris Saint-Germain,Presnel Kimpembe,6,1.0,2.0,0,33.33,85,6.35
+2023,3922244,Burkina Faso,Stephane Aziz Ki,6,2.0,1.0,3,16.67,11,49.09
+2023,3922356,Guinea,Sekou Oumar Sylla,6,1.0,0.0,0,0.0,56,9.64
+2023,3877060,New York Red Bulls,Cameron Harper,6,3.0,1.0,3,16.67,82,6.59
+2023,3922356,Guinea,Julian Jeanvier,6,2.0,2.0,1,33.33,94,5.74
+2022/2023,3837650,Paris Saint-Germain,Nordi Mukiele Mulere,6,3.0,0.0,1,0.0,22,24.55
+2022/2023,3837659,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,2.0,3.0,5,50.0,87,6.21
+2023,3920387,Ghana,André Ayew Pelé,6,2.0,2.0,4,33.33,33,16.36
+2022/2023,3837695,Nantes,Ludovic Blas,6,3.0,2.0,3,33.33,82,6.59
+2023,3920414,Burkina Faso,Bertrand Isidore Traoré,6,0.0,0.0,1,0.0,71,7.61
+2023,3920413,Gambia,Alieu Fadera,6,2.0,1.0,0,16.67,30,18.0
+2022/2023,3837954,Angers,Cédric Hountondji,6,0.0,1.0,0,16.67,85,6.35
+2022/2023,3837680,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,4.0,2.0,4,33.33,85,6.35
+2023,3920392,Burkina Faso,Abdoul Fessal Tapsoba,6,0.0,3.0,2,50.0,48,11.25
+2023,3922241,Mauritania,Aboubakar Kamara,6,1.0,5.0,3,83.33,33,16.36
+2023,3920412,Senegal,Abdoulaye Seck,6,3.0,0.0,0,0.0,93,5.81
+2023,3920394,Morocco,Hakim Ziyech,6,4.0,2.0,3,33.33,79,6.84
+2022/2023,3837844,Paris Saint-Germain,Juan Bernat Velasco,6,0.0,3.0,0,50.0,22,24.55
+2022/2023,3837998,Auxerre,M''Baye Babacar Niang,6,1.0,0.0,5,0.0,8,67.5
+2022/2023,3837747,Marseille,Chancel Mbemba Mangulu,6,0.0,2.0,2,33.33,93,5.81
+2023,3920385,Egypt,Mohamed Hamdy Sharaf,6,0.0,2.0,1,33.33,97,5.57
+2023,3920396,Egypt,Mohamed Abdel Monem,6,1.0,3.0,1,50.0,96,5.63
+2022/2023,3837662,Lille,Edon Zhegrova,6,1.0,1.0,0,16.67,31,17.42
+2023,3920396,Ghana,Mohamed Salisu,6,2.0,2.0,0,33.33,93,5.81
+2023,3920398,Côte d'Ivoire,Ghislain Konan,6,2.0,3.0,1,50.0,79,6.84
+2022/2023,3838017,Clermont Foot,Saîf-Eddine Khaoui,6,1.0,1.0,1,16.67,24,22.5
+2023,3922659,Côte d'Ivoire,Nicolas Pépé,6,1.0,1.0,0,16.67,47,11.49
+2022/2023,3837659,Paris Saint-Germain,Vitor Machado Ferreira,6,2.0,0.0,4,0.0,69,7.83
+2022/2023,3837683,Toulouse,Thijs Dallinga,6,1.0,1.0,2,16.67,75,7.2
+2023,3923881,Côte d'Ivoire,Max-Alain Gradel,6,1.0,2.0,2,33.33,69,7.83
+2023,3920405,Congo DR,Meschak Elia,6,3.0,2.0,2,33.33,47,11.49
+2022/2023,3837918,Paris Saint-Germain,Danilo Luís Hélio Pereira,6,0.0,3.0,0,50.0,95,5.68
+2022/2023,3837695,Paris Saint-Germain,Marcos Aoás Corrêa,6,3.0,2.0,1,33.33,91,5.93
+2023,3922239,Guinea,Ibrahim Diakité,6,2.0,1.0,1,16.67,97,5.57
+2023,3920412,Guinea,Karim Cissé,6,1.0,3.0,0,50.0,17,31.76
+2023,3920412,Senegal,Cheikhou Kouyaté,6,2.0,5.0,0,83.33,20,27.0
+2023,3920386,Nigeria,Zaidu Sanusi,6,0.0,2.0,0,33.33,80,6.75
+2023,3920412,Senegal,Pape Gueye,6,0.0,2.0,0,33.33,70,7.71
+2023,3920402,Algeria,Nabil Bentaleb,6,0.0,1.0,1,16.67,79,6.84
+2023,3922239,Equatorial Guinea,Emilio Nsue López,6,1.0,0.0,2,0.0,96,5.63
+2022/2023,3837954,Paris Saint-Germain,Marcos Aoás Corrêa,6,2.0,1.0,0,16.67,91,5.93
+2023,3920399,Cape Verde Islands,Willy Afonso Semedo Johnson,6,0.0,1.0,1,16.67,34,15.88
+2023,3922658,South Africa,Mothobi Mvala,6,0.0,4.0,0,66.67,125,4.32
+2022/2023,3837896,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,3.0,1.0,4,16.67,91,5.93
+2023,3920390,Angola,Bruno Lourenço Pinto de Almeida Paz,6,1.0,2.0,0,33.33,39,13.85
+2022/2023,3837918,Rennes,Arthur Theate,6,1.0,1.0,1,16.67,90,6.0
+2023,3920417,Namibia,Kennedy Amutenya,6,0.0,1.0,0,16.67,81,6.67
+2023,3922838,Côte d'Ivoire,Willy Boly,6,0.0,1.0,0,16.67,90,6.0
+2022/2023,3837839,Paris Saint-Germain,Renato Júnior Luz Sanches,6,1.0,0.0,0,0.0,27,20.0
+2023,3920404,Tunisia,Sayfallah Ltaief,6,1.0,3.0,2,50.0,23,23.48
+2023,3920415,Algeria,Adam Ounas,6,2.0,2.0,3,33.33,55,9.82
+2023,3920403,Angola,Kialonda Gaspar,6,0.0,0.0,0,0.0,95,5.68
+2023,3922244,Burkina Faso,Issoufou Dayo,6,3.0,1.0,0,16.67,97,5.57
+2023,3920414,Angola,Jérémy Bela,6,1.0,0.0,1,0.0,40,13.5
+2022/2023,3837695,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,2.0,0.0,5,0.0,90,6.0
+2022/2023,3837659,Montpellier,Nicolas Louis Marcel Cozza,6,0.0,1.0,0,16.67,88,6.14
+2023,3920395,Congo DR,Yoane Wissa,6,0.0,3.0,2,50.0,91,5.93
+2022/2023,3837963,Lorient,Abdoul Bamo Meité,6,1.0,2.0,0,33.33,92,5.87
+2023,3877072,Nashville SC,Jacob Shaffelburg,6,0.0,1.0,1,16.67,51,10.59
+2023,3920410,Mozambique,Elias Gaspar Pelembe,6,1.0,1.0,2,16.67,22,24.55
+2022/2023,3837859,Toulouse,Warren Kamanzi,6,1.0,1.0,1,16.67,59,9.15
+2023,3920415,Mauritania,Lamine Ba,6,0.0,1.0,0,16.67,96,5.63
+2023,3920419,Zambia,Tandi Mwape,6,1.0,0.0,0,0.0,79,6.84
+2023,3920416,South Africa,Mothobi Mvala,6,0.0,2.0,0,33.33,85,6.35
+2023,3920416,South Africa,Gomolemo Grant Kekana,6,1.0,0.0,0,0.0,93,5.81
+2023,3920393,Tunisia,Montassar Omar Talbi,6,2.0,3.0,2,50.0,96,5.63
+2022/2023,3837896,Paris Saint-Germain,Kylian Mbappé Lottin,6,1.0,1.0,4,16.67,91,5.93
+2023,3920415,Algeria,Mohamed Amine Tougai,6,2.0,1.0,0,16.67,98,5.51
+2023,3922356,Congo DR,Théo Bongonda Mbul''Ofeko Batombo,6,2.0,0.0,2,0.0,80,6.75
+2023,3920397,Equatorial Guinea,Santiago Eneme Bocari,6,2.0,2.0,1,33.33,24,22.5
+2023,3922356,Congo DR,Meschak Elia,6,0.0,1.0,2,16.67,56,9.64
+2023,3920405,Morocco,Bilal El Khannous,6,4.0,0.0,2,0.0,32,16.88
+2023,3920398,Côte d'Ivoire,Christian Kouamé,6,1.0,2.0,3,33.33,64,8.44
+2023,3920418,Tanzania,Charles M'Mombwa,6,0.0,2.0,0,33.33,6,90.0
+2022/2023,3837752,AC Ajaccio,Mickaël Barreto,6,0.0,1.0,0,16.67,14,38.57
+2023,3920387,Cape Verde Islands,Roberto Lopes,6,1.0,3.0,1,50.0,97,5.57
+2023,3920386,Equatorial Guinea,Saúl Basilio Coco-Bassey Oubiña,6,1.0,1.0,0,16.67,93,5.81
+2023,3920405,Morocco,Abdessamad Ezzalzouli,6,0.0,3.0,0,50.0,34,15.88
+2023,3920385,Mozambique,Reinildo Isnard Mandava,6,1.0,1.0,0,16.67,90,6.0
+2023,3922239,Equatorial Guinea,Esteban Obiang Obono,6,1.0,4.0,2,66.67,94,5.74
+2022/2023,3837938,OGC Nice,Pablo Paulino Rosario,6,2.0,3.0,3,50.0,23,23.48
+2022/2023,3837987,Paris Saint-Germain,Sergio Ramos García,6,1.0,0.0,0,0.0,89,6.07
+2023,3920389,Cameroon,Georges-Kévin Nkoudou Mbida,6,2.0,1.0,3,16.67,95,5.68
+2023,3920412,Guinea,Mohamed Bayo,6,3.0,1.0,6,16.67,33,16.36
+2022/2023,3837844,Paris Saint-Germain,Danilo Luís Hélio Pereira,6,2.0,2.0,0,33.33,93,5.81
+2022/2023,3837727,OGC Nice,Khéphren Thuram-Ulien,6,1.0,1.0,0,16.67,32,16.88
+2022/2023,3837785,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,1.0,2.0,3,33.33,73,7.4
+2023,3920395,Congo DR,Chancel Mbemba Mangulu,6,2.0,3.0,1,50.0,93,5.81
+2023,3920395,Zambia,Kelvin Kapumbu,6,0.0,3.0,1,50.0,93,5.81
+2023,3920387,Ghana,Mohamed Salisu,6,0.0,2.0,0,33.33,99,5.45
+2022/2023,3837844,Montpellier,Christopher Jullien,6,1.0,3.0,0,50.0,90,6.0
+2023,3920417,Mali,Aliou Dieng,6,1.0,1.0,0,16.67,67,8.06
+2023,3920416,South Africa,Thapelo Maseko,6,1.0,1.0,2,16.67,27,20.0
+2023,3920403,Mauritania,Lamine Ba,6,2.0,2.0,0,33.33,93,5.81
+2023,3920396,Egypt,Mahmoud Ibrahim Hassan,6,2.0,3.0,3,50.0,28,19.29
+2023,3922238,Cameroon,Enzo Gianni Tchato Mbiayi,6,1.0,0.0,0,0.0,12,45.0
+2022/2023,3837876,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,6,1.0,1.0,2,16.67,93,5.81
+2023,3877115,Toronto FC,Latif Blessing,6,1.0,1.0,1,16.67,23,23.48
+2023,3920410,Mozambique,Witiness Chimoio João Quembo,6,2.0,2.0,4,33.33,59,9.15
+2023,3920405,Congo DR,Fiston Kalala Mayele,6,1.0,1.0,3,16.67,46,11.74
+2022/2023,3837659,Montpellier,Arnaud Souquet,6,2.0,2.0,1,33.33,17,31.76
+2023,3920406,Zambia,Cletous Chama,6,0.0,1.0,3,16.67,20,27.0
+2022/2023,3837771,Troyes,Thierno Balde,6,1.0,1.0,0,16.67,71,7.61
+2023,3920411,Cape Verde Islands,Kevin Lenini Gonçalves Pereira de Pina,6,1.0,0.0,0,0.0,72,7.5
+2022/2023,3837706,Paris Saint-Germain,Danilo Luís Hélio Pereira,6,1.0,1.0,0,16.67,94,5.74
+2023,3920405,Morocco,Sofiane Boufal,6,0.0,1.0,2,16.67,62,8.71
+2023,3877170,Inter Miami,Kamal Miller,6,1.0,2.0,0,33.33,95,5.68
+2023,3920402,Algeria,Riyad Mahrez,6,1.0,2.0,1,33.33,73,7.4
+2022/2023,3837818,Angers,Farid El Melali,6,0.0,1.0,0,16.67,31,17.42
+2023,3922243,Morocco,Ismael Saibari,6,3.0,3.0,4,50.0,42,12.86
+2022/2023,3837752,AC Ajaccio,Youssouf Koné,5,0.0,2.0,0,40.0,71,6.34
+2023,3922237,Angola,Augusto de Jesus Corte Real Carneiro,5,0.0,1.0,0,20.0,94,4.79
+2023,3922243,Morocco,Noussair Mazraoui,5,1.0,4.0,0,80.0,75,6.0
+2022/2023,3837918,Paris Saint-Germain,Renato Júnior Luz Sanches,5,0.0,1.0,0,20.0,40,11.25
+2023,3920390,Angola,Ambrosini Antonio Cabaça Salvador,5,0.0,1.0,0,20.0,6,75.0
+2023,3920398,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,5,0.0,3.0,0,60.0,98,4.59
+2023,3920398,Côte d'Ivoire,Oumar Diakité,5,1.0,0.0,3,0.0,18,25.0
+2022/2023,3838004,Strasbourg,Dimitri Liénard,5,1.0,2.0,3,40.0,22,20.45
+2023,3920403,Angola,Jonathan Buatu Mananga,5,0.0,2.0,0,40.0,88,5.11
+2023,3922241,Mauritania,Yassin Cheikh El Welly,5,1.0,2.0,1,40.0,21,21.43
+2022/2023,3837928,Lyon,Amin Sarr,5,0.0,1.0,2,20.0,21,21.43
+2022/2023,3838017,Paris Saint-Germain,Renato Júnior Luz Sanches,5,2.0,0.0,3,0.0,35,12.86
+2022/2023,3837752,AC Ajaccio,Riad Nouri,5,2.0,2.0,2,40.0,34,13.24
+2022/2023,3837844,Paris Saint-Germain,Warren Zaire Emery,5,3.0,1.0,0,20.0,23,19.57
+2023,3920393,Tunisia,Taha Yassine Khenissi,5,3.0,3.0,0,60.0,14,32.14
+2023,3920387,Cape Verde Islands,Kenny Rocha Santos,5,0.0,2.0,0,40.0,30,15.0
+2023,3920386,Nigeria,Joe Aribo,5,0.0,0.0,2,0.0,28,16.07
+2022/2023,3837987,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,5,2.0,0.0,3,0.0,89,5.06
+2023,3922240,Congo DR,Silas Katompa Mvumpa,5,1.0,3.0,2,60.0,39,11.54
+2022/2023,3837954,Paris Saint-Germain,Sergio Ramos García,5,1.0,2.0,0,40.0,89,5.06
+2022/2023,3837896,Paris Saint-Germain,Sergio Ramos García,5,1.0,0.0,0,0.0,93,4.84
+2022/2023,3837659,Paris Saint-Germain,Marcos Aoás Corrêa,5,1.0,1.0,0,20.0,89,5.06
+2023,3922241,Mauritania,Guessouma Fofana,5,1.0,2.0,0,40.0,64,7.03
+2023,3920414,Angola,Manuel Luís da Silva Cafumana,5,1.0,0.0,1,0.0,33,13.64
+2023,3922659,Côte d'Ivoire,Serge Aurier,5,1.0,0.0,0,0.0,50,9.0
+2023,3877072,Inter Miami,Facundo Farías,5,4.0,1.0,3,20.0,47,9.57
+2023,3922239,Guinea,Serhou Guirassy,5,2.0,4.0,3,80.0,36,12.5
+2023,3920396,Egypt,Mohamed Salah,5,0.0,1.0,0,20.0,44,10.23
+2023,3922659,Mali,Hamari Traoré,5,1.0,1.0,1,20.0,123,3.66
+2022/2023,3837876,Paris Saint-Germain,Carlos Soler Barragán,5,1.0,0.0,1,0.0,18,25.0
+2023,3920418,Tanzania,Ibrahim Abdallah Hamad,5,2.0,1.0,0,20.0,93,4.84
+2023,3877194,Inter Miami,Kamal Miller,5,0.0,2.0,0,40.0,92,4.89
+2023,3920408,Côte d'Ivoire,Jean-Philippe Krasso,5,1.0,2.0,2,40.0,31,14.52
+2023,3920405,Morocco,Romain Saïss,5,1.0,2.0,0,40.0,96,4.69
+2023,3922237,Angola,Ambrosini Antonio Cabaça Salvador,5,2.0,2.0,1,40.0,22,20.45
+2023,3920386,Equatorial Guinea,José Nabil Onva Adjugu,5,1.0,2.0,0,40.0,19,23.68
+2023,3920401,Guinea,Facinet Conte,5,2.0,1.0,2,20.0,19,23.68
+2023,3923880,Congo DR,Yoane Wissa,5,1.0,0.0,1,0.0,63,7.14
+2023,3920394,Tanzania,Mbwana Ally Samatta,5,2.0,1.0,3,20.0,66,6.82
+2023,3920399,Cape Verde Islands,Carlos Miguel Pereira Fernandes,5,2.0,3.0,2,60.0,14,32.14
+2022/2023,3837918,Rennes,Amine Gouiri,5,0.0,1.0,0,20.0,20,22.5
+2023,3920406,Zambia,Lubambo Musonda,5,2.0,1.0,0,20.0,51,8.82
+2022/2023,3837695,Paris Saint-Germain,Danilo Luís Hélio Pereira,5,2.0,1.0,1,20.0,91,4.95
+2022/2023,3837818,Angers,Waniss Taibi,5,1.0,0.0,1,0.0,13,34.62
+2023,3920389,Cameroon,Christopher Wooh,5,0.0,1.0,1,20.0,74,6.08
+2022/2023,3837747,Marseille,Nuno Albertino Varela Tavares,5,0.0,0.0,1,0.0,68,6.62
+2022/2023,3837717,Paris Saint-Germain,Kylian Mbappé Lottin,5,0.0,0.0,3,0.0,93,4.84
+2023,3920385,Egypt,Ahmed Elsayed Ali Elsayed Hegazy,5,0.0,2.0,1,40.0,100,4.5
+2023,3920399,Mozambique,Pachoio Lau Há King,5,1.0,1.0,5,20.0,50,9.0
+2023,3920384,Côte d'Ivoire,Jeremie Boga,5,0.0,0.0,2,0.0,92,4.89
+2022/2023,3837785,Paris Saint-Germain,Sergio Ramos García,5,2.0,0.0,1,0.0,74,6.08
+2022/2023,3837896,Paris Saint-Germain,Danilo Luís Hélio Pereira,5,2.0,4.0,1,80.0,94,4.79
+2022/2023,3837683,Paris Saint-Germain,Neymar da Silva Santos Junior,5,2.0,2.0,3,40.0,67,6.72
+2023,3920400,Senegal,Kalidou Koulibaly,5,0.0,0.0,1,0.0,96,4.69
+2023,3920406,Tanzania,Haji Mnoga,5,0.0,1.0,0,20.0,46,9.78
+2023,3922243,Morocco,Achraf Hakimi Mouh,5,2.0,1.0,1,20.0,101,4.46
+2023,3922243,South Africa,Gomolemo Grant Kekana,5,2.0,0.0,0,0.0,100,4.5
+2023,3877194,Charlotte,Scott Arfield,5,0.0,0.0,3,0.0,16,28.13
+2023,3920391,South Africa,Mihlali Samson Mayambela,5,2.0,2.0,1,40.0,20,22.5
+2023,3920395,Congo DR,Cédric Bakambu,5,0.0,1.0,1,20.0,79,5.7
+2023,3920408,Equatorial Guinea,Saúl Basilio Coco-Bassey Oubiña,5,2.0,0.0,0,0.0,95,4.74
+2023,3877072,Inter Miami,Josef Alexander Martínez Mencia,5,1.0,0.0,4,0.0,70,6.43
+2023,3920413,Cameroon,Jean-Charles Castelletto,5,0.0,3.0,0,60.0,99,4.55
+2023,3920415,Mauritania,Aboubakar Kamara,5,1.0,2.0,3,40.0,20,22.5
+2023,3920403,Mauritania,Aboubakar Kamara,5,2.0,1.0,5,20.0,36,12.5
+2022/2023,3837839,Stade de Reims,Kamory Doumbia,5,0.0,2.0,2,40.0,20,22.5
+2023,3920411,Egypt,Mohamed Hany Gamal Eldemerdash,5,0.0,1.0,0,20.0,98,4.59
+2022/2023,3837818,Paris Saint-Germain,Marcos Aoás Corrêa,5,1.0,2.0,0,40.0,90,5.0
+2022/2023,3837747,Marseille,Pape Gueye,5,1.0,2.0,1,40.0,15,30.0
+2022/2023,3837987,AC Ajaccio,Mathieu Coutadeur,5,0.0,3.0,0,60.0,61,7.38
+2023,3920385,Egypt,Omar Kamal Abdel Wahed,5,0.0,2.0,1,40.0,33,13.64
+2023,3920416,Tunisia,Naïm Sliti,5,0.0,0.0,0,0.0,23,19.57
+2023,3920417,Mali,Kamory Doumbia,5,2.0,1.0,2,20.0,40,11.25
+2022/2023,3837918,Paris Saint-Germain,Kylian Mbappé Lottin,5,0.0,0.0,3,0.0,95,4.74
+2023,3923880,South Africa,Thapelo James Morena,5,1.0,1.0,2,20.0,71,6.34
+2023,3920399,Cape Verde Islands,Logan Costa,5,0.0,2.0,0,40.0,95,4.74
+2022/2023,3837818,Paris Saint-Germain,Danilo Luís Hélio Pereira,5,0.0,2.0,0,40.0,93,4.84
+2022/2023,3837752,Paris Saint-Germain,Marcos Aoás Corrêa,5,1.0,3.0,0,60.0,82,5.49
+2023,3922244,Mali,Sekou Koita,5,0.0,0.0,1,0.0,23,19.57
+2023,3877170,Cincinnati,Bret Halsey,5,0.0,0.0,0,0.0,13,34.62
+2022/2023,3837695,Nantes,Evann Guessand,5,1.0,0.0,3,0.0,65,6.92
+2022/2023,3837717,Paris Saint-Germain,Danilo Luís Hélio Pereira,5,1.0,2.0,0,40.0,94,4.79
+2023,3920399,Mozambique,Witiness Chimoio João Quembo,5,1.0,2.0,2,40.0,48,9.38
+2023,3920401,Guinea,Julian Jeanvier,5,1.0,3.0,2,60.0,90,5.0
+2023,3920387,Cape Verde Islands,Willy Afonso Semedo Johnson,5,0.0,0.0,2,0.0,20,22.5
+2023,3920392,Burkina Faso,Edmond Fayçal Tapsoba,5,1.0,0.0,0,0.0,97,4.64
+2023,3922659,Mali,Mamadou Fofana,5,0.0,1.0,0,20.0,32,14.06
+2022/2023,3837650,Clermont Foot,Vivaldo Borges dos Santos Neto,5,0.0,1.0,0,20.0,86,5.23
+2023,3920391,South Africa,Aubrey Maphosa Modiba,5,2.0,1.0,2,20.0,93,4.84
+2023,3920394,Morocco,Bilal El Khannous,5,2.0,0.0,4,0.0,22,20.45
+2023,3920412,Guinea,Morgan Guilavogui,5,3.0,1.0,1,20.0,31,14.52
+2023,3922239,Equatorial Guinea,Saúl Basilio Coco-Bassey Oubiña,5,0.0,1.0,0,20.0,97,4.64
+2023,3920408,Côte d'Ivoire,Obite Evan Ndicka,5,1.0,3.0,0,60.0,96,4.69
+2023,3920397,Guinea-Bissau,Carlos Mendes Gomes,5,1.0,1.0,3,20.0,30,15.0
+2023,3920384,Côte d'Ivoire,Jonathan Bamba,5,1.0,0.0,3,0.0,60,7.5
+2023,3920419,Zambia,Frankie Musonda,5,1.0,1.0,1,20.0,93,4.84
+2023,3922356,Congo DR,Henoc Inonga Baka,5,0.0,4.0,0,80.0,93,4.84
+2023,3920388,Senegal,Nicolas Jackson,5,0.0,1.0,2,20.0,35,12.86
+2023,3920389,Guinea,Julian Jeanvier,5,0.0,0.0,0,0.0,87,5.17
+2022/2023,3837771,Troyes,Ante Palaversa,5,1.0,1.0,0,20.0,11,40.91
+2022/2023,3837844,Montpellier,Khalil Fayad,5,1.0,0.0,0,0.0,8,56.25
+2023,3923880,Congo DR,Fiston Kalala Mayele,5,1.0,2.0,4,40.0,14,32.14
+2022/2023,3837752,Paris Saint-Germain,Carlos Soler Barragán,5,0.0,2.0,0,40.0,69,6.52
+2023,3920415,Algeria,Kévin Daniel Van Den Kerkhof,5,0.0,2.0,0,40.0,17,26.47
+2022/2023,3837844,Montpellier,Falaye Sacko,5,3.0,2.0,2,40.0,84,5.36
+2023,3920384,Côte d'Ivoire,Wilfried Stephane Singo,5,1.0,2.0,1,40.0,45,10.0
+2023,3877060,Inter Miami,Robert Taylor,5,1.0,2.0,0,40.0,59,7.63
+2023,3920392,Mauritania,Nouh Mohamed El Abd,5,2.0,1.0,0,20.0,91,4.95
+2023,3920411,Cape Verde Islands,Steven Moreira,5,1.0,2.0,0,40.0,35,12.86
+2023,3920411,Egypt,Mohamed Hamdy Sharaf,5,1.0,0.0,1,0.0,45,10.0
+2022/2023,3837680,AS Monaco,Breel-Donald Embolo,5,0.0,1.0,1,20.0,26,17.31
+2023,3920410,Mozambique,Edson André Sitoe,5,1.0,1.0,0,20.0,95,4.74
+2022/2023,3837650,Paris Saint-Germain,Sergio Ramos García,5,2.0,0.0,1,0.0,66,6.82
+2023,3877090,Inter Miami,Lionel Andrés Messi Cuccittini,5,0.0,1.0,2,20.0,94,4.79
+2022/2023,3837876,Paris Saint-Germain,Nuno Mendes,5,0.0,1.0,0,20.0,30,15.0
+2023,3923881,Côte d'Ivoire,Jean Thierry Lazare Amani,5,1.0,1.0,1,20.0,3,150.0
+2022/2023,3837876,Lille,Leny Yoro,5,1.0,2.0,0,40.0,78,5.77
+2023,3920399,Mozambique,Bruno Alberto Langa,5,1.0,2.0,0,40.0,77,5.84
+2023,3922240,Egypt,Ahmed Mohamed Abo El Fotouh Mohamed,5,1.0,2.0,1,40.0,48,9.38
+2023,3920399,Cape Verde Islands,Gilson Benchimol Tavares,5,0.0,0.0,3,0.0,19,23.68
+2022/2023,3837752,AC Ajaccio,Cyrille Bayala,5,1.0,2.0,2,40.0,55,8.18
+2023,3922243,South Africa,Evidence Makgopa,5,1.0,2.0,2,40.0,71,6.34
+2023,3877115,Toronto FC,Brandon Iván Servania,5,2.0,0.0,0,0.0,13,34.62
+2023,3920394,Tanzania,Bakari Nondo Mwamnyeto,5,1.0,2.0,0,40.0,88,5.11
+2023,3920392,Mauritania,Lamine Ba,5,0.0,1.0,0,20.0,66,6.82
+2023,3920414,Angola,Zito André Sebastião Luvumbo,5,2.0,0.0,1,0.0,32,14.06
+2022/2023,3837859,Toulouse,Rasmus Nicolaisen,5,0.0,1.0,0,20.0,93,4.84
+2022/2023,3837752,Paris Saint-Germain,Nordi Mukiele Mulere,5,1.0,2.0,0,40.0,89,5.06
+2022/2023,3837844,Paris Saint-Germain,Hugo Ekitike,5,1.0,1.0,3,20.0,69,6.52
+2022/2023,3837717,Lyon,Jeff Reine-Adélaïde,5,0.0,0.0,1,0.0,18,25.0
+2022/2023,3838004,Paris Saint-Germain,Kylian Mbappé Lottin,5,2.0,1.0,4,20.0,86,5.23
+2022/2023,3837963,Lorient,Vincent Le Goff,5,0.0,2.0,1,40.0,93,4.84
+2023,3920403,Mauritania,Khadim Diaw,5,0.0,2.0,0,40.0,50,9.0
+2023,3877060,Inter Miami,Kamal Miller,5,0.0,3.0,0,60.0,91,4.95
+2023,3920406,Tanzania,Charles M'Mombwa,5,0.0,0.0,2,0.0,23,19.57
+2023,3920394,Morocco,Amine Adli,5,2.0,1.0,3,20.0,24,18.75
+2022/2023,3837818,Angers,Sada Thioub,5,1.0,3.0,0,60.0,13,34.62
+2023,3920395,Congo DR,Arthur Masuaku,5,1.0,2.0,1,40.0,94,4.79
+2023,3922243,Morocco,Nayef Aguerd,5,0.0,2.0,1,40.0,100,4.5
+2023,3922241,Mauritania,El-Hadji Ba,5,1.0,3.0,3,60.0,20,22.5
+2022/2023,3837680,Paris Saint-Germain,Marcos Aoás Corrêa,5,0.0,1.0,0,20.0,86,5.23
+2023,3922243,South Africa,Mothobi Mvala,5,0.0,4.0,0,80.0,98,4.59
+2023,3922240,Egypt,Omar Marmoush,5,0.0,2.0,1,40.0,40,11.25
+2023,3922356,Guinea,Abdoulaye Touré,5,1.0,3.0,0,60.0,35,12.86
+2023,3922837,South Africa,Siyanda Xulu,5,1.0,3.0,0,60.0,75,6.0
+2023,3920385,Mozambique,Edson André Sitoe,5,0.0,1.0,0,20.0,89,5.06
+2022/2023,3837954,Paris Saint-Germain,Marco Verratti,5,3.0,0.0,2,0.0,30,15.0
+2023,3920405,Congo DR,Théo Bongonda Mbul''Ofeko Batombo,5,0.0,1.0,3,20.0,49,9.18
+2023,3922244,Burkina Faso,Adamo Nagalo,5,0.0,1.0,0,20.0,52,8.65
+2022/2023,3837717,Lyon,Bradley Barcola,5,0.0,3.0,1,60.0,5,90.0
+2022/2023,3837727,Paris Saint-Germain,Sergio Ramos García,5,0.0,2.0,0,40.0,92,4.89
+2022/2023,3837727,Paris Saint-Germain,Marcos Aoás Corrêa,5,0.0,2.0,0,40.0,93,4.84
+2022/2023,3837876,Lille,Alan Virginius,4,2.0,0.0,3,0.0,9,40.0
+2023,3922241,Cape Verde Islands,Garry Mendes Rodrigues,4,1.0,2.0,2,50.0,28,12.86
+2023,3920409,Nigeria,Oluwasemilogo Adesewo Ibidapo Ajayi,4,0.0,1.0,0,25.0,92,3.91
+2023,3920408,Côte d'Ivoire,Seko Fofana,4,1.0,0.0,0,0.0,94,3.83
+2023,3920401,Guinea,Naby Deco Keïta,4,2.0,2.0,3,50.0,19,18.95
+2023,3920407,Namibia,Joslin Kamatuka,4,1.0,2.0,0,50.0,17,21.18
+2023,3920401,Gambia,Baboucarr Gaye,4,0.0,1.0,0,25.0,94,3.83
+2022/2023,3837896,Nantes,João Victor da Silva Marcelino,4,0.0,1.0,1,25.0,22,16.36
+2022/2023,3837662,Lille,Alexsandro Victor de Souza Ribeiro,4,0.0,2.0,0,50.0,69,5.22
+2023,3922356,Congo DR,Yoane Wissa,4,0.0,1.0,0,25.0,83,4.34
+2022/2023,3837717,Paris Saint-Germain,Sergio Ramos García,4,0.0,1.0,0,25.0,94,3.83
+2022/2023,3837717,Paris Saint-Germain,Achraf Hakimi Mouh,4,3.0,2.0,2,50.0,93,3.87
+2023,3923881,Côte d'Ivoire,Ghislain Konan,4,2.0,3.0,0,75.0,95,3.79
+2023,3920417,Mali,Boubakar Kouyate,4,0.0,0.0,0,0.0,93,3.87
+2023,3920411,Egypt,Mahmoud Abdul Monem Abdelhamid Soliman,4,0.0,1.0,3,25.0,23,15.65
+2023,3920411,Cape Verde Islands,João Paulo Moreira Fernandes,4,1.0,3.0,0,75.0,29,12.41
+2023,3920385,Egypt,Mohamed Hany Gamal Eldemerdash,4,0.0,1.0,0,25.0,65,5.54
+2023,3920389,Cameroon,Junior Tchamadeu,4,0.0,1.0,1,25.0,19,18.95
+2022/2023,3837771,Paris Saint-Germain,Sergio Ramos García,4,0.0,2.0,1,50.0,90,4.0
+2023,3922241,Mauritania,Lamine Ba,4,0.0,2.0,0,50.0,100,3.6
+2023,3877115,Inter Miami,Benjamin Cremaschi,4,1.0,1.0,2,25.0,27,13.33
+2022/2023,3837695,Nantes,Ignatius Kpene Ganago,4,0.0,1.0,1,25.0,22,16.36
+2022/2023,3837727,OGC Nice,Jordan Lotomba,4,0.0,1.0,0,25.0,11,32.73
+2023,3920415,Algeria,Aïssa Mandi,4,3.0,2.0,0,50.0,102,3.53
+2023,3922244,Mali,Boubakar Kouyate,4,1.0,0.0,0,0.0,96,3.75
+2023,3920398,Côte d'Ivoire,Jeremie Boga,4,1.0,2.0,2,50.0,66,5.45
+2023,3922237,Namibia,Prins Menelik Tjiueza,4,0.0,1.0,0,25.0,22,16.36
+2023,3920395,Congo DR,Meschak Elia,4,1.0,1.0,3,25.0,25,14.4
+2022/2023,3837659,Paris Saint-Germain,Kylian Mbappé Lottin,4,2.0,1.0,3,25.0,83,4.34
+2022/2023,3837659,Paris Saint-Germain,Leandro Daniel Paredes,4,0.0,0.0,2,0.0,19,18.95
+2022/2023,3837727,Paris Saint-Germain,Nuno Mendes,4,0.0,0.0,0,0.0,34,10.59
+2022/2023,3837876,Lille,Carlos Baleba,4,2.0,0.0,1,0.0,4,90.0
+2022/2023,3837963,Paris Saint-Germain,Hugo Ekitike,4,1.0,1.0,0,25.0,29,12.41
+2023,3920406,Zambia,Kelvin Kapumbu,4,0.0,1.0,0,25.0,46,7.83
+2023,3877194,Inter Miami,Jordi Alba Ramos,4,0.0,2.0,1,50.0,26,13.85
+2023,3922658,Cape Verde Islands,Logan Costa,4,0.0,1.0,0,25.0,119,3.03
+2023,3920384,Côte d'Ivoire,Karim Konaté,4,0.0,1.0,1,25.0,32,11.25
+2023,3920385,Mozambique,Elias Gaspar Pelembe,4,2.0,0.0,1,0.0,45,8.0
+2022/2023,3837938,Paris Saint-Germain,Sergio Ramos García,4,1.0,1.0,0,25.0,91,3.96
+2022/2023,3837987,AC Ajaccio,Florian Chabrolle,4,2.0,0.0,0,0.0,4,90.0
+2022/2023,3837747,Paris Saint-Germain,Carlos Soler Barragán,4,0.0,1.0,3,25.0,6,60.0
+2022/2023,3838017,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,4,0.0,0.0,2,0.0,92,3.91
+2022/2023,3838017,Paris Saint-Germain,Danilo Luís Hélio Pereira,4,1.0,2.0,0,50.0,88,4.09
+2022/2023,3837785,Paris Saint-Germain,Renato Júnior Luz Sanches,4,0.0,0.0,0,0.0,21,17.14
+2022/2023,3837785,Auxerre,Gaëtan Charbonnier,4,0.0,0.0,1,0.0,21,17.14
+2023,3920408,Equatorial Guinea,Luis Miguel Nlavo Asue,4,2.0,3.0,2,75.0,19,18.95
+2022/2023,3837827,Rennes,Lorenz Assignon,4,1.0,0.0,0,0.0,19,18.95
+2023,3922356,Congo DR,Chancel Mbemba Mangulu,4,0.0,1.0,0,25.0,91,3.96
+2023,3920412,Guinea,Seydouba Cisse,4,2.0,1.0,1,25.0,21,17.14
+2023,3920402,Burkina Faso,Issoufou Dayo,4,1.0,1.0,0,25.0,97,3.71
+2023,3920415,Mauritania,Mohamed Dellahi Yali,4,0.0,1.0,0,25.0,67,5.37
+2023,3920411,Egypt,Mahmoud Ibrahim Hassan,4,0.0,0.0,1,0.0,57,6.32
+2023,3920411,Cape Verde Islands,Ryan Isaac Mendes da Graça,4,0.0,2.0,0,50.0,61,5.9
+2023,3920406,Zambia,Edward Chilufya,4,0.0,1.0,0,25.0,7,51.43
+2022/2023,3837885,Marseille,Azzedine Ounahi,4,2.0,0.0,3,0.0,10,36.0
+2022/2023,3837683,Toulouse,Logan Costa,4,0.0,1.0,0,25.0,44,8.18
+2022/2023,3837662,Lille,José Miguel da Rocha Fonte,4,0.0,1.0,0,25.0,87,4.14
+2022/2023,3837695,Nantes,Lohann Doucet,4,0.0,0.0,0,0.0,11,32.73
+2023,3922242,Côte d'Ivoire,Nicolas Pépé,4,1.0,2.0,1,50.0,56,6.43
+2023,3920418,Tanzania,Morice Michael Abraham,4,1.0,2.0,2,50.0,8,45.0
+2023,3920387,Cape Verde Islands,Gilson Benchimol Tavares,4,1.0,1.0,1,25.0,15,24.0
+2023,3877115,Inter Miami,Robert Taylor,4,1.0,1.0,2,25.0,51,7.06
+2023,3922238,Nigeria,William Troost-Ekong,4,0.0,1.0,0,25.0,96,3.75
+2023,3877060,New York Red Bulls,Jorge Leguín Cabezas Hurtado,4,1.0,0.0,0,0.0,15,24.0
+2023,3920398,Côte d'Ivoire,Jonathan Bamba,4,1.0,2.0,2,50.0,31,11.61
+2023,3920395,Zambia,Emmanuel Justine Rabby Banda,4,1.0,0.0,0,0.0,95,3.79
+2023,3920419,Zambia,Fashion Sakala,4,1.0,3.0,3,75.0,23,15.65
+2023,3920400,Senegal,Idrissa Gana Gueye,4,0.0,2.0,0,50.0,22,16.36
+2023,3920398,Nigeria,William Troost-Ekong,4,0.0,3.0,0,75.0,93,3.87
+2023,3920405,Morocco,Ayoub El Kaabi,4,1.0,1.0,4,25.0,16,22.5
+2023,3920416,South Africa,Zakhele Lerato Lepasa,4,2.0,0.0,2,0.0,9,40.0
+2023,3920397,Guinea-Bissau,Mama Samba Baldé,4,0.0,2.0,3,50.0,62,5.81
+2022/2023,3837896,Nantes,Evann Guessand,4,0.0,1.0,0,25.0,13,27.69
+2023,3920418,Congo DR,Aaron Tshibola,4,1.0,1.0,1,25.0,23,15.65
+2023,3920399,Mozambique,Stanley Ratifo,4,1.0,1.0,4,25.0,50,7.2
+2023,3922659,Mali,Yves Bissouma,4,2.0,1.0,2,25.0,29,12.41
+2022/2023,3837695,Nantes,Marcus Coco,4,0.0,1.0,0,25.0,12,30.0
+2023,3920408,Côte d'Ivoire,Willy Boly,4,1.0,0.0,0,0.0,82,4.39
+2023,3922658,South Africa,Thapelo Maseko,4,1.0,0.0,1,0.0,48,7.5
+2023,3922243,South Africa,Thapelo Maseko,4,0.0,0.0,2,0.0,31,11.61
+2023,3920416,Tunisia,Mohamed Ali Ben Romdhane,4,1.0,0.0,0,0.0,9,40.0
+2023,3920412,Guinea,Mohamed Aly Camara,4,1.0,1.0,0,25.0,94,3.83
+2023,3920388,Gambia,James Gomez,4,0.0,1.0,0,25.0,90,4.0
+2023,3922244,Burkina Faso,Bertrand Isidore Traoré,4,0.0,0.0,0,0.0,76,4.74
+2022/2023,3837938,Paris Saint-Germain,Danilo Luís Hélio Pereira,4,1.0,0.0,0,0.0,89,4.04
+2023,3920410,Mozambique,Bruno Alberto Langa,4,0.0,0.0,1,0.0,93,3.87
+2023,3920401,Gambia,Ali Sowe,4,1.0,1.0,1,25.0,14,25.71
+2023,3877090,Inter Miami,Dixon Jair Arroyo Espinoza,4,1.0,0.0,0,0.0,21,17.14
+2023,3920409,Guinea-Bissau,Carlos Mendes Gomes,4,0.0,0.0,0,0.0,49,7.35
+2023,3920389,Guinea,Mouctar Diakhaby,4,2.0,2.0,1,50.0,95,3.79
+2023,3920419,Morocco,Yahia Attiyat allah,4,2.0,1.0,2,25.0,89,4.04
+2023,3922321,Angola,Ambrosini Antonio Cabaça Salvador,4,1.0,2.0,1,50.0,51,7.06
+2023,3877072,Inter Miami,Jordi Alba Ramos,4,2.0,0.0,1,0.0,95,3.79
+2022/2023,3837717,Paris Saint-Germain,Nordi Mukiele Mulere,4,1.0,2.0,0,50.0,31,11.61
+2023,3922240,Congo DR,Grady Diangana,4,1.0,1.0,3,25.0,19,18.95
+2023,3920399,Mozambique,Infren Da Conceição David Matola,4,0.0,0.0,1,0.0,16,22.5
+2023,3920400,Senegal,Abdou Diallo,4,0.0,2.0,0,50.0,90,4.0
+2023,3877194,Charlotte,Justin Meram,4,2.0,0.0,2,0.0,22,16.36
+2023,3923880,South Africa,Terrence Mashego,4,0.0,1.0,0,25.0,22,16.36
+2023,3923880,Congo DR,Cédric Bakambu,4,0.0,1.0,3,25.0,46,7.83
+2023,3922321,Angola,Zito André Sebastião Luvumbo,4,1.0,1.0,1,25.0,29,12.41
+2023,3922658,South Africa,Jayden Adams,4,1.0,1.0,0,25.0,29,12.41
+2022/2023,3837785,Auxerre,Gauthier Hein,4,2.0,1.0,0,25.0,33,10.91
+2022/2023,3837844,Montpellier,Jordan Ferri,4,0.0,3.0,1,75.0,29,12.41
+2023,3922356,Congo DR,Silas Katompa Mvumpa,4,1.0,1.0,1,25.0,34,10.59
+2022/2023,3837839,Paris Saint-Germain,Vitor Machado Ferreira,4,2.0,2.0,2,50.0,45,8.0
+2023,3920398,Côte d'Ivoire,Seko Fofana,4,1.0,0.0,3,0.0,96,3.75
+2023,3920417,Namibia,Absalom Iimbondi,4,2.0,0.0,3,0.0,17,21.18
+2022/2023,3837918,Paris Saint-Germain,Hugo Ekitike,4,0.0,0.0,0,0.0,40,9.0
+2022/2023,3837947,Lens,Kevin Danso,4,0.0,1.0,0,25.0,89,4.04
+2023,3877170,Inter Miami,Jean Mota Oliveira de Sousa,4,1.0,1.0,0,25.0,40,9.0
+2022/2023,3837771,Paris Saint-Germain,Renato Júnior Luz Sanches,4,0.0,2.0,1,50.0,15,24.0
+2023,3920397,Guinea-Bissau,Euciodálcio Gomes,4,0.0,2.0,0,50.0,20,18.0
+2023,3920392,Mauritania,El-Hadji Ba,4,2.0,1.0,1,25.0,40,9.0
+2023,3920408,Côte d'Ivoire,Nicolas Pépé,4,1.0,0.0,2,0.0,63,5.71
+2022/2023,3837747,Paris Saint-Germain,Pablo Sarabia García,4,0.0,0.0,1,0.0,14,25.71
+2023,3920416,South Africa,Khuliso Johnson Mudau,4,1.0,2.0,0,50.0,44,8.18
+2022/2023,3837963,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,4,1.0,0.0,1,0.0,92,3.91
+2023,3920413,Gambia,James Gomez,4,2.0,1.0,0,25.0,95,3.79
+2023,3920415,Algeria,Riyad Mahrez,4,1.0,2.0,0,50.0,54,6.67
+2023,3922239,Equatorial Guinea,Luis Miguel Nlavo Asue,4,0.0,4.0,1,100.0,13,27.69
+2023,3920390,Algeria,Islam Slimani,4,0.0,2.0,1,50.0,28,12.86
+2023,3920407,Namibia,Deon Hotto Kavendji,4,1.0,1.0,2,25.0,93,3.87
+2022/2023,3837947,Lens,Salis Abdul Samed,4,2.0,0.0,2,0.0,17,21.18
+2023,3922237,Namibia,Deon Hotto Kavendji,4,2.0,1.0,2,25.0,91,3.96
+2023,3920387,Cape Verde Islands,Tiago Manuel Dias Correia,4,2.0,0.0,3,0.0,73,4.93
+2023,3920388,Gambia,Abdulia Sanyang,4,0.0,1.0,1,25.0,10,36.0
+2023,3920417,Mali,Youssoufou Niakaté,4,3.0,2.0,2,50.0,52,6.92
+2023,3920406,Tanzania,Ibrahim Abdallah Hamad,4,1.0,1.0,0,25.0,93,3.87
+2023,3922356,Congo DR,Aaron Tshibola,4,0.0,0.0,0,0.0,7,51.43
+2023,3920391,Mali,Sikou Niakate,4,1.0,1.0,0,25.0,89,4.04
+2023,3920401,Gambia,Yankuba Minteh,4,0.0,0.0,2,0.0,34,10.59
+2023,3920419,Morocco,Yunis Abdelhamid,4,1.0,0.0,0,0.0,93,3.87
+2023,3877090,Inter Miami,Leonardo Campana Romero,4,0.0,1.0,0,25.0,20,18.0
+2023,3877090,LAFC,Giorgio Chiellini,4,0.0,2.0,0,50.0,52,6.92
+2023,3920396,Egypt,Mohamed Hamdy Sharaf,4,0.0,2.0,1,50.0,95,3.79
+2023,3877115,Toronto FC,Raoul Petretta,4,2.0,2.0,1,50.0,67,5.37
+2023,3877115,Inter Miami,Dixon Jair Arroyo Espinoza,4,0.0,2.0,2,50.0,27,13.33
+2022/2023,3837706,Stade Brestois,Achraf Dari,4,0.0,0.0,0,0.0,32,11.25
+2022/2023,3837876,Lille,Tiago Emanuel Embaló Djaló,4,1.0,0.0,0,0.0,90,4.0
+2022/2023,3837839,Stade de Reims,Arbër Zeneli,4,1.0,1.0,4,25.0,18,20.0
+2023,3923881,Côte d'Ivoire,Oumar Diakité,4,0.0,0.0,1,0.0,25,14.4
+2022/2023,3837902,Paris Saint-Germain,Danilo Luís Hélio Pereira,4,1.0,1.0,0,25.0,87,4.14
+2023,3920397,Equatorial Guinea,Jannick Buyla Sam,4,0.0,0.0,0,0.0,17,21.18
+2023,3920418,Congo DR,Cédric Bakambu,4,1.0,0.0,2,0.0,18,20.0
+2023,3920399,Mozambique,Geny Cipriano Catamo,4,1.0,1.0,1,25.0,94,3.83
+2023,3920417,Namibia,Lubeni Haukongo,4,0.0,2.0,0,50.0,68,5.29
+2023,3920407,Namibia,Wendell Rudath,4,0.0,0.0,1,0.0,17,21.18
+2022/2023,3837683,Toulouse,Oliver Zandén,4,0.0,1.0,0,25.0,60,6.0
+2023,3922240,Egypt,Mohanad Mostafa Lasheen,4,0.0,0.0,0,0.0,12,30.0
+2023,3920404,Mali,Yves Bissouma,4,2.0,0.0,0,0.0,14,25.71
+2022/2023,3837998,Auxerre,Gaëtan Perrin,4,1.0,0.0,2,0.0,7,51.43
+2022/2023,3837827,Rennes,Joe Rodon,3,1.0,2.0,0,66.67,93,2.9
+2023,3923881,Côte d'Ivoire,Franck Yannick Kessié,3,0.0,1.0,1,33.33,89,3.03
+2022/2023,3837680,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,2.0,0.0,1,0.0,31,8.71
+2023,3920402,Algeria,Aïssa Mandi,3,0.0,0.0,0,0.0,91,2.97
+2022/2023,3837771,Troyes,Tristan Dingomé,3,1.0,2.0,1,66.67,2,135.0
+2023,3920401,Gambia,James Gomez,3,1.0,0.0,0,0.0,96,2.81
+2023,3920408,Equatorial Guinea,Santiago Eneme Bocari,3,0.0,0.0,0,0.0,12,22.5
+2023,3920387,Ghana,Iñaki Williams Arthuer,3,0.0,0.0,3,0.0,36,7.5
+2022/2023,3837827,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,2.0,0.0,1,0.0,82,3.29
+2023,3923881,Côte d'Ivoire,Wilfried Stephane Singo,3,0.0,1.0,0,33.33,23,11.74
+2023,3922237,Namibia,Lubeni Haukongo,3,0.0,0.0,0,0.0,39,6.92
+2022/2023,3837998,Auxerre,Siriki Dembele,3,1.0,0.0,1,0.0,8,33.75
+2022/2023,3837659,Montpellier,Leo Leroy,3,2.0,0.0,0,0.0,5,54.0
+2023,3922658,South Africa,Zakhele Lerato Lepasa,3,2.0,1.0,2,33.33,20,13.5
+2022/2023,3837859,Paris Saint-Germain,Renato Júnior Luz Sanches,3,1.0,0.0,0,0.0,13,20.77
+2023,3920384,Côte d'Ivoire,Willy Boly,3,0.0,2.0,1,66.67,16,16.88
+2023,3920418,Tanzania,Denis Kibu,3,0.0,0.0,1,0.0,12,22.5
+2023,3920418,Congo DR,Dylan Batubinsika,3,1.0,1.0,0,33.33,92,2.93
+2023,3920398,Côte d'Ivoire,Wilfried Stephane Singo,3,0.0,1.0,0,33.33,32,8.44
+2022/2023,3837963,Paris Saint-Germain,Warren Zaire Emery,3,1.0,0.0,2,0.0,11,24.55
+2023,3877170,Inter Miami,Josef Alexander Martínez Mencia,3,1.0,1.0,2,33.33,75,3.6
+2023,3920385,Egypt,Emam Ashour Metwally Abdelghany,3,1.0,0.0,1,0.0,24,11.25
+2023,3920403,Mauritania,Souleymane Doukara,3,1.0,0.0,1,0.0,34,7.94
+2022/2023,3837859,Paris Saint-Germain,Juan Bernat Velasco,3,1.0,0.0,1,0.0,16,16.88
+2022/2023,3837659,Paris Saint-Germain,Hugo Ekitike,3,2.0,0.0,2,0.0,1,270.0
+2023,3922658,Cape Verde Islands,Gilson Benchimol Tavares,3,0.0,0.0,3,0.0,33,8.18
+2023,3920418,Tanzania,Mzamiru Yassin,3,1.0,0.0,1,0.0,20,13.5
+2023,3920384,Côte d'Ivoire,Nicolas Pépé,3,2.0,1.0,1,33.33,29,9.31
+2023,3922356,Congo DR,Simon Bokote Banza,3,1.0,0.0,3,0.0,23,11.74
+2023,3920385,Mozambique,Pachoio Lau Há King,3,0.0,0.0,1,0.0,33,8.18
+2023,3877090,Inter Miami,Kamal Miller,3,1.0,2.0,0,66.67,92,2.93
+2022/2023,3837771,Paris Saint-Germain,Presnel Kimpembe,3,0.0,0.0,0,0.0,58,4.66
+2023,3920400,Senegal,Iliman Ndiaye,3,0.0,1.0,2,33.33,15,18.0
+2023,3920391,Mali,Aboubacar Traoré,3,1.0,1.0,1,33.33,5,54.0
+2023,3877115,Inter Miami,Lionel Andrés Messi Cuccittini,3,1.0,0.0,2,0.0,36,7.5
+2023,3920401,Guinea,José Kanté Martínez,3,2.0,0.0,2,0.0,6,45.0
+2022/2023,3837683,Paris Saint-Germain,Nordi Mukiele Mulere,3,0.0,0.0,0,0.0,87,3.1
+2023,3920404,Mali,Nene Dorgeles,3,1.0,1.0,1,33.33,25,10.8
+2023,3920391,South Africa,Zakhele Lerato Lepasa,3,0.0,2.0,2,66.67,14,19.29
+2022/2023,3837876,Lille,Gabriel Gudmundsson,3,2.0,1.0,0,33.33,25,10.8
+2023,3920388,Senegal,Nampalys Mendy,3,1.0,2.0,0,66.67,17,15.88
+2023,3877060,Inter Miami,Lionel Andrés Messi Cuccittini,3,0.0,0.0,1,0.0,31,8.71
+2023,3877115,Toronto FC,Víctor Vázquez Solsona,3,1.0,0.0,1,0.0,11,24.55
+2023,3877170,Inter Miami,Nicolás Marcelo Stefanelli,3,1.0,0.0,1,0.0,18,15.0
+2022/2023,3837727,OGC Nice,Andy Delort,3,1.0,0.0,1,0.0,9,30.0
+2023,3920392,Burkina Faso,Boureima Hassane Bandé,3,2.0,0.0,1,0.0,11,24.55
+2023,3922659,Côte d'Ivoire,Odilon Kossonou,3,1.0,0.0,0,0.0,42,6.43
+2023,3920410,Ghana,Alexander Djiku,3,1.0,0.0,0,0.0,85,3.18
+2023,3920386,Equatorial Guinea,Luis Miguel Nlavo Asue,3,0.0,0.0,0,0.0,1,270.0
+2023,3920390,Algeria,Adam Ounas,3,2.0,0.0,2,0.0,28,9.64
+2023,3920386,Nigeria,Calvin Bassey Ughelumba,3,0.0,1.0,1,33.33,12,22.5
+2022/2023,3837885,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,3.0,1.0,0,33.33,67,4.03
+2023,3920394,Morocco,Ayoub El Kaabi,3,0.0,1.0,1,33.33,7,38.57
+2022/2023,3837662,Lille,Alan Virginius,3,0.0,0.0,0,0.0,30,9.0
+2023,3920399,Cape Verde Islands,Garry Mendes Rodrigues,3,1.0,0.0,0,0.0,16,16.88
+2023,3922321,Nigeria,William Troost-Ekong,3,1.0,1.0,0,33.33,93,2.9
+2023,3920395,Zambia,Larry Bwalya,3,0.0,1.0,1,33.33,1,270.0
+2023,3922356,Guinea,Facinet Conte,3,2.0,0.0,1,0.0,34,7.94
+2022/2023,3837954,Paris Saint-Germain,Warren Zaire Emery,3,0.0,0.0,0,0.0,3,90.0
+2022/2023,3837963,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,1.0,0.0,1,0.0,76,3.55
+2022/2023,3837727,OGC Nice,Nicolas Pépé,3,0.0,0.0,2,0.0,31,8.71
+2022/2023,3837827,Rennes,Kamaldeen Sulemana,3,0.0,1.0,0,33.33,8,33.75
+2022/2023,3837902,Stade Brestois,Christophe Hérelle,3,0.0,2.0,0,66.67,12,22.5
+2023,3922244,Burkina Faso,Cédric Badolo,3,0.0,0.0,1,0.0,51,5.29
+2022/2023,3837844,Montpellier,Arnaud Nordin,3,1.0,0.0,2,0.0,7,38.57
+2023,3920395,Zambia,Stopilla Sunzu,3,0.0,3.0,0,100.0,91,2.97
+2023,3920412,Guinea,Serhou Guirassy,3,0.0,0.0,1,0.0,61,4.43
+2023,3922321,Angola,Felicio Mendes Joao Milson,3,2.0,1.0,0,33.33,11,24.55
+2023,3920394,Morocco,Nayef Aguerd,3,1.0,1.0,1,33.33,94,2.87
+2023,3920394,Tanzania,Mudathiri Yahya,3,1.0,0.0,1,0.0,44,6.14
+2023,3920414,Burkina Faso,Abdoul Fessal Tapsoba,3,0.0,1.0,1,33.33,17,15.88
+2022/2023,3837947,Paris Saint-Germain,Sergio Ramos García,3,0.0,1.0,0,33.33,90,3.0
+2022/2023,3837947,Paris Saint-Germain,Juan Bernat Velasco,3,1.0,0.0,0,0.0,14,19.29
+2023,3920400,Cameroon,Jules Olivier Ntcham,3,1.0,1.0,1,33.33,17,15.88
+2023,3922321,Angola,Bruno Lourenço Pinto de Almeida Paz,3,2.0,3.0,1,100.0,30,9.0
+2023,3920407,South Africa,Zakhele Lerato Lepasa,3,0.0,1.0,2,33.33,14,19.29
+2023,3920419,Morocco,Amir Richardson,3,1.0,2.0,0,66.67,24,11.25
+2022/2023,3837717,Paris Saint-Germain,Marcos Aoás Corrêa,3,0.0,1.0,0,33.33,94,2.87
+2023,3923880,South Africa,Thabang Amod Monare,3,1.0,0.0,0,0.0,64,4.22
+2022/2023,3837818,Angers,Amine Salama,3,0.0,0.0,0,0.0,31,8.71
+2022/2023,3837680,AS Monaco,Caio Henrique Oliveira Silva,3,2.0,1.0,3,33.33,94,2.87
+2022/2023,3837706,Paris Saint-Germain,Pablo Sarabia García,3,1.0,2.0,0,66.67,15,18.0
+2022/2023,3837695,Nantes,Fábio Pereira da Silva,3,0.0,2.0,0,66.67,22,12.27
+2022/2023,3837727,Paris Saint-Germain,Pablo Sarabia García,3,1.0,1.0,0,33.33,5,54.0
+2022/2023,3837706,Stade Brestois,Irvin Cardona,3,1.0,0.0,2,0.0,6,45.0
+2022/2023,3837683,Toulouse,Issiaga Sylla,3,1.0,2.0,1,66.67,25,10.8
+2023,3920385,Mozambique,Bruno Alberto Langa,3,1.0,2.0,0,66.67,53,5.09
+2023,3877194,Inter Miami,Robbie Robinson Belmar,3,0.0,1.0,1,33.33,18,15.0
+2023,3920409,Nigeria,Ademola Lookman,3,1.0,1.0,1,33.33,13,20.77
+2023,3920392,Mauritania,Mohamed Dellahi Yali,3,0.0,1.0,0,33.33,29,9.31
+2023,3920388,Senegal,Iliman Ndiaye,3,1.0,2.0,3,66.67,15,18.0
+2023,3920399,Mozambique,Shaquille Momad Nangy,3,0.0,2.0,1,66.67,28,9.64
+2023,3877060,New York Red Bulls,Wikelman José Carmona Torres,3,0.0,0.0,0,0.0,8,33.75
+2022/2023,3837752,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,3,2.0,0.0,0,0.0,90,3.0
+2023,3920414,Burkina Faso,Edmond Fayçal Tapsoba,3,1.0,3.0,1,100.0,98,2.76
+2022/2023,3837839,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,1.0,0.0,0,0.0,31,8.71
+2023,3920413,Gambia,Assan Ceesay,3,1.0,0.0,1,0.0,23,11.74
+2023,3920403,Mauritania,Nouh Mohamed El Abd,3,1.0,0.0,0,0.0,94,2.87
+2023,3923881,Côte d'Ivoire,Odilon Kossonou,3,2.0,1.0,0,33.33,91,2.97
+2023,3922837,Nigeria,Kelechi Promise Iheanacho,3,0.0,1.0,0,33.33,26,10.38
+2022/2023,3837998,Paris Saint-Germain,Renato Júnior Luz Sanches,3,2.0,1.0,1,33.33,16,16.88
+2023,3920412,Senegal,Iliman Ndiaye,3,2.0,0.0,0,0.0,22,12.27
+2023,3920398,Nigeria,Samuel Chimerenka Chukwueze,3,1.0,1.0,1,33.33,71,3.8
+2023,3922243,Morocco,Amine Harit,3,2.0,0.0,2,0.0,41,6.59
+2023,3920397,Guinea-Bissau,Fali Candé,3,0.0,0.0,0,0.0,97,2.78
+2023,3920408,Côte d'Ivoire,Jeremie Boga,3,0.0,1.0,0,33.33,28,9.64
+2023,3920408,Equatorial Guinea,Juan José Óscar Siafá Etoha,3,1.0,2.0,2,66.67,18,15.0
+2022/2023,3837727,Paris Saint-Germain,Kylian Mbappé Lottin,3,0.0,2.0,2,66.67,36,7.5
+2023,3920419,Morocco,Nayef Aguerd,3,0.0,1.0,0,33.33,93,2.9
+2023,3920395,Zambia,Lameck Banda,3,0.0,0.0,0,0.0,20,13.5
+2023,3922237,Namibia,Ananias Gebhardt,3,1.0,1.0,0,33.33,26,10.38
+2022/2023,3837752,Paris Saint-Germain,Vitor Machado Ferreira,3,0.0,1.0,0,33.33,30,9.0
+2023,3920405,Congo DR,Chancel Mbemba Mangulu,3,1.0,0.0,1,0.0,97,2.78
+2022/2023,3837752,AC Ajaccio,Thomas Mangani,3,0.0,0.0,2,0.0,10,27.0
+2022/2023,3837928,Paris Saint-Germain,Ismaël Gharbi,3,0.0,0.0,0,0.0,11,24.55
+2022/2023,3837896,Nantes,Mostafa Mohamed Ahmed Abdallah,3,0.0,0.0,2,0.0,24,11.25
+2022/2023,3837885,Paris Saint-Germain,Juan Bernat Velasco,3,0.0,1.0,0,33.33,14,19.29
+2022/2023,3837839,Paris Saint-Germain,Marco Verratti,3,0.0,1.0,0,33.33,9,30.0
+2023,3920386,Equatorial Guinea,Santiago Eneme Bocari,3,0.0,1.0,0,33.33,11,24.55
+2022/2023,3837650,Clermont Foot,Mateusz Wieteska,3,0.0,0.0,0,0.0,84,3.21
+2022/2023,3837987,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,1.0,1.0,1,33.33,69,3.91
+2022/2023,3837918,Rennes,Adrien Truffert,3,0.0,0.0,0,0.0,4,67.5
+2023,3920385,Mozambique,Amade Momade,3,2.0,0.0,0,0.0,19,14.21
+2023,3920391,South Africa,Siyanda Xulu,3,1.0,0.0,0,0.0,92,2.93
+2023,3920400,Cameroon,Junior Tchamadeu,3,1.0,1.0,1,33.33,5,54.0
+2022/2023,3837827,Paris Saint-Germain,Renato Júnior Luz Sanches,3,1.0,1.0,0,33.33,13,20.77
+2023,3922240,Congo DR,Henoc Inonga Baka,3,0.0,1.0,0,33.33,65,4.15
+2023,3922321,Angola,Jérémy Bela,3,1.0,1.0,1,33.33,17,15.88
+2022/2023,3837771,Troyes,Erik Palmer-Brown,3,1.0,1.0,0,33.33,91,2.97
+2023,3920398,Côte d'Ivoire,Nicolas Pépé,3,1.0,1.0,1,33.33,27,10.0
+2023,3920397,Guinea-Bissau,Manconi Soriano Mané,3,0.0,0.0,0,0.0,97,2.78
+2023,3920402,Burkina Faso,Edmond Fayçal Tapsoba,3,1.0,0.0,0,0.0,91,2.97
+2023,3922239,Guinea,François Kamano,3,0.0,1.0,1,33.33,18,15.0
+2023,3922240,Egypt,Mohamed Abdel Monem,3,2.0,2.0,0,66.67,123,2.2
+2022/2023,3837650,Clermont Foot,Yohann Magnin,3,0.0,0.0,0,0.0,15,18.0
+2022/2023,3838017,Clermont Foot,Komnen Andrić,3,0.0,0.0,2,0.0,5,54.0
+2023,3922244,Mali,Diadie Samassekou,3,1.0,2.0,0,66.67,21,12.86
+2023,3922356,Congo DR,Joris Kayembe Ditu,3,0.0,1.0,0,33.33,7,38.57
+2023,3920399,Cape Verde Islands,Kenny Rocha Santos,3,1.0,0.0,2,0.0,12,22.5
+2022/2023,3837683,Paris Saint-Germain,Lionel Andrés Messi Cuccittini,3,0.0,0.0,1,0.0,82,3.29
+2022/2023,3837998,Paris Saint-Germain,Danilo Luís Hélio Pereira,3,0.0,0.0,0,0.0,94,2.87
+2023,3920419,Morocco,Hakim Ziyech,3,1.0,0.0,2,0.0,49,5.51
+2023,3922237,Angola,Zito André Sebastião Luvumbo,3,2.0,0.0,2,0.0,11,24.55
+2023,3920411,Cape Verde Islands,Jamiro Gregory Monteiro Alvarenga,3,1.0,1.0,0,33.33,35,7.71
+2023,3877060,Inter Miami,DeAndre Yedlin,3,1.0,0.0,1,0.0,32,8.44
+2022/2023,3837717,Paris Saint-Germain,Vitor Machado Ferreira,3,1.0,2.0,0,66.67,35,7.71
+2023,3920386,Equatorial Guinea,Alejandro Balboa Bandeira,3,1.0,1.0,0,33.33,19,14.21
+2022/2023,3837771,Paris Saint-Germain,Kylian Mbappé Lottin,3,1.0,0.0,3,0.0,89,3.03
+2023,3920404,Tunisia,Bassem Srarfi,3,1.0,0.0,1,0.0,15,18.0
+2022/2023,3837885,Marseille,Jonathan Clauss,3,2.0,1.0,1,33.33,26,10.38
+2023,3922242,Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,3,1.0,1.0,2,33.33,9,30.0
+2023,3922244,Burkina Faso,Dango Aboubacar Faissal Ouattara,3,2.0,1.0,2,33.33,19,14.21
+2023,3920396,Ghana,Osman Bukari,3,0.0,0.0,0,0.0,15,18.0
+2023,3877072,Inter Miami,Leonardo Campana Romero,3,1.0,1.0,1,33.33,25,10.8
+2023,3923881,Nigeria,Alhassan Yusuf,3,1.0,1.0,0,33.33,13,20.77
+2023,3922240,Congo DR,Dylan Batubinsika,3,0.0,0.0,0,0.0,62,4.35
+2023,3920415,Mauritania,El Hacen Houeibib,2,0.0,1.0,0,50.0,32,5.63
+2023,3920405,Morocco,Amine Harit,2,0.0,0.0,0,0.0,16,11.25
+2023,3920402,Algeria,Fares Chaïbi,2,1.0,1.0,0,50.0,24,7.5
+2023,3920390,Angola,Eddie Marcos Melo Afonso,2,1.0,1.0,0,50.0,16,11.25
+2023,3920411,Cape Verde Islands,Carlos Miguel Pereira Fernandes,2,0.0,0.0,0,0.0,24,7.5
+2023,3920405,Congo DR,Dylan Batubinsika,2,0.0,1.0,0,50.0,45,4.0
+2022/2023,3837680,Paris Saint-Germain,Nordi Mukiele Mulere,2,1.0,0.0,1,0.0,8,22.5
+2022/2023,3837752,Paris Saint-Germain,El Chadaille Bitshiabu,2,0.0,1.0,0,50.0,9,20.0
+2023,3920408,Equatorial Guinea,Jannick Buyla Sam,2,1.0,0.0,0,0.0,35,5.14
+2023,3922658,South Africa,Terrence Mashego,2,0.0,0.0,0,0.0,5,36.0
+2022/2023,3837902,Paris Saint-Germain,Renato Júnior Luz Sanches,2,0.0,1.0,0,50.0,3,60.0
+2022/2023,3837706,Stade Brestois,Jere Juhani Uronen,2,1.0,0.0,0,0.0,23,7.83
+2023,3920384,Côte d'Ivoire,Serge Aurier,2,1.0,1.0,0,50.0,44,4.09
+2023,3923881,Nigeria,Moses Daddy-Ajala Simon,2,0.0,1.0,0,50.0,37,4.86
+2022/2023,3837683,Paris Saint-Germain,Sergio Ramos García,2,0.0,1.0,0,50.0,88,2.05
+2023,3920412,Senegal,Fodé Ballo Touré,2,0.0,2.0,0,100.0,7,25.71
+2023,3920386,Nigeria,Samuel Chimerenka Chukwueze,2,0.0,0.0,1,0.0,27,6.67
+2023,3920414,Burkina Faso,Sacha Jordan Bansé,2,0.0,1.0,0,50.0,7,25.71
+2023,3920389,Cameroon,Oumar Gonzalez,2,1.0,0.0,1,0.0,21,8.57
+2022/2023,3837885,Marseille,Eric Bertrand Bailly,2,0.0,0.0,0,0.0,62,2.9
+2022/2023,3837747,Marseille,Cheikh Ahmadou Bamba Mbacke Dieng,2,0.0,0.0,1,0.0,12,15.0
+2023,3920402,Burkina Faso,Dramane Salou,2,0.0,0.0,0,0.0,14,12.86
+2023,3920394,Morocco,Romain Saïss,2,2.0,0.0,0,0.0,92,1.96
+2023,3920385,Mozambique,Feliciano João Jone,2,1.0,2.0,0,100.0,12,15.0
+2022/2023,3837859,Toulouse,Mikkel Desler,2,0.0,0.0,0,0.0,31,5.81
+2023,3920403,Mauritania,Hemeya Tanjy,2,0.0,0.0,1,0.0,11,16.36
+2023,3920417,Mali,Sikou Niakate,2,1.0,1.0,0,50.0,93,1.94
+2023,3920390,Algeria,Ramy Bensebaini,2,0.0,0.0,0,0.0,96,1.88
+2023,3922658,Cape Verde Islands,Tiago Manuel Dias Correia,2,0.0,1.0,1,50.0,48,3.75
+2023,3920417,Mali,Adama Traoré,2,0.0,1.0,0,50.0,12,15.0
+2023,3920385,Egypt,Ahmed Hassan Mahgoub,2,0.0,0.0,1,0.0,14,12.86
+2023,3920399,Mozambique,Gildo Lourenço Vilanculos,2,0.0,1.0,2,50.0,17,10.59
+2023,3920396,Egypt,Marwan Attia Fahim Ghallab,2,0.0,0.0,0,0.0,6,30.0
+2022/2023,3837918,Paris Saint-Germain,Timothee Pembele,2,1.0,1.0,0,50.0,45,4.0
+2022/2023,3837902,Paris Saint-Germain,Hugo Ekitike,2,1.0,0.0,0,0.0,11,16.36
+2023,3923881,Côte d'Ivoire,Obite Evan Ndicka,2,0.0,0.0,0,0.0,96,1.88
+2022/2023,3837839,Stade de Reims,Dion Lopy,2,1.0,0.0,1,0.0,12,15.0
+2022/2023,3837695,Paris Saint-Germain,Sergio Ramos García,2,0.0,0.0,0,0.0,27,6.67
+2022/2023,3837695,Paris Saint-Germain,Kylian Mbappé Lottin,2,0.0,0.0,2,0.0,62,2.9
+2023,3922241,Cape Verde Islands,Tiago Manuel Dias Correia,2,1.0,0.0,2,0.0,70,2.57
+2023,3877170,Cincinnati,Malik Pinto,2,0.0,0.0,0,0.0,4,45.0
+2023,3920405,Congo DR,Henoc Inonga Baka,2,0.0,1.0,0,50.0,48,3.75
+2023,3920404,Mali,Ibrahim Sissoko,2,0.0,0.0,1,0.0,13,13.85
+2023,3920400,Cameroon,Faris Pemi Moumbagna,2,0.0,0.0,2,0.0,23,7.83
+2022/2023,3838004,Strasbourg,Matz Sels,2,0.0,0.0,0,0.0,77,2.34
+2023,3920415,Algeria,Mohamed Youcef Belaïli,2,1.0,1.0,1,50.0,39,4.62
+2023,3877170,Cincinnati,Dominique Badji,2,0.0,1.0,0,50.0,7,25.71
+2022/2023,3837717,Lyon,Mathis Rayan Cherki,2,0.0,0.0,1,0.0,19,9.47
+2023,3920416,South Africa,Thabang Amod Monare,2,0.0,0.0,0,0.0,11,16.36
+2022/2023,3837844,Paris Saint-Germain,Sergio Ramos García,2,0.0,0.0,0,0.0,30,6.0
+2022/2023,3837827,Paris Saint-Germain,Carlos Soler Barragán,2,0.0,0.0,1,0.0,19,9.47
+2022/2023,3837659,Paris Saint-Germain,Renato Júnior Luz Sanches,2,0.0,1.0,0,50.0,5,36.0
+2023,3920391,Mali,Ibrahim Sissoko,2,0.0,0.0,0,0.0,7,25.71
+2022/2023,3837771,Paris Saint-Germain,Pablo Sarabia García,2,0.0,1.0,0,50.0,7,25.71
+2023,3920408,Côte d'Ivoire,Ghislain Konan,2,1.0,1.0,2,50.0,63,2.86
+2023,3920402,Algeria,Islam Slimani,2,1.0,0.0,2,0.0,17,10.59
+2023,3920407,South Africa,Mihlali Samson Mayambela,2,1.0,0.0,2,0.0,12,15.0
+2022/2023,3837938,Paris Saint-Germain,Warren Zaire Emery,2,0.0,0.0,0,0.0,1,180.0
+2023,3920419,Zambia,Stopilla Sunzu,2,0.0,0.0,0,0.0,92,1.96
+2023,3920392,Burkina Faso,Bertrand Isidore Traoré,2,1.0,0.0,0,0.0,21,8.57
+2022/2023,3837963,Lorient,Yoann Cathline,2,0.0,1.0,1,50.0,26,6.92
+2022/2023,3837752,Paris Saint-Germain,Warren Zaire Emery,2,0.0,0.0,0,0.0,7,25.71
+2023,3920409,Nigeria,Zaidu Sanusi,2,0.0,0.0,1,0.0,13,13.85
+2022/2023,3837827,Paris Saint-Germain,Kylian Mbappé Lottin,2,0.0,0.0,1,0.0,37,4.86
+2022/2023,3837818,Paris Saint-Germain,Warren Zaire Emery,2,1.0,0.0,2,0.0,15,12.0
+2023,3920390,Algeria,Houssem Aouar,2,0.0,1.0,1,50.0,14,12.86
+2022/2023,3837885,Marseille,Vítor Manuel Carvalho Oliveira,2,1.0,0.0,1,0.0,12,15.0
+2023,3920406,Zambia,Frankie Musonda,2,1.0,0.0,0,0.0,96,1.88
+2022/2023,3837785,Auxerre,Nuno Miguel da Costa Jóia,2,2.0,0.0,1,0.0,30,6.0
+2023,3920405,Congo DR,Aaron Tshibola,2,0.0,1.0,0,50.0,4,45.0
+2022/2023,3837954,Paris Saint-Germain,Danilo Luís Hélio Pereira,2,0.0,0.0,1,0.0,89,2.02
+2023,3920419,Morocco,Bilal El Khannous,2,1.0,0.0,1,0.0,9,20.0
+2023,3920406,Tanzania,Lusajo Mwaikenda,2,1.0,1.0,0,50.0,50,3.6
+2023,3922658,South Africa,Nyiko Mobbie,2,1.0,0.0,1,0.0,14,12.86
+2023,3920403,Angola,Valdomiro Tualungo Paulo Lameiras,2,1.0,0.0,0,0.0,8,22.5
+2023,3920401,Guinea,Mouctar Diakhaby,2,0.0,2.0,0,100.0,96,1.88
+2023,3920397,Equatorial Guinea,Marvin José Anieboh Pallaruelo,2,0.0,0.0,0,0.0,16,11.25
+2023,3920410,Mozambique,João José Jone Bonde,2,0.0,2.0,1,100.0,4,45.0
+2022/2023,3837896,Paris Saint-Germain,El Chadaille Bitshiabu,2,0.0,0.0,0,0.0,19,9.47
+2023,3923881,Nigeria,William Troost-Ekong,2,1.0,1.0,0,50.0,95,1.89
+2022/2023,3837785,Paris Saint-Germain,Hugo Ekitike,2,0.0,1.0,1,50.0,15,12.0
+2022/2023,3837785,Paris Saint-Germain,Warren Zaire Emery,2,0.0,0.0,1,0.0,9,20.0
+2023,3920414,Angola,Ambrosini Antonio Cabaça Salvador,2,2.0,0.0,1,0.0,20,9.0
+2023,3923881,Nigeria,Kelechi Promise Iheanacho,2,0.0,1.0,2,50.0,15,12.0
+2023,3920415,Algeria,Nabil Bentaleb,2,0.0,2.0,0,100.0,38,4.74
+2023,3920414,Burkina Faso,Issoufou Dayo,2,0.0,1.0,0,50.0,95,1.89
+2023,3922837,Nigeria,Terem Igobor Moffi,2,0.0,0.0,1,0.0,11,16.36
+2023,3922240,Egypt,Omar Kamal Abdel Wahed,2,0.0,2.0,0,100.0,24,7.5
+2022/2023,3837896,Paris Saint-Germain,Timothee Pembele,2,1.0,0.0,1,0.0,7,25.71
+2023,3922238,Cameroon,Jean-Charles Castelletto,2,0.0,0.0,0,0.0,97,1.86
+2023,3920405,Congo DR,Silas Katompa Mvumpa,2,0.0,0.0,0,0.0,28,6.43
+2022/2023,3837818,Angers,Abdoulaye Bamba,2,0.0,0.0,1,0.0,93,1.94
+2023,3920410,Ghana,Alidu Seidu,2,0.0,0.0,0,0.0,8,22.5
+2023,3920410,Mozambique,Gildo Lourenço Vilanculos,2,1.0,1.0,1,50.0,25,7.2
+2022/2023,3837747,Marseille,Cengiz Ünder,2,0.0,0.0,0,0.0,23,7.83
+2023,3920390,Angola,Joaquim Marcos Cunga Balanga,2,0.0,0.0,0,0.0,93,1.94
+2022/2023,3837650,Clermont Foot,Brandon Baiye,2,0.0,0.0,0,0.0,5,36.0
+2023,3923881,Nigeria,Joe Aribo,2,0.0,0.0,0,0.0,8,22.5
+2023,3877115,Inter Miami,Jordi Alba Ramos,2,0.0,1.0,0,50.0,33,5.45
+2022/2023,3837683,Paris Saint-Germain,Danilo Luís Hélio Pereira,2,0.0,0.0,0,0.0,89,2.02
+2023,3920413,Cameroon,Faris Pemi Moumbagna,2,0.0,0.0,1,0.0,26,6.92
+2022/2023,3838004,Strasbourg,Kevin Gameiro,2,0.0,0.0,1,0.0,11,16.36
+2022/2023,3837662,Paris Saint-Germain,Leandro Daniel Paredes,2,2.0,0.0,2,0.0,7,25.71
+2023,3920398,Nigeria,Paul Onuachu,2,0.0,0.0,0,0.0,10,18.0
+2023,3922243,Morocco,Ayoub El Kaabi,2,0.0,0.0,1,0.0,31,5.81
+2023,3922837,South Africa,Zakhele Lerato Lepasa,2,1.0,0.0,2,0.0,39,4.62
+2023,3920386,Nigeria,Bright Osayi-Samuel,2,1.0,0.0,2,0.0,13,13.85
+2023,3920395,Zambia,Tandi Mwape,2,0.0,1.0,0,50.0,91,1.98
+2022/2023,3837650,Paris Saint-Germain,Leandro Daniel Paredes,2,0.0,0.0,0,0.0,22,8.18
+2022/2023,3837876,Lille,José Miguel da Rocha Fonte,2,0.0,0.0,0,0.0,11,16.36
+2023,3920388,Gambia,Assan Ceesay,2,0.0,0.0,0,0.0,13,13.85
+2023,3922243,South Africa,Zakhele Lerato Lepasa,2,0.0,1.0,0,50.0,30,6.0
+2022/2023,3837902,Stade Brestois,Marco Bizot,2,0.0,0.0,0,0.0,91,1.98
+2022/2023,3837896,Nantes,Moses Daddy-Ajala Simon,2,1.0,0.0,2,0.0,25,7.2
+2023,3920414,Burkina Faso,Steeve Yago,2,0.0,0.0,0,0.0,19,9.47
+2023,3877194,Inter Miami,Dixon Jair Arroyo Espinoza,2,0.0,0.0,0,0.0,17,10.59
+2023,3920414,Burkina Faso,Djibril Cheick Ouattara,2,0.0,2.0,2,100.0,51,3.53
+2023,3920417,Namibia,Marcel Papama,2,0.0,0.0,0,0.0,14,12.86
+2022/2023,3837706,Paris Saint-Germain,Nuno Mendes,2,1.0,1.0,0,50.0,16,11.25
+2022/2023,3837885,Paris Saint-Germain,Presnel Kimpembe,2,1.0,1.0,0,50.0,13,13.85
+2022/2023,3837859,Toulouse,Gabriel Alonso Suazo Urbina,2,1.0,0.0,0,0.0,19,9.47
+2023,3920395,Congo DR,Simon Bokote Banza,2,1.0,0.0,2,0.0,10,18.0
+2022/2023,3837818,Angers,Miha Blažič,2,0.0,1.0,0,50.0,88,2.05
+2022/2023,3837752,AC Ajaccio,Ismaël Chester Diallo,2,0.0,1.0,0,50.0,13,13.85
+2023,3920402,Burkina Faso,Cédric Badolo,2,1.0,1.0,1,50.0,13,13.85
+2023,3920406,Zambia,Stopilla Sunzu,2,0.0,0.0,0,0.0,90,2.0
+2023,3922241,Mauritania,Pape Ibnou Bâ,2,0.0,1.0,1,50.0,32,5.63
+2022/2023,3837987,Paris Saint-Germain,Vitor Machado Ferreira,2,0.0,1.0,0,50.0,24,7.5
+2022/2023,3837947,Paris Saint-Germain,Warren Zaire Emery,2,0.0,1.0,0,50.0,4,45.0
+2023,3920406,Zambia,Miguel Changa Chaiwa,2,0.0,1.0,0,50.0,10,18.0
+2023,3920384,Guinea-Bissau,Euciodálcio Gomes,2,0.0,0.0,0,0.0,9,20.0
+2023,3920403,Angola,Zito André Sebastião Luvumbo,2,0.0,0.0,1,0.0,18,10.0
+2023,3920404,Mali,Fousseni Diabaté,2,0.0,0.0,0,0.0,27,6.67
+2023,3920404,Mali,Sikou Niakate,2,0.0,1.0,0,50.0,95,1.89
+2023,3922239,Guinea,Naby Deco Keïta,2,2.0,0.0,0,0.0,15,12.0
+2022/2023,3837695,Nantes,Sébastien Corchia,2,1.0,0.0,0,0.0,23,7.83
+2023,3920397,Guinea-Bissau,Carlos Manuel Cardoso Mané,2,0.0,1.0,0,50.0,10,18.0
+2023,3920413,Cameroon,Olivier Michel Kemen,2,1.0,1.0,0,50.0,19,9.47
+2023,3922241,Cape Verde Islands,Willy Afonso Semedo Johnson,1,0.0,0.0,0,0.0,4,22.5
+2022/2023,3838004,Paris Saint-Germain,Carlos Soler Barragán,1,0.0,0.0,0,0.0,6,15.0
+2022/2023,3837859,Paris Saint-Germain,Ismaël Gharbi,1,0.0,0.0,0,0.0,2,45.0
+2023,3920407,South Africa,Thapelo Maseko,1,0.0,0.0,0,0.0,22,4.09
+2023,3920417,Mali,Amadou Dante,1,0.0,0.0,1,0.0,22,4.09
+2023,3877170,Inter Miami,Robert Taylor,1,0.0,1.0,0,100.0,19,4.74
+2022/2023,3837827,Rennes,Flavien Tait,1,1.0,0.0,0,0.0,3,30.0
+2023,3920409,Nigeria,Alex Iwobi,1,0.0,0.0,0,0.0,29,3.1
+2022/2023,3837876,Lille,Lucas Chevalier,1,0.0,0.0,0,0.0,94,0.96
+2022/2023,3837839,Stade de Reims,Mitchell van Bergen,1,1.0,0.0,1,0.0,11,8.18
+2023,3920407,South Africa,Jayden Adams,1,0.0,1.0,0,100.0,2,45.0
+2023,3922837,Nigeria,Joe Aribo,1,0.0,1.0,0,100.0,15,6.0
+2023,3922838,Congo DR,Lionel Mpasi-Nzau,1,0.0,0.0,0,0.0,92,0.98
+2022/2023,3837659,Montpellier,Valère Germain,1,0.0,0.0,0,0.0,11,8.18
+2023,3920419,Zambia,Kings Kangwa,1,0.0,0.0,1,0.0,24,3.75
+2022/2023,3837785,Auxerre,Jubal Rocha Mendes Junior,1,0.0,1.0,0,100.0,89,1.01
+2022/2023,3837752,Paris Saint-Germain,Hugo Ekitike,1,0.0,0.0,0,0.0,6,15.0
+2023,3920413,Gambia,Ebrima Colley,1,0.0,1.0,0,100.0,14,6.43
+2022/2023,3837659,Montpellier,Khalil Fayad,1,1.0,1.0,0,100.0,6,15.0
+2023,3920396,Ghana,Richard Ofori Antwi,1,0.0,0.0,0,0.0,95,0.95
+2022/2023,3837706,Paris Saint-Germain,Hugo Ekitike,1,1.0,0.0,1,0.0,16,5.63
+2023,3922838,Côte d'Ivoire,Jonathan Bamba,1,1.0,1.0,1,100.0,13,6.92
+2022/2023,3837650,Clermont Foot,Saîf-Eddine Khaoui,1,0.0,0.0,0,0.0,8,11.25
+2023,3920408,Côte d'Ivoire,Simon Adingra,1,0.0,0.0,0,0.0,10,9.0
+2022/2023,3837683,Paris Saint-Germain,Warren Zaire Emery,1,0.0,0.0,1,0.0,0,
+2022/2023,3837683,Paris Saint-Germain,Renato Júnior Luz Sanches,1,1.0,0.0,0,0.0,19,4.74
+2023,3922237,Namibia,Lloyd Junior Kazapua,1,0.0,0.0,0,0.0,92,0.98
+2023,3877194,Charlotte,Derrick Jones Amaniampong,1,0.0,0.0,0,0.0,3,30.0
+2023,3920405,Morocco,Yassine Bounou,1,0.0,1.0,0,100.0,91,0.99
+2022/2023,3837747,Paris Saint-Germain,Danilo Luís Hélio Pereira,1,0.0,0.0,0,0.0,24,3.75
+2022/2023,3837752,Paris Saint-Germain,Kylian Mbappé Lottin,1,1.0,1.0,1,100.0,82,1.1
+2022/2023,3837827,Paris Saint-Germain,Fabián Ruiz Peña,1,0.0,1.0,1,100.0,20,4.5
+2022/2023,3837683,Paris Saint-Germain,Achraf Hakimi Mouh,1,0.0,1.0,0,100.0,8,11.25
+2023,3920387,Ghana,Richard Ofori Antwi,1,0.0,0.0,0,0.0,95,0.95
+2023,3920396,Ghana,Joseph Paintsil,1,0.0,0.0,0,0.0,5,18.0
+2022/2023,3837818,Paris Saint-Germain,El Chadaille Bitshiabu,1,0.0,1.0,0,100.0,9,10.0
+2023,3920419,Morocco,Abdessamad Ezzalzouli,1,1.0,0.0,1,0.0,23,3.91
+2023,3920412,Guinea,Ibrahim Diakité,1,1.0,1.0,0,100.0,32,2.81
+2023,3922241,Mauritania,Babacar Niasse,1,0.0,0.0,0,0.0,96,0.94
+2023,3920402,Burkina Faso,Yacouba Nasser Djiga,1,0.0,0.0,0,0.0,10,9.0
+2022/2023,3837717,Paris Saint-Germain,Carlos Soler Barragán,1,1.0,0.0,1,0.0,8,11.25
+2023,3877170,Inter Miami,Lionel Andrés Messi Cuccittini,1,0.0,0.0,1,0.0,40,2.25
+2022/2023,3837680,Paris Saint-Germain,Pablo Sarabia García,1,0.0,0.0,1,0.0,4,22.5
+2023,3920393,Tunisia,Bassem Srarfi,1,0.0,0.0,0,0.0,5,18.0
+2023,3877090,Inter Miami,Noah Allen,1,0.0,1.0,0,100.0,7,12.86
+2023,3920398,Côte d'Ivoire,Karim Konaté,1,0.0,0.0,1,0.0,6,15.0
+2023,3922356,Guinea,Serhou Guirassy,1,0.0,1.0,1,100.0,26,3.46
+2023,3920412,Senegal,Nicolas Jackson,1,0.0,1.0,0,100.0,8,11.25
+2023,3920388,Senegal,Abdoulaye Seck,1,1.0,1.0,0,100.0,12,7.5
+2022/2023,3837954,Angers,Paul Bernardoni,1,0.0,0.0,0,0.0,80,1.13
+2023,3920408,Equatorial Guinea,Alejandro Balboa Bandeira,1,0.0,0.0,0,0.0,6,15.0
+2022/2023,3837650,Paris Saint-Germain,Juan Bernat Velasco,1,0.0,0.0,0,0.0,11,8.18
+2023,3877090,Inter Miami,Victor Ulloa,1,0.0,0.0,0,0.0,5,18.0
+2023,3920396,Ghana,Elisha Owusu,1,0.0,0.0,0,0.0,5,18.0
+2023,3922838,Côte d'Ivoire,Jean-Philippe Krasso,1,1.0,1.0,1,100.0,5,18.0
+2023,3920412,Senegal,Edouard Mendy,1,0.0,0.0,0,0.0,90,1.0
+2023,3877060,Inter Miami,Robbie Robinson Belmar,1,0.0,0.0,0,0.0,9,10.0
+2023,3920408,Côte d'Ivoire,Max-Alain Gradel,1,0.0,0.0,0,0.0,11,8.18
+2023,3920395,Congo DR,Silas Katompa Mvumpa,1,0.0,0.0,0,0.0,2,45.0
+2023,3920389,Cameroon,Joseph Fabrice Ondoa Ebogo,1,0.0,0.0,0,0.0,89,1.01
+2023,3923881,Nigeria,Terem Igobor Moffi,1,1.0,0.0,1,0.0,9,10.0
+2023,3920414,Burkina Faso,Boureima Hassane Bandé,1,0.0,0.0,0,0.0,3,30.0
+2023,3920392,Mauritania,Babacar Niasse,1,0.0,1.0,0,100.0,93,0.97
+2023,3920406,Tanzania,Bakari Nondo Mwamnyeto,1,0.0,0.0,0,0.0,96,0.94
+2022/2023,3837844,Montpellier,Enzo Gianni Tchato Mbiayi,1,0.0,0.0,0,0.0,9,10.0
+2023,3922837,South Africa,Ronwen Williams,1,0.0,0.0,0,0.0,125,0.72
+2023,3922837,South Africa,Gomolemo Grant Kekana,1,1.0,0.0,0,0.0,109,0.83
+2023,3922244,Mali,Mamadou Fofana,1,0.0,1.0,0,100.0,0,
+2023,3920390,Algeria,Aïssa Mandi,1,0.0,0.0,0,0.0,94,0.96
+2023,3922240,Egypt,Mostafa Fathi,1,0.0,0.0,1,0.0,40,2.25
+2022/2023,3837650,Paris Saint-Germain,Warren Zaire Emery,1,1.0,0.0,0,0.0,5,18.0
+2022/2023,3837785,Paris Saint-Germain,Pablo Sarabia García,1,0.0,0.0,0,0.0,14,6.43
+2022/2023,3837902,Paris Saint-Germain,Vitor Machado Ferreira,1,0.0,1.0,0,100.0,18,5.0
+2022/2023,3837659,Paris Saint-Germain,Pablo Sarabia García,1,1.0,0.0,1,0.0,4,22.5
+2023,3920409,Guinea-Bissau,José Correia,1,0.0,1.0,0,100.0,24,3.75
+2022/2023,3837785,Auxerre,Benoît Guy Robert Costil,1,0.0,0.0,0,0.0,88,1.02
+2022/2023,3837662,Lille,Tiago Emanuel Embaló Djaló,1,0.0,0.0,0,0.0,18,5.0
+2023,3923880,South Africa,Zakhele Lerato Lepasa,1,0.0,0.0,0,0.0,38,2.37
+2023,3922238,Nigeria,Kenneth Josiah Omeruo,1,0.0,1.0,0,100.0,8,11.25
+2023,3923881,Côte d'Ivoire,Ibrahim Sangaré,1,0.0,0.0,0,0.0,7,12.86
+2023,3920418,Congo DR,Omenuke Mfulu,1,0.0,0.0,0,0.0,6,15.0
+2022/2023,3837771,Troyes,Ike Ugbo,1,0.0,1.0,0,100.0,10,9.0
+2022/2023,3837695,Paris Saint-Germain,Neymar da Silva Santos Junior,1,0.0,0.0,0,0.0,27,3.33
+2023,3920401,Guinea,Antoine Conte,1,0.0,0.0,0,0.0,10,9.0
+2023,3922244,Burkina Faso,Steeve Yago,1,0.0,1.0,0,100.0,47,1.91
+2023,3922242,Senegal,Edouard Mendy,1,0.0,0.0,0,0.0,127,0.71
+2023,3922244,Mali,Boubacar Traore,1,0.0,0.0,0,0.0,6,15.0
+2023,3920404,Tunisia,Bechir Ben Said,1,0.0,0.0,0,0.0,87,1.03
+2023,3920392,Burkina Faso,Djibril Cheick Ouattara,1,1.0,0.0,1,0.0,13,6.92
+2022/2023,3837727,Paris Saint-Germain,Renato Júnior Luz Sanches,1,0.0,0.0,0,0.0,13,6.92
+2023,3922356,Guinea,Antoine Conte,1,0.0,0.0,1,0.0,0,
+2022/2023,3837876,Paris Saint-Germain,Danilo Luís Hélio Pereira,1,0.0,1.0,0,100.0,18,5.0
+2023,3920417,Mali,Ibrahim Sissoko,1,1.0,0.0,0,0.0,35,2.57
+2023,3920398,Nigeria,Kenneth Josiah Omeruo,1,0.0,1.0,0,100.0,12,7.5
+2023,3923880,South Africa,Siyanda Xulu,1,0.0,0.0,0,0.0,131,0.69
+2022/2023,3837771,Paris Saint-Germain,Nuno Mendes,1,1.0,0.0,0,0.0,7,12.86
+2023,3920392,Burkina Faso,Issoufou Dayo,1,0.0,0.0,0,0.0,99,0.91
+2023,3920391,South Africa,Thapelo James Morena,1,0.0,0.0,1,0.0,4,22.5
+2022/2023,3837771,Troyes,Yasser Larouci,1,1.0,1.0,0,100.0,21,4.29
+2023,3923880,South Africa,Oswin Reagan Appollis,1,1.0,0.0,0,0.0,69,1.3
+2023,3922837,South Africa,Mihlali Samson Mayambela,1,0.0,0.0,0,0.0,42,2.14
+2022/2023,3837695,Paris Saint-Germain,Vitor Machado Ferreira,1,1.0,0.0,0,0.0,32,2.81
+2023,3920390,Angola,Kialonda Gaspar,1,0.0,0.0,0,0.0,91,0.99
+2023,3920384,Guinea-Bissau,José Correia,1,0.0,0.0,0,0.0,15,6.0
+2023,3920387,Ghana,Salis Abdul Samed,1,0.0,0.0,0,0.0,12,7.5
+2022/2023,3837683,Paris Saint-Germain,Hugo Ekitike,1,0.0,0.0,0,0.0,23,3.91
+2022/2023,3837938,Paris Saint-Germain,El Chadaille Bitshiabu,1,1.0,1.0,0,100.0,12,7.5
+2022/2023,3837938,OGC Nice,Kasper Schmeichel,1,0.0,0.0,0,0.0,89,1.01
+2022/2023,3838017,Clermont Foot,Florent Ogier,1,0.0,0.0,0,0.0,0,
+2022/2023,3837727,Paris Saint-Germain,Danilo Luís Hélio Pereira,1,1.0,1.0,0,100.0,4,22.5
+2022/2023,3838017,Paris Saint-Germain,Gianluigi Donnarumma,1,1.0,0.0,0,0.0,80,1.13
+2023,3920394,Morocco,Sofiane Boufal,1,0.0,0.0,0,0.0,12,7.5
+2022/2023,3837695,Nantes,Mohamed Achi,1,0.0,1.0,0,100.0,5,18.0
+2023,3920389,Cameroon,Jean-Charles Castelletto,1,1.0,1.0,0,100.0,96,0.94
+2023,3920402,Burkina Faso,Bertrand Isidore Traoré,1,0.0,0.0,1,0.0,34,2.65
+2023,3920406,Zambia,Roderick Kabwe,1,0.0,0.0,0,0.0,42,2.14
+2023,3920404,Mali,Youssoufou Niakaté,1,1.0,0.0,1,0.0,10,9.0
+2023,3922659,Mali,Ibrahim Sissoko,1,0.0,0.0,0,0.0,19,4.74
+2023,3920417,Mali,Mohamed Camara,1,1.0,1.0,0,100.0,25,3.6
+2022/2023,3837683,Paris Saint-Germain,Juan Bernat Velasco,1,1.0,1.0,0,100.0,5,18.0
+2022/2023,3837683,Paris Saint-Germain,Kylian Mbappé Lottin,1,0.0,1.0,1,100.0,89,1.01
+2023,3920393,Tunisia,Sayfallah Ltaief,1,1.0,0.0,0,0.0,10,9.0
+2023,3920397,Equatorial Guinea,Noé Ela Mangue,1,0.0,0.0,1,0.0,13,6.92
+2022/2023,3837963,Lorient,Julien Ponceau,1,1.0,1.0,0,100.0,2,45.0
+2022/2023,3837987,Paris Saint-Germain,Renato Júnior Luz Sanches,1,0.0,0.0,0,0.0,25,3.6
+2023,3923881,Côte d'Ivoire,Jean-Philippe Krasso,1,0.0,0.0,0,0.0,8,11.25
+2022/2023,3837752,Paris Saint-Germain,Pablo Sarabia García,1,0.0,0.0,0,0.0,21,4.29
+2023,3920417,Namibia,Vetunuavi Charles Hambira,1,0.0,1.0,0,100.0,2,45.0
+2023,3877115,Inter Miami,Drake Callender,1,0.0,0.0,0,0.0,90,1.0
+2023,3920391,Mali,Nene Dorgeles,1,0.0,1.0,0,100.0,6,15.0
