@@ -163,7 +163,7 @@ class PlayerDataLoader:
                     print(f"    ⚠️  {filename}: NOT FOUND")
                 continue
 
-            df = pl.read_csv(filepath)
+            df = pl.read_csv(filepath, infer_schema_length=None)
 
             # Ensure season_name column exists (progression profile is missing it)
             if 'season_name' not in df.columns:

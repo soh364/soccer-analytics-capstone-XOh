@@ -14,7 +14,8 @@ import matplotlib.pyplot as plt
 import seaborn as sns
 import numpy as np
 from IPython.display import clear_output
-
+import matplotlib.patches as patches
+from matplotlib.colors import LinearSegmentedColormap
 from IPython.display import display
 import pandas as pd
 import matplotlib.gridspec as gridspec
@@ -458,9 +459,6 @@ def plot_360_player_heatmap(statsbomb_dir: Path, figsize=(12, 7)) -> None:
     Create a heatmap showing player positions from 360° tracking data.
     Uses one match as an example to show the richness of tracking data.
     """
-    import matplotlib.patches as patches
-    from matplotlib.colors import LinearSegmentedColormap
-    import numpy as np
     
     # Load 360 data
     three60_lf = pl.scan_parquet(statsbomb_dir / "three_sixty.parquet")

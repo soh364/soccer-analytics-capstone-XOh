@@ -43,6 +43,14 @@ PLAYER_METRICS = {
         'min_minutes': 450,
         'higher_is_better': True
     },
+    'packing': {
+        'file': 'advanced__player__packing.csv',
+        'column': 'avg_packing_per_pass',
+        'trait_category': 'Progression',
+        'description': 'Avg packing per pass',
+        'min_minutes': 450,
+        'higher_is_better': True
+    },
     
     # ========================================================================
     # ATTACKING CONTRIBUTION 
@@ -130,6 +138,6 @@ PLAYER_METRICS = {
 TRAIT_CATEGORIES = {
     'Mobility_Intensity': ['defensive_actions', 'high_turnovers', 'pressure_volume', 'pressure_success'],
     'Progression': ['progressive_passes', 'progressive_carries', 'packing'],
-    'Control': ['team_involvement', 'network_centrality'],
-    'Final_Third_Output': ['finishing_quality', 'xg_volume', 'xg_chain', 'xg_buildup']
+    'Control': ['team_involvement', 'network_centrality', 'xg_buildup'], 
+    'Final_Third_Output': ['finishing_quality', 'xg_volume', 'xg_chain']
 }

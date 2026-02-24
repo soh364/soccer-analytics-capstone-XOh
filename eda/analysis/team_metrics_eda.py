@@ -8,7 +8,6 @@ import seaborn as sns
 from matplotlib.patches import FancyArrowPatch
 from pathlib import Path
 import math
-
 from analysis.visualization import save_figure
 
 def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
