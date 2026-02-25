@@ -304,7 +304,7 @@ ARCHETYPE_SUCCESS = {
 }
 
 
-# ── 1. Quadrant Plot ──────────────────────────────────────────────────────────
+# Quadrant Plot 
 
 def plot_quadrant(df: pd.DataFrame, save_path: str = 'figures/wc2026_quadrant.png'):
     """
@@ -421,7 +421,7 @@ def plot_quadrant(df: pd.DataFrame, save_path: str = 'figures/wc2026_quadrant.pn
         print("Tip: pip install adjustText for better label placement")
 
 
-# ── 2. Upset Potential Index ──────────────────────────────────────────────────
+# Upset Potential Index 
 
 def compute_upset_index(df: pd.DataFrame) -> pd.DataFrame:
     """

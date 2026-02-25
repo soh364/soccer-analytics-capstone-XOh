@@ -33,8 +33,8 @@ Portugal,Rafael Alexandre Conceição Leão,116.0,2.0,13.0,9.0,1.55,10.09,6.98,1
 Brazil,Vinícius José Paixão de Oliveira Júnior,300.0,6.0,28.0,28.0,1.8,8.4,8.4,18.6,Ball Carrier
 Rennes,Kamaldeen Sulemana,108.0,5.0,11.0,6.0,4.17,9.17,5.0,18.34,Complete Progressor
 OGC Nice,Khéphren Thuram-Ulien,95.0,7.0,9.0,3.0,6.63,8.53,2.84,18.0,Complete Progressor
-Portugal,André Miguel Valente Silva,30.0,1.0,3.0,2.0,3.0,9.0,6.0,18.0,Complete Progressor
 Uruguay,Diego Nicolás De La Cruz Arcosa,45.0,3.0,2.0,4.0,6.0,4.0,8.0,18.0,Complete Progressor
+Portugal,André Miguel Valente Silva,30.0,1.0,3.0,2.0,3.0,9.0,6.0,18.0,Complete Progressor
 France,Kylian Mbappé Lottin,621.0,18.0,51.0,54.0,2.61,7.39,7.83,17.83,Ball Carrier
 Serbia,Filip Kostić,187.0,6.0,15.0,16.0,2.89,7.22,7.7,17.81,Ball Carrier
 Ghana,Daniel-Kofi Kyereh,51.0,4.0,5.0,1.0,7.06,8.82,1.76,17.64,Complete Progressor
@@ -56,8 +56,8 @@ Spain,Ferrán Torres García,223.0,3.0,10.0,27.0,1.21,4.04,10.9,16.15,Ball Carri
 Serbia,Luka Jović,45.0,1.0,1.0,6.0,2.0,2.0,12.0,16.0,Progression Outlet
 Spain,Nicholas Williams Arthuer,147.0,3.0,7.0,16.0,1.84,4.29,9.8,15.93,Ball Carrier
 Germany,David Raum,243.0,9.0,10.0,24.0,3.33,3.7,8.89,15.920000000000002,Complete Progressor
-Germany,İlkay Gündoğan,187.0,18.0,7.0,8.0,8.66,3.37,3.85,15.88,Complete Progressor
 Stade de Reims,Hugo Ekitike,102.0,1.0,6.0,11.0,0.88,5.29,9.71,15.88,Ball Carrier
+Germany,İlkay Gündoğan,187.0,18.0,7.0,8.0,8.66,3.37,3.85,15.88,Complete Progressor
 Germany,Serge Gnabry,267.0,10.0,15.0,22.0,3.37,5.06,7.42,15.85,Complete Progressor
 Marseille,Gerson Santos da Silva,109.0,2.0,9.0,8.0,1.65,7.43,6.61,15.690000000000001,Ball Carrier
 Lorient,Armand Lauriente,92.0,4.0,7.0,5.0,3.91,6.85,4.89,15.649999999999999,Complete Progressor
@@ -69,8 +69,8 @@ Serbia,Nemanja Radonjić,77.0,2.0,5.0,6.0,2.34,5.84,7.01,15.19,Ball Carrier
 ATK Mohun Bagan,Liston Colaco,1729.0,37.0,124.0,130.0,1.93,6.45,6.77,15.15,Ball Carrier
 Spain,Jordi Alba Ramos,269.0,15.0,6.0,24.0,5.02,2.01,8.03,15.059999999999999,Progressive Passer
 Serbia,Andrija Živković,210.0,9.0,10.0,16.0,3.86,4.29,6.86,15.010000000000002,Complete Progressor
-Nantes,Moses Daddy-Ajala Simon,90.0,2.0,9.0,4.0,2.0,9.0,4.0,15.0,Ball Carrier
 Stade de Reims,Maxime Busi,90.0,3.0,5.0,7.0,3.0,5.0,7.0,15.0,Complete Progressor
+Nantes,Moses Daddy-Ajala Simon,90.0,2.0,9.0,4.0,2.0,9.0,4.0,15.0,Ball Carrier
 Montpellier,Mihailo Ristić,91.0,3.0,7.0,5.0,2.97,6.92,4.95,14.84,Ball Carrier
 United States,Brenden Aaronson,129.0,7.0,8.0,6.0,4.88,5.58,4.19,14.650000000000002,Complete Progressor
 Lille,Burak Yılmaz,74.0,2.0,4.0,6.0,2.43,4.86,7.3,14.59,Ball Carrier
@@ -112,8 +112,8 @@ Denmark,Kasper Dolberg,120.0,2.0,2.0,13.0,1.5,1.5,9.75,12.75,Progression Outlet
 Ghana,Kamaldeen Sulemana,71.0,0.0,4.0,6.0,0.0,5.07,7.61,12.68,Ball Carrier
 Spain,Alejandro Balde Martínez,135.0,3.0,2.0,14.0,2.0,1.33,9.33,12.66,Progression Outlet
 AS Monaco,Sofiane Diop,64.0,2.0,3.0,4.0,2.81,4.22,5.62,12.649999999999999,Ball Carrier
-Brazil,Éverton Augusto de Barros Ribeiro,43.0,2.0,3.0,1.0,4.19,6.28,2.09,12.56,Complete Progressor
 East Bengal,Songpu Singsit,43.0,1.0,2.0,3.0,2.09,4.19,6.28,12.56,Ball Carrier
+Brazil,Éverton Augusto de Barros Ribeiro,43.0,2.0,3.0,1.0,4.19,6.28,2.09,12.56,Complete Progressor
 Goa,Makan Winkle Chote,702.0,21.0,32.0,45.0,2.69,4.1,5.77,12.559999999999999,Ball Carrier
 Tunisia,Naïm Sliti,122.0,4.0,7.0,6.0,2.95,5.16,4.43,12.54,Ball Carrier
 Lens,David Pereira da Costa,151.0,5.0,8.0,8.0,2.98,4.77,4.77,12.52,Ball Carrier
@@ -122,29 +122,29 @@ Jamshedpur,Boris Singh Thangjam,996.0,26.0,51.0,61.0,2.35,4.61,5.51,12.47,Ball C
 Nantes,Quentin Merlin,123.0,7.0,4.0,6.0,5.12,2.93,4.39,12.440000000000001,Complete Progressor
 OGC Nice,Hichem Boudaoui,87.0,1.0,5.0,6.0,1.03,5.17,6.21,12.41,Ball Carrier
 Chennaiyin,Mirlan Murzaev,1066.0,35.0,60.0,51.0,2.95,5.07,4.31,12.329999999999998,Ball Carrier
-Morocco,Abderrazak Hamdallah,73.0,1.0,5.0,4.0,1.23,6.16,4.93,12.32,Ball Carrier
 Lyon,Bruno Guimarães Rodriguez Moura,95.0,8.0,4.0,1.0,7.58,3.79,0.95,12.32,Complete Progressor
+Morocco,Abderrazak Hamdallah,73.0,1.0,5.0,4.0,1.23,6.16,4.93,12.32,Ball Carrier
 England,Jack Grealish,95.0,3.0,5.0,5.0,2.84,4.74,4.74,12.32,Ball Carrier
 Saint-Étienne,Adil Aouchiche,66.0,1.0,3.0,5.0,1.36,4.09,6.82,12.27,Ball Carrier
-Canada,Tajon Buchanan,265.0,7.0,12.0,17.0,2.38,4.08,5.77,12.23,Ball Carrier
 Nantes,Randal Kolo Muani,184.0,4.0,7.0,14.0,1.96,3.42,6.85,12.23,Ball Carrier
+Canada,Tajon Buchanan,265.0,7.0,12.0,17.0,2.38,4.08,5.77,12.23,Ball Carrier
 Spain,Pau Francisco Torres,96.0,10.0,3.0,0.0,9.38,2.81,0.0,12.190000000000001,Complete Progressor
 Uruguay,Facundo Pellistri Rebollo,185.0,2.0,9.0,14.0,0.97,4.38,6.81,12.16,Ball Carrier
 Portugal,Bernardo Mota Veiga de Carvalho e Silva,370.0,11.0,20.0,19.0,2.68,4.86,4.62,12.16,Ball Carrier
 Canada,Richie Laryea,156.0,2.0,9.0,10.0,1.15,5.19,5.77,12.11,Ball Carrier
 United States,Weston McKennie,269.0,18.0,8.0,10.0,6.02,2.68,3.35,12.049999999999999,Progressive Passer
 Denmark,Rasmus Nissen Kristensen,232.0,13.0,5.0,13.0,5.04,1.94,5.04,12.02,Progressive Passer
+Marseille,Cengiz Ünder,120.0,2.0,6.0,8.0,1.5,4.5,6.0,12.0,Ball Carrier
 United States,Shaquell Moore,30.0,1.0,1.0,2.0,3.0,3.0,6.0,12.0,Complete Progressor
 Canada,Jonathan David,195.0,7.0,8.0,11.0,3.23,3.69,5.08,12.0,Complete Progressor
-Marseille,Cengiz Ünder,120.0,2.0,6.0,8.0,1.5,4.5,6.0,12.0,Ball Carrier
 Canada,Cyle Larin,135.0,8.0,5.0,5.0,5.33,3.33,3.33,11.99,Complete Progressor
 Croatia,Lovro Majer,143.0,2.0,6.0,11.0,1.26,3.78,6.92,11.96,Ball Carrier
-Metz,Farid Boulaya,68.0,3.0,3.0,3.0,3.97,3.97,3.97,11.91,Complete Progressor
 Strasbourg,Adrien Thomasson,68.0,3.0,3.0,3.0,3.97,3.97,3.97,11.91,Complete Progressor
+Metz,Farid Boulaya,68.0,3.0,3.0,3.0,3.97,3.97,3.97,11.91,Complete Progressor
 Paris Saint-Germain,Juan Bernat Velasco,801.0,19.0,23.0,64.0,2.13,2.58,7.19,11.9,Progression Outlet
 England,Philip Foden,265.0,6.0,9.0,20.0,2.04,3.06,6.79,11.89,Ball Carrier
-Hyderabad,Eduardo García Martín,560.0,31.0,13.0,30.0,4.98,2.09,4.82,11.89,Progressive Passer
 Lens,Gaël Kakuta,53.0,2.0,2.0,3.0,3.4,3.4,5.09,11.89,Complete Progressor
+Hyderabad,Eduardo García Martín,560.0,31.0,13.0,30.0,4.98,2.09,4.82,11.89,Progressive Passer
 Germany,Nico Schlotterbeck,106.0,8.0,4.0,2.0,6.79,3.4,1.7,11.889999999999999,Complete Progressor
 United States,Sergino Dest,304.0,14.0,13.0,13.0,4.14,3.85,3.85,11.84,Complete Progressor
 Stade de Reims,Nathanaël Mbuku,100.0,1.0,5.0,7.0,0.9,4.5,6.3,11.7,Ball Carrier
@@ -156,12 +156,12 @@ France,Antoine Griezmann,576.0,23.0,20.0,31.0,3.59,3.12,4.84,11.55,Complete Prog
 Portugal,Raphaël Adelino José Guerreiro,298.0,10.0,14.0,14.0,3.02,4.23,4.23,11.48,Complete Progressor
 NorthEast United,Mathias Coureur,835.0,20.0,36.0,49.0,2.16,3.88,5.28,11.32,Ball Carrier
 Nantes,Ludovic Blas,183.0,7.0,7.0,9.0,3.44,3.44,4.43,11.309999999999999,Complete Progressor
-Senegal,Ismaïla Sarr,360.0,8.0,19.0,18.0,2.0,4.75,4.5,11.25,Ball Carrier
+France,Benjamin Pavard,88.0,7.0,0.0,4.0,7.16,0.0,4.09,11.25,Progressive Passer
 Denmark,Mathias Jensen,88.0,4.0,1.0,6.0,4.09,1.02,6.14,11.25,Progressive Passer
 NorthEast United,Manvir Singh,80.0,0.0,3.0,7.0,0.0,3.38,7.87,11.25,Ball Carrier
+Senegal,Ismaïla Sarr,360.0,8.0,19.0,18.0,2.0,4.75,4.5,11.25,Ball Carrier
 Goa,Nongdamba Singh Naorem,304.0,3.0,13.0,22.0,0.89,3.85,6.51,11.25,Ball Carrier
 Tunisia,Ferjani Sassi,56.0,5.0,0.0,2.0,8.04,0.0,3.21,11.25,Progressive Passer
-France,Benjamin Pavard,88.0,7.0,0.0,4.0,7.16,0.0,4.09,11.25,Progressive Passer
 Jamshedpur,Jordan Murray,713.0,19.0,34.0,36.0,2.4,4.29,4.54,11.23,Ball Carrier
 Portugal,Cristiano Ronaldo dos Santos Aveiro,297.0,6.0,9.0,22.0,1.82,2.73,6.67,11.219999999999999,Ball Carrier
 Mumbai City,Raynier Fernandes,602.0,24.0,18.0,33.0,3.59,2.69,4.93,11.209999999999999,Progressive Passer
@@ -197,9 +197,9 @@ Goa,Eduardo Bedia Peláez,1415.0,108.0,32.0,27.0,6.87,2.04,1.72,10.63,Progressiv
 France,Marcus Thuram,161.0,3.0,11.0,5.0,1.68,6.15,2.8,10.629999999999999,Ball Carrier
 Saint-Étienne,Ryad Boudebouz,161.0,9.0,6.0,4.0,5.03,3.35,2.24,10.620000000000001,Complete Progressor
 Mumbai City,Vikram Pratap Singh,645.0,8.0,37.0,31.0,1.12,5.16,4.33,10.61,Ball Carrier
-Rennes,Flavien Tait,85.0,6.0,4.0,0.0,6.35,4.24,0.0,10.59,Complete Progressor
 Marseille,Mattéo Guendouzi Olié,187.0,7.0,8.0,7.0,3.37,3.85,3.37,10.59,Complete Progressor
 Mexico,Raúl Alonso Jiménez Rodríguez,68.0,3.0,2.0,3.0,3.97,2.65,3.97,10.59,Progressive Passer
+Rennes,Flavien Tait,85.0,6.0,4.0,0.0,6.35,4.24,0.0,10.59,Complete Progressor
 Montpellier,Stephy Alvaro Mavididi,51.0,1.0,2.0,3.0,1.76,3.53,5.29,10.58,Ball Carrier
 East Bengal,Francisco José Sota Bernard,324.0,15.0,8.0,15.0,4.17,2.22,4.17,10.56,Progressive Passer
 OGC Nice,Flavius Daniliuc,77.0,6.0,2.0,1.0,7.01,2.34,1.17,10.52,Progressive Passer
@@ -211,10 +211,10 @@ Nantes,Fábio Pereira da Silva,52.0,1.0,2.0,3.0,1.73,3.46,5.19,10.37999999999999
 Croatia,Mateo Kovačić,642.0,34.0,22.0,18.0,4.77,3.08,2.52,10.37,Complete Progressor
 ATK Mohun Bagan,Roy Krishna,1233.0,35.0,43.0,64.0,2.55,3.14,4.67,10.36,Ball Carrier
 Cameroon,Vincent Paté Aboubakar,149.0,2.0,5.0,10.0,1.21,3.02,6.04,10.27,Ball Carrier
-Nantes,Marcus Coco,79.0,2.0,4.0,3.0,2.28,4.56,3.42,10.26,Ball Carrier
 England,Marcus Rashford,158.0,1.0,5.0,12.0,0.57,2.85,6.84,10.26,Ball Carrier
-Argentina,Rodrigo Javier De Paul,625.0,28.0,24.0,19.0,4.03,3.46,2.74,10.23,Complete Progressor
+Nantes,Marcus Coco,79.0,2.0,4.0,3.0,2.28,4.56,3.42,10.26,Ball Carrier
 Denmark,Thomas Delaney,44.0,3.0,0.0,2.0,6.14,0.0,4.09,10.23,Progressive Passer
+Argentina,Rodrigo Javier De Paul,625.0,28.0,24.0,19.0,4.03,3.46,2.74,10.23,Complete Progressor
 Montpellier,Jordan Ferri,88.0,5.0,4.0,1.0,5.11,4.09,1.02,10.219999999999999,Complete Progressor
 Kerala Blasters,Vincy Barretto,432.0,8.0,17.0,24.0,1.67,3.54,5.0,10.21,Ball Carrier
 Spain,Rodrigo Hernández Cascante,409.0,31.0,15.0,0.0,6.82,3.3,0.0,10.120000000000001,Complete Progressor
@@ -251,12 +251,12 @@ Belgium,Thomas Meunier,214.0,4.0,5.0,14.0,1.68,2.1,5.89,9.67,Progression Outlet
 England,Callum Wilson,56.0,2.0,2.0,2.0,3.21,3.21,3.21,9.629999999999999,Complete Progressor
 Odisha,Ariday Cabrera Suárez,981.0,14.0,43.0,48.0,1.28,3.94,4.4,9.620000000000001,Ball Carrier
 NorthEast United,Deshorn Brown,853.0,10.0,36.0,45.0,1.06,3.8,4.75,9.61,Ball Carrier
-Lille,Renato Júnior Luz Sanches,94.0,7.0,1.0,2.0,6.7,0.96,1.91,9.57,Progressive Passer
 Serbia,Sergej Milinković-Savić,235.0,13.0,4.0,8.0,4.98,1.53,3.06,9.57,Progressive Passer
+Lille,Renato Júnior Luz Sanches,94.0,7.0,1.0,2.0,6.7,0.96,1.91,9.57,Progressive Passer
 Saudi Arabia,Salem Mohammed Al Dawsari,292.0,9.0,12.0,10.0,2.77,3.7,3.08,9.55,Ball Carrier
 Ecuador,Romario Andrés Ibarra Mina,66.0,1.0,4.0,2.0,1.36,5.45,2.73,9.540000000000001,Ball Carrier
-Lyon,Lucas Tolentino Coelho de Lima,85.0,4.0,5.0,0.0,4.24,5.29,0.0,9.530000000000001,Complete Progressor
 Cameroon,Karl Brillant Toko Ekambi,170.0,1.0,9.0,8.0,0.53,4.76,4.24,9.530000000000001,Ball Carrier
+Lyon,Lucas Tolentino Coelho de Lima,85.0,4.0,5.0,0.0,4.24,5.29,0.0,9.530000000000001,Complete Progressor
 Spain,Sergio Busquets i Burgos,369.0,29.0,4.0,6.0,7.07,0.98,1.46,9.510000000000002,Progressive Passer
 NorthEast United,Marco Sahanek,502.0,14.0,18.0,21.0,2.51,3.23,3.76,9.5,Ball Carrier
 Costa Rica,Joel Nathaniel Campbell Samuels,285.0,12.0,8.0,10.0,3.79,2.53,3.16,9.48,Progressive Passer
@@ -270,17 +270,17 @@ Bordeaux,Alberth Josué Elis Martínez,67.0,0.0,3.0,4.0,0.0,4.03,5.37,9.4,Ball C
 Serbia,Saša Lukić,259.0,11.0,12.0,4.0,3.82,4.17,1.39,9.38,Complete Progressor
 Canada,Stephen Antunes Eustáquio,125.0,10.0,1.0,2.0,7.2,0.72,1.44,9.36,Progressive Passer
 Chennaiyin,Vladimir Koman Jr.,1341.0,81.0,32.0,26.0,5.44,2.15,1.74,9.33,Progressive Passer
-Paris Saint-Germain,Leandro Daniel Paredes,610.0,51.0,9.0,3.0,7.52,1.33,0.44,9.29,Progressive Passer
-Kerala Blasters,Álvaro Vázquez García,1850.0,35.0,54.0,102.0,1.7,2.63,4.96,9.29,Progression Outlet
 United States,Joshua Sargent,155.0,1.0,6.0,9.0,0.58,3.48,5.23,9.29,Ball Carrier
+Kerala Blasters,Álvaro Vázquez García,1850.0,35.0,54.0,102.0,1.7,2.63,4.96,9.29,Progression Outlet
+Paris Saint-Germain,Leandro Daniel Paredes,610.0,51.0,9.0,3.0,7.52,1.33,0.44,9.29,Progressive Passer
 Kerala Blasters,Prasanth Karuthadathkuni,350.0,4.0,15.0,17.0,1.03,3.86,4.37,9.26,Ball Carrier
 Senegal,Youssouf Sabaly,379.0,14.0,6.0,19.0,3.32,1.42,4.51,9.25,Progressive Passer
 England,Jude Bellingham,429.0,18.0,12.0,14.0,3.78,2.52,2.94,9.24,Progressive Passer
 Cameroon,Nicolas Moumi Ngamaleu,88.0,2.0,1.0,6.0,2.05,1.02,6.14,9.209999999999999,Progression Outlet
 Goa,Seriton Fernandes,1366.0,36.0,49.0,54.0,2.37,3.23,3.56,9.16,Ball Carrier
 France,Jordan Veretout,59.0,4.0,0.0,2.0,6.1,0.0,3.05,9.149999999999999,Progressive Passer
-Paris Saint-Germain,Sergio Ramos García,701.0,62.0,6.0,3.0,7.96,0.77,0.39,9.120000000000001,Progressive Passer
 Jamshedpur,Nerijus Valskis,474.0,14.0,9.0,25.0,2.66,1.71,4.75,9.120000000000001,Progression Outlet
+Paris Saint-Germain,Sergio Ramos García,701.0,62.0,6.0,3.0,7.96,0.77,0.39,9.120000000000001,Progressive Passer
 ATK Mohun Bagan,Prabir Das,831.0,22.0,25.0,37.0,2.38,2.71,4.01,9.1,Progression Outlet
 Lens,Florian Sotoca,119.0,4.0,4.0,4.0,3.03,3.03,3.03,9.09,Complete Progressor
 Goa,Leander D''Cunha,436.0,11.0,13.0,20.0,2.27,2.68,4.13,9.08,Progression Outlet
@@ -289,37 +289,37 @@ Mexico,Jorge Eduardo Sánchez Ramos,179.0,7.0,4.0,7.0,3.52,2.01,3.52,9.049999999
 Serbia,Strahinja Pavlović,249.0,17.0,7.0,1.0,6.14,2.53,0.36,9.03,Progressive Passer
 Croatia,Borna Sosa,439.0,10.0,16.0,18.0,2.05,3.28,3.69,9.02,Ball Carrier
 Kerala Blasters,Adrián Nicolás Luna Retamar,2028.0,79.0,50.0,74.0,3.51,2.22,3.28,9.01,Progressive Passer
-Japan,Takefusa Kubo,90.0,3.0,3.0,3.0,3.0,3.0,3.0,9.0,Complete Progressor
 Lens,Massadio Haïdara,40.0,2.0,1.0,1.0,4.5,2.25,2.25,9.0,Progressive Passer
-Montpellier,Nicholas Gioacchini,30.0,1.0,0.0,2.0,3.0,0.0,6.0,9.0,Progressive Passer
-Morocco,Anass Zaroury,30.0,1.0,1.0,1.0,3.0,3.0,3.0,9.0,Complete Progressor
 Germany,Thomas Müller,200.0,4.0,3.0,13.0,1.8,1.35,5.85,9.0,Progression Outlet
+Japan,Takefusa Kubo,90.0,3.0,3.0,3.0,3.0,3.0,3.0,9.0,Complete Progressor
+Morocco,Anass Zaroury,30.0,1.0,1.0,1.0,3.0,3.0,3.0,9.0,Complete Progressor
+Montpellier,Nicholas Gioacchini,30.0,1.0,0.0,2.0,3.0,0.0,6.0,9.0,Progressive Passer
 Kerala Blasters,Chencho Gyeltshen,432.0,5.0,18.0,20.0,1.04,3.75,4.17,8.96,Ball Carrier
 Japan,Takuma Asano,181.0,1.0,6.0,11.0,0.5,2.98,5.47,8.95,Ball Carrier
-Cameroon,Martin Hongla Yma II,121.0,5.0,3.0,4.0,3.72,2.23,2.98,8.93,Progressive Passer
 Belgium,Eden Hazard,121.0,5.0,3.0,4.0,3.72,2.23,2.98,8.93,Progressive Passer
+Cameroon,Martin Hongla Yma II,121.0,5.0,3.0,4.0,3.72,2.23,2.98,8.93,Progressive Passer
 England,Mason Mount,192.0,4.0,6.0,9.0,1.88,2.81,4.22,8.91,Ball Carrier
 England,Kieran Trippier,212.0,7.0,3.0,11.0,2.97,1.27,4.67,8.91,Progression Outlet
 Argentina,Alexis Mac Allister,546.0,18.0,15.0,21.0,2.97,2.47,3.46,8.9,Supporting Progressor
 Switzerland,Ruben Vargas,284.0,2.0,12.0,14.0,0.63,3.8,4.44,8.870000000000001,Ball Carrier
-Belgium,Leandro Trossard,102.0,2.0,3.0,5.0,1.76,2.65,4.41,8.82,Progression Outlet
 Wales,Brennan Johnson,102.0,2.0,5.0,3.0,1.76,4.41,2.65,8.82,Ball Carrier
+Belgium,Leandro Trossard,102.0,2.0,3.0,5.0,1.76,2.65,4.41,8.82,Progression Outlet
 Japan,Kaoru Mitoma,174.0,5.0,8.0,4.0,2.59,4.14,2.07,8.799999999999999,Ball Carrier
 Australia,Garang Kuol,41.0,1.0,1.0,2.0,2.2,2.2,4.39,8.79,Progression Outlet
-Portugal,Nuno Mendes,41.0,2.0,1.0,1.0,4.39,2.2,2.2,8.79,Progressive Passer
 Goa,Muhammed Nemil Valiyattil,379.0,9.0,12.0,16.0,2.14,2.85,3.8,8.79,Ball Carrier
-Saint-Étienne,Denis Bouanga,164.0,0.0,7.0,9.0,0.0,3.84,4.94,8.780000000000001,Ball Carrier
+Portugal,Nuno Mendes,41.0,2.0,1.0,1.0,4.39,2.2,2.2,8.79,Progressive Passer
 Bengaluru,Prince Vinny Ibara Doniama,1066.0,19.0,29.0,56.0,1.6,2.45,4.73,8.780000000000001,Progression Outlet
+Saint-Étienne,Denis Bouanga,164.0,0.0,7.0,9.0,0.0,3.84,4.94,8.780000000000001,Ball Carrier
 Goa,Devendra Dhaku Murgaokar,1037.0,14.0,33.0,54.0,1.22,2.86,4.69,8.77,Ball Carrier
 Ghana,Osman Bukari,72.0,1.0,2.0,4.0,1.25,2.5,5.0,8.75,Progression Outlet
 Odisha,Redeem Tlang,309.0,2.0,13.0,15.0,0.58,3.79,4.37,8.74,Ball Carrier
 Spain,Álvaro Borja Morata Martín,175.0,3.0,3.0,11.0,1.54,1.54,5.66,8.74,Progression Outlet
 Japan,Hidemasa Morita,289.0,13.0,10.0,5.0,4.05,3.11,1.56,8.72,Complete Progressor
-Tunisia,Wajdi Kechrida,124.0,1.0,4.0,7.0,0.73,2.9,5.08,8.71,Ball Carrier
 Paris Saint-Germain,Xavi Simons,93.0,0.0,4.0,5.0,0.0,3.87,4.84,8.71,Ball Carrier
+Tunisia,Wajdi Kechrida,124.0,1.0,4.0,7.0,0.73,2.9,5.08,8.71,Ball Carrier
 Hyderabad,Aaren D''Silva,124.0,3.0,6.0,3.0,2.18,4.35,2.18,8.709999999999999,Ball Carrier
-Netherlands,Luuk de Jong,62.0,1.0,2.0,3.0,1.45,2.9,4.35,8.7,Ball Carrier
 Netherlands,Steven Berghuis,207.0,6.0,8.0,6.0,2.61,3.48,2.61,8.7,Ball Carrier
+Netherlands,Luuk de Jong,62.0,1.0,2.0,3.0,1.45,2.9,4.35,8.7,Ball Carrier
 France,Kingsley Coman,176.0,1.0,5.0,11.0,0.51,2.56,5.62,8.690000000000001,Progression Outlet
 France,Youssouf Fofana,228.0,13.0,4.0,5.0,5.13,1.58,1.97,8.68,Progressive Passer
 OGC Nice,Kasper Dolberg,156.0,2.0,4.0,9.0,1.15,2.31,5.19,8.65,Progression Outlet
@@ -334,22 +334,22 @@ Australia,Craig Goodwin,233.0,7.0,6.0,9.0,2.7,2.32,3.48,8.5,Supporting Progresso
 Saudi Arabia,Sami Khalil Al Naji,53.0,1.0,3.0,1.0,1.7,5.09,1.7,8.49,Ball Carrier
 Croatia,Bruno Petković,244.0,5.0,8.0,10.0,1.84,2.95,3.69,8.48,Ball Carrier
 Serbia,Aleksandar Mitrović,266.0,2.0,6.0,17.0,0.68,2.03,5.75,8.46,Progression Outlet
-Jamshedpur,Daniel Chima Chukwu,781.0,7.0,28.0,38.0,0.81,3.23,4.38,8.42,Ball Carrier
 Odisha,Francisco Javier Hernández González,1497.0,41.0,50.0,49.0,2.46,3.01,2.95,8.42,Ball Carrier
 Senegal,Iliman Ndiaye,139.0,0.0,5.0,8.0,0.0,3.24,5.18,8.42,Ball Carrier
+Jamshedpur,Daniel Chima Chukwu,781.0,7.0,28.0,38.0,0.81,3.23,4.38,8.42,Ball Carrier
 Troyes,Yasser Larouci,75.0,1.0,5.0,1.0,1.2,6.0,1.2,8.4,Ball Carrier
 Saudi Arabia,Saud Abdullah Abdul Hamid,290.0,10.0,9.0,8.0,3.1,2.79,2.48,8.370000000000001,Complete Progressor
 Denmark,Andreas Evald Cornelius,97.0,1.0,2.0,6.0,0.93,1.86,5.57,8.36,Progression Outlet
 Uruguay,Federico Santiago Valverde Dipetta,291.0,13.0,6.0,8.0,4.02,1.86,2.47,8.35,Progressive Passer
 AS Monaco,Wissam Ben Yedder,54.0,2.0,1.0,2.0,3.33,1.67,3.33,8.33,Progressive Passer
-Lens,Przemysław Frankowski,173.0,3.0,5.0,8.0,1.56,2.6,4.16,8.32,Progression Outlet
-Belgium,Yannick Ferreira Carrasco,119.0,0.0,2.0,9.0,0.0,1.51,6.81,8.32,Progression Outlet
 Lille,Jonathan David,173.0,4.0,6.0,6.0,2.08,3.12,3.12,8.32,Ball Carrier
-England,Harry Kane,401.0,13.0,11.0,13.0,2.92,2.47,2.92,8.31,Supporting Progressor
+Belgium,Yannick Ferreira Carrasco,119.0,0.0,2.0,9.0,0.0,1.51,6.81,8.32,Progression Outlet
+Lens,Przemysław Frankowski,173.0,3.0,5.0,8.0,1.56,2.6,4.16,8.32,Progression Outlet
 Saint-Étienne,Arnaud Nordin,65.0,2.0,2.0,2.0,2.77,2.77,2.77,8.31,Ball Carrier
+England,Harry Kane,401.0,13.0,11.0,13.0,2.92,2.47,2.92,8.31,Supporting Progressor
 Australia,Jamie MacLaren,65.0,0.0,2.0,4.0,0.0,2.77,5.54,8.31,Ball Carrier
-Clermont Foot,Jodel Dossou,65.0,3.0,1.0,2.0,4.15,1.38,2.77,8.3,Progressive Passer
 Clermont Foot,Jason Berthomier,65.0,2.0,1.0,3.0,2.77,1.38,4.15,8.3,Progression Outlet
+Clermont Foot,Jodel Dossou,65.0,3.0,1.0,2.0,4.15,1.38,2.77,8.3,Progressive Passer
 Strasbourg,Sanjin Prcić,76.0,6.0,1.0,0.0,7.11,1.18,0.0,8.290000000000001,Progressive Passer
 Portugal,Gonçalo Matias Ramos,163.0,3.0,4.0,8.0,1.66,2.21,4.42,8.29,Progression Outlet
 Portugal,João Mário Naval da Costa Eduardo,87.0,1.0,2.0,5.0,1.03,2.07,5.17,8.27,Progression Outlet
@@ -364,8 +364,8 @@ Germany,Antonio Rüdiger,287.0,22.0,4.0,0.0,6.9,1.25,0.0,8.15,Progressive Passer
 Mumbai City,Vignesh Dakshinamurthy,599.0,21.0,16.0,17.0,3.16,2.4,2.55,8.11,Progressive Passer
 Japan,Junya Ito,333.0,4.0,13.0,13.0,1.08,3.51,3.51,8.1,Ball Carrier
 Lille,Mehmet Zeki Çelik,178.0,5.0,6.0,5.0,2.53,3.03,2.53,8.09,Ball Carrier
-Bengaluru,Namgyal Bhutia,280.0,8.0,5.0,12.0,2.57,1.61,3.86,8.04,Supporting Progressor
 Uruguay,Rodrigo Bentancur Colmán,224.0,10.0,4.0,6.0,4.02,1.61,2.41,8.04,Progressive Passer
+Bengaluru,Namgyal Bhutia,280.0,8.0,5.0,12.0,2.57,1.61,3.86,8.04,Supporting Progressor
 Netherlands,Steven Bergwijn,269.0,3.0,9.0,12.0,1.0,3.01,4.01,8.02,Ball Carrier
 AS Monaco,Djibril Sidibé,90.0,3.0,4.0,1.0,3.0,4.0,1.0,8.0,Complete Progressor
 Senegal,Krépin Diatta,180.0,2.0,5.0,9.0,1.0,2.5,4.5,8.0,Progression Outlet
@@ -378,13 +378,13 @@ Uruguay,Guillermo Varela Olivera,204.0,6.0,6.0,6.0,2.65,2.65,2.65,7.949999999999
 Tunisia,Taha Yassine Khenissi,34.0,1.0,1.0,1.0,2.65,2.65,2.65,7.949999999999999,Supporting Progressor
 Troyes,Issa Kabore,91.0,2.0,2.0,4.0,1.98,1.98,3.96,7.92,Supporting Progressor
 Lille,Gabriel Gudmundsson,91.0,1.0,5.0,2.0,0.99,4.95,1.98,7.92,Ball Carrier
-Argentina,Julián Álvarez,469.0,7.0,15.0,19.0,1.34,2.88,3.65,7.869999999999999,Ball Carrier
 Chennaiyin,Syed Suhail Pasha,206.0,3.0,4.0,11.0,1.31,1.75,4.81,7.869999999999999,Progression Outlet
+Argentina,Julián Álvarez,469.0,7.0,15.0,19.0,1.34,2.88,3.65,7.869999999999999,Ball Carrier
 Ghana,Abdul Rahman Baba,206.0,6.0,6.0,6.0,2.62,2.62,2.62,7.86,Supporting Progressor
 Portugal,João Pedro Cavaco Cancelo,332.0,12.0,5.0,12.0,3.25,1.36,3.25,7.86,Progressive Passer
 Hyderabad,Bartholomew Owogbalor Ogbeche,1764.0,41.0,41.0,72.0,2.09,2.09,3.67,7.85,Supporting Progressor
-Morocco,Ilias Chair,46.0,0.0,3.0,1.0,0.0,5.87,1.96,7.83,Ball Carrier
 Belgium,Leander Dendoncker,161.0,11.0,2.0,1.0,6.15,1.12,0.56,7.83,Progressive Passer
+Morocco,Ilias Chair,46.0,0.0,3.0,1.0,0.0,5.87,1.96,7.83,Ball Carrier
 Belgium,Kevin De Bruyne,276.0,8.0,8.0,8.0,2.61,2.61,2.61,7.83,Supporting Progressor
 Bengaluru,Sivasakthi Narayanan,69.0,1.0,1.0,4.0,1.3,1.3,5.22,7.82,Progression Outlet
 Poland,Robert Lewandowski,380.0,8.0,11.0,14.0,1.89,2.61,3.32,7.82,Supporting Progressor
@@ -409,16 +409,16 @@ Bengaluru,Yroundu Musavu-King,119.0,8.0,2.0,0.0,6.05,1.51,0.0,7.56,Progressive P
 Hyderabad,Asish Rai,1393.0,33.0,41.0,43.0,2.13,2.65,2.78,7.559999999999999,Supporting Progressor
 Lorient,Terem Igobor Moffi,167.0,4.0,4.0,6.0,2.16,2.16,3.23,7.550000000000001,Supporting Progressor
 Ghana,Mohammed Kudus,251.0,2.0,9.0,10.0,0.72,3.23,3.59,7.54,Ball Carrier
-Rennes,Baptiste Santamaría,108.0,5.0,1.0,3.0,4.17,0.83,2.5,7.5,Progressive Passer
-Portugal,João Félix Sequeira,336.0,4.0,9.0,15.0,1.07,2.41,4.02,7.5,Progression Outlet
-Marseille,Valentin Rongier,144.0,4.0,2.0,6.0,2.5,1.25,3.75,7.5,Supporting Progressor
 Cameroon,Georges-Kévin Nkoudou Mbida,36.0,1.0,1.0,1.0,2.5,2.5,2.5,7.5,Supporting Progressor
+Marseille,Valentin Rongier,144.0,4.0,2.0,6.0,2.5,1.25,3.75,7.5,Supporting Progressor
+Portugal,João Félix Sequeira,336.0,4.0,9.0,15.0,1.07,2.41,4.02,7.5,Progression Outlet
+Rennes,Baptiste Santamaría,108.0,5.0,1.0,3.0,4.17,0.83,2.5,7.5,Progressive Passer
 Lens,Seko Fofana,181.0,8.0,5.0,2.0,3.98,2.49,0.99,7.460000000000001,Progressive Passer
 Netherlands,Daley Blind,447.0,18.0,4.0,15.0,3.62,0.81,3.02,7.449999999999999,Progressive Passer
 United States,Cameron Carter-Vickers,97.0,6.0,2.0,0.0,5.57,1.86,0.0,7.430000000000001,Progressive Passer
 Australia,Mathew Leckie,339.0,2.0,9.0,17.0,0.53,2.39,4.51,7.43,Progression Outlet
-Mexico,Ernesto Alexis Vega Rojas,194.0,5.0,5.0,6.0,2.32,2.32,2.78,7.42,Supporting Progressor
 Denmark,Jesper Lindstrøm,206.0,2.0,10.0,5.0,0.87,4.37,2.18,7.42,Ball Carrier
+Mexico,Ernesto Alexis Vega Rojas,194.0,5.0,5.0,6.0,2.32,2.32,2.78,7.42,Supporting Progressor
 Bengaluru,Ajay Chhetri,219.0,16.0,1.0,1.0,6.58,0.41,0.41,7.4,Progressive Passer
 Saudi Arabia,Sultan Abdullah Salim Al Ghannam,134.0,5.0,3.0,3.0,3.36,2.01,2.01,7.379999999999999,Progressive Passer
 Netherlands,Frenkie de Jong,489.0,27.0,9.0,4.0,4.97,1.66,0.74,7.37,Progressive Passer
@@ -427,15 +427,15 @@ United States,Tim Ream,380.0,26.0,5.0,0.0,6.16,1.18,0.0,7.34,Progressive Passer
 Bengaluru,Edmund Lalrindika,111.0,0.0,2.0,7.0,0.0,1.62,5.68,7.3,Progression Outlet
 South Korea,Moon-Hwan Kim,383.0,7.0,9.0,15.0,1.64,2.11,3.52,7.27,Supporting Progressor
 Denmark,Pierre-Emile Højbjerg,273.0,15.0,3.0,4.0,4.95,0.99,1.32,7.260000000000001,Progressive Passer
-Hyderabad,Sahil Tavora,607.0,32.0,8.0,9.0,4.74,1.19,1.33,7.26,Progressive Passer
 Denmark,Simon Thorup Kjær,62.0,4.0,1.0,0.0,5.81,1.45,0.0,7.26,Progressive Passer
+Hyderabad,Sahil Tavora,607.0,32.0,8.0,9.0,4.74,1.19,1.33,7.26,Progressive Passer
 Qatar,Ismaeel Mohammad Mohammad,174.0,0.0,4.0,10.0,0.0,2.07,5.17,7.24,Progression Outlet
 Senegal,Idrissa Gana Gueye,286.0,11.0,6.0,6.0,3.46,1.89,1.89,7.239999999999999,Progressive Passer
 Bengaluru,Cleiton Augusto Oliveira Silva,1572.0,27.0,30.0,69.0,1.55,1.72,3.95,7.220000000000001,Supporting Progressor
 Senegal,Ismail Jakobs,287.0,8.0,9.0,6.0,2.51,2.82,1.88,7.21,Ball Carrier
+Marseille,Amine Harit,50.0,3.0,1.0,0.0,5.4,1.8,0.0,7.2,Progressive Passer
 Mexico,Kevin Nahin Álvarez Campos,75.0,3.0,0.0,3.0,3.6,0.0,3.6,7.2,Progressive Passer
 Stade de Reims,Valon Berisha,50.0,2.0,2.0,0.0,3.6,3.6,0.0,7.2,Complete Progressor
-Marseille,Amine Harit,50.0,3.0,1.0,0.0,5.4,1.8,0.0,7.2,Progressive Passer
 Mumbai City,Ahmed Jahouh,1304.0,79.0,12.0,13.0,5.45,0.83,0.9,7.180000000000001,Progressive Passer
 Mumbai City,Ygor de Oliveira Ferreira,390.0,4.0,9.0,18.0,0.92,2.08,4.15,7.15,Progression Outlet
 Bengaluru,Ajith Kumar,302.0,8.0,9.0,7.0,2.38,2.68,2.09,7.15,Supporting Progressor
@@ -445,35 +445,35 @@ Rennes,Hamari Traoré,190.0,5.0,3.0,7.0,2.37,1.42,3.32,7.109999999999999,Support
 Iran,Ali Karimi,127.0,4.0,1.0,5.0,2.83,0.71,3.54,7.08,Supporting Progressor
 OGC Nice,Melvin Bard,178.0,3.0,4.0,7.0,1.52,2.02,3.54,7.08,Supporting Progressor
 Spain,Anssumane Fati,51.0,0.0,1.0,3.0,0.0,1.76,5.29,7.05,Progression Outlet
-Iran,Sardar Azmoun,128.0,2.0,4.0,4.0,1.41,2.81,2.81,7.029999999999999,Ball Carrier
 Portugal,Vitor Machado Ferreira,128.0,6.0,1.0,3.0,4.22,0.7,2.11,7.029999999999999,Progressive Passer
 South Korea,Sang-Ho Na,128.0,0.0,3.0,7.0,0.0,2.11,4.92,7.029999999999999,Progression Outlet
+Iran,Sardar Azmoun,128.0,2.0,4.0,4.0,1.41,2.81,2.81,7.029999999999999,Ball Carrier
 Wales,Gareth Frank Bale,231.0,3.0,5.0,10.0,1.17,1.95,3.9,7.02,Supporting Progressor
 United States,Haji Wright,154.0,3.0,3.0,6.0,1.75,1.75,3.51,7.01,Supporting Progressor
 AS Monaco,Axel Disasi,90.0,7.0,0.0,0.0,7.0,0.0,0.0,7.0,Progressive Passer
-Paris Saint-Germain,Nuno Mendes,1298.0,29.0,24.0,48.0,2.01,1.66,3.33,7.0,Supporting Progressor
 Croatia,Marcelo Brozović,565.0,25.0,9.0,10.0,3.98,1.43,1.59,7.0,Progressive Passer
+Paris Saint-Germain,Nuno Mendes,1298.0,29.0,24.0,48.0,2.01,1.66,3.33,7.0,Supporting Progressor
 Chennaiyin,Anirudh Thapa,1598.0,46.0,31.0,47.0,2.59,1.75,2.65,6.99,Supporting Progressor
 Rennes,Birger Meling,181.0,5.0,5.0,4.0,2.49,2.49,1.99,6.970000000000001,Supporting Progressor
 Mumbai City,Bradden Inman,531.0,16.0,8.0,17.0,2.71,1.36,2.88,6.95,Supporting Progressor
 East Bengal,Naorem Mahesh Singh,1204.0,31.0,26.0,36.0,2.32,1.94,2.69,6.949999999999999,Supporting Progressor
 Switzerland,Djibril Sow,260.0,8.0,9.0,3.0,2.77,3.12,1.04,6.930000000000001,Ball Carrier
-Mumbai City,Gurkirat Singh,78.0,2.0,0.0,4.0,2.31,0.0,4.62,6.93,Progression Outlet
-Ecuador,Jeremy Leonel Sarmiento Morante,91.0,2.0,2.0,3.0,1.98,1.98,2.97,6.93,Supporting Progressor
 AS Monaco,Aleksandr Golovin,91.0,1.0,3.0,3.0,0.99,2.97,2.97,6.93,Ball Carrier
+Ecuador,Jeremy Leonel Sarmiento Morante,91.0,2.0,2.0,3.0,1.98,1.98,2.97,6.93,Supporting Progressor
 OGC Nice,Andy Delort,117.0,4.0,2.0,3.0,3.08,1.54,2.31,6.93,Progressive Passer
+Mumbai City,Gurkirat Singh,78.0,2.0,0.0,4.0,2.31,0.0,4.62,6.93,Progression Outlet
 Germany,Lukas Klostermann,78.0,2.0,3.0,1.0,2.31,3.46,1.15,6.92,Ball Carrier
 Chennaiyin,Łukasz Gikiewicz,860.0,14.0,14.0,38.0,1.47,1.47,3.98,6.92,Progression Outlet
 Japan,Hiroki Sakai,118.0,5.0,1.0,3.0,3.81,0.76,2.29,6.86,Progressive Passer
-Canada,Ismael Koné,118.0,5.0,3.0,1.0,3.81,2.29,0.76,6.859999999999999,Progressive Passer
 Switzerland,Breel-Donald Embolo,328.0,1.0,11.0,13.0,0.27,3.02,3.57,6.859999999999999,Ball Carrier
-Qatar,Homam Alamin Ahmed,263.0,4.0,7.0,9.0,1.37,2.4,3.08,6.85,Supporting Progressor
-Croatia,Mario Pašalić,276.0,8.0,6.0,7.0,2.61,1.96,2.28,6.85,Supporting Progressor
+Canada,Ismael Koné,118.0,5.0,3.0,1.0,3.81,2.29,0.76,6.859999999999999,Progressive Passer
 Mexico,Néstor Alejandro Araújo Razo,92.0,6.0,0.0,1.0,5.87,0.0,0.98,6.85,Progressive Passer
+Croatia,Mario Pašalić,276.0,8.0,6.0,7.0,2.61,1.96,2.28,6.85,Supporting Progressor
 Uruguay,José Martín Cáceres Silva,92.0,6.0,1.0,0.0,5.87,0.98,0.0,6.85,Progressive Passer
+Qatar,Homam Alamin Ahmed,263.0,4.0,7.0,9.0,1.37,2.4,3.08,6.85,Supporting Progressor
 Stade de Reims,Dion Lopy,105.0,3.0,3.0,2.0,2.57,2.57,1.71,6.85,Supporting Progressor
-Cameroon,Christian Mougang Bassogog,66.0,0.0,3.0,2.0,0.0,4.09,2.73,6.82,Ball Carrier
 Ecuador,José Adoni Cifuentes Charcopa,66.0,2.0,0.0,3.0,2.73,0.0,4.09,6.82,Progression Outlet
+Cameroon,Christian Mougang Bassogog,66.0,0.0,3.0,2.0,0.0,4.09,2.73,6.82,Ball Carrier
 Senegal,Pape Matar Sarr,66.0,3.0,1.0,1.0,4.09,1.36,1.36,6.8100000000000005,Progressive Passer
 Lyon,Islam Slimani,93.0,0.0,3.0,4.0,0.0,2.9,3.87,6.77,Ball Carrier
 Stade de Reims,El Bilal Toure,80.0,1.0,0.0,5.0,1.12,0.0,5.62,6.74,Progression Outlet
@@ -484,8 +484,8 @@ Argentina,Leandro Daniel Paredes,229.0,14.0,2.0,1.0,5.5,0.79,0.39,6.68,Progressi
 Strasbourg,Frédéric Guilbert,81.0,1.0,0.0,5.0,1.11,0.0,5.56,6.67,Progression Outlet
 Saint-Étienne,Timothée Kolodziejczak,135.0,4.0,2.0,4.0,2.67,1.33,2.67,6.67,Supporting Progressor
 Ecuador,Pervis Josué Estupiñán Tenorio,285.0,7.0,6.0,8.0,2.21,1.89,2.53,6.629999999999999,Supporting Progressor
-Bordeaux,Rémi Oudin,68.0,0.0,2.0,3.0,0.0,2.65,3.97,6.62,Progression Outlet
 Strasbourg,Ludovic Ajorque,68.0,0.0,0.0,5.0,0.0,0.0,6.62,6.62,Progression Outlet
+Bordeaux,Rémi Oudin,68.0,0.0,2.0,3.0,0.0,2.65,3.97,6.62,Progression Outlet
 Lille,Hatem Ben Arfa,68.0,2.0,2.0,1.0,2.65,2.65,1.32,6.62,Supporting Progressor
 Brazil,Marcos Aoás Corrêa,450.0,22.0,8.0,3.0,4.4,1.6,0.6,6.6,Progressive Passer
 Qatar,Hassan Khalid Al Heidos,205.0,8.0,4.0,3.0,3.51,1.76,1.32,6.59,Progressive Passer
@@ -495,8 +495,8 @@ Ghana,Thomas Teye Partey,289.0,13.0,5.0,3.0,4.05,1.56,0.93,6.539999999999999,Pro
 Argentina,Nahuel Molina Lucero,592.0,14.0,12.0,17.0,2.13,1.82,2.58,6.53,Supporting Progressor
 Ecuador,Gonzalo Jordy Plata Jiménez,276.0,5.0,9.0,6.0,1.63,2.93,1.96,6.5200000000000005,Ball Carrier
 Tunisia,Ali Abdi,207.0,3.0,5.0,7.0,1.3,2.17,3.04,6.51,Supporting Progressor
-East Bengal,Thongkhosiem Haokip,679.0,8.0,18.0,23.0,1.06,2.39,3.05,6.5,Supporting Progressor
 Rennes,Lovro Majer,83.0,1.0,3.0,2.0,1.08,3.25,2.17,6.5,Ball Carrier
+East Bengal,Thongkhosiem Haokip,679.0,8.0,18.0,23.0,1.06,2.39,3.05,6.5,Supporting Progressor
 Switzerland,Silvan Widmer,277.0,7.0,4.0,9.0,2.27,1.3,2.92,6.49,Supporting Progressor
 Cameroon,Jean-Eric Maxim Choupo-Moting,264.0,4.0,9.0,6.0,1.36,3.07,2.05,6.4799999999999995,Ball Carrier
 Goa,Saviour Gama,917.0,16.0,19.0,31.0,1.57,1.86,3.04,6.470000000000001,Supporting Progressor
@@ -504,16 +504,16 @@ Hyderabad,Akash Mishra,2089.0,54.0,59.0,37.0,2.33,2.54,1.59,6.46,Supporting Prog
 South Korea,Min Jae Kim,279.0,15.0,5.0,0.0,4.84,1.61,0.0,6.45,Progressive Passer
 Portugal,Rúben Diogo Da Silva Neves,266.0,13.0,3.0,3.0,4.4,1.02,1.02,6.4399999999999995,Progressive Passer
 Bengaluru,Sarthak Golui,56.0,3.0,0.0,1.0,4.82,0.0,1.61,6.430000000000001,Progressive Passer
-Nantes,Pedro Chirivella Burgos,182.0,13.0,0.0,0.0,6.43,0.0,0.0,6.43,Progressive Passer
 Australia,Nathaniel Atkinson,84.0,4.0,0.0,2.0,4.29,0.0,2.14,6.43,Progressive Passer
 Poland,Piotr Zieliński,336.0,14.0,7.0,3.0,3.75,1.88,0.8,6.43,Progressive Passer
+Nantes,Pedro Chirivella Burgos,182.0,13.0,0.0,0.0,6.43,0.0,0.0,6.43,Progressive Passer
 Saudi Arabia,Mohammed Kanoo,294.0,8.0,7.0,6.0,2.45,2.14,1.84,6.43,Supporting Progressor
 Rennes,Jonas Martin,169.0,8.0,4.0,0.0,4.26,2.13,0.0,6.39,Progressive Passer
 Australia,Keanu Baccus,127.0,1.0,3.0,5.0,0.71,2.13,3.54,6.38,Supporting Progressor
 Brazil,Fábio Henrique Tavares,99.0,6.0,1.0,0.0,5.45,0.91,0.0,6.36,Progressive Passer
 South Korea,In-Beom Hwang,353.0,15.0,7.0,3.0,3.82,1.78,0.76,6.359999999999999,Progressive Passer
-Iran,Ramin Rezaeian,199.0,3.0,4.0,7.0,1.36,1.81,3.17,6.34,Supporting Progressor
 Brazil,Pedro Guilherme Abreu dos Santos,71.0,1.0,0.0,4.0,1.27,0.0,5.07,6.34,Progression Outlet
+Iran,Ramin Rezaeian,199.0,3.0,4.0,7.0,1.36,1.81,3.17,6.34,Supporting Progressor
 Mumbai City,Diego Maurício Machado de Brito,214.0,3.0,6.0,6.0,1.26,2.52,2.52,6.300000000000001,Supporting Progressor
 Bengaluru,Naorem Roshan Singh,1524.0,47.0,33.0,26.0,2.78,1.95,1.54,6.27,Supporting Progressor
 Paris Saint-Germain,Abdou Diallo,360.0,22.0,2.0,1.0,5.5,0.5,0.25,6.25,Progressive Passer
@@ -525,32 +525,32 @@ Paris Saint-Germain,Ander Herrera Agüera,319.0,8.0,5.0,9.0,2.26,1.41,2.54,6.21,
 Portugal,João Maria Lobo Alves Palhinha Gonçalves,58.0,2.0,1.0,1.0,3.1,1.55,1.55,6.2,Progressive Passer
 Belgium,Timothy Castagne,276.0,15.0,2.0,2.0,4.89,0.65,0.65,6.19,Progressive Passer
 Ghana,Alidu Seidu,160.0,5.0,4.0,2.0,2.81,2.25,1.12,6.180000000000001,Supporting Progressor
-Brazil,Gabriel Fernando de Jesus,102.0,1.0,3.0,3.0,0.88,2.65,2.65,6.18,Supporting Progressor
 Wales,Ethan Ampadu,262.0,14.0,3.0,1.0,4.81,1.03,0.34,6.18,Progressive Passer
+Brazil,Gabriel Fernando de Jesus,102.0,1.0,3.0,3.0,0.88,2.65,2.65,6.18,Supporting Progressor
 Chennaiyin,Jerry Lalrinzuala,1593.0,29.0,37.0,43.0,1.64,2.09,2.43,6.16,Supporting Progressor
 United States,DeAndre Yedlin,44.0,1.0,1.0,1.0,2.05,2.05,2.05,6.1499999999999995,Supporting Progressor
 Jamshedpur,Ishan Pandita,440.0,2.0,10.0,18.0,0.41,2.05,3.68,6.140000000000001,Supporting Progressor
-Goa,Sanson Pereira,513.0,13.0,12.0,10.0,2.28,2.11,1.75,6.14,Supporting Progressor
 Mexico,Carlos Alberto Rodríguez Gómez,44.0,1.0,0.0,2.0,2.05,0.0,4.09,6.14,Progression Outlet
+Goa,Sanson Pereira,513.0,13.0,12.0,10.0,2.28,2.11,1.75,6.14,Supporting Progressor
 Serbia,Nemanja Maksimović,132.0,7.0,1.0,1.0,4.77,0.68,0.68,6.129999999999999,Progressive Passer
 Chennaiyin,Keisham Reagan Singh,1222.0,29.0,27.0,27.0,2.14,1.99,1.99,6.12,Supporting Progressor
 Hyderabad,Javier Siverio Toro,1005.0,13.0,14.0,41.0,1.16,1.25,3.67,6.08,Limited Progression
 Mumbai City,Vinit Rai Chamling,252.0,11.0,4.0,2.0,3.93,1.43,0.71,6.07,Progressive Passer
-Denmark,Martin Braithwaite Christensen,104.0,0.0,1.0,6.0,0.0,0.87,5.19,6.0600000000000005,Progression Outlet
-Lorient,Enzo Le Fée,178.0,4.0,2.0,6.0,2.02,1.01,3.03,6.0600000000000005,Supporting Progressor
 Jamshedpur,Mohammad Mobashir Rahman,550.0,19.0,10.0,8.0,3.11,1.64,1.31,6.0600000000000005,Progressive Passer
+Lorient,Enzo Le Fée,178.0,4.0,2.0,6.0,2.02,1.01,3.03,6.0600000000000005,Supporting Progressor
+Denmark,Martin Braithwaite Christensen,104.0,0.0,1.0,6.0,0.0,0.87,5.19,6.0600000000000005,Progression Outlet
 Croatia,Borna Barišić,119.0,2.0,2.0,4.0,1.51,1.51,3.03,6.05,Supporting Progressor
 Senegal,Pape Gueye,164.0,6.0,3.0,2.0,3.29,1.65,1.1,6.039999999999999,Progressive Passer
-NorthEast United,Rochharzela Rochharzela,404.0,7.0,9.0,11.0,1.56,2.0,2.45,6.01,Supporting Progressor
 Brazil,Lucas Tolentino Coelho de Lima,315.0,8.0,1.0,12.0,2.29,0.29,3.43,6.01,Supporting Progressor
+NorthEast United,Rochharzela Rochharzela,404.0,7.0,9.0,11.0,1.56,2.0,2.45,6.01,Supporting Progressor
 Kerala Blasters,Nishu Kumar Tashni,494.0,8.0,6.0,19.0,1.46,1.09,3.46,6.01,Limited Progression
-Argentina,Lautaro Javier Martínez,270.0,1.0,5.0,12.0,0.33,1.67,4.0,6.0,Progression Outlet
 Montpellier,Arnaud Souquet,75.0,1.0,2.0,2.0,1.2,2.4,2.4,6.0,Supporting Progressor
-United States,Jesus Ferreira,45.0,1.0,0.0,2.0,2.0,0.0,4.0,6.0,Progression Outlet
-Ecuador,Michael Steveen Estrada Martínez,225.0,5.0,2.0,8.0,2.0,0.8,3.2,6.0,Supporting Progressor
-Strasbourg,Alexander Djiku,90.0,6.0,0.0,0.0,6.0,0.0,0.0,6.0,Progressive Passer
 Chennaiyin,Germanpreet Singh,855.0,25.0,15.0,17.0,2.63,1.58,1.79,6.0,Supporting Progressor
+United States,Jesus Ferreira,45.0,1.0,0.0,2.0,2.0,0.0,4.0,6.0,Progression Outlet
+Argentina,Lautaro Javier Martínez,270.0,1.0,5.0,12.0,0.33,1.67,4.0,6.0,Progression Outlet
+Ecuador,Michael Steveen Estrada Martínez,225.0,5.0,2.0,8.0,2.0,0.8,3.2,6.0,Supporting Progressor
 Mexico,Luis Gerardo Chávez Magallón,285.0,12.0,4.0,3.0,3.79,1.26,0.95,6.0,Progressive Passer
+Strasbourg,Alexander Djiku,90.0,6.0,0.0,0.0,6.0,0.0,0.0,6.0,Progressive Passer
 Paris Saint-Germain,Georginio Wijnaldum,919.0,26.0,9.0,26.0,2.55,0.88,2.55,5.9799999999999995,Supporting Progressor
 Paris Saint-Germain,Thilo Kehrer,860.0,31.0,5.0,21.0,3.24,0.52,2.2,5.960000000000001,Progressive Passer
 Tunisia,Mohamed Dräger,136.0,2.0,2.0,5.0,1.32,1.32,3.31,5.95,Supporting Progressor
@@ -558,19 +558,19 @@ Poland,Arkadiusz Milik,106.0,1.0,3.0,3.0,0.85,2.55,2.55,5.949999999999999,Suppor
 Argentina,Marcos Javier Acuña,394.0,7.0,6.0,13.0,1.6,1.37,2.97,5.94,Supporting Progressor
 England,Jordan Brian Henderson,273.0,8.0,3.0,7.0,2.64,0.99,2.31,5.9399999999999995,Supporting Progressor
 Hyderabad,Hitesh Sharma,653.0,32.0,4.0,7.0,4.41,0.55,0.96,5.92,Progressive Passer
-Lens,Arnaud Kalimuendo Muinga,137.0,1.0,5.0,3.0,0.66,3.28,1.97,5.91,Ball Carrier
 Argentina,Exequiel Alejandro Palacios,61.0,3.0,1.0,0.0,4.43,1.48,0.0,5.91,Progressive Passer
 Costa Rica,Bryan Oviedo,259.0,3.0,5.0,9.0,1.04,1.74,3.13,5.91,Supporting Progressor
+Lens,Arnaud Kalimuendo Muinga,137.0,1.0,5.0,3.0,0.66,3.28,1.97,5.91,Ball Carrier
 Spain,Marcos Llorente Moreno,122.0,4.0,1.0,3.0,2.95,0.74,2.21,5.9,Supporting Progressor
 Japan,Ao Tanaka,168.0,6.0,1.0,4.0,3.21,0.54,2.14,5.890000000000001,Progressive Passer
 Wales,Kieffer Roberto Francisco Moore,245.0,2.0,4.0,10.0,0.73,1.47,3.67,5.87,Supporting Progressor
 England,Harry Maguire,445.0,21.0,8.0,0.0,4.25,1.62,0.0,5.87,Progressive Passer
-Iran,Mehdi Torabi,77.0,4.0,0.0,1.0,4.68,0.0,1.17,5.85,Progressive Passer
 Portugal,Matheus Luiz Nunes,77.0,0.0,3.0,2.0,0.0,3.51,2.34,5.85,Ball Carrier
+Iran,Mehdi Torabi,77.0,4.0,0.0,1.0,4.68,0.0,1.17,5.85,Progressive Passer
 Morocco,Achraf Hakimi Mouh,647.0,11.0,14.0,17.0,1.53,1.95,2.36,5.84,Supporting Progressor
 Qatar,Abdulaziz Hatem Mohammed Abdullah,201.0,4.0,3.0,6.0,1.79,1.34,2.69,5.82,Supporting Progressor
-Saint-Étienne,Wahbi Khazri,93.0,2.0,3.0,1.0,1.94,2.9,0.97,5.81,Ball Carrier
 Bordeaux,Enock Kwateng,93.0,1.0,4.0,1.0,0.97,3.87,0.97,5.81,Ball Carrier
+Saint-Étienne,Wahbi Khazri,93.0,2.0,3.0,1.0,1.94,2.9,0.97,5.81,Ball Carrier
 Uruguay,Luis Alberto Suárez Díaz,155.0,1.0,4.0,5.0,0.58,2.32,2.9,5.8,Supporting Progressor
 Brazil,Carlos Henrique Casimiro,406.0,20.0,1.0,5.0,4.43,0.22,1.11,5.76,Progressive Passer
 Jamshedpur,Komal Thatal,470.0,4.0,11.0,15.0,0.77,2.11,2.87,5.75,Supporting Progressor
@@ -585,25 +585,25 @@ Lorient,Thomas Monconduit,176.0,11.0,0.0,0.0,5.62,0.0,0.0,5.62,Progressive Passe
 Spain,Daniel Carvajal Ramos,144.0,4.0,1.0,4.0,2.5,0.62,2.5,5.62,Supporting Progressor
 Brazil,Daniel Alves da Silva,129.0,4.0,2.0,2.0,2.79,1.4,1.4,5.59,Supporting Progressor
 Bengaluru,Suresh Singh Wangjam,1320.0,38.0,22.0,22.0,2.59,1.5,1.5,5.59,Supporting Progressor
-Chennaiyin,Nerijus Valskis,725.0,10.0,10.0,25.0,1.24,1.24,3.1,5.58,Limited Progression
 Iran,Ehsan Hajsafi,242.0,7.0,4.0,4.0,2.6,1.49,1.49,5.58,Supporting Progressor
 ATK Mohun Bagan,Ashutosh Mehta,1048.0,27.0,14.0,24.0,2.32,1.2,2.06,5.58,Supporting Progressor
+Chennaiyin,Nerijus Valskis,725.0,10.0,10.0,25.0,1.24,1.24,3.1,5.58,Limited Progression
 France,Randal Kolo Muani,195.0,0.0,4.0,8.0,0.0,1.85,3.69,5.54,Supporting Progressor
-Iran,Sadegh Moharrami,98.0,0.0,3.0,3.0,0.0,2.76,2.76,5.52,Ball Carrier
 Saudi Arabia,Firas Tariq Nasser Al Albirakan,277.0,2.0,8.0,7.0,0.65,2.6,2.27,5.52,Supporting Progressor
-Poland,Jakub Kamiński,245.0,0.0,5.0,10.0,0.0,1.84,3.67,5.51,Supporting Progressor
+Iran,Sadegh Moharrami,98.0,0.0,3.0,3.0,0.0,2.76,2.76,5.52,Ball Carrier
 Canada,Alistair Johnston,277.0,7.0,5.0,5.0,2.27,1.62,1.62,5.51,Supporting Progressor
-ATK Mohun Bagan,Subhasish Bose,1894.0,52.0,32.0,32.0,2.47,1.52,1.52,5.51,Supporting Progressor
 Jamshedpur,Laldinliana Renthlei,1780.0,59.0,21.0,29.0,2.98,1.06,1.47,5.51,Supporting Progressor
+ATK Mohun Bagan,Subhasish Bose,1894.0,52.0,32.0,32.0,2.47,1.52,1.52,5.51,Supporting Progressor
+Poland,Jakub Kamiński,245.0,0.0,5.0,10.0,0.0,1.84,3.67,5.51,Supporting Progressor
 NorthEast United,Joe Zoherliana,686.0,15.0,10.0,17.0,1.97,1.31,2.23,5.51,Supporting Progressor
-Clermont Foot,Mohamed Bayo,82.0,2.0,2.0,1.0,2.2,2.2,1.1,5.5,Supporting Progressor
 Ecuador,Moisés Isaac Caicedo Corozo,278.0,9.0,5.0,3.0,2.91,1.62,0.97,5.5,Supporting Progressor
+Clermont Foot,Mohamed Bayo,82.0,2.0,2.0,1.0,2.2,2.2,1.1,5.5,Supporting Progressor
 Kerala Blasters,Rahul Kannoly Praveen,279.0,5.0,5.0,7.0,1.61,1.61,2.26,5.48,Supporting Progressor
 Tunisia,Anis Ben Slimane,148.0,4.0,1.0,4.0,2.43,0.61,2.43,5.470000000000001,Supporting Progressor
 Australia,Fran Karačić,99.0,5.0,1.0,0.0,4.55,0.91,0.0,5.46,Progressive Passer
 Lorient,Laurent Abergel,182.0,5.0,5.0,1.0,2.47,2.47,0.49,5.430000000000001,Supporting Progressor
-Jamshedpur,Ricky Lallawmawma,1988.0,68.0,27.0,25.0,3.08,1.22,1.13,5.43,Progressive Passer
 Mumbai City,Amey Ganesh Ranawade,1078.0,19.0,24.0,22.0,1.59,2.0,1.84,5.43,Supporting Progressor
+Jamshedpur,Ricky Lallawmawma,1988.0,68.0,27.0,25.0,3.08,1.22,1.13,5.43,Progressive Passer
 Argentina,Nicolás Alejandro Tagliafico,382.0,4.0,2.0,17.0,0.94,0.47,4.01,5.42,Progression Outlet
 Odisha,Isaac Vanmalsawma Chhakchhuak,1331.0,40.0,22.0,18.0,2.7,1.49,1.22,5.41,Supporting Progressor
 Denmark,Joachim Andersen,284.0,15.0,2.0,0.0,4.75,0.63,0.0,5.38,Progressive Passer
@@ -625,32 +625,32 @@ Bengaluru,Bruno Edgar Silva Almeida,1763.0,73.0,15.0,14.0,3.73,0.77,0.71,5.21,Pr
 United States,Tyler Adams,381.0,14.0,7.0,1.0,3.31,1.65,0.24,5.2,Progressive Passer
 Poland,Krystian Bielik,225.0,10.0,3.0,0.0,4.0,1.2,0.0,5.2,Progressive Passer
 Croatia,Ante Budimir,52.0,0.0,0.0,3.0,0.0,0.0,5.19,5.19,Progression Outlet
-Paris Saint-Germain,Danilo Luís Hélio Pereira,1423.0,55.0,15.0,12.0,3.48,0.95,0.76,5.1899999999999995,Progressive Passer
 Switzerland,Eray Ervin Cömert,52.0,1.0,1.0,1.0,1.73,1.73,1.73,5.1899999999999995,Supporting Progressor
+Paris Saint-Germain,Danilo Luís Hélio Pereira,1423.0,55.0,15.0,12.0,3.48,0.95,0.76,5.1899999999999995,Progressive Passer
 Hyderabad,João Victor de Albuquerque Bruno,1947.0,78.0,20.0,14.0,3.61,0.92,0.65,5.180000000000001,Progressive Passer
-Metz,Didier Lamkel Zé,70.0,0.0,3.0,1.0,0.0,3.86,1.29,5.15,Ball Carrier
 Tunisia,Mohamed Ali Ben Romdhane,70.0,1.0,2.0,1.0,1.29,2.57,1.29,5.15,Supporting Progressor
+Metz,Didier Lamkel Zé,70.0,0.0,3.0,1.0,0.0,3.86,1.29,5.15,Ball Carrier
 Bengaluru,Danish Farooq Bhat,1158.0,28.0,17.0,21.0,2.18,1.32,1.63,5.13,Supporting Progressor
 Bengaluru,Rohit Kumar,211.0,7.0,3.0,2.0,2.99,1.28,0.85,5.12,Supporting Progressor
 Bordeaux,Marcelo Antônio Guedes Filho,88.0,4.0,1.0,0.0,4.09,1.02,0.0,5.109999999999999,Progressive Passer
-South Korea,Jin-Su Kim,336.0,3.0,5.0,11.0,0.8,1.34,2.95,5.09,Supporting Progressor
 Kerala Blasters,Soraisham Sandeep Singh,795.0,20.0,10.0,15.0,2.26,1.13,1.7,5.09,Supporting Progressor
+South Korea,Jin-Su Kim,336.0,3.0,5.0,11.0,0.8,1.34,2.95,5.09,Supporting Progressor
+NorthEast United,Laldanmawia Ralte,622.0,13.0,10.0,12.0,1.88,1.45,1.74,5.07,Supporting Progressor
 Tunisia,Ellyes Joris Skhiri,284.0,10.0,3.0,3.0,3.17,0.95,0.95,5.07,Progressive Passer
 Netherlands,Davy Klaassen,195.0,3.0,2.0,6.0,1.38,0.92,2.77,5.07,Limited Progression
-NorthEast United,Laldanmawia Ralte,622.0,13.0,10.0,12.0,1.88,1.45,1.74,5.07,Supporting Progressor
-East Bengal,Amir Derviševič,481.0,19.0,5.0,3.0,3.56,0.94,0.56,5.0600000000000005,Progressive Passer
 France,Eduardo Camavinga,178.0,4.0,1.0,5.0,2.02,0.51,2.53,5.0600000000000005,Supporting Progressor
+East Bengal,Amir Derviševič,481.0,19.0,5.0,3.0,3.56,0.94,0.56,5.0600000000000005,Progressive Passer
 Clermont Foot,Akim Zedadka,89.0,2.0,1.0,2.0,2.02,1.01,2.02,5.050000000000001,Supporting Progressor
-Lens,Jonathan Clauss,161.0,1.0,3.0,5.0,0.56,1.68,2.8,5.04,Supporting Progressor
-Belgium,Amadou Onana,107.0,1.0,3.0,2.0,0.84,2.52,1.68,5.04,Supporting Progressor
 Ghana,Tariq Lamptey,107.0,1.0,3.0,2.0,0.84,2.52,1.68,5.04,Supporting Progressor
+Belgium,Amadou Onana,107.0,1.0,3.0,2.0,0.84,2.52,1.68,5.04,Supporting Progressor
+Lens,Jonathan Clauss,161.0,1.0,3.0,5.0,0.56,1.68,2.8,5.04,Supporting Progressor
 Stade de Reims,Moreto Moro Cassamã,90.0,2.0,2.0,1.0,2.0,2.0,1.0,5.0,Supporting Progressor
-Clermont Foot,Johan Gastien,90.0,3.0,1.0,1.0,3.0,1.0,1.0,5.0,Progressive Passer
+Spain,Aymeric Laporte,306.0,12.0,5.0,0.0,3.53,1.47,0.0,5.0,Progressive Passer
+Troyes,Florian Tardieu,90.0,4.0,1.0,0.0,4.0,1.0,0.0,5.0,Progressive Passer
 Troyes,Abdu Conté,90.0,2.0,1.0,2.0,2.0,1.0,2.0,5.0,Supporting Progressor
 Canada,Jonathan Osorio,126.0,2.0,3.0,2.0,1.43,2.14,1.43,5.0,Supporting Progressor
-Troyes,Florian Tardieu,90.0,4.0,1.0,0.0,4.0,1.0,0.0,5.0,Progressive Passer
-Spain,Aymeric Laporte,306.0,12.0,5.0,0.0,3.53,1.47,0.0,5.0,Progressive Passer
 Montpellier,Sacha Delaye,72.0,1.0,1.0,2.0,1.25,1.25,2.5,5.0,Limited Progression
+Clermont Foot,Johan Gastien,90.0,3.0,1.0,1.0,3.0,1.0,1.0,5.0,Progressive Passer
 Mexico,Edson Omar Álvarez Velázquez,181.0,4.0,6.0,0.0,1.99,2.98,0.0,4.97,Ball Carrier
 England,Declan Rice,435.0,20.0,3.0,1.0,4.14,0.62,0.21,4.97,Progressive Passer
 Costa Rica,Celso Borges Mora,254.0,12.0,0.0,2.0,4.25,0.0,0.71,4.96,Progressive Passer
@@ -659,19 +659,19 @@ Uruguay,Matías Vecino Falero,201.0,8.0,2.0,1.0,3.58,0.9,0.45,4.930000000000001,
 South Korea,Kang-In Lee,165.0,5.0,4.0,0.0,2.73,2.18,0.0,4.91,Supporting Progressor
 Tunisia,Dylan Daniel Mahmoud Bronn,165.0,4.0,1.0,4.0,2.18,0.55,2.18,4.91,Supporting Progressor
 Metz,Pape Matar Sarr,92.0,3.0,1.0,1.0,2.93,0.98,0.98,4.890000000000001,Supporting Progressor
-Odisha,Daniel Lalhlimpuia,240.0,3.0,3.0,7.0,1.12,1.12,2.62,4.86,Limited Progression
 AS Monaco,Myron Boadu,37.0,0.0,0.0,2.0,0.0,0.0,4.86,4.86,Progression Outlet
+Odisha,Daniel Lalhlimpuia,240.0,3.0,3.0,7.0,1.12,1.12,2.62,4.86,Limited Progression
 Troyes,Renaud Ripart,93.0,2.0,2.0,1.0,1.94,1.94,0.97,4.85,Supporting Progressor
+Mumbai City,Mandar Rao Desai,951.0,15.0,13.0,23.0,1.42,1.23,2.18,4.83,Limited Progression
 England,Kyle Walker,242.0,7.0,1.0,5.0,2.6,0.37,1.86,4.83,Supporting Progressor
 Odisha,Paul Ramfangzauva,429.0,13.0,5.0,5.0,2.73,1.05,1.05,4.83,Supporting Progressor
-Mumbai City,Mandar Rao Desai,951.0,15.0,13.0,23.0,1.42,1.23,2.18,4.83,Limited Progression
 Australia,Riley McGree,261.0,5.0,2.0,7.0,1.72,0.69,2.41,4.82,Limited Progression
 Bengaluru,Banana Yaya,243.0,9.0,3.0,1.0,3.33,1.11,0.37,4.8100000000000005,Progressive Passer
 Australia,Ajdin Hrustic,75.0,0.0,1.0,3.0,0.0,1.2,3.6,4.8,Limited Progression
 Bordeaux,Ui-Jo Hwang,75.0,0.0,1.0,3.0,0.0,1.2,3.6,4.8,Limited Progression
 Lille,Reinildo Isnard Mandava,94.0,1.0,1.0,3.0,0.96,0.96,2.87,4.79,Limited Progression
-Lyon,Malo Gusto,94.0,2.0,1.0,2.0,1.91,0.96,1.91,4.78,Supporting Progressor
 Lyon,Emerson Palmieri dos Santos,94.0,0.0,3.0,2.0,0.0,2.87,1.91,4.78,Ball Carrier
+Lyon,Malo Gusto,94.0,2.0,1.0,2.0,1.91,0.96,1.91,4.78,Supporting Progressor
 Metz,Vincent Pajot,94.0,1.0,2.0,2.0,0.96,1.91,1.91,4.78,Supporting Progressor
 Denmark,Andreas Christensen,283.0,12.0,3.0,0.0,3.82,0.95,0.0,4.77,Progressive Passer
 Belgium,Romelu Lukaku Menama,57.0,0.0,0.0,3.0,0.0,0.0,4.74,4.74,Progression Outlet
@@ -687,8 +687,8 @@ East Bengal,Naocha Huidrom Singh,389.0,6.0,6.0,8.0,1.39,1.39,1.85,4.63,Supportin
 Bengaluru,Iman Basafa,234.0,6.0,4.0,2.0,2.31,1.54,0.77,4.62,Supporting Progressor
 Netherlands,Teun Koopmeiners,234.0,8.0,3.0,1.0,3.08,1.15,0.38,4.61,Progressive Passer
 Canada,Atiba Hutchinson,157.0,6.0,1.0,1.0,3.44,0.57,0.57,4.58,Progressive Passer
-France,Jules Koundé,496.0,11.0,8.0,6.0,2.0,1.45,1.09,4.54,Supporting Progressor
 Cameroon,Ngoran Suiru Fai Collins,278.0,7.0,5.0,2.0,2.27,1.62,0.65,4.54,Supporting Progressor
+France,Jules Koundé,496.0,11.0,8.0,6.0,2.0,1.45,1.09,4.54,Supporting Progressor
 Portugal,Kléper Laveran Lima Ferreira,379.0,17.0,2.0,0.0,4.04,0.47,0.0,4.51,Progressive Passer
 South Korea,Woo-Young Jung,319.0,13.0,1.0,2.0,3.67,0.28,0.56,4.51,Progressive Passer
 Japan,Daizen Maeda,180.0,2.0,3.0,4.0,1.0,1.5,2.0,4.5,Supporting Progressor
@@ -700,16 +700,16 @@ France,Raphaël Varane,507.0,15.0,10.0,0.0,2.66,1.78,0.0,4.44,Supporting Progres
 Stade de Reims,Yunis Abdelhamid,183.0,5.0,4.0,0.0,2.46,1.97,0.0,4.43,Supporting Progressor
 East Bengal,Lalrinliana Hnamte,938.0,16.0,15.0,15.0,1.54,1.44,1.44,4.42,Supporting Progressor
 NorthEast United,Gurjinder Kumar,1347.0,28.0,18.0,20.0,1.87,1.2,1.34,4.41,Supporting Progressor
-Marseille,Luan Peres Petroni,184.0,7.0,1.0,1.0,3.42,0.49,0.49,4.4,Progressive Passer
 Poland,Przemysław Frankowski,246.0,1.0,3.0,8.0,0.37,1.1,2.93,4.4,Limited Progression
+Marseille,Luan Peres Petroni,184.0,7.0,1.0,1.0,3.42,0.49,0.49,4.4,Progressive Passer
 Portugal,William Silva de Carvalho,226.0,9.0,1.0,1.0,3.58,0.4,0.4,4.38,Progressive Passer
 Stade de Reims,Jens-Lys Michel Cajuste,62.0,2.0,0.0,1.0,2.9,0.0,1.45,4.35,Supporting Progressor
 Marseille,Boubacar Kamara,166.0,7.0,0.0,1.0,3.8,0.0,0.54,4.34,Progressive Passer
 Netherlands,Wout Weghorst,104.0,1.0,1.0,3.0,0.87,0.87,2.6,4.34,Limited Progression
 France,Axel Disasi,104.0,2.0,1.0,2.0,1.73,0.87,1.73,4.33,Limited Progression
 Tunisia,Aïssa Bilal Laïdouni,249.0,6.0,3.0,3.0,2.17,1.08,1.08,4.33,Supporting Progressor
-Morocco,Walid Cheddira,63.0,0.0,2.0,1.0,0.0,2.86,1.43,4.29,Ball Carrier
 Clermont Foot,Saîf-Eddine Khaoui,63.0,0.0,1.0,2.0,0.0,1.43,2.86,4.29,Supporting Progressor
+Morocco,Walid Cheddira,63.0,0.0,2.0,1.0,0.0,2.86,1.43,4.29,Ball Carrier
 Ecuador,Angelo Smit Preciado Quiñónez,272.0,5.0,3.0,5.0,1.65,0.99,1.65,4.289999999999999,Limited Progression
 Croatia,Nikola Vlašić,211.0,1.0,5.0,4.0,0.43,2.13,1.71,4.27,Supporting Progressor
 Goa,Aibanbha Kupar Dohling,1375.0,26.0,23.0,16.0,1.7,1.51,1.05,4.26,Supporting Progressor
@@ -724,14 +724,14 @@ Serbia,Nikola Milenković,282.0,8.0,3.0,2.0,2.55,0.96,0.64,4.1499999999999995,Su
 Netherlands,Marten de Roon,196.0,5.0,0.0,4.0,2.3,0.0,1.84,4.14,Supporting Progressor
 ATK Mohun Bagan,Carl Gerard McHugh,1333.0,48.0,4.0,9.0,3.24,0.27,0.61,4.12,Progressive Passer
 Jamshedpur,PC Laldinpuia,284.0,9.0,2.0,2.0,2.85,0.63,0.63,4.11,Supporting Progressor
-Paris Saint-Germain,Eric Junior Dina Ebimbe,66.0,2.0,0.0,1.0,2.73,0.0,1.36,4.09,Supporting Progressor
 Cameroon,Gaël Ondoua,44.0,2.0,0.0,0.0,4.09,0.0,0.0,4.09,Progressive Passer
-Cameroon,Pierre Kunde Malong,132.0,2.0,2.0,2.0,1.36,1.36,1.36,4.08,Supporting Progressor
+Paris Saint-Germain,Eric Junior Dina Ebimbe,66.0,2.0,0.0,1.0,2.73,0.0,1.36,4.09,Supporting Progressor
 ATK Mohun Bagan,Lenny Rodrigues,1013.0,34.0,5.0,7.0,3.02,0.44,0.62,4.08,Progressive Passer
+Cameroon,Pierre Kunde Malong,132.0,2.0,2.0,2.0,1.36,1.36,1.36,4.08,Supporting Progressor
 Croatia,Joško Gvardiol,707.0,21.0,9.0,2.0,2.67,1.15,0.25,4.07,Supporting Progressor
 Lorient,Ibrahima Koné,67.0,0.0,1.0,2.0,0.0,1.34,2.69,4.03,Supporting Progressor
-Lille,Benjamin André,90.0,2.0,2.0,0.0,2.0,2.0,0.0,4.0,Supporting Progressor
 Clermont Foot,Arial Benabent Mendy,90.0,1.0,1.0,2.0,1.0,1.0,2.0,4.0,Limited Progression
+Lille,Benjamin André,90.0,2.0,2.0,0.0,2.0,2.0,0.0,4.0,Supporting Progressor
 East Bengal,Mohammed Rafique,1108.0,20.0,16.0,13.0,1.62,1.3,1.06,3.98,Limited Progression
 Qatar,Almoez Ali Zainalabiddin Abdulla,227.0,1.0,3.0,6.0,0.4,1.19,2.38,3.9699999999999998,Limited Progression
 Australia,Jackson Irvine,363.0,9.0,3.0,4.0,2.23,0.74,0.99,3.96,Supporting Progressor
@@ -741,15 +741,15 @@ Croatia,Josip Stanišić,92.0,1.0,1.0,2.0,0.98,0.98,1.96,3.92,Limited Progressio
 Marseille,William Saliba,184.0,8.0,0.0,0.0,3.91,0.0,0.0,3.91,Progressive Passer
 East Bengal,Balwant Singh,116.0,1.0,2.0,2.0,0.78,1.55,1.55,3.88,Supporting Progressor
 Qatar,Karim Boudiaf,186.0,5.0,1.0,2.0,2.42,0.48,0.97,3.87,Supporting Progressor
-Japan,Maya Yoshida,397.0,16.0,1.0,0.0,3.63,0.23,0.0,3.86,Progressive Passer
 Netherlands,Nathan Aké,491.0,8.0,8.0,5.0,1.47,1.47,0.92,3.86,Supporting Progressor
+Japan,Maya Yoshida,397.0,16.0,1.0,0.0,3.63,0.23,0.0,3.86,Progressive Passer
 Qatar,Bassam Hisham Al Rawi,94.0,4.0,0.0,0.0,3.83,0.0,0.0,3.83,Progressive Passer
 Stade de Reims,Marshall Nyasha Munetsi,94.0,3.0,0.0,1.0,2.87,0.0,0.96,3.83,Supporting Progressor
 Kerala Blasters,Ayush Adhikari,686.0,16.0,5.0,8.0,2.1,0.66,1.05,3.8100000000000005,Supporting Progressor
 Uruguay,Mathías Olivera Miramontes,260.0,1.0,6.0,4.0,0.35,2.08,1.38,3.81,Supporting Progressor
 East Bengal,Darren Sidoel,663.0,11.0,5.0,12.0,1.49,0.68,1.63,3.8,Limited Progression
-Senegal,Nampalys Mendy,285.0,9.0,3.0,0.0,2.84,0.95,0.0,3.79,Supporting Progressor
 Mexico,Jesús Daniel Gallardo Vasconcelos,285.0,4.0,3.0,5.0,1.26,0.95,1.58,3.79,Limited Progression
+Senegal,Nampalys Mendy,285.0,9.0,3.0,0.0,2.84,0.95,0.0,3.79,Supporting Progressor
 Paris Saint-Germain,Marcos Aoás Corrêa,2189.0,80.0,10.0,2.0,3.29,0.41,0.08,3.7800000000000002,Progressive Passer
 Denmark,Victor Nelsson,96.0,4.0,0.0,0.0,3.75,0.0,0.0,3.75,Progressive Passer
 Saudi Arabia,Abdulelah Al Amri,192.0,7.0,1.0,0.0,3.28,0.47,0.0,3.75,Progressive Passer
@@ -759,34 +759,34 @@ Iran,Ahmad Nourollahi,218.0,5.0,2.0,2.0,2.06,0.83,0.83,3.72,Supporting Progresso
 Kerala Blasters,Sanjeev Stalin,532.0,10.0,5.0,7.0,1.69,0.85,1.18,3.7199999999999998,Limited Progression
 Tunisia,Ali Maâloul,97.0,3.0,0.0,1.0,2.78,0.0,0.93,3.71,Supporting Progressor
 Goa,Lalhmangaihsanga Ralte,122.0,5.0,0.0,0.0,3.69,0.0,0.0,3.69,Progressive Passer
-Hyderabad,Souvik Chakrabarti,975.0,27.0,6.0,7.0,2.49,0.55,0.65,3.69,Supporting Progressor
 Iran,Morteza Pouraliganji,293.0,11.0,0.0,1.0,3.38,0.0,0.31,3.69,Progressive Passer
+Hyderabad,Souvik Chakrabarti,975.0,27.0,6.0,7.0,2.49,0.55,0.65,3.69,Supporting Progressor
 Ecuador,Carlos Armando Gruezo Arboleda,49.0,1.0,1.0,0.0,1.84,1.84,0.0,3.68,Supporting Progressor
 Uruguay,José María Giménez de Vargas,294.0,9.0,3.0,0.0,2.76,0.92,0.0,3.6799999999999997,Supporting Progressor
 Iran,Mohammad Hossein Kanani Zadegan,49.0,2.0,0.0,0.0,3.67,0.0,0.0,3.67,Progressive Passer
 Kerala Blasters,Jeakson Singh Thaunaojam,1655.0,52.0,7.0,8.0,2.83,0.38,0.44,3.65,Supporting Progressor
 Ghana,Jordan Ayew,148.0,0.0,3.0,3.0,0.0,1.82,1.82,3.64,Supporting Progressor
-Lille,Amadou Onana,99.0,1.0,2.0,1.0,0.91,1.82,0.91,3.64,Supporting Progressor
 Goa,Glan Martins,840.0,26.0,6.0,2.0,2.79,0.64,0.21,3.64,Supporting Progressor
+Lille,Amadou Onana,99.0,1.0,2.0,1.0,0.91,1.82,0.91,3.64,Supporting Progressor
 Switzerland,Ricardo Iván Rodríguez Araya,372.0,6.0,2.0,7.0,1.45,0.48,1.69,3.62,Limited Progression
 Saudi Arabia,Abdullah Mohammed Madu,50.0,2.0,0.0,0.0,3.6,0.0,0.0,3.6,Progressive Passer
 Troyes,Ike Ugbo,75.0,0.0,1.0,2.0,0.0,1.2,2.4,3.5999999999999996,Limited Progression
 Qatar,Abdelkarim Hassan Al Haj Fadlalla,276.0,7.0,3.0,1.0,2.28,0.98,0.33,3.59,Supporting Progressor
 OGC Nice,Dante Bonfim da Costa Santos,176.0,6.0,1.0,0.0,3.07,0.51,0.0,3.58,Progressive Passer
 Belgium,Jan Vertonghen,277.0,11.0,0.0,0.0,3.57,0.0,0.0,3.57,Progressive Passer
-Belgium,Youri Tielemans,101.0,2.0,0.0,2.0,1.78,0.0,1.78,3.56,Limited Progression
 Costa Rica,Brandon Aguilera Zamora,101.0,1.0,0.0,3.0,0.89,0.0,2.67,3.56,Limited Progression
-Belgium,Axel Witsel,278.0,4.0,3.0,4.0,1.29,0.97,1.29,3.55,Limited Progression
+Belgium,Youri Tielemans,101.0,2.0,0.0,2.0,1.78,0.0,1.78,3.56,Limited Progression
 Nantes,Samuel Moutoussamy,76.0,3.0,0.0,0.0,3.55,0.0,0.0,3.55,Progressive Passer
 NorthEast United,Provat Lakra,1221.0,23.0,15.0,10.0,1.7,1.11,0.74,3.55,Limited Progression
+Belgium,Axel Witsel,278.0,4.0,3.0,4.0,1.29,0.97,1.29,3.55,Limited Progression
 OGC Nice,Jordan Lotomba,102.0,3.0,1.0,0.0,2.65,0.88,0.0,3.53,Supporting Progressor
 Argentina,Cristian Gabriel Romero,560.0,19.0,3.0,0.0,3.05,0.48,0.0,3.53,Progressive Passer
 Montpellier,Matheus Soares Thuler,51.0,1.0,1.0,0.0,1.76,1.76,0.0,3.52,Supporting Progressor
 Senegal,Abdou Diallo,334.0,8.0,4.0,1.0,2.16,1.08,0.27,3.5100000000000002,Supporting Progressor
 South Korea,Jun-Ho Son,77.0,2.0,0.0,1.0,2.34,0.0,1.17,3.51,Supporting Progressor
 Goa,Anisa Anwar Ali,928.0,18.0,16.0,2.0,1.75,1.55,0.19,3.4899999999999998,Supporting Progressor
-Goa,Iván Garrido González,1528.0,43.0,14.0,2.0,2.53,0.82,0.12,3.4699999999999998,Supporting Progressor
 Odisha,Lalruatthara Lalruatthara,882.0,14.0,11.0,9.0,1.43,1.12,0.92,3.4699999999999998,Limited Progression
+Goa,Iván Garrido González,1528.0,43.0,14.0,2.0,2.53,0.82,0.12,3.4699999999999998,Supporting Progressor
 Japan,Shogo Taniguchi,208.0,7.0,1.0,0.0,3.03,0.43,0.0,3.46,Progressive Passer
 Tunisia,Yassine Meriah,287.0,10.0,1.0,0.0,3.14,0.31,0.0,3.45,Progressive Passer
 Argentina,Gonzalo Ariel Montiel,131.0,2.0,1.0,2.0,1.37,0.69,1.37,3.43,Limited Progression
@@ -799,48 +799,48 @@ Saint-Étienne,Harold Moukoudi,80.0,2.0,1.0,0.0,2.25,1.12,0.0,3.37,Supporting Pr
 Croatia,Dejan Lovren,616.0,19.0,4.0,0.0,2.78,0.58,0.0,3.36,Supporting Progressor
 Argentina,Nicolás Hernán Otamendi,724.0,23.0,4.0,0.0,2.86,0.5,0.0,3.36,Supporting Progressor
 East Bengal,Rahul Kumar Paswan,55.0,0.0,0.0,2.0,0.0,0.0,3.27,3.27,Limited Progression
-Mexico,Héctor Miguel Herrera López,166.0,3.0,1.0,2.0,1.63,0.54,1.08,3.25,Limited Progression
 ATK Mohun Bagan,Deepak Tangri,1248.0,26.0,7.0,12.0,1.88,0.5,0.87,3.25,Supporting Progressor
+Mexico,Héctor Miguel Herrera López,166.0,3.0,1.0,2.0,1.63,0.54,1.08,3.25,Limited Progression
 Wales,Aaron Ramsey,278.0,4.0,1.0,5.0,1.29,0.32,1.62,3.2300000000000004,Limited Progression
 Mexico,Héctor Alfredo Moreno Herrera,282.0,7.0,2.0,1.0,2.23,0.64,0.32,3.19,Supporting Progressor
-Iran,Saeid Ezatolahi Afagh,227.0,5.0,2.0,1.0,1.98,0.79,0.4,3.17,Supporting Progressor
 Bengaluru,Parag Satish Shrivas,851.0,15.0,6.0,9.0,1.59,0.63,0.95,3.17,Limited Progression
+Iran,Saeid Ezatolahi Afagh,227.0,5.0,2.0,1.0,1.98,0.79,0.4,3.17,Supporting Progressor
 Nantes,Kalifa Coulibaly,57.0,1.0,0.0,1.0,1.58,0.0,1.58,3.16,Limited Progression
-Saint-Étienne,Lucas Gourna-Douath,86.0,3.0,0.0,0.0,3.14,0.0,0.0,3.14,Progressive Passer
 Ghana,Salis Abdul Samed,258.0,6.0,2.0,1.0,2.09,0.7,0.35,3.14,Supporting Progressor
 ATK Mohun Bagan,José Luis Espinosa Arroyo,1552.0,46.0,7.0,1.0,2.67,0.41,0.06,3.14,Supporting Progressor
+Saint-Étienne,Lucas Gourna-Douath,86.0,3.0,0.0,0.0,3.14,0.0,0.0,3.14,Progressive Passer
 Tunisia,Montassar Omar Talbi,287.0,6.0,2.0,2.0,1.88,0.63,0.63,3.1399999999999997,Supporting Progressor
-Kerala Blasters,Harmanjot Singh Khabra,1706.0,26.0,13.0,20.0,1.37,0.69,1.06,3.12,Limited Progression
 Saint-Étienne,Mahdi Camara,173.0,5.0,1.0,0.0,2.6,0.52,0.0,3.12,Supporting Progressor
+Kerala Blasters,Harmanjot Singh Khabra,1706.0,26.0,13.0,20.0,1.37,0.69,1.06,3.12,Limited Progression
 Jamshedpur,Jitendra Singh,1536.0,34.0,10.0,9.0,1.99,0.59,0.53,3.1100000000000003,Supporting Progressor
 Chennaiyin,Ariel Borysiuk,1220.0,39.0,3.0,0.0,2.88,0.22,0.0,3.1,Supporting Progressor
 Mumbai City,Rahul Bheke,1661.0,40.0,7.0,10.0,2.17,0.38,0.54,3.09,Supporting Progressor
 South Korea,Gue-Sung Cho,291.0,1.0,2.0,7.0,0.31,0.62,2.16,3.09,Limited Progression
 East Bengal,Wahengbam Angousana Luwang,873.0,17.0,8.0,5.0,1.75,0.82,0.52,3.09,Limited Progression
 Montpellier,Joris Chotard,88.0,3.0,0.0,0.0,3.07,0.0,0.0,3.07,Progressive Passer
-Saudi Arabia,Riyadh Sharahili,59.0,1.0,1.0,0.0,1.53,1.53,0.0,3.06,Supporting Progressor
 East Bengal,Daniel Gomes,59.0,1.0,1.0,0.0,1.53,1.53,0.0,3.06,Supporting Progressor
+Saudi Arabia,Riyadh Sharahili,59.0,1.0,1.0,0.0,1.53,1.53,0.0,3.06,Supporting Progressor
 France,Olivier Giroud,472.0,3.0,1.0,12.0,0.57,0.19,2.29,3.05,Limited Progression
-Morocco,Zakaria Aboukhlal,89.0,0.0,2.0,1.0,0.0,2.02,1.01,3.0300000000000002,Supporting Progressor
 Lens,Christopher Wooh,89.0,1.0,2.0,0.0,1.01,2.02,0.0,3.0300000000000002,Supporting Progressor
+Morocco,Zakaria Aboukhlal,89.0,0.0,2.0,1.0,0.0,2.02,1.01,3.0300000000000002,Supporting Progressor
 AS Monaco,Aurélien Djani Tchouaméni,89.0,3.0,0.0,0.0,3.03,0.0,0.0,3.03,Progressive Passer
 Lorient,Vincent Le Goff,179.0,3.0,1.0,2.0,1.51,0.5,1.01,3.0199999999999996,Limited Progression
 Qatar,Pedro Miguel Correia,269.0,3.0,2.0,4.0,1.0,0.67,1.34,3.01,Limited Progression
 South Korea,Ui-Jo Hwang,120.0,0.0,0.0,4.0,0.0,0.0,3.0,3.0,Limited Progression
-Senegal,Pathé Ismaël Ciss,150.0,4.0,1.0,0.0,2.4,0.6,0.0,3.0,Supporting Progressor
 Senegal,Famara Diedhiou,90.0,1.0,0.0,2.0,1.0,0.0,2.0,3.0,Limited Progression
+Senegal,Pathé Ismaël Ciss,150.0,4.0,1.0,0.0,2.4,0.6,0.0,3.0,Supporting Progressor
 NorthEast United,Pragyan Sundar Gogoi,723.0,14.0,4.0,6.0,1.74,0.5,0.75,2.99,Limited Progression
-Poland,Matty Cash,364.0,3.0,4.0,5.0,0.74,0.99,1.24,2.9699999999999998,Limited Progression
 Saint-Étienne,Falaye Sacko,91.0,0.0,2.0,1.0,0.0,1.98,0.99,2.9699999999999998,Supporting Progressor
+Poland,Matty Cash,364.0,3.0,4.0,5.0,0.74,0.99,1.24,2.9699999999999998,Limited Progression
 Odisha,Lalhrezuala Sailung,608.0,10.0,3.0,7.0,1.48,0.44,1.04,2.96,Limited Progression
 Uruguay,Diego Roberto Godín Leal,152.0,4.0,0.0,1.0,2.37,0.0,0.59,2.96,Supporting Progressor
 NorthEast United,Ngasepam Tondonba Singh,429.0,4.0,6.0,4.0,0.84,1.26,0.84,2.94,Limited Progression
-Bordeaux,Josuha Guilavogui,92.0,3.0,0.0,0.0,2.93,0.0,0.0,2.93,Supporting Progressor
 Lyon,Maxence Caqueret,92.0,3.0,0.0,0.0,2.93,0.0,0.0,2.93,Supporting Progressor
+Bordeaux,Josuha Guilavogui,92.0,3.0,0.0,0.0,2.93,0.0,0.0,2.93,Supporting Progressor
 France,Ibrahima Konaté,308.0,9.0,1.0,0.0,2.63,0.29,0.0,2.92,Supporting Progressor
+Switzerland,Denis Lemi Zakaria Lako Lado,62.0,0.0,1.0,1.0,0.0,1.45,1.45,2.9,Supporting Progressor
 Australia,Awer Mabil,31.0,0.0,0.0,1.0,0.0,0.0,2.9,2.9,Limited Progression
 England,Trent Alexander-Arnold,31.0,1.0,0.0,0.0,2.9,0.0,0.0,2.9,Supporting Progressor
-Switzerland,Denis Lemi Zakaria Lako Lado,62.0,0.0,1.0,1.0,0.0,1.45,1.45,2.9,Supporting Progressor
 Japan,Ko Itakura,279.0,7.0,1.0,1.0,2.26,0.32,0.32,2.8999999999999995,Supporting Progressor
 Switzerland,Nico Elvedi,187.0,2.0,4.0,0.0,0.96,1.93,0.0,2.8899999999999997,Supporting Progressor
 Ghana,Daniel Amartey,283.0,5.0,3.0,1.0,1.59,0.95,0.32,2.86,Limited Progression
@@ -851,14 +851,14 @@ Odisha,Sahil Panwar,1158.0,25.0,5.0,6.0,1.94,0.39,0.47,2.8,Supporting Progressor
 Morocco,Noussair Mazraoui,355.0,2.0,2.0,7.0,0.51,0.51,1.77,2.79,Limited Progression
 Ghana,Mohamed Salisu,293.0,5.0,4.0,0.0,1.54,1.23,0.0,2.77,Limited Progression
 Netherlands,Matthijs de Ligt,98.0,2.0,1.0,0.0,1.84,0.92,0.0,2.7600000000000002,Limited Progression
-East Bengal,Hira Mondal,1408.0,18.0,11.0,14.0,1.15,0.7,0.89,2.7399999999999998,Limited Progression
 Japan,Takehiro Tomiyasu,197.0,5.0,1.0,0.0,2.28,0.46,0.0,2.7399999999999998,Supporting Progressor
+East Bengal,Hira Mondal,1408.0,18.0,11.0,14.0,1.15,0.7,0.89,2.7399999999999998,Limited Progression
 Costa Rica,Álvaro Zamora,33.0,1.0,0.0,0.0,2.73,0.0,0.0,2.73,Supporting Progressor
-Jamshedpur,Pronay Halder,993.0,24.0,2.0,4.0,2.18,0.18,0.36,2.72,Supporting Progressor
 Netherlands,Virgil van Dijk,497.0,14.0,1.0,0.0,2.54,0.18,0.0,2.72,Supporting Progressor
+Jamshedpur,Pronay Halder,993.0,24.0,2.0,4.0,2.18,0.18,0.36,2.72,Supporting Progressor
 Nantes,Dennis Appiah,133.0,2.0,1.0,1.0,1.35,0.68,0.68,2.7100000000000004,Limited Progression
-Morocco,Youssef En-Nesyri,537.0,2.0,4.0,10.0,0.34,0.67,1.68,2.69,Limited Progression
 Odisha,Sebastian Thangmuansang,234.0,3.0,2.0,2.0,1.15,0.77,0.77,2.69,Limited Progression
+Morocco,Youssef En-Nesyri,537.0,2.0,4.0,10.0,0.34,0.67,1.68,2.69,Limited Progression
 Metz,Amadou Salif Mbengue,34.0,0.0,1.0,0.0,0.0,2.65,0.0,2.65,Supporting Progressor
 Morocco,Selim Amallah,410.0,2.0,2.0,8.0,0.44,0.44,1.76,2.64,Limited Progression
 Qatar,Mohammed Muntari,68.0,1.0,0.0,1.0,1.32,0.0,1.32,2.64,Limited Progression
@@ -866,22 +866,22 @@ Costa Rica,Yeltsin Ignacio Tejeda Valverde,274.0,7.0,0.0,1.0,2.3,0.0,0.33,2.63,S
 Saint-Étienne,Zaydou Youssouf,103.0,0.0,2.0,1.0,0.0,1.75,0.87,2.62,Supporting Progressor
 Mexico,César Jasib Montes Castro,277.0,6.0,2.0,0.0,1.95,0.65,0.0,2.6,Supporting Progressor
 Hyderabad,Khassa Camara,278.0,6.0,1.0,1.0,1.94,0.32,0.32,2.5799999999999996,Supporting Progressor
+Odisha,Hendry Antonay,816.0,11.0,5.0,7.0,1.21,0.55,0.77,2.5300000000000002,Limited Progression
 Stade de Reims,Wout Faes,178.0,4.0,1.0,0.0,2.02,0.51,0.0,2.5300000000000002,Supporting Progressor
 Odisha,Vinit Rai Chamling,570.0,15.0,1.0,0.0,2.37,0.16,0.0,2.5300000000000002,Supporting Progressor
-Odisha,Hendry Antonay,816.0,11.0,5.0,7.0,1.21,0.55,0.77,2.5300000000000002,Limited Progression
 ATK Mohun Bagan,Pritam Kotal,1995.0,31.0,10.0,15.0,1.4,0.45,0.68,2.53,Limited Progression
 Wales,Chris Mepham,286.0,7.0,1.0,0.0,2.2,0.31,0.0,2.5100000000000002,Supporting Progressor
 Marseille,Duje Ćaleta-Car,179.0,4.0,1.0,0.0,2.01,0.5,0.0,2.51,Supporting Progressor
-Lorient,Houboulang Mendes,180.0,2.0,2.0,1.0,1.0,1.0,0.5,2.5,Limited Progression
-Switzerland,Fabian Rieder,72.0,0.0,1.0,1.0,0.0,1.25,1.25,2.5,Limited Progression
 Poland,Krzysztof Piątek,36.0,0.0,1.0,0.0,0.0,2.5,0.0,2.5,Supporting Progressor
 England,Eric Dier,36.0,1.0,0.0,0.0,2.5,0.0,0.0,2.5,Supporting Progressor
+Switzerland,Fabian Rieder,72.0,0.0,1.0,1.0,0.0,1.25,1.25,2.5,Limited Progression
+Lorient,Houboulang Mendes,180.0,2.0,2.0,1.0,1.0,1.0,0.5,2.5,Limited Progression
 Mexico,Henry Josué Martín Mex,146.0,0.0,1.0,3.0,0.0,0.62,1.85,2.47,Limited Progression
 Stade de Reims,Andreaw Gravillon,182.0,3.0,2.0,0.0,1.48,0.99,0.0,2.4699999999999998,Limited Progression
 South Korea,Young-Gwon Kim,367.0,9.0,1.0,0.0,2.21,0.25,0.0,2.46,Supporting Progressor
 Cameroon,Jean-Charles Castelletto,184.0,3.0,2.0,0.0,1.47,0.98,0.0,2.45,Limited Progression
-NorthEast United,Sehnaj Singh,665.0,14.0,1.0,3.0,1.89,0.14,0.41,2.44,Supporting Progressor
 Kerala Blasters,Marko Lešković,1952.0,49.0,4.0,0.0,2.26,0.18,0.0,2.44,Supporting Progressor
+NorthEast United,Sehnaj Singh,665.0,14.0,1.0,3.0,1.89,0.14,0.41,2.44,Supporting Progressor
 Costa Rica,Ronald Alberto Matarrita Ulate,37.0,0.0,1.0,0.0,0.0,2.43,0.0,2.43,Supporting Progressor
 Ecuador,Jhegson Sebastián Méndez Carabalí,186.0,5.0,0.0,0.0,2.42,0.0,0.0,2.42,Supporting Progressor
 Senegal,Pape Abou Cissé,112.0,3.0,0.0,0.0,2.41,0.0,0.0,2.41,Supporting Progressor
@@ -890,8 +890,8 @@ Costa Rica,Francisco Javier Calvo Quesada,189.0,4.0,1.0,0.0,1.9,0.48,0.0,2.38,Su
 Odisha,Moirangthem Thoiba Singh,1295.0,23.0,7.0,4.0,1.6,0.49,0.28,2.37,Limited Progression
 Senegal,Cheikh Ahmadou Bamba Mbacke Dieng,114.0,0.0,0.0,3.0,0.0,0.0,2.37,2.37,Limited Progression
 OGC Nice,Morgan Schneiderlin,114.0,2.0,0.0,1.0,1.58,0.0,0.79,2.37,Limited Progression
-Serbia,Dušan Vlahović,76.0,0.0,1.0,1.0,0.0,1.18,1.18,2.36,Limited Progression
 Portugal,Rúben Santos Gato Alves Dias,382.0,10.0,0.0,0.0,2.36,0.0,0.0,2.36,Supporting Progressor
+Serbia,Dušan Vlahović,76.0,0.0,1.0,1.0,0.0,1.18,1.18,2.36,Limited Progression
 Iran,Alireza Jahanbakhsh,77.0,0.0,1.0,1.0,0.0,1.17,1.17,2.34,Limited Progression
 Marseille,Arkadiusz Milik,77.0,0.0,0.0,2.0,0.0,0.0,2.34,2.34,Limited Progression
 Australia,Mitchell Thomas Duke,270.0,3.0,3.0,1.0,1.0,1.0,0.33,2.33,Limited Progression
@@ -899,11 +899,11 @@ France,William Saliba,39.0,1.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
 NorthEast United,Gani Ahmed Nigam,79.0,1.0,0.0,1.0,1.14,0.0,1.14,2.28,Limited Progression
 East Bengal,Franjo Prce,1260.0,24.0,5.0,3.0,1.71,0.36,0.21,2.28,Limited Progression
 Switzerland,Edimilson Fernandes,159.0,1.0,0.0,3.0,0.57,0.0,1.7,2.27,Limited Progression
-Australia,Jason Cummings,40.0,0.0,0.0,1.0,0.0,0.0,2.25,2.25,Limited Progression
 Canada,Steven de Sousa Vitoria,280.0,7.0,0.0,0.0,2.25,0.0,0.0,2.25,Supporting Progressor
+Australia,Jason Cummings,40.0,0.0,0.0,1.0,0.0,0.0,2.25,2.25,Limited Progression
 East Bengal,Sourav Das,1377.0,24.0,8.0,2.0,1.57,0.52,0.13,2.2199999999999998,Limited Progression
-Ghana,André Ayew Pelé,205.0,0.0,1.0,4.0,0.0,0.44,1.76,2.2,Limited Progression
 Montpellier,Valère Germain,41.0,1.0,0.0,0.0,2.2,0.0,0.0,2.2,Supporting Progressor
+Ghana,André Ayew Pelé,205.0,0.0,1.0,4.0,0.0,0.44,1.76,2.2,Limited Progression
 Senegal,Kalidou Koulibaly,377.0,9.0,0.0,0.0,2.15,0.0,0.0,2.15,Supporting Progressor
 Costa Rica,Carlos Manuel Martínez Castro,42.0,0.0,0.0,1.0,0.0,0.0,2.14,2.14,Limited Progression
 Uruguay,Maximiliano Gómez González,42.0,0.0,1.0,0.0,0.0,2.14,0.0,2.14,Supporting Progressor
@@ -913,17 +913,17 @@ Switzerland,Manuel Obafemi Akanji,382.0,8.0,1.0,0.0,1.88,0.24,0.0,2.12,Supportin
 Nantes,Jean-Charles Castelletto,172.0,2.0,2.0,0.0,1.05,1.05,0.0,2.1,Limited Progression
 Hyderabad,Nim Dorjee Tamang,734.0,10.0,3.0,4.0,1.23,0.37,0.49,2.09,Limited Progression
 Bengaluru,Wungngayam Muirang,262.0,2.0,2.0,2.0,0.69,0.69,0.69,2.07,Limited Progression
-Mumbai City,Mohamad Rakip,263.0,0.0,3.0,3.0,0.0,1.03,1.03,2.06,Limited Progression
 Poland,Sebastian Szymański,131.0,1.0,0.0,2.0,0.69,0.0,1.37,2.06,Limited Progression
+Mumbai City,Mohamad Rakip,263.0,0.0,3.0,3.0,0.0,1.03,1.03,2.06,Limited Progression
 Troyes,Rominigue Kouamé N''Guessan,88.0,1.0,1.0,0.0,1.02,1.02,0.0,2.04,Limited Progression
 Odisha,Víctor Mongil Adeva,1555.0,33.0,1.0,1.0,1.91,0.06,0.06,2.03,Supporting Progressor
-AS Monaco,Guillermo Alfonso Maripán Loaysa,90.0,1.0,1.0,0.0,1.0,1.0,0.0,2.0,Limited Progression
 Netherlands,Vincent Janssen,90.0,0.0,0.0,2.0,0.0,0.0,2.0,2.0,Limited Progression
-Saint-Étienne,Miguel Ángel Trauco Saavedra,91.0,1.0,1.0,0.0,0.99,0.99,0.0,1.98,Limited Progression
+AS Monaco,Guillermo Alfonso Maripán Loaysa,90.0,1.0,1.0,0.0,1.0,1.0,0.0,2.0,Limited Progression
 Serbia,Milos Veljkovic,227.0,5.0,0.0,0.0,1.98,0.0,0.0,1.98,Supporting Progressor
 Lille,Tiago Emanuel Embaló Djaló,91.0,2.0,0.0,0.0,1.98,0.0,0.0,1.98,Supporting Progressor
-Bengaluru,Alan Henrique Costa,1596.0,30.0,5.0,0.0,1.69,0.28,0.0,1.97,Limited Progression
+Saint-Étienne,Miguel Ángel Trauco Saavedra,91.0,1.0,1.0,0.0,0.99,0.99,0.0,1.98,Limited Progression
 OGC Nice,Mario Lemina,137.0,3.0,0.0,0.0,1.97,0.0,0.0,1.97,Supporting Progressor
+Bengaluru,Alan Henrique Costa,1596.0,30.0,5.0,0.0,1.69,0.28,0.0,1.97,Limited Progression
 East Bengal,Amarjit Singh Kiyam Singh,1010.0,6.0,3.0,13.0,0.53,0.27,1.16,1.96,Limited Progression
 Cameroon,Enzo Ebosse,92.0,2.0,0.0,0.0,1.96,0.0,0.0,1.96,Supporting Progressor
 Nantes,Andrei Girotto,185.0,3.0,1.0,0.0,1.46,0.49,0.0,1.95,Limited Progression
@@ -932,16 +932,16 @@ Canada,Kamal Miller,281.0,6.0,0.0,0.0,1.92,0.0,0.0,1.92,Supporting Progressor
 Hyderabad,Konsham Chinglensana Singh,1967.0,33.0,9.0,0.0,1.51,0.41,0.0,1.92,Limited Progression
 Ecuador,Piero Martín Hincapié Reyna,283.0,5.0,1.0,0.0,1.59,0.32,0.0,1.9100000000000001,Limited Progression
 Switzerland,Remo Freuler,329.0,4.0,1.0,2.0,1.09,0.27,0.55,1.9100000000000001,Limited Progression
-East Bengal,Raju Eknath Gaikwad,762.0,10.0,2.0,4.0,1.18,0.24,0.47,1.89,Limited Progression
 Lille,Miguel Ângelo da Silva Rocha,95.0,2.0,0.0,0.0,1.89,0.0,0.0,1.89,Supporting Progressor
+East Bengal,Raju Eknath Gaikwad,762.0,10.0,2.0,4.0,1.18,0.24,0.47,1.89,Limited Progression
 Poland,Grzegorz Krychowiak,336.0,5.0,1.0,1.0,1.34,0.27,0.27,1.8800000000000001,Limited Progression
 ATK Mohun Bagan,Bidyananda Singh Ningthoujam,48.0,1.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
 Portugal,António João Pereira Albuquerque Tavares Silva,96.0,2.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
-NorthEast United,Zakaria Diallo,626.0,13.0,0.0,0.0,1.87,0.0,0.0,1.87,Supporting Progressor
 Iran,Seyed Majid Hosseini,289.0,6.0,0.0,0.0,1.87,0.0,0.0,1.87,Supporting Progressor
+NorthEast United,Zakaria Diallo,626.0,13.0,0.0,0.0,1.87,0.0,0.0,1.87,Supporting Progressor
 Saudi Arabia,Ali Al Hassan,49.0,0.0,0.0,1.0,0.0,0.0,1.84,1.84,Limited Progression
-Odisha,Nikhil Raj Murugesh Kumar,99.0,1.0,0.0,1.0,0.91,0.0,0.91,1.82,Limited Progression
 Morocco,Abdessamad Ezzalzouli,99.0,0.0,1.0,1.0,0.0,0.91,0.91,1.82,Limited Progression
+Odisha,Nikhil Raj Murugesh Kumar,99.0,1.0,0.0,1.0,0.91,0.0,0.91,1.82,Limited Progression
 Kerala Blasters,Abdul Hakku Nediyodath,50.0,1.0,0.0,0.0,1.8,0.0,0.0,1.8,Limited Progression
 Ecuador,Jackson Gabriel Porozo Vernaza,101.0,1.0,1.0,0.0,0.89,0.89,0.0,1.78,Limited Progression
 Wales,Ben Davies,253.0,2.0,1.0,2.0,0.71,0.36,0.71,1.7799999999999998,Limited Progression
@@ -955,25 +955,25 @@ Costa Rica,Youstin Delfin Salas Gómez,56.0,0.0,1.0,0.0,0.0,1.61,0.0,1.61,Suppor
 Saint-Étienne,Mickaël Nade,169.0,3.0,0.0,0.0,1.6,0.0,0.0,1.6,Limited Progression
 Brazil,Gleison Bremer Silva Nascimento,117.0,2.0,0.0,0.0,1.54,0.0,0.0,1.54,Limited Progression
 Lille,José Miguel da Rocha Fonte,176.0,3.0,0.0,0.0,1.53,0.0,0.0,1.53,Limited Progression
-Chennaiyin,Narayan Das,1726.0,18.0,7.0,4.0,0.94,0.37,0.21,1.52,Limited Progression
 Jamshedpur,Eli Sabia Filho,1419.0,19.0,4.0,1.0,1.21,0.25,0.06,1.52,Limited Progression
+Chennaiyin,Narayan Das,1726.0,18.0,7.0,4.0,0.94,0.37,0.21,1.52,Limited Progression
 Argentina,Germán Alejandro Pezzella,60.0,1.0,0.0,0.0,1.5,0.0,0.0,1.5,Limited Progression
 Saudi Arabia,Abdulelah Saad Hameed Al-Malki,186.0,2.0,0.0,1.0,0.97,0.0,0.48,1.45,Limited Progression
 Rennes,Warmed Omari,189.0,3.0,0.0,0.0,1.43,0.0,0.0,1.43,Limited Progression
 Kerala Blasters,Bijoy Varghese,453.0,7.0,0.0,0.0,1.39,0.0,0.0,1.39,Limited Progression
 NorthEast United,Patrick Flottmann,1228.0,16.0,3.0,0.0,1.17,0.22,0.0,1.39,Limited Progression
-Costa Rica,Óscar Esau Duarte Gaitán,273.0,4.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
-East Bengal,Subha Ghosh,68.0,0.0,0.0,1.0,0.0,0.0,1.32,1.32,Limited Progression
 Saudi Arabia,Mohammed Al Burayk,68.0,0.0,1.0,0.0,0.0,1.32,0.0,1.32,Supporting Progressor
+East Bengal,Subha Ghosh,68.0,0.0,0.0,1.0,0.0,0.0,1.32,1.32,Limited Progression
 Jamshedpur,Peter Hartley,1632.0,24.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
+Costa Rica,Óscar Esau Duarte Gaitán,273.0,4.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
 France,Mattéo Guendouzi Olié,68.0,0.0,0.0,1.0,0.0,0.0,1.32,1.32,Limited Progression
 Germany,Thilo Kehrer,69.0,1.0,0.0,0.0,1.3,0.0,0.0,1.3,Limited Progression
 Senegal,Cheikhou Kouyaté,70.0,0.0,1.0,0.0,0.0,1.29,0.0,1.29,Limited Progression
 Mumbai City,Mehtab Singh,980.0,12.0,1.0,1.0,1.1,0.09,0.09,1.2800000000000002,Limited Progression
-Ecuador,Felix Eduardo Torres Caicedo,284.0,4.0,0.0,0.0,1.27,0.0,0.0,1.27,Limited Progression
 Chennaiyin,Mohammad Sajid Dhot,498.0,7.0,0.0,0.0,1.27,0.0,0.0,1.27,Limited Progression
-Switzerland,Fabian Lukas Schär,143.0,2.0,0.0,0.0,1.26,0.0,0.0,1.26,Limited Progression
+Ecuador,Felix Eduardo Torres Caicedo,284.0,4.0,0.0,0.0,1.27,0.0,0.0,1.27,Limited Progression
 ATK Mohun Bagan,Sandesh Jhingan,715.0,10.0,0.0,0.0,1.26,0.0,0.0,1.26,Limited Progression
+Switzerland,Fabian Lukas Schär,143.0,2.0,0.0,0.0,1.26,0.0,0.0,1.26,Limited Progression
 Wales,Joe Rodon,287.0,3.0,1.0,0.0,0.94,0.31,0.0,1.25,Limited Progression
 Bengaluru,Pratik Prabhakar Chaudhari,1164.0,11.0,5.0,0.0,0.85,0.39,0.0,1.24,Limited Progression
 Australia,Aziz Eraltay Behich,382.0,3.0,2.0,0.0,0.71,0.47,0.0,1.18,Limited Progression
@@ -981,31 +981,31 @@ NorthEast United,Mashoor Shereef Thangalakath,1039.0,12.0,1.0,0.0,1.04,0.09,0.0,
 Morocco,Jawad El Yamiq,316.0,3.0,1.0,0.0,0.85,0.28,0.0,1.13,Limited Progression
 Goa,Dylan Fox,561.0,6.0,1.0,0.0,0.96,0.16,0.0,1.1199999999999999,Limited Progression
 East Bengal,Ananta Tamang,84.0,1.0,0.0,0.0,1.07,0.0,0.0,1.07,Limited Progression
+Odisha,Héctor Rodas Ramírez,1186.0,14.0,0.0,0.0,1.06,0.0,0.0,1.06,Limited Progression
 Jamshedpur,Narender Gahlot,851.0,9.0,1.0,0.0,0.95,0.11,0.0,1.06,Limited Progression
 Saint-Étienne,Yvann Macon,85.0,0.0,0.0,1.0,0.0,0.0,1.06,1.06,Limited Progression
-Odisha,Héctor Rodas Ramírez,1186.0,14.0,0.0,0.0,1.06,0.0,0.0,1.06,Limited Progression
 Croatia,Josip Šutalo,86.0,1.0,0.0,0.0,1.05,0.0,0.0,1.05,Limited Progression
-East Bengal,Ankit Mukherjee,348.0,3.0,0.0,1.0,0.78,0.0,0.26,1.04,Limited Progression
 East Bengal,Adil Khan,863.0,7.0,2.0,1.0,0.73,0.21,0.1,1.04,Limited Progression
+East Bengal,Ankit Mukherjee,348.0,3.0,0.0,1.0,0.78,0.0,0.26,1.04,Limited Progression
 Lorient,Léo Pétrot,87.0,1.0,0.0,0.0,1.03,0.0,0.0,1.03,Limited Progression
 Lens,Facundo Axel Medina,87.0,1.0,0.0,0.0,1.03,0.0,0.0,1.03,Limited Progression
+Clermont Foot,Jean-Claude Billong,88.0,0.0,1.0,0.0,0.0,1.02,0.0,1.02,Limited Progression
 Nantes,Nicolas Pallois,88.0,1.0,0.0,0.0,1.02,0.0,0.0,1.02,Limited Progression
+Troyes,Giulian Biancone,88.0,0.0,0.0,1.0,0.0,0.0,1.02,1.02,Limited Progression
 Morocco,Nayef Aguerd,352.0,4.0,0.0,0.0,1.02,0.0,0.0,1.02,Limited Progression
 Montpellier,Nicolas Louis Marcel Cozza,88.0,1.0,0.0,0.0,1.02,0.0,0.0,1.02,Limited Progression
-Troyes,Giulian Biancone,88.0,0.0,0.0,1.0,0.0,0.0,1.02,1.02,Limited Progression
-Clermont Foot,Jean-Claude Billong,88.0,0.0,1.0,0.0,0.0,1.02,0.0,1.02,Limited Progression
 Metz,Boubakar Kouyate,89.0,1.0,0.0,0.0,1.01,0.0,0.0,1.01,Limited Progression
-Strasbourg,Gerzino Nyamsi,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
-Troyes,Xavier Chavalerin,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
-East Bengal,Tomislav Mrčela,636.0,7.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
 Cameroon,Nicolas Alexis Julio N'Koulou Ndoubena,181.0,2.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
 Lens,Jonathan Gradit,182.0,0.0,2.0,0.0,0.0,0.99,0.0,0.99,Limited Progression
+Troyes,Xavier Chavalerin,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+Strasbourg,Gerzino Nyamsi,91.0,1.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
+East Bengal,Tomislav Mrčela,636.0,7.0,0.0,0.0,0.99,0.0,0.0,0.99,Limited Progression
 Chennaiyin,Deepak Devrani,366.0,4.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
 Bordeaux,Stian Rode Gregersen,92.0,1.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
-Metz,Dylan Daniel Mahmoud Bronn,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
 Montpellier,Maxime Esteve,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
-Lyon,Jason Denayer,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
+Metz,Dylan Daniel Mahmoud Bronn,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
 Metz,Fali Candé,94.0,0.0,0.0,1.0,0.0,0.0,0.96,0.96,Limited Progression
+Lyon,Jason Denayer,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
 Rennes,Nayef Aguerd,187.0,2.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
 Cameroon,Christopher Wooh,95.0,0.0,1.0,0.0,0.0,0.95,0.0,0.95,Limited Progression
 Tunisia,Nader Ghandri,97.0,1.0,0.0,0.0,0.93,0.0,0.0,0.93,Limited Progression
@@ -1021,139 +1021,139 @@ Saudi Arabia,Ali Albulayhi,229.0,1.0,1.0,0.0,0.39,0.39,0.0,0.78,Limited Progress
 Australia,Harry Souttar,375.0,3.0,0.0,0.0,0.72,0.0,0.0,0.72,Limited Progression
 Odisha,Gaurav Bora,866.0,4.0,2.0,0.0,0.42,0.21,0.0,0.63,Limited Progression
 Kerala Blasters,Albino Gomes,322.0,1.0,0.0,1.0,0.28,0.0,0.28,0.56,Limited Progression
-Australia,Kye Rowles,367.0,2.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
 Poland,Kamil Glik,367.0,2.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
+Australia,Kye Rowles,367.0,2.0,0.0,0.0,0.49,0.0,0.0,0.49,Limited Progression
 NorthEast United,Jestin George,224.0,1.0,0.0,0.0,0.4,0.0,0.0,0.4,Limited Progression
 Costa Rica,Kendall Jamaal Waston Manley,231.0,0.0,0.0,1.0,0.0,0.0,0.39,0.39,Limited Progression
 Ghana,Lawrence Ati-Zigi,293.0,1.0,0.0,0.0,0.31,0.0,0.0,0.31,Limited Progression
 Goa,Mohamed Ali,318.0,1.0,0.0,0.0,0.28,0.0,0.0,0.28,Limited Progression
 Kerala Blasters,Prabhushkan Singh Gill,1781.0,2.0,0.0,0.0,0.1,0.0,0.0,0.1,Limited Progression
-Morocco,Badr Banoun,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-NorthEast United,Mirshad Koottappunna,971.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Costa Rica,Keylor Navas Gamboa,284.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Odisha,Arshdeep Singh Saini,733.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Stade de Reims,Predrag Rajković,179.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saint-Étienne,Etienne Green,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Rennes,Alfred Benjamin Gomis,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Netherlands,Andries Noppert,494.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Jamshedpur,Anas Edathodika,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Qatar,Saad Abdullah Al Sheeb,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Marseille,Pau López Sabata,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Troyes,Erik Palmer-Brown,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Jamshedpur,Pawan Kumar,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AS Monaco,Jean Lucas de Souza Oliveira,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Morocco,Bilal El Khannous,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mumbai City,Hmingthanmawia Ralte,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lens,Kevin Danso,142.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lyon,Jérôme Boateng,64.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Chennaiyin,Samik Mitra,88.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Belgium,Thibaut Courtois,267.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Wales,Wayne Hennessey,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Ghana,Alexander Djiku,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-OGC Nice,Jean-Clair Todibo,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Wales,Danny Ward,105.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Brazil,Ederson Santana de Moraes,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mexico,José Andrés Guardado Hernández,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Morocco,Yassine Bounou,582.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Montpellier,Dimitry Bertaud,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Chennaiyin,Debjit Majumder,910.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Paris Saint-Germain,Keylor Navas Gamboa,1123.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Jamshedpur,Rehnesh Thumbirumbu Paramba,1810.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-NorthEast United,Subhasish Roy Chowdhury,834.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nantes,Alban Lafont,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-East Bengal,Arindam Bhattacharja,951.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lorient,Matthieu Dreyer,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Serbia,Ivan Ilić,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Qatar,Meshaal Aissa Barsham,185.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Argentina,Damián Emiliano Martínez,704.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Clermont Foot,Alidu Seidu,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Kerala Blasters,Yendrembam Denechandra Meitei,66.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Costa Rica,Bryan Ruiz González,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Clermont Foot,Arthur Desmas,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Denmark,Kasper Schmeichel,277.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saudi Arabia,Mohammed Khalil Al Owais,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AS Monaco,Ismail Jakobs,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Metz,Sikou Niakate,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-East Bengal,Sankar Roy,454.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Portugal,Diogo Meireles Costa,468.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Rennes,Serhou Guirassy,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-France,Hugo Lloris,591.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Hyderabad,Gurmeet Singh,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-South Korea,Seung-Gyu Kim,377.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Poland,Michał Skóraś,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Wales,Joe Allen,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Switzerland,Gregor Kobel,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Switzerland,Yann Sommer,265.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Poland,Wojciech Szczęsny,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Doğan Alemdar,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ghana,Gideon Mensah,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Hyderabad,Laxmikant Kattimani,2050.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Yasir Gharsan Al Shahrani,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+ATK Mohun Bagan,Sumit Rathi,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Canada,Mark Anthony Kaye,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Jamshedpur,Anas Edathodika,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mumbai City,Mohammad Nawaz,1539.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Alexander Nübel,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Uruguay,Sergio Rochet Álvarez,285.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Brazil,Alisson Ramsés Becker,386.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Lorient,Paul Nardi,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Croatia,Dominik Livaković,694.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Clermont Foot,Yohann Magnin,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Strasbourg,Matz Sels,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-England,Kalvin Phillips,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lille,Sven Botman,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Poland,Karol Świderski,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Ecuador,Hernán Ismael Galíndez,262.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saudi Arabia,Salman Mohammed Al Faraj,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Bordeaux,Gaëtan Poussin,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Serbia,Vanja Milinković Savić,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Metz,Marc-Aurèle Caillard,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lorient,Moritz Jenz,83.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saint-Étienne,Eliaquim Mangala,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Paris Saint-Germain,Gianluigi Donnarumma,1181.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Bengaluru,Gurpreet Singh Sandhu,1373.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Senegal,Edouard Mendy,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saint-Étienne,Paul Bernardoni,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saudi Arabia,Yasir Gharsan Al Shahrani,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Tunisia,Aymen Dahmen,289.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Hyderabad,Laxmikant Kattimani,2050.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-ATK Mohun Bagan,Sumit Rathi,60.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Rennes,Doğan Alemdar,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AS Monaco,Alexander Nübel,81.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Serbia,Stefan Mitrović,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-East Bengal,Suvam Sen,418.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mumbai City,Phurba Tempa Lachenpa,270.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saint-Étienne,Nelson Sissoko,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Goa,Naveen Kumar,367.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lille,Ivo Grbić,165.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Australia,Mathew Ryan,366.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Germany,Manuel Neuer,276.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lorient,Julien Laporte,177.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Ecuador,Alan Steven Franco Palma,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Canada,Milan Borjan,279.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-United States,Matthew Charles Turner,371.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Wales,Joseff Morrell,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-United States,Kellyn Kai Perry-Acosta,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mexico,Érick Gabriel Gutiérrez Galaviz,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Morocco,Munir Mohand Mohamedi,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Cameroon,André Onana,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-ATK Mohun Bagan,Amrinder Singh,2011.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Iran,Roozbeh Cheshmi,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Iran,Alireza Safar Beiranvand,107.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mumbai City,Mohammad Nawaz,1539.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Odisha,Nikhil Prabhu,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-England,Jordan Pickford,448.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Chennaiyin,Vishal Kaith,824.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Uruguay,Sergio Rochet Álvarez,285.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Japan,Shūichi Gonda,385.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mexico,Francisco Guillermo Ochoa Magaña,281.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Goa,Dheeraj Singh Moirangthem,1363.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-OGC Nice,Walter Daniel Benítez,178.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Spain,Unai Simón Mendibil,398.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-NorthEast United,William Lalnunfela,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Morocco,Achraf Dari,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Poland,Wojciech Szczęsny,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Goa,Hrithik Tiwari,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Odisha,Kamaljit Singh,1111.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Troyes,Jessy Moulin,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Canada,Mark Anthony Kaye,57.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lyon,Anthony Lopes,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Argentina,Guido Rodríguez,55.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Metz,Jean-Armel Kana-Biyik,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Costa Rica,Juan Pablo Vargas Campos,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lens,Jean-Louis Leca,184.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Iran,Seyed Hossein Hosseini,164.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Saudi Arabia,Hassan Mohammed Al-Tambakti,197.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Jamshedpur,Pawan Kumar,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 France,Steve Mandanda,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Ghana,Gideon Mensah,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Paris Saint-Germain,Keylor Navas Gamboa,1123.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Chennaiyin,Samik Mitra,88.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lens,Jean-Louis Leca,184.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Odisha,Kamaljit Singh,1111.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Kerala Blasters,Yendrembam Denechandra Meitei,66.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Poland,Michał Skóraś,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Troyes,Jessy Moulin,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ecuador,Hernán Ismael Galíndez,262.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Spain,Unai Simón Mendibil,398.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Salman Mohammed Al Faraj,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mexico,Érick Gabriel Gutiérrez Galaviz,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iran,Alireza Safar Beiranvand,107.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Moritz Jenz,83.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Badr Banoun,61.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Montpellier,Dimitry Bertaud,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+South Korea,Seung-Gyu Kim,377.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Ismail Jakobs,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Eliaquim Mangala,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Qatar,Meshaal Aissa Barsham,185.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Yohann Magnin,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Costa Rica,Keylor Navas Gamboa,284.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Etienne Green,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Netherlands,Andries Noppert,494.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Arthur Desmas,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Goa,Naveen Kumar,367.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Hassan Mohammed Al-Tambakti,197.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Odisha,Nikhil Prabhu,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nantes,Alban Lafont,182.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+England,Jordan Pickford,448.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Goa,Dheeraj Singh Moirangthem,1363.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iran,Seyed Hossein Hosseini,164.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Switzerland,Gregor Kobel,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ghana,Alexander Djiku,100.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Hyderabad,Gurmeet Singh,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Stade de Reims,Predrag Rajković,179.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Alfred Benjamin Gomis,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Portugal,Diogo Meireles Costa,468.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Brazil,Ederson Santana de Moraes,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Serbia,Ivan Ilić,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Japan,Shūichi Gonda,385.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Iran,Roozbeh Cheshmi,70.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Argentina,Damián Emiliano Martínez,704.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Qatar,Saad Abdullah Al Sheeb,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Ivo Grbić,165.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Poland,Karol Świderski,48.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+ATK Mohun Bagan,Amrinder Singh,2011.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Croatia,Dominik Livaković,694.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+NorthEast United,Mirshad Koottappunna,971.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Julien Laporte,177.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Achraf Dari,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Nelson Sissoko,47.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Paris Saint-Germain,Gianluigi Donnarumma,1181.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+United States,Matthew Charles Turner,371.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Bilal El Khannous,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+United States,Kellyn Kai Perry-Acosta,54.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Munir Mohand Mohamedi,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+East Bengal,Arindam Bhattacharja,951.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Strasbourg,Matz Sels,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ecuador,Alan Steven Franco Palma,53.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bengaluru,Gurpreet Singh Sandhu,1373.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Joe Allen,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Germany,Manuel Neuer,276.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Danny Ward,105.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+NorthEast United,William Lalnunfela,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Odisha,Arshdeep Singh Saini,733.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Morocco,Yassine Bounou,582.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mexico,Francisco Guillermo Ochoa Magaña,281.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mexico,José Andrés Guardado Hernández,40.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lens,Kevin Danso,142.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lyon,Jérôme Boateng,64.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Australia,Mathew Ryan,366.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+East Bengal,Suvam Sen,418.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Tunisia,Aymen Dahmen,289.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mumbai City,Hmingthanmawia Ralte,35.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mumbai City,Phurba Tempa Lachenpa,270.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Jean Lucas de Souza Oliveira,37.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Wayne Hennessey,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Argentina,Guido Rodríguez,55.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Chennaiyin,Debjit Majumder,910.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Jamshedpur,Rehnesh Thumbirumbu Paramba,1810.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saint-Étienne,Paul Bernardoni,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Saudi Arabia,Mohammed Khalil Al Owais,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+OGC Nice,Jean-Clair Todibo,176.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Cameroon,Devis Rogers Epassy Mboka,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Belgium,Thibaut Courtois,267.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+East Bengal,Sankar Roy,454.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+England,Kalvin Phillips,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Denmark,Kasper Schmeichel,277.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Marseille,Pau López Sabata,172.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Sven Botman,89.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+OGC Nice,Walter Daniel Benítez,178.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Bengaluru,Lara Sharma,450.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Serhou Guirassy,34.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Troyes,Erik Palmer-Brown,87.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Serbia,Vanja Milinković Savić,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cameroon,André Onana,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Metz,Jean-Armel Kana-Biyik,51.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+France,Hugo Lloris,591.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Metz,Marc-Aurèle Caillard,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Senegal,Edouard Mendy,368.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Chennaiyin,Vishal Kaith,824.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Canada,Milan Borjan,279.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Bordeaux,Gaëtan Poussin,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Goa,Hrithik Tiwari,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lyon,Anthony Lopes,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Wales,Joseff Morrell,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Costa Rica,Juan Pablo Vargas Campos,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Matthieu Dreyer,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Alidu Seidu,86.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Serbia,Stefan Mitrović,39.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Costa Rica,Bryan Ruiz González,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+NorthEast United,Subhasish Roy Chowdhury,834.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Metz,Sikou Niakate,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression

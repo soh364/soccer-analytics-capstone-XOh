@@ -111,28 +111,15 @@ def load_tournament_data_8d(scope_name, verbose=True):
 
 
 class PlayerDataLoader:
-    """
-    Load player metrics from per-season subfolders with time-decay weighting.
-    
-    Expected structure:
-        base_dir/
-          recent_club_players/
-            2021_2022/   <- one folder per season
-              advanced__player__xg_chain.csv
-              ...
-            2022_2023/
-            2023_2024/
-    """
+    """Load player metrics from per-season subfolders with time-decay weighting."""
 
     def __init__(self, base_dir='../outputs/raw_metrics'):
         self.base_dir = Path(base_dir)
         self.metrics_config = PLAYER_METRICS
 
     def _discover_season_folders(self, scope_dir: Path) -> list[tuple[str, Path]]:
-        """
-        Return (season_name, folder_path) pairs for all season subfolders,
-        sorted chronologically.
-        """
+        """Return (season_name, folder_path) pairs for all season subfolders, sorted chronologically."""
+        
         seasons = []
         for folder in sorted(scope_dir.iterdir()):
             if folder.is_dir():
@@ -181,13 +168,8 @@ class PlayerDataLoader:
         return loaded
 
     def load_scope(self, scope_name, verbose=True) -> dict:
-        """
-        Load all seasons within a scope, combining into one DataFrame per file.
-        
-        Returns:
-            dict[filename -> polars DataFrame] with all seasons stacked,
-            season_name and season_year columns present on every DataFrame.
-        """
+        """Load all seasons within a scope, combining into one DataFrame per file."""
+
         scope_dir = self.base_dir / scope_name
         if not scope_dir.exists():
             raise FileNotFoundError(f"Scope not found: {scope_dir}")
@@ -229,10 +211,8 @@ class PlayerDataLoader:
         return combined
 
     def load_multiple_scopes(self, scope_names, verbose=True) -> dict:
-        """
-        Load and combine multiple scopes (e.g. club + tournament data).
-        Handles legacy (scope_name, year) tuple format gracefully.
-        """
+        """Load and combine multiple scopes (e.g. club + tournament data)."""
+
         all_data: dict[str, list[pl.DataFrame]] = {}
 
         for scope_name in scope_names:
@@ -247,9 +227,8 @@ class PlayerDataLoader:
 
 
 def load_player_data_for_scoring(scopes_to_load, verbose=True) -> dict:
-    """
-    Convenience function. Accepts scope name strings or legacy (scope, year) tuples.
-    """
+    """Convenience function. Accepts scope name strings or legacy (scope, year) tuples."""
+
     loader = PlayerDataLoader()
     if isinstance(scopes_to_load, str):
         return loader.load_scope(scopes_to_load, verbose=verbose)

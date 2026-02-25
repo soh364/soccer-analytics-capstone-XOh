@@ -1,3 +1,68 @@
+# ⚽ 2026 World Cup Readiness Framework
+## Exploratory Data Analysis — Midterm Report
+
+**Team:** XOH (Soomi Oh, Yoo Mi Oh)  
+**Date:** 25th February, 2026
+---
+
+## Overview
+
+A data-driven framework for quantifying national team readiness ahead of the 2026 FIFA 
+World Cup, built on StatsBomb open event and 360 spatial tracking data.
+
+This midterm report covers the foundational phases of the project: exploratory analysis 
+of the raw StatsBomb dataset, metric engineering producing 8 team tactical dimensions 
+and 12 player quality dimensions, and EDA validating both frameworks. Tactical 
+clustering, player quality scoring, and the final Readiness Score synthesis will be 
+delivered in the final report.
+
+---
+
+## Notebooks
+
+| Notebook | Purpose |
+|----------|---------|
+| `EDA_executive_xoh.ipynb` | Executive summary — key findings and visualizations |
+| `EDA_midterm_xoh.ipynb` | Complete midterm report — full methodology and analysis |
+
+---
+
+## Project Structure
+```
+├── run_metrics.py                   # Central pipeline entry point
+│
+├── src/
+│   └── metrics/                     # Metric calculation modules
+│
+├── outputs/
+│   └── raw_metrics/
+│       ├── men_tournament_2022_24/  # Team tactical metric outputs
+│       └── recent_club_players/     # Player quality metric outputs
+│
+└── eda/
+    ├── EDA_executive_xoh.ipynb      # Executive summary notebook
+    ├── EDA_midterm_xoh.ipynb        # Full midterm report notebook
+    ├── analysis/                    # EDA helper functions
+    ├── figures/                     # All generated visualizations
+    └── processed/                   # Aggregated and processed EDA outputs
+```
+---
+
+## Setup
+
+All processed metric files are included in the repository. To regenerate them from 
+scratch, run:
+```bash
+python run_metrics.py men_tournament_2022_24 recent_club_players
+```
+
+- `men_tournament_2022_24` — team tactical metrics from 2022 World Cup, Euro 2024, AFCON 2024, Copa América 2024
+- `recent_club_players` — player quality metrics from 2021–2025 club and international data
+
+All outputs are written to the `/processed` directory.
+
+-----
+
 # Soccer Analytics Capstone Template
 
 **Project (Trilemma Foundation): “Delivering Elite European Football (Soccer) Analytics”**

@@ -9,14 +9,6 @@ import numpy as np
 def calculate_archetype_success(profiles_df, progression_df, archetype_names):
     """
     Calculate success rates and progression by archetype.
-    
-    Args:
-        profiles_df: Team profiles with cluster assignments
-        progression_df: Tournament progression scores by team
-        archetype_names: Dict mapping cluster_id to archetype name
-        
-    Returns:
-        (team_success_df, archetype_success_df)
     """
     
     # Merge progression data

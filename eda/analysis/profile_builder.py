@@ -12,13 +12,6 @@ def build_team_profile_8d(metrics, verbose=True):
     Dimensions: pressing intensity, territorial dominance, ball control, 
     possession efficiency, defensive positioning, attacking threat, 
     progression style, and build-up quality.
-    
-    Args:
-        metrics: Dict of polars DataFrames with tournament statistics
-        verbose: Print progress summary
-        
-    Returns:
-        polars DataFrame with 8 dimensions per team
     """
     
     if verbose:

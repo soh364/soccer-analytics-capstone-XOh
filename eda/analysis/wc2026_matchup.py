@@ -1,8 +1,5 @@
 """
 2026 World Cup — Matchup Analysis
-===================================
-1. Overall advantage heatmap — every team vs every team
-2. Interactive head-to-head dimension breakdown (ipywidgets)
 """
 
 import matplotlib.pyplot as plt
@@ -49,7 +46,7 @@ CONF_COLORS = {
     'AFC':      '#da77f2',
 }
 
-# ── Helpers ───────────────────────────────────────────────────────────────────
+# Helpers
 
 def _normalise_dim(df: pd.DataFrame, col: str) -> pd.Series:
     mn, mx = df[col].min(), df[col].max()
@@ -73,7 +70,7 @@ def _net_advantage(row_team: str, col_team: str, norm: pd.DataFrame) -> float:
     return round(weighted, 2)
 
 
-# ── 1. Heatmap ────────────────────────────────────────────────────────────────
+# Heatmap
 
 def plot_matchup_heatmap(
     df: pd.DataFrame,
