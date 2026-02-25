@@ -1,8 +1,8 @@
 # ⚽ 2026 World Cup Readiness Framework
 ## Exploratory Data Analysis — Midterm Report
 
-**Team:** XOH — Soomi Oh, Yoo Mi Oh  
-**Date:** February 2026
+**Team:** XOH (Soomi Oh, Yoo Mi Oh)  
+**Date:** 25th February, 2026
 ---
 
 ## Overview
@@ -15,6 +15,7 @@ of the raw StatsBomb dataset, metric engineering producing 8 team tactical dimen
 and 12 player quality dimensions, and EDA validating both frameworks. Tactical 
 clustering, player quality scoring, and the final Readiness Score synthesis will be 
 delivered in the final report.
+
 ---
 
 ## Notebooks
@@ -23,6 +24,7 @@ delivered in the final report.
 |----------|---------|
 | `EDA_executive_xoh.ipynb` | Executive summary — key findings and visualizations |
 | `EDA_midterm_xoh.ipynb` | Complete midterm report — full methodology and analysis |
+
 ---
 
 ## Project Structure
