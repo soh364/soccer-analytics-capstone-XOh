@@ -1,25 +1,6 @@
 """
-player_metrics_eda.py
-─────────────────────
 Complete EDA for raw player metric files with 12 visualizations.
 Expects files loaded from outputs/raw_metrics/recent_club_players/
-
-VISUALIZATIONS:
-  Basic (1-4):
-    III.1 — Row count bar charts
-    III.2 — Player coverage heatmap
-    III.3 — Metric distributions (violin)
-    III.4 — Minutes played distribution
-  
-  Existing Advanced (5-7):
-    III.7 — Player archetype scatter (xG Chain vs Network, bubble=prog)
-    III.8 — Player consistency (mean vs CV)
-    III.9 — Cross-season trajectory (2026 WC players)
-  
-  New Advanced (8-10):
-    III.10 — Quality-Minutes scatter (reliability vs talent)
-    III.11 — Position-specific quality violins
-    III.12 — Specialist matrix (attacking vs defensive 2D heatmap)
 """
 
 import pandas as pd
@@ -32,9 +13,7 @@ from analysis.visualization import save_figure
 from matplotlib.lines import Line2D
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # CONFIG
-# ─────────────────────────────────────────────────────────────────────────────
 
 BASE_DIR    = Path("../outputs/raw_metrics/recent_club_players")
 SEASONS     = ["2021_2022", "2022_2023", "2023_2024"]
@@ -153,9 +132,7 @@ DEFENSIVE_PROFILE_COLORS = {
 }
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # LOADER
-# ─────────────────────────────────────────────────────────────────────────────
 
 def load_all_players() -> dict:
     """
@@ -177,9 +154,7 @@ def load_all_players() -> dict:
     return data
 
 
-# ─────────────────────────────────────────────────────────────────────────────
 # HELPERS FOR ADVANCED VISUALIZATIONS
-# ─────────────────────────────────────────────────────────────────────────────
 
 def _get_file(player_data: dict, fname: str) -> pd.DataFrame | None:
     """Pull a single file across all scopes and seasons."""
@@ -269,9 +244,7 @@ def aggregate_player(df, val_col, weight_col="minutes_played",
     return pd.DataFrame(result)
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# BASIC VISUALIZATIONS (III.1-4)
-# ─────────────────────────────────────────────────────────────────────────────
+# BASIC VISUALIZATIONS 
 
 def plot_row_counts(data: dict, figsize=(13, 6)):
     """Grouped bar chart: row counts per file, split by season."""
@@ -607,8 +580,6 @@ def plot_minutes_distribution(data: dict, figsize=(13, 6)):
 
     plt.subplots_adjust(left=0.1, right=0.9, top=0.82, bottom=0.15, wspace=0.25)
 
-    # Place the title at exactly 0.5 (the middle of the image)
-    # This will now align with the midpoint of your adjusted plots.
     fig.text(
         0.5, 0.94, 
         "Minutes Played Distribution", 
@@ -621,13 +592,10 @@ def plot_minutes_distribution(data: dict, figsize=(13, 6)):
     save_figure(fig, 'player_mins_dis.png', dpi=180)
     plt.show()
 
-# ─────────────────────────────────────────────────────────────────────────────
-# EXISTING ADVANCED VISUALIZATIONS (III.7-9)
-# ─────────────────────────────────────────────────────────────────────────────
 
 def plot_player_archetype_scatter(player_data: dict, figures_dir: Path = FIGURES_DIR,
                                    figsize=(13, 9)):
-    """III.7 — Player archetype scatter: xG Chain vs Network Involvement"""
+    """Player archetype scatter: xG Chain vs Network Involvement"""
     figures_dir.mkdir(exist_ok=True)
 
     season = _latest_season(player_data)
@@ -791,7 +759,7 @@ def plot_player_archetype_scatter(player_data: dict, figures_dir: Path = FIGURES
 
 def plot_player_consistency(player_data: dict, figures_dir: Path = FIGURES_DIR,
                             figsize=(12, 9)):
-    """III.8 — Player consistency: mean performance vs coefficient of variation"""
+    """Player consistency: mean performance vs coefficient of variation"""
     figures_dir.mkdir(exist_ok=True)
     season = _latest_season(player_data)
     fname  = "advanced__player__xg_chain.csv"
@@ -906,7 +874,7 @@ def plot_player_consistency(player_data: dict, figures_dir: Path = FIGURES_DIR,
 
 def plot_player_trajectory(player_data: dict, figures_dir: Path = FIGURES_DIR,
                             figsize=(14, 10)):
-    """III.9 — Cross-season trajectory for key 2026 WC players"""
+    """Cross-season trajectory for key 2026 WC players"""
     figures_dir.mkdir(exist_ok=True)
     
     METRIC_FILES = {
@@ -1060,7 +1028,7 @@ def plot_player_trajectory(player_data: dict, figures_dir: Path = FIGURES_DIR,
         axes[idx].set_visible(False)
 
     fig.suptitle(
-        "III.9 — Player Development Trajectories (2021-2024)\n"
+        "Player Development Trajectories (2021-2024)\n"
         "Normalized composite score: xG Chain + Network + Progression",
         fontsize=13, fontweight="bold", y=0.995
     )
@@ -1070,13 +1038,9 @@ def plot_player_trajectory(player_data: dict, figures_dir: Path = FIGURES_DIR,
     plt.show()
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# NEW ADVANCED VISUALIZATIONS (III.10-12)
-# ─────────────────────────────────────────────────────────────────────────────
-
 def plot_quality_minutes_scatter(player_data: dict, figures_dir: Path = FIGURES_DIR,
                                  figsize=(14, 9)):
-    """III.10 — Quality-Minutes scatter: reliability vs talent"""
+    """Quality-Minutes scatter: reliability vs talent"""
     figures_dir.mkdir(exist_ok=True)
     
     season = _latest_season(player_data)
@@ -1177,7 +1141,7 @@ def plot_quality_minutes_scatter(player_data: dict, figures_dir: Path = FIGURES_
 
 def plot_position_quality_violins(player_data: dict, figures_dir: Path = FIGURES_DIR,
                                   figsize=(15, 6)):
-    """III.11 — Position-specific quality distributions"""
+    """Position-specific quality distributions"""
     figures_dir.mkdir(exist_ok=True)
     
     season = _latest_season(player_data)
@@ -1232,7 +1196,7 @@ def plot_position_quality_violins(player_data: dict, figures_dir: Path = FIGURES
         ax.grid(axis="y", alpha=0.2, linestyle=":")
     
     fig.suptitle(
-        "III.11 — Position-Specific Quality Distributions\n"
+        "Position-Specific Quality Distributions\n"
         f"What makes a player 'good' depends on position  |  {SEASON_LABELS.get(season, season)}, min 270 mins",
         fontsize=12, fontweight="bold",
         y=1.02
@@ -1245,7 +1209,7 @@ def plot_position_quality_violins(player_data: dict, figures_dir: Path = FIGURES
 
 def plot_specialist_matrix(player_data: dict, figures_dir: Path = FIGURES_DIR,
                            figsize=(12, 10)):
-    """III.12 — Specialist matrix: attacking vs defensive quality 2D heatmap"""
+    """Specialist matrix: attacking vs defensive quality 2D heatmap"""
     figures_dir.mkdir(exist_ok=True)
     
     season = _latest_season(player_data)
@@ -1310,10 +1274,10 @@ def plot_specialist_matrix(player_data: dict, figures_dir: Path = FIGURES_DIR,
             linestyle="--", alpha=0.9, label="Balanced Line")
     
     kw = dict(fontsize=11, fontweight="bold", alpha=0.8)
-    ax.text(75, 15, "⚡ PURE ATTACKERS", color="#e63946", ha="center", **kw)
-    ax.text(15, 75, "🛡️ DEFENSIVE\nSPECIALISTS", color="#2d6a4f", ha="center", **kw)
-    ax.text(75, 75, "🌟 COMPLETE\n(Rare!)", color="#4dabf7", ha="center", **kw)
-    ax.text(15, 15, "⚪ LIMITED", color="#adb5bd", ha="center", **kw)
+    ax.text(75, 15, "PURE ATTACKERS", color="#e63946", ha="center", **kw)
+    ax.text(15, 75, "DEFENSIVE\nSPECIALISTS", color="#2d6a4f", ha="center", **kw)
+    ax.text(75, 75, "COMPLETE\n(Rare!)", color="#4dabf7", ha="center", **kw)
+    ax.text(15, 15, "LIMITED", color="#adb5bd", ha="center", **kw)
     
     top_attackers = df.nlargest(3, "attacking_quality")
     top_defenders = df.nlargest(3, "defensive_quality")
@@ -1350,7 +1314,7 @@ def plot_specialist_matrix(player_data: dict, figures_dir: Path = FIGURES_DIR,
     ax.legend(fontsize=9, frameon=False, loc="upper left")
     
     ax.set_title(
-        "III.12 — The Specialist Matrix: Attacking vs Defensive Quality\n"
+        "The Specialist Matrix: Attacking vs Defensive Quality\n"
         f"No complete players exist — everyone specializes  |  {SEASON_LABELS.get(season, season)}, min {MIN_MINUTES} mins",
         fontsize=12, fontweight="bold",
         loc="left", pad=14
@@ -1360,69 +1324,3 @@ def plot_specialist_matrix(player_data: dict, figures_dir: Path = FIGURES_DIR,
     save_figure(fig, 'specialist_matrix.png', dpi=180)
     plt.show()
 
-
-# ─────────────────────────────────────────────────────────────────────────────
-# MAIN EXECUTION
-# ─────────────────────────────────────────────────────────────────────────────
-
-if __name__ == "__main__":
-    """Run all player metrics EDA visualizations."""
-    
-    print("="*70)
-    print("PLAYER METRICS EDA - COMPREHENSIVE ANALYSIS")
-    print("="*70)
-    print()
-    
-    print("[1/10] Loading data...")
-    data = load_all()
-    player_data = {"recent_club_players": data}
-    print(f"       Loaded {len(SEASONS)} seasons")
-    print()
-    
-    print("[2/10] Creating row count bar charts...")
-    plot_row_counts(data)
-    
-    print("[3/10] Creating coverage heatmap...")
-    plot_coverage_heatmap(data)
-    
-    print("[4/10] Creating metric distributions...")
-    plot_metric_distributions_pl(data)
-    
-    print("[5/10] Creating minutes distribution...")
-    plot_minutes_distribution(data)
-    
-    print("[6/10] Creating player archetype scatter...")
-    plot_player_archetype_scatter(player_data, FIGURES_DIR)
-    
-    print("[7/10] Creating player consistency analysis...")
-    plot_player_consistency(player_data, FIGURES_DIR)
-    
-    print("[8/10] Creating cross-season trajectory...")
-    plot_player_trajectory(player_data, FIGURES_DIR)
-    
-    print("[9/10] Creating quality-minutes scatter...")
-    plot_quality_minutes_scatter(player_data, FIGURES_DIR)
-    
-    print("[10/10] Creating position-specific quality violins...")
-    plot_position_quality_violins(player_data, FIGURES_DIR)
-    
-    print("[11/10] Creating specialist matrix...")
-    plot_specialist_matrix(player_data, FIGURES_DIR)
-    
-    print()
-    print("="*70)
-    print("✅ ALL VISUALIZATIONS COMPLETE")
-    print("="*70)
-    print(f"\nOutputs saved to: {FIGURES_DIR.absolute()}/")
-    print("\nGenerated files:")
-    print("  1. player_metrics_row_counts.png")
-    print("  2. coverage_heatmap.png")
-    print("  3. metric_distributions.png")
-    print("  4. player_mins_dis.png")
-    print("  5. player_archetype_scatter.png")
-    print("  6. player_consistency.png")
-    print("  7. player_trajectory.png")
-    print("  8. quality_minutes_scatter.png")
-    print("  9. position_quality_violins.png")
-    print(" 10. specialist_matrix.png")
-    print()

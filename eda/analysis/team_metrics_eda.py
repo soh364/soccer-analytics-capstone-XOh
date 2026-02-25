@@ -41,7 +41,7 @@ def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
     for i, (key, col, label, cat) in enumerate(METRIC_CONFIG):
         ax = axes[i]
         
-        # ── DATA EXTRACTION ──────────────────────────────────────────────────
+        # DATA EXTRACTION 
         if key == 'progression':
             df = metrics['progression']
             vals = (df['progressive_carries'] / 
@@ -53,7 +53,7 @@ def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
             ax.axis('off') # Hide empty plots if data is missing
             continue
 
-        # ── PLOTTING ─────────────────────────────────────────────────────────
+        # PLOTTING 
         ax.set_facecolor('#fafafa')
         colors = CAT_COLORS[cat]
         
@@ -73,7 +73,7 @@ def plot_metric_distributions(metrics: dict, figsize=(14, 8)):
             vp[part].set_color('#adb5bd')
             vp[part].set_linewidth(1)
 
-        # ── ANNOTATIONS ──────────────────────────────────────────────────────
+        # ANNOTATIONS 
         median = np.median(vals)
         ax.text(1.2, median, f'{median:.2f}',
                 va='center', fontsize=10, color=colors['median'],
@@ -153,8 +153,7 @@ def plot_correlation_matrix(metrics: dict, figsize=(10, 8)):
 
 def plot_tactical_scatter(metrics: dict, figsize=(12, 8)):
     """
-    PPDA vs Possession scatter — bubble size = npxG, 
-    coloured by tournament result depth.
+    PPDA vs Possession scatter — bubble size = npxG, colored by tournament result depth.
     """
     # You'll need a result depth map — add your own match outcomes here
     # 1=Group, 2=R16, 3=QF, 4=SF, 5=Final, 6=Winner
@@ -350,10 +349,10 @@ def plot_outcome_by_quadrant(
     Right panel: clean win rate ranking.
     """
 
-    # ── Extract results ───────────────────────────────────────────────────────
+    # Extract results 
     results_df = extract_match_results(statsbomb_dir)
 
-    # ── Build per-match tactical base ─────────────────────────────────────────
+    # Build per-match tactical base
     ppda = metrics['ppda']
     poss = metrics['possession_pct']
     base = ppda.join(poss, on=['match_id', 'team'])
@@ -375,7 +374,7 @@ def plot_outcome_by_quadrant(
         .alias('quadrant')
     )
 
-    # ── Join outcomes ─────────────────────────────────────────────────────────
+    # Join outcomes 
     base = base.join(results_df, on=['match_id', 'team'], how='left')
     df = base.to_pandas()
 
@@ -395,7 +394,6 @@ def plot_outcome_by_quadrant(
           .sort_values('win_rate', ascending=False)
     )
 
-    # ── Colors ────────────────────────────────────────────────────────────────
     QUAD_COLORS = {
         'High Press\nHigh Possession': '#2d6a4f',
         'High Press\nLow Possession':  '#4dabf7',
@@ -403,7 +401,6 @@ def plot_outcome_by_quadrant(
         'Low Press\nLow Possession':   "#d7749c",
     }
 
-    # ── Figure ────────────────────────────────────────────────────────────────
     fig, (ax1, ax2) = plt.subplots(
         1, 2, figsize=figsize,
         gridspec_kw={'width_ratios': [1.5, 1]}
@@ -412,7 +409,6 @@ def plot_outcome_by_quadrant(
     for ax in (ax1, ax2):
         ax.set_facecolor('#fafafa')
 
-    # ── Left: stacked W/D/L ───────────────────────────────────────────────────
     quads  = summary['quadrant'].tolist()
     wins   = summary['win_rate'].tolist()
     draws  = summary['draw_rate'].tolist()
@@ -463,7 +459,6 @@ def plot_outcome_by_quadrant(
     ax1.legend(fontsize=8, loc='upper right')
     ax1.grid(axis='y', alpha=0.25, linestyle=':')
 
-    # ── Right: win rate horizontal bar ────────────────────────────────────────
     summary_asc = summary.sort_values('win_rate', ascending=True)
     bar_colors_r = [QUAD_COLORS.get(q, '#adb5bd')
                     for q in summary_asc['quadrant']]
@@ -499,9 +494,7 @@ def plot_outcome_by_quadrant(
     save_figure(fig, 'team_outcome_by_quadrant.png', dpi=180)
     plt.show()
 
-# ─────────────────────────────────────────────────────────────────────────────
 # HELPER: build flat joined df from metrics dict
-# ─────────────────────────────────────────────────────────────────────────────
 
 def _build_flat(metrics: dict) -> pl.DataFrame:
     """Join all 8 metrics into a single match-level df."""
@@ -536,9 +529,7 @@ DIM_LABELS = ['PPDA', 'Field Tilt %', 'Possession %', 'EPR',
 INVERT = {'ppda', 'epr'}
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# 1. RADAR 
-# ─────────────────────────────────────────────────────────────────────────────
+# RADAR 
 
 def get_granular_means(target_df, global_df):
     means = {}
@@ -644,9 +635,7 @@ def plot_competition_radar(metrics: dict, statsbomb_dir: Path, figsize=(8, 6)):
     plt.show()
 
 
-# ─────────────────────────────────────────────────────────────────────────────
-# 2. MATCH VOLATILITY — team consistency across matches
-# ─────────────────────────────────────────────────────────────────────────────
+# MATCH VOLATILITY — team consistency across matches
 
 def plot_match_volatility(metrics: dict, min_matches: int = 3, figsize=(14, 6)):
     """
@@ -780,13 +769,11 @@ def plot_tactical_consistency_scatter(
     figsize=(11, 9)
 ):
     """
-    Scatter: PPDA std dev (x) vs Possession std dev (y)
-    for 2026 World Cup teams only.
-    Four quadrants: Tactically Rigid / Pressing-Adaptive /
-                    Possession-Adaptive / Chaotic
+    Scatter: PPDA std dev (x) vs Possession std dev (y) for 2026 World Cup teams only.
+    Four quadrants: Tactically Rigid / Pressing-Adaptive / Possession-Adaptive / Chaotic
     """
 
-    # ── Build flat match-level df ─────────────────────────────────────────────
+    # Build flat match-level df 
     flat = (
         metrics['ppda']
         .join(metrics['possession_pct'], on=['match_id', 'team'], how='left')
@@ -811,7 +798,6 @@ def plot_tactical_consistency_scatter(
     ppda_med = vol['ppda_std'].median()
     poss_med = vol['poss_std'].median()
 
-    # ── Figure ────────────────────────────────────────────────────────────────
     fig, ax = plt.subplots(figsize=figsize)
     fig.patch.set_facecolor('#ffffff')
     ax.set_facecolor('#fafafa')
