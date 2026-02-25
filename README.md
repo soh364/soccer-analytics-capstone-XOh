@@ -1,9 +1,9 @@
 # ⚽ 2026 World Cup Readiness Framework
 ## Exploratory Data Analysis — Midterm Report
----
+
 **Team:** XOH (Soomi Oh, Yoo Mi Oh)  
 **Date:** 25th February, 2026
----
+
 
 ## Overview
 
