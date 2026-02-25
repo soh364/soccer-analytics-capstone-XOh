@@ -21,8 +21,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Kevin Lenini Gonçalves Pereira de Pina,Cape Verde Islands,3,5,0.15,1.0,0.85
 2022/2023,Renato Júnior Luz Sanches,Paris Saint-Germain,9,14,1.17,2.0,0.83
 2022/2023,Branco van den Boomen,Toulouse,2,7,0.26,1.0,0.74
-2023,Hakim Ziyech,Morocco,3,7,0.29,1.0,0.71
 2023,Mostafa Mohamed Ahmed Abdallah,Egypt,4,15,3.29,4.0,0.71
+2023,Hakim Ziyech,Morocco,3,7,0.29,1.0,0.71
 2022/2023,Ignatius Kpene Ganago,Nantes,2,5,0.33,1.0,0.67
 2022/2023,Sergio Ramos García,Paris Saint-Germain,11,15,1.36,2.0,0.64
 2022/2023,Jonathan Bamba,Lille,2,7,1.39,2.0,0.61
@@ -34,11 +34,11 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Mahmoud Ibrahim Hassan,Egypt,3,6,0.44,1.0,0.56
 2023,Omar Marmoush,Egypt,4,9,1.48,2.0,0.52
 2023,Aguibou Camara,Guinea,3,5,0.49,1.0,0.51
-2023,Patson Daka,Zambia,3,5,0.5,1.0,0.5
 2023,Azzedine Ounahi,Morocco,4,7,0.5,1.0,0.5
+2023,Patson Daka,Zambia,3,5,0.5,1.0,0.5
 2023,Abdoulaye Seck,Senegal,2,5,0.51,1.0,0.49
-2023,Gilson Benchimol Tavares,Cape Verde Islands,2,6,0.52,1.0,0.48
 2023,Aboubakary Koita,Mauritania,4,12,0.52,1.0,0.48
+2023,Gilson Benchimol Tavares,Cape Verde Islands,2,6,0.52,1.0,0.48
 2023,Bertrand Isidore Traoré,Burkina Faso,4,11,2.53,3.0,0.47
 2023,Sadio Mané,Senegal,3,7,1.54,2.0,0.46
 2023,Frank Magri,Cameroon,3,6,0.56,1.0,0.44
@@ -52,13 +52,13 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Mohamed Konaté,Burkina Faso,3,8,0.71,1.0,0.29
 2023,Karl Brillant Toko Ekambi,Cameroon,2,6,0.81,1.0,0.19
 2023,Silas Katompa Mvumpa,Congo DR,5,5,1.85,2.0,0.15
-2022/2023,Folarin Balogun,Stade de Reims,1,6,0.93,1.0,0.07
 2023,Arthur Masuaku,Congo DR,4,7,0.93,1.0,0.07
+2022/2023,Folarin Balogun,Stade de Reims,1,6,0.93,1.0,0.07
 2023,Leonardo Campana Romero,Inter Miami,4,7,0.94,1.0,0.06
 2023,Mohamed Abdel Monem,Egypt,4,6,0.95,1.0,0.05
 2023,Ismaïla Sarr,Senegal,4,7,1.02,1.0,-0.02
-2023,Nicolas Pépé,Côte d'Ivoire,4,5,1.06,1.0,-0.06
 2023,Achraf Hakimi Mouh,Morocco,4,6,1.06,1.0,-0.06
+2023,Nicolas Pépé,Côte d'Ivoire,4,5,1.06,1.0,-0.06
 2023,Jules Olivier Ntcham,Cameroon,3,5,0.12,0.0,-0.12
 2023,Ambrosini Antonio Cabaça Salvador,Angola,4,7,1.15,1.0,-0.15
 2023,Lameck Banda,Zambia,2,5,0.2,0.0,-0.2
@@ -66,8 +66,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Yves Bissouma,Mali,3,6,0.22,0.0,-0.22
 2022/2023,Mattéo Guendouzi Olié,Marseille,2,5,0.23,0.0,-0.23
 2023,Wilfried Stephane Singo,Côte d'Ivoire,3,5,0.23,0.0,-0.23
-2023,Deroy Duarte,Cape Verde Islands,2,5,0.25,0.0,-0.25
 2023,Emam Ashour Metwally Abdelghany,Egypt,3,7,0.25,0.0,-0.25
+2023,Deroy Duarte,Cape Verde Islands,2,5,0.25,0.0,-0.25
 2023,Hamdi Fathi,Egypt,4,7,0.26,0.0,-0.26
 2023,Ibrahim Sangaré,Côte d'Ivoire,2,5,0.26,0.0,-0.26
 2023,Musa Barrow,Gambia,3,8,0.27,0.0,-0.27
@@ -75,8 +75,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Tiago Manuel Dias Correia,Cape Verde Islands,4,17,1.29,1.0,-0.29
 2022/2023,Nuno Albertino Varela Tavares,Marseille,2,8,0.3,0.0,-0.3
 2023,Sekou Koita,Mali,3,6,0.3,0.0,-0.3
-2023,Chancel Mbemba Mangulu,Congo DR,5,7,2.31,2.0,-0.31
 2023,Mohamed Youcef Belaïli,Algeria,3,10,0.31,0.0,-0.31
+2023,Chancel Mbemba Mangulu,Congo DR,5,7,2.31,2.0,-0.31
 2023,Sphephelo S''Miso Sithole,South Africa,4,5,0.31,0.0,-0.31
 2022/2023,Marcos Paulo Mesquita Lopes,Troyes,1,5,0.32,0.0,-0.32
 2022/2023,Nuno Mendes,Paris Saint-Germain,7,10,1.33,1.0,-0.33
@@ -87,15 +87,15 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Kennedy Amutenya,Namibia,4,6,0.37,0.0,-0.37
 2023,Christian Kouamé,Côte d'Ivoire,3,5,1.38,1.0,-0.38
 2023,Mihlali Samson Mayambela,South Africa,3,8,1.39,1.0,-0.39
+2023,Thapelo James Morena,South Africa,3,5,0.42,0.0,-0.42
 2023,Max-Alain Gradel,Côte d'Ivoire,3,6,0.42,0.0,-0.42
 2022/2023,Alexis Alejandro Sánchez Sánchez,Marseille,2,6,0.42,0.0,-0.42
-2023,Thapelo James Morena,South Africa,3,5,0.42,0.0,-0.42
 2023,Obite Evan Ndicka,Côte d'Ivoire,4,7,0.43,0.0,-0.43
 2022/2023,Hugo Ekitike,Paris Saint-Germain,10,19,2.44,2.0,-0.44
-2022/2023,Marco Verratti,Paris Saint-Germain,5,5,0.45,0.0,-0.45
 2023,Ahmed Sayed,Egypt,3,10,0.45,0.0,-0.45
-2023,Moses Daddy-Ajala Simon,Nigeria,4,5,0.46,0.0,-0.46
+2022/2023,Marco Verratti,Paris Saint-Germain,5,5,0.45,0.0,-0.45
 2023,Georges-Kévin Nkoudou Mbida,Cameroon,3,6,0.46,0.0,-0.46
+2023,Moses Daddy-Ajala Simon,Nigeria,4,5,0.46,0.0,-0.46
 2023,Josef Alexander Martínez Mencia,Inter Miami,2,5,0.51,0.0,-0.51
 2023,Youssef En-Nesyri,Morocco,3,8,1.51,1.0,-0.51
 2023,Teboho Mokoena,South Africa,7,22,3.51,3.0,-0.51
@@ -105,15 +105,15 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Garry Mendes Rodrigues,Cape Verde Islands,4,9,1.54,1.0,-0.54
 2023,Kamory Doumbia,Mali,3,9,0.54,0.0,-0.54
 2023,Simon Bokote Banza,Congo DR,3,5,0.55,0.0,-0.55
-2023,Zaidu Sanusi,Nigeria,4,6,0.56,0.0,-0.56
 2022/2023,Jonathan David,Lille,2,10,1.56,1.0,-0.56
+2023,Zaidu Sanusi,Nigeria,4,6,0.56,0.0,-0.56
 2022/2023,Moussa Dembélé,Lyon,2,5,0.59,0.0,-0.59
 2023,Théo Bongonda Mbul''Ofeko Batombo,Congo DR,5,10,0.6,0.0,-0.6
 2023,Aubrey Maphosa Modiba,South Africa,5,6,1.63,1.0,-0.63
 2023,Youssef Msakni,Tunisia,2,6,0.66,0.0,-0.66
 2023,Amadou Haïdara,Mali,3,9,0.67,0.0,-0.67
-2023,Amine Adli,Morocco,3,5,0.71,0.0,-0.71
 2023,Fiston Kalala Mayele,Congo DR,3,5,0.71,0.0,-0.71
+2023,Amine Adli,Morocco,3,5,0.71,0.0,-0.71
 2022/2023,Danilo Luís Hélio Pereira,Paris Saint-Germain,10,15,1.72,1.0,-0.72
 2023,Jovane Eduardo Borges Cabral,Cape Verde Islands,4,9,0.72,0.0,-0.72
 2022/2023,Nordi Mukiele Mulere,Paris Saint-Germain,5,7,0.81,0.0,-0.81
@@ -128,8 +128,8 @@ season_name,player,team,matches,shots,xg,goals,goals_minus_xg
 2023,Morgan Guilavogui,Guinea,4,6,1.14,0.0,-1.14
 2023,Cédric Bakambu,Congo DR,6,10,2.23,1.0,-1.23
 2023,Yoane Wissa,Congo DR,6,21,4.24,3.0,-1.24
-2023,Percy Tau,South Africa,4,12,2.33,1.0,-1.33
 2023,Ayoub El Kaabi,Morocco,3,6,1.33,0.0,-1.33
+2023,Percy Tau,South Africa,4,12,2.33,1.0,-1.33
 2023,Peter Shalulile,Namibia,2,10,1.37,0.0,-1.37
 2023,Lionel Andrés Messi Cuccittini,Inter Miami,6,20,2.47,1.0,-1.47
 2023,Victor James Osimhen,Nigeria,6,24,3.11,1.0,-2.11
