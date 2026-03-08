@@ -127,7 +127,7 @@ PLAYER_METRICS = {
 # Trait category mapping
 TRAIT_CATEGORIES = {
     'Mobility_Intensity': ['defensive_actions', 'high_turnovers', 'pressure_volume', 'pressure_success'],
-    'Progression': ['progressive_carries', 'packing'],
+    'Progression': ['progressive_passes', 'progressive_carries'],
     'Control': ['network_centrality'], 
     'Final_Third_Output': ['finishing_quality', 'xg_volume', 'xg_chain', 'xg_buildup', 'team_involvement', ]
 }
