@@ -6,6 +6,7 @@ import pandas as pd
 import numpy as np
 import duckdb
 from typing import Union, Optional
+from .minutes_utils import minutes_played_cte, compute_minutes_played_df
 
 
 def calculate_progressive_passes(events, conn=None, matches=None, match_id=None, player=None) -> pd.DataFrame:
@@ -570,7 +571,7 @@ def calculate_progressive_actions_no_overlap(events, conn=None, matches=None, ma
         return result[result['progressive_possessions'] > 0].sort_values('progressive_possessions', ascending=False)
 
 
-def analyze_progression_profile(events, conn=None, matches=None, match_id=None, min_minutes=30):
+def analyze_progression_profile(events, conn=None, matches=None, lineups=None, match_id=None, min_minutes=30):
     """Analyze player progression profiles with per-90 normalization."""
 
     prog_passes = calculate_progressive_passes(events, conn, matches=matches, match_id=match_id)
@@ -580,19 +581,22 @@ def analyze_progression_profile(events, conn=None, matches=None, match_id=None, 
     if isinstance(events, str):
         if conn is None:
             conn = duckdb.connect()
-        mins_query = f"""
-            WITH match_mins AS (
-                SELECT match_id, team, player, (MAX(minute) - MIN(minute)) as m
-                FROM '{events}' WHERE player IS NOT NULL GROUP BY 1, 2, 3
-            )
-            SELECT team, player, SUM(m) as total_mins FROM match_mins GROUP BY 1, 2
+        query = f"""
+        WITH {minutes_played_cte(lineups, events)}
+        SELECT team, player, SUM(minutes_played) as total_mins
+        FROM minutes_played_cte
+        WHERE match_id IN (SELECT DISTINCT match_id FROM '{events}')
+        GROUP BY team, player
         """
-        player_mins = conn.execute(mins_query).df()
+        player_mins = conn.execute(query).df()
     else:
-        player_mins = events[events['player'].notna()].groupby(['match_id', 'team', 'player'])['minute'].agg(
-            lambda x: x.max() - x.min()
-        ).reset_index()
-        player_mins = player_mins.groupby(['team', 'player'])['minute'].sum().reset_index(name='total_mins')
+        match_mins = compute_minutes_played_df(lineups, events)
+        player_mins = (
+            match_mins
+            .groupby(['team', 'player'])['minutes_played']
+            .sum()
+            .reset_index(name='total_mins')
+        )
 
     p_agg = prog_passes.groupby(['team', 'player'])['progressive_passes'].sum().reset_index()
     c_agg = prog_carries.groupby(['team', 'player'])['progressive_carries'].sum().reset_index()

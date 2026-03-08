@@ -101,7 +101,7 @@ def log_metric(name, count):
     print(f"     [+] {name}: {count:,} records")
 
 
-def _run_metrics(events_path, matches_path, three_sixty_path, conn, out):
+def _run_metrics(events_path, matches_path, three_sixty_path, lineups_path, conn, out):
     """Run all metrics calculations.
     
     Args:
@@ -130,11 +130,11 @@ def _run_metrics(events_path, matches_path, three_sixty_path, conn, out):
         log_metric("Counter Attack Speed", len(counter))
 
     print("  [2/6] Defensive - PLAYER")
-    pressure = calculate_pressure_metrics(events_path, conn, matches=matches_path)
+    pressure = calculate_pressure_metrics(events_path, conn, matches=matches_path, lineups=lineups_path)
     pressure.to_csv(out / "defensive__player__pressures.csv", index=False)
     log_metric("Pressure Metrics", len(pressure))
 
-    def_profile = calculate_defensive_profile(events_path, conn, matches=matches_path, min_actions=15)
+    def_profile = calculate_defensive_profile(events_path, conn, matches=matches_path, lineups=lineups_path, min_actions=15)
     def_profile.to_csv(out / "defensive__player__profile.csv", index=False)
     log_metric("Defensive Profiles", len(def_profile))
 
@@ -148,7 +148,7 @@ def _run_metrics(events_path, matches_path, three_sixty_path, conn, out):
     log_metric("Player xG", len(player_xg))
 
     print("  [4/6] Progression")
-    prog_profile = analyze_progression_profile(events_path, conn, matches=matches_path, min_minutes=30)
+    prog_profile = analyze_progression_profile(events_path, conn, matches=matches_path, lineups=lineups_path, min_minutes=30)
     prog_profile.to_csv(out / "progression__player__profile.csv", index=False)
     log_metric("Progression Profiles", len(prog_profile))
 
@@ -157,20 +157,20 @@ def _run_metrics(events_path, matches_path, three_sixty_path, conn, out):
     log_metric("Team Progression Summary", len(team_prog))
 
     print("  [5/6] Advanced - xG Chain")
-    xg_chain = calculate_xg_chain(events_path, conn, matches=matches_path, per_90=True)
+    xg_chain = calculate_xg_chain(events_path, conn, matches=matches_path, lineups=lineups_path, per_90=True)
     xg_chain.to_csv(out / "advanced__player__xg_chain.csv", index=False)
     log_metric("xG Chain", len(xg_chain))
 
-    xg_buildup = calculate_xg_buildup(events_path, conn, matches=matches_path, per_90=True)
+    xg_buildup = calculate_xg_buildup(events_path, conn, matches=matches_path, lineups=lineups_path, per_90=True)
     xg_buildup.to_csv(out / "advanced__player__xg_buildup.csv", index=False)
     log_metric("xG Buildup", len(xg_buildup))
 
-    team_xg_buildup = calculate_team_xg_buildup(events_path, conn, matches=matches_path)
+    team_xg_buildup = calculate_team_xg_buildup(events_path, conn, matches=matches_path, lineups=lineups_path)
     team_xg_buildup.to_csv(out / "advanced__team__xg_buildup.csv", index=False)
     log_metric("Team xG Buildup", len(team_xg_buildup))
 
     print("  [6/6] Advanced - Network & Packing")
-    network = calculate_pass_network_centrality(events_path, conn, matches=matches_path)
+    network = calculate_pass_network_centrality(events_path, conn, matches=matches_path, lineups=lineups_path)
     network.to_csv(out / "advanced__player__network_centrality.csv", index=False)
     log_metric("Network Centrality", len(network))
 
@@ -198,6 +198,7 @@ def run_pipeline_for_scope(scope_name, scope):
     events_path = str(loader.available_files['events'])
     matches_path = str(loader.available_files['matches'])
     three_sixty_path = str(loader.available_files.get('three_sixty', ''))
+    lineups_path = str(loader.available_files['lineups'])
     temp_files = []
 
     try:
@@ -221,7 +222,7 @@ def run_pipeline_for_scope(scope_name, scope):
                 print(f"  ✓ Filtered: {season_names}")
                 print(f"  ✓ Output: {out}")
                 
-                _run_metrics(filtered, matches_path, three_sixty_path, loader.conn, out)
+                _run_metrics(filtered, matches_path, three_sixty_path, lineups_path, loader.conn, out)
         else:
             # Single scope processing
             # Structure: outputs/raw_metrics/{scope_name}/
@@ -233,7 +234,7 @@ def run_pipeline_for_scope(scope_name, scope):
             out.mkdir(exist_ok=True, parents=True)
             print(f"  ✓ Output: {out}")
             
-            _run_metrics(filtered, matches_path, three_sixty_path, loader.conn, out)
+            _run_metrics(filtered, matches_path, three_sixty_path, lineups_path, loader.conn, out)
 
     finally:
         import os

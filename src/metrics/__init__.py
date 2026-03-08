@@ -8,6 +8,7 @@ from .packing import *
 from .xg_chain import * 
 from .defensive import *
 from .network import *
+from .minutes_utils import *
 
 __all__ = [
     'calculate_ppda',
@@ -42,4 +43,6 @@ __all__ = [
     'calculate_defensive_profile',
     'calculate_pass_network_centrality',
     'classify_network_role',
+    'compute_minutes_played_df',
+    'minutes_played_cte'
 ]
