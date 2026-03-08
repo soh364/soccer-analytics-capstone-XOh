@@ -10,20 +10,20 @@ PLAYER_METRICS = {
         'column': 'goals_minus_xg',
         'trait_category': 'Final_Third_Output',
         'description': 'Goals vs xG (finishing quality)',
-        'min_minutes': 450,  # ~5 matches minimum
+        'min_minutes': 270,  # ~5 matches minimum
         'higher_is_better': True,
         'filter_column': 'matches',
-        'filter_threshold': 5
+        'filter_threshold': 3
     },
     'xg_volume': {
         'file': 'xg__player__totals.csv',
         'column': 'xg',
         'trait_category': 'Final_Third_Output',
         'description': 'Total xG (shooting volume)',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True,
         'filter_column': 'matches',
-        'filter_threshold': 5
+        'filter_threshold': 3
     },
     
     'progressive_passes': {
@@ -31,7 +31,7 @@ PLAYER_METRICS = {
         'column': 'progressive_passes_p90',
         'trait_category': 'Progression',
         'description': 'Forward passing per 90',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     'progressive_carries': {
@@ -39,7 +39,7 @@ PLAYER_METRICS = {
         'column': 'progressive_carries_p90',
         'trait_category': 'Progression',
         'description': 'Ball-carrying per 90',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     'packing': {
@@ -47,10 +47,10 @@ PLAYER_METRICS = {
         'column': 'avg_packing_per_pass',
         'trait_category': 'Progression',
         'description': 'Avg packing per pass',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True,
         'filter_column': 'total_passes',
-        'filter_threshold': 50,
+        'filter_threshold': 30,
     },
     
     'xg_chain': {
@@ -58,7 +58,7 @@ PLAYER_METRICS = {
         'column': 'xg_chain_per90',
         'trait_category': 'Final_Third_Output',
         'description': 'xG chain per 90 (possession involvement)',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     'team_involvement': {
@@ -66,7 +66,7 @@ PLAYER_METRICS = {
         'column': 'team_involvement_pct',
         'trait_category': 'Final_Third_Output',
         'description': '% of team xG chains involved in',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     
@@ -75,7 +75,7 @@ PLAYER_METRICS = {
         'column': 'xg_buildup_per90',
         'trait_category': 'Final_Third_Output',
         'description': 'Build-up xG per 90',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     'network_centrality': {
@@ -83,7 +83,7 @@ PLAYER_METRICS = {
         'column': 'network_involvement_pct',
         'trait_category': 'Control',
         'description': 'Network centrality (passing hub)',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     
@@ -92,7 +92,7 @@ PLAYER_METRICS = {
         'column': 'total_defensive_actions',
         'trait_category': 'Mobility_Intensity',
         'description': 'Total defensive actions',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     'high_turnovers': {
@@ -100,7 +100,7 @@ PLAYER_METRICS = {
         'column': 'high_turnovers',
         'trait_category': 'Mobility_Intensity',
         'description': 'High turnovers (pressing success)',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
 
@@ -109,7 +109,7 @@ PLAYER_METRICS = {
         'column': 'pressures_per_90',
         'trait_category': 'Mobility_Intensity',
         'description': 'Pressing volume per 90',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
 
@@ -118,7 +118,7 @@ PLAYER_METRICS = {
         'column': 'pressure_success_pct',
         'trait_category': 'Mobility_Intensity',
         'description': 'Pressure success rate',
-        'min_minutes': 450,
+        'min_minutes': 270,
         'higher_is_better': True
     },
     

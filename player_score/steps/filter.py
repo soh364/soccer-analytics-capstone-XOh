@@ -10,8 +10,8 @@ from typing import Dict
 from player_metrics_config import PLAYER_METRICS
 
 # Default thresholds
-HARD_THRESHOLD_MINUTES = 450
-SHRINKAGE_FLOOR_MINUTES = 270
+HARD_THRESHOLD_MINUTES = 270
+SHRINKAGE_FLOOR_MINUTES = 180
 
 
 def _get_filter_spec(metric_key: str) -> tuple[str, int]:
@@ -79,8 +79,8 @@ def filter_file(
 
     df = df.with_columns(shrinkage_flag.alias("shrinkage_flag"))
 
-    # Hard filter: keep only rows >= threshold
-    df = df.filter(pl.col(filter_col) >= threshold)
+    # Hard filter: keep only rows >= floor
+    df = df.filter(pl.col(filter_col) >= floor)
 
     n_after = len(df)
     n_shrink = df["shrinkage_flag"].sum()
