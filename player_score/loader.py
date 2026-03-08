@@ -1,6 +1,6 @@
 from pathlib import Path
 import polars as pl
-from player_metrics_config import PLAYER_METRICS
+from player_score.player_metrics_config import PLAYER_METRICS
 
 
 def parse_season_year(season_name: str) -> int:

@@ -11,7 +11,9 @@ PLAYER_METRICS = {
         'trait_category': 'Final_Third_Output',
         'description': 'Goals vs xG (finishing quality)',
         'min_minutes': 450,  # ~5 matches minimum
-        'higher_is_better': True
+        'higher_is_better': True,
+        'filter_column': 'matches',
+        'filter_threshold': 5
     },
     'xg_volume': {
         'file': 'xg__player__totals.csv',
@@ -19,7 +21,9 @@ PLAYER_METRICS = {
         'trait_category': 'Final_Third_Output',
         'description': 'Total xG (shooting volume)',
         'min_minutes': 450,
-        'higher_is_better': True
+        'higher_is_better': True,
+        'filter_column': 'matches',
+        'filter_threshold': 5
     },
     
     'progressive_passes': {
@@ -44,7 +48,9 @@ PLAYER_METRICS = {
         'trait_category': 'Progression',
         'description': 'Avg packing per pass',
         'min_minutes': 450,
-        'higher_is_better': True
+        'higher_is_better': True,
+        'filter_column': 'total_passes',
+        'filter_threshold': 50,
     },
     
     'xg_chain': {
