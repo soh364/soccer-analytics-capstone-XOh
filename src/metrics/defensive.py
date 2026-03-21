@@ -2,9 +2,11 @@ import pandas as pd
 import numpy as np
 import duckdb
 from typing import Union, Optional
+from .minutes_utils import minutes_played_cte as _minutes_played_cte  # noqa
+from .minutes_utils import compute_minutes_played_df as _compute_minutes_played_df  # noqa
 
 
-def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, player=None) -> pd.DataFrame:
+def calculate_pressure_metrics(events, conn=None, matches=None, lineups=None, match_id=None, player=None):
     """
     Calculate Pressure and Counter-pressing metrics from StatsBomb data.
     """
@@ -26,6 +28,8 @@ def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, p
         season_select = "m.season_name," if matches else ""
         season_group = "m.season_name," if matches else ""
 
+        minutes_cte = _minutes_played_cte(lineups, events)
+
         query = f"""
         WITH pressure_base AS (
             SELECT 
@@ -41,12 +45,7 @@ def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, p
             FROM '{events}' e
             WHERE {where_clause}
         ),
-        player_minutes AS (
-            SELECT match_id, team, player, (MAX(minute) - MIN(minute)) as mins
-            FROM '{events}'
-            WHERE player IS NOT NULL
-            GROUP BY 1, 2, 3
-        )
+        {minutes_cte}
         SELECT 
             {season_select}
             pb.match_id, pb.team, pb.player,
@@ -55,15 +54,15 @@ def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, p
             SUM(CASE WHEN pb.is_regain THEN 1 ELSE 0 END) as pressure_regains,
             COUNT(*) FILTER (WHERE pb.location_x >= 80) as high_pressures,
             ROUND(SUM(CASE WHEN pb.is_regain THEN 1 ELSE 0 END) * 100.0 / NULLIF(COUNT(*), 0), 2) as pressure_success_pct,
-            pm.mins as minutes_played,
-            ROUND(COUNT(*) * 90.0 / NULLIF(pm.mins, 0), 2) as pressures_per_90
+            COALESCE(mp.minutes_played, 0) as minutes_played,
+            ROUND(COUNT(*) * 90.0 / NULLIF(mp.minutes_played, 0), 2) as pressures_per_90
         FROM pressure_base pb
-        LEFT JOIN player_minutes pm 
-            ON pb.match_id = pm.match_id 
-            AND pb.team = pm.team 
-            AND pb.player = pm.player
+        LEFT JOIN minutes_played_cte mp
+            ON pb.match_id = mp.match_id
+            AND pb.team = mp.team
+            AND pb.player = mp.player
         {season_join}
-        GROUP BY {season_group} pb.match_id, pb.team, pb.player, pm.mins
+        GROUP BY {season_group} pb.match_id, pb.team, pb.player, mp.minutes_played
         ORDER BY total_pressures DESC
         """
         return conn.execute(query, params).df()
@@ -75,6 +74,9 @@ def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, p
             df = df[df['match_id'] == match_id]
         if player:
             df = df[df['player'] == player]
+
+        # Compute minutes from full events (before filtering to pressures)
+        minutes_df = _compute_minutes_played_df(lineups, events)
 
         df = df.sort_values(['match_id', 'index_num'])
 
@@ -91,8 +93,6 @@ def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, p
 
         pressures = df[df['type'] == 'Pressure'].copy()
 
-        mins = df.groupby(['match_id', 'team', 'player'])['minute'].agg(lambda x: x.max() - x.min()).reset_index(name='mins')
-
         res = pressures.groupby(['match_id', 'team', 'player']).agg(
             total_pressures=('id', 'count'),
             counterpresses=('counterpress', lambda x: x.fillna(False).sum()),
@@ -100,20 +100,17 @@ def calculate_pressure_metrics(events, conn=None, matches=None, match_id=None, p
             high_pressures=('location_x', lambda x: (x >= 80).sum())
         ).reset_index()
 
-        res = res.merge(mins, on=['match_id', 'team', 'player'], how='left')
+        res = res.merge(minutes_df, on=['match_id', 'team', 'player'], how='left')
+        res['minutes_played'] = res['minutes_played'].fillna(0).astype(int)
         res['pressure_success_pct'] = round(res['pressure_regains'] * 100 / res['total_pressures'], 2)
-        res['pressures_per_90'] = round(res['total_pressures'] * 90 / res['mins'].replace(0, np.nan), 2)
+        res['pressures_per_90'] = round(
+            res['total_pressures'] * 90 / res['minutes_played'].replace(0, np.nan), 2
+        )
 
         return res.sort_values('total_pressures', ascending=False)
 
 
-def calculate_defensive_actions(
-    events: Union[pd.DataFrame, str],
-    conn: duckdb.DuckDBPyConnection = None,
-    matches: Optional[str] = None,
-    match_id: Optional[int] = None,
-    player: Optional[str] = None,
-) -> pd.DataFrame:
+def calculate_defensive_actions(events, conn=None, matches=None, lineups=None, match_id=None, player=None):
     """Calculate defensive contributions per player."""
     if isinstance(events, str):
         if conn is None:
@@ -128,7 +125,8 @@ def calculate_defensive_actions(
         where_clause = f"WHERE {' AND '.join(filters)}" if filters else ""
         season_join = f"LEFT JOIN '{matches}' m ON da.match_id = m.match_id" if matches else ""
         season_select = "m.season_name," if matches else ""
-        season_group = "m.season_name," if matches else ""
+
+        minutes_cte = _minutes_played_cte(lineups, events)
 
         query = f"""
         WITH defensive_events AS (
@@ -169,12 +167,18 @@ def calculate_defensive_actions(
             GROUP BY match_id, team, player
             HAVING SUM(CASE WHEN type IN ('Tackle', 'Interception', 'Pressure', 'Block') 
                        THEN 1 ELSE 0 END) > 0
-        )
+        ),
+        {minutes_cte}
         SELECT 
             {season_select}
             da.*,
-            ROUND(da.duels_won * 100.0 / NULLIF(da.total_duels, 0), 2) as duel_win_pct
+            ROUND(da.duels_won * 100.0 / NULLIF(da.total_duels, 0), 2) as duel_win_pct,
+            COALESCE(mp.minutes_played, 0) as minutes_played
         FROM da
+        LEFT JOIN minutes_played_cte mp
+            ON da.match_id = mp.match_id
+            AND da.team = mp.team
+            AND da.player = mp.player
         {season_join}
         ORDER BY total_defensive_actions DESC
         """
@@ -183,6 +187,9 @@ def calculate_defensive_actions(
 
     else:
         df = events.copy()
+
+        # Compute minutes from full events (before filtering to defensive types)
+        minutes_df = _compute_minutes_played_df(lineups, events)
 
         defensive_types = ['Tackle', 'Interception', 'Pressure', 'Block',
                           'Clearance', 'Duel', 'Ball Recovery', 'Foul Committed']
@@ -224,22 +231,18 @@ def calculate_defensive_actions(
             result['duels_won'] / result['total_duels'] * 100
         ).fillna(0).round(2)
 
+        result = result.merge(minutes_df, on=['match_id', 'team', 'player'], how='left')
+        result['minutes_played'] = result['minutes_played'].fillna(0).astype(int)
+
         result = result[result['total_defensive_actions'] > 0]
 
         return result.sort_values('total_defensive_actions', ascending=False)
 
 
-def calculate_defensive_profile(
-    events: Union[pd.DataFrame, str],
-    conn: duckdb.DuckDBPyConnection = None,
-    matches: Optional[str] = None,
-    match_id: Optional[int] = None,
-    min_actions: int = 10,
-) -> pd.DataFrame:
+def calculate_defensive_profile(events, conn=None, matches=None, lineups=None, match_id=None, min_actions=10):
     """Classify players by defensive style based on action types and locations."""
-    # Pass matches through to calculate_defensive_actions
-    defensive = calculate_defensive_actions(events, conn, matches=matches, match_id=match_id)
 
+    defensive = calculate_defensive_actions(events, conn, matches=matches, lineups=lineups, match_id=match_id)
     defensive = defensive[defensive['total_defensive_actions'] >= min_actions]
 
     if len(defensive) == 0:
