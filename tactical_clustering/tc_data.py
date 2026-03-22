@@ -147,7 +147,7 @@ def run_data_quality_audit(team_metrics: pl.DataFrame) -> None:
 
 
 def load_pipeline(tournament_key: str = 'men_tourn_2022_24',
-                  verbose: bool = True):
+                  verbose: bool = True, exclude_teams=None):
     """
     Convenience wrapper: load → merge → aggregate → audit.
 

@@ -36,12 +36,6 @@ def cap_outliers(team_metrics: pl.DataFrame,
       extreme value. The 95th pulls in the top ~3-4 teams per feature while
       preserving the directional signal (Georgia is still the most passive team).
 
-    Why cap rather than remove?
-    - These teams have legitimate tactical identities — they are genuinely
-      passive/low-press. Removing them would reduce our sample. Capping
-      preserves their relative position while preventing their degree of
-      extremity from dominating cluster geometry.
-
     Parameters
     ----------
     team_metrics : pl.DataFrame
