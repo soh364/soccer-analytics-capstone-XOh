@@ -92,12 +92,14 @@ def normalize_file(
     filename: str,
     verbose: bool = True,
 ) -> pl.DataFrame:
-    """
-    Normalize all metric columns in a DataFrame, per season.
 
-    For each metric column, adds a {metric_key}_norm column containing
-    the normalized value (0-1 range for rank/log methods, unbounded for zscore).
-    """
+    # Pre-processing: compute derived metrics before normalization
+    if filename == "xg__player__totals.csv":
+        if "goals" in df.columns and "xg" in df.columns:
+            df = df.with_columns(
+                (pl.col("goals") / pl.col("xg").clip(lower_bound=0.1))
+                .alias("goals_per_xg")
+            )
     # Find which metrics map to this file
     metrics_for_file = {
         k: v for k, v in PLAYER_METRICS.items()

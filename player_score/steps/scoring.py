@@ -33,13 +33,13 @@ SEASON_NORMALISE = {
 
 # Position-specific category weights
 ARCHETYPE_WEIGHTS = {
-    "W":  {"Mobility_Intensity": 0.20, "Progression": 0.35, "Control": 0.10, "Final_Third_Output": 0.35},
-    "FW": {"Mobility_Intensity": 0.15, "Progression": 0.30, "Control": 0.10, "Final_Third_Output": 0.45},
-    "CB": {"Mobility_Intensity": 0.35, "Progression": 0.25, "Control": 0.30, "Final_Third_Output": 0.10},
-    "DM": {"Mobility_Intensity": 0.30, "Progression": 0.25, "Control": 0.35, "Final_Third_Output": 0.10},
-    "CM": {"Mobility_Intensity": 0.20, "Progression": 0.30, "Control": 0.30, "Final_Third_Output": 0.20},
-    "AM": {"Mobility_Intensity": 0.15, "Progression": 0.30, "Control": 0.20, "Final_Third_Output": 0.35},
-    "FB": {"Mobility_Intensity": 0.25, "Progression": 0.35, "Control": 0.20, "Final_Third_Output": 0.20},
+    "FW": {"Mobility_Intensity": 0.05, "Progression": 0.20, "Control": 0.05, "Final_Third_Output": 0.70},
+    "W":  {"Mobility_Intensity": 0.15, "Progression": 0.40, "Control": 0.10, "Final_Third_Output": 0.35},
+    "AM": {"Mobility_Intensity": 0.10, "Progression": 0.35, "Control": 0.20, "Final_Third_Output": 0.35},
+    "CM": {"Mobility_Intensity": 0.15, "Progression": 0.35, "Control": 0.40, "Final_Third_Output": 0.10},
+    "DM": {"Mobility_Intensity": 0.10, "Progression": 0.35, "Control": 0.50, "Final_Third_Output": 0.05},
+    "CB": {"Mobility_Intensity": 0.40, "Progression": 0.35, "Control": 0.25, "Final_Third_Output": 0.00},
+    "FB": {"Mobility_Intensity": 0.25, "Progression": 0.50, "Control": 0.20, "Final_Third_Output": 0.05},
 }
 
 CLUB_TIERS = {
@@ -106,6 +106,49 @@ COMPETITION_MULTIPLIERS = {
     "__default__":           0.65,
 }
 
+
+def _compute_coverage_tier(row: pd.Series) -> str:
+    """
+    Classify player data quality for transparency.
+    """
+    seasons = row.get("seasons_present", [])
+    competition = row.get("competition_name", "")
+    n_seasons = len(seasons) if isinstance(seasons, list) else 1
+    
+    CLUB_COMPETITIONS = {
+        "La Liga", "Premier League", "Serie A", 
+        "1. Bundesliga", "Ligue 1", "Champions League",
+        "UEFA Europa League", "Liga Profesional",
+        "Major League Soccer"
+    }
+    
+    TOURNAMENT_COMPETITIONS = {
+        "FIFA World Cup", "UEFA Euro", "Copa America",
+        "African Cup of Nations", "FIFA U20 World Cup"
+    }
+    
+    has_club_data = competition in CLUB_COMPETITIONS
+    has_tournament_only = competition in TOURNAMENT_COMPETITIONS
+    
+    if n_seasons >= 2 and has_club_data:
+        return "A"  # Strong — multiple seasons of club data
+    elif n_seasons >= 1 and has_club_data:
+        return "B"  # Moderate — single season of club data
+    elif has_tournament_only:
+        return "C"  # Limited — tournament data only
+    else:
+        return "D"  # Weak — unknown/mixed coverage
+
+def _compute_confidence(row: pd.Series) -> float:
+    tier = row.get("coverage_tier", "D")
+    if tier == "A":
+        return 1.00
+    elif tier == "B":
+        return 0.97
+    elif tier == "C":
+        return 0.90  # light penalty for tournament-only
+    else:
+        return 0.80  # D tier
 
 def get_club_multiplier(player_name: str, competition_name: str = None) -> float:
     # Priority 1 — roster lookup (current club)
@@ -215,6 +258,10 @@ def _build_unified_table(segmented: Dict[str, pl.DataFrame]) -> pd.DataFrame:
 
 
 def _decay_collapse(unified: pd.DataFrame) -> pd.DataFrame:
+    
+    # Drop rows with null position_archetype before collapsing
+    unified = unified[unified["position_archetype"].notna()].copy()
+    
     norm_cols = [c for c in unified.columns if c.endswith("_norm")]
 
     if "decay_weight" not in unified.columns:
@@ -248,6 +295,8 @@ def _decay_collapse(unified: pd.DataFrame) -> pd.DataFrame:
             decay_weight_max=("decay_weight", "max"),
         )
         .reset_index()
+
+
     )
 
     # Override team with current club from roster
@@ -289,11 +338,11 @@ def _intra_archetype_percentile(
             result.loc[mask & valid] = 50.0
             continue
 
-        ranks = vals[valid].rank(pct=True) * 100
-        result.loc[mask & valid] = ranks.values
+        ranks = vals[valid].rank(method="dense")
+        max_rank = ranks.max()
+        result.loc[mask & valid] = (ranks / max_rank) * 100
 
     return result
-
 
 def _compute_category_score(
     scored: pd.DataFrame,
@@ -371,16 +420,11 @@ def build_scores(
         print(f"         {len(collapsed):,} players after collapse")
 
     # Step 3: Intra-archetype percentile per metric
-    if verbose:
-        print("  [3/4] Computing intra-archetype percentiles...")
     norm_cols = [c for c in collapsed.columns if c.endswith("_norm")]
     for norm_col in norm_cols:
         metric_key = norm_col.replace("_norm", "")
         collapsed[f"{metric_key}_pct"] = _intra_archetype_percentile(collapsed, norm_col)
 
-    if verbose:
-        pct_cols = [c for c in collapsed.columns if c.endswith("_pct")]
-        print(f"         {len(pct_cols)} percentile columns computed")
 
     # Step 4: Position-weighted category scores
     if verbose:
@@ -410,6 +454,9 @@ def build_scores(
         print(f"  min={collapsed['composite_score'].min():.1f}, "
               f"median={collapsed['composite_score'].median():.1f}, "
               f"max={collapsed['composite_score'].max():.1f}")
+        
+    collapsed["confidence"] = collapsed.apply(_compute_confidence, axis=1)
+    collapsed["composite_score"] = collapsed["composite_score"] * collapsed["confidence"]
 
     # Sort and rank
     collapsed = collapsed.sort_values("composite_score", ascending=False).reset_index(drop=True)
@@ -421,6 +468,11 @@ def build_scores(
     category_coverage = collapsed[category_scores].notna().sum(axis=1)
     collapsed = collapsed[category_coverage >= min_categories].copy()
 
+    collapsed["coverage_tier"] = collapsed.apply(_compute_coverage_tier, axis=1)
+
+    roster_players = set(PLAYER_CLUB_MAP.keys())
+    collapsed = collapsed[collapsed["player"].isin(roster_players)].copy()
+
     return collapsed
 
 
@@ -429,9 +481,10 @@ def scoring_summary(scored: pd.DataFrame, top_n: int = 20) -> None:
     print(f"TOP {top_n} PLAYERS — COMPOSITE SCORE")
     print("=" * 60)
 
-    display_cols = ["player", "team", "position_archetype", "composite_score",
-                    "Mobility_Intensity_score", "Progression_score",
-                    "Control_score", "Final_Third_Output_score"]
+    display_cols = ["player", "team", "position_archetype", "coverage_tier",
+                "composite_score", "Mobility_Intensity_score", 
+                "Progression_score", "Control_score", 
+                "Final_Third_Output_score"]
     display_cols = [c for c in display_cols if c in scored.columns]
     print(scored[display_cols].head(top_n).to_string())
 
