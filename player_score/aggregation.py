@@ -84,6 +84,19 @@ def _mode_expr(col: str) -> pl.Expr:
     """Most frequent value (mode) for a categorical column."""
     return pl.col(col).mode().first().alias(col)
 
+def build_team_league_map(matches: pl.DataFrame) -> pl.DataFrame:
+    home = matches.select([
+        pl.col("home_team").alias("team"),
+        pl.col("competition").alias("competition_name"), 
+        pl.col("season_name"),
+    ])
+    away = matches.select([
+        pl.col("away_team").alias("team"),
+        pl.col("competition").alias("competition_name"), 
+        pl.col("season_name"),
+    ])
+    return pl.concat([home, away]).unique()
+
 
 def aggregate_match_to_season(
     df: pl.DataFrame,
@@ -251,6 +264,7 @@ def _parse_season_year(season_name: str) -> int:
 
 def aggregate_all(
     raw_data: dict[str, pl.DataFrame],
+    matches: pl.DataFrame,
     verbose: bool = True,
 ) -> dict[str, pl.DataFrame]:
     """
@@ -260,12 +274,15 @@ def aggregate_all(
     Parameters
     ----------
     raw_data : dict returned by load_player_data_for_scoring()
+    matches  : matches DataFrame with competition_name and season_name
     verbose  : print summary per file
 
     Returns
     -------
     dict[filename -> aggregated pl.DataFrame]
     """
+    team_league_map_pl = build_team_league_map(matches)
+
     aggregated = {}
 
     if verbose:
@@ -295,13 +312,20 @@ def aggregate_all(
                     print(f"    Match-level — aggregated to player x season")
 
             else:
-                # Unknown file — attempt match-level aggregation if match_id present
                 if "match_id" in df.columns:
                     print(f"    ⚠️  Unknown file, attempting match-level aggregation")
                     result = aggregate_match_to_season(df, filename)
                 else:
                     print(f"    ⚠️  Unknown file, passing through unchanged")
                     result = df
+
+            # Join competition_name before storing
+            if "team" in result.columns and "season_name" in result.columns:
+                result = result.join(
+                    team_league_map_pl.select(["team", "season_name", "competition_name"]),
+                    on=["team", "season_name"],
+                    how="left"
+                )
 
             aggregated[filename] = result
 
@@ -315,7 +339,7 @@ def aggregate_all(
 
         except Exception as e:
             print(f"    ❌ ERROR: {e}")
-            aggregated[filename] = df  # pass through raw on failure
+            aggregated[filename] = df
 
     if verbose:
         print(f"\n{'='*70}")

@@ -12,14 +12,12 @@ from typing import Dict
 # Season name → decay weight
 # Handles both club season format and tournament single-year format
 DECAY_WEIGHTS = {
-    # Club seasons
     "2023/2024": 1.00,
-    "2022/2023": 0.75,
-    "2021/2022": 0.50,
-    # Tournament equivalents
+    "2022/2023": 0.90,
+    "2021/2022": 0.80,
     "2024": 1.00,
-    "2023": 0.75,
-    "2022": 0.50,
+    "2023": 0.90,
+    "2022": 0.80,
 }
 
 
