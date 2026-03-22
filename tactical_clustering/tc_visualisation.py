@@ -79,7 +79,7 @@ def plot_pca_scatter(X: np.ndarray,
 
     ax.set_xlabel(f'PC1 ({var1:.1%} variance — Proactive vs Reactive axis)', fontsize=11)
     ax.set_ylabel(f'PC2 ({var2:.1%} variance — Efficiency axis)', fontsize=11)
-    ax.set_title('2026 World Cup Tactical Archetypes\nK-Means Clustering (k=4) — PCA Projection',
+    ax.set_title('2026 World Cup Tactical Archetypes\nK-Means Clustering (k=6) — PCA Projection',
                  fontsize=13, fontweight='bold')
     ax.legend(loc='upper right', framealpha=0.9)
     ax.grid(alpha=0.2)
@@ -93,6 +93,7 @@ def plot_pca_scatter(X: np.ndarray,
 
 
 # ── Radar charts ──────────────────────────────────────────────────────────────
+
 def plot_archetype_radars(kmeans: KMeans,
                           scaler,
                           results: pd.DataFrame,
@@ -103,7 +104,7 @@ def plot_archetype_radars(kmeans: KMeans,
     Saves to figures_dir/tactical_archetypes_radar.png.
     """
     figures_dir.mkdir(exist_ok=True)
-
+ 
     RADAR_METRICS = [
         'ppda', 'possession_pct', 'defensive_line_height',
         'field_tilt_pct', 'npxg', 'avg_xg_per_buildup_possession',
@@ -112,32 +113,35 @@ def plot_archetype_radars(kmeans: KMeans,
         'Pressing\nIntensity*', 'Possession\n%', 'Line\nHeight',
         'Field\nTilt', 'npxG', 'xG\nBuildup',
     ]
-
+ 
     centroid_original = pd.DataFrame(
         scaler.inverse_transform(kmeans.cluster_centers_),
         columns=CLUSTER_FEATURES,
     )
-
+ 
     # Invert PPDA — lower raw value = more aggressive pressing
     radar_data         = centroid_original[RADAR_METRICS].copy()
     radar_data['ppda'] = radar_data['ppda'].max() - radar_data['ppda']
-
+ 
     # Normalise to 0-1 for radar shape
     radar_norm = (radar_data - radar_data.min()) / (radar_data.max() - radar_data.min())
-
+ 
     N      = len(RADAR_METRICS)
     angles = np.linspace(0, 2 * np.pi, N, endpoint=False).tolist()
     angles += angles[:1]
-
-    fig, axes = plt.subplots(2, 2, figsize=(14, 10), subplot_kw=dict(polar=True))
+ 
+    n_archetypes = len(ARCHETYPE_MAP)
+    ncols = 3 if n_archetypes >= 5 else 2
+    nrows = (n_archetypes + ncols - 1) // ncols
+    fig, axes = plt.subplots(nrows, ncols, figsize=(7*ncols, 5*nrows), subplot_kw=dict(polar=True))
     axes      = axes.flatten()
-
+ 
     for i, (cluster_id, archetype) in enumerate(ARCHETYPE_MAP.items()):
         ax     = axes[i]
         values = radar_norm.iloc[cluster_id].tolist() + [radar_norm.iloc[cluster_id].tolist()[0]]
         color  = ARCHETYPE_COLORS[archetype]
         n_teams = len(results[results['archetype'] == archetype])
-
+ 
         ax.plot(angles, values, color=color, linewidth=2)
         ax.fill(angles, values, color=color, alpha=0.25)
         ax.set_xticks(angles[:-1])
@@ -147,14 +151,13 @@ def plot_archetype_radars(kmeans: KMeans,
                      fontsize=10, fontweight='bold', pad=15)
         ax.grid(alpha=0.3)
         ax.set_yticklabels([])
-
+ 
     plt.suptitle('Tactical Archetype Profiles — Radar Charts',
                  fontsize=13, fontweight='bold', y=1.02)
     plt.tight_layout()
     plt.savefig(figures_dir / 'tactical_archetypes_radar.png', dpi=150, bbox_inches='tight')
     plt.show()
     print(f'Saved → {figures_dir}/tactical_archetypes_radar.png')
-
 
 # ── Outcome validation ────────────────────────────────────────────────────────
 def plot_outcome_validation(wc_teams: pd.DataFrame,
