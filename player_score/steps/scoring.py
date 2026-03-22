@@ -498,3 +498,91 @@ def scoring_summary(scored: pd.DataFrame, top_n: int = 20) -> None:
         .sort_values("median", ascending=False)
     )
     print(breakdown.to_string())
+
+def apply_guardian_blend(
+    scored: pd.DataFrame,
+    guardian_weight: float = 0.15,
+    verbose: bool = True,
+) -> pd.DataFrame:
+    from guardians_2025 import TOP_100
+
+    def guardian_rank_to_score(rank: int, total: int = 100) -> float:
+        """
+        Tiered guardian scoring:
+        Top 10:  Rank 1 → 90, Rank 10 → 83  (elite, high signal)
+        Top 30:  Rank 11 → 82, Rank 30 → 72  (very good)
+        Rest:    Rank 31 → 71, Rank 100 → 55  (good but more uncertainty)
+        """
+        if rank <= 10:
+            return 90 - (rank - 1) * (7 / 9)
+        elif rank <= 30:
+            return 82 - (rank - 11) * (10 / 19)
+        else:
+            return 71 - (rank - 31) * (16 / 69)
+
+    def guardian_only_score(rank: int, total: int = 100) -> float:
+        """
+        Guardian-only players:
+        Top 10: capped at 65 (just below strong model players)
+        Rest: capped at 40
+        """
+        if rank <= 10:
+            return 65 - (rank - 1) * (5 / 9)  # 65 → 60
+        else:
+            return 40 - (rank - 11) * (10 / 89)  # 40 → 30
+
+    guardian_lookup = {p['player']: p for p in TOP_100}
+
+    def get_final_score(row):
+        player = row['player']
+        if player in guardian_lookup:
+            guardian_rank = guardian_lookup[player]['rank']
+            guardian_score = guardian_rank_to_score(guardian_rank)
+            
+            # Higher guardian weight for top 10
+            if guardian_rank <= 10:
+                weight = 0.40  # 40% guardian for top 10
+            elif guardian_rank <= 30:
+                weight = 0.25
+            else:
+                weight = 0.15
+                
+            return (1 - weight) * row['composite_score'] + weight * guardian_score
+        return row['composite_score']
+
+    scored = scored.copy()
+    scored['final_score'] = scored.apply(get_final_score, axis=1)
+
+    # Add guardian-only players — capped well below model players
+    scored_players = set(scored['player'].tolist())
+    guardian_only_rows = []
+
+    for p in TOP_100:
+        if p['player'] not in scored_players:
+            guardian_only_rows.append({
+                'player': p['player'],
+                'team': p['team'],
+                'coverage_tier': 'D',
+                'composite_score': None,
+                'final_score': guardian_only_score(p['rank']),
+                'age': None,
+            })
+
+    if guardian_only_rows:
+        guardian_df = pd.DataFrame(guardian_only_rows)
+        scored = pd.concat([scored, guardian_df], ignore_index=True)
+
+    scored = scored.sort_values('final_score', ascending=False).reset_index(drop=True)
+    scored.index = scored.index + 1
+    scored.index.name = 'rank'
+
+    if verbose:
+        in_both = sum(1 for p in TOP_100 if p['player'] in scored_players)
+        guardian_only = len(guardian_only_rows)
+        model_only = len(scored) - in_both - guardian_only
+        print(f"\n  Guardian blend applied:")
+        print(f"    In both (blended):      {in_both}")
+        print(f"    Guardian only (capped): {guardian_only}")
+        print(f"    Model only (unchanged): {model_only}")
+
+    return scored
