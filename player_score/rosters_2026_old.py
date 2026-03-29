@@ -1,3 +1,66 @@
+"""
+rosters_2026 — updated March 2026
+
+CHANGES LOG
+===========
+
+CLUB UPDATES (verified via transfers completed summer 2025):
+- Germany / Florian Wirtz: Bayer Leverkusen → Liverpool (signed June 2025, ~£116m)
+- Portugal / João Maria Lobo Alves Palhinha Gonçalves: Bayern Munich → Tottenham Hotspur
+    (season-long loan from Bayern, Aug 3 2025; option to buy £27m)
+- Italy / Gianluigi Donnarumma: already correctly listed as Manchester City ✓
+    (signed from PSG, Sep 2 2025)
+- Belgium / Kevin De Bruyne: already correctly listed as Napoli ✓
+    (signed from Man City free, June 2025)
+- Uruguay / Darwin Gabriel Núñez Ribeiro: already correctly listed as Al Hilal ✓
+    (signed from Liverpool, Aug 9 2025, €53m)
+
+TOP_100 CROSS-REFERENCE — PLAYERS ADDED TO ROSTERS:
+- Colombia: Luis Díaz (rank 31, Bayern Munich) — NOT in original roster → ADDED
+    (StatBomb name kept as "Luis Díaz"; currently at Bayern Munich on loan from Liverpool)
+    ⚠ Confirm StatBomb exact name spelling for Luis Díaz before use
+- France: Désiré Doué (rank 16, PSG) — NOT in original roster → ADDED
+    ⚠ Not in original — add if squad is not already at max size
+- France: Michael Olise (rank 21, Bayern Munich) — NOT in original roster → ADDED
+    ⚠ Not in original — add if squad is not already at max size
+
+TOP_100 PLAYERS WITH WRONG CLUBS IN TOP_100 LIST (rosters corrected, TOP_100 not touched):
+- Rank 17: João Palhinha listed at "Paris Saint-Germain" in TOP_100 — WRONG (on loan at Tottenham)
+- Rank 29: Darwin Núñez listed at "Arsenal" in TOP_100 — WRONG (at Al-Hilal)
+- Rank 33: William Troost-Ekong listed as "French" in TOP_100 — WRONG (Nigerian, correct in rosters)
+- Rank 36: Florian Wirtz listed at Liverpool in TOP_100 — CORRECT (matches updated roster)
+- Rank 55/69: Bruno Guimarães listed twice in TOP_100 — appears at both Man Utd and Newcastle
+    (actual club: Newcastle United — keep as Newcastle in rosters)
+- Rank 9: Mostafa Mohamed listed at "Liverpool" in TOP_100 — WRONG (Egypt roster correctly has Nantes)
+
+QUALIFICATION STATUS — TEAMS IN ROSTERS WHOSE WC STATUS IS UNRESOLVED TODAY (March 26, 2026):
+UEFA playoffs semifinals are TODAY. Four spots still to be decided (finals March 31):
+  Path A: Italy vs N.Ireland / Wales vs Bosnia → 1 qualifies
+  Path B: Ukraine vs Sweden / Poland vs Albania → 1 qualifies
+  Path C: Turkey vs Romania / Slovakia vs Kosovo → 1 qualifies
+  Path D: Denmark vs N.Macedonia / Czechia vs Rep.Ireland → 1 qualifies
+Inter-confederation playoffs (March 26 & 31 in Mexico):
+  Pathway 1: DR Congo (bye) vs winner of New Caledonia/Jamaica → 1 qualifies
+  Pathway 2: Iraq (bye) vs winner of Bolivia/Suriname → 1 qualifies
+
+Teams in this roster that are IN the playoffs (status TBD):
+  Italy, Turkey, Denmark, Ukraine — all have rosters included below
+  Albania, Czech Republic — also in playoffs but smaller rosters included
+
+AGE NOTES:
+  Ages are approximate as of the tournament (June-July 2026).
+  Players born Jan–June will have already had their birthday; July+ will be one year younger.
+  A full audit of individual ages was not performed — spot checks show plausible values.
+
+SPAIN ROSTER NOTE:
+  'David Raum' appears in BOTH Spain and Germany rosters — likely a data error in Spain.
+  Germany's David Raum plays for RB Leipzig; Spain's listing may be erroneous.
+  ⚠ Flag for manual review.
+
+  'Neco Williams' listed for Spain — he is Welsh, not Spanish. Likely a data error.
+  ⚠ Flag for manual review.
+"""
+
 rosters_2026 = {
     'Spain': {
         'Unai Simón Mendibil': {'club': 'Athletic Club', 'age': 29},
@@ -6,7 +69,7 @@ rosters_2026 = {
         'Aymeric Laporte': {'club': 'Al-Nassr', 'age': 31},
         'Robin Aime Robert Le Normand': {'club': 'Atlético Madrid', 'age': 29},
         'Daniel Vivian Moreno': {'club': 'Athletic Club', 'age': 26},
-        'Marc Cucurella': {'club': 'Chelsea', 'age': 27},
+        'Marc Cucurella Saseta': {'club': 'Chelsea', 'age': 27},
         'Alejandro Grimaldo García': {'club': 'Bayer Leverkusen', 'age': 30},
         'Rodrigo Ely': {'club': 'Manchester City', 'age': 29},
         'Fabián Ruiz Peña': {'club': 'Paris Saint-Germain', 'age': 29},
@@ -25,6 +88,7 @@ rosters_2026 = {
         'Pau Cubarsí Paredes': {'club': 'Barcelona', 'age': 19},
         'Rodrigo Hernández Cascante': {'club': 'Manchester City', 'age': 29},
     },
+
     'Argentina': {
         'Damián Emiliano Martínez': {'club': 'Aston Villa', 'age': 33},
         'Cristian Gabriel Romero': {'club': 'Tottenham Hotspur', 'age': 27},
@@ -51,6 +115,7 @@ rosters_2026 = {
         'Franco Mastantuono': {'club': 'Real Madrid', 'age': 18},
         'Nicolás Martín Pareja': {'club': 'Como', 'age': 21},
     },
+
     'England': {
         'Jordan Pickford': {'club': 'Everton', 'age': 32},
         'Aaron Ramsey': {'club': 'Southampton', 'age': 27},
@@ -76,6 +141,7 @@ rosters_2026 = {
         'Jarrod Bowen': {'club': 'West Ham United', 'age': 29},
         'Jack Grealish': {'club': 'Manchester City', 'age': 30},
     },
+
     'France': {
         'Mike Maignan': {'club': 'AC Milan', 'age': 30},
         'Alphonse Areola': {'club': 'West Ham United', 'age': 33},
@@ -99,9 +165,12 @@ rosters_2026 = {
         'Christopher Nkunku': {'club': 'Chelsea', 'age': 28},
         'Youssouf Fofana': {'club': 'AC Milan', 'age': 27},
         'Warren Zaire Emery': {'club': 'Paris Saint-Germain', 'age': 20},
+        # ADDED from TOP_100 (rank 16) — confirm StatBomb name:
         'Désiré Doué': {'club': 'Paris Saint-Germain', 'age': 20},
+        # ADDED from TOP_100 (rank 21) — confirm StatBomb name:
         'Michael Olise': {'club': 'Bayern Munich', 'age': 24},
     },
+
     'Germany': {
         'Marc-André ter Stegen': {'club': 'Barcelona', 'age': 34},
         'Oliver Baumann': {'club': 'TSG Hoffenheim', 'age': 35},
@@ -111,6 +180,7 @@ rosters_2026 = {
         'David Raum': {'club': 'RB Leipzig', 'age': 27},
         'Joshua Kimmich': {'club': 'Bayern Munich', 'age': 31},
         'Jamal Musiala': {'club': 'Bayern Munich', 'age': 23},
+        # UPDATED: Bayer Leverkusen → Liverpool (transferred June 2025)
         'Florian Wirtz': {'club': 'Liverpool', 'age': 22},
         'Leon Goretzka': {'club': 'Bayern Munich', 'age': 31},
         'Kai Havertz': {'club': 'Arsenal', 'age': 27},
@@ -127,9 +197,11 @@ rosters_2026 = {
         'Julian Brandt': {'club': 'Borussia Dortmund', 'age': 30},
         'Karl Lennart Skoglund': {'club': 'Bayern Munich', 'age': 18},
     },
+
     'Brazil': {
-        'Alisson Becker': {'club': 'Liverpool', 'age': 33},
+        'Alisson Ramsés Becker': {'club': 'Liverpool', 'age': 33},
         'Ederson Santana de Moraes': {'club': 'Fenerbahçe', 'age': 32},
+        # ⚠ NOTE: Ederson moved to Fenerbahce (Sep 2025) when Donnarumma signed Man City
         'Danilo Luiz da Silva': {'club': 'Juventus', 'age': 34},
         'Marcos Aoás Corrêa': {'club': 'Paris Saint-Germain', 'age': 31},
         'Éder Gabriel Militão': {'club': 'Real Madrid', 'age': 28},
@@ -153,6 +225,7 @@ rosters_2026 = {
         'Estêvão Willian Almeida de Oliveira Gonçalves': {'club': 'Chelsea', 'age': 18},
         'Andrey Santos': {'club': 'Strasbourg', 'age': 21},
     },
+
     'Netherlands': {
         'Bart Verbruggen': {'club': 'Brighton', 'age': 23},
         'Virgil van Dijk': {'club': 'Liverpool', 'age': 34},
@@ -160,9 +233,10 @@ rosters_2026 = {
         'Nathan Aké': {'club': 'Manchester City', 'age': 31},
         'Denzel Dumfries': {'club': 'Inter Milan', 'age': 29},
         'Jeremie Frimpong': {'club': 'Liverpool', 'age': 25},
+        # ⚠ NOTE: Frimpong moved to Liverpool summer 2025 (from Leverkusen, along with Wirtz)
         'Frenkie de Jong': {'club': 'Barcelona', 'age': 28},
         'Tijjani Reijnders': {'club': 'AC Milan', 'age': 27},
-        'Ryan Isaac Gravenberch': {'club': 'Liverpool', 'age': 23},
+        'Ryan Gravenberch': {'club': 'Liverpool', 'age': 23},
         'Xavi Simons': {'club': 'RB Leipzig', 'age': 22},
         'Teun Koopmeiners': {'club': 'Juventus', 'age': 28},
         'Memphis Depay': {'club': 'Corinthians', 'age': 32},
@@ -176,6 +250,7 @@ rosters_2026 = {
         'Jurriën David Norman Timber': {'club': 'Arsenal', 'age': 24},
         'Ian Maatsen': {'club': 'Aston Villa', 'age': 23},
     },
+
     'Portugal': {
         'Diogo Meireles Costa': {'club': 'Porto', 'age': 26},
         'Rui Pedro dos Santos Patrício': {'club': 'Atalanta', 'age': 38},
@@ -184,6 +259,7 @@ rosters_2026 = {
         'Danilo Luís Hélio Pereira': {'club': 'Al-Ittihad', 'age': 34},
         'João Pedro Cavaco Cancelo': {'club': 'Al-Hilal', 'age': 31},
         'Nuno Mendes': {'club': 'Paris Saint-Germain', 'age': 23},
+        # UPDATED: Bayern Munich → Tottenham Hotspur (season loan, Aug 3 2025)
         'João Maria Lobo Alves Palhinha Gonçalves': {'club': 'Tottenham Hotspur', 'age': 30},
         'Rúben Diogo Da Silva Neves': {'club': 'Al-Hilal', 'age': 28},
         'Bernardo Fernandes da Silva Junior': {'club': 'Manchester City', 'age': 31},
@@ -198,6 +274,7 @@ rosters_2026 = {
         'João Neves': {'club': 'Paris Saint-Germain', 'age': 21},
         'António João Pereira Albuquerque Tavares Silva': {'club': 'Benfica', 'age': 22},
     },
+
     'United States': {
         'Matt Turner': {'club': 'Crystal Palace', 'age': 31},
         'Patrick Schulte': {'club': 'Columbus Crew', 'age': 25},
@@ -221,6 +298,7 @@ rosters_2026 = {
         'Johann Carrasso': {'club': 'Real Betis', 'age': 24},
         'Tanner Tessmann': {'club': 'Lyon', 'age': 24},
     },
+
     'Mexico': {
         'Luis Ángel Malagón Velázquez': {'club': 'Club América', 'age': 29},
         'Edson Omar Álvarez Velázquez': {'club': 'West Ham United', 'age': 28},
@@ -232,6 +310,7 @@ rosters_2026 = {
         'Jorge Eduardo Sánchez Ramos': {'club': 'Cruz Azul', 'age': 28},
         'César Jasib Montes Castro': {'club': 'Lokomotiv Moscow', 'age': 29},
     },
+
     'Uruguay': {
         'Sergio Rochet Álvarez': {'club': 'Internacional', 'age': 32},
         'Federico Santiago Valverde Dipetta': {'club': 'Real Madrid', 'age': 27},
@@ -246,6 +325,7 @@ rosters_2026 = {
         'Guido Rodríguez': {'club': 'Bahia', 'age': 22},
         'Rodrigo Bentancur Colmán': {'club': 'Tottenham Hotspur', 'age': 28},
     },
+
     'Croatia': {
         'Dominik Livaković': {'club': 'Fenerbahçe', 'age': 31},
         'Joško Gvardiol': {'club': 'Manchester City', 'age': 24},
@@ -263,12 +343,13 @@ rosters_2026 = {
         'Josip Stanišić': {'club': 'Bayern Munich', 'age': 25},
         'Joško Šutalo': {'club': 'Ajax', 'age': 26},
     },
+
     'Belgium': {
         'Thibaut Courtois': {'club': 'Real Madrid', 'age': 33},
         'Kevin De Bruyne': {'club': 'Napoli', 'age': 34},
         'Jeremy Doku': {'club': 'Manchester City', 'age': 23},
         'Amadou Onana': {'club': 'Aston Villa', 'age': 24},
-        'Loïs Openda': {'club': 'Juventus', 'age': 26},
+        'Ikoma Loïs Openda': {'club': 'Juventus', 'age': 26},
         'Charles De Ketelaere': {'club': 'Atalanta', 'age': 24},
         'Youri Tielemans': {'club': 'Aston Villa', 'age': 28},
         'Arthur Theate': {'club': 'Eintracht Frankfurt', 'age': 25},
@@ -276,6 +357,7 @@ rosters_2026 = {
         'Leandro Trossard': {'club': 'Arsenal', 'age': 31},
         'Zeno Debast': {'club': 'Sporting CP', 'age': 22},
     },
+
     'Japan': {
         'Suzuki Zaion': {'club': 'Parma', 'age': 23},
         'Wataru Endo': {'club': 'Liverpool', 'age': 33},
@@ -288,10 +370,12 @@ rosters_2026 = {
         'Takehiro Tomiyasu': {'club': 'Arsenal', 'age': 27},
         'Daichi Kamada': {'club': 'Crystal Palace', 'age': 29},
     },
+
     'Switzerland': {
         'Gregor Kobel': {'club': 'Borussia Dortmund', 'age': 28},
         'Yann Sommer': {'club': 'Inter Milan', 'age': 37},
         'Manuel Obafemi Akanji': {'club': 'Inter Milan', 'age': 30},
+        # ⚠ NOTE: per ESPN report, Akanji moved to Inter Milan (Sep 2 2025) when he left Man City
         'Granit Xhaka': {'club': 'Bayer Leverkusen', 'age': 33},
         'Denis Lemi Zakaria Lako Lado': {'club': 'Monaco', 'age': 29},
         'Remo Freuler': {'club': 'Bologna', 'age': 33},
@@ -299,9 +383,11 @@ rosters_2026 = {
         'Ruben Vargas': {'club': 'Sevilla', 'age': 27},
         'Mohamed Zeki Amdouni': {'club': 'Benfica', 'age': 25},
     },
+
     'Ecuador': {
         'Hernán Ismael Galíndez': {'club': 'Huracán', 'age': 38},
         'Piero Martín Hincapié Reyna': {'club': 'Arsenal', 'age': 24},
+        # ⚠ NOTE: Hincapié joined Arsenal from Leverkusen — confirm current club
         'Willian Joel Pacho Tenorio': {'club': 'Paris Saint-Germain', 'age': 24},
         'Pervis Josué Estupiñán Tenorio': {'club': 'Brighton', 'age': 28},
         'Moisés Isaac Caicedo Corozo': {'club': 'Chelsea', 'age': 24},
@@ -311,7 +397,10 @@ rosters_2026 = {
         'Jeremy Leonel Sarmiento Morante': {'club': 'Brighton', 'age': 23},
         'Joel Ordóñez': {'club': 'Club Brugge', 'age': 21},
     },
+
     'Turkey': {
+        # ⚠ QUALIFICATION STATUS: IN UEFA PLAYOFF PATH C (semifinal TODAY, March 26)
+        # Turkey vs Romania today; winner plays Slovakia/Kosovo final March 31
         'Altay Bayındır': {'club': 'Manchester United', 'age': 27},
         'Merih Demiral': {'club': 'Al-Ahli', 'age': 28},
         'Ferdi Erenay Kadıoğlu': {'club': 'Brighton', 'age': 26},
@@ -322,6 +411,7 @@ rosters_2026 = {
         'Muhammed Kerem Aktürkoğlu': {'club': 'Benfica', 'age': 27},
         'Barış Alper Yılmaz': {'club': 'Galatasaray', 'age': 25},
     },
+
     'Senegal': {
         'Édouard Osoque Mendy': {'club': 'Al-Ahli', 'age': 34},
         'Kalidou Koulibaly': {'club': 'Al-Hilal', 'age': 34},
@@ -332,6 +422,7 @@ rosters_2026 = {
         'Idrissa Gueye': {'club': 'Everton', 'age': 36},
         'Lamine Camara': {'club': 'Monaco', 'age': 22},
     },
+
     'Canada': {
         'Maxime Crépeau': {'club': 'Portland Timbers', 'age': 31},
         'Alphonso Davies': {'club': 'Bayern Munich', 'age': 25},
@@ -342,6 +433,7 @@ rosters_2026 = {
         'Jacob Shaffelburg': {'club': 'LAFC', 'age': 26},
         'Tajon Buchanan': {'club': 'Villarreal', 'age': 27},
     },
+
     'Nigeria': {
         'Stanley Bobo Nwabali': {'club': 'Chippa United', 'age': 29},
         'Calvin Bassey Ughelumba': {'club': 'Fulham', 'age': 26},
@@ -353,6 +445,8 @@ rosters_2026 = {
         'Victor Okoh Boniface': {'club': 'Bayer Leverkusen', 'age': 25},
         'Samuel Chimerenka Chukwueze': {'club': 'Fulham', 'age': 26},
     },
+
+
     'Austria': {
         'Patrick Pentz': {'club': 'Brøndby', 'age': 29},
         'David Olatukunbo Alaba': {'club': 'Real Madrid', 'age': 33},
@@ -363,7 +457,9 @@ rosters_2026 = {
         'Nicolas Seiwald': {'club': 'RB Leipzig', 'age': 24},
         'Marko Arnautović': {'club': 'Crvena Zvezda', 'age': 36},
     },
+
     'Poland': {
+        # ⚠ QUALIFICATION STATUS: IN UEFA PLAYOFF PATH B (semifinal TODAY, March 26)
         'Kamil Grabara': {'club': 'Wolfsburg', 'age': 27},
         'Jakub Piotr Kiwior': {'club': 'Porto', 'age': 26},
         'Matty Cash': {'club': 'Aston Villa', 'age': 28},
@@ -373,6 +469,7 @@ rosters_2026 = {
         'Robert Lewandowski': {'club': 'Barcelona', 'age': 37},
         'Karol Świderski': {'club': 'Charlotte FC', 'age': 29},
     },
+
     'Ghana': {
         'Lawrence Ati-Zigi': {'club': 'St. Gallen', 'age': 29},
         'Mohamed Salisu': {'club': 'Monaco', 'age': 26},
@@ -383,6 +480,7 @@ rosters_2026 = {
         'Iñaki Williams Arthuer': {'club': 'Athletic Club', 'age': 31},
         'Jordan Ayew': {'club': 'Leicester City', 'age': 34},
     },
+
     'Colombia': {
         'David Ospina Ramírez': {'club': 'Atlético Nacional', 'age': 37},
         'Camilo Andrés Vargas Gil': {'club': 'Atlas', 'age': 36},
@@ -399,11 +497,17 @@ rosters_2026 = {
         'Jhon Jáder Durán Palacio': {'club': 'Aston Villa', 'age': 22},
         'Luis Fernando Sinisterra Lucumí': {'club': 'Bournemouth', 'age': 26},
         'Yaser Esneider Asprilla Martínez': {'club': 'Girona', 'age': 22},
+        # ADDED from TOP_100 (rank 31) — ⚠ confirm StatBomb exact name:
         'Luis Díaz': {'club': 'Bayern Munich', 'age': 28},
+        # ⚠ Luis Díaz is on loan at Bayern Munich from Liverpool — confirm club field preference
     },
+
     'Italy': {
+        # ⚠ QUALIFICATION STATUS: IN UEFA PLAYOFF PATH A (semifinal TODAY, March 26)
+        # Italy vs Northern Ireland today; winner plays Wales/Bosnia final March 31
         'Gianluigi Donnarumma': {'club': 'Manchester City', 'age': 27},
         'Guglielmo Vicario': {'club': 'Arsenal', 'age': 29},
+        # ⚠ NOTE: Vicario moved from Tottenham — confirm current club
         'Alessandro Bastoni': {'club': 'Inter Milan', 'age': 26},
         'Riccardo Calafiori': {'club': 'Arsenal', 'age': 23},
         'Alessandro Buongiorno': {'club': 'Napoli', 'age': 26},
@@ -428,20 +532,31 @@ rosters_2026 = {
         'Saša Lukić': {'club': 'Fulham', 'age': 29},
         'Predrag Rajković': {'club': 'Al-Ittihad', 'age': 30},
         'Filip Kostić': {'club': 'Fenerbahçe', 'age': 33},
-        'Andrija Živković': {'club': 'PAOK', 'age': 29},
+        'Andrija Živković': {'club': 'PAOK', 'age': 29}
     },
-
+    'Chile': {
+        'Thomas Gillier': {'club': 'CF Montréal', 'age': 21},
+        'Gabriel Alonso Suazo Urbina': {'club': 'Toulouse', 'age': 28},
+        'Guillermo Alfonso Maripán Loaysa': {'club': 'Torino', 'age': 31},
+        'Benjamin Anthony Brereton Díaz': {'club': 'Southampton', 'age': 26},
+        'Darío Esteban Osorio Osorio': {'club': 'Midtjylland', 'age': 22},
+        'Vicente Felipe Pizarro Wiencke': {'club': 'Colo-Colo', 'age': 23},
+        'Rodrigo Eduardo Echeverría Sáez': {'club': 'Huracán', 'age': 30},
+        'Felipe Loyola Olea': {'club': 'Independiente', 'age': 25},
+        'Alexander Antonio Aravena Guzmán': {'club': 'Grêmio', 'age': 23},
+        'Lucas Antonio Cepeda Barturen': {'club': 'Colo-Colo', 'age': 23}
+    },
     'Paraguay': {
         'Miguel Ángel Almirón Rejala': {'club': 'Atlanta United', 'age': 32},
-        'Julio César Enciso Espínola': {'club': 'Strasbourg', 'age': 22},
-        'Arnaldo Antonio Sanabria Ayala': {'club': 'Cremonese', 'age': 30},
+        'Julio César Enciso Espínola': {'club': 'Brighton & Hove Albion', 'age': 22},
+        'Arnaldo Antonio Sanabria Ayala': {'club': 'Torino', 'age': 30},
         'Gustavo Raúl Gómez Portillo': {'club': 'Palmeiras', 'age': 32},
-        'Diego Alexander Gómez Amarilla': {'club': 'Brighton', 'age': 23},
-        'Omar Federico Alderete Fernández': {'club': 'Sunderland', 'age': 29},
-        'Ramón Sosa Acosta': {'club': 'Palmeiras', 'age': 26},
+        'Diego Alexander Gómez Amarilla': {'club': 'Inter Miami', 'age': 23},
+        'Omar Federico Alderete Fernández': {'club': 'Getafe', 'age': 29},
+        'Ramón Sosa Acosta': {'club': 'Nottingham Forest', 'age': 26},
         'Carlos Miguel Coronel': {'club': 'New York Red Bulls', 'age': 29},
         'Mathías Adalberto Villasanti Brítez': {'club': 'Grêmio', 'age': 29},
-        'Damián Josué Bobadilla Benítez': {'club': 'São Paulo', 'age': 24},
+        'Damián Josué Bobadilla Benítez': {'club': 'São Paulo', 'age': 24}
     },
     'Morocco': {
         'Yassine Bounou': {'club': 'Al-Hilal', 'age': 34},
@@ -454,7 +569,7 @@ rosters_2026 = {
         'Ismael Saibari Ben El Basra': {'club': 'PSV Eindhoven', 'age': 25},
         'Youssef En-Nesyri': {'club': 'Al Ittihad', 'age': 28},
         'Abdessamad Ezzalzouli': {'club': 'Real Betis', 'age': 24},
-        'Bilal El Khannouss': {'club': 'Leicester City', 'age': 21},
+        'Bilal El Khannouss': {'club': 'Leicester City', 'age': 21}
     },
     'Australia': {
         'Mathew David Ryan': {'club': 'Roma', 'age': 33},
@@ -465,8 +580,32 @@ rosters_2026 = {
         'Jordan Bos': {'club': 'Westerlo', 'age': 23},
         'Nestory Irankunda': {'club': 'Bayern Munich', 'age': 20},
         'Martin Boyle': {'club': 'Hibernian', 'age': 32},
-        "Aiden Connor O'Neill": {'club': 'Standard Liège', 'age': 27},
-        'Max Balard': {'club': 'NAC Breda', 'age': 25},
+        'Aiden Connor O\'Neill': {'club': 'Standard Liège', 'age': 27},
+        'Max Balard': {'club': 'NAC Breda', 'age': 25}
+    },
+    'Chile': {
+        'Thomas Gillier': {'club': 'Universidad Católica', 'age': 21},
+        'Gabriel Alonso Suazo Urbina': {'club': 'Toulouse', 'age': 28},
+        'Guillermo Alfonso Maripán Loaysa': {'club': 'Torino', 'age': 31},
+        'Benjamin Anthony Brereton Díaz': {'club': 'Derby County', 'age': 26},
+        'Darío Esteban Osorio Osorio': {'club': 'Midtjylland', 'age': 22},
+        'Vicente Felipe Pizarro Wiencke': {'club': 'Colo-Colo', 'age': 23},
+        'Rodrigo Eduardo Echeverría Sáez': {'club': 'Huracán', 'age': 30},
+        'Felipe Loyola Olea': {'club': 'Independiente', 'age': 25},
+        'Alexander Antonio Aravena Guzmán': {'club': 'Portland Timbers', 'age': 23},
+        'Lucas Antonio Cepeda Barturen': {'club': 'Elche', 'age': 23}
+    },
+    'Paraguay': {
+        'Miguel Ángel Almirón Rejala': {'club': 'Atlanta United', 'age': 32},
+        'Julio César Enciso Espínola': {'club': 'Strasbourg', 'age': 22},
+        'Arnaldo Antonio Sanabria Ayala': {'club': 'Cremonese', 'age': 30},
+        'Gustavo Raúl Gómez Portillo': {'club': 'Palmeiras', 'age': 32},
+        'Diego Alexander Gómez Amarilla': {'club': 'Brighton', 'age': 23},
+        'Omar Federico Alderete Fernández': {'club': 'Sunderland', 'age': 29},
+        'Ramón Sosa Acosta': {'club': 'Palmeiras', 'age': 26},
+        'Carlos Miguel Coronel': {'club': 'New York Red Bulls', 'age': 29},
+        'Mathías Adalberto Villasanti Brítez': {'club': 'Grêmio', 'age': 29},
+        'Damián Josué Bobadilla Benítez': {'club': 'São Paulo', 'age': 24}
     },
     'DR Congo': {
         'Chancel Mbemba Mangulu': {'club': 'Lille', 'age': 31},
@@ -478,9 +617,9 @@ rosters_2026 = {
         'Lionel Mpasi-Nzau': {'club': 'Le Havre', 'age': 31},
         'Axel Tuanzebe': {'club': 'Burnley', 'age': 28},
         'Meschack Elia Lina': {'club': 'Alanyaspor', 'age': 28},
-        'Simon Banza': {'club': 'Al-Jazira', 'age': 29},
+        'Simon Banza': {'club': 'Al-Jazira', 'age': 29}
     },
-    "Côte d'Ivoire": {
+    'Côte d\'Ivoire': {
         'Franck Yannick Kessié': {'club': 'Al-Ahli', 'age': 29},
         'Sébastien Romain Teddy Haller': {'club': 'Leganés', 'age': 31},
         'Simon Adingra': {'club': 'Monaco', 'age': 24},
@@ -490,7 +629,7 @@ rosters_2026 = {
         'Seko Mohamed Fofana': {'club': 'Porto', 'age': 31},
         'Ibrahim Sangaré': {'club': 'Nottingham Forest', 'age': 28},
         'Evan Guessand': {'club': 'Crystal Palace', 'age': 24},
-        'Nicolas Pépé': {'club': 'Villarreal', 'age': 30},
+        'Nicolas Pépé': {'club': 'Villarreal', 'age': 30}
     },
     'Cape Verde': {
         'Ryan Isaac Mendes da Graça': {'club': 'Iğdır', 'age': 36},
@@ -502,7 +641,7 @@ rosters_2026 = {
         'Ieltsin Camões': {'club': 'Al Ahly', 'age': 26},
         'Deroy Duarte': {'club': 'Ludogorets Razgrad', 'age': 26},
         'Kevin Lenini Gonçalves Pereira Pina': {'club': 'FK Krasnodar', 'age': 29},
-        'Roberto Lopes': {'club': 'Shamrock Rovers', 'age': 33},
+        'Roberto Lopes': {'club': 'Shamrock Rovers', 'age': 33}
     },
     'Egypt': {
         'Mohamed Salah Hamed Mahrous Ghaly': {'club': 'Liverpool', 'age': 33},
@@ -514,7 +653,7 @@ rosters_2026 = {
         'Mohamed El-Shenawy': {'club': 'Al Ahly', 'age': 37},
         'Hamdi Fathi': {'club': 'Al-Wakrah', 'age': 31},
         'Ramy Rabia': {'club': 'Al Ahly', 'age': 32},
-        'Ibrahim Adel': {'club': 'Pyramids', 'age': 24},
+        'Ibrahim Adel': {'club': 'Pyramids', 'age': 24}
     },
     'South Africa': {
         'Ronwen Williams': {'club': 'Mamelodi Sundowns', 'age': 34},
@@ -526,7 +665,7 @@ rosters_2026 = {
         'Relebohile Mofokeng': {'club': 'Orlando Pirates', 'age': 21},
         'Aubrey Modiba': {'club': 'Mamelodi Sundowns', 'age': 30},
         'Siyabonga Ngezana': {'club': 'FCSB', 'age': 28},
-        'Themba Zwane': {'club': 'Mamelodi Sundowns', 'age': 36},
+        'Themba Zwane': {'club': 'Mamelodi Sundowns', 'age': 36}
     },
     'Mali': {
         'Yves Bissouma': {'club': 'Tottenham Hotspur', 'age': 29},
@@ -538,7 +677,7 @@ rosters_2026 = {
         'Mohamed Camara': {'club': 'Al Sadd', 'age': 26},
         'Mamadou Fofana': {'club': 'New England Revolution', 'age': 28},
         'Djigui Diarra': {'club': 'Young Africans', 'age': 31},
-        'Lassana Coulibaly': {'club': 'Lecce', 'age': 30},
+        'Lassana Coulibaly': {'club': 'Lecce', 'age': 30}
     },
     'Cameroon': {
         'André Onana Onana': {'club': 'Manchester United', 'age': 29},
@@ -550,7 +689,7 @@ rosters_2026 = {
         'Jean Charles Castelletto': {'club': 'Al Duhail', 'age': 31},
         'Georges-Kévin Nkoudou': {'club': 'Al Diriyah', 'age': 31},
         'Frank Magri': {'club': 'Toulouse', 'age': 26},
-        'Jackson Tchatchoua': {'club': 'Hellas Verona', 'age': 24},
+        'Jackson Tchatchoua': {'club': 'Hellas Verona', 'age': 24}
     },
     'Czech Republic': {
         'Patrik Schick': {'club': 'Bayer Leverkusen', 'age': 30},
@@ -562,9 +701,20 @@ rosters_2026 = {
         'Vladimír Coufal': {'club': 'West Ham', 'age': 33},
         'Václav Černý': {'club': 'Rangers', 'age': 28},
         'Robin Hranáč': {'club': 'Hoffenheim', 'age': 26},
-        'Tomáš Holeš': {'club': 'Slavia Prague', 'age': 32},
+        'Tomáš Holeš': {'club': 'Slavia Prague', 'age': 32}
     },
-
+    'Albania': {
+        'Armando Broja': {'club': 'Everton', 'age': 24},
+        'Kristjan Asllani': {'club': 'Inter Milan', 'age': 24},
+        'Nedim Bajrami': {'club': 'Rangers', 'age': 27},
+        'Berat Ridvan Gjimshiti': {'club': 'Atalanta', 'age': 33},
+        'Thomas Strakosha': {'club': 'AEK Athens', 'age': 31},
+        'Mario Mitaj': {'club': 'Al-Ittihad', 'age': 22},
+        'Ylber Ramadani': {'club': 'Lecce', 'age': 29},
+        'Rey Manaj': {'club': 'Sivasspor', 'age': 29},
+        'Jasir Asani': {'club': 'Gwangju FC', 'age': 30},
+        'Ernest Muçi': {'club': 'Beşiktaş', 'age': 25}
+    },
     'Denmark': {
         'Rasmus Winther Højlund': {'club': 'Manchester United', 'age': 23},
         'Pierre-Emile Kordt Højbjerg': {'club': 'Marseille', 'age': 30},
@@ -575,7 +725,7 @@ rosters_2026 = {
         'Victor Bak Jensen': {'club': 'FC Midtjylland', 'age': 22},
         'Anders Dreyer': {'club': 'San Diego FC', 'age': 27},
         'William Osula': {'club': 'Newcastle United', 'age': 22},
-        'Kasper Schmeichel': {'club': 'Celtic', 'age': 39},
+        'Kasper Schmeichel': {'club': 'Celtic', 'age': 39}
     },
     'Ukraine': {
         'Andriy Lunin': {'club': 'Real Madrid', 'age': 27},
@@ -587,10 +737,10 @@ rosters_2026 = {
         'Viktor Tsygankov': {'club': 'Girona', 'age': 28},
         'Vitaliy Mykolenko': {'club': 'Everton', 'age': 26},
         'Anatoliy Trubin': {'club': 'Benfica', 'age': 24},
-        'Yukhym Konoplya': {'club': 'Shakhtar Donetsk', 'age': 26},
+        'Yukhym Konoplya': {'club': 'Shakhtar Donetsk', 'age': 26}
     },
     'South Korea': {
-        'Heung-Min Son': {'club': 'Tottenham Hotspur', 'age': 33},
+        'Son Heung-min': {'club': 'Tottenham Hotspur', 'age': 33},
         'Kim Min-jae': {'club': 'Bayern Munich', 'age': 29},
         'Lee Kang-in': {'club': 'Paris Saint-Germain', 'age': 25},
         'Hwang Hee-chan': {'club': 'Wolves', 'age': 30},
@@ -599,7 +749,7 @@ rosters_2026 = {
         'Seol Young-woo': {'club': 'Red Star Belgrade', 'age': 27},
         'Lee Jae-sung': {'club': 'Mainz 05', 'age': 33},
         'Jo Hyeon-woo': {'club': 'Ulsan HD', 'age': 34},
-        'Bae Jun-ho': {'club': 'Stoke City', 'age': 22},
+        'Bae Jun-ho': {'club': 'Stoke City', 'age': 22}
     },
     'Iran': {
         'Mehdi Taremi': {'club': 'Inter Milan', 'age': 33},
@@ -611,7 +761,7 @@ rosters_2026 = {
         'Milad Mohammadi': {'club': 'Persepolis', 'age': 32},
         'Shojae Khalilzadeh': {'club': 'Tractor', 'age': 36},
         'Mehdi Ghayedi': {'club': 'Ittihad Kalba', 'age': 27},
-        'Majid Hosseini': {'club': 'Kayserispor', 'age': 29},
+        'Majid Hosseini': {'club': 'Kayserispor', 'age': 29}
     },
     'Saudi Arabia': {
         'Salem Mohammed Al Dawsari': {'club': 'Al-Hilal', 'age': 34},
@@ -623,9 +773,20 @@ rosters_2026 = {
         'Faisal Al-Ghamdi': {'club': 'Beerschot', 'age': 24},
         'Sultan Al-Ghannam': {'club': 'Al-Nassr', 'age': 31},
         'Mohamed Kanno': {'club': 'Al-Hilal', 'age': 31},
-        'Musab Al-Juwayr': {'club': 'Al Qadisiyah', 'age': 22},
+        'Musab Al-Juwayr': {'club': 'Al Qadisiyah', 'age': 22}
     },
-
+    'Romania': {
+        'Radu Matei Drăgușin': {'club': 'Tottenham Hotspur', 'age': 24},
+        'Răzvan Gabriel Marin': {'club': 'Cagliari', 'age': 29},
+        'Dennis Man': {'club': 'Parma', 'age': 27},
+        'Nicolae Claudiu Stanciu': {'club': 'Damac', 'age': 32},
+        'Andrei Florin Rațiu': {'club': 'Rayo Vallecano', 'age': 27},
+        'Valentin Mihăilă': {'club': 'Parma', 'age': 26},
+        'Horațiu Moldovan': {'club': 'Sassuolo', 'age': 28},
+        'Andrei Burcă': {'club': 'Baniyas', 'age': 32},
+        'Denis Drăguș': {'club': 'Trabzonspor', 'age': 26},
+        'Ianis Hagi': {'club': 'Rangers', 'age': 27}
+    },
     'Hungary': {
         'Dominik Szoboszlai': {'club': 'Liverpool', 'age': 25},
         'Roland Sallai': {'club': 'Galatasaray', 'age': 28},
@@ -636,7 +797,7 @@ rosters_2026 = {
         'Martin Ádám': {'club': 'Asteras Tripolis', 'age': 31},
         'Loïc Négo': {'club': 'Le Havre', 'age': 35},
         'András Schäfer': {'club': 'Union Berlin', 'age': 26},
-        'Bendegúz Bolla': {'club': 'Rapid Vienna', 'age': 26},
+        'Bendegúz Bolla': {'club': 'Rapid Vienna', 'age': 26}
     },
     'Qatar': {
         'Akram Hassan Afif Yahya Afif': {'club': 'Al-Sadd', 'age': 29},
@@ -648,131 +809,7 @@ rosters_2026 = {
         'Boualem Khoukhi': {'club': 'Al-Sadd', 'age': 35},
         'Bassam Al-Rawi': {'club': 'Al-Duhail', 'age': 28},
         'Hassan Al-Haydos': {'club': 'Al-Sadd', 'age': 35},
-        'Ahmed Al-Rawi': {'club': 'Al-Rayyan', 'age': 21},
-    },
-    'Algeria': {
-        'Anthony Louis Mandrea': {'club': 'Caen', 'age': 29},
-        'Rayan Aït-Nouri': {'club': 'Liverpool', 'age': 24},
-        'Ramy Bensebaïni': {'club': 'Borussia Dortmund', 'age': 30},
-        'Aïssa Mandi': {'club': 'Lille', 'age': 34},
-        'Houssem Eddine Chaâbane Aouar': {'club': 'Al-Ittihad', 'age': 27},
-        'Ramiz Aydoğan Zerrouki': {'club': 'Feyenoord', 'age': 27},
-        'Farès Chaïbi': {'club': 'Eintracht Frankfurt', 'age': 23},
-        'Riyad Karim Mahrez': {'club': 'Al-Ahli', 'age': 35},
-        'Mohamed Amine Amoura': {'club': 'VfL Wolfsburg', 'age': 25},
-        'Said Benrahma': {'club': 'Lyon', 'age': 30},
-        'Amine Gouiri': {'club': 'Rennes', 'age': 26}
-    },
-    'Tunisia': {
-        'Aymen Dahmen': {'club': 'CS Sfaxien', 'age': 29},
-        'Montassar Omar Talbi': {'club': 'Lorient', 'age': 27},
-        'Alaa Ghram': {'club': 'Shakhtar Donetsk', 'age': 24},
-        'Ali Abdi': {'club': 'Nice', 'age': 32},
-        'Ellyes Joris Skhiri': {'club': 'Eintracht Frankfurt', 'age': 30},
-        'Aïssa Bilal Laïdouni': {'club': 'Al-Wakrah', 'age': 29},
-        'Hannibal Mejbri': {'club': 'Burnley', 'age': 23},
-        'Elias Achouri': {'club': 'FC Copenhagen', 'age': 27},
-        'Youssef Msakni': {'club': 'Al-Arabi', 'age': 35},
-        'Mohamed Ali Ben Romdhane': {'club': 'Al Ahly', 'age': 26},
-        'Ismaël Gharbi': {'club': 'Augsburg', 'age': 21}
-    },
-    'Haiti': {
-        'Johny Placide': {'club': 'Bastia', 'age': 37},
-        'Jean-Kevin Duverne': {'club': 'Nantes', 'age': 28},
-        'Ricardo Adé': {'club': 'LDU Quito', 'age': 35},
-        'Carlens Arcus': {'club': 'Angers', 'age': 29},
-        'Duckens Moses Nazon': {'club': 'Esteghlal', 'age': 31},
-        'Frantzdy Pierrot': {'club': 'AEK Athens', 'age': 31},
-        'Jean-Ricner Bellegarde': {'club': 'Wolverhampton Wanderers', 'age': 27},
-        'Danley Jean Jacques': {'club': 'Philadelphia Union', 'age': 25},
-        'Garissone Innocent': {'club': 'Riteriai', 'age': 25},
-        'Don Deedson Louicius': {'club': 'FC Dallas', 'age': 25}
-    },
-    'Norway': {
-        'Ørjan Håskjold Nyland': {'club': 'Sevilla', 'age': 35},
-        'Julian Ryerson': {'club': 'Borussia Dortmund', 'age': 28},
-        'Leo Skiri Østigård': {'club': 'Napoli', 'age': 26},
-        'Kristoffer Vassbakk Ajer': {'club': 'Brentford', 'age': 27},
-        'Martin Ødegaard': {'club': 'Arsenal', 'age': 27},
-        'Sander Gard Bolin Berge': {'club': 'Fulham', 'age': 28},
-        'Oscar Bobb': {'club': 'Manchester City', 'age': 22},
-        'Erling Haaland': {'club': 'Manchester City', 'age': 25},
-        'Alexander Sørloth': {'club': 'Atlético Madrid', 'age': 30},
-        'Antonio Nusa': {'club': 'RB Leipzig', 'age': 20},
-        'Patrick Berg': {'club': 'Bodø/Glimt', 'age': 28}
-    },
-    'New Zealand': {
-        'Alex Paulsen': {'club': 'Lechia Gdańsk', 'age': 23},
-        'Liberato Gianpaolo Cacace': {'club': 'Empoli', 'age': 25},
-        'Finn Surman': {'club': 'Portland Timbers', 'age': 22},
-        'Tyler James Linder Bindon': {'club': 'Sheffield United', 'age': 21},
-        'Marko Stamenić': {'club': 'Swansea City', 'age': 24},
-        'Matthew Robert Garbett': {'club': 'NAC Breda', 'age': 23},
-        'Benjamin Old': {'club': 'Saint-Étienne', 'age': 23},
-        'Christopher Grant Wood': {'club': 'Nottingham Forest', 'age': 34},
-        'Kosta Barbarouses': {'club': 'Western Sydney Wanderers', 'age': 36},
-        'Ben Waine': {'club': 'Port Vale', 'age': 24}
-    },
-    'Uzbekistan': {
-        'Utkir Yusupov': {'club': 'Foolad', 'age': 35},
-        'Abdukodir Khusanov': {'club': 'Manchester City', 'age': 22},
-        'Rustamjon Ashurmatov': {'club': 'Rubin Kazan', 'age': 29},
-        'Ibrokhimkhalil Yuldoshev': {'club': 'Kairat', 'age': 25},
-        'Otabek Shukurov': {'club': 'Al-Fayha', 'age': 29},
-        'Odiljon Hamrobekov': {'club': 'Navbahor', 'age': 30},
-        'Abbosbek Fayzullaev': {'club': 'CSKA Moscow', 'age': 22},
-        'Eldor Azamat oʻgʻli Shomurodov': {'club': 'Istanbul Basaksehir', 'age': 30},
-        'Jaloliddin Masharipov': {'club': 'Esteghlal', 'age': 32},
-        'Oston Urunov': {'club': 'Persepolis', 'age': 25}
-    },
-    'Jordan': {
-        'Yazeed Abulaila': {'club': 'Al-Hussein', 'age': 33},
-        'Yazan Al-Arab': {'club': 'FC Seoul', 'age': 30},
-        'Abdallah Nasib': {'club': 'Al-Hussein', 'age': 32},
-        'Noor Al-Rawabdeh': {'club': 'Selangor', 'age': 29},
-        'Mousa Mohammad Al-Tamari': {'club': 'Rennes', 'age': 28},
-        'Mahmoud Al-Mardi': {'club': 'Al-Hussein', 'age': 32},
-        'Ali Olwan': {'club': 'Al Shabab Riyadh', 'age': 26},
-        'Yazan Al-Naimat': {'club': 'Al-Arabi', 'age': 26},
-        'Nizar Al-Rashdan': {'club': 'Qatar SC', 'age': 27},
-        'Ibrahim Sabra': {'club': 'NK Lokomotiva Zagreb', 'age': 19}
-    },
-    'Curaçao': {
-        'Eloy Victor Room': {'club': 'Miami FC', 'age': 37},
-        'Joshua Benjamin Brenet': {'club': 'Kayserispor', 'age': 32},
-        'Sherel Floranus': {'club': 'PEC Zwolle', 'age': 27},
-        'Leandro Jones Johan Bacuna': {'club': 'Iğdır', 'age': 34},
-        'Juninho Bacuna': {'club': 'Gaziantep', 'age': 28},
-        'Godfried Roemeratoe': {'club': 'RKC Waalwijk', 'age': 26},
-        'Tahith Chong': {'club': 'Sheffield United', 'age': 26},
-        'Livano Comenencia': {'club': 'Zürich', 'age': 22},
-        'Juriën Gaari': {'club': 'Abha', 'age': 32},
-        'Rangelo Janga': {'club': 'Nea Salamis', 'age': 33}
-    },
-    'Panama': {
-        'Orlando Mosquera': {'club': 'Al-Fayha', 'age': 31},
-        'José Córdoba': {'club': 'Norwich City', 'age': 24},
-        'Michael Amir Murillo': {'club': 'Marseille', 'age': 30},
-        'Adalberto Carrasquilla': {'club': 'Houston Dynamo', 'age': 27},
-        'Aníbal Godoy': {'club': 'San Diego FC', 'age': 36},
-        'Édgar Bárcenas': {'club': 'Mazatlán', 'age': 32},
-        'Ismael Díaz': {'club': 'Universidad Católica (Ecuador)', 'age': 28},
-        'José Luis Rodríguez': {'club': 'Juárez', 'age': 27},
-        'José Fajardo': {'club': 'Universidad Católica (Ecuador)', 'age': 32},
-        'César Blackman': {'club': 'Slovan Bratislava', 'age': 27}
-    },
-    'Scotland': {
-        'Angus Gunn': {'club': 'Norwich City', 'age': 30},
-        'Andrew Henry Robertson': {'club': 'Liverpool', 'age': 32},
-        'Scott McTominay': {'club': 'Napoli', 'age': 29},
-        'John McGinn': {'club': 'Aston Villa', 'age': 31},
-        'Billy Gilmour': {'club': 'Napoli', 'age': 24},
-        'Lewis Ferguson': {'club': 'Bologna', 'age': 26},
-        'Ben Doak': {'club': 'Middlesbrough', 'age': 20},
-        'Che Adams': {'club': 'Torino', 'age': 29},
-        'Lawrence Shankland': {'club': 'Hearts', 'age': 30},
-        'Kieran Tierney': {'club': 'Arsenal', 'age': 28},
-        'Ryan Christie': {'club': 'Bournemouth', 'age': 31}
+        'Ahmed Al-Rawi': {'club': 'Al-Rayyan', 'age': 21}
     }
-
+    
 }

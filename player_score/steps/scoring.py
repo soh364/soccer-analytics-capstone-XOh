@@ -4,26 +4,26 @@ Step 7 & 8: Intra-Archetype Percentile Scoring + Composite Score Assembly
 Order of operations:
 1. Join all files on (player, season_name) to build a unified player-season table
 2. Decay-weighted collapse: for each metric, compute weighted mean across seasons
+   → one row per player
 3. Intra-archetype percentile rank for each metric (0-100)
-4. Position-weighted category scores
-5. Club tier discount applied to composite score
+4. Trait category scores: mean of metric percentiles within each category
+5. Composite score: position-weighted mean of 4 trait category scores
+6. Club tier discount
+7. Age multiplier (penalise players over 29)
+8. Coverage tier classification
 """
 
 import polars as pl
 import pandas as pd
 import numpy as np
-from typing import Dict, Optional
+from typing import Dict
 from player_metrics_config import PLAYER_METRICS, TRAIT_CATEGORIES
-from rosters_2026 import rosters_2026
+from player_score.rosters_2026 import rosters_2026
+from player_score.player_position_map import get_player_position_map
 
-# Metric key → norm column name
-METRIC_NORM_COLS = {k: f"{k}_norm" for k in PLAYER_METRICS}
-
-# Which file each norm column lives in
-METRIC_FILE = {k: v["file"] for k, v in PLAYER_METRICS.items()}
-
-JOIN_KEYS = ["player", "team", "season_name", "position_archetype",
-             "archetype_label", "decay_weight", "shrinkage_flag"]
+# ---------------------------------------------------------------------------
+# Constants
+# ---------------------------------------------------------------------------
 
 SEASON_NORMALISE = {
     "2022": "2021/2022",
@@ -31,7 +31,6 @@ SEASON_NORMALISE = {
     "2024": "2023/2024",
 }
 
-# Position-specific category weights
 ARCHETYPE_WEIGHTS = {
     "FW": {"Mobility_Intensity": 0.05, "Progression": 0.20, "Control": 0.05, "Final_Third_Output": 0.70},
     "W":  {"Mobility_Intensity": 0.15, "Progression": 0.40, "Control": 0.10, "Final_Third_Output": 0.35},
@@ -101,105 +100,99 @@ COMPETITION_MULTIPLIERS = {
     "FIFA World Cup":        0.75,
     "UEFA Euro":             0.75,
     "Copa America":          0.70,
-    "African Cup of Nations":0.65,
+    "African Cup of Nations": 0.65,
     "FIFA U20 World Cup":    0.50,
     "__default__":           0.65,
 }
 
-
-def _compute_coverage_tier(row: pd.Series) -> str:
-    """
-    Classify player data quality for transparency.
-    """
-    seasons = row.get("seasons_present", [])
-    competition = row.get("competition_name", "")
-    n_seasons = len(seasons) if isinstance(seasons, list) else 1
-    
-    CLUB_COMPETITIONS = {
-        "La Liga", "Premier League", "Serie A", 
-        "1. Bundesliga", "Ligue 1", "Champions League",
-        "UEFA Europa League", "Liga Profesional",
-        "Major League Soccer"
-    }
-    
-    TOURNAMENT_COMPETITIONS = {
-        "FIFA World Cup", "UEFA Euro", "Copa America",
-        "African Cup of Nations", "FIFA U20 World Cup"
-    }
-    
-    has_club_data = competition in CLUB_COMPETITIONS
-    has_tournament_only = competition in TOURNAMENT_COMPETITIONS
-    
-    if n_seasons >= 2 and has_club_data:
-        return "A"  # Strong — multiple seasons of club data
-    elif n_seasons >= 1 and has_club_data:
-        return "B"  # Moderate — single season of club data
-    elif has_tournament_only:
-        return "C"  # Limited — tournament data only
-    else:
-        return "D"  # Weak — unknown/mixed coverage
-
-def _compute_confidence(row: pd.Series) -> float:
-    tier = row.get("coverage_tier", "D")
-    if tier == "A":
-        return 1.00
-    elif tier == "B":
-        return 0.97
-    elif tier == "C":
-        return 0.90  # light penalty for tournament-only
-    else:
-        return 0.80  # D tier
-
-def get_club_multiplier(player_name: str, competition_name: str = None) -> float:
-    # Priority 1 — roster lookup (current club)
-    club = PLAYER_CLUB_MAP.get(player_name)
-    if club is not None:
-        for tier, clubs in CLUB_TIERS.items():
-            if club in clubs:
-                return CLUB_MULTIPLIERS[tier]
-        return CLUB_MULTIPLIERS["__default__"]
-
-    # Priority 2 — competition fallback
-    if competition_name:
-        return COMPETITION_MULTIPLIERS.get(
-            competition_name,
-            COMPETITION_MULTIPLIERS["__default__"]
-        )
-
-    # Priority 3 — unknown everything
-    return COMPETITION_MULTIPLIERS["__default__"]
-
+# ---------------------------------------------------------------------------
+# Module-level lookups — built once at import
+# ---------------------------------------------------------------------------
 
 def build_player_club_map() -> dict:
-    """Flatten rosters_2026 into player -> current club lookup."""
     player_club = {}
     for country, players in rosters_2026.items():
         for player_name, info in players.items():
             player_club[player_name] = info["club"]
     return player_club
 
-PLAYER_CLUB_MAP = build_player_club_map()
 
+def build_player_age_map() -> dict:
+    player_age = {}
+    for country, players in rosters_2026.items():
+        for player_name, info in players.items():
+            player_age[player_name] = info.get("age", 27)
+    return player_age
+
+
+PLAYER_CLUB_MAP = build_player_club_map()
+PLAYER_AGE_MAP = build_player_age_map()
+
+# Position map is lazy-loaded on first use via get_player_position_map()
+
+# ---------------------------------------------------------------------------
+# Helper functions
+# ---------------------------------------------------------------------------
 
 def get_club_multiplier(player_name: str, competition_name: str = None) -> float:
-    # Priority 1 — roster lookup (current club)
+    """Club quality multiplier — roster lookup first, competition fallback."""
     club = PLAYER_CLUB_MAP.get(player_name)
     if club is not None:
         for tier, clubs in CLUB_TIERS.items():
             if club in clubs:
                 return CLUB_MULTIPLIERS[tier]
         return CLUB_MULTIPLIERS["__default__"]
-
-    # Priority 2 — competition fallback
     if competition_name:
-        return COMPETITION_MULTIPLIERS.get(
-            competition_name,
-            COMPETITION_MULTIPLIERS["__default__"]
-        )
-
-    # Priority 3 — unknown everything
+        return COMPETITION_MULTIPLIERS.get(competition_name, COMPETITION_MULTIPLIERS["__default__"])
     return COMPETITION_MULTIPLIERS["__default__"]
 
+
+def get_age_multiplier(age: int) -> float:
+    """Only penalise players past peak (30+). Never penalise youth."""
+    if age <= 29:
+        return 1.00
+    elif age <= 31:
+        return 0.97
+    elif age <= 33:
+        return 0.93
+    elif age <= 35:
+        return 0.88
+    else:
+        return 0.82
+
+
+def _compute_coverage_tier(row: pd.Series) -> str:
+    seasons = row.get("seasons_present", [])
+    competition = row.get("competition_name", "")
+    n_seasons = len(seasons) if isinstance(seasons, list) else 1
+
+    CLUB_COMPETITIONS = {
+        "La Liga", "Premier League", "Serie A", "1. Bundesliga",
+        "Ligue 1", "Champions League", "UEFA Europa League",
+        "Liga Profesional", "Major League Soccer",
+    }
+    TOURNAMENT_COMPETITIONS = {
+        "FIFA World Cup", "UEFA Euro", "Copa America",
+        "African Cup of Nations", "FIFA U20 World Cup",
+    }
+
+    if n_seasons >= 2 and competition in CLUB_COMPETITIONS:
+        return "A"
+    elif n_seasons >= 1 and competition in CLUB_COMPETITIONS:
+        return "B"
+    elif competition in TOURNAMENT_COMPETITIONS:
+        return "C"
+    else:
+        return "D"
+
+
+def _compute_confidence(row: pd.Series) -> float:
+    tier = row.get("coverage_tier", "D")
+    return {"A": 1.00, "B": 0.97, "C": 0.90, "D": 0.80}.get(tier, 0.80)
+
+# ---------------------------------------------------------------------------
+# Pipeline steps
+# ---------------------------------------------------------------------------
 
 def _normalise_seasons(df: pd.DataFrame) -> pd.DataFrame:
     if "season_name" in df.columns:
@@ -242,7 +235,7 @@ def _build_unified_table(segmented: Dict[str, pl.DataFrame]) -> pd.DataFrame:
                 sub[right_cols],
                 on=join_on,
                 how="outer",
-                suffixes=("", "_right")
+                suffixes=("", "_right"),
             )
 
             if "team_right" in base.columns:
@@ -258,10 +251,16 @@ def _build_unified_table(segmented: Dict[str, pl.DataFrame]) -> pd.DataFrame:
 
 
 def _decay_collapse(unified: pd.DataFrame) -> pd.DataFrame:
-    
-    # Drop rows with null position_archetype before collapsing
+    # Fill null archetypes from events position map
+    player_position_map = get_player_position_map()
+    unified = unified.copy()
+    unified["position_archetype"] = unified["position_archetype"].fillna(
+        unified["player"].map(player_position_map)
+    )
+
+    # Drop rows still missing archetype
     unified = unified[unified["position_archetype"].notna()].copy()
-    
+
     norm_cols = [c for c in unified.columns if c.endswith("_norm")]
 
     if "decay_weight" not in unified.columns:
@@ -295,8 +294,6 @@ def _decay_collapse(unified: pd.DataFrame) -> pd.DataFrame:
             decay_weight_max=("decay_weight", "max"),
         )
         .reset_index()
-
-
     )
 
     # Override team with current club from roster
@@ -304,14 +301,15 @@ def _decay_collapse(unified: pd.DataFrame) -> pd.DataFrame:
         lambda p: PLAYER_CLUB_MAP.get(p, None)
     ).fillna(meta_agg["team"])
 
-    # Club weight — roster lookup first, competition fallback for unrostered players
+    # Club weight
     meta_agg["club_weight"] = meta_agg.apply(
-        lambda row: get_club_multiplier(
-            row["player"],
-            row.get("competition_name")
-        ),
-        axis=1
+        lambda row: get_club_multiplier(row["player"], row.get("competition_name")),
+        axis=1,
     )
+
+    # Age multiplier
+    meta_agg["age"] = meta_agg["player"].map(lambda p: PLAYER_AGE_MAP.get(p, 27))
+    meta_agg["age_multiplier"] = meta_agg["age"].apply(get_age_multiplier)
 
     norm_agg = (
         unified.groupby("player")
@@ -319,14 +317,10 @@ def _decay_collapse(unified: pd.DataFrame) -> pd.DataFrame:
         .reset_index()
     )
 
-    collapsed = meta_agg.merge(norm_agg, on="player", how="left")
-    return collapsed
+    return meta_agg.merge(norm_agg, on="player", how="left")
 
 
-def _intra_archetype_percentile(
-    collapsed: pd.DataFrame,
-    norm_col: str,
-) -> pd.Series:
+def _intra_archetype_percentile(collapsed: pd.DataFrame, norm_col: str) -> pd.Series:
     result = pd.Series(np.nan, index=collapsed.index)
 
     for archetype in collapsed["position_archetype"].dropna().unique():
@@ -344,11 +338,8 @@ def _intra_archetype_percentile(
 
     return result
 
-def _compute_category_score(
-    scored: pd.DataFrame,
-    category: str,
-    metric_keys: list,
-) -> pd.Series:
+
+def _compute_category_score(scored: pd.DataFrame, category: str, metric_keys: list) -> pd.Series:
     percentile_cols = [f"{k}_pct" for k in metric_keys if f"{k}_pct" in scored.columns]
 
     if not percentile_cols:
@@ -363,12 +354,10 @@ def _compute_category_score(
 
 
 def _compute_composite(row: pd.Series, category_scores: list) -> float:
-    """Compute position-weighted composite score for a single player."""
     archetype = row.get("position_archetype")
     weights = ARCHETYPE_WEIGHTS.get(archetype, None)
 
     if weights is None:
-        # Equal weights fallback
         vals = [row[s] for s in category_scores if pd.notna(row[s])]
         return np.mean(vals) if vals else np.nan
 
@@ -394,6 +383,9 @@ def _compute_composite(row: pd.Series, category_scores: list) -> float:
 
     return weighted_sum / total_weight if total_weight > 0 else np.nan
 
+# ---------------------------------------------------------------------------
+# Public interface
+# ---------------------------------------------------------------------------
 
 def build_scores(
     segmented: Dict[str, pl.DataFrame],
@@ -404,9 +396,9 @@ def build_scores(
         print("STEP 7 & 8: SCORING + COMPOSITE ASSEMBLY")
         print("=" * 60)
 
-    # Step 1: Build unified table
+    # Step 1: Unified table
     if verbose:
-        print("  [1/4] Building unified player-season table...")
+        print("  [1/5] Building unified player-season table...")
     unified = _build_unified_table(segmented)
     if verbose:
         print(f"         {len(unified):,} player-season rows, "
@@ -414,22 +406,24 @@ def build_scores(
 
     # Step 2: Decay-weighted collapse
     if verbose:
-        print("  [2/4] Collapsing seasons with decay weighting...")
+        print("  [2/5] Collapsing seasons with decay weighting...")
     collapsed = _decay_collapse(unified)
     if verbose:
         print(f"         {len(collapsed):,} players after collapse")
 
     # Step 3: Intra-archetype percentile per metric
+    if verbose:
+        print("  [3/5] Computing intra-archetype percentiles...")
     norm_cols = [c for c in collapsed.columns if c.endswith("_norm")]
     for norm_col in norm_cols:
         metric_key = norm_col.replace("_norm", "")
         collapsed[f"{metric_key}_pct"] = _intra_archetype_percentile(collapsed, norm_col)
-
+    if verbose:
+        print(f"         {len([c for c in collapsed.columns if c.endswith('_pct')])} percentile columns")
 
     # Step 4: Position-weighted category scores
     if verbose:
-        print("  [4/4] Computing position-weighted category scores...")
-
+        print("  [4/5] Computing category scores...")
     category_scores = []
     for category, metric_keys in TRAIT_CATEGORIES.items():
         score_col = f"{category}_score"
@@ -440,38 +434,53 @@ def build_scores(
             median = collapsed[score_col].median()
             print(f"         {category}: {valid:,} players, median={median:.1f}")
 
-    # Step 5: Position-weighted composite
+    # DEBUG — add here
+    pedri = collapsed[collapsed["player"] == "Pedro González López"]
+    norm_cols = [c for c in collapsed.columns if c.endswith("_norm")]
+    pedri = collapsed[collapsed["player"] == "Pedro González López"]
+    print(pedri[["player"] + norm_cols].T.dropna())
+    if len(pedri) > 0:
+        print(f"\nPedri category scores:")
+        print(pedri[["player", "position_archetype"] + category_scores].to_string())
+        coverage = pedri[category_scores].notna().sum(axis=1).values
+        print(f"Category coverage: {coverage}")
+    else:
+        print("Pedri not in collapsed at all")
+    # Step 5: Composite + discounts
+    if verbose:
+        print("  [5/5] Computing composite scores...")
+
     collapsed["composite_score"] = collapsed.apply(
         lambda row: _compute_composite(row, category_scores), axis=1
     )
 
-    # Step 6: Apply club tier discount last
-    if "club_weight" in collapsed.columns:
-        collapsed["composite_score"] = collapsed["composite_score"] * collapsed["club_weight"]
+    # Club tier discount
+    collapsed["composite_score"] = collapsed["composite_score"] * collapsed["club_weight"]
+
+    # Age multiplier
+    collapsed["composite_score"] = collapsed["composite_score"] * collapsed["age_multiplier"]
+
+    # Coverage tier
+    collapsed["coverage_tier"] = collapsed.apply(_compute_coverage_tier, axis=1)
+
+    # Confidence penalty
+    collapsed["confidence"] = collapsed.apply(_compute_confidence, axis=1)
+    collapsed["composite_score"] = collapsed["composite_score"] * collapsed["confidence"]
 
     if verbose:
         print(f"\n  Composite score: {len(collapsed):,} players")
         print(f"  min={collapsed['composite_score'].min():.1f}, "
               f"median={collapsed['composite_score'].median():.1f}, "
               f"max={collapsed['composite_score'].max():.1f}")
-        
-    collapsed["confidence"] = collapsed.apply(_compute_confidence, axis=1)
-    collapsed["composite_score"] = collapsed["composite_score"] * collapsed["confidence"]
 
     # Sort and rank
     collapsed = collapsed.sort_values("composite_score", ascending=False).reset_index(drop=True)
     collapsed.index = collapsed.index + 1
     collapsed.index.name = "rank"
 
-    # Require at least all 4 category scores
-    min_categories = 4
+    # Require at least 3 out of 4 category scores
     category_coverage = collapsed[category_scores].notna().sum(axis=1)
-    collapsed = collapsed[category_coverage >= min_categories].copy()
-
-    collapsed["coverage_tier"] = collapsed.apply(_compute_coverage_tier, axis=1)
-
-    roster_players = set(PLAYER_CLUB_MAP.keys())
-    collapsed = collapsed[collapsed["player"].isin(roster_players)].copy()
+    collapsed = collapsed[category_coverage >= 3].copy()
 
     return collapsed
 
@@ -481,38 +490,25 @@ def scoring_summary(scored: pd.DataFrame, top_n: int = 20) -> None:
     print(f"TOP {top_n} PLAYERS — COMPOSITE SCORE")
     print("=" * 60)
 
-    display_cols = ["player", "team", "position_archetype", "coverage_tier",
-                "composite_score", "Mobility_Intensity_score", 
-                "Progression_score", "Control_score", 
-                "Final_Third_Output_score"]
-    display_cols = [c for c in display_cols if c in scored.columns]
-    print(scored[display_cols].head(top_n).to_string())
+    # Sort by final_score if available, else composite_score
+    sort_col = 'final_score' if 'final_score' in scored.columns else 'composite_score'
+    scored_display = scored.sort_values(sort_col, ascending=False)
 
-    print("\n" + "=" * 60)
-    print("ARCHETYPE BREAKDOWN — MEDIAN COMPOSITE SCORE")
-    print("=" * 60)
-    breakdown = (
-        scored.groupby("position_archetype")["composite_score"]
-        .agg(["count", "median", "mean", "std"])
-        .round(1)
-        .sort_values("median", ascending=False)
-    )
-    print(breakdown.to_string())
+    display_cols = ["player", "team", "position_archetype", "coverage_tier", "age",
+                    "composite_score", "final_score", "Mobility_Intensity_score", 
+                    "Progression_score", "Control_score", "Final_Third_Output_score"]
+    display_cols = [c for c in display_cols if c in scored.columns]
+    print(scored_display[display_cols].head(top_n).to_string())
+
 
 def apply_guardian_blend(
     scored: pd.DataFrame,
-    guardian_weight: float = 0.15,
     verbose: bool = True,
 ) -> pd.DataFrame:
     from guardians_2025 import TOP_100
 
-    def guardian_rank_to_score(rank: int, total: int = 100) -> float:
-        """
-        Tiered guardian scoring:
-        Top 10:  Rank 1 → 90, Rank 10 → 83  (elite, high signal)
-        Top 30:  Rank 11 → 82, Rank 30 → 72  (very good)
-        Rest:    Rank 31 → 71, Rank 100 → 55  (good but more uncertainty)
-        """
+    def guardian_rank_to_score(rank: int) -> float:
+        """Tiered scoring: top 10 get higher signal."""
         if rank <= 10:
             return 90 - (rank - 1) * (7 / 9)
         elif rank <= 30:
@@ -520,40 +516,41 @@ def apply_guardian_blend(
         else:
             return 71 - (rank - 31) * (16 / 69)
 
-    def guardian_only_score(rank: int, total: int = 100) -> float:
-        """
-        Guardian-only players:
-        Top 10: capped at 65 (just below strong model players)
-        Rest: capped at 40
-        """
+    def guardian_only_score(rank: int) -> float:
+        """Guardian-only players capped below model players."""
         if rank <= 10:
-            return 65 - (rank - 1) * (5 / 9)  # 65 → 60
+            return 65 - (rank - 1) * (5 / 9)
         else:
-            return 40 - (rank - 11) * (10 / 89)  # 40 → 30
+            return 40 - (rank - 11) * (10 / 89)
 
     guardian_lookup = {p['player']: p for p in TOP_100}
 
     def get_final_score(row):
         player = row['player']
+        composite = row['composite_score']
+        
+        if pd.isna(composite) or composite is None:
+            return None
+        
         if player in guardian_lookup:
             guardian_rank = guardian_lookup[player]['rank']
             guardian_score = guardian_rank_to_score(guardian_rank)
-            
-            # Higher guardian weight for top 10
             if guardian_rank <= 10:
-                weight = 0.40  # 40% guardian for top 10
+                weight = 0.40
             elif guardian_rank <= 30:
                 weight = 0.25
             else:
                 weight = 0.15
-                
-            return (1 - weight) * row['composite_score'] + weight * guardian_score
-        return row['composite_score']
+            return (1 - weight) * composite + weight * guardian_score
+        
+        # Not in guardian list — cap at 70
+        return min(composite, 70.0)
+
 
     scored = scored.copy()
     scored['final_score'] = scored.apply(get_final_score, axis=1)
 
-    # Add guardian-only players — capped well below model players
+    # Add guardian-only players
     scored_players = set(scored['player'].tolist())
     guardian_only_rows = []
 
@@ -569,8 +566,7 @@ def apply_guardian_blend(
             })
 
     if guardian_only_rows:
-        guardian_df = pd.DataFrame(guardian_only_rows)
-        scored = pd.concat([scored, guardian_df], ignore_index=True)
+        scored = pd.concat([scored, pd.DataFrame(guardian_only_rows)], ignore_index=True)
 
     scored = scored.sort_values('final_score', ascending=False).reset_index(drop=True)
     scored.index = scored.index + 1
@@ -578,11 +574,9 @@ def apply_guardian_blend(
 
     if verbose:
         in_both = sum(1 for p in TOP_100 if p['player'] in scored_players)
-        guardian_only = len(guardian_only_rows)
-        model_only = len(scored) - in_both - guardian_only
         print(f"\n  Guardian blend applied:")
         print(f"    In both (blended):      {in_both}")
-        print(f"    Guardian only (capped): {guardian_only}")
-        print(f"    Model only (unchanged): {model_only}")
+        print(f"    Guardian only (capped): {len(guardian_only_rows)}")
+        print(f"    Model only (unchanged): {len(scored) - in_both - len(guardian_only_rows)}")
 
     return scored
