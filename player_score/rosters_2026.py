@@ -773,6 +773,27 @@ rosters_2026 = {
         'Lawrence Shankland': {'club': 'Hearts', 'age': 30},
         'Kieran Tierney': {'club': 'Arsenal', 'age': 28},
         'Ryan Christie': {'club': 'Bournemouth', 'age': 31}
-    }
+    },
 
+    'Italy': {
+            'Gianluigi Donnarumma': {'club': 'Manchester City', 'age': 27},
+            'Alessandro Bastoni': {'club': 'Inter Milan', 'age': 26},
+            'Riccardo Calafiori': {'club': 'Arsenal', 'age': 23},
+            'Federico Dimarco': {'club': 'Inter Milan', 'age': 28},
+            'Gianluca Mancini': {'club': 'AS Roma', 'age': 29},
+            'Alessandro Buongiorno': {'club': 'Napoli', 'age': 26},
+            'Federico Gatti': {'club': 'Juventus', 'age': 27},
+            'Nicolò Barella': {'club': 'Inter Milan', 'age': 29},
+            'Sandro Tonali': {'club': 'Newcastle United', 'age': 25},
+            'Manuel Locatelli': {'club': 'Juventus', 'age': 28},
+            'Davide Frattesi': {'club': 'Inter Milan', 'age': 26},
+            'Niccolò Pisilli': {'club': 'AS Roma', 'age': 21},
+            'Mateo Retegui': {'club': 'Al-Qadsiah', 'age': 26},
+            'Moise Kean': {'club': 'Fiorentina', 'age': 26},
+            'Gianluca Scamacca': {'club': 'Atalanta', 'age': 27},
+            'Giacomo Raspadori': {'club': 'Atalanta', 'age': 26},
+            'Francesco Pio Esposito': {'club': 'Inter Milan', 'age': 20},
+            'Matteo Politano': {'club': 'Napoli', 'age': 32}
+        }
 }
+

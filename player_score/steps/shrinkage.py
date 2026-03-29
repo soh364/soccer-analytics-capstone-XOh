@@ -15,8 +15,7 @@ import pandas as pd
 from pathlib import Path
 from typing import Dict, Optional
 
-from ..player_metrics_config import PLAYER_METRICS
-
+from player_metrics_config import PLAYER_METRICS
 HARD_THRESHOLD = 270
 SHRINKAGE_FLOOR = 180
 
