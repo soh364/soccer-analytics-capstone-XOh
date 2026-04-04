@@ -93,7 +93,6 @@ def get_player_scores(verbose: bool = False) -> pd.DataFrame:
 
     return scored
 
-
 if __name__ == "__main__":
     scored = get_player_scores(verbose=True)
     print(scored[['player', 'team', 'position_archetype',
