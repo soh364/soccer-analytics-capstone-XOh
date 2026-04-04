@@ -159,9 +159,13 @@ def compute_player_quality_score(
     }
 
 
-def build_player_quality_table(scored_df: pd.DataFrame) -> pd.DataFrame:
+def build_player_quality_table(
+    scored_df: pd.DataFrame,
+    export_path: str = "../data/player_quality_2026.csv",
+) -> pd.DataFrame:
     """
     Build country-level player quality table for all rostered countries.
+    Always exports to CSV.
     """
     rows = [
         compute_player_quality_score(country, scored_df)
@@ -171,6 +175,10 @@ def build_player_quality_table(scored_df: pd.DataFrame) -> pd.DataFrame:
         "player_quality_score", ascending=False,
         na_position='last'
     ).reset_index(drop=True)
+
+    df.to_csv(export_path, index=False)
+    print(f"Exported player quality table → {export_path}")
+
     return df
 
 

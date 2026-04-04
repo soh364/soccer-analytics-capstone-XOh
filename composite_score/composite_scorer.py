@@ -31,9 +31,10 @@ from external_factors import (
     normalize_fifa_rank,
     normalize_tenure,
     normalize_wc_experience,
+    compute_squad_age_score,
 )
 from club_cohesion import compute_club_cohesion
-from player_aggregator import compute_player_quality_score
+from player_score.player_aggregator import compute_player_quality_score
 from rosters_2026 import rosters_2026
 
 # ---------------------------------------------------------------------------
@@ -42,24 +43,26 @@ from rosters_2026 import rosters_2026
 
 COMPONENT_WEIGHTS = {
     "player_quality":     0.35,
-    "tactical_archetype": 0.25,
-    "fifa_score":         0.17,  # up from 0.15
+    "tactical_archetype": 0.20,
+    "fifa_score":         0.15,
     "club_cohesion":      0.10,
-    "coach_tenure":       0.03,  # down from 0.05
+    "squad_age":          0.05,  # new
+    "coach_tenure":       0.05,
     "tournament_exp":     0.05,
-    "confederation":      0.05,  # explicit weight
+    "confederation":      0.05,
 }
 
+
 CONFEDERATION_BONUS = {
-    "United States": 1.10,
-    "Canada":        1.10,
-    "Mexico":        1.10,
-    "Argentina":     1.05,
-    "Brazil":        1.05,
-    "Uruguay":       1.04,
-    "Colombia":      1.04,
-    "Ecuador":       1.03,
-    "Paraguay":      1.02,
+    "United States": 1.05,  # down from 1.10
+    "Canada":        1.05,  # down from 1.10
+    "Mexico":        1.05,  # down from 1.10
+    "Argentina":     1.03,  # down from 1.05
+    "Brazil":        1.03,  # down from 1.05
+    "Uruguay":       1.02,  # down from 1.04
+    "Colombia":      1.02,  # down from 1.04
+    "Ecuador":       1.01,  # down from 1.03
+    "Paraguay":      1.01,  # down from 1.02
 }
 
 ARCHETYPE_SCORES = {
@@ -118,10 +121,6 @@ def get_archetype_score(
     country: str,
     archetype_df: pd.DataFrame = None,
 ) -> tuple[float | None, float]:
-    """
-    Returns (archetype_score, gmm_confidence).
-    Returns (None, 0) if no archetype data available.
-    """
     if archetype_df is None or len(archetype_df) == 0:
         return None, 0.0
 
@@ -164,6 +163,8 @@ def compute_team_score(
     archetype_score, gmm_confidence = get_archetype_score(country, archetype_df)
     has_archetype = archetype_score is not None
 
+    age_score = compute_squad_age_score(country)
+
     # Get weights
     weights = get_weights(has_archetype)
 
@@ -174,14 +175,18 @@ def compute_team_score(
         "club_cohesion":  cohesion_score,
         "coach_tenure":   coach_score,
         "tournament_exp": exp_score,
+        "squad_age":      age_score,
     }
 
     if has_archetype:
-        # Weight archetype score by GMM confidence
-        components["tactical_archetype"] = (
-            gmm_confidence * archetype_score +
-            (1 - gmm_confidence) * fifa_score * 0.8
-        )
+        if gmm_confidence == 0.0:
+            # Boundary team — use archetype score directly
+            components["tactical_archetype"] = archetype_score
+        else:
+            components["tactical_archetype"] = (
+                gmm_confidence * archetype_score +
+                (1 - gmm_confidence) * fifa_score * 0.8
+            )
 
     # Weighted composite
     composite = sum(
@@ -209,6 +214,7 @@ def compute_team_score(
         "club_cohesion_score":  round(cohesion_score, 2),
         "coach_tenure_score":   round(coach_score, 2),
         "tournament_exp_score": round(exp_score, 2),
+        "squad_age_score": round(age_score, 2),
         # Weights used
         "archetype_available":  has_archetype,
     }

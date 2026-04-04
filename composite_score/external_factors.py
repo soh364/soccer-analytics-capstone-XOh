@@ -125,15 +125,15 @@ COACH_TENURE = {
 
 def normalize_tenure(years: float) -> float:
     if years < 1:
-        return 20.0
+        return 50.0  # up from 30 — new coach of a top team still has quality
     elif years <= 3:
-        return 20 + (years - 1) * 20   # 20 → 60
+        return 50 + (years - 1) * 15  # 50 → 80
     elif years <= 7:
-        return 60 + (years - 3) * 5    # 60 → 80
+        return 80 + (years - 3) * 2.5  # 80 → 90
     elif years <= 10:
-        return 80 - (years - 7) * 5    # 80 → 65
+        return 90 - (years - 7) * 5   # 90 → 75
     else:
-        return max(65 - (years - 10) * 3, 40)
+        return max(75 - (years - 10) * 3, 50)
 
 # ── Tournament Experience (World Cup appearances) ─────────────────────────
 WC_APPEARANCES = {
@@ -174,6 +174,31 @@ def get_all_external_factors(country: str) -> dict:
         "wc_appearances": wc_apps,
         "wc_experience_score": normalize_wc_experience(wc_apps),
     }
+
+def compute_squad_age_score(country: str) -> float:
+    """
+    Peak age 26-29 = 100.
+    Penalty for very young or very old squads.
+    """
+    from rosters_2026 import rosters_2026
+    
+    players = rosters_2026.get(country, {})
+    if not players:
+        return 70.0
+    
+    ages = [info.get('age', 27) for info in players.values() 
+            if info.get('age') is not None]
+    if not ages:
+        return 70.0
+    
+    avg_age = sum(ages) / len(ages)
+    
+    if 26 <= avg_age <= 29:
+        return 100.0
+    elif avg_age < 26:
+        return round(100 - (26 - avg_age) * 8, 1)
+    else:
+        return round(max(100 - (avg_age - 29) * 8, 30), 1)
 
 
 if __name__ == "__main__":
