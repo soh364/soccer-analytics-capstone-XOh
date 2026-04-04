@@ -720,6 +720,34 @@ rosters_2026 = {
         'Anthony Elanga': {'club': 'Nottingham Forest', 'age': 23},
         'Niclas Eliasson': {'club': 'AEK Athens', 'age': 30},
         'Robin Olsen': {'club': 'Aston Villa', 'age': 36}
+    },
+    'Ghana': {
+        'Lawrence Ati-Zigi': {'club': 'St. Gallen', 'age': 29},
+        'Benjamin Asare': {'club': 'Hearts of Oak', 'age': 33},
+        'Joseph Anang': {'club': 'St. Patrick\'s Athletic', 'age': 25},
+        'Alexander Djiku': {'club': 'Fenerbahçe', 'age': 31},
+        'Mohammed Salisu': {'club': 'Monaco', 'age': 26},
+        'Alidu Seidu': {'club': 'Rennes', 'age': 25},
+        'Tariq Lamptey': {'club': 'Brighton & Hove Albion', 'age': 25},
+        'Gideon Mensah': {'club': 'Auxerre', 'age': 27},
+        'Jerome Opoku': {'club': 'Istanbul Basaksehir', 'age': 27},
+        'Patric Pfeiffer': {'club': 'Young Boys', 'age': 26},
+        'Abdul Mumin': {'club': 'Rayo Vallecano', 'age': 27},
+        'Thomas Partey': {'club': 'Villarreal', 'age': 32},
+        'Mohammed Kudus': {'club': 'Tottenham Hotspur', 'age': 25},
+        'Elisha Owusu': {'club': 'Auxerre', 'age': 28},
+        'Salis Abdul Samed': {'club': 'Sunderland', 'age': 26},
+        'Ibrahim Sulemana': {'club': 'Atalanta', 'age': 22},
+        'Ernest Nuamah': {'club': 'Lyon', 'age': 22},
+        'Abdul Fatawu Issahaku': {'club': 'Leicester City', 'age': 22},
+        'Jordan Ayew': {'club': 'Leicester City', 'age': 34},
+        'Iñaki Williams': {'club': 'Athletic Club', 'age': 31},
+        'Antoine Semenyo': {'club': 'Bournemouth', 'age': 26},
+        'Osman Ibrahim': {'club': 'Feyenoord', 'age': 21},
+        'Kamaldeen Sulemana': {'club': 'Southampton', 'age': 24},
+        'Brandon Thomas-Asante': {'club': 'Coventry City', 'age': 27},
+        'Joseph Paintsil': {'club': 'LA Galaxy', 'age': 28},
+        'Christopher Bonsu Baah': {'club': 'Genk', 'age': 21}
     }
 }
 

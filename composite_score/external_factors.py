@@ -3,58 +3,61 @@
 # ── FIFA Rankings (January 2026, for qualified teams) ─────────────────────
 # Verified Official Rankings as of March 29, 2026
 FIFA_RANKINGS_SORTED = {
-    "Spain": 1,
-    "Argentina": 2,
-    "France": 3,
+    "France": 1,             # Reclaimed Top Spot
+    "Spain": 2,              # Down 1
+    "Argentina": 3,          # Down 1
     "England": 4,
-    "Brazil": 5,
-    "Portugal": 6,
+    "Portugal": 5,           # Swapped with Brazil
+    "Brazil": 6,
     "Netherlands": 7,
-    "Morocco": 8,            # Historic High
+    "Morocco": 8,            # Historic High maintained
     "Belgium": 9,
     "Germany": 10,
     "Croatia": 11,
-    "Senegal": 12,           # AFCON Winners
-    "Italy": 13,
-    "Colombia": 14,
-    "United States": 15,     # Host #1
-    "Mexico": 16,            # Host #2
+    "Italy": 12,             # Highest-ranked team NOT in the WC
+    "Colombia": 13,
+    "Senegal": 14,
+    "Mexico": 15,            # Host #1
+    "United States": 16,     # Host #2
     "Uruguay": 17,
-    "Switzerland": 18,
-    "Japan": 19,
-    "Iran": 20,
-    "Denmark": 21,
-    "South Korea": 22,
+    "Japan": 18,
+    "Switzerland": 19,
+    "Denmark": 20,           # Did not qualify
+    "Iran": 21,
+    "Turkey": 22,            # Playoff Winner boost
     "Ecuador": 23,
     "Austria": 24,
-    "Turkey": 25,
-    "Nigeria": 26,
+    "South Korea": 25,
+    "Nigeria": 26,           # Did not qualify
     "Australia": 27,
     "Algeria": 28,
-    "Canada": 29,            # Host #3
-    "Ukraine": 30,
-    "Egypt": 31,
-    "Norway": 32,
+    "Egypt": 29,             # Rose after draw vs Spain
+    "Canada": 30,            # Host #3
+    "Norway": 31,
+    "Ukraine": 32,
     "Panama": 33,
-    "Poland": 34,
-    "Côte d'Ivoire": 37,
-    "Scotland": 38,
+    "Côte d'Ivoire": 34,
+    "Poland": 35,
+    "Sweden": 38,            # Playoff Winner boost
     "Serbia": 39,
     "Paraguay": 40,
-    "Hungary": 41,
-    "Czech Republic": 43,
+    "Czech Republic": 41,    # Playoff Winner boost
+    "Hungary": 42,
+    "Scotland": 43,
+    "Tunisia": 44,
     "Cameroon": 45,
-    "Tunisia": 47,
-    "DR Congo": 48,
-    "Uzbekistan": 52,        # Qualified for 1st WC
-    "Mali": 54,
-    "Qatar": 56,
+    "DR Congo": 46,
+    "Uzbekistan": 50,        # Historic High (Debutants)
+    "Mali": 52,
+    "Qatar": 55,
+    "Iraq": 57,              # Playoff Winner boost
     "South Africa": 60,
     "Saudi Arabia": 61,
-    "Jordan": 64,
-    "Cape Verde": 67,
-    "Ghana": 72,
-    "Curaçao": 81,           # Historic Qualifier
+    "Jordan": 63,
+    "Bosnia and Herzegovina": 65, # Huge rise after qualifying
+    "Cape Verde": 69,
+    "Ghana": 74,
+    "Curaçao": 82,           # Historic High (Debutants)
     "Haiti": 83,
     "New Zealand": 85
 }
@@ -66,61 +69,77 @@ def normalize_fifa_rank(rank: int, worst_rank: int = 90) -> float:
 
 # ── Coach Tenure (years in charge as of June 2026) ────────────────────────
 COACH_TENURE = {
-    "Spain": {"coach": "Luis de la Fuente", "years": 3.3},
-    "Argentina": {"coach": "Lionel Scaloni", "years": 7.6},
-    "France": {"coach": "Didier Deschamps", "years": 13.7},
-    "England": {"coach": "Thomas Tuchel", "years": 1.2},
-    "Brazil": {"coach": "Carlo Ancelotti", "years": 0.8},
-    "Portugal": {"coach": "Roberto Martínez", "years": 3.2},
-    "Netherlands": {"coach": "Ronald Koeman", "years": 3.2},
-    "Morocco": {"coach": "Mohamed Ouahbi", "years": 0.1},      # Appointed March 2026
-    "Belgium": {"coach": "Rudi Garcia", "years": 1.2},
-    "Germany": {"coach": "Julian Nagelsmann", "years": 2.5},
-    "Croatia": {"coach": "Zlatko Dalić", "years": 8.5},
-    "Senegal": {"coach": "Pape Thiaw", "years": 1.3},
-    "Italy": {"coach": "Luciano Spalletti", "years": 2.6},
-    "Colombia": {"coach": "Néstor Lorenzo", "years": 3.7},
-    "United States": {"coach": "Mauricio Pochettino", "years": 1.5},
+    # --- Group A ---
     "Mexico": {"coach": "Javier Aguirre", "years": 1.7},
-    "Uruguay": {"coach": "Marcelo Bielsa", "years": 2.9},
-    "Switzerland": {"coach": "Murat Yakin", "years": 4.6},
-    "Japan": {"coach": "Hajime Moriyasu", "years": 7.7},
-    "Iran": {"coach": "Amir Ghalenoei", "years": 3.0},
-    "Denmark": {"coach": "Brian Riemer", "years": 1.4},
+    "South Africa": {"coach": "Hugo Broos", "years": 4.9},
     "South Korea": {"coach": "Hong Myung-bo", "years": 1.7},
-    "Ecuador": {"coach": "Sebastián Beccacece", "years": 1.6},
-    "Austria": {"coach": "Ralf Rangnick", "years": 3.9},
-    "Turkey": {"coach": "Vincenzo Montella", "years": 2.5},
-    "Nigeria": {"coach": "Eric Chelle", "years": 1.2},
-    "Australia": {"coach": "Tony Popovic", "years": 1.5},
-    "Algeria": {"coach": "Vladimir Petković", "years": 2.0},
-    "Canada": {"coach": "Jesse Marsch", "years": 1.8},
-    "Ukraine": {"coach": "Serhiy Rebrov", "years": 2.8},
-    "Egypt": {"coach": "Hossam Hassan", "years": 2.1},
-    "Norway": {"coach": "Ståle Solbakken", "years": 5.3},
-    "Panama": {"coach": "Thomas Christiansen", "years": 5.7},
-    "Poland": {"coach": "Michał Probierz", "years": 2.5},
-    "Côte d'Ivoire": {"coach": "Emerse Faé", "years": 2.2},
-    "Scotland": {"coach": "Steve Clarke", "years": 6.9},
-    "Serbia": {"coach": "Dragan Stojković", "years": 5.1},
-    "Paraguay": {"coach": "Gustavo Alfaro", "years": 1.6},
-    "Hungary": {"coach": "Marco Rossi", "years": 7.8},
     "Czech Republic": {"coach": "Miroslav Koubek", "years": 0.3},
-    "Cameroon": {"coach": "David Pagou", "years": 0.3},
+
+    # --- Group B ---
+    "Canada": {"coach": "Jesse Marsch", "years": 1.8},
+    "Bosnia and Herzegovina": {"coach": "Sergej Barbarez", "years": 2.0},
+    "Qatar": {"coach": "Tintín Márquez", "years": 2.3},
+    "Switzerland": {"coach": "Murat Yakin", "years": 4.6},
+
+    # --- Group C ---
+    "Brazil": {"coach": "Carlo Ancelotti", "years": 0.8},
+    "Morocco": {"coach": "Mohamed Ouahbi", "years": 0.1},
+    "Haiti": {"coach": "Sébastien Migné", "years": 1.0},
+    "Scotland": {"coach": "Steve Clarke", "years": 6.9},
+
+    # --- Group D ---
+    "United States": {"coach": "Mauricio Pochettino", "years": 1.5},
+    "Paraguay": {"coach": "Gustavo Alfaro", "years": 1.6},
+    "Australia": {"coach": "Tony Popovic", "years": 1.5},
+    "Turkey": {"coach": "Vincenzo Montella", "years": 2.5},
+
+    # --- Group E ---
+    "Germany": {"coach": "Julian Nagelsmann", "years": 2.5},
+    "Curaçao": {"coach": "Fred Rutten", "years": 0.1},
+    "Côte d'Ivoire": {"coach": "Emerse Faé", "years": 2.2},
+    "Ecuador": {"coach": "Sebastián Beccacece", "years": 1.6},
+
+    # --- Group F ---
+    "Netherlands": {"coach": "Ronald Koeman", "years": 3.2},
+    "Japan": {"coach": "Hajime Moriyasu", "years": 7.7},
+    "Sweden": {"coach": "Jon Dahl Tomasson", "years": 2.1},
     "Tunisia": {"coach": "Sabri Lamouchi", "years": 0.2},
+
+    # --- Group G ---
+    "Belgium": {"coach": "Rudi Garcia", "years": 1.2},
+    "Egypt": {"coach": "Hossam Hassan", "years": 2.1},
+    "Iran": {"coach": "Amir Ghalenoei", "years": 3.0},
+    "New Zealand": {"coach": "Darren Bazeley", "years": 2.8},
+
+    # --- Group H ---
+    "Spain": {"coach": "Luis de la Fuente", "years": 3.3},
+    "Cape Verde": {"coach": "Bubista", "years": 6.2},
+    "Saudi Arabia": {"coach": "Hervé Renard", "years": 1.4},
+    "Uruguay": {"coach": "Marcelo Bielsa", "years": 2.9},
+
+    # --- Group I ---
+    "France": {"coach": "Didier Deschamps", "years": 13.7},
+    "Senegal": {"coach": "Pape Thiaw", "years": 1.3},
+    "Iraq": {"coach": "Jesús Casas", "years": 3.4},
+    "Norway": {"coach": "Ståle Solbakken", "years": 5.3},
+
+    # --- Group J ---
+    "Argentina": {"coach": "Lionel Scaloni", "years": 7.6},
+    "Algeria": {"coach": "Vladimir Petković", "years": 2.0},
+    "Austria": {"coach": "Ralf Rangnick", "years": 3.9},
+    "Jordan": {"coach": "Jamal Sellami", "years": 1.7},
+
+    # --- Group K ---
+    "Portugal": {"coach": "Roberto Martínez", "years": 3.2},
     "DR Congo": {"coach": "Sébastien Desabre", "years": 3.6},
     "Uzbekistan": {"coach": "Fabio Cannavaro", "years": 0.5},
-    "Mali": {"coach": "Tom Saintfiet", "years": 1.6},
-    "Qatar": {"coach": "Tintín Márquez", "years": 2.3},
-    "South Africa": {"coach": "Hugo Broos", "years": 4.9},
-    "Saudi Arabia": {"coach": "Hervé Renard", "years": 1.4},
-    "Jordan": {"coach": "Jamal Sellami", "years": 1.7},
-    "Cape Verde": {"coach": "Bubista", "years": 6.2},
+    "Colombia": {"coach": "Néstor Lorenzo", "years": 3.7},
+
+    # --- Group L ---
+    "England": {"coach": "Thomas Tuchel", "years": 1.2},
+    "Croatia": {"coach": "Zlatko Dalić", "years": 8.5},
     "Ghana": {"coach": "Otto Addo", "years": 2.0},
-    "Curaçao": {"coach": "Fred Rutten", "years": 0.1},
-    "Haiti": {"coach": "Sébastien Migné", "years": 1.0},
-    "New Zealand": {"coach": "Darren Bazeley", "years": 2.8},
-    "Italy": {"coach": "Gennaro Gattuso", "years": 0.79},
+    "Panama": {"coach": "Thomas Christiansen", "years": 5.7},
 }
 
 def normalize_tenure(years: float) -> float:
@@ -137,17 +156,67 @@ def normalize_tenure(years: float) -> float:
 
 # ── Tournament Experience (World Cup appearances) ─────────────────────────
 WC_APPEARANCES = {
-    "Algeria": 4, "Argentina": 18, "Australia": 6, "Austria": 7, "Belgium": 14,
-    "Brazil": 22, "Cameroon": 8, "Canada": 3, "Cape Verde": 1, "Colombia": 6,
-    "Croatia": 7, "Curaçao": 1, "Czech Republic": 9, "Côte d'Ivoire": 4,
-    "DR Congo": 2, "Denmark": 6, "Ecuador": 5, "Egypt": 3, "England": 16,
-    "France": 16, "Germany": 20, "Ghana": 4, "Haiti": 1, "Hungary": 9,
-    "Iran": 6, "Italy": 18, "Japan": 7, "Jordan": 1, "Mali": 1, "Mexico": 17,
-    "Morocco": 6, "Netherlands": 11, "New Zealand": 2, "Nigeria": 7, "Norway": 3,
-    "Panama": 2, "Paraguay": 9, "Poland": 9, "Portugal": 9, "Qatar": 2,
-    "Saudi Arabia": 6, "Scotland": 8, "Senegal": 4, "Serbia": 13, "South Africa": 3,
-    "South Korea": 11, "Spain": 16, "Switzerland": 12, "Tunisia": 6, "Turkey": 3,
-    "Ukraine": 3, "United States": 11, "Uruguay": 14, "Uzbekistan": 1, "Italy": 18,
+    # --- HOSTS (3) ---
+    "Canada": 3,
+    "Mexico": 18,
+    "United States": 12,
+
+    # --- AFC: Asia (9) ---
+    "Australia": 7,
+    "Iran": 7,
+    "Iraq": 2,
+    "Japan": 8,
+    "Jordan": 1,         # Debut
+    "Qatar": 2,
+    "Saudi Arabia": 7,
+    "South Korea": 12,
+    "Uzbekistan": 1,      # Debut
+
+    # --- CAF: Africa (10) ---
+    "Algeria": 5,
+    "Cape Verde": 1,      # Debut
+    "Côte d'Ivoire": 4,
+    "DR Congo": 2,
+    "Egypt": 4,
+    "Ghana": 5,
+    "Morocco": 7,
+    "Senegal": 4,
+    "South Africa": 4,
+    "Tunisia": 7,
+
+    # --- CONCACAF: N. America & Caribbean (3 additional) ---
+    "Curaçao": 1,         # Debut
+    "Haiti": 2,
+    "Panama": 2,
+
+    # --- CONMEBOL: S. America (6) ---
+    "Argentina": 19,
+    "Brazil": 23,
+    "Colombia": 7,
+    "Ecuador": 5,
+    "Paraguay": 9,
+    "Uruguay": 15,
+
+    # --- OFC: Oceania (1) ---
+    "New Zealand": 3,
+
+    # --- UEFA: Europe (16) ---
+    "Austria": 8,
+    "Belgium": 15,
+    "Bosnia and Herzegovina": 2,
+    "Croatia": 8,
+    "Czech Republic": 10,
+    "England": 17,
+    "France": 17,
+    "Germany": 21,
+    "Netherlands": 12,
+    "Norway": 4,
+    "Portugal": 10,
+    "Scotland": 9,
+    "Spain": 17,
+    "Sweden": 13,
+    "Switzerland": 13,
+    "Turkey": 3
 }
 
 def normalize_wc_experience(appearances: int, max_appearances: int = 22) -> float:

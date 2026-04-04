@@ -8,6 +8,7 @@ Simulates 10,000 tournaments and tracks outcomes per team.
 import numpy as np
 import pandas as pd
 from collections import defaultdict
+from pathlib import Path
 
 # ---------------------------------------------------------------------------
 # Groups
@@ -248,6 +249,7 @@ def run_monte_carlo(
     readiness_df: pd.DataFrame,
     n_simulations: int = 10000,
     verbose: bool = True,
+    export_path: str = None,
 ) -> pd.DataFrame:
     """
     Run Monte Carlo simulation of the 2026 World Cup.
@@ -256,6 +258,7 @@ def run_monte_carlo(
         readiness_df: Output from get_team_readiness_scores()
         n_simulations: Number of tournaments to simulate
         verbose: Print progress
+        export_path: Optional custom export path
 
     Returns:
         DataFrame with win/QF/SF probabilities per team
@@ -270,16 +273,12 @@ def run_monte_carlo(
     all_teams = [t for group in GROUPS_2026.values() for t in group]
     for team in all_teams:
         if team not in scores:
-            scores[team] = 45.0  # league average for unscored teams
+            scores[team] = 45.0
             if verbose:
                 print(f"  ⚠ {team!r} not in readiness scores — using default 45.0")
 
     # Track outcomes
     outcome_counts = defaultdict(lambda: defaultdict(int))
-    round_order = [
-        "Group Stage", "Round of 32", "Round of 16",
-        "Quarter-final", "Semi-final", "Runner-up", "Champion"
-    ]
 
     if verbose:
         print(f"\nRunning {n_simulations:,} simulations...")
@@ -298,9 +297,9 @@ def run_monte_carlo(
         counts = outcome_counts[team]
         total = n_simulations
         rows.append({
-            "team": team,
-            "group": next(g for g, teams in GROUPS_2026.items()
-                         if team in teams),
+            "team":            team,
+            "group":           next(g for g, teams in GROUPS_2026.items()
+                                   if team in teams),
             "readiness_score": round(scores.get(team, 45.0), 2),
             "p_champion":      round(counts.get("Champion", 0) / total * 100, 1),
             "p_runner_up":     round(counts.get("Runner-up", 0) / total * 100, 1),
@@ -323,6 +322,16 @@ def run_monte_carlo(
         print(result_df[["team", "group", "readiness_score",
                          "p_champion", "p_semi_final",
                          "p_quarter_final"]].head(10).to_string())
+
+    # Export
+    outputs_dir = Path(__file__).parent / "outputs"
+    outputs_dir.mkdir(exist_ok=True)
+
+    if export_path is None:
+        export_path = outputs_dir / "monte_carlo_2026.csv"
+
+    result_df.to_csv(export_path, index=True)
+    print(f"Exported Monte Carlo results → {export_path}")
 
     return result_df
 

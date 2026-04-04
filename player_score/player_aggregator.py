@@ -161,26 +161,63 @@ def compute_player_quality_score(
 
 def build_player_quality_table(
     scored_df: pd.DataFrame,
-    export_path: str = "../data/player_quality_2026.csv",
+    export_path: str = None,
 ) -> pd.DataFrame:
     """
     Build country-level player quality table for all rostered countries.
-    Always exports to CSV.
+    Always exports to CSV in outputs/ folder next to this file.
+    Also exports full player details per country.
     """
-    rows = [
-        compute_player_quality_score(country, scored_df)
-        for country in rosters_2026.keys()
-    ]
+    outputs_dir = Path(__file__).parent / "outputs"
+    outputs_dir.mkdir(exist_ok=True)
+
+    if export_path is None:
+        export_path = outputs_dir / "player_quality_2026.csv"
+
+    rows = []
+    all_player_rows = []
+
+    for country in rosters_2026.keys():
+        # Country-level summary
+        result = compute_player_quality_score(country, scored_df)
+        rows.append(result)
+
+        # Player-level details for this country
+        roster_names = list(rosters_2026.get(country, {}).keys())
+        drop_cols = [c for c in ['seasons_present'] if c in scored_df.columns]
+        matched = scored_df[scored_df['player'].isin(roster_names)].drop(
+            columns=drop_cols
+        ).copy()
+
+        if len(matched) > 0:
+            matched['country'] = country
+            all_player_rows.append(matched)
+
+    # Country-level summary export
     df = pd.DataFrame(rows).sort_values(
         "player_quality_score", ascending=False,
         na_position='last'
     ).reset_index(drop=True)
-
     df.to_csv(export_path, index=False)
     print(f"Exported player quality table → {export_path}")
 
-    return df
+    # Player-level detail export
+    if all_player_rows:
+        players_df = pd.concat(all_player_rows, ignore_index=True)
 
+        # Reorder — country first
+        priority_cols = ['country', 'player', 'team', 'position_archetype',
+                         'coverage_tier', 'age', 'composite_score', 'final_score']
+        other_cols = [c for c in players_df.columns if c not in priority_cols]
+        players_df = players_df[
+            [c for c in priority_cols if c in players_df.columns] + other_cols
+        ].sort_values(['country', 'final_score'], ascending=[True, False])
+
+        players_export = outputs_dir / "player_details_2026.csv"
+        players_df.to_csv(players_export, index=False)
+        print(f"Exported player details → {players_export} ({len(players_df)} players)")
+
+    return df
 
 if __name__ == "__main__":
     sys.path.insert(0, str(Path(__file__).parent.parent / "player_score"))
