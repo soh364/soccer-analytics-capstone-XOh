@@ -4,10 +4,11 @@ Combines all signals into a single team readiness score for 2026 World Cup predi
 
 Components:
     - Player quality (35%) — from player_aggregator.py
-    - Tactical archetype (25%) — from sister's tc_pipeline.py (placeholder until delivered)
+    - Tactical archetype (20%) — from tc_pipeline.py 
     - FIFA ranking (15%) — from external_factors.py
     - Club cohesion (10%) — from club_cohesion.py
     - Coach tenure (5%) — from external_factors.py
+    - Squad age (5%) — from external_factors.py
     - Tournament experience (5%) — from external_factors.py
     + Confederation bonus — multiplier for host/regional advantage
 

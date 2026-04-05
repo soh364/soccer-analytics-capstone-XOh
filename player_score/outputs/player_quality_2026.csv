@@ -1,50 +1,51 @@
 country,player_quality_score,effective_score,player_coverage_confidence,n_players_scored,top_player,top_player_score
-Spain,64.18,64.18,1.0,12,Fabián Ruiz Peña,79.9
-France,62.95,62.95,1.0,13,Kylian Mbappé Lottin,85.64
-Germany,60.66,59.18,0.909,10,Florian Wirtz,66.35
-Argentina,59.27,60.45,0.818,9,Exequiel Alejandro Palacios,70.0
-Turkey,56.62,41.91,0.273,3,Hakan Çalhanoğlu,67.2
-Brazil,52.99,53.04,0.909,10,Raphael Dias Belloli,61.69
-DR Congo,52.67,35.11,0.182,2,Chancel Mbemba Mangulu,53.11
-Austria,51.83,40.31,0.182,2,Marcel Sabitzer,54.29
-Japan,50.88,41.82,0.182,2,Wataru Endo,59.84
-Netherlands,50.05,49.96,0.909,10,Xavi Simons,55.68
-England,49.94,50.55,0.909,10,Harry Kane,58.15
-Norway,49.48,37.07,0.182,2,Erling Haaland,62.78
-Saudi Arabia,48.78,31.62,0.091,1,Salem Mohammed Al Dawsari,48.78
-Croatia,47.94,45.01,0.364,4,Josip Stanišić,62.67
-Czech Republic,47.87,34.04,0.273,3,Ladislav Krejčí,55.83
-Morocco,47.79,47.46,0.273,3,Achraf Hakimi Mouh,75.73
-United States,47.7,42.43,0.273,3,Christian Pulisic,51.47
-Switzerland,46.95,40.65,0.273,3,Granit Xhaka,76.05
-Uruguay,46.05,40.74,0.364,4,Federico Santiago Valverde Dipetta,63.98
-Portugal,45.69,47.16,0.727,8,Vitor Machado Ferreira,66.34
-South Africa,44.28,29.95,0.182,2,Teboho Mokoena,50.29
-Canada,44.06,36.44,0.455,5,Ismael Koné,58.88
-Nigeria,43.86,37.17,0.455,5,Victor Okoh Boniface,64.42
-Paraguay,42.37,32.43,0.091,1,Julio César Enciso Espínola,42.37
-Senegal,41.3,41.63,0.182,2,Sadio Mané,43.71
-Iran,40.25,37.12,0.182,2,Mehdi Taremi,49.07
-Mexico,39.59,38.65,0.273,3,Johan Felipe Vásquez Ibarra,54.89
-Scotland,39.1,31.53,0.091,1,Scott McTominay,39.1
-Belgium,38.74,42.9,0.364,4,Jeremy Doku,45.26
-Colombia,38.56,39.14,0.545,6,James David Rodríguez Rubio,42.53
-Sweden,36.97,27.03,0.182,2,Viktor Gyökeres,38.09
-Italy,36.4,39.04,0.273,3,Gianluigi Donnarumma,39.78
-Ecuador,36.28,34.45,0.364,4,Enner Remberto Valencia Lastra,40.7
-Egypt,35.57,31.73,0.273,3,Mostafa Mohamed Ahmed Abdallah,37.57
-Côte d'Ivoire,34.53,29.92,0.364,4,Franck Yannick Kessié,44.55
-Tunisia,31.7,26.9,0.091,1,Youssef Msakni,31.7
-South Korea,28.93,31.82,0.091,1,Heung-Min Son,28.93
-Cape Verde,28.91,22.9,0.182,2,Deroy Duarte,30.9
+Spain,66.72,66.72,1.0,13,Fabián Ruiz Peña,78.81
+France,63.25,63.25,1.0,14,Kylian Mbappé Lottin,85.78
+Argentina,60.67,60.67,1.0,11,Exequiel Alejandro Palacios,70.0
+Germany,60.58,60.58,1.0,11,Joshua Kimmich,66.07
+Brazil,57.12,57.12,1.0,12,Raphael Dias Belloli,61.17
+Turkey,55.53,42.46,0.273,3,Hakan Çalhanoğlu,65.7
+England,54.1,54.32,0.909,10,Declan Rice,60.7
+Croatia,52.71,49.19,0.636,7,Josip Stanišić,60.83
+DR Congo,52.17,35.22,0.182,2,Chancel Mbemba Mangulu,52.9
+Portugal,51.93,52.37,0.727,8,Vitor Machado Ferreira,76.5
+Austria,51.33,40.11,0.182,2,Marcel Sabitzer,53.02
+Netherlands,50.53,50.4,0.909,10,Xavi Simons,53.88
+Norway,49.48,37.3,0.182,2,Erling Haaland,62.78
+Japan,49.25,41.57,0.182,2,Wataru Endo,57.53
+Morocco,48.17,47.62,0.273,3,Achraf Hakimi Mouh,77.37
+Saudi Arabia,47.91,31.27,0.091,1,Salem Mohammed Al Dawsari,47.91
+Czech Republic,47.52,34.31,0.273,3,Ladislav Krejčí,55.34
+United States,46.07,41.24,0.364,4,Christian Pulisic,50.4
+Canada,44.56,37.77,0.545,6,Ismael Koné,52.46
+Uruguay,44.36,40.46,0.455,5,Federico Santiago Valverde Dipetta,64.1
+Nigeria,43.27,36.9,0.455,5,Victor Okoh Boniface,64.49
+South Africa,43.0,29.44,0.182,2,Teboho Mokoena,48.57
+Paraguay,42.77,32.59,0.091,1,Julio César Enciso Espínola,42.77
+Switzerland,41.78,38.18,0.364,4,Granit Xhaka,75.86
+Senegal,40.34,40.03,0.182,2,Sadio Mané,42.43
+Iran,40.33,36.79,0.182,2,Mehdi Taremi,49.29
+Ecuador,39.89,36.26,0.455,5,Piero Martín Hincapié Reyna,56.54
+Scotland,39.1,30.54,0.091,1,Scott McTominay,39.1
+Mexico,39.03,38.97,0.273,3,Johan Felipe Vásquez Ibarra,54.07
+Belgium,38.68,42.88,0.364,4,Jeremy Doku,44.85
+Colombia,37.79,39.16,0.545,6,James David Rodríguez Rubio,42.51
+Sweden,36.97,30.67,0.182,2,Viktor Gyökeres,38.09
+Côte d'Ivoire,36.8,31.99,0.455,5,Odilon Kossonou,49.9
+Italy,36.4,39.67,0.273,3,Gianluigi Donnarumma,39.78
+Egypt,34.76,31.95,0.273,3,Mostafa Mohamed Ahmed Abdallah,37.56
+Tunisia,30.72,27.0,0.091,1,Youssef Msakni,30.72
+Ghana,30.26,22.68,0.091,1,Mohammed Kudus,30.26
+South Korea,28.48,30.65,0.091,1,Heung-Min Son,28.48
+Cape Verde,27.87,22.26,0.182,2,Deroy Duarte,29.73
 Australia,,31.05,0.0,0,,
-Qatar,,21.3,0.0,0,,
+Qatar,,21.6,0.0,0,,
 Algeria,,30.6,0.0,0,,
 Haiti,,16.05,0.0,0,,
 New Zealand,,15.75,0.0,0,,
-Uzbekistan,,22.35,0.0,0,,
-Jordan,,19.58,0.0,0,,
-Curaçao,,16.42,0.0,0,,
+Uzbekistan,,22.8,0.0,0,,
+Jordan,,19.73,0.0,0,,
+Curaçao,,16.27,0.0,0,,
 Panama,,28.35,0.0,0,,
-Bosnia and Herzegovina,,20.4,0.0,0,,
-Iraq,,20.4,0.0,0,,
+Bosnia and Herzegovina,,19.35,0.0,0,,
+Iraq,,21.08,0.0,0,,

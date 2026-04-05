@@ -1,7 +1,7 @@
 """
 Step 3: Time Decay Weighting
 - Weights each player-season row by recency
-- 2023/24 → 1.0, 2022/23 → 0.75, 2021/22 → 0.50
+- 2023/24 → 1.0, 2022/23 → 0.90, 2021/22 → 0.80
 - Adds a `decay_weight` column to each DataFrame
 - Does NOT yet collapse multi-season rows — that happens in Step 4/5
   when we have normalised values to combine
