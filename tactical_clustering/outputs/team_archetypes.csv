@@ -1,70 +1,70 @@
-team,archetype,archetype_score,gmm_confidence,n_matches,ppda,possession_pct,defensive_line_height,field_tilt_pct,npxg,epr,progressive_carry_pct,avg_xg_per_buildup_possession
-Albania,Low Intensity,40,1.0,3,19.0567,35.3733,1.228,14.9533,0.728,65.5767,35.2941,0.068
-Algeria,Possession Dominant,75,0.0,3,4.8133,68.36,1.4877,26.5167,1.2937,63.53,40.2545,0.0987
-Angola,Mid-Block Reactive,60,1.0,5,11.258,45.814,1.2396,20.37,1.1764,38.134,33.172,0.1128
-Argentina,High Press / High Output,85,1.0,13,10.0562,57.5808,1.481,21.7531,1.6432,35.9046,41.9051,0.1222
-Australia,Low Intensity,40,1.0,4,13.2975,38.3275,1.3888,21.56,0.3945,99.97,20.7589,0.0672
-Austria,High Press / High Output,85,1.0,4,6.1825,52.705,1.6542,27.8675,1.333,41.4725,41.9627,0.1532
-Belgium,Mid-Block Reactive,60,1.0,7,11.8371,55.8186,1.3927,20.4414,1.1533,69.9757,38.1282,0.1053
-Bolivia,Low Intensity,40,1.0,3,10.9367,43.7333,1.342,13.5233,0.3297,261.466,32.193,0.0627
-Brazil,High Press / High Output,85,1.0,9,8.1922,57.5767,1.5207,27.2156,1.6114,42.0278,37.7636,0.1198
-Burkina Faso,Moderate Possession,50,1.0,4,7.495,48.99,1.4628,26.3075,0.625,41.9,34.316,0.056
-Cameroon,Moderate Possession,50,1.0,7,8.1971,51.6714,1.4206,26.7771,0.8374,102.46,42.8009,0.077
-Canada,High Press / High Output,85,1.0,9,8.2778,49.1989,1.518,24.3644,1.1166,56.61,42.3772,0.1213
-Cape Verde,Possession Dominant,75,0.0,5,8.73,53.456,1.414,22.626,1.2048,53.94,30.224,0.092
-Chile,Moderate Possession,50,1.0,3,8.6367,48.8267,1.5643,19.5367,0.5367,153.8133,33.7374,0.096
-Colombia,Possession Dominant,75,0.0,6,6.6633,54.4033,1.4988,21.885,1.1695,45.7933,38.7313,0.0817
-Costa Rica,Low Intensity,40,1.0,6,19.0567,32.095,1.2818,11.6417,0.3416,261.466,23.9704,0.0776
-Croatia,High Press / High Output,85,1.0,10,10.197,54.761,1.4657,24.303,1.1159,48.788,41.6944,0.133
-Czech Republic,Compact Transition,65,0.0,3,9.55,40.3967,1.4133,30.53,1.53,43.1933,32.7473,0.115
-Côte d'Ivoire,Possession Dominant,75,0.0,7,6.36,58.2271,1.5177,25.7243,0.9744,55.8,38.2435,0.0839
-DR Congo,High Press / High Output,85,1.0,7,8.3486,45.6057,1.4107,26.95,1.4029,28.8786,44.2777,0.1297
-Denmark,Possession Dominant,75,0.0,7,8.53,56.3971,1.5087,23.4457,1.0089,62.67,34.5961,0.109
-Ecuador,Moderate Possession,50,0.9564,7,6.65,47.0557,1.4224,21.4257,0.8884,49.4457,39.0033,0.0689
-Egypt,High Press / High Output,85,1.0,4,8.5425,57.0175,1.4922,27.6775,1.1757,29.065,41.3211,0.0898
-England,Possession Dominant,75,0.0,12,9.7383,58.3175,1.4589,23.4192,1.0814,53.865,36.8753,0.0961
-Equatorial Guinea,Mid-Block Reactive,60,1.0,4,8.94,45.6,1.2832,19.6525,0.8438,64.57,31.6732,0.151
-France,High Press / High Output,85,1.0,13,12.4546,50.9254,1.4049,27.7669,1.3588,39.66,43.6809,0.1174
-Gambia,Mid-Block Reactive,60,0.0,3,19.0567,40.84,1.2877,25.1933,0.8527,80.6767,32.8333,0.1123
-Germany,High Press / High Output,85,1.0,8,7.1812,61.3188,1.6111,29.5988,1.8259,32.285,41.3598,0.1206
-Ghana,Mid-Block Reactive,60,1.0,6,9.5767,42.6233,1.3573,22.8367,0.785,45.22,41.1549,0.1237
-Guinea,Mid-Block Reactive,60,1.0,5,10.206,49.598,1.4336,18.882,0.9222,60.068,38.1886,0.1618
-Guinea-Bissau,Moderate Possession,50,1.0,3,13.2233,46.12,1.4277,20.7067,0.6383,87.9567,47.5858,0.0357
-Hungary,Mid-Block Reactive,60,1.0,3,13.27,41.09,1.3263,19.3867,1.1107,37.63,34.4444,0.164
-Iran,Mid-Block Reactive,60,0.0,3,12.4567,37.29,1.3283,24.0,1.0157,32.2667,33.6686,0.1517
-Italy,Moderate Possession,50,1.0,4,16.215,53.485,1.4655,21.86,0.826,117.845,27.8463,0.0648
-Jamaica,Mid-Block Reactive,60,1.0,3,12.2867,47.29,1.2753,20.5933,0.703,69.39,30.0804,0.111
-Japan,Compact Transition,65,1.0,4,17.1125,36.0325,1.3885,23.34,1.0625,30.195,36.9277,0.1572
-Mali,Possession Dominant,75,0.0,5,5.682,57.796,1.4368,19.636,1.0138,63.672,29.6619,0.0652
-Mauritania,Moderate Possession,50,0.0,4,9.6,36.865,1.3095,22.99,0.933,44.8925,36.7552,0.0695
-Mexico,Possession Dominant,75,0.0,6,5.9933,56.7167,1.5038,26.5533,1.122,80.2167,34.1848,0.061
-Morocco,Compact Transition,65,1.0,11,12.3882,44.6555,1.4939,20.3818,1.1478,44.1936,42.6311,0.1135
-Mozambique,Compact Transition,65,1.0,3,15.7933,50.01,1.461,23.2133,0.605,81.9133,35.7011,0.0853
-Namibia,High Press / High Output,85,1.0,4,6.46,43.49,1.5545,31.36,0.9265,55.415,39.7194,0.1422
-Netherlands,Mid-Block Reactive,60,1.0,11,11.5009,53.2936,1.4359,23.2191,1.1193,89.9045,34.3535,0.1318
-Nigeria,High Press / High Output,85,1.0,7,8.5586,43.2457,1.3754,27.5757,1.1697,44.05,36.8523,0.0993
-Panama,Moderate Possession,50,0.0008,4,7.025,53.62,1.5423,26.8725,0.8058,74.4725,33.7401,0.0652
-Paraguay,Moderate Possession,50,0.0,3,6.08,48.3467,1.6293,24.1967,0.9867,50.87,44.3932,0.0713
-Peru,Moderate Possession,50,1.0,3,7.1333,38.03,1.5243,23.5,0.4733,101.7433,38.9372,0.0833
-Poland,Mid-Block Reactive,60,1.0,7,15.4643,38.8471,1.3331,21.0357,0.834,46.7643,41.8934,0.1166
-Portugal,Possession Dominant,75,0.0,10,8.764,63.601,1.5389,26.412,1.4187,39.262,39.2219,0.0973
-Qatar,Low Intensity,40,1.0,3,19.0567,43.18,1.2633,16.7433,0.4693,153.19,34.9176,0.0727
-Romania,Mid-Block Reactive,60,0.0,4,14.095,38.41,1.2258,24.5625,0.7432,59.04,33.2143,0.082
-Saudi Arabia,Moderate Possession,50,0.0,3,7.1967,44.59,1.327,30.6367,0.8057,89.6767,42.8283,0.086
-Scotland,Low Intensity,40,0.0,3,15.25,44.17,1.4297,17.12,0.339,261.466,42.4242,0.0653
-Senegal,High Press / High Output,85,1.0,8,10.2912,48.3575,1.4185,26.8625,1.088,41.2225,36.5626,0.1164
-Serbia,Moderate Possession,50,1.0,6,9.435,51.33,1.4503,20.9733,0.854,118.3667,37.6146,0.0882
-Slovakia,Mid-Block Reactive,60,0.0,4,10.55,47.8175,1.3498,21.3025,0.9565,56.5475,31.5426,0.103
-South Africa,Moderate Possession,50,0.0,7,11.4786,51.8714,1.3541,22.0971,0.7344,53.0986,39.7482,0.0801
-South Korea,Moderate Possession,50,1.0,4,10.7975,48.4425,1.4788,31.145,0.9013,74.955,33.6477,0.0728
-Spain,Possession Dominant,75,0.0,11,7.17,64.5036,1.6531,26.1064,1.3224,55.3318,38.9116,0.095
-Switzerland,Mid-Block Reactive,60,1.0,9,13.5822,47.7611,1.3746,24.3589,1.2712,58.5233,38.1373,0.1626
-Tanzania,Low Intensity,40,1.0,3,15.6833,50.8467,1.235,12.8867,0.1537,261.466,37.3889,0.0263
-Tunisia,Moderate Possession,50,0.0021,6,10.3467,47.8117,1.3597,23.0567,0.8048,67.9967,36.4104,0.0918
-Turkey,Compact Transition,65,1.0,5,13.278,49.52,1.3322,26.088,1.293,42.902,44.51,0.098
-Ukraine,Compact Transition,65,1.0,3,13.3633,50.94,1.392,20.0567,0.9947,69.7767,36.8293,0.0747
-United States,High Press / High Output,85,1.0,7,8.5486,49.9086,1.5027,26.4686,1.104,60.6243,41.5114,0.1076
-Uruguay,High Press / High Output,85,1.0,9,8.1211,50.7744,1.4531,26.1244,1.2362,44.3011,36.9088,0.117
-Venezuela,Possession Dominant,75,0.0,4,6.79,53.3825,1.4865,28.925,1.144,29.2475,30.5395,0.0935
-Wales,Moderate Possession,50,1.0,3,9.9967,46.16,1.3593,18.88,0.4787,100.2133,33.1111,0.051
-Zambia,Low Intensity,40,1.0,3,12.01,44.4167,1.38,15.2467,0.4443,206.9267,31.7705,0.051
+team,archetype,archetype_score,second_archetype,second_archetype_score,blend_score,gmm_confidence,sample_weight,wc_presence_weight,quality_adjustment,final_score,n_matches,ppda,possession_pct,defensive_line_height,field_tilt_pct,npxg,epr,progressive_carry_pct,avg_xg_per_buildup_possession
+Albania,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.7333,0.75,2.9,22.1,3,19.0567,35.3733,1.228,14.9533,0.728,65.5767,35.2941,0.068
+Algeria,Possession Dominant,82,High Press / High Output,95,82.0,0.0,0.7333,0.75,0.3,45.4,3,4.8133,68.36,1.4877,26.5167,1.2937,63.53,40.2545,0.0987
+Angola,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.8222,0.75,2.8,41.6,5,11.258,45.814,1.2396,20.37,1.1764,38.134,33.172,0.1128
+Argentina,High Press / High Output,95,Possession Dominant,82,95.0,1.0,1.0,1.0,2.9,97.9,13,10.0562,57.5808,1.481,21.7531,1.6432,35.9046,41.9051,0.1222
+Australia,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.7778,0.8571,2.3,25.6,4,13.2975,38.3275,1.3888,21.56,0.3945,99.97,20.7589,0.0672
+Austria,High Press / High Output,80,Possession Dominant,82,80.0,1.0,0.7778,0.75,0.4,47.1,4,6.1825,52.705,1.6542,27.8675,1.333,41.4725,41.9627,0.1532
+Belgium,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.9111,0.8286,1.6,49.2,7,11.8371,55.8186,1.3927,20.4414,1.1533,69.9757,38.1282,0.1053
+Bolivia,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.7333,0.75,-1.5,17.7,3,10.9367,43.7333,1.342,13.5233,0.3297,261.466,32.193,0.0627
+Brazil,High Press / High Output,95,Possession Dominant,82,95.0,1.0,1.0,0.8857,1.7,85.8,9,8.1922,57.5767,1.5207,27.2156,1.6114,42.0278,37.7636,0.1198
+Burkina Faso,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7778,0.75,1.9,29.9,4,7.495,48.99,1.4628,26.3075,0.625,41.9,34.316,0.056
+Cameroon,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.9111,0.8286,-0.5,35.7,7,8.1971,51.6714,1.4206,26.7771,0.8374,102.46,42.8009,0.077
+Canada,High Press / High Output,95,Possession Dominant,82,95.0,1.0,1.0,0.8286,-2.3,76.4,9,8.2778,49.1989,1.518,24.3644,1.1166,56.61,42.3772,0.1213
+Cape Verde,Possession Dominant,82,Moderate Possession,48,82.0,0.0,0.8222,0.75,0.9,51.5,5,8.73,53.456,1.414,22.626,1.2048,53.94,30.224,0.092
+Chile,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7333,0.75,-2.6,23.8,3,8.6367,48.8267,1.5643,19.5367,0.5367,153.8133,33.7374,0.096
+Colombia,Possession Dominant,82,High Press / High Output,95,82.0,0.0,0.8667,0.75,2.2,55.5,6,6.6633,54.4033,1.4988,21.885,1.1695,45.7933,38.7313,0.0817
+Costa Rica,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.8667,0.8286,0.0,25.1,6,19.0567,32.095,1.2818,11.6417,0.3416,261.466,23.9704,0.0776
+Croatia,High Press / High Output,95,Possession Dominant,82,95.0,1.0,1.0,0.9429,-1.7,87.9,10,10.197,54.761,1.4657,24.303,1.1159,48.788,41.6944,0.133
+Czech Republic,Compact Transition,70,Possession Dominant,82,70.0,0.0,0.7333,0.75,2.9,41.4,3,9.55,40.3967,1.4133,30.53,1.53,43.1933,32.7473,0.115
+Côte d'Ivoire,Possession Dominant,82,High Press / High Output,95,82.0,0.0,0.9111,0.75,-1.0,55.0,7,6.36,58.2271,1.5177,25.7243,0.9744,55.8,38.2435,0.0839
+DR Congo,High Press / High Output,80,Possession Dominant,82,80.0,1.0,0.9111,0.75,3.1,57.8,7,8.3486,45.6057,1.4107,26.95,1.4029,28.8786,44.2777,0.1297
+Denmark,Possession Dominant,82,High Press / High Output,95,82.0,0.0,0.9111,0.8286,-1.7,60.2,7,8.53,56.3971,1.5087,23.4457,1.0089,62.67,34.5961,0.109
+Ecuador,Moderate Possession,48,High Press / High Output,95,50.0,0.9564,0.9111,0.8286,2.7,40.4,7,6.65,47.0557,1.4224,21.4257,0.8884,49.4457,39.0033,0.0689
+Egypt,High Press / High Output,80,Possession Dominant,82,80.0,1.0,0.7778,0.75,1.8,48.5,4,8.5425,57.0175,1.4922,27.6775,1.1757,29.065,41.3211,0.0898
+England,Possession Dominant,82,High Press / High Output,95,82.0,0.0,1.0,0.8857,-0.4,72.2,12,9.7383,58.3175,1.4589,23.4192,1.0814,53.865,36.8753,0.0961
+Equatorial Guinea,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.7778,0.75,-1.3,35.5,4,8.94,45.6,1.2832,19.6525,0.8438,64.57,31.6732,0.151
+France,High Press / High Output,95,Possession Dominant,82,95.0,1.0,1.0,0.9714,1.1,93.4,13,12.4546,50.9254,1.4049,27.7669,1.3588,39.66,43.6809,0.1174
+Gambia,Mid-Block Reactive,63,Compact Transition,70,63.0,0.0,0.7333,0.75,-2.1,32.5,3,19.0567,40.84,1.2877,25.1933,0.8527,80.6767,32.8333,0.1123
+Germany,High Press / High Output,95,Possession Dominant,82,95.0,1.0,0.9556,0.8286,3.8,79.0,8,7.1812,61.3188,1.6111,29.5988,1.8259,32.285,41.3598,0.1206
+Ghana,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.8667,0.8286,0.5,45.7,6,9.5767,42.6233,1.3573,22.8367,0.785,45.22,41.1549,0.1237
+Guinea,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.8222,0.75,-0.5,38.3,5,10.206,49.598,1.4336,18.882,0.9222,60.068,38.1886,0.1618
+Guinea-Bissau,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7333,0.75,-1.5,24.9,3,13.2233,46.12,1.4277,20.7067,0.6383,87.9567,47.5858,0.0357
+Hungary,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.7333,0.75,2.1,36.7,3,13.27,41.09,1.3263,19.3867,1.1107,37.63,34.4444,0.164
+Iran,Mid-Block Reactive,63,Possession Dominant,82,63.0,0.0,0.7333,0.8286,2.9,41.2,3,12.4567,37.29,1.3283,24.0,1.0157,32.2667,33.6686,0.1517
+Italy,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7778,0.75,-1.2,26.8,4,16.215,53.485,1.4655,21.86,0.826,117.845,27.8463,0.0648
+Jamaica,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.7333,0.75,-2.5,32.1,3,12.2867,47.29,1.2753,20.5933,0.703,69.39,30.0804,0.111
+Japan,Compact Transition,70,Possession Dominant,82,70.0,1.0,0.7778,0.8571,2.1,48.8,4,17.1125,36.0325,1.3885,23.34,1.0625,30.195,36.9277,0.1572
+Mali,Possession Dominant,82,Moderate Possession,48,82.0,0.0,0.8222,0.75,-2.1,48.5,5,5.682,57.796,1.4368,19.636,1.0138,63.672,29.6619,0.0652
+Mauritania,Moderate Possession,48,Possession Dominant,82,48.0,0.0,0.7778,0.75,3.1,31.1,4,9.6,36.865,1.3095,22.99,0.933,44.8925,36.7552,0.0695
+Mexico,Possession Dominant,82,Moderate Possession,48,82.0,0.0,0.8667,0.8286,-2.8,56.1,6,5.9933,56.7167,1.5038,26.5533,1.122,80.2167,34.1848,0.061
+Morocco,Compact Transition,70,Possession Dominant,82,70.0,1.0,1.0,0.9143,0.0,64.0,11,12.3882,44.6555,1.4939,20.3818,1.1478,44.1936,42.6311,0.1135
+Mozambique,Compact Transition,70,Possession Dominant,82,70.0,1.0,0.7333,0.75,-2.0,36.5,3,15.7933,50.01,1.461,23.2133,0.605,81.9133,35.7011,0.0853
+Namibia,High Press / High Output,80,Possession Dominant,82,80.0,1.0,0.7778,0.75,-2.7,44.0,4,6.46,43.49,1.5545,31.36,0.9265,55.415,39.7194,0.1422
+Netherlands,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,1.0,0.8857,-1.1,54.7,11,11.5009,53.2936,1.4359,23.2191,1.1193,89.9045,34.3535,0.1318
+Nigeria,High Press / High Output,80,Possession Dominant,82,80.0,1.0,0.9111,0.75,-0.5,54.2,7,8.5586,43.2457,1.3754,27.5757,1.1697,44.05,36.8523,0.0993
+Panama,Moderate Possession,48,High Press / High Output,95,48.0,0.0008,0.7778,0.75,0.4,28.4,4,7.025,53.62,1.5423,26.8725,0.8058,74.4725,33.7401,0.0652
+Paraguay,Moderate Possession,48,High Press / High Output,95,48.0,0.0,0.7333,0.75,2.6,29.0,3,6.08,48.3467,1.6293,24.1967,0.9867,50.87,44.3932,0.0713
+Peru,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7333,0.75,-2.2,24.2,3,7.1333,38.03,1.5243,23.5,0.4733,101.7433,38.9372,0.0833
+Poland,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,0.9111,0.8571,1.0,50.2,7,15.4643,38.8471,1.3331,21.0357,0.834,46.7643,41.8934,0.1166
+Portugal,Possession Dominant,82,High Press / High Output,95,82.0,0.0,1.0,0.8857,3.3,75.9,10,8.764,63.601,1.5389,26.412,1.4187,39.262,39.2219,0.0973
+Qatar,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.7333,0.8286,1.5,22.8,3,19.0567,43.18,1.2633,16.7433,0.4693,153.19,34.9176,0.0727
+Romania,Mid-Block Reactive,63,Possession Dominant,82,63.0,0.0,0.7778,0.75,-1.8,35.0,4,14.095,38.41,1.2258,24.5625,0.7432,59.04,33.2143,0.082
+Saudi Arabia,Moderate Possession,48,Possession Dominant,82,48.0,0.0,0.7333,0.8286,0.0,29.2,3,7.1967,44.59,1.327,30.6367,0.8057,89.6767,42.8283,0.086
+Scotland,Low Intensity,35,Compact Transition,70,35.0,0.0,0.7333,0.75,-0.7,18.5,3,15.25,44.17,1.4297,17.12,0.339,261.466,42.4242,0.0653
+Senegal,High Press / High Output,95,Possession Dominant,82,95.0,1.0,0.9556,0.8571,-1.1,76.7,8,10.2912,48.3575,1.4185,26.8625,1.088,41.2225,36.5626,0.1164
+Serbia,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.8667,0.8286,-0.9,33.6,6,9.435,51.33,1.4503,20.9733,0.854,118.3667,37.6146,0.0882
+Slovakia,Mid-Block Reactive,63,Possession Dominant,82,63.0,0.0,0.7778,0.75,0.0,36.8,4,10.55,47.8175,1.3498,21.3025,0.9565,56.5475,31.5426,0.103
+South Africa,Moderate Possession,48,High Press / High Output,95,48.0,0.0,0.9111,0.75,1.8,34.6,7,11.4786,51.8714,1.3541,22.0971,0.7344,53.0986,39.7482,0.0801
+South Korea,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7778,0.8571,1.2,33.2,4,10.7975,48.4425,1.4788,31.145,0.9013,74.955,33.6477,0.0728
+Spain,Possession Dominant,82,High Press / High Output,95,82.0,0.0,1.0,0.8571,1.8,72.1,11,7.17,64.5036,1.6531,26.1064,1.3224,55.3318,38.9116,0.095
+Switzerland,Mid-Block Reactive,63,Possession Dominant,82,63.0,1.0,1.0,0.8571,2.3,56.3,9,13.5822,47.7611,1.3746,24.3589,1.2712,58.5233,38.1373,0.1626
+Tanzania,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.7333,0.75,-2.2,17.0,3,15.6833,50.8467,1.235,12.8867,0.1537,261.466,37.3889,0.0263
+Tunisia,Moderate Possession,48,High Press / High Output,95,48.0,0.0021,0.8667,0.8286,0.9,35.4,6,10.3467,47.8117,1.3597,23.0567,0.8048,67.9967,36.4104,0.0918
+Turkey,Compact Transition,70,Possession Dominant,82,70.0,1.0,0.8222,0.75,1.1,44.3,5,13.278,49.52,1.3322,26.088,1.293,42.902,44.51,0.098
+Ukraine,Compact Transition,70,Possession Dominant,82,70.0,1.0,0.7333,0.75,-1.0,37.5,3,13.3633,50.94,1.392,20.0567,0.9947,69.7767,36.8293,0.0747
+United States,High Press / High Output,95,Possession Dominant,82,95.0,1.0,0.9111,0.8571,-2.6,71.6,7,8.5486,49.9086,1.5027,26.4686,1.104,60.6243,41.5114,0.1076
+Uruguay,High Press / High Output,95,Possession Dominant,82,95.0,1.0,1.0,0.8286,0.0,78.7,9,8.1211,50.7744,1.4531,26.1244,1.2362,44.3011,36.9088,0.117
+Venezuela,Possession Dominant,82,Moderate Possession,48,82.0,0.0,0.7778,0.75,3.1,50.9,4,6.79,53.3825,1.4865,28.925,1.144,29.2475,30.5395,0.0935
+Wales,Moderate Possession,48,Possession Dominant,82,48.0,1.0,0.7333,0.8286,-1.8,27.4,3,9.9967,46.16,1.3593,18.88,0.4787,100.2133,33.1111,0.051
+Zambia,Low Intensity,35,Possession Dominant,82,35.0,1.0,0.7333,0.75,0.7,19.9,3,12.01,44.4167,1.38,15.2467,0.4443,206.9267,31.7705,0.051

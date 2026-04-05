@@ -75,13 +75,6 @@ LAYER 4 — Intra-Cluster Quality Adjustment
     quality_adjustment = (intra_rank - 0.5) × 8 × sample_weight
                          Range: -4 to +4 (dampened by sample size)
 
-NON-WC HP/HO CAP:
-    Non-WC 2022 teams in High Press / High Output have their base score
-    capped at 80 (vs the standard 95). This prevents pure-AFCON or Copa
-    teams from outscoring WC participants in lower-ceiling archetypes.
-    WC 2022 participants keep the full 95 — they demonstrated this style
-    at the tournament the scores are validated against.
-
     In plain English: Germany plays the same style as Namibia but creates
     far better chances. The adjustment rewards Germany (+5) and discounts
     Namibia (-4) within the same archetype cluster.
@@ -159,16 +152,6 @@ WC2022_PRESENCE_WEIGHT = {
     team: round(0.80 + 0.20 * (OUTCOME_RANK[outcome] / 7), 4)
     for team, outcome in WC2022_OUTCOMES.items()
 }
-
-# Non-WC teams in High Press / High Output get a capped base score.
-# Rationale: the HP/HO base score of 95 is derived from WC 2022 outcomes
-# where HP/HO teams averaged the best results. Non-WC teams inherit this
-# score despite never demonstrating WC-level performance. The cap (80)
-# brings their ceiling in line with Possession Dominant (82), preventing
-# pure-AFCON or Copa teams from outscoring proven WC participants.
-NON_WC_HPHO_CAP  = 80
-HP_HO_ARCHETYPE  = 'High Press / High Output'
-WC2022_TEAM_SET  = set(WC2022_OUTCOMES.keys())
 
 ROSTER_COUNTRIES = [
     'Spain', 'Argentina', 'England', 'France', 'Germany', 'Brazil',
@@ -253,20 +236,6 @@ def _compute_final_scores(results: pd.DataFrame,
     df['second_archetype']       = [ARCHETYPE_MAP.get(int(c), 'Unknown')
                                      for c in second_cluster]
     df['second_archetype_score'] = df['second_archetype'].map(ARCHETYPE_SCORE)
-
-    # ── Non-WC HP/HO cap ─────────────────────────────────────────────────
-    # Teams in High Press / High Output that never appeared in WC 2022
-    # inherit a base score of 95 derived from WC outcomes they never
-    # participated in. Cap their archetype_score at 80 so they cannot
-    # outscore proven WC participants in other archetypes (e.g. Netherlands
-    # Mid-Block at 63 × higher evidence weight should beat DR Congo HP/HO).
-    # WC 2022 participants keep the full 95 — they earned it.
-    is_hpho    = df['archetype'] == HP_HO_ARCHETYPE
-    not_in_wc  = ~df['team'].isin(WC2022_TEAM_SET)
-    df.loc[is_hpho & not_in_wc, 'archetype_score'] = NON_WC_HPHO_CAP
-    df.loc[is_hpho & not_in_wc, 'second_archetype_score'] = df.loc[
-        is_hpho & not_in_wc, 'second_archetype'
-    ].map(ARCHETYPE_SCORE)
 
     # Blend score — weighted average of top and second archetype scores
     # If gmm_confidence < 0.10, GMM is numerically unstable for this team

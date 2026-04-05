@@ -101,9 +101,6 @@ def plot_archetype_radars(kmeans: KMeans,
     """
     2×2 grid of radar charts — one per archetype.
     PPDA is inverted so all axes read "higher = better".
-    Axes use sqrt-transformed min-max normalisation: relative ordering
-    between archetypes is preserved but small values are amplified so
-    low-intensity profiles remain legible rather than collapsing to a dot.
     Saves to figures_dir/tactical_archetypes_radar.png.
     """
     figures_dir.mkdir(exist_ok=True)
@@ -125,34 +122,10 @@ def plot_archetype_radars(kmeans: KMeans,
     # Invert PPDA — lower raw value = more aggressive pressing
     radar_data         = centroid_original[RADAR_METRICS].copy()
     radar_data['ppda'] = radar_data['ppda'].max() - radar_data['ppda']
-
-    # ── Normalise against full team-level range + apply floor ────────────
-    # Root cause of the flat Low Intensity hexagon:
-    #   Low Intensity sits at or near the minimum on EVERY axis after PPDA
-    #   inversion. When we normalise using only the 6 centroid values,
-    #   the range is tiny and LI maps to near-zero everywhere — producing
-    #   a flat regular hexagon regardless of floor tricks.
-    #
-    # Fix: normalise each axis against the FULL team-level range (all 69
-    #   teams, not just 6 centroids). This gives each axis a meaningful
-    #   scale so the slight variation within Low Intensity's profile is
-    #   visible (e.g. it's weakest on npxG, slightly less weak on possession).
-    #   Then apply a FLOOR=0.15 so even the absolute minimum sits visibly
-    #   off the centre rather than disappearing.
-    #
-    # Result: Low Intensity still looks clearly smaller than every other
-    #   archetype — but you can read its actual shape, not just a dot.
-    team_metrics = results[RADAR_METRICS].copy()
-    team_metrics['ppda'] = team_metrics['ppda'].max() - team_metrics['ppda']
-
-    global_min = team_metrics.min()
-    global_max = team_metrics.max()
-
-    radar_norm_linear = (radar_data - global_min) / (global_max - global_min)
-
-    FLOOR      = 0.15
-    radar_norm = FLOOR + (1.0 - FLOOR) * radar_norm_linear
-
+ 
+    # Normalise to 0-1 for radar shape
+    radar_norm = (radar_data - radar_data.min()) / (radar_data.max() - radar_data.min())
+ 
     N      = len(RADAR_METRICS)
     angles = np.linspace(0, 2 * np.pi, N, endpoint=False).tolist()
     angles += angles[:1]
@@ -173,14 +146,14 @@ def plot_archetype_radars(kmeans: KMeans,
         ax.fill(angles, values, color=color, alpha=0.25)
         ax.set_xticks(angles[:-1])
         ax.set_xticklabels(RADAR_LABELS, fontsize=9)
-        ax.set_ylim(0, 1)   # keep 0 as origin so FLOOR gap is visible
+        ax.set_ylim(0, 1)
         ax.set_title(f'{archetype}\n({n_teams} teams)',
                      fontsize=10, fontweight='bold', pad=15)
         ax.grid(alpha=0.3)
         ax.set_yticklabels([])
  
-    plt.suptitle('Tactical Archetype Profiles — Radar Charts\n(axes scaled against full team range, floor=0.15 for legibility)',
-                 fontsize=12, fontweight='bold', y=1.02)
+    plt.suptitle('Tactical Archetype Profiles — Radar Charts',
+                 fontsize=13, fontweight='bold', y=1.02)
     plt.tight_layout()
     plt.savefig(figures_dir / 'tactical_archetypes_radar.png', dpi=150, bbox_inches='tight')
     plt.show()
