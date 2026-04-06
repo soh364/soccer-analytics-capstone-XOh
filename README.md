@@ -15,9 +15,9 @@ The central argument is not that we can predict the winner. It is that readiness
 
 | Layer | What it measures | Data source |
 |---|---|---|
-| **Tactical Identity** | *How* teams play — collective patterns under pressure | StatsBomb tournament data 2022–2024 |
-| **Player Quality** | *Who* plays — individual performance above position baseline | StatsBomb club data 2021/22–2023/24 |
-| **Readiness Score** | *How ready* — composite of quality, style, context, uncertainty | All of the above + FIFA rankings, Guardian 100 |
+| **Tactical Identity** | *How* teams play: collective patterns under pressure | StatsBomb tournament data 2022–2024 |
+| **Player Quality** | *Who* plays: individual performance above position baseline | StatsBomb club data 2021/22–2023/24 |
+| **Readiness Score** | *How ready*: composite of quality, style, context, uncertainty | All of the above + FIFA rankings, Guardian 100 |
 
 ---
 
@@ -25,9 +25,9 @@ The central argument is not that we can predict the winner. It is that readiness
 
 | Notebook | Phase | Purpose |
 |---|---|---|
-| `EDA.ipynb` | Midterm | Full exploratory analysis — data audit, metric engineering, tactical scatter, player distributions |
-| `EDA_Executive.ipynb` | Midterm | Executive summary — key findings and visualisations only |
-| `wc2026_analysis.ipynb` | **Final** | Complete framework — tactical clustering, player scoring, composite model, Monte Carlo simulation |
+| `EDA.ipynb` | Midterm | Full exploratory analysis: data audit, metric engineering, tactical scatter, player distributions |
+| `EDA_Executive.ipynb` | Midterm | Executive summary: key findings and visualisations only |
+| `wc2026_analysis.ipynb` | **Final** | Complete framework: tactical clustering, player scoring, composite model, Monte Carlo simulation |
 
 > The final notebook (`wc2026_analysis.ipynb`) picks up at Section III. Sections I–II (data exploration and metric engineering) are covered in the midterm EDA notebooks.
 
@@ -55,11 +55,11 @@ python run_metrics.py men_tournament_2022_24 recent_club_players
 
 | Section | Content |
 |---|---|
-| **III — Tactical Identity** | KMeans clustering of 71 nations into 6 archetypes, GMM validation (ARI 0.455), outcome validation against WC 2022, four-layer archetype score derivation |
-| **IV — Player Quality** | 8-step scoring pipeline, 13 metrics, Guardian blend, country-level aggregation, coverage gap analysis (median confidence 0.18) |
-| **V — Composite Readiness** | 8-component model, full 48-nation rankings, volatility index, signal divergence, FIFA vs readiness delta |
-| **VI — Tournament Simulation** | 10,000 Monte Carlo simulations, champion probabilities, survival curves, radar/heatmap/cohesion visualisations |
-| **VII — Synthesis** | Two-layer finding, measurement limits quantified, framework philosophy, 7 directions for extension |
+| **III. Tactical Identity** | KMeans clustering of 71 nations into 6 archetypes, GMM validation (ARI 0.455), outcome validation against WC 2022, four-layer archetype score derivation |
+| **IV. Player Quality** | 8-step scoring pipeline, 13 metrics, Guardian blend, country-level aggregation, coverage gap analysis (median confidence 0.18) |
+| **V. Composite Readiness** | 8-component model, full 48-nation rankings, volatility index, signal divergence, FIFA vs readiness delta |
+| **VI. Tournament Simulation** | 10,000 Monte Carlo simulations, champion probabilities, survival curves, radar/heatmap/cohesion visualisations |
+| **VII. Synthesis** | Two-layer finding, measurement limits quantified, framework philosophy, 7 directions for extension |
 
 To reproduce all final outputs:
 
@@ -147,7 +147,7 @@ When archetype data is unavailable (9 of 48 nations), the 20% tactical weight is
 
 **Composite Readiness Top 5:** France (71.18), Argentina (69.81), Spain (69.21), Germany (65.69), Brazil (65.32)
 
-**Monte Carlo champion Probabilities:** France 8.5%, Spain 7.8%, Argentina 7.4%, Germany 7.3%, Brazil 6.6%
+**Monte Carlo Champion Probabilities:** France 8.5%, Spain 7.8%, Argentina 7.4%, Germany 7.3%, Brazil 6.6%
 
 **Player Scoring:** 523 players; coverage median confidence 0.18; 11 nations at zero coverage
 
@@ -251,7 +251,7 @@ soccer-analytics-capstone-template/
 └── tests/                           ← Test suite
 ```
 
-**Data flow:**
+**Data Flow:**
 ```
 data/Statsbomb/
 │
