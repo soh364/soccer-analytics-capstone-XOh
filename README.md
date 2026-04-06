@@ -267,7 +267,9 @@ player_score/outputs/     tactical_clustering/outputs/     composite_score/outpu
 wc2026_analysis.ipynb
 
 ```
-⚠️ `outputs/raw_metrics/` is the critical handoff between the midterm pipeline (`run_metrics.py`) and the final pipeline (`run_pipeline.py`). If these files are absent, the final pipeline will fail at Stage 1.
+
+> ⚠️ `outputs/raw_metrics/` is the critical handoff between the midterm pipeline (`run_metrics.py`) and the final pipeline (`run_pipeline.py`). If these files are absent, the final pipeline will fail at Stage 1.
+
 ---
 
 ## Setup & Requirements
