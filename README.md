@@ -69,127 +69,6 @@ python run_pipeline.py
 
 ---
 
-## Project Structure
-
-```
-soccer-analytics-capstone-template/
-│
-├── wc2026_analysis.ipynb            ← Final report notebook
-├── run_pipeline.py                  ← Single entry point for final pipeline
-├── run_metrics.py                   ← Midterm metric generation
-├── requirements.txt
-│
-├── player_score/                    ← Player scoring pipeline
-│   ├── player_score_pipeline.py     ← 8-step pipeline entry point
-│   ├── player_aggregator.py         ← Country-level aggregation + FIFA fallback
-│   ├── aggregation.py               ← Match → player × season aggregation
-│   ├── loader.py                    ← Data loading from parquet
-│   ├── guardians_2025.py            ← Guardian 100 external list (2025 edition)
-│   ├── rosters_2026.py              ← 2026 squad rosters (48 nations)
-│   ├── player_metrics_config.py     ← 13-metric configuration by position
-│   ├── player_position_map.py       ← Events-based position lookup (lazy-loaded)
-│   ├── club_mapping_2026.py         ← Club name normalisation
-│   ├── steps/
-│   │   ├── filter.py                ← 270-min hard floor, 180-min shrinkage zone
-│   │   ├── decay.py                 ← Temporal decay (1.0 / 0.90 / 0.80)
-│   │   ├── normalization.py         ← Per-season: log / log1p / rank / z-score
-│   │   ├── shrinkage.py             ← Bayesian shrinkage toward positional mean
-│   │   ├── segmentation.py          ← GK removal, positional archetype labelling
-│   │   └── scoring.py               ← Percentile → composite → Guardian blend
-│   └── outputs/
-│       ├── player_quality_2026.csv  ← Country-level player scores
-│       └── player_details_2026.csv  ← Individual player scores
-│
-├── tactical_clustering/             ← Tactical clustering pipeline
-│   ├── tc_pipeline.py               ← Single-function entry point
-│   ├── tc_data.py                   ← Load, merge, aggregate tournament metrics
-│   ├── tc_preprocessing.py          ← 95th-percentile capping + StandardScaler
-│   ├── tc_k_selection.py            ← Silhouette, DB index, ARI, GMM sweep
-│   ├── tc_clustering.py             ← KMeans (n_init=20) + GMM validation
-│   ├── tc_validation.py             ← Bootstrap, ANOVA, LOO validation suite
-│   ├── tc_visualisation.py          ← PCA scatter, archetype radars, outcome charts
-│   ├── tc_outcome_validation.py     ← WC 2022 result mapping
-│   ├── figures/                     ← Generated PNG visualisations
-│   └── outputs/
-│       └── team_archetypes.csv      ← Archetype assignments + GMM confidence scores
-│
-├── composite_score/                 ← Composite scoring + simulation
-│   ├── composite_scorer.py          ← Main scoring function (8 components)
-│   ├── external_factors.py          ← FIFA rankings, coach tenure, WC appearances
-│   ├── club_cohesion.py             ← Squad club concentration (log-scaled)
-│   ├── monte_carlo.py               ← 10,000-simulation bracket tournament
-│   └── outputs/
-│       ├── team_readiness_2026.csv  ← Composite readiness scores (all components)
-│       └── monte_carlo_2026.csv     ← Champion/SF/QF/R16/R32 probabilities
-│
-├── eda/                             ← Midterm EDA (reference)
-│   ├── EDA_draft_final_xoh.ipynb
-│   ├── EDA_executive_xoh.ipynb
-│   ├── analysis/                    ← EDA helper functions and data loaders
-│   ├── figures/                     ← EDA visualisations
-│   └── processed/                   ← Aggregated EDA outputs
-│
-└── outputs/
-    └── raw_metrics/
-        ├── men_tourn_2022_24/       ← Team tactical metrics by season
-        └── recent_club_players/     ← Player quality metrics by season
-            ├── 2021_2022/
-            ├── 2022_2023/
-            └── 2023_2024/
-```
-
----
-
-## Setup & Requirements
-
-### Installation
-
-```bash
-pip install -r requirements.txt
-```
-
-### Core Dependencies
-
-```
-polars==1.3.0          # pinned — later versions break list column handling
-pandas>=2.0
-numpy>=1.24
-scikit-learn>=1.3
-scipy>=1.11
-rapidfuzz>=3.0         # fuzzy name matching for player reconciliation
-matplotlib>=3.7
-seaborn>=0.12
-pyarrow>=12.0
-fastparquet>=2023.0
-```
-
-> **Note:** `polars==1.3.0` is pinned. The `seasons_present` list column in the player pipeline breaks under later versions.
-
-### Data Prerequisites
-
-StatsBomb data must be present at `data/Statsbomb/` with:
-
-```
-data/Statsbomb/
-├── matches.parquet
-├── events.parquet
-├── lineups.parquet
-└── outputs/raw_metrics/
-    ├── men_tourn_2022_24/     ← 8 team metric CSVs
-    └── recent_club_players/
-        ├── 2021_2022/
-        ├── 2022_2023/
-        └── 2023_2024/
-```
-
-Download via:
-
-```bash
-python data/download_data.py
-```
-
----
-
 ## Reproducing the Final Report
 
 ### Step 1. Generate Raw Metric Outputs (if not already present)
@@ -245,6 +124,23 @@ Open `wc2026_analysis.ipynb` and run all cells in order. The setup cell (`cell 2
 | MC scale parameter | σ = 15 | 10-pt gap ≈ 60% win probability; 25-pt gap ≈ 75% |
 | Confederation bonus | ×1.05 (hosts), ×1.01–1.03 (CONMEBOL) | Conservative travel/recovery advantage estimate |
 
+## Readiness Score: Weighting Logic
+
+The composite readiness score combines eight components. Weights reflect the relative predictive importance of each signal for a 54-game, 48-team tournament, informed by the outcome validation in Section III. 
+
+| Component | Weight | Rationale |
+|---|---|---|
+| Player quality | 35% | Primary discriminator within archetypes: EDA confirmed individual quality separates outcomes more than any other signal |
+| Tactical archetype | 20% | Sets the floor: no Low Intensity or Moderate Possession team has reached a WC quarter-final in the validation sample |
+| FIFA ranking | 15% | External validity anchor: most widely accepted independent quality signal |
+| Club cohesion | 10% | Proxy for tactical familiarity: log-scaled squad concentration |
+| Squad age | 5% | Physical prime window: peak 26–29, penalties outside |
+| Coach tenure | 5% | Tactical stability: sweet spot 3–7 years, staleness penalty beyond 10 |
+| Tournament experience | 5% | Knowhow under pressure: log-scaled WC appearances |
+| Confederation bonus | 5% | Host advantage: travel, recovery, crowd (×1.05 for US/CAN/MEX) |
+
+When archetype data is unavailable (9 of 48 nations), the 20% tactical weight is redistributed proportionally across the remaining components. Full derivation in `composite_score/composite_scorer.py` and Section 5.1 of `wc2026_analysis.ipynb`.
+
 ---
 
 ## Key Results
@@ -267,6 +163,156 @@ Open `wc2026_analysis.ipynb` and run all cells in order. The setup cell (`cell 2
 - The Guardian 100 list introduces a human-curated external signal. Its subjectivity is disclosed but not eliminated.
 - `polars==1.3.0` is required. The player pipeline uses list column operations that break under later versions.
 
+---
+
+## Project Structure
+
+```
+soccer-analytics-capstone-template/
+│
+├── wc2026_analysis.ipynb            ← Final report notebook
+├── run_pipeline.py                  ← Final pipeline entry point
+├── run_metrics.py                   ← Midterm metric generation entry point
+├── requirements.txt
+│
+├── data/                            ← Raw data (not versioned)
+│   ├── Statsbomb/                   ← StatsBomb open event data (parquet)
+│   │   ├── matches.parquet
+│   │   ├── events.parquet
+│   │   └── lineups.parquet
+│   └── Polymarket/                  ← Historical prediction market data (optional)
+│
+├── outputs/                         ← Generated metric files — critical pipeline input
+│   └── raw_metrics/                 ← Produced by run_metrics.py; read by run_pipeline.py
+│       ├── men_tourn_2022_24/       ← 8 team tactical metric CSVs (PPDA, EPR, etc.)
+│       └── recent_club_players/     ← Player quality metrics by season
+│           ├── 2021_2022/
+│           ├── 2022_2023/
+│           └── 2023_2024/
+│
+├── src/                             ← Midterm metric calculation modules
+│   └── metrics/                     ← Called by run_metrics.py to build outputs/raw_metrics/
+│
+├── player_score/                    ← Player scoring pipeline
+│   ├── player_score_pipeline.py
+│   ├── player_aggregator.py
+│   ├── aggregation.py
+│   ├── loader.py
+│   ├── guardians_2025.py
+│   ├── rosters_2026.py              ← 2026 squad rosters (48 nations)
+│   ├── player_metrics_config.py
+│   ├── player_position_map.py
+│   ├── club_mapping_2026.py
+│   ├── steps/
+│   │   ├── filter.py
+│   │   ├── decay.py
+│   │   ├── normalization.py
+│   │   ├── shrinkage.py
+│   │   ├── segmentation.py
+│   │   └── scoring.py
+│   └── outputs/
+│       ├── player_quality_2026.csv
+│       └── player_details_2026.csv
+│
+├── tactical_clustering/             ← Tactical clustering pipeline
+│   ├── tc_pipeline.py
+│   ├── tc_data.py
+│   ├── tc_preprocessing.py
+│   ├── tc_k_selection.py
+│   ├── tc_clustering.py
+│   ├── tc_validation.py
+│   ├── tc_visualisation.py
+│   ├── tc_outcome_validation.py
+│   ├── figures/
+│   └── outputs/
+│       └── team_archetypes.csv
+│
+├── composite_score/                 ← Composite scoring + simulation
+│   ├── composite_scorer.py
+│   ├── external_factors.py
+│   ├── club_cohesion.py
+│   ├── monte_carlo.py
+│   └── outputs/
+│       ├── team_readiness_2026.csv
+│       └── monte_carlo_2026.csv
+│
+├── eda/                             ← Midterm EDA notebooks and helpers
+│   ├── EDA.ipynb
+│   ├── EDA_Executive.ipynb
+│   ├── analysis/
+│   ├── figures/
+│   └── processed/
+│
+├── notebook/                        ← Notebook figures output directory
+│   └── figures/
+│
+├── scripts/                         ← Utility scripts
+├── template/                        ← Dashboard template (from capstone template)
+└── tests/                           ← Test suite
+```
+
+**Data flow:**
+```
+data/Statsbomb/
+│
+▼ run_metrics.py (via src/metrics/)
+outputs/raw_metrics/
+│
+▼ run_pipeline.py
+player_score/outputs/     tactical_clustering/outputs/     composite_score/outputs/
+│                           │                                │
+└───────────────────────────┴────────────────────────────────┘
+│
+▼
+wc2026_analysis.ipynb
+
+```
+⚠️ `outputs/raw_metrics/` is the critical handoff between the midterm pipeline (`run_metrics.py`) and the final pipeline (`run_pipeline.py`). If these files are absent, the final pipeline will fail at Stage 1.
+---
+
+## Setup & Requirements
+
+### Installation
+
+```bash
+pip install -r requirements.txt
+```
+
+### Core Dependencies
+
+```
+polars==1.3.0          # pinned — later versions break list column handling
+pandas>=2.0
+numpy>=1.24
+scikit-learn>=1.3
+scipy>=1.11
+rapidfuzz>=3.0         # fuzzy name matching for player reconciliation
+matplotlib>=3.7
+seaborn>=0.12
+pyarrow>=12.0
+fastparquet>=2023.0
+```
+
+> **Note:** `polars==1.3.0` is pinned. The `seasons_present` list column in the player pipeline breaks under later versions.
+
+### Data Prerequisites
+
+StatsBomb data must be present at `data/Statsbomb/` with:
+
+```
+data/Statsbomb/
+├── matches.parquet
+├── events.parquet
+├── lineups.parquet
+├── reference.parquet
+└── three_sixty.parquet
+```
+
+Download via:
+
+```bash
+python data/download_data.py
+```
 ---
 
 ## Data Licensing
