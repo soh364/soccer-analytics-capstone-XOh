@@ -131,7 +131,7 @@ def plot_k_selection(metrics_df: pd.DataFrame,
         ax.legend(fontsize=9)
         ax.grid(alpha=0.3)
 
-    plt.suptitle('K Selection — Multi-Metric Decision Matrix',
+    plt.suptitle('K Selection: Multi-Metric Decision Matrix',
                  fontsize=13, fontweight='bold')
     plt.tight_layout()
     plt.savefig(figures_dir / 'optimal_k.png', dpi=150, bbox_inches='tight')

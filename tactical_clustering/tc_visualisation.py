@@ -79,7 +79,7 @@ def plot_pca_scatter(X: np.ndarray,
 
     ax.set_xlabel(f'PC1 ({var1:.1%} variance — Proactive vs Reactive axis)', fontsize=11)
     ax.set_ylabel(f'PC2 ({var2:.1%} variance — Efficiency axis)', fontsize=11)
-    ax.set_title('2026 World Cup Tactical Archetypes\nK-Means Clustering (k=6) — PCA Projection',
+    ax.set_title('2026 World Cup Tactical Archetypes\nK-Means Clustering (k=6): PCA Projection',
                  fontsize=13, fontweight='bold')
     ax.legend(loc='upper right', framealpha=0.9)
     ax.grid(alpha=0.2)
@@ -179,7 +179,7 @@ def plot_archetype_radars(kmeans: KMeans,
         ax.grid(alpha=0.3)
         ax.set_yticklabels([])
  
-    plt.suptitle('Tactical Archetype Profiles — Radar Charts\n(axes scaled against full team range, floor=0.15 for legibility)',
+    plt.suptitle('Tactical Archetype Profiles: Radar Charts\n(axes scaled against full team range, floor=0.15 for legibility)',
                  fontsize=12, fontweight='bold', y=1.02)
     plt.tight_layout()
     plt.savefig(figures_dir / 'tactical_archetypes_radar.png', dpi=150, bbox_inches='tight')
