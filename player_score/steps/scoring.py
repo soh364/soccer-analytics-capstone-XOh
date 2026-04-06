@@ -434,18 +434,7 @@ def build_scores(
             median = collapsed[score_col].median()
             print(f"         {category}: {valid:,} players, median={median:.1f}")
 
-    # DEBUG — add here
-    pedri = collapsed[collapsed["player"] == "Pedro González López"]
-    norm_cols = [c for c in collapsed.columns if c.endswith("_norm")]
-    pedri = collapsed[collapsed["player"] == "Pedro González López"]
-    print(pedri[["player"] + norm_cols].T.dropna())
-    if len(pedri) > 0:
-        print(f"\nPedri category scores:")
-        print(pedri[["player", "position_archetype"] + category_scores].to_string())
-        coverage = pedri[category_scores].notna().sum(axis=1).values
-        print(f"Category coverage: {coverage}")
-    else:
-        print("Pedri not in collapsed at all")
+
     # Step 5: Composite + discounts
     if verbose:
         print("  [5/5] Computing composite scores...")

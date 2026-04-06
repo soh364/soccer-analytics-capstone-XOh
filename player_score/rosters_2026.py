@@ -342,17 +342,6 @@ rosters_2026 = {
         'Jacob Shaffelburg': {'club': 'LAFC', 'age': 26},
         'Tajon Buchanan': {'club': 'Villarreal', 'age': 27},
     },
-    'Nigeria': {
-        'Stanley Bobo Nwabali': {'club': 'Chippa United', 'age': 29},
-        'Calvin Bassey Ughelumba': {'club': 'Fulham', 'age': 26},
-        'William Troost-Ekong': {'club': 'Al-Kholood', 'age': 32},
-        'Onyinye Wilfred Ndidi': {'club': 'Beşiktaş', 'age': 29},
-        'Alex Iwobi': {'club': 'Fulham', 'age': 29},
-        'Ademola Lookman': {'club': 'Atalanta', 'age': 28},
-        'Victor James Osimhen': {'club': 'Galatasaray', 'age': 27},
-        'Victor Okoh Boniface': {'club': 'Bayer Leverkusen', 'age': 25},
-        'Samuel Chimerenka Chukwueze': {'club': 'Fulham', 'age': 26},
-    },
     'Austria': {
         'Patrick Pentz': {'club': 'Brøndby', 'age': 29},
         'David Olatukunbo Alaba': {'club': 'Real Madrid', 'age': 33},
