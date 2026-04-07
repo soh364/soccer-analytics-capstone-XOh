@@ -161,6 +161,7 @@ def plot_archetype_radars(kmeans: KMeans,
     ncols = 3 if n_archetypes >= 5 else 2
     nrows = (n_archetypes + ncols - 1) // ncols
     fig, axes = plt.subplots(nrows, ncols, figsize=(7*ncols, 5*nrows), subplot_kw=dict(polar=True))
+    plt.subplots_adjust(hspace=0.3, wspace=0.2)
     axes      = axes.flatten()
  
     for i, (cluster_id, archetype) in enumerate(ARCHETYPE_MAP.items()):
