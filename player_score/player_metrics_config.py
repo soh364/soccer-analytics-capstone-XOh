@@ -5,15 +5,15 @@ Uses 8 files with 13 dimensions across 4 trait categories.
 
 PLAYER_METRICS = {
 
-    'finishing_quality': {
-        'file': 'xg__player__totals.csv',
-        'column': 'goals_minus_xg',
-        'trait_category': 'Final_Third_Output',
-        'description': 'Goals vs xG (finishing quality)',
-        'min_minutes': 270,  # ~5 matches minimum
-        'higher_is_better': True,
-        'filter_column': 'matches',
-        'filter_threshold': 3
+    "finishing_quality": {
+        "file": "xg__player__totals.csv",
+        "column": "goals_per_xg",  # ← was goals_minus_xg
+        "trait_category": "Final_Third_Output",
+        "description": "Goals per xG (finishing efficiency)",
+        "min_minutes": 270,
+        "higher_is_better": True,
+        "filter_column": "matches",
+        "filter_threshold": 3
     },
     'xg_volume': {
         'file': 'xg__player__totals.csv',
@@ -126,8 +126,25 @@ PLAYER_METRICS = {
 
 # Trait category mapping
 TRAIT_CATEGORIES = {
-    'Mobility_Intensity': ['defensive_actions', 'high_turnovers', 'pressure_volume', 'pressure_success'],
-    'Progression': ['progressive_passes', 'progressive_carries'],
-    'Control': ['network_centrality'], 
-    'Final_Third_Output': ['finishing_quality', 'xg_volume', 'xg_chain', 'xg_buildup', 'team_involvement', ]
+    "Mobility_Intensity": [
+        "defensive_actions",
+        "high_turnovers",
+        "pressure_volume",
+        "pressure_success",
+    ],
+    "Progression": [
+        "progressive_passes",
+        "progressive_carries",
+        "packing",
+        "xg_chain",        # how often involved in shot-leading sequences
+        "team_involvement", # % of team chains involved in
+    ],
+    "Control": [
+        "network_centrality",  # passing hub / ball retention
+    ],
+    "Final_Third_Output": [
+        "finishing_quality",  # goals/xg ratio
+        "xg_volume",          # total xG generated
+        "xg_buildup",         # buildup contribution per 90
+    ],
 }

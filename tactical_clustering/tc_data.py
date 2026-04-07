@@ -20,7 +20,7 @@ import numpy as np
 # Notebook lives in  <project_root>/tactical_clustering/
 # data_loader lives in  <project_root>/eda/analysis/
 def _add_eda_to_path():
-    notebook_dir = Path('.').resolve()
+    notebook_dir = Path(__file__).resolve()
     project_root = notebook_dir.parent
     eda_root     = project_root / 'eda'
     if str(eda_root) not in sys.path:
@@ -147,7 +147,7 @@ def run_data_quality_audit(team_metrics: pl.DataFrame) -> None:
 
 
 def load_pipeline(tournament_key: str = 'men_tourn_2022_24',
-                  verbose: bool = True):
+                  verbose: bool = True, exclude_teams=None):
     """
     Convenience wrapper: load → merge → aggregate → audit.
 

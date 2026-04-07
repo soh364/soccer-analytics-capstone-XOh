@@ -69,8 +69,8 @@ Côte d'Ivoire,Karim Konaté,82.0,2.0,5.0,6.0,2.2,5.49,6.59,14.280000000000001,B
 Lyon,Alexandre Lacazette,164.0,10.0,11.0,5.0,5.49,6.04,2.74,14.270000000000001,Complete Progressor
 Stade Brestois,Jean-Kevin Duverne,191.0,9.0,8.0,13.0,4.24,3.77,6.13,14.14,Complete Progressor
 New York Red Bulls,Cameron Harper,83.0,0.0,7.0,6.0,0.0,7.59,6.51,14.1,Ball Carrier
-LAFC,Denis Bouanga,96.0,1.0,7.0,7.0,0.94,6.56,6.56,14.059999999999999,Ball Carrier
 Rennes,Karl Brillant Toko Ekambi,96.0,2.0,7.0,6.0,1.88,6.56,5.62,14.059999999999999,Ball Carrier
+LAFC,Denis Bouanga,96.0,1.0,7.0,7.0,0.94,6.56,6.56,14.059999999999999,Ball Carrier
 Morocco,Amine Harit,77.0,3.0,5.0,4.0,3.51,5.84,4.68,14.03,Complete Progressor
 Lens,Angelo Fulgini,45.0,2.0,2.0,3.0,4.0,4.0,6.0,14.0,Complete Progressor
 Paris Saint-Germain,Achraf Hakimi Mouh,2088.0,61.0,103.0,159.0,2.63,4.44,6.85,13.92,Ball Carrier
@@ -79,10 +79,10 @@ New York Red Bulls,Frankie Amaya,66.0,7.0,2.0,1.0,9.55,2.73,1.36,13.64,Progressi
 Paris Saint-Germain,Leandro Daniel Paredes,53.0,7.0,1.0,0.0,11.89,1.7,0.0,13.59,Progressive Passer
 Clermont Foot,Muhammed Cham Saracevic,141.0,6.0,8.0,7.0,3.83,5.11,4.47,13.41,Complete Progressor
 Paris Saint-Germain,Nuno Mendes,1524.0,46.0,66.0,114.0,2.72,3.9,6.73,13.350000000000001,Ball Carrier
-Angola,Felicio Mendes Joao Milson,54.0,1.0,3.0,4.0,1.67,5.0,6.67,13.34,Ball Carrier
 Nantes,Evann Guessand,81.0,2.0,5.0,5.0,2.22,5.56,5.56,13.34,Ball Carrier
-Congo DR,Grady Diangana,95.0,3.0,4.0,7.0,2.84,3.79,6.63,13.26,Complete Progressor
+Angola,Felicio Mendes Joao Milson,54.0,1.0,3.0,4.0,1.67,5.0,6.67,13.34,Ball Carrier
 Lyon,Malo Gusto,95.0,6.0,5.0,3.0,5.68,4.74,2.84,13.26,Complete Progressor
+Congo DR,Grady Diangana,95.0,3.0,4.0,7.0,2.84,3.79,6.63,13.26,Complete Progressor
 Angers,Batista Mendy,171.0,21.0,2.0,2.0,11.05,1.05,1.05,13.150000000000002,Progressive Passer
 Lens,Florian Sotoca,48.0,4.0,3.0,0.0,7.5,5.62,0.0,13.120000000000001,Complete Progressor
 LAFC,Mateusz Bogusz,96.0,7.0,3.0,4.0,6.56,2.81,3.75,13.12,Progressive Passer
@@ -90,8 +90,8 @@ Marseille,Alexis Alejandro Sánchez Sánchez,158.0,6.0,7.0,10.0,3.42,3.99,5.7,13
 Egypt,Mahmoud Ibrahim Hassan,179.0,7.0,7.0,12.0,3.52,3.52,6.03,13.07,Complete Progressor
 Stade de Reims,Thibault De Smet,97.0,5.0,2.0,7.0,4.64,1.86,6.49,12.99,Progressive Passer
 Angers,Abdallah Dipo Sima,104.0,2.0,4.0,9.0,1.73,3.46,7.79,12.98,Ball Carrier
-OGC Nice,Nicolas Pépé,126.0,3.0,6.0,9.0,2.14,4.29,6.43,12.86,Ball Carrier
 Angola,Loide António Augusto,77.0,3.0,2.0,6.0,3.51,2.34,7.01,12.86,Progressive Passer
+OGC Nice,Nicolas Pépé,126.0,3.0,6.0,9.0,2.14,4.29,6.43,12.86,Ball Carrier
 Troyes,Thierno Balde,71.0,4.0,2.0,4.0,5.07,2.54,5.07,12.68,Progressive Passer
 New York Red Bulls,Lucas Lima Linhares,93.0,1.0,8.0,4.0,0.97,7.74,3.87,12.580000000000002,Ball Carrier
 New York Red Bulls,John Tolkin,93.0,1.0,5.0,7.0,0.97,4.84,6.77,12.579999999999998,Ball Carrier
@@ -112,10 +112,10 @@ South Africa,Mihlali Samson Mayambela,160.0,1.0,9.0,11.0,0.56,5.06,6.19,11.80999
 Senegal,Sadio Mané,420.0,11.0,20.0,24.0,2.36,4.29,5.14,11.79,Ball Carrier
 Stade Brestois,Franck Honorat,191.0,3.0,8.0,14.0,1.41,3.77,6.6,11.78,Ball Carrier
 Burkina Faso,Bertrand Isidore Traoré,214.0,8.0,6.0,14.0,3.36,2.52,5.89,11.77,Progressive Passer
-Côte d'Ivoire,Simon Adingra,276.0,2.0,19.0,15.0,0.65,6.2,4.89,11.74,Ball Carrier
 Auxerre,Mathias Autret,69.0,4.0,2.0,3.0,5.22,2.61,3.91,11.74,Progressive Passer
-Lorient,Yoann Cathline,31.0,0.0,2.0,2.0,0.0,5.81,5.81,11.62,Ball Carrier
+Côte d'Ivoire,Simon Adingra,276.0,2.0,19.0,15.0,0.65,6.2,4.89,11.74,Ball Carrier
 Egypt,Mohamed Hany Gamal Eldemerdash,302.0,14.0,9.0,16.0,4.17,2.68,4.77,11.62,Progressive Passer
+Lorient,Yoann Cathline,31.0,0.0,2.0,2.0,0.0,5.81,5.81,11.62,Ball Carrier
 AC Ajaccio,Mickaël Barreto,101.0,2.0,5.0,6.0,1.78,4.46,5.35,11.59,Ball Carrier
 Cape Verde Islands,Garry Mendes Rodrigues,218.0,3.0,11.0,14.0,1.24,4.54,5.78,11.56,Ball Carrier
 Angola,Zito André Sebastião Luvumbo,181.0,3.0,10.0,10.0,1.49,4.97,4.97,11.43,Ball Carrier
@@ -130,19 +130,19 @@ Lyon,Mateus Cardoso Lemos Martins,75.0,2.0,5.0,2.0,2.4,6.0,2.4,10.8,Ball Carrier
 Stade Brestois,Romain Del Castillo,75.0,3.0,4.0,2.0,3.6,4.8,2.4,10.8,Complete Progressor
 Côte d'Ivoire,Oumar Diakité,234.0,3.0,8.0,17.0,1.15,3.08,6.54,10.77,Ball Carrier
 Congo DR,Yoane Wissa,590.0,10.0,27.0,33.0,1.53,4.12,5.03,10.68,Ball Carrier
-Congo DR,Silas Katompa Mvumpa,271.0,4.0,15.0,13.0,1.33,4.98,4.32,10.63,Ball Carrier
 Paris Saint-Germain,Renato Júnior Luz Sanches,728.0,40.0,26.0,20.0,4.95,3.21,2.47,10.63,Complete Progressor
-Marseille,Valentin Rongier,187.0,9.0,6.0,7.0,4.33,2.89,3.37,10.59,Complete Progressor
+Congo DR,Silas Katompa Mvumpa,271.0,4.0,15.0,13.0,1.33,4.98,4.32,10.63,Ball Carrier
 Toulouse,Branco van den Boomen,170.0,14.0,3.0,3.0,7.41,1.59,1.59,10.59,Progressive Passer
-Mozambique,Elias Gaspar Pelembe,119.0,3.0,3.0,8.0,2.27,2.27,6.05,10.59,Progression Outlet
 Marseille,Mattéo Guendouzi Olié,187.0,9.0,7.0,6.0,4.33,3.37,2.89,10.59,Complete Progressor
+Mozambique,Elias Gaspar Pelembe,119.0,3.0,3.0,8.0,2.27,2.27,6.05,10.59,Progression Outlet
+Marseille,Valentin Rongier,187.0,9.0,6.0,7.0,4.33,2.89,3.37,10.59,Complete Progressor
 Morocco,Amine Adli,162.0,2.0,7.0,10.0,1.11,3.89,5.56,10.559999999999999,Ball Carrier
 Angers,Nabil Bentaleb,94.0,9.0,2.0,0.0,8.62,1.91,0.0,10.53,Progressive Passer
 Marseille,Jordan Veretout,171.0,11.0,5.0,4.0,5.79,2.63,2.11,10.53,Progressive Passer
-Angers,Adrien Hunou,154.0,7.0,7.0,4.0,4.09,4.09,2.34,10.52,Complete Progressor
 Toulouse,Ado Onaiwu,77.0,0.0,5.0,4.0,0.0,5.84,4.68,10.52,Ball Carrier
-Auxerre,Nuno Miguel da Costa Jóia,120.0,2.0,4.0,8.0,1.5,3.0,6.0,10.5,Ball Carrier
+Angers,Adrien Hunou,154.0,7.0,7.0,4.0,4.09,4.09,2.34,10.52,Complete Progressor
 Algeria,Mohamed Youcef Belaïli,180.0,4.0,8.0,9.0,2.0,4.0,4.5,10.5,Ball Carrier
+Auxerre,Nuno Miguel da Costa Jóia,120.0,2.0,4.0,8.0,1.5,3.0,6.0,10.5,Ball Carrier
 Egypt,Emam Ashour Metwally Abdelghany,224.0,13.0,9.0,4.0,5.22,3.62,1.61,10.45,Complete Progressor
 Cincinnati,Santiago Arias Naranjo,95.0,5.0,3.0,3.0,4.74,2.84,2.84,10.42,Complete Progressor
 Inter Miami,Noah Allen,329.0,7.0,16.0,15.0,1.91,4.38,4.1,10.39,Ball Carrier
@@ -155,27 +155,27 @@ LAFC,Cristian Gonzalo Olivera Ibarra,35.0,0.0,2.0,2.0,0.0,5.14,5.14,10.28,Ball C
 Toulouse,Fares Chaïbi,123.0,4.0,4.0,6.0,2.93,2.93,4.39,10.25,Complete Progressor
 Congo DR,Meschak Elia,457.0,6.0,25.0,21.0,1.18,4.92,4.14,10.239999999999998,Ball Carrier
 Paris Saint-Germain,Marco Verratti,1894.0,137.0,45.0,33.0,6.51,2.14,1.57,10.22,Progressive Passer
-Cape Verde Islands,Willy Afonso Semedo Johnson,195.0,5.0,8.0,9.0,2.31,3.69,4.15,10.15,Ball Carrier
 Côte d'Ivoire,Jean-Philippe Krasso,266.0,4.0,12.0,14.0,1.35,4.06,4.74,10.15,Ball Carrier
+Cape Verde Islands,Willy Afonso Semedo Johnson,195.0,5.0,8.0,9.0,2.31,3.69,4.15,10.15,Ball Carrier
 Tanzania,Mbwana Ally Samatta,249.0,3.0,10.0,15.0,1.08,3.61,5.42,10.11,Ball Carrier
 Inter Miami,Jordi Alba Ramos,331.0,7.0,10.0,20.0,1.9,2.72,5.44,10.06,Progression Outlet
 Burkina Faso,Cédric Badolo,188.0,2.0,7.0,12.0,0.96,3.35,5.74,10.05,Ball Carrier
 Morocco,Hakim Ziyech,242.0,10.0,4.0,13.0,3.72,1.49,4.83,10.04,Progressive Passer
 Nantes,Ludovic Blas,180.0,5.0,5.0,10.0,2.5,2.5,5.0,10.0,Progression Outlet
-Clermont Foot,Mehdi Zeffane,45.0,2.0,1.0,2.0,4.0,2.0,4.0,10.0,Progressive Passer
 Burkina Faso,Mamady Alex Bangré,45.0,0.0,2.0,3.0,0.0,4.0,6.0,10.0,Ball Carrier
+Clermont Foot,Mehdi Zeffane,45.0,2.0,1.0,2.0,4.0,2.0,4.0,10.0,Progressive Passer
 Troyes,Wilson Odobert,81.0,3.0,3.0,3.0,3.33,3.33,3.33,9.99,Complete Progressor
 South Africa,Themba Zwane,514.0,14.0,17.0,26.0,2.45,2.98,4.55,9.98,Ball Carrier
-Cape Verde Islands,Tiago Manuel Dias Correia,226.0,4.0,9.0,12.0,1.59,3.58,4.78,9.95,Ball Carrier
 Mozambique,Geny Cipriano Catamo,190.0,6.0,7.0,8.0,2.84,3.32,3.79,9.95,Complete Progressor
+Cape Verde Islands,Tiago Manuel Dias Correia,226.0,4.0,9.0,12.0,1.59,3.58,4.78,9.95,Ball Carrier
 Tanzania,Lusajo Mwaikenda,146.0,8.0,4.0,4.0,4.93,2.47,2.47,9.870000000000001,Progressive Passer
 Lorient,Ibrahima Koné,64.0,0.0,3.0,4.0,0.0,4.22,5.62,9.84,Ball Carrier
 Rennes,Désiré Doué,138.0,3.0,8.0,4.0,1.96,5.22,2.61,9.79,Ball Carrier
 Mauritania,Hemeya Tanjy,138.0,4.0,6.0,5.0,2.61,3.91,3.26,9.78,Ball Carrier
 Stade de Reims,Jens-Lys Michel Cajuste,83.0,7.0,2.0,0.0,7.59,2.17,0.0,9.76,Progressive Passer
 Paris Saint-Germain,Fabián Ruiz Peña,1619.0,79.0,30.0,66.0,4.39,1.67,3.67,9.73,Progressive Passer
-Cameroon,Darlin Zidane Yongwa Ngameni,176.0,4.0,5.0,10.0,2.05,2.56,5.11,9.719999999999999,Progression Outlet
 Mali,Fousseni Diabaté,176.0,4.0,3.0,12.0,2.05,1.53,6.14,9.719999999999999,Progression Outlet
+Cameroon,Darlin Zidane Yongwa Ngameni,176.0,4.0,5.0,10.0,2.05,2.56,5.11,9.719999999999999,Progression Outlet
 Toronto FC,Federico Bernardeschi,93.0,3.0,2.0,5.0,2.9,1.94,4.84,9.68,Progressive Passer
 Troyes,Mama Samba Baldé,93.0,1.0,6.0,3.0,0.97,5.81,2.9,9.68,Ball Carrier
 OGC Nice,Youssouf Ndayishimiye,93.0,3.0,4.0,3.0,2.9,3.87,2.9,9.67,Complete Progressor
@@ -184,12 +184,12 @@ Burkina Faso,Issa Kabore,395.0,9.0,17.0,16.0,2.05,3.87,3.65,9.57,Ball Carrier
 Rennes,Amine Gouiri,113.0,2.0,4.0,6.0,1.59,3.19,4.78,9.56,Ball Carrier
 Algeria,Mohamed El Amine Amoura,123.0,2.0,5.0,6.0,1.46,3.66,4.39,9.51,Ball Carrier
 AC Ajaccio,Cyrille Bayala,57.0,0.0,3.0,3.0,0.0,4.74,4.74,9.48,Ball Carrier
-Senegal,Nicolas Jackson,76.0,1.0,3.0,4.0,1.18,3.55,4.74,9.469999999999999,Ball Carrier
 Angola,Ambrosini Antonio Cabaça Salvador,171.0,3.0,5.0,10.0,1.58,2.63,5.26,9.469999999999999,Progression Outlet
+Senegal,Nicolas Jackson,76.0,1.0,3.0,4.0,1.18,3.55,4.74,9.469999999999999,Ball Carrier
 Auxerre,M''Baye Babacar Niang,67.0,0.0,3.0,4.0,0.0,4.03,5.37,9.4,Ball Carrier
 Charlotte,Kamil Jóźwiak,67.0,3.0,1.0,3.0,4.03,1.34,4.03,9.4,Progressive Passer
-Marseille,Cengiz Ünder,106.0,6.0,2.0,3.0,5.09,1.7,2.55,9.34,Progressive Passer
 Namibia,Peter Shalulile,376.0,7.0,11.0,21.0,1.68,2.63,5.03,9.34,Progression Outlet
+Marseille,Cengiz Ünder,106.0,6.0,2.0,3.0,5.09,1.7,2.55,9.34,Progressive Passer
 Ghana,Joseph Paintsil,116.0,2.0,4.0,6.0,1.55,3.1,4.66,9.31,Ball Carrier
 Lille,Yusuf Yazıcı,58.0,2.0,2.0,2.0,3.1,3.1,3.1,9.3,Complete Progressor
 Guinea-Bissau,José Correia,68.0,1.0,2.0,4.0,1.32,2.65,5.29,9.26,Progression Outlet
@@ -198,22 +198,22 @@ Mauritania,Aboubakar Kamara,118.0,0.0,6.0,6.0,0.0,4.58,4.58,9.16,Ball Carrier
 Tunisia,Sayfallah Ltaief,69.0,1.0,2.0,4.0,1.3,2.61,5.22,9.129999999999999,Progression Outlet
 South Africa,Thapelo Maseko,248.0,2.0,12.0,11.0,0.73,4.35,3.99,9.07,Ball Carrier
 Cincinnati,Álvaro Martín Barreal,80.0,3.0,3.0,2.0,3.38,3.38,2.25,9.01,Complete Progressor
-Egypt,Omar Marmoush,260.0,1.0,10.0,15.0,0.35,3.46,5.19,9.0,Ball Carrier
-Algeria,Ismael Bennacer,80.0,2.0,4.0,2.0,2.25,4.5,2.25,9.0,Ball Carrier
 Equatorial Guinea,Santiago Eneme Bocari,50.0,2.0,2.0,1.0,3.6,3.6,1.8,9.0,Complete Progressor
+Algeria,Ismael Bennacer,80.0,2.0,4.0,2.0,2.25,4.5,2.25,9.0,Ball Carrier
+Egypt,Omar Marmoush,260.0,1.0,10.0,15.0,0.35,3.46,5.19,9.0,Ball Carrier
 Burkina Faso,Dango Aboubacar Faissal Ouattara,121.0,2.0,5.0,5.0,1.49,3.72,3.72,8.93,Ball Carrier
 Côte d'Ivoire,Nicolas Pépé,243.0,1.0,13.0,10.0,0.37,4.81,3.7,8.879999999999999,Ball Carrier
 Paris Saint-Germain,Carlos Soler Barragán,964.0,32.0,26.0,37.0,2.99,2.43,3.45,8.870000000000001,Progressive Passer
 Paris Saint-Germain,Warren Zaire Emery,795.0,20.0,22.0,36.0,2.26,2.49,4.08,8.83,Progression Outlet
-Marseille,Samuel Gigot,51.0,3.0,2.0,0.0,5.29,3.53,0.0,8.82,Complete Progressor
 LAFC,Timothy Tillman,51.0,4.0,0.0,1.0,7.06,0.0,1.76,8.82,Progressive Passer
+Marseille,Samuel Gigot,51.0,3.0,2.0,0.0,5.29,3.53,0.0,8.82,Complete Progressor
 Gambia,Assan Ceesay,41.0,1.0,2.0,1.0,2.2,4.39,2.2,8.79,Ball Carrier
 Zambia,Fashion Sakala,196.0,1.0,9.0,9.0,0.46,4.13,4.13,8.719999999999999,Ball Carrier
 New York Red Bulls,Daniel Edelman,93.0,8.0,1.0,0.0,7.74,0.97,0.0,8.71,Progressive Passer
 Ghana,Mohammed Kudus,186.0,4.0,8.0,6.0,1.94,3.87,2.9,8.71,Ball Carrier
 Lens,Seko Fofana,93.0,3.0,4.0,2.0,2.9,3.87,1.94,8.709999999999999,Complete Progressor
-Toronto FC,Jonathan Osorio,93.0,3.0,3.0,3.0,2.9,2.9,2.9,8.7,Complete Progressor
 AC Ajaccio,Riad Nouri,62.0,1.0,2.0,3.0,1.45,2.9,4.35,8.7,Ball Carrier
+Toronto FC,Jonathan Osorio,93.0,3.0,3.0,3.0,2.9,2.9,2.9,8.7,Complete Progressor
 Senegal,Iliman Ndiaye,73.0,1.0,2.0,4.0,1.23,2.47,4.93,8.629999999999999,Progression Outlet
 Nigeria,Moses Daddy-Ajala Simon,491.0,7.0,20.0,20.0,1.28,3.67,3.67,8.620000000000001,Ball Carrier
 Paris Saint-Germain,Vitor Machado Ferreira,2114.0,83.0,59.0,60.0,3.53,2.51,2.55,8.59,Progressive Passer
@@ -225,8 +225,8 @@ Morocco,Noussair Mazraoui,75.0,2.0,1.0,4.0,2.4,1.2,4.8,8.399999999999999,Progres
 OGC Nice,Melvin Bard,161.0,0.0,5.0,10.0,0.0,2.8,5.59,8.39,Progression Outlet
 Mozambique,Ricardo Martins Guimarães,269.0,13.0,4.0,8.0,4.35,1.34,2.68,8.37,Progressive Passer
 Nantes,Samuel Moutoussamy,174.0,8.0,5.0,3.0,4.14,2.59,1.55,8.28,Progressive Passer
-Guinea-Bissau,Alfa Semedo Esteves,186.0,7.0,6.0,4.0,3.39,2.9,1.94,8.23,Complete Progressor
 Tanzania,Faisal Salum Abdalla,164.0,6.0,6.0,3.0,3.29,3.29,1.65,8.23,Complete Progressor
+Guinea-Bissau,Alfa Semedo Esteves,186.0,7.0,6.0,4.0,3.39,2.9,1.94,8.23,Complete Progressor
 Inter Miami,Benjamin Cremaschi,318.0,10.0,8.0,11.0,2.83,2.26,3.11,8.2,Progressive Passer
 Toulouse,Zakaria Aboukhlal,143.0,1.0,5.0,7.0,0.63,3.15,4.41,8.19,Ball Carrier
 Lyon,Moussa Dembélé,121.0,3.0,2.0,6.0,2.23,1.49,4.46,8.18,Progression Outlet
@@ -249,25 +249,25 @@ Ghana,Jordan Ayew,286.0,5.0,9.0,11.0,1.57,2.83,3.46,7.86,Progression Outlet
 Côte d'Ivoire,Wilfried Stephane Singo,333.0,15.0,9.0,5.0,4.05,2.43,1.35,7.83,Progressive Passer
 Strasbourg,Habibou Mouhamadou Diallo,92.0,0.0,3.0,5.0,0.0,2.93,4.89,7.82,Ball Carrier
 LAFC,Ilie Sánchez Farrés,81.0,5.0,1.0,1.0,5.56,1.11,1.11,7.78,Progressive Passer
-Nigeria,Alex Iwobi,546.0,33.0,10.0,4.0,5.44,1.65,0.66,7.75,Progressive Passer
 Auxerre,Paul Joly,58.0,1.0,2.0,2.0,1.55,3.1,3.1,7.75,Ball Carrier
+Nigeria,Alex Iwobi,546.0,33.0,10.0,4.0,5.44,1.65,0.66,7.75,Progressive Passer
 Charlotte,Ashley Westwood,93.0,6.0,1.0,1.0,5.81,0.97,0.97,7.749999999999999,Progressive Passer
-Troyes,Marcos Paulo Mesquita Lopes,93.0,1.0,3.0,4.0,0.97,2.9,3.87,7.74,Ball Carrier
 Clermont Foot,Maximiliano Caufriez,93.0,3.0,3.0,2.0,2.9,2.9,1.94,7.74,Complete Progressor
+Troyes,Marcos Paulo Mesquita Lopes,93.0,1.0,3.0,4.0,0.97,2.9,3.87,7.74,Ball Carrier
 Nantes,Mostafa Mohamed Ahmed Abdallah,105.0,0.0,4.0,5.0,0.0,3.43,4.29,7.720000000000001,Ball Carrier
 OGC Nice,Terem Igobor Moffi,82.0,2.0,3.0,2.0,2.2,3.29,2.2,7.69,Ball Carrier
 Gambia,Musa Barrow,294.0,10.0,5.0,10.0,3.06,1.53,3.06,7.65,Progressive Passer
 Equatorial Guinea,José Ndong Machín Dicombo,365.0,11.0,9.0,11.0,2.71,2.22,2.71,7.64,Supporting Progressor
 Algeria,Adam Ounas,118.0,1.0,4.0,5.0,0.76,3.05,3.81,7.619999999999999,Ball Carrier
+Mali,Kamory Doumbia,416.0,12.0,11.0,12.0,2.6,2.38,2.6,7.58,Supporting Progressor
 Stade Brestois,Islam Slimani,95.0,2.0,1.0,5.0,1.89,0.95,4.74,7.58,Progression Outlet
 Auxerre,Souleymane Isaak Toure,95.0,8.0,0.0,0.0,7.58,0.0,0.0,7.58,Progressive Passer
-Mali,Kamory Doumbia,416.0,12.0,11.0,12.0,2.6,2.38,2.6,7.58,Supporting Progressor
-Mali,Mohamed Camara,119.0,9.0,0.0,1.0,6.81,0.0,0.76,7.569999999999999,Progressive Passer
-Lyon,Maxence Caqueret,107.0,7.0,2.0,0.0,5.89,1.68,0.0,7.569999999999999,Progressive Passer
-Nantes,Fabien Centonze,95.0,3.0,3.0,2.0,2.84,2.84,1.89,7.569999999999999,Complete Progressor
 Auxerre,Han-Noah Massengo,95.0,6.0,2.0,0.0,5.68,1.89,0.0,7.569999999999999,Progressive Passer
+Mali,Mohamed Camara,119.0,9.0,0.0,1.0,6.81,0.0,0.76,7.569999999999999,Progressive Passer
 Marseille,Chancel Mbemba Mangulu,95.0,6.0,2.0,0.0,5.68,1.89,0.0,7.569999999999999,Progressive Passer
 Auxerre,Akim Zedadka,95.0,2.0,3.0,3.0,1.89,2.84,2.84,7.569999999999999,Ball Carrier
+Lyon,Maxence Caqueret,107.0,7.0,2.0,0.0,5.89,1.68,0.0,7.569999999999999,Progressive Passer
+Nantes,Fabien Centonze,95.0,3.0,3.0,2.0,2.84,2.84,1.89,7.569999999999999,Complete Progressor
 Paris Saint-Germain,Timothee Pembele,203.0,3.0,5.0,9.0,1.33,2.22,3.99,7.540000000000001,Progression Outlet
 Guinea-Bissau,Franculino Gluda Djú,155.0,2.0,4.0,7.0,1.16,2.32,4.06,7.539999999999999,Progression Outlet
 New York Red Bulls,Tom Barlow,48.0,1.0,2.0,1.0,1.88,3.75,1.88,7.51,Ball Carrier
@@ -277,8 +277,8 @@ Tanzania,Simon Happygod Msuva,241.0,2.0,7.0,11.0,0.75,2.61,4.11,7.47000000000000
 Côte d'Ivoire,Serge Aurier,436.0,15.0,12.0,9.0,3.1,2.48,1.86,7.44,Progressive Passer
 Tunisia,Wajdi Kechrida,290.0,9.0,7.0,8.0,2.79,2.17,2.48,7.4399999999999995,Supporting Progressor
 Egypt,Mostafa Fathi,97.0,1.0,3.0,4.0,0.93,2.78,3.71,7.42,Progression Outlet
-South Africa,Thapelo James Morena,390.0,4.0,8.0,20.0,0.92,1.85,4.62,7.390000000000001,Progression Outlet
 Toulouse,Warren Kamanzi,61.0,1.0,3.0,1.0,1.48,4.43,1.48,7.390000000000001,Ball Carrier
+South Africa,Thapelo James Morena,390.0,4.0,8.0,20.0,0.92,1.85,4.62,7.390000000000001,Progression Outlet
 LAFC,Sergi Palencia Hurtado,61.0,2.0,2.0,1.0,2.95,2.95,1.48,7.380000000000001,Complete Progressor
 Inter Miami,David Ruiz,207.0,7.0,5.0,5.0,3.04,2.17,2.17,7.38,Progressive Passer
 AC Ajaccio,Vincent Marchetti,183.0,7.0,7.0,1.0,3.44,3.44,0.49,7.37,Complete Progressor
@@ -296,8 +296,8 @@ Tanzania,Morice Michael Abraham,100.0,3.0,1.0,4.0,2.7,0.9,3.6,7.2,Progression Ou
 Stade de Reims,Marshall Nyasha Munetsi,75.0,3.0,1.0,2.0,3.6,1.2,2.4,7.199999999999999,Progressive Passer
 Zambia,Lameck Banda,201.0,2.0,7.0,7.0,0.9,3.13,3.13,7.16,Ball Carrier
 Nigeria,Zaidu Sanusi,442.0,8.0,10.0,17.0,1.63,2.04,3.46,7.13,Progression Outlet
-Guinea-Bissau,Mauro Daniel Rodrigues Teixeira,152.0,3.0,4.0,5.0,1.78,2.37,2.96,7.11,Supporting Progressor
 Ghana,Ernest Appiah Nuamah,38.0,1.0,2.0,0.0,2.37,4.74,0.0,7.11,Ball Carrier
+Guinea-Bissau,Mauro Daniel Rodrigues Teixeira,152.0,3.0,4.0,5.0,1.78,2.37,2.96,7.11,Supporting Progressor
 Cameroon,Karl Brillant Toko Ekambi,292.0,4.0,10.0,9.0,1.23,3.08,2.77,7.08,Ball Carrier
 Rennes,Arnaud Kalimuendo Muinga,153.0,2.0,4.0,6.0,1.18,2.35,3.53,7.0600000000000005,Progression Outlet
 South Africa,Percy Tau,600.0,13.0,13.0,21.0,1.95,1.95,3.15,7.05,Supporting Progressor
@@ -307,11 +307,11 @@ Congo DR,Théo Bongonda Mbul''Ofeko Batombo,449.0,9.0,16.0,10.0,1.8,3.21,2.0,7.0
 Côte d'Ivoire,Ghislain Konan,683.0,23.0,10.0,20.0,3.03,1.32,2.64,6.99,Progressive Passer
 Mali,Lassine Sinayoko,400.0,3.0,8.0,20.0,0.68,1.8,4.5,6.98,Progression Outlet
 Gambia,Ablie Jallow,181.0,3.0,5.0,6.0,1.49,2.49,2.98,6.960000000000001,Supporting Progressor
-Congo DR,Joris Kayembe Ditu,143.0,3.0,4.0,4.0,1.89,2.52,2.52,6.93,Supporting Progressor
 Cape Verde Islands,Laros Duarte,39.0,1.0,0.0,2.0,2.31,0.0,4.62,6.93,Progression Outlet
-LAFC,Giorgio Chiellini,52.0,2.0,2.0,0.0,3.46,3.46,0.0,6.92,Complete Progressor
-Lyon,Corentin Tolisso,78.0,5.0,0.0,1.0,5.77,0.0,1.15,6.92,Progressive Passer
+Congo DR,Joris Kayembe Ditu,143.0,3.0,4.0,4.0,1.89,2.52,2.52,6.93,Supporting Progressor
 Montpellier,Sepe Elye Wahi,78.0,1.0,2.0,3.0,1.15,2.31,3.46,6.92,Progression Outlet
+Lyon,Corentin Tolisso,78.0,5.0,0.0,1.0,5.77,0.0,1.15,6.92,Progressive Passer
+LAFC,Giorgio Chiellini,52.0,2.0,2.0,0.0,3.46,3.46,0.0,6.92,Complete Progressor
 Nantes,Pedro Chirivella Burgos,92.0,7.0,0.0,0.0,6.85,0.0,0.0,6.85,Progressive Passer
 Zambia,Kennedy Musonda,92.0,1.0,2.0,4.0,0.98,1.96,3.91,6.85,Progression Outlet
 Nigeria,Temitayo Olufisayo Olaoluwa Aina,698.0,17.0,14.0,22.0,2.19,1.81,2.84,6.84,Supporting Progressor
@@ -319,13 +319,13 @@ Equatorial Guinea,Ibán Salvador Edu,345.0,6.0,9.0,11.0,1.57,2.35,2.87,6.79,Supp
 Charlotte,Jere Juhani Uronen,93.0,4.0,1.0,2.0,3.87,0.97,1.94,6.779999999999999,Progressive Passer
 Lens,Ikoma Loïs Openda,93.0,0.0,2.0,5.0,0.0,1.94,4.84,6.779999999999999,Progression Outlet
 Lens,Przemysław Frankowski,93.0,3.0,1.0,3.0,2.9,0.97,2.9,6.77,Progressive Passer
-Côte d'Ivoire,Seko Fofana,641.0,14.0,19.0,15.0,1.97,2.67,2.11,6.75,Supporting Progressor
 Mauritania,Sidi Bouna Sidi Amar,267.0,7.0,8.0,5.0,2.36,2.7,1.69,6.75,Supporting Progressor
 Clermont Foot,Jim Allevinah,120.0,2.0,5.0,2.0,1.5,3.75,1.5,6.75,Ball Carrier
 Côte d'Ivoire,Jean Thierry Lazare Amani,40.0,0.0,2.0,1.0,0.0,4.5,2.25,6.75,Ball Carrier
+Côte d'Ivoire,Seko Fofana,641.0,14.0,19.0,15.0,1.97,2.67,2.11,6.75,Supporting Progressor
+Burkina Faso,Gustavo Fabrice Sangaré,269.0,12.0,6.0,2.0,4.01,2.01,0.67,6.6899999999999995,Progressive Passer
 Cape Verde Islands,Ryan Isaac Mendes da Graça,390.0,3.0,11.0,15.0,0.69,2.54,3.46,6.6899999999999995,Progression Outlet
 Angola,Deivi Miguel Vieira,269.0,5.0,8.0,7.0,1.67,2.68,2.34,6.6899999999999995,Supporting Progressor
-Burkina Faso,Gustavo Fabrice Sangaré,269.0,12.0,6.0,2.0,4.01,2.01,0.67,6.6899999999999995,Progressive Passer
 Troyes,Rominigue Kouamé N''Guessan,81.0,3.0,3.0,0.0,3.33,3.33,0.0,6.66,Complete Progressor
 Namibia,Prins Menelik Tjiueza,244.0,5.0,5.0,8.0,1.84,1.84,2.95,6.630000000000001,Supporting Progressor
 Mali,Youssoufou Niakaté,68.0,0.0,3.0,2.0,0.0,3.97,2.65,6.62,Ball Carrier
@@ -344,8 +344,8 @@ Lille,Benjamin André,155.0,9.0,1.0,1.0,5.23,0.58,0.58,6.390000000000001,Progres
 Guinea,Serhou Guirassy,127.0,1.0,2.0,6.0,0.71,1.42,4.25,6.38,Progression Outlet
 Guinea-Bissau,Marciano Sanca Tchami,85.0,0.0,4.0,2.0,0.0,4.24,2.12,6.36,Ball Carrier
 Gambia,Ali Sowe,156.0,1.0,4.0,6.0,0.58,2.31,3.46,6.35,Progression Outlet
-Tunisia,Anis Ben Slimane,227.0,5.0,5.0,6.0,1.98,1.98,2.38,6.34,Supporting Progressor
 Morocco,Romain Saïss,298.0,16.0,3.0,2.0,4.83,0.91,0.6,6.34,Progressive Passer
+Tunisia,Anis Ben Slimane,227.0,5.0,5.0,6.0,1.98,1.98,2.38,6.34,Supporting Progressor
 Guinea,Aguibou Camara,483.0,13.0,11.0,10.0,2.42,2.05,1.86,6.33,Supporting Progressor
 Mozambique,Infren Da Conceição David Matola,114.0,2.0,2.0,4.0,1.58,1.58,3.16,6.32,Supporting Progressor
 Paris Saint-Germain,Sergio Ramos García,2351.0,139.0,22.0,4.0,5.32,0.84,0.15,6.3100000000000005,Progressive Passer
@@ -365,34 +365,34 @@ Algeria,Rayan Aït Nouri,298.0,11.0,4.0,5.0,3.32,1.21,1.51,6.039999999999999,Pro
 Congo DR,Fiston Kalala Mayele,194.0,3.0,5.0,5.0,1.39,2.32,2.32,6.029999999999999,Supporting Progressor
 Guinea,Morgan Guilavogui,284.0,6.0,6.0,7.0,1.9,1.9,2.22,6.02,Supporting Progressor
 Egypt,Mostafa Mohamed Ahmed Abdallah,435.0,3.0,11.0,15.0,0.62,2.28,3.1,6.0,Supporting Progressor
+New York Red Bulls,Elias Manoel Alves de Paula,45.0,0.0,2.0,1.0,0.0,4.0,2.0,6.0,Ball Carrier
 Cameroon,Junior Tchamadeu,30.0,0.0,0.0,2.0,0.0,0.0,6.0,6.0,Progression Outlet
 LAFC,Kellyn Kai Perry-Acosta,45.0,3.0,0.0,0.0,6.0,0.0,0.0,6.0,Progressive Passer
-New York Red Bulls,Elias Manoel Alves de Paula,45.0,0.0,2.0,1.0,0.0,4.0,2.0,6.0,Ball Carrier
 Algeria,Ramiz Larbi Zerrouki,227.0,7.0,5.0,3.0,2.78,1.98,1.19,5.949999999999999,Supporting Progressor
 New York Red Bulls,Omir Guadalupe Fernandez Mosso,76.0,0.0,2.0,3.0,0.0,2.37,3.55,5.92,Progression Outlet
 Nigeria,Bright Osayi-Samuel,335.0,9.0,5.0,8.0,2.42,1.34,2.15,5.91,Supporting Progressor
 Morocco,Yahia Attiyat allah,122.0,5.0,1.0,2.0,3.69,0.74,1.48,5.91,Progressive Passer
 Guinea,Mohamed Bayo,397.0,1.0,6.0,19.0,0.23,1.36,4.31,5.8999999999999995,Progression Outlet
 Marseille,Eric Bertrand Bailly,107.0,2.0,3.0,2.0,1.68,2.52,1.68,5.88,Supporting Progressor
-Marseille,Sead Kolašinac,92.0,3.0,1.0,2.0,2.93,0.98,1.96,5.87,Progressive Passer
 Strasbourg,Lucas Perrin,92.0,4.0,2.0,0.0,3.91,1.96,0.0,5.87,Progressive Passer
+Marseille,Sead Kolašinac,92.0,3.0,1.0,2.0,2.93,0.98,1.96,5.87,Progressive Passer
 Paris Saint-Germain,Nordi Mukiele Mulere,890.0,13.0,11.0,34.0,1.31,1.11,3.44,5.859999999999999,Limited Progression
 Mozambique,Witiness Chimoio João Quembo,185.0,1.0,6.0,5.0,0.49,2.92,2.43,5.84,Ball Carrier
 Mali,Hamari Traoré,510.0,11.0,6.0,16.0,1.94,1.06,2.82,5.82,Supporting Progressor
 Toronto FC,Kobe Franklin,93.0,3.0,1.0,2.0,2.9,0.97,1.94,5.8100000000000005,Progressive Passer
 New York Red Bulls,Sean Nealis,93.0,5.0,1.0,0.0,4.84,0.97,0.0,5.81,Progressive Passer
 Charlotte,Andrew Privett,93.0,5.0,1.0,0.0,4.84,0.97,0.0,5.81,Progressive Passer
-Algeria,Houssem Aouar,62.0,0.0,3.0,1.0,0.0,4.35,1.45,5.8,Ball Carrier
 Lorient,Cheikh Ahmadou Bamba Mbacke Dieng,31.0,0.0,1.0,1.0,0.0,2.9,2.9,5.8,Ball Carrier
+Algeria,Houssem Aouar,62.0,0.0,3.0,1.0,0.0,4.35,1.45,5.8,Ball Carrier
 Montpellier,Stephy Alvaro Mavididi,94.0,2.0,3.0,1.0,1.91,2.87,0.96,5.74,Ball Carrier
 Burkina Faso,Abdoul Fessal Tapsoba,204.0,3.0,4.0,6.0,1.32,1.76,2.65,5.73,Supporting Progressor
 Lorient,Laurent Abergel,95.0,5.0,1.0,0.0,4.74,0.95,0.0,5.69,Progressive Passer
 Tunisia,Youssef Msakni,222.0,4.0,3.0,7.0,1.62,1.22,2.84,5.68,Supporting Progressor
 Toulouse,Brecht Dejaegere,96.0,3.0,1.0,2.0,2.81,0.94,1.88,5.63,Progressive Passer
 Zambia,Emmanuel Justine Rabby Banda,288.0,12.0,3.0,3.0,3.75,0.94,0.94,5.629999999999999,Progressive Passer
-AS Monaco,Youssouf Fofana,96.0,3.0,3.0,0.0,2.81,2.81,0.0,5.62,Progressive Passer
 Lille,Jonas Martin,32.0,1.0,0.0,1.0,2.81,0.0,2.81,5.62,Progressive Passer
 Lorient,Gedeon Kalulu Kyatengwa,64.0,0.0,2.0,2.0,0.0,2.81,2.81,5.62,Supporting Progressor
+AS Monaco,Youssouf Fofana,96.0,3.0,3.0,0.0,2.81,2.81,0.0,5.62,Progressive Passer
 Senegal,Krépin Diatta,420.0,6.0,9.0,11.0,1.29,1.93,2.36,5.58,Supporting Progressor
 Stade de Reims,Yunis Abdelhamid,97.0,6.0,0.0,0.0,5.57,0.0,0.0,5.57,Progressive Passer
 Guinea,Facinet Conte,178.0,0.0,4.0,7.0,0.0,2.02,3.54,5.5600000000000005,Progression Outlet
@@ -400,29 +400,29 @@ Senegal,Habibou Mouhamadou Diallo,308.0,7.0,2.0,10.0,2.05,0.58,2.92,5.55,Support
 Guinea-Bissau,Mama Samba Baldé,147.0,3.0,3.0,3.0,1.84,1.84,1.84,5.5200000000000005,Supporting Progressor
 Tunisia,Hamza Rafia,147.0,3.0,3.0,3.0,1.84,1.84,1.84,5.5200000000000005,Supporting Progressor
 Montpellier,Téji Savanier,180.0,7.0,1.0,3.0,3.5,0.5,1.5,5.5,Progressive Passer
-Mauritania,Pape Ibnou Bâ,115.0,1.0,4.0,2.0,0.78,3.13,1.57,5.48,Ball Carrier
 Angola,Cristóvão Paciência Mabululo,411.0,1.0,10.0,14.0,0.22,2.19,3.07,5.48,Supporting Progressor
+Mauritania,Pape Ibnou Bâ,115.0,1.0,4.0,2.0,0.78,3.13,1.57,5.48,Ball Carrier
 Inter Miami,Leonardo Campana Romero,230.0,2.0,5.0,7.0,0.78,1.96,2.74,5.48,Supporting Progressor
+Nashville SC,Aníbal Cesis Godoy,33.0,2.0,0.0,0.0,5.45,0.0,0.0,5.45,Progressive Passer
 Toronto FC,Deandre Kerr,66.0,1.0,1.0,2.0,1.36,1.36,2.73,5.45,Supporting Progressor
 AS Monaco,Takumi Minamino,33.0,0.0,2.0,0.0,0.0,5.45,0.0,5.45,Ball Carrier
-Nashville SC,Aníbal Cesis Godoy,33.0,2.0,0.0,0.0,5.45,0.0,0.0,5.45,Progressive Passer
 Congo DR,Brian Jephte Bayeye,132.0,4.0,2.0,2.0,2.73,1.36,1.36,5.45,Supporting Progressor
 Toronto FC,Franco Ibarra,67.0,2.0,1.0,1.0,2.69,1.34,1.34,5.37,Supporting Progressor
 Equatorial Guinea,José Antonio Miranda Boacho,134.0,1.0,3.0,4.0,0.67,2.01,2.69,5.369999999999999,Supporting Progressor
 Nigeria,Victor James Osimhen,771.0,7.0,14.0,25.0,0.82,1.63,2.92,5.369999999999999,Supporting Progressor
-Mauritania,Souleymane Anne,220.0,3.0,3.0,7.0,1.23,1.23,2.86,5.32,Supporting Progressor
 Angers,Abdoulaye Bamba,186.0,5.0,0.0,6.0,2.42,0.0,2.9,5.32,Supporting Progressor
+Mauritania,Souleymane Anne,220.0,3.0,3.0,7.0,1.23,1.23,2.86,5.32,Supporting Progressor
 Côte d'Ivoire,Sébastien Haller,254.0,5.0,1.0,9.0,1.77,0.35,3.19,5.3100000000000005,Supporting Progressor
-Clermont Foot,Maxime Gonalons,153.0,8.0,1.0,0.0,4.71,0.59,0.0,5.3,Progressive Passer
 Guinea,François Kamano,119.0,3.0,3.0,1.0,2.27,2.27,0.76,5.3,Supporting Progressor
+Clermont Foot,Maxime Gonalons,153.0,8.0,1.0,0.0,4.71,0.59,0.0,5.3,Progressive Passer
 South Africa,Zakhele Lerato Lepasa,204.0,3.0,3.0,6.0,1.32,1.32,2.65,5.29,Supporting Progressor
 Toronto FC,Raoul Petretta,68.0,3.0,0.0,1.0,3.97,0.0,1.32,5.29,Progressive Passer
 Paris Saint-Germain,Presnel Kimpembe,737.0,32.0,8.0,3.0,3.91,0.98,0.37,5.260000000000001,Progressive Passer
 Mali,Yves Bissouma,189.0,6.0,3.0,2.0,2.86,1.43,0.95,5.24,Progressive Passer
 Nigeria,Joe Aribo,138.0,7.0,1.0,0.0,4.57,0.65,0.0,5.220000000000001,Progressive Passer
 Toronto FC,Alonso Coello Camarero,69.0,4.0,0.0,0.0,5.22,0.0,0.0,5.22,Progressive Passer
-Lille,Bafodé Diakité,156.0,4.0,2.0,3.0,2.31,1.15,1.73,5.1899999999999995,Supporting Progressor
 Nashville SC,Hany Mukhtar,52.0,2.0,1.0,0.0,3.46,1.73,0.0,5.1899999999999995,Progressive Passer
+Lille,Bafodé Diakité,156.0,4.0,2.0,3.0,2.31,1.15,1.73,5.1899999999999995,Supporting Progressor
 Cape Verde Islands,Gilson Benchimol Tavares,139.0,0.0,1.0,7.0,0.0,0.65,4.53,5.180000000000001,Progression Outlet
 Auxerre,Julian Jeanvier,87.0,3.0,2.0,0.0,3.1,2.07,0.0,5.17,Progressive Passer
 Côte d'Ivoire,Ibrahim Sangaré,401.0,20.0,1.0,2.0,4.49,0.22,0.45,5.16,Progressive Passer
@@ -437,8 +437,8 @@ Tanzania,Haji Mnoga,236.0,5.0,4.0,4.0,1.91,1.53,1.53,4.97,Supporting Progressor
 Cape Verde Islands,João Paulo Moreira Fernandes,457.0,11.0,5.0,9.0,2.17,0.98,1.77,4.92,Supporting Progressor
 Clermont Foot,Johan Gastien,183.0,8.0,1.0,1.0,3.93,0.49,0.49,4.91,Progressive Passer
 Mozambique,Alfons Amade,240.0,9.0,2.0,2.0,3.38,0.75,0.75,4.88,Progressive Passer
-New York Red Bulls,Andrés Felipe Reyes Ambuila,93.0,2.0,2.0,1.0,1.94,1.94,0.97,4.85,Supporting Progressor
 Egypt,Mohamed Hamdy Sharaf,371.0,9.0,5.0,6.0,2.18,1.21,1.46,4.85,Supporting Progressor
+New York Red Bulls,Andrés Felipe Reyes Ambuila,93.0,2.0,2.0,1.0,1.94,1.94,0.97,4.85,Supporting Progressor
 Mali,Adama Traoré,149.0,1.0,1.0,6.0,0.6,0.6,3.62,4.82,Progression Outlet
 Equatorial Guinea,Luis Miguel Nlavo Asue,56.0,0.0,2.0,1.0,0.0,3.21,1.61,4.82,Ball Carrier
 Equatorial Guinea,Emilio Nsue López,356.0,2.0,6.0,11.0,0.51,1.52,2.78,4.8100000000000005,Supporting Progressor
@@ -450,14 +450,14 @@ Cape Verde Islands,Kenny Rocha Santos,377.0,14.0,2.0,4.0,3.34,0.48,0.95,4.77,Pro
 Mali,Falaye Sacko,416.0,4.0,7.0,11.0,0.87,1.51,2.38,4.76,Supporting Progressor
 South Africa,Aubrey Maphosa Modiba,776.0,24.0,14.0,3.0,2.78,1.62,0.35,4.75,Supporting Progressor
 Mauritania,Souleymane Doukara,38.0,0.0,0.0,2.0,0.0,0.0,4.74,4.74,Progression Outlet
-Lyon,Nicolás Alejandro Tagliafico,190.0,5.0,2.0,3.0,2.37,0.95,1.42,4.74,Supporting Progressor
-AS Monaco,Ruben Aguilar,95.0,1.0,1.0,3.0,0.95,0.95,2.84,4.74,Limited Progression
 Lorient,Vincent Le Goff,95.0,4.0,1.0,0.0,3.79,0.95,0.0,4.74,Progressive Passer
+AS Monaco,Ruben Aguilar,95.0,1.0,1.0,3.0,0.95,0.95,2.84,4.74,Limited Progression
 Cincinnati,Obinna Nwobodo,95.0,1.0,3.0,1.0,0.95,2.84,0.95,4.74,Ball Carrier
+Lyon,Nicolás Alejandro Tagliafico,190.0,5.0,2.0,3.0,2.37,0.95,1.42,4.74,Supporting Progressor
 Namibia,Riaan Hanamub,381.0,7.0,6.0,7.0,1.65,1.42,1.65,4.72,Supporting Progressor
 Congo DR,Simon Bokote Banza,211.0,0.0,4.0,7.0,0.0,1.71,2.99,4.7,Supporting Progressor
-Rennes,Hamari Traoré,115.0,0.0,3.0,3.0,0.0,2.35,2.35,4.7,Supporting Progressor
 Morocco,Selim Amallah,192.0,3.0,4.0,3.0,1.41,1.88,1.41,4.7,Supporting Progressor
+Rennes,Hamari Traoré,115.0,0.0,3.0,3.0,0.0,2.35,2.35,4.7,Supporting Progressor
 Congo DR,Gedeon Kalulu Kyatengwa,613.0,10.0,9.0,13.0,1.47,1.32,1.91,4.7,Supporting Progressor
 AS Monaco,Caio Henrique Oliveira Silva,96.0,3.0,1.0,1.0,2.81,0.94,0.94,4.6899999999999995,Progressive Passer
 Rennes,Lesley Chimuanya Ugochukwu,173.0,4.0,2.0,3.0,2.08,1.04,1.56,4.68,Supporting Progressor
@@ -467,12 +467,12 @@ Montpellier,Wahbi Khazri,78.0,1.0,1.0,2.0,1.15,1.15,2.31,4.609999999999999,Suppo
 Lorient,Bonke Innocent,59.0,3.0,0.0,0.0,4.58,0.0,0.0,4.58,Progressive Passer
 Burkina Faso,Ibrahim Blati Touré,297.0,10.0,2.0,3.0,3.03,0.61,0.91,4.55,Progressive Passer
 Equatorial Guinea,Jannick Buyla Sam,219.0,6.0,0.0,5.0,2.47,0.0,2.05,4.52,Supporting Progressor
+Nantes,Moussa Sissoko,80.0,1.0,3.0,0.0,1.12,3.38,0.0,4.5,Ball Carrier
 Gambia,Muhammed Sanneh,100.0,4.0,1.0,0.0,3.6,0.9,0.0,4.5,Progressive Passer
 OGC Nice,Pablo Paulino Rosario,120.0,5.0,0.0,1.0,3.75,0.0,0.75,4.5,Progressive Passer
-Nantes,Moussa Sissoko,80.0,1.0,3.0,0.0,1.12,3.38,0.0,4.5,Ball Carrier
 AC Ajaccio,Mohamed Youssouf,183.0,6.0,2.0,1.0,2.95,0.98,0.49,4.42,Progressive Passer
-Montpellier,Enzo Gianni Tchato Mbiayi,102.0,0.0,2.0,3.0,0.0,1.76,2.65,4.41,Supporting Progressor
 Namibia,Petrus Shitembi,143.0,4.0,1.0,2.0,2.52,0.63,1.26,4.41,Supporting Progressor
+Montpellier,Enzo Gianni Tchato Mbiayi,102.0,0.0,2.0,3.0,0.0,1.76,2.65,4.41,Supporting Progressor
 Inter Miami,Jean Mota Oliveira de Sousa,41.0,1.0,1.0,0.0,2.2,2.2,0.0,4.4,Supporting Progressor
 Zambia,Edward Chilufya,82.0,0.0,3.0,1.0,0.0,3.29,1.1,4.390000000000001,Ball Carrier
 Mali,Amadou Haïdara,287.0,8.0,1.0,5.0,2.51,0.31,1.57,4.39,Supporting Progressor
@@ -492,12 +492,12 @@ Zambia,Kings Kangwa,193.0,6.0,1.0,2.0,2.8,0.47,0.93,4.199999999999999,Supporting
 Zambia,Benedict Chepeshi,86.0,3.0,1.0,0.0,3.14,1.05,0.0,4.19,Progressive Passer
 Tunisia,Haythem Jouini,108.0,1.0,2.0,2.0,0.83,1.67,1.67,4.17,Supporting Progressor
 Stade Brestois,Noah Fadiga,152.0,2.0,3.0,2.0,1.18,1.78,1.18,4.14,Supporting Progressor
-Inter Miami,Kamal Miller,567.0,19.0,6.0,1.0,3.02,0.95,0.16,4.13,Progressive Passer
 Gambia,Ebrima Colley,87.0,0.0,1.0,3.0,0.0,1.03,3.1,4.13,Limited Progression
+Inter Miami,Kamal Miller,567.0,19.0,6.0,1.0,3.02,0.95,0.16,4.13,Progressive Passer
 Congo DR,Arthur Masuaku,613.0,13.0,7.0,8.0,1.91,1.03,1.17,4.109999999999999,Supporting Progressor
-Charlotte,Enzo Nahuel Copetti,88.0,0.0,2.0,2.0,0.0,2.05,2.05,4.1,Supporting Progressor
-LAFC,Jesús David Murillo Largacha,44.0,1.0,0.0,1.0,2.05,0.0,2.05,4.1,Supporting Progressor
 Cape Verde Islands,Deroy Duarte,219.0,4.0,3.0,3.0,1.64,1.23,1.23,4.1,Supporting Progressor
+LAFC,Jesús David Murillo Largacha,44.0,1.0,0.0,1.0,2.05,0.0,2.05,4.1,Supporting Progressor
+Charlotte,Enzo Nahuel Copetti,88.0,0.0,2.0,2.0,0.0,2.05,2.05,4.1,Supporting Progressor
 Strasbourg,Colin Dagba,66.0,0.0,0.0,3.0,0.0,0.0,4.09,4.09,Progression Outlet
 Congo DR,Cédric Bakambu,419.0,2.0,7.0,10.0,0.43,1.5,2.15,4.08,Supporting Progressor
 Paris Saint-Germain,El Chadaille Bitshiabu,488.0,13.0,1.0,8.0,2.4,0.18,1.48,4.0600000000000005,Supporting Progressor
@@ -505,8 +505,8 @@ Guinea,Sekou Oumar Sylla,310.0,2.0,7.0,5.0,0.58,2.03,1.45,4.06,Supporting Progre
 Rennes,Lovro Majer,89.0,3.0,1.0,0.0,3.03,1.01,0.0,4.04,Progressive Passer
 AC Ajaccio,Mathieu Coutadeur,156.0,4.0,2.0,1.0,2.31,1.15,0.58,4.04,Supporting Progressor
 Mozambique,Domingos João Macandza,179.0,3.0,5.0,0.0,1.51,2.51,0.0,4.02,Supporting Progressor
-New York Red Bulls,Dru Yearwood,45.0,1.0,0.0,1.0,2.0,0.0,2.0,4.0,Supporting Progressor
 Algeria,Sofiane Feghouli,45.0,2.0,0.0,0.0,4.0,0.0,0.0,4.0,Progressive Passer
+New York Red Bulls,Dru Yearwood,45.0,1.0,0.0,1.0,2.0,0.0,2.0,4.0,Supporting Progressor
 Nashville SC,Randall Enrique Leal Arley,45.0,1.0,0.0,1.0,2.0,0.0,2.0,4.0,Supporting Progressor
 Cape Verde Islands,Carlos Miguel Pereira Fernandes,45.0,1.0,0.0,1.0,2.0,0.0,2.0,4.0,Supporting Progressor
 Lens,Adrien Thomasson,45.0,0.0,1.0,1.0,0.0,2.0,2.0,4.0,Supporting Progressor
@@ -522,18 +522,18 @@ Montpellier,Théo Sainte-Luce,92.0,1.0,1.0,2.0,0.98,0.98,1.96,3.92,Limited Progr
 Guinea-Bissau,Fali Candé,207.0,4.0,2.0,3.0,1.74,0.87,1.3,3.91,Supporting Progressor
 OGC Nice,Jean-Clair Todibo,93.0,3.0,1.0,0.0,2.9,0.97,0.0,3.87,Progressive Passer
 Lille,Alexsandro Victor de Souza Ribeiro,70.0,2.0,1.0,0.0,2.57,1.29,0.0,3.86,Supporting Progressor
-Angers,Miha Blažič,94.0,4.0,0.0,0.0,3.83,0.0,0.0,3.83,Progressive Passer
 Montpellier,Boubakar Kouyate,94.0,3.0,1.0,0.0,2.87,0.96,0.0,3.83,Progressive Passer
+Angers,Miha Blažič,94.0,4.0,0.0,0.0,3.83,0.0,0.0,3.83,Progressive Passer
 Toulouse,Logan Costa,47.0,1.0,1.0,0.0,1.91,1.91,0.0,3.82,Supporting Progressor
 Angola,Manuel Keliano,71.0,2.0,1.0,0.0,2.54,1.27,0.0,3.81,Supporting Progressor
 Algeria,Youcef Atal,259.0,3.0,6.0,2.0,1.04,2.08,0.69,3.81,Supporting Progressor
-Cincinnati,Ian Murphy,95.0,3.0,0.0,1.0,2.84,0.0,0.95,3.79,Progressive Passer
 South Africa,Sphephelo S''Miso Sithole,735.0,18.0,6.0,7.0,2.2,0.73,0.86,3.79,Supporting Progressor
+Cincinnati,Ian Murphy,95.0,3.0,0.0,1.0,2.84,0.0,0.95,3.79,Progressive Passer
 New York Red Bulls,Peter Stroud,48.0,1.0,0.0,1.0,1.88,0.0,1.88,3.76,Supporting Progressor
 LAFC,Aaron Long,96.0,3.0,1.0,0.0,2.81,0.94,0.0,3.75,Progressive Passer
+Algeria,Baghdad Bounedjah,267.0,2.0,3.0,6.0,0.67,1.01,2.02,3.7,Limited Progression
 Tanzania,Mudathiri Yahya,73.0,2.0,1.0,0.0,2.47,1.23,0.0,3.7,Supporting Progressor
 AS Monaco,Mohamed Camara,73.0,2.0,1.0,0.0,2.47,1.23,0.0,3.7,Supporting Progressor
-Algeria,Baghdad Bounedjah,267.0,2.0,3.0,6.0,0.67,1.01,2.02,3.7,Limited Progression
 Egypt,Mohamed Salah,148.0,1.0,2.0,3.0,0.61,1.22,1.82,3.6500000000000004,Supporting Progressor
 Inter Miami,Gregore de Magalhães Silva,74.0,3.0,0.0,0.0,3.65,0.0,0.0,3.65,Progressive Passer
 Clermont Foot,Komnen Andrić,99.0,1.0,0.0,3.0,0.91,0.0,2.73,3.64,Limited Progression
@@ -548,8 +548,8 @@ OGC Nice,Gaëtan Laborde,102.0,0.0,2.0,2.0,0.0,1.76,1.76,3.52,Supporting Progres
 Stade Brestois,Hugo Magnetti,129.0,4.0,0.0,1.0,2.79,0.0,0.7,3.49,Supporting Progressor
 Equatorial Guinea,Basilio Ndong Owono Nchamaaa,389.0,2.0,4.0,9.0,0.46,0.93,2.08,3.47,Limited Progression
 Egypt,Mahmoud Hamada,52.0,1.0,0.0,1.0,1.73,0.0,1.73,3.46,Supporting Progressor
-Tanzania,Himid Mao Mkami,237.0,8.0,1.0,0.0,3.04,0.38,0.0,3.42,Progressive Passer
 Tunisia,Seifeddine Jaziri,79.0,0.0,0.0,3.0,0.0,0.0,3.42,3.42,Limited Progression
+Tanzania,Himid Mao Mkami,237.0,8.0,1.0,0.0,3.04,0.38,0.0,3.42,Progressive Passer
 Congo DR,Chancel Mbemba Mangulu,745.0,20.0,8.0,0.0,2.42,0.97,0.0,3.3899999999999997,Supporting Progressor
 Guinea-Bissau,Eulânio Ângelo Chipela Gomes,80.0,1.0,0.0,2.0,1.12,0.0,2.25,3.37,Limited Progression
 Nantes,Nicolas Pallois,161.0,5.0,1.0,0.0,2.8,0.56,0.0,3.36,Supporting Progressor
@@ -574,40 +574,40 @@ Mali,Boubakar Kouyate,510.0,16.0,2.0,0.0,2.82,0.35,0.0,3.17,Progressive Passer
 Senegal,Nampalys Mendy,114.0,2.0,1.0,1.0,1.58,0.79,0.79,3.16,Limited Progression
 Zambia,Patson Daka,286.0,0.0,5.0,5.0,0.0,1.57,1.57,3.14,Supporting Progressor
 Mozambique,Feliciano João Jone,86.0,3.0,0.0,0.0,3.14,0.0,0.0,3.14,Progressive Passer
+Mauritania,Ibrahima Keita,376.0,5.0,4.0,4.0,1.2,0.96,0.96,3.12,Limited Progression
 Angola,Valdomiro Tualungo Paulo Lameiras,173.0,4.0,1.0,1.0,2.08,0.52,0.52,3.12,Supporting Progressor
 Ghana,Antoine Semenyo,231.0,1.0,3.0,4.0,0.39,1.17,1.56,3.12,Supporting Progressor
-Mauritania,Ibrahima Keita,376.0,5.0,4.0,4.0,1.2,0.96,0.96,3.12,Limited Progression
 Angola,Augusto de Jesus Corte Real Carneiro,290.0,3.0,5.0,2.0,0.93,1.55,0.62,3.1,Supporting Progressor
 Mali,Aliou Dieng,145.0,4.0,1.0,0.0,2.48,0.62,0.0,3.1,Supporting Progressor
 Congo DR,Aaron Tshibola,175.0,4.0,2.0,0.0,2.06,1.03,0.0,3.09,Supporting Progressor
 Equatorial Guinea,Pablo Ganet Cómitre,327.0,7.0,1.0,3.0,1.93,0.28,0.83,3.04,Supporting Progressor
-Lille,Gabriel Gudmundsson,89.0,1.0,1.0,1.0,1.01,1.01,1.01,3.0300000000000002,Limited Progression
 AC Ajaccio,Ismaël Chester Diallo,89.0,2.0,0.0,1.0,2.02,0.0,1.01,3.0300000000000002,Supporting Progressor
+Lille,Gabriel Gudmundsson,89.0,1.0,1.0,1.0,1.01,1.01,1.01,3.0300000000000002,Limited Progression
 Mali,Boubacar Traore,30.0,0.0,1.0,0.0,0.0,3.0,0.0,3.0,Ball Carrier
 Algeria,Hichem Boudaoui,61.0,1.0,0.0,1.0,1.48,0.0,1.48,2.96,Limited Progression
 Stade Brestois,Haris Belkebla,184.0,4.0,2.0,0.0,1.96,0.98,0.0,2.94,Supporting Progressor
 Congo DR,Henoc Inonga Baka,398.0,13.0,0.0,0.0,2.94,0.0,0.0,2.94,Progressive Passer
-Guinea,Amadou Diawara,276.0,8.0,0.0,1.0,2.61,0.0,0.33,2.94,Supporting Progressor
 Cape Verde Islands,Erickson Patrick Correia Andrade,92.0,2.0,0.0,1.0,1.96,0.0,0.98,2.94,Supporting Progressor
+Guinea,Amadou Diawara,276.0,8.0,0.0,1.0,2.61,0.0,0.33,2.94,Supporting Progressor
 Equatorial Guinea,Carlos Akapo Martínez,371.0,4.0,7.0,1.0,0.97,1.7,0.24,2.91,Supporting Progressor
 Lens,Facundo Axel Medina,93.0,1.0,0.0,2.0,0.97,0.0,1.94,2.91,Limited Progression
 Tunisia,Ellyes Joris Skhiri,279.0,6.0,1.0,2.0,1.94,0.32,0.65,2.9099999999999997,Supporting Progressor
+Cincinnati,Yuya Kubo,31.0,0.0,1.0,0.0,0.0,2.9,0.0,2.9,Ball Carrier
 Lens,Kevin Danso,93.0,3.0,0.0,0.0,2.9,0.0,0.0,2.9,Progressive Passer
 Montpellier,Jordan Ferri,124.0,0.0,4.0,0.0,0.0,2.9,0.0,2.9,Ball Carrier
-Cincinnati,Yuya Kubo,31.0,0.0,1.0,0.0,0.0,2.9,0.0,2.9,Ball Carrier
 Marseille,Leonardo Julián Balerdi Rossa,187.0,5.0,1.0,0.0,2.41,0.48,0.0,2.89,Supporting Progressor
 Cameroon,Christopher Wooh,373.0,9.0,3.0,0.0,2.17,0.72,0.0,2.8899999999999997,Supporting Progressor
 Namibia,Ivan Kamberipa,189.0,4.0,1.0,1.0,1.9,0.48,0.48,2.86,Supporting Progressor
 Nigeria,Calvin Bassey Ughelumba,632.0,14.0,3.0,3.0,1.99,0.43,0.43,2.85,Supporting Progressor
-Congo DR,Omenuke Mfulu,95.0,2.0,1.0,0.0,1.89,0.95,0.0,2.84,Supporting Progressor
 Cincinnati,Nick Hagglund,95.0,3.0,0.0,0.0,2.84,0.0,0.0,2.84,Progressive Passer
+Congo DR,Omenuke Mfulu,95.0,2.0,1.0,0.0,1.89,0.95,0.0,2.84,Supporting Progressor
 Algeria,Nabil Bentaleb,192.0,3.0,2.0,1.0,1.41,0.94,0.47,2.8199999999999994,Limited Progression
 Montpellier,Sérigné Faye,32.0,0.0,0.0,1.0,0.0,0.0,2.81,2.81,Limited Progression
 Angola,Eddie Marcos Melo Afonso,387.0,6.0,2.0,4.0,1.4,0.47,0.93,2.8,Limited Progression
 Stade Brestois,Achraf Dari,129.0,4.0,0.0,0.0,2.79,0.0,0.0,2.79,Supporting Progressor
 Burkina Faso,Edmond Fayçal Tapsoba,395.0,11.0,1.0,0.0,2.51,0.23,0.0,2.7399999999999998,Supporting Progressor
-AS Monaco,Breel-Donald Embolo,33.0,1.0,0.0,0.0,2.73,0.0,0.0,2.73,Supporting Progressor
 Nashville SC,Luke Haakenson,33.0,0.0,0.0,1.0,0.0,0.0,2.73,2.73,Limited Progression
+AS Monaco,Breel-Donald Embolo,33.0,1.0,0.0,0.0,2.73,0.0,0.0,2.73,Supporting Progressor
 Burkina Faso,Steeve Yago,265.0,4.0,1.0,3.0,1.36,0.34,1.02,2.72,Limited Progression
 Congo DR,Charles Pickel,494.0,11.0,2.0,2.0,2.0,0.36,0.36,2.7199999999999998,Supporting Progressor
 Cameroon,Nouhou Tolo,299.0,1.0,6.0,2.0,0.3,1.81,0.6,2.71,Supporting Progressor
@@ -623,14 +623,14 @@ Nantes,Florent Mollet,69.0,0.0,1.0,1.0,0.0,1.3,1.3,2.6,Supporting Progressor
 Lille,José Miguel da Rocha Fonte,104.0,3.0,0.0,0.0,2.6,0.0,0.0,2.6,Supporting Progressor
 Mauritania,Idrissa Thiam,139.0,1.0,2.0,1.0,0.65,1.29,0.65,2.59,Supporting Progressor
 Senegal,Pape Gueye,246.0,6.0,1.0,0.0,2.2,0.37,0.0,2.5700000000000003,Supporting Progressor
-LAFC,Diego José Palacios Espinoza,35.0,0.0,0.0,1.0,0.0,0.0,2.57,2.57,Limited Progression
 Senegal,Kalidou Koulibaly,420.0,12.0,0.0,0.0,2.57,0.0,0.0,2.57,Supporting Progressor
+LAFC,Diego José Palacios Espinoza,35.0,0.0,0.0,1.0,0.0,0.0,2.57,2.57,Limited Progression
 Côte d'Ivoire,Odilon Kossonou,456.0,11.0,2.0,0.0,2.17,0.39,0.0,2.56,Supporting Progressor
 Inter Miami,Serhiy Kryvtsov,283.0,6.0,2.0,0.0,1.91,0.64,0.0,2.55,Supporting Progressor
 Morocco,Ayoub El Kaabi,142.0,1.0,1.0,2.0,0.63,0.63,1.27,2.5300000000000002,Limited Progression
 Inter Miami,Tomás Agustín Avilés Mancilla,499.0,11.0,3.0,0.0,1.98,0.54,0.0,2.52,Supporting Progressor
-OGC Nice,Ross Barkley,72.0,1.0,1.0,0.0,1.25,1.25,0.0,2.5,Supporting Progressor
 Guinea-Bissau,Janio Bikel Figueiredo Silva,287.0,4.0,3.0,1.0,1.25,0.94,0.31,2.5,Limited Progression
+OGC Nice,Ross Barkley,72.0,1.0,1.0,0.0,1.25,1.25,0.0,2.5,Supporting Progressor
 Mauritania,Yacoub Aly Abeid,144.0,1.0,2.0,1.0,0.62,1.25,0.62,2.49,Supporting Progressor
 Egypt,Mohamed Abdel Monem,435.0,11.0,1.0,0.0,2.28,0.21,0.0,2.4899999999999998,Supporting Progressor
 Nigeria,Kenneth Josiah Omeruo,145.0,4.0,0.0,0.0,2.48,0.0,0.0,2.48,Supporting Progressor
@@ -643,12 +643,12 @@ OGC Nice,Mario Lemina,75.0,2.0,0.0,0.0,2.4,0.0,0.0,2.4,Supporting Progressor
 Morocco,Youssef En-Nesyri,264.0,0.0,0.0,7.0,0.0,0.0,2.39,2.39,Limited Progression
 Namibia,Aprocious Petrus,381.0,9.0,0.0,1.0,2.13,0.0,0.24,2.37,Supporting Progressor
 Stade Brestois,Lilian Brassier,191.0,5.0,0.0,0.0,2.36,0.0,0.0,2.36,Supporting Progressor
-Algeria,Kévin Daniel Van Den Kerkhof,39.0,0.0,0.0,1.0,0.0,0.0,2.31,2.31,Limited Progression
-Cameroon,Yvan Neyou Noupa,78.0,2.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
-Lille,Tiago Emanuel Embaló Djaló,117.0,3.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
 Gambia,Saidy Janko,194.0,3.0,1.0,1.0,1.39,0.46,0.46,2.31,Limited Progression
+Lille,Tiago Emanuel Embaló Djaló,117.0,3.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
 Equatorial Guinea,Saúl Basilio Coco-Bassey Oubiña,390.0,8.0,2.0,0.0,1.85,0.46,0.0,2.31,Supporting Progressor
+Cameroon,Yvan Neyou Noupa,78.0,2.0,0.0,0.0,2.31,0.0,0.0,2.31,Supporting Progressor
 Senegal,Abdou Diallo,273.0,6.0,1.0,0.0,1.98,0.33,0.0,2.31,Supporting Progressor
+Algeria,Kévin Daniel Van Den Kerkhof,39.0,0.0,0.0,1.0,0.0,0.0,2.31,2.31,Limited Progression
 Morocco,Mohamed Chibi,196.0,4.0,0.0,1.0,1.84,0.0,0.46,2.3000000000000003,Supporting Progressor
 Senegal,Pape Matar Sarr,274.0,5.0,2.0,0.0,1.64,0.66,0.0,2.3,Limited Progression
 Rennes,Adrien Truffert,79.0,0.0,1.0,1.0,0.0,1.14,1.14,2.28,Limited Progression
@@ -669,30 +669,30 @@ Mauritania,Guessouma Fofana,224.0,4.0,1.0,0.0,1.61,0.4,0.0,2.0100000000000002,Li
 Mauritania,El Hacen Houeibib,134.0,3.0,0.0,0.0,2.01,0.0,0.0,2.01,Supporting Progressor
 Guinea-Bissau,Zinho Gano,45.0,0.0,0.0,1.0,0.0,0.0,2.0,2.0,Limited Progression
 Clermont Foot,Mateusz Wieteska,183.0,4.0,0.0,0.0,1.97,0.0,0.0,1.97,Supporting Progressor
-Strasbourg,Frédéric Guilbert,92.0,1.0,1.0,0.0,0.98,0.98,0.0,1.96,Limited Progression
 Strasbourg,Gerzino Nyamsi,92.0,2.0,0.0,0.0,1.96,0.0,0.0,1.96,Supporting Progressor
+Strasbourg,Frédéric Guilbert,92.0,1.0,1.0,0.0,0.98,0.98,0.0,1.96,Limited Progression
 South Africa,Mothobi Mvala,644.0,12.0,2.0,0.0,1.68,0.28,0.0,1.96,Limited Progression
-Troyes,Yoann Salmier,93.0,2.0,0.0,0.0,1.94,0.0,0.0,1.94,Supporting Progressor
-Toronto FC,Michael Bradley,93.0,2.0,0.0,0.0,1.94,0.0,0.0,1.94,Supporting Progressor
 Troyes,Erik Palmer-Brown,93.0,2.0,0.0,0.0,1.94,0.0,0.0,1.94,Supporting Progressor
+Toronto FC,Michael Bradley,93.0,2.0,0.0,0.0,1.94,0.0,0.0,1.94,Supporting Progressor
 Charlotte,Nathan Byrne,93.0,2.0,0.0,0.0,1.94,0.0,0.0,1.94,Supporting Progressor
+Troyes,Yoann Salmier,93.0,2.0,0.0,0.0,1.94,0.0,0.0,1.94,Supporting Progressor
 Nantes,Andrei Girotto,187.0,4.0,0.0,0.0,1.93,0.0,0.0,1.93,Supporting Progressor
-OGC Nice,Mattia Viti,94.0,2.0,0.0,0.0,1.91,0.0,0.0,1.91,Supporting Progressor
 Cape Verde Islands,Roberto Lopes,424.0,8.0,1.0,0.0,1.7,0.21,0.0,1.91,Supporting Progressor
-Lyon,Sinaly Diomande,95.0,1.0,1.0,0.0,0.95,0.95,0.0,1.9,Limited Progression
+OGC Nice,Mattia Viti,94.0,2.0,0.0,0.0,1.91,0.0,0.0,1.91,Supporting Progressor
 Guinea-Bissau,Houboulang Mendes,95.0,0.0,1.0,1.0,0.0,0.95,0.95,1.9,Limited Progression
+Lyon,Sinaly Diomande,95.0,1.0,1.0,0.0,0.95,0.95,0.0,1.9,Limited Progression
 Gambia,Ebrima Darboe,143.0,2.0,1.0,0.0,1.26,0.63,0.0,1.8900000000000001,Limited Progression
 Lorient,Abdoul Bamo Meité,95.0,2.0,0.0,0.0,1.89,0.0,0.0,1.89,Supporting Progressor
-AS Monaco,Axel Disasi,96.0,2.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
-Guinea-Bissau,Jefferson Anilson Silva Encada,192.0,2.0,1.0,1.0,0.94,0.47,0.47,1.88,Limited Progression
 Lens,Jean Emile Junior Onana Onana,48.0,1.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
+Guinea-Bissau,Jefferson Anilson Silva Encada,192.0,2.0,1.0,1.0,0.94,0.47,0.47,1.88,Limited Progression
+AS Monaco,Axel Disasi,96.0,2.0,0.0,0.0,1.88,0.0,0.0,1.88,Supporting Progressor
 Tunisia,Ali Abdi,193.0,1.0,1.0,2.0,0.47,0.47,0.93,1.87,Limited Progression
-Egypt,Ahmed Elsayed Ali Elsayed Hegazy,435.0,9.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
-Stade de Reims,Emmanuel Agbadou,97.0,2.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
-Nashville SC,Jack Maher,97.0,2.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
-Nashville SC,Shaquell Moore,97.0,0.0,1.0,1.0,0.0,0.93,0.93,1.86,Limited Progression
 Nashville SC,Brian Anunga,97.0,1.0,1.0,0.0,0.93,0.93,0.0,1.86,Limited Progression
+Egypt,Ahmed Elsayed Ali Elsayed Hegazy,435.0,9.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
 Nashville SC,Daniel Lovitz,97.0,1.0,0.0,1.0,0.93,0.0,0.93,1.86,Limited Progression
+Nashville SC,Shaquell Moore,97.0,0.0,1.0,1.0,0.0,0.93,0.93,1.86,Limited Progression
+Nashville SC,Jack Maher,97.0,2.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
+Stade de Reims,Emmanuel Agbadou,97.0,2.0,0.0,0.0,1.86,0.0,0.0,1.86,Supporting Progressor
 Tunisia,Montassar Omar Talbi,290.0,2.0,2.0,2.0,0.62,0.62,0.62,1.8599999999999999,Limited Progression
 Ghana,Mohamed Salisu,292.0,5.0,1.0,0.0,1.54,0.31,0.0,1.85,Limited Progression
 AC Ajaccio,Thomas Mangani,100.0,2.0,0.0,0.0,1.8,0.0,0.0,1.8,Supporting Progressor
@@ -709,20 +709,20 @@ Zambia,Roderick Kabwe,287.0,3.0,1.0,1.0,0.94,0.31,0.31,1.56,Limited Progression
 Guinea,Mory Konaté,173.0,3.0,0.0,0.0,1.56,0.0,0.0,1.56,Limited Progression
 Tunisia,Yassine Meriah,290.0,5.0,0.0,0.0,1.55,0.0,0.0,1.55,Limited Progression
 Côte d'Ivoire,Ousmane Diomande,175.0,3.0,0.0,0.0,1.54,0.0,0.0,1.54,Limited Progression
-Angers,Pierrick Capelle,61.0,0.0,1.0,0.0,0.0,1.48,0.0,1.48,Supporting Progressor
 Tanzania,Mzamiru Yassin,121.0,1.0,0.0,1.0,0.74,0.0,0.74,1.48,Limited Progression
-Toulouse,Anthony Rouault,186.0,3.0,0.0,0.0,1.45,0.0,0.0,1.45,Limited Progression
-Stade Brestois,Mahdi Camara,62.0,1.0,0.0,0.0,1.45,0.0,0.0,1.45,Limited Progression
+Angers,Pierrick Capelle,61.0,0.0,1.0,0.0,0.0,1.48,0.0,1.48,Supporting Progressor
 Auxerre,Jubal Rocha Mendes Junior,186.0,3.0,0.0,0.0,1.45,0.0,0.0,1.45,Limited Progression
+Stade Brestois,Mahdi Camara,62.0,1.0,0.0,0.0,1.45,0.0,0.0,1.45,Limited Progression
+Toulouse,Anthony Rouault,186.0,3.0,0.0,0.0,1.45,0.0,0.0,1.45,Limited Progression
 Toulouse,Oliver Zandén,63.0,1.0,0.0,0.0,1.43,0.0,0.0,1.43,Limited Progression
 Mauritania,Khadim Diaw,254.0,2.0,0.0,2.0,0.71,0.0,0.71,1.42,Limited Progression
 Rennes,Christopher Wooh,192.0,3.0,0.0,0.0,1.41,0.0,0.0,1.41,Limited Progression
 Morocco,Nayef Aguerd,393.0,6.0,0.0,0.0,1.37,0.0,0.0,1.37,Limited Progression
-Stade Brestois,Steve Michel Mounié,67.0,0.0,0.0,1.0,0.0,0.0,1.34,1.34,Limited Progression
 Tanzania,Charles M'Mombwa,134.0,0.0,1.0,1.0,0.0,0.67,0.67,1.34,Limited Progression
+Stade Brestois,Steve Michel Mounié,67.0,0.0,0.0,1.0,0.0,0.0,1.34,1.34,Limited Progression
 Burkina Faso,Adamo Nagalo,135.0,2.0,0.0,0.0,1.33,0.0,0.0,1.33,Limited Progression
-Gambia,Hamza Barry,68.0,1.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
 Montpellier,Leo Leroy,68.0,0.0,1.0,0.0,0.0,1.32,0.0,1.32,Supporting Progressor
+Gambia,Hamza Barry,68.0,1.0,0.0,0.0,1.32,0.0,0.0,1.32,Limited Progression
 Angola,Joaquim Marcos Cunga Balanga,206.0,2.0,1.0,0.0,0.87,0.44,0.0,1.31,Limited Progression
 Gambia,Yusupha Bobb,69.0,1.0,0.0,0.0,1.3,0.0,0.0,1.3,Limited Progression
 Zambia,Frankie Musonda,288.0,3.0,1.0,0.0,0.94,0.31,0.0,1.25,Limited Progression
@@ -738,29 +738,29 @@ Angola,Kialonda Gaspar,484.0,5.0,1.0,0.0,0.93,0.19,0.0,1.12,Limited Progression
 Lens,Jonathan Gradit,83.0,0.0,1.0,0.0,0.0,1.08,0.0,1.08,Limited Progression
 Ghana,André Ayew Pelé,89.0,0.0,1.0,0.0,0.0,1.01,0.0,1.01,Limited Progression
 AC Ajaccio,Cédric Avinel,183.0,2.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
-Montpellier,Nicolas Louis Marcel Cozza,92.0,1.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
-Nantes,Fábio Pereira da Silva,92.0,0.0,0.0,1.0,0.0,0.0,0.98,0.98,Limited Progression
 Strasbourg,Ismael Doukoure,92.0,1.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
+Nantes,Fábio Pereira da Silva,92.0,0.0,0.0,1.0,0.0,0.0,0.98,0.98,Limited Progression
+Montpellier,Nicolas Louis Marcel Cozza,92.0,1.0,0.0,0.0,0.98,0.0,0.0,0.98,Limited Progression
 Lens,Salis Abdul Samed,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
 Toronto FC,Sigurd Rosted,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
 AC Ajaccio,Oumar Gonzalez,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
 Charlotte,Adilson Malanda,93.0,1.0,0.0,0.0,0.97,0.0,0.0,0.97,Limited Progression
-Montpellier,Christopher Jullien,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
 Montpellier,Maxime Esteve,94.0,0.0,0.0,1.0,0.0,0.0,0.96,0.96,Limited Progression
-Cincinnati,Matt Miazga,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
+Montpellier,Christopher Jullien,94.0,1.0,0.0,0.0,0.96,0.0,0.0,0.96,Limited Progression
 Morocco,Yunis Abdelhamid,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
-Namibia,Lubeni Haukongo,476.0,5.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
-Lorient,Montassar Omar Talbi,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
+Cincinnati,Matt Miazga,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
 Lyon,Dejan Lovren,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
+Lorient,Montassar Omar Talbi,95.0,1.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
+Namibia,Lubeni Haukongo,476.0,5.0,0.0,0.0,0.95,0.0,0.0,0.95,Limited Progression
 Tanzania,Bakari Nondo Mwamnyeto,287.0,3.0,0.0,0.0,0.94,0.0,0.0,0.94,Limited Progression
-Guinea,Mohamed Aly Camara,96.0,0.0,1.0,0.0,0.0,0.94,0.0,0.94,Limited Progression
 Rennes,Warmed Omari,96.0,1.0,0.0,0.0,0.94,0.0,0.0,0.94,Limited Progression
 Guinea,Saidou Sow,96.0,1.0,0.0,0.0,0.94,0.0,0.0,0.94,Limited Progression
+Guinea,Mohamed Aly Camara,96.0,0.0,1.0,0.0,0.0,0.94,0.0,0.94,Limited Progression
 Guinea-Bissau,Marcelo Amado Djaló Taritolay,192.0,2.0,0.0,0.0,0.94,0.0,0.0,0.94,Limited Progression
 AS Monaco,Benoît Badiashile Mukinayi,96.0,1.0,0.0,0.0,0.94,0.0,0.0,0.94,Limited Progression
+Mozambique,Edson André Sitoe,292.0,3.0,0.0,0.0,0.92,0.0,0.0,0.92,Limited Progression
 Algeria,Ramy Bensebaini,196.0,2.0,0.0,0.0,0.92,0.0,0.0,0.92,Limited Progression
 Ghana,Alexander Djiku,292.0,3.0,0.0,0.0,0.92,0.0,0.0,0.92,Limited Progression
-Mozambique,Edson André Sitoe,292.0,3.0,0.0,0.0,0.92,0.0,0.0,0.92,Limited Progression
 Cameroon,Oumar Gonzalez,99.0,1.0,0.0,0.0,0.91,0.0,0.0,0.91,Limited Progression
 Cape Verde Islands,Edilson Alberto Monteiro Sanches Borges,103.0,1.0,0.0,0.0,0.87,0.0,0.0,0.87,Limited Progression
 Senegal,Moussa Niakhate,210.0,1.0,1.0,0.0,0.43,0.43,0.0,0.86,Limited Progression
@@ -778,108 +778,108 @@ Clermont Foot,Alidu Seidu,183.0,0.0,1.0,0.0,0.0,0.49,0.0,0.49,Limited Progressio
 Angers,Cédric Hountondji,186.0,0.0,1.0,0.0,0.0,0.48,0.0,0.48,Limited Progression
 Guinea-Bissau,Opa Sangante,189.0,1.0,0.0,0.0,0.48,0.0,0.0,0.48,Limited Progression
 Lyon,Junior Castello Lukeba,190.0,1.0,0.0,0.0,0.47,0.0,0.0,0.47,Limited Progression
+Mauritania,Nouh Mohamed El Abd,195.0,1.0,0.0,0.0,0.46,0.0,0.0,0.46,Limited Progression
 Ghana,Salis Abdul Samed,196.0,0.0,1.0,0.0,0.0,0.46,0.0,0.46,Limited Progression
 Mozambique,Edmilson Gabriel Dove,196.0,1.0,0.0,0.0,0.46,0.0,0.0,0.46,Limited Progression
-Mauritania,Nouh Mohamed El Abd,195.0,1.0,0.0,0.0,0.46,0.0,0.0,0.46,Limited Progression
 Ghana,Majeed Ashimeru,244.0,0.0,1.0,0.0,0.0,0.37,0.0,0.37,Limited Progression
 Tanzania,Ibrahim Abdallah Hamad,288.0,1.0,0.0,0.0,0.31,0.0,0.0,0.31,Limited Progression
 South Africa,Siyanda Xulu,302.0,1.0,0.0,0.0,0.3,0.0,0.0,0.3,Limited Progression
 Equatorial Guinea,Esteban Obiang Obono,390.0,1.0,0.0,0.0,0.23,0.0,0.0,0.23,Limited Progression
 Angola,Jonathan Buatu Mananga,385.0,1.0,0.0,0.0,0.23,0.0,0.0,0.23,Limited Progression
 South Africa,Ronwen Williams,776.0,1.0,0.0,0.0,0.12,0.0,0.0,0.12,Limited Progression
-Senegal,Pathé Ismaël Ciss,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Gambia,James Gomez,294.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lens,Brice Samba,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Gambia,Baboucarr Gaye,294.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Congo DR,Lionel Mpasi-Nzau,613.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Congo DR,Dimitry Bertaud,132.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Charlotte,Kristijan Kahlina,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Rennes,Joe Rodon,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lorient,Ayman Kari,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Namibia,Lloyd Junior Kazapua,381.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Gambia,Bubacarr Sanneh,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-LAFC,John McCarthy,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Auxerre,Benoît Guy Robert Costil,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Egypt,Mohamed El Sayed Mohamed El Shenawy Gomaa,357.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-OGC Nice,Kasper Schmeichel,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Angola,Adilson Cipriano da Cruz,383.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nigeria,Raphael Onyedika,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AC Ajaccio,Clément Vidal,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Algeria,Anthony Louis Mandréa,298.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Gambia,Ebou Adams,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Montpellier,Jonas Omlin,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Clermont Foot,Yohann Magnin,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mali,Moussa Diarra,67.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Marseille,Pau López Sabata,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Troyes,Jackson Gabriel Porozo Vernaza,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Guinea-Bissau,Edgar Miguel Ié,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AC Ajaccio,Benjamin Leroy,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Troyes,Gauthier Gallon,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Cincinnati,Roman Celentano,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cape Verde Islands,Josimar José Évora Dias,527.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Joe Rodon,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Egypt,Mohamed Abougabal,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lens,Brice Samba,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Inter Miami,Drake Callender,474.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Paris Saint-Germain,Gianluigi Donnarumma,2984.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+South Africa,Terrence Mashego,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+New York Red Bulls,Carlos Miguel Coronel,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Alexander Nübel,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lyon,Anthony Lopes,190.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Leonardo Cesar Jardim,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+South Africa,Nkosinathi Sibisi,143.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Guinea,Ibrahim Kone,484.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mauritania,El-Hadji Ba,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mauritania,Oumar Ngom,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Lorient,Yvon Landry Mvogo,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Côte d'Ivoire,Yahia Fofana,736.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Cameroon,Faris Pemi Moumbagna,72.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Tunisia,Bechir Ben Said,290.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Zambia,Tresford Lawrence Mulenga,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+OGC Nice,Kasper Schmeichel,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Angers,Paul Bernardoni,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cincinnati,Roman Celentano,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Congo DR,Dimitry Bertaud,132.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Nashville SC,Elliot Panicco,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cameroon,André Onana,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nantes,Alban Lafont,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nigeria,Kelechi Promise Iheanacho,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Toronto FC,Tomas Lían Romero Keubler,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Stade de Reims,Yehvann Diouf,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Ghana,Richard Ofori Antwi,292.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Egypt,Mohamed El Sayed Mohamed El Shenawy Gomaa,357.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Gambia,Muhammed Badamosi,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mali,Djigui Diarra,510.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Guinea-Bissau,Manconi Soriano Mané,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Morocco,Yassine Bounou,393.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Montpellier,Benjamin Lecomte,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mali,Mamadou Fofana,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nantes,Alban Lafont,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nigeria,Stanley Bobo Nwabali,693.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Ghana,Richard Ofori Antwi,292.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nashville SC,Alex Muyl,65.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Angola,Signori Dominique Nymi António,174.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Toulouse,Maxime Dupé,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Angers,Paul Bernardoni,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Montpellier,Valère Germain,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Cape Verde Islands,Josimar José Évora Dias,527.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Egypt,Mohamed Abougabal,135.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-South Africa,Terrence Mashego,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Guinea-Bissau,Fernando de Lacerda Gomes,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nashville SC,Dax McCarty,64.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mauritania,Oumar Ngom,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mauritania,Babacar Niasse,398.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-New York Red Bulls,Carlos Miguel Coronel,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Equatorial Guinea,Alejandro Balboa Bandeira,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Tanzania,Tarryn Allarakhia,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Cameroon,André Onana,98.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Tanzania,Aishi Manula,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AS Monaco,Alexander Nübel,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Paris Saint-Germain,Gianluigi Donnarumma,2984.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Guinea-Bissau,Ouparine Djoco,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Cameroon,Joseph Fabrice Ondoa Ebogo,298.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Inter Miami,Carlos Joaquim Dos Santos,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lille,Leonardo Cesar Jardim,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Guinea,Ibrahim Kone,484.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AC Ajaccio,Clément Vidal,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cameroon,Faris Pemi Moumbagna,72.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Auxerre,Benoît Guy Robert Costil,91.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Clermont Foot,Florent Ogier,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mozambique,Ernan Alberto Siluane,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Clermont Foot,Saîf-Eddine Khaoui,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Equatorial Guinea,Jesús Lázaro Owono Ngua Akeng,390.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Senegal,Edouard Mendy,420.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Inter Miami,Drake Callender,474.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lyon,Anthony Lopes,190.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AC Ajaccio,Benjamin Leroy,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AC Ajaccio,François-Joseph Sollacaro,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mozambique,Ivane Carminio Francisco Urrubal,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Strasbourg,Matz Sels,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nashville SC,Lukas MacNaughton,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-South Africa,Nkosinathi Sibisi,143.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Stade Brestois,Brendan Chardonnet,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Stade de Reims,Yehvann Diouf,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Stade Brestois,Marco Bizot,191.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Rennes,Steve Mandanda,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Auxerre,Ionuț Andrei Radu,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Algeria,Mohamed Amine Tougai,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Burkina Faso,Kouakou Herve Koffi,395.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Guinea-Bissau,Jonas Asvedo Mendes,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lille,Leny Yoro,83.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Lille,Lucas Chevalier,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mali,Djigui Diarra,510.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-AS Monaco,Guillermo Alfonso Maripán Loaysa,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Nigeria,Kelechi Promise Iheanacho,45.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Mauritania,El-Hadji Ba,63.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Charlotte,Kristijan Kahlina,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nashville SC,Alex Muyl,65.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Equatorial Guinea,Alejandro Balboa Bandeira,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mali,Moussa Diarra,67.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Clermont Foot,Mory Diaw,183.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
-Gambia,Muhammed Badamosi,58.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Cameroon,Joseph Fabrice Ondoa Ebogo,298.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AS Monaco,Guillermo Alfonso Maripán Loaysa,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+LAFC,John McCarthy,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Gambia,Bubacarr Sanneh,32.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Guinea-Bissau,Edgar Miguel Ié,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nigeria,Stanley Bobo Nwabali,693.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mali,Mamadou Fofana,30.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Gambia,James Gomez,294.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Montpellier,Valère Germain,76.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Montpellier,Benjamin Lecomte,94.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Rennes,Steve Mandanda,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Stade Brestois,Brendan Chardonnet,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Algeria,Mohamed Amine Tougai,102.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Tunisia,Bechir Ben Said,290.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Guinea-Bissau,Fernando de Lacerda Gomes,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Toulouse,Maxime Dupé,186.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Troyes,Jackson Gabriel Porozo Vernaza,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Angola,Signori Dominique Nymi António,174.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Namibia,Lloyd Junior Kazapua,381.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Côte d'Ivoire,Yahia Fofana,736.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Strasbourg,Matz Sels,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Zambia,Tresford Lawrence Mulenga,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nashville SC,Lukas MacNaughton,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Auxerre,Ionuț Andrei Radu,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+AC Ajaccio,François-Joseph Sollacaro,90.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lorient,Ayman Kari,36.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Tanzania,Aishi Manula,288.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mauritania,Babacar Niasse,398.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Saîf-Eddine Khaoui,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Guinea-Bissau,Jonas Asvedo Mendes,95.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nashville SC,Dax McCarty,64.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mozambique,Ivane Carminio Francisco Urrubal,96.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Senegal,Edouard Mendy,420.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Senegal,Pathé Ismaël Ciss,46.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Tanzania,Tarryn Allarakhia,38.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Guinea-Bissau,Ouparine Djoco,192.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Inter Miami,Carlos Joaquim Dos Santos,93.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Lucas Chevalier,97.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Lille,Leny Yoro,83.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Nigeria,Raphael Onyedika,33.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Congo DR,Lionel Mpasi-Nzau,613.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Equatorial Guinea,Jesús Lázaro Owono Ngua Akeng,390.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Burkina Faso,Kouakou Herve Koffi,395.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Montpellier,Jonas Omlin,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Angola,Adilson Cipriano da Cruz,383.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Gambia,Baboucarr Gaye,294.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Clermont Foot,Yohann Magnin,42.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Marseille,Pau López Sabata,187.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Mozambique,Ernan Alberto Siluane,196.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Gambia,Ebou Adams,92.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
 Mauritania,Mohamed Dellahi Yali,99.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression
+Stade Brestois,Marco Bizot,191.0,0.0,0.0,0.0,0.0,0.0,0.0,0.0,Limited Progression

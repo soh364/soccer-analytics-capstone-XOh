@@ -15,8 +15,7 @@ import pandas as pd
 from pathlib import Path
 from typing import Dict, Optional
 
-from ..player_metrics_config import PLAYER_METRICS
-
+from player_metrics_config import PLAYER_METRICS
 HARD_THRESHOLD = 270
 SHRINKAGE_FLOOR = 180
 
@@ -61,7 +60,7 @@ def build_position_lookup(lineups_path: str | Path) -> pl.DataFrame:
     Returns a Polars DataFrame with columns:
       player, season_name, position_archetype
     """
-    lineups = pd.read_parquet(lineups_path)
+    lineups = pd.read_parquet(lineups_path, engine='fastparquet')
 
     # Keep only rows with both player and position
     lineups = lineups.dropna(subset=["player_name", "position_name"])

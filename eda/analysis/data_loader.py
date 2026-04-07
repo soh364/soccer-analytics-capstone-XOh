@@ -20,8 +20,8 @@ def _season_folder_to_name(folder_name: str) -> str:
 class TournamentDataLoader8D:
     """Load 8-dimensional team metrics for tournament analysis."""
 
-    def __init__(self, base_dir='../outputs/raw_metrics'):
-        self.base_dir = Path(base_dir)
+    def __init__(self, base_dir=None):
+        self.base_dir = Path(base_dir) if base_dir else Path(__file__).resolve().parents[2] / 'outputs' / 'raw_metrics'
         self.metric_files = {
             'ppda': {
                 'file': 'possession__team__ppda.csv',
@@ -113,8 +113,8 @@ def load_tournament_data_8d(scope_name, verbose=True):
 class PlayerDataLoader:
     """Load player metrics from per-season subfolders with time-decay weighting."""
 
-    def __init__(self, base_dir='../outputs/raw_metrics'):
-        self.base_dir = Path(base_dir)
+    def __init__(self, base_dir=None):
+        self.base_dir = Path(base_dir) if base_dir else Path(__file__).resolve().parents[2] / 'outputs' / 'raw_metrics'
         self.metrics_config = PLAYER_METRICS
 
     def _discover_season_folders(self, scope_dir: Path) -> list[tuple[str, Path]]:
