@@ -140,8 +140,8 @@ def plot_archetype_radars(kmeans: KMeans,
     #   Then apply a FLOOR=0.15 so even the absolute minimum sits visibly
     #   off the centre rather than disappearing.
     #
-    # Result: Low Intensity still looks clearly smaller than every other
-    #   archetype — but you can read its actual shape, not just a dot.
+    # Result: Low Intensity still looks clearly smaller than every other archetype 
+    # — but you can read its actual shape, not just a dot.
     team_metrics = results[RADAR_METRICS].copy()
     team_metrics['ppda'] = team_metrics['ppda'].max() - team_metrics['ppda']
 
