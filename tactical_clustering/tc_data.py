@@ -17,8 +17,8 @@ import pandas as pd
 import numpy as np
 
 # ── Path setup ────────────────────────────────────────────────────────────────
-# Notebook lives in  <project_root>/tactical_clustering/
-# data_loader lives in  <project_root>/eda/analysis/
+# Notebook lives in  tactical_clustering/
+# data_loader lives in  eda/analysis/
 def _add_eda_to_path():
     notebook_dir = Path(__file__).resolve()
     project_root = notebook_dir.parent
