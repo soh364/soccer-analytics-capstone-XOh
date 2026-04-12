@@ -21,6 +21,48 @@ The central argument is not that we can predict the winner. It is that readiness
 
 ---
 
+## Dashboard
+
+An interactive dashboard accompanies the final report, built with Plotly Dash. It visualises all framework outputs — tactical archetypes, player quality scores, composite readiness rankings, and Monte Carlo simulation results — in a navigable interface designed for both technical and non-technical audiences.
+
+### Running the Dashboard
+
+**Prerequisites:** The final pipeline must have been run at least once so the output CSVs exist (see [Reproducing the Final Report](#reproducing-the-final-report)).
+```bash
+# Install dashboard dependencies (if not already installed)
+pip install dash plotly pandas numpy
+
+# Run the dashboard
+python wc2026_dashboard.py
+```
+
+Then open your browser to: **http://127.0.0.1:8050**
+
+The dashboard loads all data at startup from the pipeline output CSVs. If you rerun the pipeline with updated data, restart the dashboard server to reflect the changes.
+
+### Dashboard Structure
+
+| Tab | What it shows |
+|---|---|
+| **⚔️ War Room** | Global overview — tactical vs player quality scatter, top contenders, signal disagreement panel |
+| **🎯 Archetypes** | Tactical fingerprints — radar charts per archetype, bootstrap stability findings, team lists |
+| **🔍 Team Deep Dive** | Per-nation view — score decomposition, player trait heatmap, comparison panel, story callout |
+| **🎲 Monte Carlo** | Simulation results — outcome probability bars, group-by-group champion and exit probabilities |
+| **📋 About & Limits** | Framework explainer, data limitations, methodological choices |
+
+### Data Sources (Dashboard)
+
+The dashboard reads directly from these pipeline output files:
+
+player_score/outputs/player_quality_2026.csv
+player_score/outputs/player_details_2026.csv
+tactical_clustering/outputs/team_archetypes.csv
+composite_score/outputs/monte_carlo_2026.csv
+
+No internet connection required after initial setup. All data is local.
+
+---
+
 ## Notebooks
 
 | Notebook | Phase | Purpose |
