@@ -27,7 +27,7 @@ An interactive dashboard accompanies the final report, built with Plotly Dash. I
 
 ### Running the Dashboard
 
-**Prerequisites:** The final pipeline must have been run at least once so the output CSVs exist (see [Reproducing the Final Report](#reproducing-the-final-report)).
+**Prerequisites:** The final pipeline must have been run at least once so the output CSVs exist (see [From Raw Data to Results](#from-raw-data-to-results)).
 ```bash
 # Install dashboard dependencies (if not already installed)
 pip install dash plotly pandas numpy
@@ -93,7 +93,7 @@ python run_metrics.py men_tournament_2022_24 recent_club_players
 
 ---
 
-## Final Report — What Was Built (Sections III–VII)
+## Final Output — What Was Built (Sections III–VII)
 
 | Section | Content |
 |---|---|
@@ -111,7 +111,7 @@ python run_pipeline.py
 
 ---
 
-## Reproducing the Final Report
+## From Raw Data to Results
 
 ### Step 1 — Clone the Repository
 ```bash
@@ -170,7 +170,6 @@ To explore all 48 nations interactively, run the dashboard after completing the 
 ```bash
 wc2026_dashboard app.py
 ```
-
 Then open `http://127.0.0.1:8050` in your browser. The dashboard requires all pipeline outputs to be present (`composite_score/outputs/`, `player_score/outputs/`, `tactical_clustering/outputs/`).
 ---
 
