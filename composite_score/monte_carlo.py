@@ -9,6 +9,7 @@ import numpy as np
 import pandas as pd
 from collections import defaultdict
 from pathlib import Path
+np.random.seed(42)
 
 # ---------------------------------------------------------------------------
 # Groups
