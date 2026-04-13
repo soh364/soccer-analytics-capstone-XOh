@@ -1645,56 +1645,77 @@ def about_layout():
         ]),
 
         # ── Data Limitations ──
+
         section_block("🗄️", "Data Limitations", [
-            limit_card(1, "Tournament Context Not Weighted at Clustering Level",
+            limit_card(1, "StatsBomb Coverage Skews European",
+                "11 nations have zero player coverage; median confidence across all 48 nations is 0.18. "
+                "The typical country has fewer than 2 players scored out of an 11-player baseline. "
+                "Low-coverage nations receive a FIFA-fallback score blended by their confidence weight — "
+                "the lower the confidence, the more the score relies on FIFA ranking rather than measured data. "
+                "Partial mitigation: FIFA fallback at 0.75 discount; 40% minimum player weight.",
+                THEME["yellow"]),
+            limit_card(2, "Temporal Window Misses Current Form",
+                "Player scoring uses club data from 2021/22–2023/24 only. Haaland and Messi are "
+                "systematically undervalued because their peak-form seasons fall partly outside the coverage window. "
+                "Players peaking in 2024/25 are invisible to the model entirely. "
+                "Partial mitigation: Guardian 100 blend partially corrects for high-profile gaps.",
+                THEME["accent2"]),
+            limit_card(3, "Tournament Context Not Weighted at Clustering Level",
                 "All match-level metrics are treated equally regardless of whether they came from WC 2022, Euro 2024, "
                 "Copa América 2024, or AFCON 2023. A team pressing weak AFCON opposition produces the same PPDA as "
-                "pressing a World Cup finalist. Purely-AFCON teams (Nigeria, DR Congo, Egypt) may cluster into "
-                "higher-scoring archetypes than their WC-level quality justifies. Partial correction is applied via "
-                "the non-WC HP/HO cap and the wc_presence_weight discount, but the fundamental clustering is based "
-                "on a shared metric space across all tournaments.",
+                "pressing a World Cup finalist. Purely-AFCON teams may cluster into higher-scoring archetypes than "
+                "their WC-level quality justifies. Partial mitigation: non-WC HP/HO cap (80 vs 95); "
+                "wc_presence_weight discount applied at scoring layer.",
                 THEME["yellow"]),
-            limit_card(2, "Style Taxonomy ≠ Quality Ranking — Italy and Belgium",
-                "Italy (FIFA #11) and Belgium (FIFA #7) score below their standing because both play styles that "
-                "historically underperform at World Cups (Moderate Possession and Mid-Block Reactive), and both had "
-                "poor WC 2022 outcomes (Italy absent, Belgium group stage). The model correctly prices their current "
-                "tactical reality — these are not errors. Player quality substantially lifts both in the composite "
-                "Readiness Score, which is exactly what the two-layer framework predicts.",
-                THEME["accent2"]),
-            limit_card(3, "Small Sample Teams (3 Matches)",
-                "16 teams have only 3 tournament matches — a single group stage. Their tactical profiles are based on "
-                "a very thin sample and may not represent their true style. The sample_weight floor (0.73 for 3 matches) "
-                "partially discounts them, but they remain the lowest-confidence tactical assignments in the framework.",
-                THEME["red"]),
-            limit_card(4, "StatsBomb Club Coverage Skews European",
-                "Player scoring relies on StatsBomb open data which covers European club competitions far more "
-                "comprehensively than African, Asian, and CONCACAF leagues. The median coverage confidence across "
-                "all 48 nations is 0.18 — the typical country has fewer than 2 players scored out of an 11-player "
-                "baseline. Only 7 countries exceed 0.8 confidence. Low-coverage nations receive a FIFA-fallback "
-                "score blended by their confidence weight — the lower the confidence, the more the score relies "
-                "on FIFA ranking rather than measured player data.",
-                THEME["yellow"]),
-            limit_card(5, "9 Teams Have No Tactical Data",
-                "Bosnia and Herzegovina, Curaçao, Haiti, Iraq, Jordan, New Zealand, Norway, Uzbekistan, and Sweden "
-                "do not appear in any of the 4 StatsBomb tournament datasets used for clustering (WC 2022, Euro 2024, "
-                "Copa América 2024, AFCON 2023). They receive no tactical archetype assignment — their composite "
-                "readiness scores rely entirely on player quality and external signals, with a confidence penalty applied.",
-                THEME["muted"]),
-            limit_card(6, "Monte Carlo Match Model Is Simplified",
-                "Each match is simulated using a logistic function on readiness score difference only (σ=15, "
-                "calibrated so a 10-point gap → ~75% win probability). There are no draw mechanics beyond the "
-                "formula, no injury simulation, no squad rotation modelling, and no bracket seeding effects "
-                "beyond the actual WC 2026 group draw.",
+            limit_card(4, "Equal 5% Weighting of Contextual Components",
+                "Coach tenure, club cohesion, squad age, tournament experience, and confederation bonus each "
+                "receive 5% weight. The relative predictive contribution of these signals is uncertain — "
+                "calibration against WC 2018 and 2022 historical data would improve this. "
+                "The equal split is defensible under uncertainty but is an acknowledged simplification.",
                 THEME["accent"]),
-
-            limit_card(7, "Player Detail Records Cover 38 of 48 Nations",
-                "The player trait heatmap in Team Deep Dive is only available for nations whose players appear "
-                "in the 2026 WC roster data cross-referenced with StatsBomb club coverage. 10 nations have no "
-                "individual player records — their composite readiness score still includes a player quality "
-                "signal via the FIFA fallback mechanism, but no trait-level breakdown is available. "
-                "Of the 500+ players scored in the full pipeline, only the ~165 confirmed rostered players "
-                "are shown here — the rest were scored for analysis but did not make final squads.",
-    THEME["muted"]),
+            limit_card(5, "Simplified Monte Carlo Match Model",
+                "Each match is simulated using a logistic function on readiness score difference only "
+                "(σ=15, calibrated so a 10-point gap → ~60% win probability). No injury simulation, "
+                "no fatigue modelling, no tactical adjustment between matches. "
+                "Partial mitigation: conservative σ=15 reflects empirical international match uncertainty.",
+                THEME["red"]),
+            limit_card(6, "events.parquet Position Map Dependency",
+                "Player position archetypes are derived from the StatsBomb events.parquet file via a relative "
+                "path lookup. When the lookup fails, CM is assigned as a neutral fallback for a small number "
+                "of rostered players. This is documented and preserved to maintain score consistency with "
+                "reported results. Full fix: rebuild position map from updated events.parquet with corrected path.",
+                THEME["muted"]),
+            limit_card(7, "polars==1.3.0 Hard Pin",
+                "The player scoring pipeline uses Polars for list column operations. Later versions changed "
+                "the list column aggregation API in a way that silently produces incorrect season weighting — "
+                "player scores shift by up to 8 points for multi-season players without any error or warning. "
+                "polars==1.3.0 is pinned exactly in requirements.txt. Any reproduction attempt with a newer "
+                "version will produce silently different output.",
+                THEME["muted"]),
+            # ── Dashboard-specific note ──
+            html.Div(style={
+                "backgroundColor": THEME["card2"], "borderRadius": "10px",
+                "border": f"1px solid {THEME['border']}",
+                "borderLeft": f"4px solid {THEME['accent2']}",
+                "padding": "16px 20px", "marginTop": "8px",
+            }, children=[
+                html.Div("📊  Dashboard-Specific Note", style={
+                    "color": THEME["accent2"], "fontWeight": "700",
+                    "fontSize": "14px", "fontFamily": "DM Sans, sans-serif",
+                    "marginBottom": "8px",
+                }),
+                html.Div(
+                    "The player trait heatmap in Team Deep Dive is available for 38 of 48 nations only — "
+                    "those whose rostered players appear in the StatsBomb club coverage window. "
+                    "10 nations have no individual player records in the dashboard view. "
+                    "Their composite readiness scores still include a player quality signal via FIFA fallback, "
+                    "but no trait-level breakdown is shown. Of the 523 players scored in the full pipeline, "
+                    "only the ~165 confirmed rostered players are displayed, the rest were scored for "
+                    "analysis but did not make final squads.",
+                    style={"color": THEME["muted"], "fontSize": "13px",
+                           "fontFamily": "DM Sans, sans-serif", "lineHeight": "1.7"},
+                ),
+            ]),
         ]),
 
         # ── Key methodological choices ──
