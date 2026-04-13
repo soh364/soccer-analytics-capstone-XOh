@@ -19,6 +19,7 @@ scipy>=1.11.0
 rapidfuzz>=3.0.0
 plotly==6.6.0
 dash==4.1.0
+fastparquet>=2023.0
 
 # Jupyter notebook dependencies
 jupyterlab==4.3.4
