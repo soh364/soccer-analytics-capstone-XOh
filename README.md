@@ -168,7 +168,7 @@ Open `wc2026_analysis.ipynb` and run all cells in order. The setup cell (`cell 2
 
 To explore all 48 nations interactively, run the dashboard after completing the pipeline:
 ```bash
-wc2026_dashboard app.py
+python wc2026_dashboard.py
 ```
 Then open `http://127.0.0.1:8050` in your browser. The dashboard requires all pipeline outputs to be present (`composite_score/outputs/`, `player_score/outputs/`, `tactical_clustering/outputs/`).
 ---
